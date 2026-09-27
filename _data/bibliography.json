@@ -18,14 +18,14 @@
     "Yaqeen Institute papers are link-outs only; their PDFs are never downloaded (Global Constraint 4).",
     "Academia.edu items return HTTP 403 behind a managed Cloudflare challenge; the challenge was not fought and no UA spoofing or credential was used.",
     "Nothing in this file was obtained by circumventing a paywall, robots rule or access control.",
-    "REDACTION (2026-09-27, site owner's decision): the author's legal/real name is not published in this archive. Where an institutional record prints it in the author line, the name is replaced with '[real name withheld]', the row is flagged author_name_redacted, and a redaction_note says why. The citation itself is left factually intact - source_url, DOI and issuing institution are unchanged, so the reference still resolves at the institution that published it. See NOTICE.md."
+    "REDACTION (2026-09-27, site owner's decision): a personal name of the author's is withheld from this archive's own editorial text and data fields, at the site owner's request. Where an institutional record prints it in the author line, the name is replaced with '[real name withheld]', the row is flagged author_name_redacted, and a redaction_note records the withholding and points here. The citation itself is left factually intact - source_url, DOI and issuing institution are unchanged, so the reference still resolves at the institution that published it. NOTICE.md section 6.1 is the record of what is withheld and why, and it also discloses the one place where the name survives inside a held file's page text."
   ],
   "papers": [
     {
       "title": "Islamic Intuitionism: The Case Against Atheistic Evidentialism",
       "author_line": "Asadullah Ali [real name withheld]",
       "author_name_redacted": true,
-      "redaction_note": "Real name withheld at the site owner's request; the source record is public at the issuing institution and source_url below is unchanged and still resolves. See NOTICE.md.",
+      "redaction_note": "The author line is withheld at the site owner's request; see NOTICE.md section 6.1. The source record is public at the issuing institution and source_url below is unchanged and still resolves.",
       "source_url": "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download",
       "file": "_papers/pdfs/iium-thesis-islamic-intuitionism.pdf",
       "staged_file": "_staging/secondary/papers/iium-thesis-islamic-intuitionism.pdf",
@@ -215,7 +215,7 @@
       "title": "Islamic intuitionism: the case against atheistic evidentialism (full 86-leaf thesis)",
       "author_line": "Asadullah Ali [real name withheld]",
       "author_name_redacted": true,
-      "redaction_note": "Real name withheld at the site owner's request; the source record is public at the issuing institution and source_url below is unchanged and still resolves. See NOTICE.md.",
+      "redaction_note": "The author line is withheld at the site owner's request; see NOTICE.md section 6.1. The source record is public at the issuing institution and source_url below is unchanged and still resolves.",
       "source_url": "https://studentrepo.iium.edu.my/bitstreams/f64566a4-bda7-43a4-81d9-ee0a194b4cb7/download",
       "file": null,
       "staged_file": null,

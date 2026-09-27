@@ -437,7 +437,7 @@
     ],
     "note": "Author name at the time of the MA: Asadullah Ali [real name withheld at the site owner's request; the IIUM Student Repository record is public and the bitstream below still resolves - see NOTICE.md]. Provenance proven by sha256 byte-identity with the IIUM Student Repository bitstream 0824286e. CORRECTION to earlier archive notes: the file previously labelled iium_thesis.pdf is THIS thesis, not a litter-reduction paper. The full 86-leaf thesis bitstream returns an HTML viewer page rather than a PDF and is recorded as restricted in bibliography.json; no access request or workaround was attempted.",
     "author_name_redacted": true,
-    "redaction_note": "Real name withheld at the site owner's request. The author line of the source record at the issuing institution (IIUM Student Repository) is public and is left unchanged there; the citation in this row is otherwise factually intact, including the repository bitstream and the alternate URL, so it still resolves. See NOTICE.md.",
+    "redaction_note": "The author line is withheld at the site owner's request; see NOTICE.md section 6.1 for what is withheld and why. The author line of the source record at the issuing institution (IIUM Student Repository) is public and is left unchanged there; the citation in this row is otherwise factually intact, including the repository bitstream and the alternate URL, so it still resolves.",
     "file_licence": "IIUM Student Repository open excerpt, bitstream 0824286e-…; sha256 verified byte-identical to the repository copy. Openly published by the university; no licence restriction recorded.",
     "file_url": "/papers/islamic-intuitionism-thesis.pdf"
   },

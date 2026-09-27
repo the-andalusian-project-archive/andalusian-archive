@@ -9,6 +9,9 @@ It is not boilerplate: it states what this archive is, what it does **not**
 have the right to license, what has been deliberately withheld, and what will
 mislead you.
 
+It also states, in section 10, that the author has asked not to be contacted.
+That section is linked from the footer of every page on the site.
+
 
 ## 1. What this archive is
 
@@ -128,8 +131,8 @@ archive becomes unreliable.
 
 ### 6.1 Two personal names
 
-At the site owner's decision, **two of his personal names appear nowhere in the
-published material**:
+At the site owner's decision, **two of his personal names are withheld at the
+site owner's request**:
 
 * his **legal / real name** — the name printed in the author line of his
   published academic work; and
@@ -139,15 +142,57 @@ published material**:
 In the data files and on the paper page where an institutional author line
 carried the legal name, the name is replaced with `[real name withheld]`, the
 row is flagged `author_name_redacted: true`, and a `redaction_note` on the same
-row says why. The **citation is left factually intact** — source URL, DOI,
-issuing institution and every other bibliographic field are unchanged, so the
-reference still resolves at the institution that published it. That
-institution's own public record is not this archive's to alter, and was not
-altered.
+row records that the author line was withheld and points here. The **citation
+is left factually intact** — source URL, DOI, issuing institution and every
+other bibliographic field are unchanged, so the reference still resolves at the
+institution that published it. That institution's own public record is not this
+archive's to alter, and was not altered.
 
-The kunya **Abu Isabel** is *not* withheld. It appears only inside verbatim
-quotations of live YouTube video titles, which are public metadata and are
-part of the evidence. Those occurrences are left intact on purpose.
+#### One known residue, disclosed rather than left to be found
+
+The legal name is also printed in the **page content** of the held 24-page
+open-repository excerpt of his MA thesis,
+`_papers/pdfs/islamic-intuitionism-thesis.pdf`. It occurs 5 times, on pages 1,
+5, 6 (twice) and 8: the title page, the signature block, the copyright line,
+the fair-use affirmation, and the acknowledgements — where the same page also
+names two members of his family. The file's own embedded metadata does **not**
+carry the name (see 6.4), so this residue is page content only.
+
+That file is the university repository's own open deposit, and this archive
+reproduces it verbatim, which is the rule stated in section 1. Its sha256
+byte-identity proof against the repository bitstream also depends on the bytes
+being unaltered. It is therefore **published with the name in it**, and the
+earlier wording of this section — that the legal name "appears nowhere in the
+published material" — was wrong. If the owner later decides the residue should
+go, the choice is between publishing the file with the author line replaced,
+which falsifies a verbatim academic text and voids the byte-identity proof, and
+withholding the file the way the Ayubi chapter in 6.3 is withheld. Both options
+are recorded here so the decision stays the owner's rather than a reader's
+surprise.
+
+#### The kunya is not withheld
+
+The kunya **Abu Isabel** is *not* withheld. It is a form of address, not
+contact information, and it reaches this archive from one place only: the live
+third-party YouTube title of a single recording. It survives here in two kinds
+of place, both left intact on purpose.
+
+In the **verbatim title** of that recording — in `_data/videos.json`,
+`_data/transcript_index.json`, `_data/superseded_videos.json`, the built video
+and transcript pages, and the generated `data/videos.json` — it is public
+metadata and part of the evidence.
+
+In the **editorial fields** that reason about that title — `category_basis` and
+`note` in `_data/videos.json`, `reason` and `candidate_twin_evidence` in
+`_data/superseded_videos.json`, and `what_it_is` in `_data/channel_facts.json` —
+it is a direct quotation of the live title being discussed, so deleting the
+words would falsify the quotation and the field would no longer say what it
+claims to say.
+
+The earlier wording of this section — that the kunya "appears only inside
+verbatim quotations" of live titles — undercounted its occurrences. It appears
+in those editorial fields too; they quote the title rather than restate the
+kunya, which is why the words look the same in both places.
 
 ### 6.2 Withheld raw captures
 
@@ -244,6 +289,48 @@ PDFs keep their existing licences and links, recorded per paper in
 `_data/papers.json`.
 
 
+### 6.4 Personal identifiers cleared from embedded PDF metadata
+
+A PDF carries a metadata block as well as pages, and that block is served to
+anyone who downloads the file. One held PDF carried a personal identifier in
+that block. It has been cleared, and nothing else about the file changed.
+
+| File | Field cleared | Was |
+|---|---|---|
+| `_papers/pdfs/between-a-backbone-and-ribs.pdf` | `/Author` (Info dictionary) | the withheld legal name |
+| `_papers/pdfs/between-a-backbone-and-ribs.pdf` | `dc:creator` (XMP packet) | the same name, second copy |
+
+The remaining Info fields — `/Creator`, `/Producer`, `/CreationDate`,
+`/ModDate` — are tool and date stamps, carry no personal identifier, and were
+kept. The 63 pages are untouched: every page's content stream is byte-identical
+to the file before the change, and all 63 pages' extracted text and all 4
+embedded images are identical, verified with two independent PDF readers. The
+file is still 63 pages and still opens.
+
+This was safe to do here and nowhere else, for two reasons recorded together so
+the reasoning is auditable:
+
+* **the name was in the metadata only.** In this file the legal name appears in
+  the file's metadata and nowhere in its 63 pages of text, so clearing the two
+  fields removed it completely. In `islamic-intuitionism-thesis.pdf` the same
+  name appears only in the *page text*, behind a recorded byte-identity proof
+  (see 6.1), and was therefore left alone.
+* **no byte-identity proof is claimed for this file.** `papers.json` records its
+  provenance as the author's own CC-licensed archive.org deposit, with no hash
+  claim, so the file's bytes are not attested anywhere and re-serialising them
+  falsifies nothing. The three PDFs that *do* carry recorded hash proofs were
+  not touched.
+
+The other four held PDFs were surveyed and left alone. Their metadata carries
+tool and production stamps only. Two of them name a third party, and those were
+kept as attribution rather than cleared: `deconstructing-contemporary-atheist-thought.pdf`
+carries an `/Author` naming the person who produced the AMJA conference file,
+and `gender-equality-islam-and-law-japanese.pdf` carries a `/Title` that is the
+production filename of the Japanese edition, in which the paper's co-author
+appears by name. Neither is a contact detail for a private individual, and both
+are part of the record of who made the file.
+
+
 ## 7. WARNING: THE ORIGINAL DOMAIN IS NO LONGER HIS
 
 The site this corpus was published on is gone, and **the domain itself has been
@@ -323,5 +410,50 @@ the **hijacked live domain** was enforced in the layouts:
 * his **legal name** is no longer published in `README.md`, and the two evidence
   documents listed in 6.2a carry the birth name as a marker rather than as text.
 
-Each of these is a departure from a rule stated elsewhere in this file, which is
-why each is recorded here rather than left as an unremarked difference.
+Each of these is a departure from a rule stated elsewhere in this file, which
+is why each is recorded here rather than left as an unremarked difference.
+
+Two further owner decisions were applied on 2026-09-27, in the same pass:
+
+* the **no-contact notice** in section 10. It is one decision stated in one
+  wording family, placed at `README.md` (above the contents table), the footer
+  of every built page via `_layouts/default.html`, `CONTRIBUTING.md` (as its
+  first section), `llms.txt` (for machine readers), `.github/ISSUE_TEMPLATE/config.yml`
+  (as its first contact link) and this section. This file is the one that
+  carries the anchor the footer points at, because it is the only policy
+  document the built site serves. No contact detail was added anywhere, and no
+  sentence in the notice attributes a statement to the author that the owner did
+  not make;
+* the **embedded PDF metadata** cleared in 6.4, and with it the correction to
+  6.1's own overstatement about where the legal name does and does not appear.
+
+The wording of the reason attached to each withheld item was also brought into
+line with this file. `redaction_note` in `_data/papers.json` and
+`_data/bibliography.json` now records that the author line was *withheld at the
+site owner's request* and points here for the reason, instead of restating the
+nature of the withheld item in every row that carries the note. The disclosure
+is unchanged — the notes still exist, the rows are still flagged
+`author_name_redacted`, and the citation-integrity sentence is still there —
+but the single place that records what is withheld and why is now this file
+rather than a phrase repeated across the data.
+
+
+## 10. DO NOT CONTACT THE AUTHOR
+
+The author has asked not to be contacted, and he keeps a private life. This is
+stated here so that nobody has to guess.
+
+This archive exists so his work can be **used** — read it, cite it, teach from
+it, build something good with it. Nothing more is wanted.
+
+Requests to contact him, requests for his personal details, and invitations to
+events will not be answered and should not be sent. The maintainers cannot
+forward them and cannot put them through.
+
+This is one decision, stated in the same words in each place a reader meets it:
+this section, linked from the footer of every built page; `README.md`, above the
+contents table; `CONTRIBUTING.md`, as its first section; `llms.txt`, for machine
+readers; and the first entry in `.github/ISSUE_TEMPLATE/config.yml`, so that
+someone who arrived intending to ask how to reach him is redirected to the
+templates that can actually be acted on. Nothing in this notice quotes him,
+because this notice is the site's statement and not his words.

@@ -27,9 +27,54 @@ layout: default
         {%- endfor -%}
       {%- endif -%}
       {%- if cat -%}<div class="meta">{% include category_badge.html category=cat %}</div>{%- endif -%}
-      <div class="meta">
+      {%- comment -%}
+        Publication date, 2026-09-27 (on-page SEO pass).
 
-        <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+        This line used to be `page.date | date: "%B %d, %Y"`, unconditionally.
+        That is wrong for the MDI pages, and it was wrong in the most visible
+        way possible: build_mdi_pages writes `publication_date`, not `date`, so
+        `page.date` on those 17 documents is not authored at all and Jekyll
+        substitutes `site.time`. Every MDI page therefore printed TODAY'S DATE
+        as the date of a post he wrote in 2015-2016, and reprinted it on every
+        deploy. Verified in the built output before this fix:
+        `<span class="date">September 28, 2026</span>` on a post whose own
+        front matter says `publication_date: "February 7, 2016"`.
+
+        An archive whose whole claim is accurate provenance cannot print the
+        build clock next to a recovered text, so the key is now chosen from what
+        the generator actually wrote: `publication_date` for an MDI text page,
+        `date` for a work or a notice. If the value is not the ISO shape the
+        rest of the site writes, it is printed verbatim rather than pushed
+        through a date filter - the same rule _layouts/paper.html follows, and
+        for the same reason: Liquid answers a failed parse by handing the input
+        straight back, so a naive "just format it" fix leaves the page looking
+        unchanged while appearing to have been fixed.
+      {%- endcomment -%}
+      {%- assign date_src = page.date -%}
+      {%- if page.status == "mdi_text" and page.publication_date and page.publication_date != "" -%}
+        {%- assign date_src = page.publication_date -%}
+      {%- endif -%}
+      {%- comment -%}
+        `page.date` is a Ruby Time for a work or a notice page and a String for
+        an MDI page, and Liquid's `size` on a Time returns 0 - not its printed
+        length. So the shape test is done on a STRING form, which `| append: ""`
+        forces via `to_s`, and the filter is never placed inside the condition
+        itself (Liquid's condition parser rejects it outright, with a warning
+        per rendered page). Getting this wrong is not subtle: it made every
+        work page print the raw `2020-08-07 00:00:00 +0530` instead of
+        `August 07, 2020`, which is what the first version of this fix did.
+      {%- endcomment -%}
+      {%- assign date_str = date_src | append: "" -%}
+      {%- assign date_iso = date_str | slice: 0, 10 -%}
+      {%- assign date_iso_num = date_iso | plus: 0 -%}
+      {%- assign date_is_iso = false -%}
+      {%- if date_iso contains "-" and date_iso_num > 1000 and date_iso_num < 10000 -%}
+        {%- assign date_is_iso = true -%}
+      {%- endif -%}
+      <div class="meta">
+        {%- if date_str != "" %}
+        <span class="date">{% if date_is_iso %}{{ date_src | date: "%B %d, %Y" }}{% else %}{{ date_str }}{% endif %}</span>
+        {%- endif %}
         {% if page.status %} | <span class="status status-archived">{{ page.status }}</span>{% endif %}
       </div>
       

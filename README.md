@@ -25,6 +25,32 @@ the other as a recorded alternate, and never adds them together.
 
 ---
 
+## Do not contact the author
+
+The author has asked not to be contacted, and he keeps a private life. This is
+stated here so that nobody has to guess.
+
+This archive exists so his work can be **used** — read it, cite it, teach from
+it, build something good with it. Nothing more is wanted.
+
+Requests to contact him, requests for his personal details, and invitations to
+events will not be answered and should not be sent. The maintainers cannot
+forward them and cannot put them through.
+
+---
+
+## See it live
+
+![A screen tour of the live Andalusian Project Archive](docs/demo/site-tour.gif)
+
+The four collections, one work with its provenance, a transcript, the channel
+history, the timeline and search — captured from the live site on 2026-09-27, so
+it will go stale as the site changes. This is the short preview; the
+[full-length version](docs/demo/site-tour.mp4) and the site itself are at
+<https://the-andalusian-project-archive.github.io/andalusian-archive/>.
+
+---
+
 ## Status
 
 **Recovery run finished 2026-09-27; the corpus is partial, and the gaps are catalogued rather than hidden.** Six recovery lanes ran in parallel — the WordPress
@@ -172,10 +198,13 @@ Four positions, stated in full in [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.
   the site, and the documentation — including this README — are yours to reuse non-commercially,
   with attribution.
 - **Some items are withheld, and [`NOTICE.md`](NOTICE.md) lists every one of them.** Personal
-  names redacted at the request of the people named; raw capture files and staging artefacts
+  names withheld at the site owner's request, with every one of them disclosed in `NOTICE.md`
+  §6.1 rather than left as a silent gap; raw capture files and staging artefacts
   kept out of the repository; and two PDFs — a book chapter and a Japanese translation — held
   with their public provenance recorded as unverified, published because the files are genuine
-  and in hand but not attributed to a source the archive can confirm.
+  and in hand but not attributed to a source the archive can confirm. One held PDF's embedded
+  metadata carried a personal identifier and was cleared field by field, leaving its 63 pages
+  byte-identical (`NOTICE.md` §6.4).
 - **This is a dated polemical archive.** It preserves arguments that were published in a
   particular context, against particular interlocutors, at a particular time. The claims are
   the author's, not the archive's, and the archive takes no position on them.
@@ -184,6 +213,10 @@ Three further things the archive did not do, recorded because they matter: it di
 Cloudflare challenge that blocks Academia.edu; it did not download any PDF that a publisher's
 own terms place behind an access control; and it contacted the live `asadullahali.com` zero
 times, because that domain is no longer the author's.
+
+It forwards nothing either. Requests to contact the author, requests for his personal details
+and invitations to events are not passed on, and the maintainers have no way to put them
+through. See the notice at the top of this file and [`NOTICE.md`](NOTICE.md) §10.
 
 ---
 
@@ -295,6 +328,8 @@ scripts/          build and test tooling: collection builders, taxonomy applier,
                   search-data sync, fetchers, transcribers, and four test suites
 data/             generated search indexes. Never hand-edit; built from _data/
 docs/             recovery-log/ — the committed evidence trail
+docs/demo/        the site tour: a screen recording of the live site, and its
+                  provenance. Recorded 2026-09-27; re-record when the site changes
 docs/superpowers/  the plan this recovery was executed against
 .github/          the Pages deploy workflow
 _staging/         raw captures and binaries. Gitignored, deliberately not published

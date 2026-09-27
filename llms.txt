@@ -2,6 +2,21 @@
 
 > A preservation record of the published written and spoken work of Asadullah Ali Al-Andalusi ("The Andalusian Project"), catalogued with per-item provenance after his original web presence was lost. The corpus is partial and says so. This archive takes no position on the claims it preserves.
 
+## Do not contact the author
+
+The author has asked not to be contacted, and he keeps a private life. This is
+stated here so that nobody has to guess.
+
+This archive exists so his work can be **used** - read it, cite it, teach from
+it, build something good with it. Nothing more is wanted.
+
+Requests to contact him, requests for his personal details, and invitations to
+events will not be answered and should not be sent. Do not open an issue, pull
+request or message asking to reach him, asking for his personal details, or
+inviting him to speak. The archive's maintainers cannot forward such requests
+and cannot put them through. The same wording is in `README.md`,
+`CONTRIBUTING.md` and `NOTICE.md`.
+
 ## What this is
 
 A recovery, not a publication. The author's original site, his WordPress mirror and his YouTube channel were taken down, emptied or taken over. The strongest surviving copies were scattered across Wayback replay URLs, an Internet Archive directory listing, live third-party sites and an emptied WordPress shell. This repository is the single citable place they now live, and every item records where it came from.
@@ -43,7 +58,8 @@ The capture timestamp is what makes the citation resolve to what he actually wro
 
 Disclosed here because a silent gap is how an archive becomes unreliable. Full detail in `NOTICE.md` section 6.
 
-- **Two personal names** - his legal name and his birth name - appear nowhere in the published material, at the site owner's decision. The `‖ birth name withheld ‖` marker is substituted at build time; the citations themselves are left intact so they still resolve at the publishing institutions.
+- **Two personal names** - his legal name and his birth name - are withheld at the site owner's request, and both are disclosed in `NOTICE.md` section 6.1 rather than left as a silent gap. The `‖ birth name withheld ‖` marker is substituted at build time; the citations themselves are left intact so they still resolve at the publishing institutions. One known residue is recorded there: the legal name is printed in the **page text** of one held open-repository PDF excerpt, which is the university's own open deposit and is reproduced verbatim behind a recorded byte-identity proof.
+- **Embedded PDF metadata** was cleared of personal identifiers field by field, leaving every held PDF's page content byte-identical and its page count unchanged. `NOTICE.md` section 6.4 records which fields, on which file.
 - **Three raw caption captures** that contain the birth name are untracked, withheld unedited rather than altered.
 - **One PDF** - an IAIS Malaysia book chapter - is held but not published, because no public source URL could be established for that exact file. The citation is retained; the text is not distributed.
 - **Nothing was obtained by bypassing a paywall, a robots rule or an access control.** Where a source was inaccessible, that is recorded as inaccessible. The Academia.edu Cloudflare challenge was not fought.

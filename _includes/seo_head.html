@@ -1,7 +1,15 @@
 {%- comment -%}
   On-page head metadata for every page (2026-09-27, on-page SEO pass).
 
-  WHY THIS FILE EXISTS INSTEAD OF `{% seo %}` (jekyll-seo-tag 2.9):
+  WHY THIS FILE EXISTS INSTEAD OF THE JEYLL-SEO-TAG DROP (jekyll-seo-tag 2.9):
+
+  Note for the next editor: the tag is referred to in prose throughout these
+  comments WITHOUT its Liquid delimiters, deliberately. Liquid tokenizes inside
+  a comment block, so writing the real tag in a comment makes the parser open a
+  block that `endcomment` cannot close. The same applies to the search-query
+  placeholder in jsonld.html, which is built inside a `raw` block for the same
+  family of reasons: Liquid's tokenizer ends a variable at a SINGLE closing
+  brace.
 
   jekyll-seo-tag was emitting, on all 311 pages:
     * TWO <meta name="description"> tags - one hand-rolled in
@@ -361,10 +369,42 @@
 {%- assign seo_abs = page.url | absolute_url -%}
 
 {%- comment -%} ------------------------------------------------------------------
-  5. A real publication date, or none. `date` on a post/article page is the
-  work's own publication date; `publication_date` on a paper, MDI and notice
-  page is the row's own date. Where the archive has no date (papers published
-  only as a talk, video records) nothing is emitted - no date is invented.
+  5. A real publication date, or none. STRICTLY KIND-DRIVEN, and this is the
+  whole point of the section.
+
+  The trap: Jekyll does not leave `page.date` empty for a document whose front
+  matter has no `date` - it substitutes `site.time`, the BUILD CLOCK. An
+  earlier version of this file fell through to a generic `else` that read
+  `page.date` for anything that was not a paper, a video or a transcript, and
+  consequently published the build clock as `datePublished` and
+  `article:published_time` on all 17 MDI pages - they are generated with
+  `publication_date`, never `date`. It also made the build non-deterministic:
+  two builds of an unchanged tree differed in those 17 pages, in the sitemap's
+  <lastmod> for them, and in feed.xml.
+
+  So each kind names the key its generator actually writes, and nothing else is
+  read:
+    paper     `publication_date`  - shape-checked exactly as _layouts/paper.html
+                                     prints it (year-only and year-month are
+                                     NOT pushed through the date filter)
+    post      `date`             - a Jekyll post always has an authored date
+    work      `date`             - build_articles writes it from the data row
+    notice    `date`             - build_notice_pages writes it
+    mdi_text  none               - build_mdi_pages writes `publication_date` in
+                                     a HUMAN-READABLE shape ("February 7, 2016"),
+                                     not ISO, and no `date` at all. Feeding that
+                                     to the `date` filter is the exact hazard
+                                     _layouts/paper.html documents, and the
+                                     build clock is far worse than no date, so
+                                     the field is omitted.
+    video, transcript, home, index, 404
+             none               - the archive records no upload date and no
+                                     capture date for a recording, and a site
+                                     page has no publication date.
+
+  And a structural backstop that cannot be forgotten: if a date value ever
+  arrives that is not midnight in the site timezone, it is a build clock, and it
+  is dropped. An authored date always renders `00:00:00`; `site.time` never does.
   -------------------------------------------------------------------------- {%- endcomment -%}
 {%- assign seo_date = nil -%}
 {%- if seo_kind == "paper" -%}
@@ -379,15 +419,47 @@
       {%- assign seo_date = _pd -%}
     {%- endif -%}
   {%- endif -%}
-{%- elsif seo_kind == "transcript" or seo_kind == "video" -%}
-  {%- comment -%} Neither the capture date nor an upload date is recorded for
-    a recording, so no date is emitted. See the JSON-LD for the same reason. {%- endcomment -%}
-{%- else -%}
+{%- elsif seo_kind == "post" or seo_kind == "work" -%}
   {%- assign _d2 = page.date -%}
-  {%- if _d2 and _d2 != "" and _d2 | size >= 10 -%}
-    {%- assign seo_date = _d2 -%}
-  {%- endif -%}
+  {%- assign _d2s = _d2 | append: "" -%}
+  {%- assign _d2len = _d2s | size -%}
+  {%- if _d2len >= 10 -%}{%- assign seo_date = _d2 -%}{%- endif -%}
+{%- elsif seo_kind == "item" and page.status == "notice" -%}
+  {%- assign _d3 = page.date -%}
+  {%- assign _d3s = _d3 | append: "" -%}
+  {%- assign _d3len = _d3s | size -%}
+  {%- if _d3len >= 10 -%}{%- assign seo_date = _d3 -%}{%- endif -%}
 {%- endif -%}
+{%- comment -%}
+  The WHITELIST IS THE GUARD. Two value-based backstops were tried here and both
+  were abandoned, and the reason is worth recording because it is a Liquid trap
+  this repo will meet again:
+
+    * "drop the date unless it renders as 00:00:00" - Jekyll's `date` filter
+      does not reformat a plain string, it hands the input straight back when it
+      cannot parse it, so the comparison saw the whole date string, judged it
+      unequal, and silently deleted the date from all 129 pages that
+      legitimately have one.
+    * "drop the date when it equals site.time" - the comparison is not reliable
+      across the mixed String/Time values a document's `date` can be here.
+
+  A backstop that destroys correct output is worse than no backstop. The fix is
+  structural: a kind whose generator does not write a date has no branch, so
+  there is nothing for a build clock to leak into. The verification that it
+  holds is the `article:published_time` audit in the on-page report, not a
+  runtime test - the count of pages carrying the tag must equal the count of
+  pages whose generator authors a date.
+
+  One more Liquid trap, the one that actually bit: `page.date` is a Ruby TIME
+  here, and the `size` filter on a Time returns 0, not its printed length. So a
+  length test written directly against `page.date` is silently FALSE for every
+  real date, and a first version of this block therefore emitted no date at all
+  and deleted the tag from 129 pages that legitimately have one. Any length
+  test on a value that may be a Time must be done on a STRING form - the
+  `append` filter with an empty string forces `to_s` - which is what the two
+  branches above do. The `paper` branch needs no such care because
+  `publication_date` is a quoted front-matter String.
+{%- endcomment -%}
 
 {%- comment -%} ------------------------------------------------------------------
   6. Byline. Read from the page's own front matter only. `_articles` catalogue

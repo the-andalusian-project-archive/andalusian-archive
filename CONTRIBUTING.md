@@ -3,6 +3,34 @@
 This is a preservation archive, not a writing project. The useful contributions
 are corrections to the record, not changes to the recovered material.
 
+## Do not contact the author
+
+The author has asked not to be contacted, and he keeps a private life. This is
+stated here so that nobody has to guess.
+
+Requests to contact him, requests for his personal details, and invitations to
+events will not be answered and should not be sent. The maintainers cannot
+forward them and cannot put them through.
+
+This section exists because the request most often arrives as an issue that
+asks how to reach him. It cannot be fulfilled, and filing it does not create a
+channel. Everything this archive can act on has a template, and all of them are
+about the record rather than the person:
+
+* a **provenance error** — a work attributed to the wrong person, a stated
+  source that is not where the text came from, a wrong date or capture
+  timestamp, a self-contradictory field, or a withheld item that is not
+  disclosed — goes on the **Provenance correction or dead capture** template;
+* a **dead capture** — a Wayback or Internet Archive link in a provenance block
+  that no longer resolves, a page that 404s, a PDF that will not open — goes on
+  the same template;
+* a **rights, licensing or takedown request** goes on the **Rights, licensing
+  or takedown request** template. If you want something removed rather than
+  clarified, say so there and give the reason.
+
+Do not include his legal or birth name, or any contact detail you have found
+for him, in an issue or a pull request. See `NOTICE.md` section 6.1.
+
 ## What is worth reporting
 
 Almost all of it, and none of it needs code.
@@ -43,9 +71,12 @@ second thing to keep in sync, not a second citation.
 catalogue. Every row here has a retrieval method and a capture behind it, and a
 generated row is precisely the thing that cannot be checked.
 
-**The author's withheld names.** His legal name and his birth name appear nowhere
-in the published material, at the owner's decision. Do not include either in an
-issue, a pull request or a commit. See `NOTICE.md` section 6.1.
+**The author's withheld names.** Two personal names of his are withheld at the
+site owner's decision, and both are disclosed in `NOTICE.md` section 6.1
+rather than left as a silent gap. Do not include either in an issue, a pull
+request or a commit. Section 6.1 also records the one place a withheld name
+survives inside a held file, and section 6.4 the personal identifier that was
+cleared from a PDF's embedded metadata.
 
 **Long pasted passages.** Link the page. Recovered text stays in its page, where
 it has provenance attached to it.
