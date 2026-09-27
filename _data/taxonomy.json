@@ -44,7 +44,7 @@
       "includes": [
         "His appearances in other people's shows: debate recordings uploaded by the Muslim Debate Initiative, MSA Ohio State, and other channels, plus translated and clipped excerpts of those appearances.",
         "Reprints, critiques, biographies and passing mentions written by others about him.",
-        "The 69 rows of secondary_sources.json, which are DERIVED from the archive's own data and therefore never counted as content."
+        "The 70 rows of secondary_sources.json, which are DERIVED from the archive's own data and therefore never counted as content."
       ],
       "excludes": [
         "A recording he made himself, even one that answers or criticises another person's claim: that is A.",
@@ -102,7 +102,7 @@
       "note": "All 17 carry category A because the byline is his; the 13 that republish an already-counted work are counted: false and name the work they duplicate in duplicate_of."
     },
     "secondary_sources.json": {
-      "rows": 69,
+      "rows": 70,
       "category": "C",
       "counted": false,
       "note": "Derived from the archive's own catalogue (mention, bio, reprint, critique). count_as_content is already false on every row; counted: false added for the same statement in one field name."

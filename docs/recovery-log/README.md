@@ -113,3 +113,43 @@ ahead of approval on `articles.md` and `papers.md`, the review catching it as **
 wave restoring the pre-recount figures — is recorded in
 [`2026-09-27-review-phase3.md`](2026-09-27-review-phase3.md) and in the ledger ruling **R29**, and
 is left exactly as it was written.
+
+## The `checked` dates in `_data/recovery_log.json` (2026-09-28)
+
+`recovery_log.json` carries 74 rows, each with a `checked` date. **54 of them read
+`2026-09-11` and 20 read `2026-09-27`**, which looks like a stale field on the first block: every
+one of the 19 rows dated 2026-09-27 is a Phase 1 lane row, and the Phase 1 manifests are all dated
+2026-09-27. The 2026-09-27 recount flagged it (finding 6.5) as unresolvable from the repository and
+deliberately kept the date off the public timeline. It is resolvable, and the answer is that
+**2026-09-11 is a genuine historical record, not a stale field**, so those 54 dates were left alone:
+
+* The 2026-09-11 rows are written by `scripts/fetch_blog_content.py`, which stamps
+  `method: "wayback-refetch"` and this exact row shape. That script dates its own refetch work to
+  2026-09-11 in two places — `Task R (2026-09-11): hardened ad/JS junk stripping for the article
+  track` and `Task R (2026-09-11): keep-better guardrail + all-37 refetch support`.
+* The dispatch that ran it is on the record: `.superpowers/sdd/2026-09-06-57-list-honest-counts/`
+  holds `fix-wave-report.md` ("Fix-wave report (2026-09-11, single dispatch, no subagents)") and
+  `task-R-report.md` ("Date: 2026-09-11. Implementer: Task R (article track)."). So the pass is in
+  the ledger after all, just in the *earlier* ledger, not the 2026-09-27 one.
+* The Phase 1 lane that re-checked the same 30 works on 2026-09-27 — F4, the `asadullahali.com`
+  best-capture re-fetch — **did not write this file at all**. Its own report closes with "Writes
+  confined to `_staging\best_capture\`". F4 could not and did not re-date a row it never wrote.
+* The row shapes agree. The 2026-09-11 rows carry `words` / `fetched_title` / `categories` / `tags` /
+  `comments` and no `content_file` / `fetched_words` / `guardrail`; the 2026-09-27 rows carry all
+  three of those. Two different passes, two different shapes, and the dates distinguish them
+  correctly.
+
+One row in that block **was** factually wrong and was corrected on 2026-09-28:
+`library-take-down-notice` read `checked: 2026-09-11` with `words: 0`, `source_url: null` and
+`verdict: skipped_no_url` — the record of the 2026-09-11 pass, which found nothing — and was never
+updated when lane F2 recovered the work on 2026-09-27. It now reads `2026-09-27`, 216 words, the
+capture it came from, and `stub_fill`. That is the whole 55 → 54 difference. `checked` therefore
+means *the date this row's own pass ran*, not *the date the work was last looked at by anybody*.
+
+What is **not** settled, and is left visible rather than papered over: F4's 8 adopted "fuller
+versions" (in `_staging/best_capture/fuller_than_local.json`) were fetched on 2026-09-27, but their
+rows still read `checked: 2026-09-11`. Their `words` figures are not directly comparable to F4's
+either — the log counts fetched text and F4 counts the archive's own file, so `backbone-ribs` reads
+19,671 in the log against F4's `local_words` of 19,716. Nothing was rewritten, because a correction
+here would have to be a judgement about which word count is right, and that is a decision for the
+ledger's owner, not a cleanup.

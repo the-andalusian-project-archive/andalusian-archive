@@ -513,11 +513,17 @@
   },
   {
     "slug": "library-take-down-notice",
-    "method": "wayback-refetch",
-    "checked": "2026-09-11",
-    "words": 0,
-    "source_url": null,
-    "verdict": "skipped_no_url"
+    "method": "wayback-mirror-recovery",
+    "checked": "2026-09-27",
+    "words": 216,
+    "fetched_words": 216,
+    "content_file": "_posts/2014-03-17-library-take-down-notice.md",
+    "source_url": "https://web.archive.org/web/20140507224757id_/http://asadullahali.wordpress.com:80/2014/03/17/library-take-down-notice/",
+    "fetched_title": "Library Take Down Notice",
+    "prior_status": "wayback_only",
+    "old_words": 45,
+    "verdict": "stub_fill",
+    "note": "Corrected 2026-09-28: this row read `method: wayback-refetch`, `checked: 2026-09-11`, `words: 0`, `source_url: null` and `verdict: skipped_no_url` - the record of an earlier lane's pass that found nothing, left in place after the work was in fact recovered. The work was filled on 2026-09-27 by lane F2 from Wayback capture 20140507224757 of the WordPress mirror, at 216 words, replacing a 45-word catalogue stub; see the integration log's 'Item 4 - two stub-fills' and the post's own front matter. The `verdict` is now `stub_fill`, the same token the other stub-fill in this log carries, so a machine reading the log sees two stub-fills where the human-readable record says two. `skipped_no_url` is no longer used anywhere in this file."
   },
   {
     "slug": "lost-in-time-translation",
@@ -1461,7 +1467,7 @@
   },
   {
     "slug": "apostasy-beyond-the-rhetoric",
-    "method": "wayback-mirror-recovery",
+    "method": "live-page-capture",
     "checked": "2026-09-27",
     "content_file": "_posts/2018-05-22-apostasy-beyond-the-rhetoric.md",
     "source_url": "https://www.islamicdiscourseinitiative.com/apologetics/apostasy-beyond-the-rhetoric/",
@@ -1474,7 +1480,8 @@
     "words": 2277,
     "fetched_words": 2272,
     "guardrail": "pass",
-    "verdict": "new_work"
+    "verdict": "new_work",
+    "note": "Corrected 2026-09-28: `method` read `wayback-mirror-recovery`, which is wrong. This is the 15th and last of the 15 works the mirror/deleted lanes recovered, but it was not a Wayback replay at all - no Wayback capture of this page was staged. It is a LIVE capture of the islamicdiscourseinitiative.com page by lane F5 at 2026-09-27T08:54:10Z, recorded in the integration log (items 3 and the later ruling R4) and on the work's own row in canonical_works.json (`provenance`, `wayback_capture_staged: false`). `source_url` here is that live URL, not a web.archive.org replay. The other 14 rows in this block are genuine mirror recoveries and keep `wayback-mirror-recovery`."
   },
   {
     "slug": "the-inhumanity-of-human-rights",

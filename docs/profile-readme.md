@@ -19,10 +19,10 @@ Andalusian Project** — openly available, preserved with provenance.
 - **68 published machine transcripts, 540,995 words** — one document per capture, each with its
   capture file, cue count, language and producing model. Every page carries the
   machine-transcript disclaimer.
-- **20 papers** — 6 PDF files held locally across 5 of the paper records, with a 24-row access
+- **20 papers** — 5 PDF files held locally across 4 of the paper records, with a 24-row access
   ledger recording what is open,
   what is restricted and what is dead, including one DOI whose publisher domain no longer
-  resolves.
+  resolves. Two further PDFs are withheld in full, each keeping its full citation.
 - **The evidence trail.** Six recovery lanes, an append-only integration log, two independent
   review rounds and their fix waves are committed in the archive repository under
   `docs/recovery-log/`, not left in someone's scratch directory.
@@ -39,8 +39,10 @@ this one:
 - **Between a Backbone and Ribs: An Analysis of Al-Quran 86:5-7** (63 pp., the author's own
   CC-licensed deposit) — `_papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7.md`
 - **Islamic Intuitionism: The Case Against Atheistic Evidentialism** — his 2014 IIUM master's
-  thesis, filed under his MA-era name (real name withheld — see `NOTICE.md`); the open 24-page repository
-  excerpt is held, sha256 byte-verified — `_papers/islamic-intuitionism-the-case-against-atheistic-evidentialism.md`
+  thesis, filed under his MA-era name (real name withheld — see `NOTICE.md`); the 24-page repository
+  excerpt is **not** served, because the text of its pages names the author and two members of his
+  family, and the full text remains available from the IIUM Student Repository
+  (`NOTICE.md` §6.1a) — `_papers/islamic-intuitionism-the-case-against-atheistic-evidentialism.md`
 - **The Rise and Decline of Scientific Productivity in the Muslim World** (ICR Journal
   6(2):229-246, 2015) — publisher domain dead, DOI dead, byte-verified copy of the publisher's
   own PDF held here — `_papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis.md`

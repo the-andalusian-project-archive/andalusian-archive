@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T02:29:56.826451",
+  "last_updated": "2026-09-28T03:25:42.914907",
   "project_name": "The Andalusian Project Archive",
   "author": "Asadullah Ali Al-Andalusi",
   "description": "Digital preservation of Asadullah Ali Al-Andalusi's work for academic research and education",
@@ -51,7 +51,7 @@
     "papers": {
       "description": "Academic papers and research articles",
       "count": 20,
-      "storage": "LINKS to institutional repositories, plus 6 PDF files held across 5 of the 20 papers",
+      "storage": "LINKS to institutional repositories, plus 5 PDF files held across 4 of the 20 papers",
       "risk_level": "LOW - institutionally hosted"
     },
     "mdi_articles": {

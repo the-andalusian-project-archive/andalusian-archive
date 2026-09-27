@@ -90,17 +90,38 @@ above, with two wordings shortened to fit the shorter hold:
 Every number in a caption was read out of `_data/`, not typed from memory, and
 two captions deliberately carry **no** number at all:
 
-* **Works** and **Papers** carry no count. `_data/canonical_works.json` holds 72
-  counted works and `_data/papers.json` holds 20 counted papers, but the site's
-  published headline totals are still frozen at 57 and 18 pending the site
-  owner's approval of the recount (see *Note on the published totals* in the
-  repository README). A caption asserting either figure would contradict the page
-  it is printed over, so it names the collection instead.
+* **Works** and **Papers** carried no count **when the tour was recorded**, on
+  2026-09-27: the site's published headline totals were still frozen at 57 and
+  18 pending the site owner's approval of the recount, while `_data/` already
+  held 72 counted works and 20 counted papers, so a caption asserting either
+  figure would have contradicted the page it was printed over. **That gate is
+  now closed** — the recount was approved and applied on 2026-09-28, and the
+  site's own totals now read from `_data/` — so this is a reason to re-record,
+  not a reason to keep avoiding the figures.
 * **Videos** (68) and **Transcripts** (68 documents, 540,995 words) carry figures
   because `_data/videos.json` and `_data/transcript_index.json` agree with what
-  the pages render, so nothing on screen contradicts them.
+  the pages render, so nothing on screen contradicts them. Those two figures are
+  unchanged by the recount.
 
 No count anywhere in the repository was changed to make a caption work.
+
+## The tour in this repository is STALE — re-record before v1.0 ships
+
+The files committed here were recorded on **2026-09-27**, the day before the
+recount was approved and applied. Three things they show no longer match the
+site:
+
+* the homepage and works frames show the frozen pre-recount totals, not the
+  72 / 47 / 24 / 1 figures and the computed 207 the site publishes now;
+* the papers frames show the six-PDF-across-five-records state; the site now
+  serves **5 PDF files across 4 of the 20 paper records**, because the IIUM MA
+  thesis excerpt is withheld in full (`NOTICE.md` §6.1a);
+* the works frame's "honest count" caption is a picture of a page that has since
+  had its counts approved.
+
+`RELEASE-NOTES-v1.0.md` in this directory carries the same warning on the
+release record itself. Re-record with the procedure in *Re-recording* below; the
+GIF and the MP4 are the two files to replace.
 
 ## Encode settings
 

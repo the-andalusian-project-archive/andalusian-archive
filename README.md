@@ -88,7 +88,7 @@ the number of rows in it.
 |---|---:|---|
 | **Recovered works** | **72** | 47 with full text in the repository, 24 catalogued Wayback-only, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. |
 | **Video records** | **68** | 56 preserved as files in the Internet Archive's `andalusian-project` collection; 12 catalogued as live re-uploads. 36 mirror URLs attached to the 30 entries they duplicate. |
-| **Papers** | **20** | 6 PDF files held locally across 5 of the paper records (one of the six is a Japanese translation of a paper already counted). 2 carry a DOI on the paper record. |
+| **Papers** | **20** | 5 PDF files held locally across 4 of the paper records (one of the five is a Japanese translation of a paper already counted). 2 carry a DOI on the paper record. |
 | **Machine transcripts** | **68** | 540,995 words and 37,388 paragraphs, published one document per capture. 57 attached to a video record, 11 preserved but deliberately not attached. Three documents carry a redaction applied at publication time, which is why the word total is 48 higher than the raw captures' own count (see [`NOTICE.md`](NOTICE.md) §6.2). |
 | **MDI articles** | **17 rows / 4 items** | Full text of all 17 held verbatim, 24,081 words. 13 of the 17 are a second publication of a work already counted, decided by 5-gram text comparison rather than title similarity. |
 | **Notices** | **3** | Announcements that are not works (a book list, a library update, a link post). Catalogued, never counted. |
@@ -104,7 +104,7 @@ archive against itself: 9 Yaqeen link-out rows, 33 Al Balagh Academy course rows
 taught by him), 1 external Q&A interview, 12 superseded video duplicates preserved in full,
 and 74 recovery-log rows.
 
-The built site is 321 HTML pages plus 6 PDFs, with a 319-entry sitemap. The two built pages that
+The built site is 321 HTML pages plus 5 PDFs, with a 319-entry sitemap. The two built pages that
 are deliberately absent from the sitemap are `404.html` and `/search/`, which is `noindex` because
 it is an application surface rather than a page. All 319 sitemap `<loc>` values are absolute and
 resolve to a file on disk.
@@ -126,7 +126,7 @@ integration log, both committed under `docs/recovery-log/`.
 | **17 Muslim Debate Initiative articles existed only as live pages.** | Full text recovered verbatim on 2026-09-27, 24,081 words, all 17 held three ways (extracted prose, JSON cross-check, raw source) with the cross-check matching exactly. |
 | **A channel that now returns "This channel is not available."** | 68 catalogued videos with their IDs, durations, byte sizes and archive URLs. 56 preserved as files in the Internet Archive's `andalusian-project` collection; 12 catalogued as live re-uploads with a named uploader; 36 mirror URLs attached to the 30 entries they duplicate; 12 removed duplicates preserved in full in a superseded-video ledger rather than deleted. |
 | **The channel's own history — which was being described incorrectly.** | A 26-row capture-dated timeline, an 18-point subscriber series read from the channel's own header (190 in 2015 rising to 15.7K in 2022), the channel-id continuity argument, and **three claims this archive refuses to make, each recorded with the evidence that rejects it.** |
-| **20 papers, most with no local copy.** | 6 PDF files held locally across 5 of the paper records, and served from the site; a 24-row access ledger recording 8 open-access, 15 restricted and 1 dead item, so the gap is visible rather than implied; 5 DOIs recorded, including one that is dead and is recorded as dead. Three of the held PDFs carry an explicit byte-identity proof: one sha256 against the publisher's own file as captured by the Internet Archive, one sha256 against the university repository bitstream, and one against the archive's own earlier copy of the same file. |
+| **20 papers, most with no local copy.** | 5 PDF files held locally across 4 of the paper records, and served from the site; a 24-row access ledger recording 8 open-access, 15 restricted and 1 dead item, so the gap is visible rather than implied; 5 DOIs recorded, including one that is dead and is recorded as dead. Two of the held PDFs carry an explicit byte-identity proof: one sha256 against the publisher's own file as captured by the Internet Archive, and one against the archive's own earlier copy of the same file; the third proof on record, a sha256 against the university repository bitstream, belongs to the MA thesis excerpt, which is withheld rather than served (see [`NOTICE.md`](NOTICE.md) §6.1a). |
 | **Nothing at all — no text of any of the lectures.** | **68 published machine transcripts, 540,995 words**, one document per capture, each with its capture file, cue count, language and producing model. |
 | **334 images referenced by the mirror, none recovered.** | 334 retrieved and inventoried. The mirror delivered 335 staged files totalling 70,818,428 bytes, which deduplicate to 286 unique files at 64,283,508 bytes. See [Note on the recovered images](#note-on-the-recovered-images) for their publication status. |
 
@@ -207,11 +207,13 @@ Four positions, stated in full in [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.
 - **Some items are withheld, and [`NOTICE.md`](NOTICE.md) lists every one of them.** Personal
   names withheld at the site owner's request, with every one of them disclosed in `NOTICE.md`
   §6.1 rather than left as a silent gap; raw capture files and staging artefacts
-  kept out of the repository; and two PDFs — a book chapter and a Japanese translation — held
-  with their public provenance recorded as unverified, published because the files are genuine
-  and in hand but not attributed to a source the archive can confirm. One held PDF's embedded
-  metadata carried a personal identifier and was cleared field by field, leaving its 63 pages
-  byte-identical (`NOTICE.md` §6.4).
+  kept out of the repository; two PDFs withheld in full — the IAIS Malaysia book chapter, whose
+  public provenance could not be verified against any source, and the IIUM MA thesis excerpt,
+  whose page text names the author and two members of his family — each keeping its full
+  citation and a link to where the text remains available; and a Japanese translation that is
+  published but carries an explicit note that its public provenance is unverified. One held PDF's
+  embedded metadata carried a personal identifier and was cleared field by field, leaving its 63
+  pages byte-identical (`NOTICE.md` §6.4).
 - **This is a dated polemical archive.** It preserves arguments that were published in a
   particular context, against particular interlocutors, at a particular time. The claims are
   the author's, not the archive's, and the archive takes no position on them.
@@ -248,11 +250,13 @@ surrounding discussion.
 
 **Islamic intuitionism and evidentialism.** *Islamic Intuitionism: The Case Against Atheistic
 Evidentialism* — his 2014 IIUM master's thesis, filed under a name the site owner has asked not
-to be published here and which is shown as `[real name withheld]` throughout. The archive holds
-the open 24-page repository excerpt, sha256 byte-verified; the 86-leaf original is restricted by
-the university and is not claimed here. The author line of the institutional record is public
-there and is left unchanged there, so the citation still resolves — see
-[`NOTICE.md`](NOTICE.md) §6.1.
+to be published here and which is shown as `[real name withheld]` throughout. The archive does
+**not** hold the 24-page repository excerpt: the text of its pages names the author and two
+members of his family, so at the site owner's decision the file is withheld in full rather
+than served, and the full text remains available from the IIUM Student Repository. The 86-leaf
+original is restricted by the university and is not claimed here. The citation, the venue, the
+repository bitstream and the sha256 byte-identity record are all kept, so the reference still
+resolves where it was issued — see [`NOTICE.md`](NOTICE.md) §6.1a.
 
 **Aisha's age, and moral judgment of the past.** *Religion vs Paedophilia* (2013, three parts)
 and its successor *Understanding Aisha's Age* (2018, with Dr Jonathan Brown). The 2013 trilogy
@@ -327,7 +331,7 @@ _data/            canonical source of truth. Every collection, every count, ever
                   `series.json` is generated by `scripts/build_series_index.py`.
 _posts/           54 dated post files, the older of the two prose collections
 _articles/        92 pages: the remaining works, the 17 MDI articles, and the 3 notices
-_papers/          20 paper pages, with 6 PDFs in _papers/pdfs/
+_papers/          20 paper pages, with 5 PDFs in _papers/pdfs/
 _videos/          68 video records
 _transcripts/     68 published machine transcripts
 _layouts/         6 Jekyll layouts

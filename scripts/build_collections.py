@@ -1000,6 +1000,13 @@ def build_papers():
                 "No PDF is mirrored in this repository."
             )
             body.append("")
+            # A row can hold a file and still not publish it: `withheld_note` is
+            # the plain-language reason, and it is data, not prose here, so the
+            # page cannot drift from `_data/papers.json`. A row that never had a
+            # file simply has no note and gets the sentence above alone.
+            if p.get("withheld_note"):
+                body.append(p["withheld_note"])
+                body.append("")
         write_md(PAPERS_DIR, slug + ".md", front, "\n".join(body))
     print("papers: wrote %d (%d profile_page_only)" % (len(papers), n_profile_only))
     # Deliberately updated 2026-09-08: all 7 generic /Talks URLs replaced with
@@ -1122,13 +1129,253 @@ def collection_drift():
     return problems
 
 
+# A YouTube video id is exactly 11 characters of [A-Za-z0-9_-]. Two ids in this
+# archive are not YouTube ids and are longer: they are Facebook's numeric
+# post/video ids, and they are kept verbatim because they are what the platform
+# published. Both are gated by the rule below rather than by a hardcoded list, so
+# a third platform id does not need a code change to be accepted.
+#
+# The shape test exists because the failure this guard exists for is a
+# TRANSPOSED PAIR: `7KBCENktOUU` for `7KBCENktOOU` - same length, same
+# characters, one adjacent swap. A transposed id passes every "is it 11 chars"
+# test and every "is it a known id" test, and only 404s on the live site. That
+# exact typo did ship once, as a `.gitignore` rule naming a capture file that
+# does not exist, which meant the capture that really held the withheld name was
+# not ignored and `git add -A` would have published it. A count gate cannot see
+# that class of bug at all.
+YOUTUBE_ID_RE = re.compile(r"^[A-Za-z0-9_-]{11}$")
+PLATFORM_ID_RE = re.compile(r"^[0-9]{12,}$")
+# A coverage row's `file` is the transcript SOURCE it was built from, and this
+# archive holds two kinds: a verbatim WebVTT caption capture
+# (`cap-<id>.<lang>.vtt`, 29 of them) and a machine-transcription JSON
+# (`whisper-<id>.json`, 39 of them). Both are named after the recording, so both
+# carry the id and both are reconciled. A row with neither is a recorded
+# negative result - a probe that found no captions - and is left alone.
+CAPTURE_FILE_RE = re.compile(
+    r"^(?:cap-([A-Za-z0-9_-]+)\.[A-Za-z0-9-]+\.vtt|whisper-([A-Za-z0-9_-]+)\.json)$")
+
+
+def _fm_str(fm, key):
+    m = re.search(r'^%s:\s*"?([^"\n]*)"?\s*$' % re.escape(key), fm, re.M)
+    return m.group(1).strip() if m else None
+
+
+def _plausible_id(vid):
+    return bool(vid) and bool(YOUTUBE_ID_RE.match(vid)
+                              or PLATFORM_ID_RE.match(vid))
+
+
+def _is_transposition(a, b):
+    """True when `a` and `b` are the same characters in a different order.
+
+    Same length and same multiset, but not equal, means a pair was reordered -
+    and for an 11-character id that is almost always a single adjacent swap.
+    Sharper and far cheaper than an edit distance, and it does not fire on an id
+    that merely looks similar.
+    """
+    return len(a) == len(b) and a != b and sorted(a) == sorted(b)
+
+
+def video_id_agreement():
+    """A recording's id must be the SAME STRING in every place that names it.
+
+    One recording's id is written in six independent places: the catalogue row,
+    the coverage row, the capture file's own name, the published transcript
+    document, the video page, and the ignore rules that keep a withheld capture
+    unpublished. Nothing forces those to agree, and a disagreement is invisible
+    in review because every place still looks like a plausible id. The symptom
+    is a 404 on the live site or a silently published capture, never a build
+    error.
+
+    Two id-shaped things in the tree are NOT the video id, and are reconciled
+    rather than flagged, because they are deliberate:
+
+      * a transcript document for a re-upload carries the disambiguating
+        `-duplicate-upload` suffix in `transcript_id` and in its permalink, so
+        two documents for one recording get distinct URLs. The id of the
+        recording is in `capture_video_id`, which is what this checks.
+      * a video page whose id begins with `_` is written `video-<id>.md`, so the
+        filename is a valid, non-hidden Jekyll document name. The id of the
+        recording is in the `video_id` front matter, which is what this checks.
+
+    Returns a list of human-readable failure strings; empty means agreement.
+    """
+    problems = []
+    videos = json.loads(VIDEOS_JSON.read_text(encoding="utf-8"))
+    cov = json.loads(COVERAGE_JSON.read_text(encoding="utf-8")) \
+        if COVERAGE_JSON.is_file() else []
+
+    catalogue = {}
+    for v in videos:
+        vid = str(v.get("id") or "")
+        if not _plausible_id(vid):
+            problems.append("videos.json: id %r is neither an 11-character "
+                            "YouTube id nor a platform id" % vid)
+        if vid in catalogue:
+            problems.append("videos.json: id %s appears on two rows" % vid)
+        catalogue[vid] = v
+
+    known = set(catalogue)
+    for row in cov:
+        for vid in [row.get("video_id")] + [a.get("video_id")
+                                            for a in row.get("alternates") or []]:
+            if vid:
+                known.add(str(vid))
+
+    # place -> the id it asserts. One entry per place, so a place that asserts
+    # two different things is a failure rather than a silent overwrite.
+    asserted = {}
+
+    def assert_same(place, vid, why):
+        if not vid:
+            return
+        prev = asserted.get(place)
+        if prev is not None and prev != vid:
+            problems.append("%s asserts id %s and also %s (%s)"
+                            % (place, prev, vid, why))
+        else:
+            asserted[place] = vid
+        if not _plausible_id(vid):
+            problems.append("%s: %r is neither an 11-character YouTube id nor "
+                            "a platform id" % (place, vid))
+
+    # 1. the coverage rows and the capture file each one names. An ALTERNATE
+    #    names a capture file too, and those are load-bearing in exactly the
+    #    same way - three of them are the withheld captures of 6.2, and the
+    #    published transcript for a re-upload is built from one - so they are
+    #    reconciled here too rather than skipped.
+    def check_capture(cap, owner, where):
+        if not cap:
+            return
+        m = CAPTURE_FILE_RE.match(cap)
+        if not m:
+            problems.append("%s: %r is not a transcript source of the form "
+                            "cap-<id>.<lang>.vtt or whisper-<id>.json"
+                            % (where, cap))
+            return
+        from_name = m.group(1) or m.group(2)
+        assert_same("transcript source %s" % cap, from_name, "source filename")
+        if owner and from_name != owner:
+            problems.append("transcript source %s names id %s but %s is for %s"
+                            % (cap, from_name, where, owner))
+        if not (CAPTURE_DIR / cap).is_file():
+            problems.append("transcript source named by %s does not exist on "
+                            "disk: %s" % (where, cap))
+
+    for row in cov:
+        rid = str(row.get("video_id") or "")
+        place = "transcript_coverage.json video_id %s" % rid
+        assert_same(place, rid, "coverage row")
+        check_capture(str(row.get("file") or ""), rid, "its coverage row")
+        for alt in row.get("alternates") or []:
+            aid = str(alt.get("video_id") or "")
+            assert_same("transcript_coverage.json alternate video_id %s" % aid,
+                        aid, "coverage alternate")
+            if aid and alt.get("reparented_onto") == aid:
+                problems.append("transcript_coverage.json: capture %s is "
+                                "reparented onto itself" % aid)
+            check_capture(str(alt.get("file") or ""), aid,
+                          "coverage alternate %s" % aid)
+
+    # 2. the published transcript documents
+    for p in sorted(TRANSCRIPTS_DIR.glob("*.md")):
+        fm = front_matter_of(p.read_text(encoding="utf-8"))
+        vid = _fm_str(fm, "capture_video_id")
+        assert_same("_transcripts/%s capture_video_id" % p.name, vid,
+                    "transcript front matter")
+        cap = _fm_str(fm, "capture_file") or ""
+        m = CAPTURE_FILE_RE.match(cap)
+        if m:
+            from_name = m.group(1) or m.group(2)
+            assert_same("transcript source %s" % cap, from_name,
+                        "source filename")
+            if vid and from_name != vid:
+                problems.append(
+                    "_transcripts/%s: capture_file %s names id %s but "
+                    "capture_video_id is %s"
+                    % (p.name, cap, from_name, vid))
+        tid = _fm_str(fm, "transcript_id")
+        if vid and tid and not str(tid).startswith(vid):
+            problems.append("_transcripts/%s: transcript_id %r does not carry "
+                            "the recording id %s" % (p.name, tid, vid))
+        permalink = _fm_str(fm, "permalink") or ""
+        if vid and ("/transcripts/%s" % vid) not in permalink:
+            problems.append("_transcripts/%s: permalink %r does not carry the "
+                            "recording id %s" % (p.name, permalink, vid))
+
+    # 3. the video pages
+    for p in sorted(VIDEOS_DIR.glob("*.md")):
+        stem = p.name[:-3]
+        fm = front_matter_of(p.read_text(encoding="utf-8"))
+        vid = _fm_str(fm, "video_id")
+        assert_same("_videos/%s video_id" % p.name, vid, "video front matter")
+        if vid:
+            other = _fm_str(fm, "id")
+            if other != vid:
+                problems.append("_videos/%s: id is %r but video_id is %r"
+                                % (p.name, other, vid))
+            if stem != vid and stem != "video-" + vid:
+                problems.append("_videos/%s: filename stem %r is neither the "
+                                "recording id %s nor video-%s"
+                                % (p.name, stem, vid, vid))
+            if vid not in catalogue:
+                problems.append("_videos/%s: video_id %s is not a row in "
+                                "videos.json" % (p.name, vid))
+
+    # 4. the transposition sweep. Every id any place asserts, against every id
+    #    the data knows. A neighbour that is a permutation of a real id is the
+    #    typo this guard was written for, and it is the one a shape test misses.
+    for place, vid in sorted(asserted.items()):
+        if vid in known:
+            continue
+        twins = sorted(k for k in known if _is_transposition(vid, k))
+        if twins:
+            problems.append(
+                "%s asserts %r, which is a transposition of %s - a transposed "
+                "id is a 404 on the live site, and a mis-spelled .gitignore "
+                "capture rule publishes a withheld capture"
+                % (place, vid, " and ".join(twins)))
+        else:
+            problems.append("%s asserts %r, which no data file names"
+                            % (place, vid))
+
+    # 5. one source, one recording. Two ids claiming the same capture is a
+    #    split identity: the transcript would be served under the wrong URL.
+    by_cap = {}
+    for place, vid in asserted.items():
+        m = re.match(r"^transcript source (\S+)$", place)
+        if m:
+            by_cap.setdefault(m.group(1), set()).add(vid)
+    for cap, ids in sorted(by_cap.items()):
+        if len(ids) > 1:
+            problems.append("transcript source %s is claimed by more than one "
+                            "id: %s" % (cap, ", ".join(sorted(ids))))
+
+    # 6. every `cap-<id>` ignore rule must name a file that exists. A rule for
+    #    a capture that is not there ignores nothing, and the real capture goes
+    #    in on the next `git add -A`.
+    gi = BASE / ".gitignore"
+    if gi.is_file():
+        for n, raw in enumerate(gi.read_text(encoding="utf-8")
+                                .splitlines(), 1):
+            name = raw.strip().rsplit("/", 1)[-1]
+            if not raw.strip().startswith(".firecrawl/transcripts/cap-") \
+                    or not CAPTURE_FILE_RE.match(name):
+                continue
+            if not (CAPTURE_DIR / name).is_file():
+                problems.append(
+                    ".gitignore:%d ignores %s, which is not a file that exists "
+                    "- the capture that rule was written to protect is not "
+                    "ignored, and `git add -A` would publish it"
+                    % (n, name))
+    return problems
+
+
 def front_matter_of(text):
     """Return the front-matter block of a Jekyll markdown file (or "" if the
     file has none). Same `split("---", 2)` convention the fetch and test
     scripts already use."""
     return text.split("---", 2)[1] if text.count("---") >= 2 else ""
-
-
 def posts_by_front_matter_slug():
     """Map each `_posts` front-matter `slug:` to its filename."""
     out = {}
@@ -2021,6 +2268,10 @@ def main():
     assert not drift, "collection/data drift:\n  " + "\n  ".join(drift)
     print("collection_drift: none (_videos, _papers, _articles, _transcripts, "
           "_posts all agree)")
+    ids = video_id_agreement()
+    assert not ids, "video-id disagreement:\n  " + "\n  ".join(ids)
+    print("video_id_agreement: none (catalogue, coverage, captures, "
+          "_videos/ and _transcripts/ all name the same id for each recording)")
 
 
 if __name__ == "__main__":

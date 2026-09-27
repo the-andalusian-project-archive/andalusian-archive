@@ -12,13 +12,7 @@ volume_issue: "MPECI, 24-page open excerpt of an 86-leaf thesis"
 co_authors: []
 sources: ["IIUM Student Repository"]
 wayback_url: "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download"
-note: "Author name at the time of the MA: Asadullah Ali [real name withheld at the site owner's request; the IIUM Student Repository record is public and the bitstream below still resolves - see NOTICE.md]. Provenance proven by sha256 byte-identity with the IIUM Student Repository bitstream 0824286e. CORRECTION to earlier archive notes: the file previously labelled iium_thesis.pdf is THIS thesis, not a litter-reduction paper. The full 86-leaf thesis bitstream returns an HTML viewer page rather than a PDF and is recorded as restricted in bibliography.json; no access request or workaround was attempted."
-file: "islamic-intuitionism-thesis.pdf"
-file_source: "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download"
-file_pages: 24
-file_status: "held"
-file_url: "/papers/islamic-intuitionism-thesis.pdf"
-file_licence: "IIUM Student Repository open excerpt, bitstream 0824286e-…; sha256 verified byte-identical to the repository copy. Openly published by the university; no licence restriction recorded."
+note: "NOT INCLUDED: the 24-page repository excerpt was held in this repository and is not published, because the text of its pages reproduces personal identifiers of the author and of third parties; the full text is available from the issuing repository. The file was withdrawn from the served tree on 2026-09-28. The citation, the venue, the IIUM Student Repository bitstream and the sha256 byte-identity record against that bitstream are all retained, so the reference still resolves where it was issued; the withheld copy itself remains in the maintainers' private staging area. Author name at the time of the MA: Asadullah Ali [real name withheld at the site owner's request; the IIUM Student Repository record is public and the bitstream below still resolves - see NOTICE.md]. CORRECTION to earlier archive notes: the file previously labelled iium_thesis.pdf is THIS thesis, not a litter-reduction paper. The full 86-leaf thesis bitstream returns an HTML viewer page rather than a PDF and is recorded as restricted in bibliography.json; no access request or workaround was attempted."
 alternate_urls: ["https://studentrepo.iium.edu.my/bitstreams/f64566a4-bda7-43a4-81d9-ee0a194b4cb7/download"]
 ---
 
@@ -26,14 +20,11 @@ alternate_urls: ["https://studentrepo.iium.edu.my/bitstreams/f64566a4-bda7-43a4-
 
 *International Institute of Islamic Thought and Civilization (IIUM), MA thesis — 2014-06 — MA Thesis*
 
-## Available sources
+## Available sources (link-outs only)
 
 - [View Original](https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download)
 - [Wayback Machine](https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download)
 
-## Full text held in this repository
+This archive links to the original publisher page. No PDF is mirrored in this repository.
 
-- [islamic-intuitionism-thesis.pdf]({{ "/papers/islamic-intuitionism-thesis.pdf" | relative_url }}) - 24 pp.
-
-  - Obtained from: <https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download>
-  - Licence / provenance: IIUM Student Repository open excerpt, bitstream 0824286e-…; sha256 verified byte-identical to the repository copy. Openly published by the university; no licence restriction recorded.
+Not included: the text reproduces personal identifiers of the author and of third parties; the full text is available from the issuing repository.

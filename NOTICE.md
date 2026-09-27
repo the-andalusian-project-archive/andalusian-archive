@@ -26,7 +26,7 @@ It currently holds, as of 2026-09-28:
 | Written works | **72** catalogued — 47 with full text recovered in this repository, 24 held only as Wayback captures, 1 lost entirely |
 | Capture records | **87** Wayback/CDX capture records preserved as metadata |
 | Videos | **68** catalogued, with **68** machine-transcript documents; 57 catalogued entries carry a transcript attached and 11 declare none, by design |
-| Academic papers | **20** catalogued, of which **6** PDFs are held in this repository (6 files across 5 of the paper records; one of the six is a translation of a paper already counted) |
+| Academic papers | **20** catalogued, of which **5** PDFs are held in this repository (5 files across 4 of the paper records; one of the five is a translation of a paper already counted) |
 | MDI author-archive pages | **17** rows catalogued, of which **4** are distinct items of content; the other 13 republish a work already counted above and are not counted again |
 | Announcements | **3** catalogued, held with their text, and never counted as works |
 | Link-outs | **10** catalogued, never fetched, and never counted |
@@ -154,25 +154,13 @@ archive's to alter, and was not altered.
 
 #### One known residue, disclosed rather than left to be found
 
-The legal name is also printed in the **page content** of the held 24-page
-open-repository excerpt of his MA thesis,
-`_papers/pdfs/islamic-intuitionism-thesis.pdf`. It occurs 5 times, on pages 1,
-5, 6 (twice) and 8: the title page, the signature block, the copyright line,
-the fair-use affirmation, and the acknowledgements — where the same page also
-names two members of his family. The file's own embedded metadata does **not**
-carry the name (see 6.4), so this residue is page content only.
-
-That file is the university repository's own open deposit, and this archive
-reproduces it verbatim, which is the rule stated in section 1. Its sha256
-byte-identity proof against the repository bitstream also depends on the bytes
-being unaltered. It is therefore **published with the name in it**, and the
-earlier wording of this section — that the legal name "appears nowhere in the
-published material" — was wrong. If the owner later decides the residue should
-go, the choice is between publishing the file with the author line replaced,
-which falsifies a verbatim academic text and voids the byte-identity proof, and
-withholding the file the way the Ayubi chapter in 6.3 is withheld. Both options
-are recorded here so the decision stays the owner's rather than a reader's
-surprise.
+The legal name was also printed in the **page content** of the 24-page
+open-repository excerpt of his MA thesis. The earlier wording of this section —
+that the legal name "appears nowhere in the published material" — was wrong on
+that count, and the correction was made by **withholding the file in full**
+rather than by editing it. That file is no longer published; the full account
+is **6.1a**, and the withheld-item list below is where the disclosure now
+lives.
 
 #### The kunya is not withheld
 
@@ -197,6 +185,45 @@ The earlier wording of this section — that the kunya "appears only inside
 verbatim quotations" of live titles — undercounted its occurrences. It appears
 in those editorial fields too; they quote the title rather than restate the
 kunya, which is why the words look the same in both places.
+
+### 6.1a The MA thesis excerpt, withheld in full
+
+`_papers/pdfs/islamic-intuitionism-thesis.pdf` — the 24-page open-repository
+excerpt of *Islamic Intuitionism: The Case Against Atheistic Evidentialism*
+(IIUM, MPECI, 2014-06) — is **not published**. It was held here; withholding it
+was the site owner's decision on 2026-09-28, and the file was removed from the
+served tree on that date.
+
+**Why.** The legal name is printed in the **page text**, 5 times, on pages 1, 5,
+6 (twice) and 8: the title page, the signature block, the copyright line, the
+fair-use affirmation, and the acknowledgements — where the same page also names
+two members of his family. The file's own embedded metadata does **not** carry
+the name (see 6.4), so the identifier is page content only and no amount of
+metadata work reaches it. Three options existed: publish it verbatim with the
+name in it; publish it with the author line replaced, which falsifies a
+verbatim academic text and voids the byte-identity proof; or withhold it. The
+owner chose to withhold it, and the reason is recorded here rather than left to
+be inferred from a gap. This is a **different** withholding from the Ayubi
+chapter in 6.3, which was withheld because its provenance could not be verified;
+this one is withheld because of what its pages say.
+
+**What is kept.** The paper is still catalogued and still counted. The citation,
+the venue, the IIUM Student Repository bitstream, the alternate bitstream and
+the file's **sha256 byte-identity record** against that bitstream are all
+retained, in `_data/papers.json` and in the access ledger
+`_data/bibliography.json`, so the reference still resolves at the institution
+that published it. Its page,
+`/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/`, says
+so and links only outward; it no longer links a local file.
+
+**Where the full text is.** The complete text remains available from the issuing
+repository, at the bitstream linked from that page. The withheld copy is
+byte-identical to that bitstream and is retained unaltered in the maintainers'
+private staging area (`_staging/secondary/papers/`), which is gitignored and not
+published. It is **withheld, not edited**: it is verbatim source evidence, so the
+bytes are preserved rather than redacted — editing an evidence file to remove a
+name would destroy the thing that makes it evidence — and it is available to no
+reader of the published archive.
 
 ### 6.2 Withheld raw captures
 
@@ -288,7 +315,7 @@ source, and no unattributed URL is asserted in their place.
 
 An archive that states a provenance it cannot support is not an archive. The
 **citation is retained in full** — author, title, publisher, and the listing
-URL, which is recorded as a link-out, not a mirror. The remaining **6** held
+URL, which is recorded as a link-out, not a mirror. The remaining **5** held
 PDFs keep their existing licences and links, recorded per paper in
 `_data/papers.json`.
 
@@ -317,13 +344,15 @@ the reasoning is auditable:
 * **the name was in the metadata only.** In this file the legal name appears in
   the file's metadata and nowhere in its 63 pages of text, so clearing the two
   fields removed it completely. In `islamic-intuitionism-thesis.pdf` the same
-  name appears only in the *page text*, behind a recorded byte-identity proof
-  (see 6.1), and was therefore left alone.
+  name appears only in the *page text*, which no metadata edit can reach, and
+  the file is therefore **withheld in full** rather than cleared (see 6.1a).
 * **no byte-identity proof is claimed for this file.** `papers.json` records its
   provenance as the author's own CC-licensed archive.org deposit, with no hash
   claim, so the file's bytes are not attested anywhere and re-serialising them
-  falsifies nothing. The three PDFs that *do* carry recorded hash proofs were
-  not touched.
+  falsifies nothing. The PDFs that *do* carry recorded hash proofs were not
+  touched — and one of them, the MA thesis excerpt, is no longer published at
+  all (6.1a), so of the PDFs this archive holds, two carry a recorded hash
+  proof and neither was altered.
 
 The other four held PDFs were surveyed and left alone. Their metadata carries
 tool and production stamps only. Two of them name a third party, and those were
@@ -440,6 +469,26 @@ is unchanged — the notes still exist, the rows are still flagged
 `author_name_redacted`, and the citation-integrity sentence is still there —
 but the single place that records what is withheld and why is now this file
 rather than a phrase repeated across the data.
+
+One further owner decision was applied on **2026-09-28**: the MA thesis excerpt
+described in **6.1a** was withheld in full. That pass:
+
+* deleted `_papers/pdfs/islamic-intuitionism-thesis.pdf` from the served tree,
+  and moved its record from "identifying metadata stripped" to "withheld in
+  full" in this file, with the reason and the fact that the full text remains
+  available at the IIUM Student Repository;
+* set `file: null` and `file_status: withheld_personal_identifiers` on its row
+  in `_data/papers.json`, and the equivalent on its row in
+  `_data/bibliography.json`, keeping the citation, the venue, the repository
+  bitstream and the sha256 record, and adding a `withheld_note` that
+  `scripts/build_collections.py` prints on the paper page so the page cannot
+  drift from the data;
+* corrected the held-PDF figure wherever it was typed, from 6 files across 5
+  paper records to **5 files across 4**, in section 1, in section 6.3, in
+  `README.md`, in `llms.txt` and in `docs/profile-readme.md`. The site's own
+  figures — the papers index, the homepage panel and quick-link, the timeline
+  and `content_index.json` — are counted from `_data/` at build time and moved
+  to the same values without being typed.
 
 
 ## 10. DO NOT CONTACT THE AUTHOR

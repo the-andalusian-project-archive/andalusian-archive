@@ -18,7 +18,7 @@
     "Yaqeen Institute papers are link-outs only; their PDFs are never downloaded (Global Constraint 4).",
     "Academia.edu items return HTTP 403 behind a managed Cloudflare challenge; the challenge was not fought and no UA spoofing or credential was used.",
     "Nothing in this file was obtained by circumventing a paywall, robots rule or access control.",
-    "REDACTION (2026-09-27, site owner's decision): a personal name of the author's is withheld from this archive's own editorial text and data fields, at the site owner's request. Where an institutional record prints it in the author line, the name is replaced with '[real name withheld]', the row is flagged author_name_redacted, and a redaction_note records the withholding and points here. The citation itself is left factually intact - source_url, DOI and issuing institution are unchanged, so the reference still resolves at the institution that published it. NOTICE.md section 6.1 is the record of what is withheld and why, and it also discloses the one place where the name survives inside a held file's page text."
+    "REDACTION (2026-09-27, site owner's decision): a personal name of the author's is withheld from this archive's own editorial text and data fields, at the site owner's request. Where an institutional record prints it in the author line, the name is replaced with '[real name withheld]', the row is flagged author_name_redacted, and a redaction_note records the withholding and points here. The citation itself is left factually intact - source_url, DOI and issuing institution are unchanged, so the reference still resolves at the institution that published it. NOTICE.md section 6.1 is the record of what is withheld and why. One held PDF's embedded metadata was cleared field by field (NOTICE.md section 6.4); one PDF whose PAGE TEXT carries the same identifiers is withheld in full instead (NOTICE.md section 6.1a), because a verbatim reproduction cannot remove them and re-serialising the file would falsify the text and void the sha256 record. Both are disclosed rather than left as a silent gap."
   ],
   "papers": [
     {
@@ -27,12 +27,13 @@
       "author_name_redacted": true,
       "redaction_note": "The author line is withheld at the site owner's request; see NOTICE.md section 6.1. The source record is public at the issuing institution and source_url below is unchanged and still resolves.",
       "source_url": "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download",
-      "file": "_papers/pdfs/iium-thesis-islamic-intuitionism.pdf",
+      "file": null,
+      "file_status": "withheld_personal_identifiers",
       "staged_file": "_staging/secondary/papers/iium-thesis-islamic-intuitionism.pdf",
       "pages": 24,
       "status": "oa",
       "kind": "paper",
-      "notes": "IIUM MA thesis (MPECI), June 2014. Open 24-page excerpt t11100324531AsadullahAli_SEC_24.pdf from the IIUM Student Repository; sha256 verified byte-identical to the prior-research temp file iium_thesis.pdf. NOTE: the temp file is NOT the litter-reduction paper - it is this thesis. Full 86-leaf thesis bitstream returns an HTML page, not a PDF (see the restricted row below)."
+      "notes": "IIUM MA thesis (MPECI), June 2014. Open 24-page excerpt t11100324531AsadullahAli_SEC_24.pdf from the IIUM Student Repository; sha256 verified byte-identical to the prior-research temp file iium_thesis.pdf, and that byte-identity record is retained here. NOTE: the temp file is NOT the litter-reduction paper - it is this thesis. THE PDF IS NOT PUBLISHED IN THIS ARCHIVE: withdrawn from the served tree on 2026-09-28 because the text of its pages reproduces personal identifiers of the author and of third parties, which a verbatim reproduction cannot remove and which clearing the file's metadata block (the method used for between-a-backbone-and-ribs.pdf) would not reach. The citation is retained in full, source_url above still resolves, and the full text remains available from the issuing repository; the withheld copy is kept in the private staging area named above. Full 86-leaf thesis bitstream returns an HTML page, not a PDF (see the restricted row below)."
     },
     {
       "title": "Gender Equality, Islam, and Law",
