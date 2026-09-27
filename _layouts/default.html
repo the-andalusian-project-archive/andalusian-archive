@@ -54,6 +54,17 @@
         <li><a href="{{ '/articles/' | relative_url }}" {% if page.url contains '/articles/' %}class="active" aria-current="page"{% endif %}>Articles</a></li>
         <li><a href="{{ '/channel/' | relative_url }}" {% if page.url contains '/channel/' %}class="active" aria-current="page"{% endif %}>Channel</a></li>
         <li><a href="{{ '/timeline/' | relative_url }}" {% if page.url contains '/timeline/' %}class="active" aria-current="page"{% endif %}>Timeline</a></li>
+        {%- comment -%}
+          2026-09-28: the two named entry points. Their labels say what the pages
+          are, in the plainest words the site uses anywhere - "Who this is" and
+          "What happened" - because a nav label is read, not searched, and a
+          label that read "Entity page" or "Provenance" would describe the
+          implementation rather than the destination. The active test is an
+          equality rather than `contains`, so /transcripts/by-series/ does not
+          light up the Transcripts entry by accident.
+        {%- endcomment -%}
+        <li><a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}" {% if page.url == '/asadullah-ali-al-andalususi/' %}class="active" aria-current="page"{% endif %}>Who this is</a></li>
+        <li><a href="{{ '/asadullahali-com-what-happened/' | relative_url }}" {% if page.url == '/asadullahali-com-what-happened/' %}class="active" aria-current="page"{% endif %}>What happened</a></li>
         <li><a href="{{ '/search/' | relative_url }}" {% if page.url contains '/search/' %}class="active" aria-current="page"{% endif %}>Search</a></li>
       </ul>
     </div>
@@ -78,6 +89,21 @@
           <li><a href="{{ '/articles/' | relative_url }}">Blog Posts</a></li>
           <li><a href="{{ '/channel/' | relative_url }}">Channel History</a></li>
           <li><a href="{{ '/timeline/' | relative_url }}">Timeline</a></li>
+        </ul>
+      </div>
+      {%- comment -%}
+        2026-09-28: a second column for the two named entry points and the series
+        index, so a reader who lands on any page in this archive has one click to
+        each of them from the footer, exactly as the nav does. "Who this is" and
+        "What happened" are the same labels the nav uses, so the two surfaces
+        cannot drift into calling the same page two different things.
+      {%- endcomment -%}
+      <div>
+        <h4>About the archive</h4>
+        <ul>
+          <li><a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">Who this is</a></li>
+          <li><a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">What happened to the website</a></li>
+          <li><a href="{{ '/transcripts/by-series/' | relative_url }}">Transcripts by series</a></li>
         </ul>
       </div>
       <div>

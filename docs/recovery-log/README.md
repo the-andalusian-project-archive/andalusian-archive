@@ -100,12 +100,16 @@ These files describe the recovery, so they are not subject to the site's count-a
 Where they state a number it is the number as of **2026-09-27 at `db16e2c`**, except in
 [`2026-09-27-review-phase3.md`](2026-09-27-review-phase3.md) and
 [`2026-09-27-phase-3-lane-reports.md`](2026-09-27-phase-3-lane-reports.md), which describe Phase 3
-and therefore the state at `8eaa65f` and after the fix wave.
+and therefore the state at `8eaa65f` and after the fix wave. **None of them has been edited by the
+2026-09-28 recount**, and none should be: a review record is evidence of what was true when it was
+written, and rewriting it would destroy the only reason to keep it.
 
-The site's own published totals (`README.md`, `index.md`, `articles.md`, `papers.md`) are a
-separate matter and are still awaiting the site owner's approval at Task 9. Phase 3 briefly
-published the recount on `articles.md` and `papers.md` before that gate; the review caught it as
-**C1** and the fix wave restored the pre-recount figures, so the published counts are once again
-the approved ones. The recount values themselves (72 works / 47 full-text / 24 Wayback-only /
-1 lost; 20 papers) are correct in `_data/`, and belong to Task 9 applied in one pass with the
-homepage and `README.md`.
+The count-approval gate is now **closed**. The site owner approved the recount and it was applied
+on 2026-09-28 in one pass, so `README.md`, `index.md`, `articles.md`, `papers.md`, `search.md` and
+`timeline.md` publish the recount values (72 works / 47 full-text / 24 Wayback-only / 1 lost;
+20 papers; a computed total of 207) and every count on those pages is now read from `_data/` at
+build time instead of being typed. The history of the gate itself — Phase 3 publishing the recount
+ahead of approval on `articles.md` and `papers.md`, the review catching it as **C1**, and the fix
+wave restoring the pre-recount figures — is recorded in
+[`2026-09-27-review-phase3.md`](2026-09-27-review-phase3.md) and in the ledger ruling **R29**, and
+is left exactly as it was written.

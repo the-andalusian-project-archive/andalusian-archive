@@ -9,34 +9,77 @@ description: "A digital preservation record of the writing and recordings of Asa
   <p class="hero-subtitle">Digital preservation of the scholarly work of Asadullah Ali Al-Andalusi — founder of The Andalusian Project, research fellow at Yaqeen Institute, and member of the Muslim Debate Initiative.</p>
 </div>
 
-<!-- Task 3 honest counts (Task 0 ruling): total = 57 works + 68 videos + 18 papers + 17 MDI + 9 Yaqeen + 33 AlBalagh + 1 interview = 203. Excludes derived secondary_sources; blog uses the works list (canonical_works) not 87 CDX captures. -->
+{%- comment -%}
+  Every figure in the headline panel, the quick-link descriptions and the
+  preservation table below is COUNTED FROM THE DATA at build time (Liquid loops
+  over _data/*.json). No number in any of those three places is typed, so the
+  panel cannot publish a total the data does not support, and the seven terms of
+  the arithmetic are printed in the same order they are summed.
+
+  The published pre-recount figures (57 works / 18 papers / 203 total) were
+  restored over these spots in task 8f because publishing the recount ahead of
+  the site owner's approval would have made this page contradict the others.
+  The approval has been given and the recount is applied here, in one pass.
+{%- endcomment -%}
+{%- assign works_total = 0 -%}{%- assign found = 0 -%}{%- assign wayback_only = 0 -%}{%- assign lost = 0 -%}
+{%- for w in site.data.canonical_works -%}
+  {%- assign works_total = works_total | plus: 1 -%}
+  {%- if w.status == "found" -%}{%- assign found = found | plus: 1 -%}
+  {%- elsif w.status == "wayback_only" -%}{%- assign wayback_only = wayback_only | plus: 1 -%}
+  {%- elsif w.status == "lost" -%}{%- assign lost = lost | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+{%- assign videos_total = 0 -%}{%- for v in site.data.videos -%}{%- assign videos_total = videos_total | plus: 1 -%}{%- endfor -%}
+{%- assign papers_total = 0 -%}{%- assign pdf_files = 0 -%}{%- assign pdf_papers = 0 -%}
+{%- for p in site.data.papers -%}
+  {%- assign papers_total = papers_total | plus: 1 -%}
+  {%- if p.file -%}{%- assign pdf_files = pdf_files | plus: 1 -%}{%- endif -%}
+  {%- if p.file or p.additional_files -%}{%- assign pdf_papers = pdf_papers | plus: 1 -%}{%- endif -%}
+  {%- if p.additional_files -%}{%- assign pdf_files = pdf_files | plus: p.additional_files.size -%}{%- endif -%}
+{%- endfor -%}
+{%- assign mdi_total = 0 -%}{%- assign mdi_counted = 0 -%}
+{%- for m in site.data.mdi_articles -%}
+  {%- assign mdi_total = mdi_total | plus: 1 -%}
+  {%- if m.counted -%}{%- assign mdi_counted = mdi_counted | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+{%- assign mdi_republished = mdi_total | minus: mdi_counted -%}
+{%- assign yaqeen_total = 0 -%}{%- for y in site.data.yaqeen_papers -%}{%- assign yaqeen_total = yaqeen_total | plus: 1 -%}{%- endfor -%}
+{%- assign albalagh_total = 0 -%}{%- for ab in site.data.albalagh_courses -%}{%- assign albalagh_total = albalagh_total | plus: 1 -%}{%- endfor -%}
+{%- assign interviews_total = 0 -%}{%- for ei in site.data.external_interviews -%}{%- assign interviews_total = interviews_total | plus: 1 -%}{%- endfor -%}
+{%- assign notices_total = 0 -%}{%- for n in site.data.notices -%}{%- assign notices_total = notices_total | plus: 1 -%}{%- endfor -%}
+{%- assign captures_total = 0 -%}{%- for b in site.data.blog_posts -%}{%- assign captures_total = captures_total | plus: 1 -%}{%- endfor -%}
+{%- assign search_total = papers_total | plus: videos_total | plus: works_total -%}
+{%- assign total_content = works_total | plus: videos_total | plus: papers_total | plus: mdi_counted | plus: yaqeen_total | plus: albalagh_total | plus: interviews_total -%}
+
 <div class="stats-grid">
   <div class="stat-card">
-    <div class="stat-number">57</div>
+    <div class="stat-number">{{ works_total }}</div>
     <div class="stat-label">Blog Works</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">68</div>
+    <div class="stat-number">{{ videos_total }}</div>
     <div class="stat-label">Videos</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">18</div>
+    <div class="stat-number">{{ papers_total }}</div>
     <div class="stat-label">Academic Papers</div>
   </div>
   <div class="stat-card">
-    <div class="stat-number">203</div>
+    <div class="stat-number">{{ total_content }}</div>
     <div class="stat-label">Total Items Preserved</div>
   </div>
 </div>
-<p class="stats-note">57 works &mdash; 30 full-text in repo, 2 lost, 25 Wayback-only. Total 203 = 57 + 68 + 18 + 17 + 9 + 36 + 1 (non-overlapping; excludes derived secondary_sources; blog counts works, not 87 captures).</p>
+<p class="stats-note">{{ works_total }} works &mdash; {{ found }} full-text in repo, {{ wayback_only }} Wayback-only, {{ lost }} lost. Total {{ total_content }} = {{ works_total }} + {{ videos_total }} + {{ papers_total }} + {{ mdi_counted }} + {{ yaqeen_total }} + {{ albalagh_total }} + {{ interviews_total }} (non-overlapping; the MDI term is the {{ mdi_counted }} distinct items of {{ mdi_total }} catalogued rows, the other {{ mdi_republished }} republishing a work already counted above; it excludes the derived secondary_sources and the {{ notices_total }} announcements, and the blog term is the works list, not the {{ captures_total }} captures).</p>
 
 {%- comment -%}
   Task 8a: the four-category taxonomy. Every figure below is COUNTED FROM THE
   DATA at build time (Liquid loops over _data/*.json); no number is typed here.
-  The published headline numbers in the stats grid above are deliberately
-  UNCHANGED: the recount of the headline totals is Task 9's gate and the site
-  owner has not approved new totals yet. The counts in this block are a
-  breakdown of the same data by authorship, not a replacement for the headline.
+  These are a breakdown of the same data by authorship, not a replacement for
+  the headline panel, and the two now agree because both are read from _data/.
+
+  `mdi_total`, `mdi_counted` and `mdi_republished` are assigned once in the
+  headline block above and reused here; I3 (Phase-3 review, 2026-09-27) is the
+  finding that "13" was once a typed literal inside a block that claims no
+  number is typed, and it is `mdi_total - mdi_counted`, computed from the data.
 {%- endcomment -%}
 {%- assign a_works = 0 -%}{%- for row in site.data.canonical_works -%}{%- if row.category == "A" and row.counted -%}{%- assign a_works = a_works | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- assign a_videos = 0 -%}{%- for row in site.data.videos -%}{%- if row.category == "A" and row.counted -%}{%- assign a_videos = a_videos | plus: 1 -%}{%- endif -%}{%- endfor -%}
@@ -45,12 +88,9 @@ description: "A digital preservation record of the writing and recordings of Asa
 {%- assign a_total = a_works | plus: a_videos | plus: a_papers | plus: a_mdi -%}
 {%- comment -%}
   I3 (Phase-3 review, 2026-09-27): "13" was a typed literal here, inside a block
-  that claims no number is typed. It is `mdi_total - mdi_counted`, so it is
-  computed from the data like every other figure in this block.
+  that claims no number is typed. It is `mdi_total - mdi_counted`, computed
+  above from the data like every other figure on this page.
 {%- endcomment -%}
-{%- assign mdi_total = 0 -%}{%- for row in site.data.mdi_articles -%}{%- assign mdi_total = mdi_total | plus: 1 -%}{%- endfor -%}
-{%- assign mdi_counted = 0 -%}{%- for row in site.data.mdi_articles -%}{%- if row.counted -%}{%- assign mdi_counted = mdi_counted | plus: 1 -%}{%- endif -%}{%- endfor -%}
-{%- assign mdi_republished = mdi_total | minus: mdi_counted -%}
 
 {%- assign b_papers = 0 -%}{%- for row in site.data.papers -%}{%- if row.category == "B" and row.counted -%}{%- assign b_papers = b_papers | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- assign b_other = 0 -%}{%- for row in site.data.canonical_works -%}{%- if row.category == "B" and row.counted -%}{%- assign b_other = b_other | plus: 1 -%}{%- endif -%}{%- endfor -%}
@@ -69,7 +109,7 @@ description: "A digital preservation record of the writing and recordings of Asa
   <div class="section-header">
     <h2>How this archive is sorted</h2>
     <p>Four categories, decided by who made the thing, not by what shape it is. A video he produced is A even when it is a debate; a show he was a guest on is C even though it carries his voice. Every countable item sits in exactly one category. The full rules are in <code>_data/taxonomy.json</code>.</p>
-    <p class="page-note">Figures in this section are counted from the data at build time. The headline totals in the panel above are unchanged pending the site owner&rsquo;s approval of the recount.</p>
+    <p class="page-note">Figures in this section are counted from the data at build time, as is the headline panel above, so the two cannot disagree.</p>
   </div>
 
   <div class="taxonomy-entry">
@@ -111,7 +151,7 @@ description: "A digital preservation record of the writing and recordings of Asa
       </div>
       <div class="ql-text">
         <div class="ql-title">Academic Papers</div>
-        <div class="ql-desc">18 papers from Yaqeen Institute and academic journals</div>
+        <div class="ql-desc">{{ papers_total }} papers from Yaqeen Institute and academic journals; {{ pdf_files }} PDF files held</div>
       </div>
     </a>
     <a href="{{ '/videos/' | relative_url }}" class="quick-link">
@@ -129,7 +169,7 @@ description: "A digital preservation record of the writing and recordings of Asa
       </div>
       <div class="ql-text">
         <div class="ql-title">Blog Posts</div>
-        <div class="ql-desc">57 works &mdash; 30 full-text in repo, 2 lost, 25 Wayback-only</div>
+        <div class="ql-desc">{{ works_total }} works &mdash; {{ found }} full-text in repo, {{ wayback_only }} Wayback-only, {{ lost }} lost</div>
       </div>
     </a>
     <a href="{{ '/timeline/' | relative_url }}" class="quick-link">
@@ -138,7 +178,35 @@ description: "A digital preservation record of the writing and recordings of Asa
       </div>
       <div class="ql-text">
         <div class="ql-title">Timeline</div>
-        <div class="ql-desc">Key milestones from 2011 to 2023</div>
+        <div class="ql-desc">How the archive was recovered, and the works from 2011 to 2020</div>
+      </div>
+    </a>
+    {%- comment -%}
+      2026-09-28: the two named entry points get a card on the homepage, above the
+      search card and below the timeline, because they answer the two questions a
+      first-time reader arrives with - who is this, and what happened to his site -
+      and both questions were previously unanswerable from anywhere on this site.
+      The descriptions state the facts that make each page necessary rather than
+      describing the page: one is the only complete account of the corpus and of
+      the two different men named Al-Andalusi, the other is the only warning that
+      the domain is now a gambling site.
+    {%- endcomment -%}
+    <a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}" class="quick-link">
+      <div class="ql-icon" style="background: var(--color-primary-subtle); color: var(--color-primary);">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="7"/><path d="M10 9v5M10 6.5v.5"/></svg>
+      </div>
+      <div class="ql-text">
+        <div class="ql-title">Who this is</div>
+        <div class="ql-desc">Asadullah Ali Al-Andalusi: every attested form of his name, his roles, what he wrote, and the different man also called Abdullah al-Andalusi</div>
+      </div>
+    </a>
+    <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}" class="quick-link">
+      <div class="ql-icon" style="background: var(--color-danger-subtle); color: var(--color-danger);">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 3l7 13H3z"/><path d="M10 8v4M10 14v.5"/></svg>
+      </div>
+      <div class="ql-text">
+        <div class="ql-title">What happened to the website</div>
+        <div class="ql-desc">asadullahali.com is gone and the domain is now a gambling site &mdash; do not visit it. What survives, where it lives, and how to cite it</div>
       </div>
     </a>
     <a href="{{ '/search/' | relative_url }}" class="quick-link">
@@ -147,7 +215,7 @@ description: "A digital preservation record of the writing and recordings of Asa
       </div>
       <div class="ql-text">
         <div class="ql-title">Search</div>
-        <div class="ql-desc">Search across all 143 preserved items</div>
+        <div class="ql-desc">Search across all {{ search_total }} preserved items</div>
       </div>
     </a>
     <a href="https://archive.org/details/andalusian-project" target="_blank" rel="noopener noreferrer" class="quick-link">
@@ -165,7 +233,7 @@ description: "A digital preservation record of the writing and recordings of Asa
 <div class="section">
   <div class="section-header">
     <h2>Preservation Status</h2>
-    <p>30 blog works preserved full-text in this repository; 25 available via the Wayback Machine only; 2 lost with no archived copy located. Videos, papers, and external collections are linked via public archives.</p>
+    <p>{{ found }} blog works preserved full-text in this repository; {{ wayback_only }} catalogued via the Wayback Machine with no text held; {{ lost }} lost with no archived copy located. Videos, papers, and external collections are linked via public archives.</p>
   </div>
 
   <table>
@@ -180,45 +248,57 @@ description: "A digital preservation record of the writing and recordings of Asa
     <tbody>
       <tr>
         <td>Blog Works</td>
-        <td>57</td>
-        <td>30 full-text in repo; 25 Wayback-only; 2 lost</td>
+        <td>{{ works_total }}</td>
+        <td>{{ found }} full-text in repo; {{ wayback_only }} Wayback-only; {{ lost }} lost</td>
         <td><span class="badge badge-archived">Partial</span></td>
       </tr>
       <tr>
         <td>Blog Captures (metadata)</td>
-        <td>87</td>
+        <td>{{ captures_total }}</td>
         <td>In Repository</td>
         <td><span class="badge badge-archived">Metadata</span></td>
       </tr>
       <tr>
         <td>Videos</td>
-        <td>68</td>
+        <td>{{ videos_total }}</td>
         <td>Archive.org Mirrors</td>
         <td><span class="badge badge-available">Preserved</span></td>
       </tr>
       <tr>
         <td>Academic Papers</td>
-        <td>18</td>
-        <td>Institutional Links</td>
+        <td>{{ papers_total }}</td>
+        <td>Institutional Links; {{ pdf_files }} PDF files held</td>
         <td><span class="badge badge-available">Available</span></td>
       </tr>
       <tr>
         <td>MDI Articles</td>
-        <td>17</td>
-        <td>Links</td>
-        <td><span class="badge badge-archived">Linked</span></td>
+        <td>{{ mdi_counted }} of {{ mdi_total }}</td>
+        <td>Full text in repo; the other {{ mdi_republished }} republish a work counted above</td>
+        <td><span class="badge badge-archived">Full text held</span></td>
       </tr>
       <tr>
         <td>Yaqeen Papers</td>
-        <td>9</td>
+        <td>{{ yaqeen_total }}</td>
         <td>Links</td>
         <td><span class="badge badge-available">Available</span></td>
       </tr>
       <tr>
         <td>Al Balagh Courses</td>
-        <td>33</td>
+        <td>{{ albalagh_total }}</td>
         <td>Links</td>
         <td><span class="badge badge-available">Available</span></td>
+      </tr>
+      <tr>
+        <td>Announcements (never counted)</td>
+        <td>{{ notices_total }}</td>
+        <td>Full text in repo</td>
+        <td><span class="badge badge-archived">Not counted</span></td>
+      </tr>
+      <tr>
+        <td>Third-party source records (never counted)</td>
+        <td>{{ site.data.secondary_sources | size }}</td>
+        <td>In Repository; derived from this archive&rsquo;s own catalogue</td>
+        <td><span class="badge badge-archived">Not counted</span></td>
       </tr>
     </tbody>
   </table>

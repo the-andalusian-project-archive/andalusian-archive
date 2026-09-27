@@ -5,9 +5,21 @@ noindex: true
 description: Client-side search across the archive's papers, video records and blog posts. The page is an application surface, so it is kept out of the search index while the pages it links to are not.
 ---
 
+{%- comment -%}
+  The searchable total is computed from the same three collections the page
+  actually loads below (papers, videos, works). It used to be a typed `143`,
+  which was 18 + 68 + 57 - correct for the pre-recount totals and stale the
+  moment the recount was applied. It is a Liquid count over `site.data`, so it
+  tracks the data the page fetches.
+{%- endcomment -%}
+{%- assign search_papers = 0 -%}{%- for p in site.data.papers -%}{%- assign search_papers = search_papers | plus: 1 -%}{%- endfor -%}
+{%- assign search_videos = 0 -%}{%- for v in site.data.videos -%}{%- assign search_videos = search_videos | plus: 1 -%}{%- endfor -%}
+{%- assign search_works = 0 -%}{%- for w in site.data.canonical_works -%}{%- assign search_works = search_works | plus: 1 -%}{%- endfor -%}
+{%- assign search_total = search_papers | plus: search_videos | plus: search_works -%}
+
 <div class="search-container">
   <h1>Search the Archive</h1>
-  <p class="search-subtitle">Search across all 143 preserved items: papers, videos, and blog posts.</p>
+  <p class="search-subtitle">Search across all {{ search_total }} preserved items: {{ search_works }} works, {{ search_videos }} videos and {{ search_papers }} papers. Transcript text is published under <a href="{{ '/transcripts/' | relative_url }}">Transcripts</a> and is not indexed here.</p>
 
   <div class="search-box">
     <span class="search-icon">

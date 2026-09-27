@@ -4,12 +4,21 @@ title: Academic Papers
 description: The archive's academic papers by venue and date, with the full text where the archive holds it, a link-out where it does not, and a page per paper.
 ---
 {%- comment -%}
-  Counts are computed, with one exception: the subtitle's paper total is the
-  figure published before the 2026-09-27 recount and is restored as a typed
-  number on purpose. 2026-09-27 (task 8f, Phase-3 review C1): the recount put
-  `_data/papers.json` at 20 rows and publishing that on this existing page went
-  past the Task 9 approval gate. The 20 is correct and waits for the owner
-  there, applied together with the homepage and README in one approved pass.
+  Every figure on this page is computed from `_data/papers.json` at build time,
+  including the subtitle's paper total.
+
+  2026-09-27 (task 8f, Phase-3 review C1): the subtitle used to carry a typed
+  `18` - the figure published before the recount - on the grounds that
+  publishing 20 would go past the Task 9 approval gate while the homepage still
+  published the pre-recount totals. That gate is now satisfied and the recount
+  is applied across every page in one pass, so the total is computed like the
+  rest.
+
+  `held` counts paper ROWS that carry a local PDF; `held_files` counts the PDF
+  FILES, which is one higher because one of those rows also carries a
+  translation under `additional_files`. The two are printed separately rather
+  than collapsed, because "6 PDFs" and "6 papers" are different claims and only
+  one of them is true.
 
   build_collections.py already writes the local PDF link and the per-file
   licence/provenance line into each paper's own page; this index repeats the
@@ -23,8 +32,25 @@ description: The archive's academic papers by venue and date, with the full text
 {%- assign held = 0 -%}{%- assign held_files = 0 -%}{%- for p in site.data.papers -%}{%- if p.file -%}{%- assign held = held | plus: 1 -%}{%- assign held_files = held_files | plus: 1 -%}{%- endif -%}{%- if p.additional_files -%}{%- assign held_files = held_files | plus: p.additional_files.size -%}{%- endif -%}{%- endfor -%}
 
 <h1 class="page-title">Academic Papers</h1>
-<p class="page-subtitle">18 research papers, articles, talks and book chapters, listed by publication venue.</p>
-<p class="page-note">{{ sole }} are his alone and {{ coauthored }} co-authored with a named co-author; a co-authored paper is counted once, under category B, and not again among his sole-authored work. {{ held }} of the {{ total }} hold a PDF in this repository ({{ held_files }} files in total, including translations); the rest are link-outs, because this project does not download a paper body it cannot obtain openly.</p>
+<p class="page-subtitle">{{ total }} research papers, articles, talks and book chapters, listed by publication venue.</p>
+<p class="page-note">{{ sole }} are his alone and {{ coauthored }} co-authored with a named co-author; a co-authored paper is counted once, under category B, and not again among his sole-authored work. {{ held }} of the {{ total }} hold a PDF in this repository &mdash; {{ held_files }} PDF files in total, one of them a translation of a paper already counted, so the file count is one higher than the paper count. The rest are link-outs, because this project does not download a paper body it cannot obtain openly.</p>
+{%- comment -%}
+  2026-09-28. The point of this cross-link is the access ledger, not the author.
+  Two of the twenty papers have a dead or restricted primary source - the 2015 ICR
+  paper, whose publisher domain no longer resolves and whose DOI is dead, and the
+  2014 IIUM thesis, whose full text the university restricts. Both are on this page
+  with their corrected citation, which is the one thing a reader with a broken
+  reference actually needs. The entity page carries who he is; the lost-and-found
+  page carries why a dead publisher is not the end of a citation.
+{%- endcomment -%}
+<p class="page-note">Every row below states its own access status, which is the part of a
+bibliography that goes out of date: {{ total }} rows, and for two of them the publisher or
+the DOI no longer resolves. If you are here because a citation you were given does not work,
+the corrected citation is printed on the paper&rsquo;s own page. For who wrote them, see
+<a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a>; for
+what became of the sites these papers were announced on, see
+<a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to the
+Andalusian Project&rsquo;s web presence</a>.</p>
 
 <h2>Sole-authored</h2>
 {%- comment -%}

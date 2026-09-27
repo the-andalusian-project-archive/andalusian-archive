@@ -1,0 +1,262 @@
+{
+  "built": "2026-09-28",
+  "built_by": "Hand-maintained registry, in the same style as _data/channel_facts.json and _data/taxonomy.json: it holds prose and URLs, never a count. Every count on the entity page is counted from the collection data files by Liquid at build time, so this file cannot make the page publish a figure the data does not support.",
+  "purpose": "The registry behind /asadullah-ali-al-andalususi/ and /asadullahali-com-what-happened/. It exists because those two pages have to state facts that are not in any collection file - which name forms are attested, where, and by whom - and a page that states such facts without recording where each one came from would be exactly the kind of claim this archive refuses to make.",
+
+  "external_check": {
+    "date": "2026-09-28",
+    "how": "HTTP HEAD, no query string, no credit-spending API, no search engine. Eleven URLs.",
+    "why": "A link-out is a citation. The archive's standing rule is that a URL is printed only when something established it; an unverified URL is not printed, and a URL that is printed carries the status it was given on the date it was checked.",
+    "statuses_are_point_in_time": "Every status below is the response on the date above and nothing more. None of them is a claim about what the host will do tomorrow."
+  },
+
+  "canonical_name": "Asadullah Ali Al-Andalusi",
+
+  "name_variants": [
+    {
+      "form": "Asadullah Ali Al-Andalusi",
+      "status": "in_corpus",
+      "role": "The form the archive publishes and the form used by the institutions that host his work.",
+      "attested_where": [
+        "_data/mdi_articles.json - the `author` field on all 17 Muslim Debate Initiative rows",
+        "_data/external_interviews.json - the `author` field on the 2020 Q&A",
+        "_data/albalagh_courses.json - the `instructor` field on the 3 courses he is recorded as teaching",
+        "_data/bibliography.json, _data/content_index.json, _data/secondary_sources.json - author lines and bio records"
+      ]
+    },
+    {
+      "form": "Asadullah Ali al-Andalusi",
+      "status": "in_corpus",
+      "role": "The same name with a lower-case second element. Both capitalisations are in the archive's own data, which is why the entity page prints both rather than picking one.",
+      "attested_where": [
+        "_data/bibliography.json - an author line in the access ledger",
+        "_data/channel_facts.json - quoted attribution prose in the channel-facts record"
+      ]
+    },
+    {
+      "form": "Asadullah Ali al Andalusi",
+      "status": "in_corpus",
+      "role": "Spaces instead of a hyphen, in the title of a Muslim Debate Initiative lecture page and in a third-party source record's note.",
+      "attested_where": [
+        "_data/mdi_articles.json - the title of one MDI page",
+        "_data/secondary_sources.json - a note on one third-party record"
+      ]
+    },
+    {
+      "form": "Asadullah Ali",
+      "status": "in_corpus",
+      "role": "The byline the Muslim Debate Initiative author archive records for the 17 pages recovered from it. This archive's own MDI pages state the byline as verified in exactly this short form.",
+      "attested_where": [
+        "_data/mdi_articles.json - every row's `author` value",
+        "_data/albalagh_courses.json, _data/papers.json, _data/linkouts.json, _data/bibliography.json, _data/content_index.json, _data/external_interviews.json"
+      ]
+    },
+    {
+      "form": "Asadullah Andalusi",
+      "status": "in_corpus",
+      "role": "The form on his own uploads. It appears in the titles of the archived recordings themselves, which are preserved verbatim, so it is part of the record rather than a variant this archive chose.",
+      "attested_where": [
+        "_data/videos.json - 21 occurrences in preserved recording titles",
+        "_data/transcript_coverage.json and _data/transcript_index.json - the same titles, carried onto the transcript records"
+      ]
+    },
+    {
+      "form": "Andalusi",
+      "status": "in_corpus",
+      "role": "The short form, used on his own channel's upload titles as the byline of The Andalusian Project.",
+      "attested_where": [
+        "_data/videos.json, _data/channel_facts.json, _data/superseded_videos.json - preserved titles and the quoted titles the channel-facts record reasons about"
+      ]
+    },
+    {
+      "form": "Ustadh Asadullah Ali Al-Andalusi",
+      "status": "external",
+      "role": "An honorific form used by Al Balagh Academy on its faculty page for him. The honorific is NOT attested anywhere inside this corpus: `Ustadh` appears zero times in `_data/`. It is listed here because a reader searching his name with that honorific should land on a page that says who it refers to, and the archive does not claim the form as its own.",
+      "attested_where": [
+        "Al Balagh Academy faculty page, verified HTTP 200 on 2026-09-28 - see external_attestations"
+      ]
+    },
+    {
+      "form": "Abu Isabel",
+      "status": "in_corpus",
+      "role": "His kunya. It reaches this archive from ONE place only: the live third-party YouTube title of a single recording, which is preserved verbatim in the video, transcript-coverage, superseded-video and channel-facts records. `NOTICE.md` section 6.1 states the same thing and records that the kunya is not withheld. It is a form of address, not a contact detail, and it is printed here on that basis.",
+      "attested_where": [
+        "_data/videos.json - 3 occurrences, all inside preserved or quoted recording titles",
+        "_data/transcript_index.json, _data/superseded_videos.json, _data/channel_facts.json - the same title, quoted in the fields that reason about it"
+      ]
+    }
+  ],
+
+  "roles": [
+    {
+      "role": "Founder",
+      "organisation": "The Andalusian Project",
+      "url": null,
+      "works_for": true,
+      "status": "stated",
+      "stated_by": "The archive's own homepage and README, and the name the surviving material was published under.",
+      "note": "This is the one affiliation with no third-party page behind it, because the organisation's own site is the thing that was lost. `/asadullahali-com-what-happened/` records what became of it."
+    },
+    {
+      "role": "Research fellow",
+      "organisation": "Yaqeen Institute for Islamic Research",
+      "url": "https://yaqeeninstitute.org/team/asadullah",
+      "works_for": false,
+      "status": "former_as_stated",
+      "stated_by": "README.md states it as `He has been a research fellow at the Yaqeen Institute for Islamic Research`. The homepage states the same affiliation in the present tense.",
+      "note": "The archive's own two pages disagree on the tense and this page does not resolve it. What is not in dispute is that Yaqeen remains the canonical publisher of his papers: the 2018 co-authored paper with Dr Jonathan Brown is still published there, and this archive holds it as a link-out rather than a copy."
+    },
+    {
+      "role": "Member",
+      "organisation": "Muslim Debate Initiative",
+      "url": "https://muslimdebate.org/author/asadullahali/",
+      "works_for": false,
+      "status": "former_as_stated",
+      "stated_by": "README.md lists it inside the same `has been` sentence as the Yaqeen fellowship; the homepage states it in the present tense.",
+      "note": "MDI remains live and remains the canonical host of the 17 author-archive articles this archive holds full text of. Attribution on those 17 is a byline question and is answered by byline, not by the organisation's continuing existence."
+    },
+    {
+      "role": "Lecturer",
+      "organisation": "Al Balagh Academy",
+      "url": "https://www.albalaghacademy.org/ustaad/ustadh-asadullah-ali-al-andalusi/",
+      "works_for": false,
+      "status": "attested_in_data",
+      "stated_by": "_data/albalagh_courses.json carries 33 catalogued Al Balagh courses, of which 3 record `instructor: Asadullah Ali Al-Andalusi`.",
+      "note": "This is the only one of the four affiliations the archive can evidence from its own data rather than from prose: the 3 named courses are the evidence. README.md describes the subjects he lectures on - contemporary atheism, philosophy of science, Islamic political thought and information literacy - and _data/albalagh_courses.json and the 5-part `A Muslim's Guide to Science and Scientism` recording series are where that description is visible."
+    }
+  ],
+
+  "external_attestations": [
+    {
+      "label": "Yaqeen Institute - team page for Asadullah Ali",
+      "url": "https://yaqeeninstitute.org/team/asadullah",
+      "http_status": 200,
+      "profile": true,
+      "what_it_attests": "The Yaqeen Institute affiliation, and Yaqeen's own profile of him.",
+      "note": "Yaqeen is the canonical publisher of his co-authored 2018 paper. This archive records that paper as a link-out and does not mirror it."
+    },
+    {
+      "label": "Al Balagh Academy - faculty page for Usth. Asadullah Ali Al-Andalusi",
+      "url": "https://www.albalaghacademy.org/ustaad/ustadh-asadullah-ali-al-andalusi/",
+      "http_status": 200,
+      "profile": true,
+      "what_it_attests": "The `Ustadh` honorific form of his name, and his Al Balagh teaching.",
+      "note": "The archive's own research records this page as near-identical, self-repeating prose on two hosts and factually careless about his degree. That is a statement about the page, dated to 2026-09-27, and it is not repeated as a claim here. The page is linked because it is where the honorific form is attested and because it is the highest-authority public source for the Al Balagh role."
+    },
+    {
+      "label": "Muslim Debate Initiative - author archive",
+      "url": "https://muslimdebate.org/author/asadullahali/",
+      "http_status": 200,
+      "profile": true,
+      "what_it_attests": "The byline under which MDI holds 17 pages of his writing, which this archive holds in full text.",
+      "note": "The MDI author id the recovery used is 16585639 and the byline was verified as `Asadullah Ali` at recovery time. MDI is the canonical host of that prose; this archive does not compete with it and points outward to it."
+    },
+    {
+      "label": "Traversing Tradition - Science, History, and Atheism: Q&A with Asadullah Ali (19 November 2020)",
+      "url": "https://traversingtradition.com/2020/11/19/science-history-and-athiesm-qa-with-asadullah-ali/",
+      "http_status": 200,
+      "profile": false,
+      "what_it_attests": "The most recent dated third-party item in this corpus: a 9-question Q&A on science, history and atheism.",
+      "note": "Held as a link-out in _data/external_interviews.json. It is counted once in the archive's total, as one interview, and is not counted again anywhere."
+    },
+    {
+      "label": "Academia.edu - Asadullah Ali profile",
+      "url": "https://independent.academia.edu/AsadullahAli",
+      "http_status": 403,
+      "profile": true,
+      "what_it_attests": "A third-party repository profile carrying some of his academic texts.",
+      "note": "HTTP 403 on 2026-09-28, behind the managed Cloudflare challenge the archive records in _data/bibliography.json. The challenge was not fought and no user-agent was spoofed, so the page's current contents are unverified. The URL is listed because the archive's own footer already prints it and because the 403 is a bot challenge rather than an absence."
+    },
+    {
+      "label": "Internet Archive - the andalusian-project collection",
+      "url": "https://archive.org/details/andalusian-project",
+      "http_status": 200,
+      "profile": false,
+      "what_it_attests": "Where the preserved recordings physically sit, uploaded by him and now held by the Internet Archive.",
+      "note": "Not a profile of him. Listed because it is the surviving home of the video corpus and the only place most of these transcripts are recoverable from."
+    }
+  ],
+
+  "disambiguation": {
+    "other_person_name": "Abdullah al-Andalusi",
+    "other_person_name_forms": [
+      "Abdullah al-Andalusi",
+      "Abdullah al Andalusi"
+    ],
+    "other_person_also_called": "a separate, active Muslim speaker, London-based, who runs his own site and channel under that name",
+    "other_person_site_plain_text": "abdullahalandalusi.com",
+    "other_person_channel_plain_text": "youtube.com/@AbdullahalAndalusi",
+    "external_check_note": "Both of the other person's own properties answered HTTP 200 on 2026-09-28, so the two names are live at the same time and the confusion is current rather than historical.",
+    "why_the_two_appear_together_in_this_corpus": "Because the author himself writes about the other man in the third person. In the recovered work `whataboutery` (2015), whose text is preserved in this repository and published verbatim, the author describes `MDI representative Abdullah Al-Andalusi` as someone else in the room: `...her frequent interruptions, appeals to emotion, question begging, and her shouting over MDI representative Abdullah Al-Andalusi as he was comprehensively detailing the cruel oppression of state actors...`. The same post carries the tag `Abdullah al Andalusi`. That is the archive's own primary evidence that the two are two people, and it is stronger than any external source, because it is the subject distinguishing them in his own published words.",
+    "the_mislabelling_runs_both_ways": "Four preserved recording titles in _data/videos.json name `Abdullah al Andalusi` or `Abdullah Al-Andalusi` for recordings this archive attributes to Asadullah Ali, and four more rows record in their own `source` field that the recording was placed with him by a sweep of the muslimdebate.org byline, where the byline reads `The Big Atheism-Theism Debate: Dr. Arif Ahmed vs Abdullah al-Andalusi`. In every one of those eight rows the attribution rests on the byline, not on the name in the title, and the row says so.",
+    "the_gate": "The archive's byline gate is the thing that keeps the two apart, and it is a rule rather than a judgement: a row counts as his on the strength of the byline the publishing site records, and never on the strength of a name in a title. Concretely - all 17 rows in _data/mdi_articles.json carry `author: Asadullah Ali Al-Andalusi`, recovered from the MDI author archive under author id 16585639 with the byline verified as `Asadullah Ali`; and the eight rows named above record their basis in the row's own `source` field. The rule is written down and executable in scripts/apply_taxonomy.py, which stamps `category` and `counted` on every countable row from the data and can be re-run with `--check` to prove nothing drifted. It is the same principle the archive applies everywhere else: the assignment is computed from evidence and re-checkable, not asserted.",
+    "why_it_is_printed_here": "Because the collision is the reason a search for one name returns the other, and because a page that silently resolved it would be making a claim the archive can support only for rows it has actually measured. A reader looking for the other man should reach a page that tells them plainly that this is the wrong one, rather than a page that quietly credits him with someone else's work."
+  },
+
+  "loss_record": {
+    "sites": [
+      {
+        "what": "The Andalusian Project's own website",
+        "host": "asadullahali.com",
+        "state": "defunct, then taken over",
+        "note": "Rendered as plain text on the lost-and-found page, never as a link, under the rule in NOTICE.md section 7 and implemented in _includes/source_link.html."
+      },
+      {
+        "what": "The WordPress mirror of the same site",
+        "host": "asadullahali.wordpress.com",
+        "state": "still up, emptied",
+        "note": "The site chrome and his bio paragraph are still served; the post bodies are gone. It is a navigable, described, empty shell, and it is the single most useful recovery source in the project because its own API still returned the post list and the missing bodies came from the Wayback Machine."
+      },
+      {
+        "what": "The YouTube channel",
+        "host": "The channel id recorded in _data/channel_facts.json",
+        "state": "videos removed around October 2022; reads not available",
+        "note": "The dated record of what each capture showed is on /channel/. The catalogue of what survives is on /videos/."
+      },
+      {
+        "what": "The journal that published one of his papers",
+        "host": "icrjournal.org",
+        "state": "does not resolve",
+        "note": "This is why the archive holds a byte-verified copy of the ICR 6(2) paper and records its DOI as dead."
+      }
+    ]
+  },
+
+  "queries": [
+    {
+      "q": "asadullahali.com",
+      "a": "It was the author's own website and the original home of The Andalusian Project's writing. The site is defunct. The domain no longer belongs to him: it now resolves and serves an unrelated, commercially operated gambling site, and it should not be visited. This archive does not control the domain and does not claim to represent it.",
+      "short": "It was his site. It is defunct, the domain has since been taken over by an unrelated gambling operation, and it should not be visited."
+    },
+    {
+      "q": "andalusian project website",
+      "a": "The Andalusian Project's site was asadullahali.com, with a WordPress mirror at asadullahali.wordpress.com. Both are effectively gone as a place to read the work: the first domain is hijacked, and the mirror is still up with its post bodies removed.",
+      "short": "The site was asadullahali.com plus a WordPress mirror. One is hijacked; the other is an empty shell."
+    },
+    {
+      "q": "andalusian project website dead",
+      "a": "Yes, and the archive states why per item rather than in summary. Every recovered work carries the Wayback capture it was recovered from, so a citation resolves to what was actually written rather than to a site that no longer serves it.",
+      "short": "Yes. Every recovered work carries the dated capture it came from, so the citation still resolves."
+    },
+    {
+      "q": "asadullah ali website",
+      "a": "Two properties existed: asadullahali.com and the WordPress mirror asadullahali.wordpress.com. The first is hijacked and is printed here as plain text only. The second is still up but its post bodies have been removed. This archive holds the recovered work with per-item provenance.",
+      "short": "asadullahali.com is hijacked; the WordPress mirror is up but emptied. The recovered work is here, with provenance."
+    },
+    {
+      "q": "asadullah ali website not working",
+      "a": "That is the correct description and it is not a fault on the reader's side. The domain resolves and answers, which is exactly why a link to it is dangerous: it returns a live page that has nothing to do with him. Follow the Wayback capture recorded on each page here instead.",
+      "short": "Correct, and not your fault. The domain answers - with someone else's site. Use the recorded captures."
+    },
+    {
+      "q": "andalusian project youtube channel gone",
+      "a": "The videos are gone. The channel id continued to exist and was captured repeatedly, so the archive holds a dated record of what it showed, and 68 catalogued recordings with their ids, durations and surviving copies. Most of the recordings are preserved as files in the Internet Archive's andalusian-project collection, and 68 of them have machine transcripts published here.",
+      "short": "The videos are gone. 68 recordings are catalogued, most preserved on the Internet Archive, with 68 transcripts here."
+    },
+    {
+      "q": "what happened to the andalusian project",
+      "a": "Three separate things, and the archive keeps them apart because they are not the same event. The written work was scattered across Wayback captures, an Internet Archive directory, a live third-party site and an emptied WordPress shell, and has been gathered here with per-item provenance. The video channel lost its videos around October 2022 and its history is recorded capture by capture. The original domain was taken over. Nothing here says the author stopped writing; it says where the published work is and where it is not.",
+      "short": "The writing was scattered and is gathered here; the channel lost its videos in 2022; the domain was taken over."
+    }
+  ]
+}

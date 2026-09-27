@@ -1,0 +1,111 @@
+{%- comment -%}
+  One series page, for the seven multi-part series in `_data/series.json`
+  (2026-09-28).
+
+  Seven files under `series/` declare nothing but their slug and their own
+  title/description in front matter, and this include renders the rest. That
+  split is deliberate: the title and description are editorial, so they belong
+  where every other page on this site keeps its editorial text, in front matter;
+  everything that could be a number, a name, a link or a status is read from
+  `_data/series.json` at build time, so none of it can drift from the recording
+  catalogue it describes.
+
+  NOTHING HERE TYPES A COUNT. `s.part_count`, `s.transcript_words` and every
+  per-part word total are read out of the data file, which
+  `scripts/build_series_index.py` generates and `--check` re-derives. The
+  series' own numbers - the channel's upload number and the channel's part
+  wording, such as "Session 3" or "Ep. 4" - are the channel's, recovered with the
+  titles, and are printed as recovered rather than renumbered here.
+
+  A series is a VIEW over recordings that are already counted once each in
+  `_data/videos.json`. Nothing on this page adds to the archive's published total.
+
+  PARAMETER: slug - the series slug, i.e. `page.series_slug` from the caller.
+{%- endcomment -%}
+{%- assign sx = site.data.series -%}
+{%- assign series = nil -%}
+{%- for s in sx.series -%}
+  {%- if s.slug == include.slug -%}{%- assign series = s -%}{%- endif -%}
+{%- endfor -%}
+{%- if series == nil -%}
+  {%- comment -%}
+    A slug with no row in `_data/series.json` renders nothing below this line.
+    Liquid cannot abort a build, so the guard is the verification step instead:
+    all seven pages are checked for rendered parts after every build, and a new
+    file whose slug is not in the data file fails that check rather than
+    shipping an empty page with a title.
+  {%- endcomment -%}
+{%- endif -%}
+{%- assign ix = site.data.transcript_index -%}
+{%- assign with_transcript = 0 -%}{%- for p in series.parts -%}{%- if p.transcript_url != "" -%}{%- assign with_transcript = with_transcript | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- assign on_ia = 0 -%}{%- for p in series.parts -%}{%- if p.archive_org -%}{%- assign on_ia = on_ia | plus: 1 -%}{%- endif -%}{%- endfor -%}
+
+<h1 class="page-title">{{ series.title | escape }}</h1>
+<p class="page-subtitle">{{ series.part_count }} parts, {{ series.transcript_words }} words of published machine transcript.</p>
+
+<div class="info-block">
+  <h3>What this series is</h3>
+  <p>{{ series.framing | escape }}</p>
+  <p>{{ with_transcript }} of the {{ series.part_count }} parts carry a published machine
+  transcript{% if with_transcript != series.part_count %}, and the remaining
+  {{ series.part_count | minus: with_transcript }} say so on their own recording page rather
+  than linking nothing{% endif %}. {{ on_ia }} of the {{ series.part_count }} recordings are
+  preserved as files in the Internet Archive&rsquo;s <code>andalusian-project</code>
+  collection.</p>
+  <p class="transcript-disclaimer"><em>{{ ix.disclaimer }}</em></p>
+</div>
+
+<h2>The parts, in the order the channel numbered them</h2>
+<p class="page-note">The numbering and the part wording are the channel&rsquo;s own, recovered
+with the preserved titles. This archive does not renumber a series: where the channel
+skipped a number or closed a title with a different label, that is what is printed.</p>
+
+<div class="card-grid">
+{%- for p in series.parts %}
+  <div class="card">
+    <h3>{% if p.part_label != "" %}{{ p.part_label | escape }}{% else %}No. {{ p.number }}{% endif %}</h3>
+    <div class="card-meta">upload {{ p.number }} &middot; <code>{{ p.video_id }}</code>{% if p.transcript_words > 0 %} &middot; {{ p.transcript_words }} transcript words{% endif %}</div>
+    <div class="card-body">{{ p.title | escape }}</div>
+    <div class="card-actions">
+      {% if p.transcript_url != "" %}
+      <a href="{{ p.transcript_url | relative_url }}" class="btn btn-primary btn-sm">Read the transcript</a>
+      {% else %}
+      <span class="tag tag-status">transcript preserved, not attached to this entry</span>
+      {% endif %}
+      <a href="{{ p.recording_url | relative_url }}" class="btn btn-outline btn-sm">Recording</a>
+    </div>
+    {%- if p.transcript_of_same_recording > 0 %}
+    <div class="card-tags">
+      <span class="tag tag-topic">+{{ p.transcript_of_same_recording }} further transcript{% if p.transcript_of_same_recording != 1 %}s{% endif %} of this recording from a duplicate upload</span>
+    </div>
+    {%- endif %}
+  </div>
+{%- endfor %}
+</div>
+
+<div class="section">
+  <div class="info-block">
+    <h3>What a machine transcript is, and is not</h3>
+    <p>Each of these texts is speech-recognition output over the recording&rsquo;s own
+    captions. It is published exactly as the machine wrote it: no correction, no
+    spell-checking, no smoothing, and paragraphs broken only on pauses of more than two
+    seconds. It mishears names, loses negations and flattens argument, and it is printed
+    with that sentence above it for a reason.</p>
+    <p>What it is good for is finding the passage. Across the {{ ix.documents }} transcripts
+    in this archive &mdash; {{ ix.words }} words &mdash; this is the only full text of these
+    talks that exists anywhere. A reader who wants to know what was argued in session three
+    can read session three, and then go back to the recording for the parts the machine got
+    wrong.</p>
+  </div>
+</div>
+
+<p class="page-note">Series grouping is derived by
+<code>scripts/build_series_index.py</code> from the channel&rsquo;s own
+<code>NN&nbsp;-&nbsp;&lt;series name&gt;</code> title shape, and the rule is re-checkable with
+<code>--check</code>. It is a view, not a category system: recordings that are not parts of a
+series are not filed under an invented one. See
+<a href="{{ '/transcripts/by-series/' | relative_url }}">the series index</a> for what is
+grouped and what is not, <a href="{{ '/transcripts/' | relative_url }}">the full
+transcript list</a>, and
+<a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a> for who
+the author is.</p>

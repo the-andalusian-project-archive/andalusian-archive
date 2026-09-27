@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T20:51:53.592148",
+  "last_updated": "2026-09-28T02:29:56.826451",
   "project_name": "The Andalusian Project Archive",
   "author": "Asadullah Ali Al-Andalusi",
   "description": "Digital preservation of Asadullah Ali Al-Andalusi's work for academic research and education",
@@ -10,7 +10,16 @@
     "total_videos": 68,
     "total_papers": 20,
     "total_content": 207,
-    "total_content_formula": "72 works + 68 videos + 20 papers + 4 MDI (of 17 rows; 13 are second publications of a work already counted) + 9 Yaqeen (link-outs, sizes not stored) + 33 AlBalagh (link-outs) + 1 interview = 207 (excludes derived secondary_sources and the 3 uncounted announcements; blog uses works, not 87 captures; the Yaqeen and AlBalagh terms are row counts of link-outs, not measured content)",
+    "total_content_formula": "72 works + 68 videos + 20 papers + 4 MDI items (of 17 rows; 13 are a second publication of a work already counted, so they are not added again) + 9 Yaqeen link-outs (row count; no page body was downloaded, so no size is stored) + 33 Al Balagh link-outs (row count) + 1 interview = 207 (excludes the derived secondary_sources and the 3 uncounted announcements; the blog term is the works list, not the 87 CDX captures)",
+    "total_content_terms": {
+      "works": 72,
+      "videos": 68,
+      "papers": 20,
+      "mdi_counted": 4,
+      "yaqeen_linkouts": 9,
+      "albalagh_linkouts": 33,
+      "interviews": 1
+    },
     "blog_status_counts": {
       "found": 47,
       "lost": 1,
@@ -28,7 +37,7 @@
   },
   "collections": {
     "blog_posts": {
-      "description": "72 works (47 full-text in repo, 1 lost, 24 Wayback-only); 87 CDX captures preserved as metadata",
+      "description": "72 works (47 full-text in repo, 24 Wayback-only, 1 lost); 87 CDX captures preserved as metadata",
       "count": 87,
       "storage": "METADATA IN REPO (full text for 47 found works only)",
       "risk_level": "HIGH - original site offline"
@@ -42,7 +51,7 @@
     "papers": {
       "description": "Academic papers and research articles",
       "count": 20,
-      "storage": "LINKS to institutional repositories, plus 5 held PDFs",
+      "storage": "LINKS to institutional repositories, plus 6 PDF files held across 5 of the 20 papers",
       "risk_level": "LOW - institutionally hosted"
     },
     "mdi_articles": {
@@ -117,7 +126,7 @@
     }
   },
   "preservation_notes": {
-    "blog_posts": "72 works (47 full-text in repo, 1 lost, 24 Wayback-only); 87 CDX captures preserved as metadata. Recovered 2026-09-07 via canonical Wayback fetch, junk-purged 2026-09-08; WordPress-mirror, IDI and best-capture recoveries integrated 2026-09-27 (see recovery_log.json and bibliography.json).",
+    "blog_posts": "72 works (47 full-text in repo, 24 Wayback-only, 1 lost); 87 CDX captures preserved as metadata. Recovered 2026-09-07 via canonical Wayback fetch, junk-purged 2026-09-08; WordPress-mirror, IDI and best-capture recoveries integrated 2026-09-27 (see recovery_log.json and bibliography.json).",
     "notices": "3 announcements (book lists, library updates, link posts) catalogued in notices.json with counted_as_work=false. They carry the recovered text but are excluded from every total.",
     "videos": "68 videos catalogued in videos.json; mirrors attach as mirror_urls and are never counted separately.",
     "papers": "Academic papers are hosted by Yaqeen Institute and other institutions; links are provided for access, and the texts legitimately obtained are held under _papers/pdfs/. See bibliography.json for the full oa/restricted/dead ledger.",

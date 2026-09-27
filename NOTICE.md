@@ -19,15 +19,19 @@ A preservation record. The original sites were taken down, mirrored, or
 otherwise lost; this repository holds what could be recovered before it
 disappeared, with a record of where each piece came from.
 
-It currently holds, as of 2026-09-27:
+It currently holds, as of 2026-09-28:
 
 | | |
 |---|---|
 | Written works | **72** catalogued — 47 with full text recovered in this repository, 24 held only as Wayback captures, 1 lost entirely |
 | Capture records | **87** Wayback/CDX capture records preserved as metadata |
-| Videos | **68** catalogued, with **68** machine-transcript documents |
-| Academic papers | **20** catalogued, of which **6** PDFs are held in this repository |
-| Third-party source records | **70** rows |
+| Videos | **68** catalogued, with **68** machine-transcript documents; 57 catalogued entries carry a transcript attached and 11 declare none, by design |
+| Academic papers | **20** catalogued, of which **6** PDFs are held in this repository (6 files across 5 of the paper records; one of the six is a translation of a paper already counted) |
+| MDI author-archive pages | **17** rows catalogued, of which **4** are distinct items of content; the other 13 republish a work already counted above and are not counted again |
+| Announcements | **3** catalogued, held with their text, and never counted as works |
+| Link-outs | **10** catalogued, never fetched, and never counted |
+| Third-party source records | **70** rows, catalogued and never counted |
+| **Total counted content** | **207** — 72 works + 68 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview. Every term is counted from `_data/` at build time; the secondary-source records, the 13 republished MDI rows, the 3 announcements and the 10 link-outs are catalogued and deliberately outside the sum. |
 
 Where a work was recovered, the reproduction is **verbatim**. This archive does
 not edit his prose, does not summarise it in place of it, and does not correct

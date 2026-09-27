@@ -189,3 +189,20 @@ description: What the captures of The Andalusian Project's YouTube channel show,
 <p>{{ f.evidence_files.how_to_recheck_a_row | escape }}</p>
 <p>{{ f.evidence_files.staging_is_temporary | escape }}</p>
 <p>The channel id <code>{{ f.channel.uc_id }}</code> is recorded on this page as text, as provenance. It is not a link, and it is not a claim that the page behind it is his, alive, or available.</p>
+
+{%- comment -%}
+  2026-09-28: two cross-links, placed here because this page is where a reader
+  arrives having just discovered the channel is gone. The first is the account of
+  what happened to the channel's own properties, which is the question this page
+  provokes; the second is the series index, because a good number of the
+  recordings catalogued here are parts of a numbered series and their transcripts
+  are now grouped by those series rather than only by recording.
+{%- endcomment -%}
+<p class="page-note">The recordings catalogued here are also grouped by series on
+<a href="{{ '/transcripts/by-series/' | relative_url }}">the transcripts-by-series index</a>,
+which links each part of <em>Understanding Atheism</em>, <em>iJihad</em>, <em>A Muslim&rsquo;s
+Guide to Science and Scientism</em> and the other recorded series straight to its transcript.
+For what became of the site this channel belonged to, see
+<a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to the
+Andalusian Project&rsquo;s web presence</a>; for who the author is, see
+<a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a>.</p>

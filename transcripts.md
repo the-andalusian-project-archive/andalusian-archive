@@ -54,6 +54,25 @@ description: Every machine transcript this archive holds, one page per capture, 
   </div>
 </div>
 
+{%- comment -%}
+  2026-09-28. This list is grouped by RECORDING, which is the archive's counting
+  unit and the right unit for a catalogue. It is the wrong unit for a reader who
+  wants one session of one series, so the multi-part series the channel itself
+  numbered now have pages of their own. The link sits at the top of the list,
+  because a reader who arrives from a search for `understanding atheism session 3
+  transcript` should not have to know this page exists first.
+{%- endcomment -%}
+<div class="info-block">
+  <h3>Looking for one part of a series?</h3>
+  <p>These {{ ix.documents }} documents are listed by recording, which is how the archive
+  counts them. The {{ site.data.series.series_count }} multi-part series the channel
+  numbered &mdash; <em>Understanding Atheism</em>, <em>iJihad</em>,
+  <em>A Muslim&rsquo;s Guide to Science and Scientism</em>, <em>iKhalifa</em> and three more
+  &mdash; have pages of their own, each listing its parts in the channel&rsquo;s order and
+  linking straight to the transcript:
+  <a href="{{ '/transcripts/by-series/' | relative_url }}">transcripts by series</a>.</p>
+</div>
+
 <h2>Transcripts of catalogued recordings</h2>
 <p class="page-note">{{ attached }} capture{% if attached != 1 %}s{% endif %}, one per recording. Where a recording has more than one published transcript, they are listed together.</p>
 <div class="card-grid">

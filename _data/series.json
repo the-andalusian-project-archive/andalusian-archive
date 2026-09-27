@@ -1,0 +1,616 @@
+{
+  "built": "2026-09-28",
+  "built_by": "scripts/build_series_index.py. The rules are in that file and the command is `python scripts/build_series_index.py --check`. This file is generated; edit the script, not the JSON.",
+  "purpose": "Groups the preserved recordings into the multi-part series the channel itself numbered, so each series can be indexed. It is the grouping signal for /transcripts/by-series/ and the seven series pages under it.",
+  "grouping_signal": "The channel's own `NN - <series name>` title shape, recovered verbatim in the preserved recording titles. Not `themes`, `topics` or `tone`: those are produced by a first-match-wins substring classifier (scripts/generate_video_themes.py) whose largest bucket is its `default` branch, so they relabel rows rather than group them, and no per-transcript topic field exists in _data/transcript_index.json or _data/transcript_coverage.json.",
+  "series": [
+    {
+      "slug": "understanding-atheism",
+      "title": "Understanding Atheism",
+      "framing": "A six-session lecture series on atheism, naturalism and the epistemology of belief without evidence, numbered 01 to 06 by the channel itself and each session published as a separate recording. All six sessions are in this archive and all six have a published transcript.",
+      "parts": [
+        {
+          "number": 1,
+          "part_label": "Session 1",
+          "video_id": "NyAVl7RsEOs",
+          "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]",
+          "recording_url": "/videos/NyAVl7RsEOs/",
+          "transcript_url": "/transcripts/NyAVl7RsEOs/",
+          "transcript_words": 9059,
+          "transcript_of_same_recording": 2,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 2,
+          "part_label": "Session 2",
+          "video_id": "CEzMdCn0Ims",
+          "title": "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]",
+          "recording_url": "/videos/CEzMdCn0Ims/",
+          "transcript_url": "/transcripts/CEzMdCn0Ims/",
+          "transcript_words": 15017,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 3,
+          "part_label": "Session 3",
+          "video_id": "lZkv38vd7bw",
+          "title": "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]",
+          "recording_url": "/videos/lZkv38vd7bw/",
+          "transcript_url": "/transcripts/lZkv38vd7bw/",
+          "transcript_words": 19782,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 4,
+          "part_label": "Session 4",
+          "video_id": "wVehdVlLdBI",
+          "title": "04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]",
+          "recording_url": "/videos/wVehdVlLdBI/",
+          "transcript_url": "/transcripts/wVehdVlLdBI/",
+          "transcript_words": 11071,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 5,
+          "part_label": "Session 5",
+          "video_id": "BRDaCqipcwM",
+          "title": "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]",
+          "recording_url": "/videos/BRDaCqipcwM/",
+          "transcript_url": "/transcripts/BRDaCqipcwM/",
+          "transcript_words": 12374,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 6,
+          "part_label": "Session 6",
+          "video_id": "lS7h9SKKtVc",
+          "title": "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]",
+          "recording_url": "/videos/lS7h9SKKtVc/",
+          "transcript_url": "/transcripts/lS7h9SKKtVc/",
+          "transcript_words": 12301,
+          "transcript_of_same_recording": 1,
+          "archive_org": true,
+          "in_coverage_data": true
+        }
+      ],
+      "part_count": 6,
+      "numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "transcript_words": 79604
+    },
+    {
+      "slug": "ijihad",
+      "title": "iJihad",
+      "framing": "A six-episode run responding to the online material published under the name The Masked Arab. The episodes are numbered in the titles themselves - Ep. 1, Ep. 3, Ep. 4, Ep. 5, Ep. 6, plus one untitled instalment - and the numbering is the channel's, not this archive's. This series is a record of a reply, and is preserved as one.",
+      "parts": [
+        {
+          "number": 9,
+          "part_label": "Ep. 1: Gryffix",
+          "video_id": "RnkqSMTzvCg",
+          "title": "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]",
+          "recording_url": "/videos/RnkqSMTzvCg/",
+          "transcript_url": "/transcripts/RnkqSMTzvCg/",
+          "transcript_words": 4571,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 10,
+          "part_label": "Gryffix and Kraut and Tea",
+          "video_id": "fgsVa-khWp4",
+          "title": "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]",
+          "recording_url": "/videos/fgsVa-khWp4/",
+          "transcript_url": "/transcripts/fgsVa-khWp4/",
+          "transcript_words": 3447,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 11,
+          "part_label": "Ep. 3: Sargonic Suicide",
+          "video_id": "1962338957360877",
+          "title": "11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]",
+          "recording_url": "/videos/1962338957360877/",
+          "transcript_url": "/transcripts/1962338957360877/",
+          "transcript_words": 11580,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 12,
+          "part_label": "Ep. 4: The Masked Arab",
+          "video_id": "8rEb8NfMPuc",
+          "title": "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]",
+          "recording_url": "/videos/8rEb8NfMPuc/",
+          "transcript_url": "/transcripts/8rEb8NfMPuc/",
+          "transcript_words": 10527,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 14,
+          "part_label": "Ep. 5: The Masked Arab Returns",
+          "video_id": "Zo-VRMEY-ic",
+          "title": "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]",
+          "recording_url": "/videos/Zo-VRMEY-ic/",
+          "transcript_url": "/transcripts/Zo-VRMEY-ic/",
+          "transcript_words": 8661,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 42,
+          "part_label": "Ep. 6: Apostate Prophet",
+          "video_id": "Mj_J1Rk1esY",
+          "title": "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]",
+          "recording_url": "/videos/Mj_J1Rk1esY/",
+          "transcript_url": "/transcripts/Mj_J1Rk1esY/",
+          "transcript_words": 3029,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        }
+      ],
+      "part_count": 6,
+      "numbers": [
+        9,
+        10,
+        11,
+        12,
+        14,
+        42
+      ],
+      "transcript_words": 41815
+    },
+    {
+      "slug": "a-muslims-guide-to-science-and-scientism",
+      "title": "A Muslim's Guide to Science and Scientism",
+      "framing": "A five-part Al Balagh Academy lecture course on science, scientism and the claim that one commits the other, numbered 16 to 20 by the channel. This is the series the archive's own data records as his Al Balagh teaching: it is the only multi-part course in the corpus that is attested in _data/ as well as in the recording titles.",
+      "parts": [
+        {
+          "number": 16,
+          "part_label": "Al-Balagh Academy | Part 1",
+          "video_id": "X36xEj0OSV4",
+          "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]",
+          "recording_url": "/videos/X36xEj0OSV4/",
+          "transcript_url": "/transcripts/X36xEj0OSV4/",
+          "transcript_words": 3356,
+          "transcript_of_same_recording": 1,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 17,
+          "part_label": "Al-Balagh Academy | Part 2",
+          "video_id": "vh-6sisOncs",
+          "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]",
+          "recording_url": "/videos/vh-6sisOncs/",
+          "transcript_url": "/transcripts/vh-6sisOncs/",
+          "transcript_words": 5370,
+          "transcript_of_same_recording": 1,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 18,
+          "part_label": "Al-Balagh Academy | Part 3",
+          "video_id": "WED5mPmO_yU",
+          "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]",
+          "recording_url": "/videos/WED5mPmO_yU/",
+          "transcript_url": "/transcripts/WED5mPmO_yU/",
+          "transcript_words": 5079,
+          "transcript_of_same_recording": 1,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 19,
+          "part_label": "Al-Balagh Academy | Part 4",
+          "video_id": "tIFhyQtxQXg",
+          "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]",
+          "recording_url": "/videos/tIFhyQtxQXg/",
+          "transcript_url": "/transcripts/tIFhyQtxQXg/",
+          "transcript_words": 4439,
+          "transcript_of_same_recording": 1,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 20,
+          "part_label": "Al-Balagh Academy | Part 5",
+          "video_id": "PoNiuiP3W4Y",
+          "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]",
+          "recording_url": "/videos/PoNiuiP3W4Y/",
+          "transcript_url": "/transcripts/PoNiuiP3W4Y/",
+          "transcript_words": 3471,
+          "transcript_of_same_recording": 1,
+          "archive_org": true,
+          "in_coverage_data": true
+        }
+      ],
+      "part_count": 5,
+      "numbers": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "transcript_words": 21715
+    },
+    {
+      "slug": "book-recommendations",
+      "title": "Book Recommendations",
+      "framing": "Three numbered recommendation videos, #1 to #3. The only series in the corpus that is neither a lecture course nor a debate run.",
+      "parts": [
+        {
+          "number": 49,
+          "part_label": "#1",
+          "video_id": "KjUPbkqRxac",
+          "title": "49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]",
+          "recording_url": "/videos/KjUPbkqRxac/",
+          "transcript_url": "/transcripts/KjUPbkqRxac/",
+          "transcript_words": 5195,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 52,
+          "part_label": "#2",
+          "video_id": "Qiay_L4IQ88",
+          "title": "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]",
+          "recording_url": "/videos/Qiay_L4IQ88/",
+          "transcript_url": "/transcripts/Qiay_L4IQ88/",
+          "transcript_words": 3005,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 54,
+          "part_label": "#3",
+          "video_id": "NGtNHgTwhXc",
+          "title": "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]",
+          "recording_url": "/videos/NGtNHgTwhXc/",
+          "transcript_url": "/transcripts/NGtNHgTwhXc/",
+          "transcript_words": 2660,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        }
+      ],
+      "part_count": 3,
+      "numbers": [
+        49,
+        52,
+        54
+      ],
+      "transcript_words": 10860
+    },
+    {
+      "slug": "understanding-jihad-with-robert-spencer",
+      "title": "Understanding Jihad with Robert Spencer",
+      "framing": "Three recordings - a preface and two numbered parts - in which he responds to Robert Spencer. Held as a series because the three titles name the same interlocutor and carry the channel's own preface/part numbering.",
+      "parts": [
+        {
+          "number": 35,
+          "part_label": "w/ Robert Spencer (Preface)",
+          "video_id": "8vxbN2jZL6M",
+          "title": "35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]",
+          "recording_url": "/videos/8vxbN2jZL6M/",
+          "transcript_url": "/transcripts/8vxbN2jZL6M/",
+          "transcript_words": 1828,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 36,
+          "part_label": "w/ Robert Spencer #1",
+          "video_id": "lCqZB8gP4sk",
+          "title": "36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]",
+          "recording_url": "/videos/lCqZB8gP4sk/",
+          "transcript_url": "/transcripts/lCqZB8gP4sk/",
+          "transcript_words": 4639,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 37,
+          "part_label": "w/ Robert Spencer #2",
+          "video_id": "aTJMDFJdgdg",
+          "title": "37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]",
+          "recording_url": "/videos/aTJMDFJdgdg/",
+          "transcript_url": "/transcripts/aTJMDFJdgdg/",
+          "transcript_words": 7092,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        }
+      ],
+      "part_count": 3,
+      "numbers": [
+        35,
+        36,
+        37
+      ],
+      "transcript_words": 13559
+    },
+    {
+      "slug": "ikalifa",
+      "title": "iKhalifa",
+      "framing": "A three-part series numbered 1, 2 and 3 in the titles. The name is the channel's own; this archive does not expand or translate it.",
+      "parts": [
+        {
+          "number": 30,
+          "part_label": "1: Appreciate Others",
+          "video_id": "rtViqNWY1Bk",
+          "title": "30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]",
+          "recording_url": "/videos/rtViqNWY1Bk/",
+          "transcript_url": "/transcripts/rtViqNWY1Bk/",
+          "transcript_words": 1847,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 31,
+          "part_label": "2: Forgive Yourself",
+          "video_id": "-BwP55UIg3c",
+          "title": "31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]",
+          "recording_url": "/videos/-BwP55UIg3c/",
+          "transcript_url": "/transcripts/-BwP55UIg3c/",
+          "transcript_words": 1600,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 38,
+          "part_label": "3: Be Healthy",
+          "video_id": "Xw2eGP1LRbk",
+          "title": "38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]",
+          "recording_url": "/videos/Xw2eGP1LRbk/",
+          "transcript_url": "/transcripts/Xw2eGP1LRbk/",
+          "transcript_words": 1757,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        }
+      ],
+      "part_count": 3,
+      "numbers": [
+        30,
+        31,
+        38
+      ],
+      "transcript_words": 5204
+    },
+    {
+      "slug": "atheism-doubting-your-doubts",
+      "title": "Atheism: Doubting Your Doubts (Yaqeen in New York)",
+      "framing": "Two recordings of one event, a Yaqeen Institute lecture in New York, catalogued as two entries: one is the event upload and one names him in the title. They are the same lecture, and the archive keeps them as two catalogue rows because it does not merge records.",
+      "parts": [
+        {
+          "number": 25,
+          "part_label": "Yaqeen in New York",
+          "video_id": "ZbcsxAoIVY0",
+          "title": "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]",
+          "recording_url": "/videos/ZbcsxAoIVY0/",
+          "transcript_url": "/transcripts/ZbcsxAoIVY0/",
+          "transcript_words": 4067,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        },
+        {
+          "number": 26,
+          "part_label": "Yaqeen in NY",
+          "video_id": "_C5ox2zZl0U",
+          "title": "26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]",
+          "recording_url": "/videos/_C5ox2zZl0U/",
+          "transcript_url": "/transcripts/_C5ox2zZl0U/",
+          "transcript_words": 4092,
+          "transcript_of_same_recording": 0,
+          "archive_org": true,
+          "in_coverage_data": true
+        }
+      ],
+      "part_count": 2,
+      "numbers": [
+        25,
+        26
+      ],
+      "transcript_words": 8159
+    }
+  ],
+  "series_count": 7,
+  "grouped_videos": 28,
+  "ungrouped_videos": 40,
+  "ungrouped": [
+    {
+      "video_id": "0snGWjeqEeM",
+      "title": "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]"
+    },
+    {
+      "video_id": "1U6VfHosrqw",
+      "title": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]"
+    },
+    {
+      "video_id": "4VcPzhkP9bE",
+      "title": "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]"
+    },
+    {
+      "video_id": "7KBCENktOOU",
+      "title": "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]"
+    },
+    {
+      "video_id": "7Rzu6BjvxjY",
+      "title": "07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]"
+    },
+    {
+      "video_id": "A3dbBCBSFKk",
+      "title": "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]"
+    },
+    {
+      "video_id": "B7NW2AwtZaM",
+      "title": "44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]"
+    },
+    {
+      "video_id": "DA9JGrHKHZA",
+      "title": "27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]"
+    },
+    {
+      "video_id": "Dr5IgXCHRIE",
+      "title": "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\"re upload\") [Dr5IgXCHRIE]"
+    },
+    {
+      "video_id": "EJLSAA_w4PY",
+      "title": "Big Atheism-Theism Debate: Dr Arif Ahmed VS Abdullah al Andalusi [Nottingham University, 2017]"
+    },
+    {
+      "video_id": "En8F38ChvvE",
+      "title": "DEBATE: FREEDOM OF SPEECH VS FREEDOM TO INSULT Michael Nugent vs Abdullah al Andalusi (UCD, Ireland)"
+    },
+    {
+      "video_id": "G47Stp3pLss",
+      "title": "My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project"
+    },
+    {
+      "video_id": "IhE3ka7SQQs",
+      "title": "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]"
+    },
+    {
+      "video_id": "OTcAF8T-gD4",
+      "title": "21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]"
+    },
+    {
+      "video_id": "RWE-e_l-sKs",
+      "title": "BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage & Education"
+    },
+    {
+      "video_id": "TTGJPneVR_w",
+      "title": "Radio: A Christian and Muslim response to Secularism- James White and Abdullah Al-Andalusi"
+    },
+    {
+      "video_id": "Yu8rw5M0GF8",
+      "title": "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project [Yu8rw5M0GF8]"
+    },
+    {
+      "video_id": "a1e0BMRLlr0",
+      "title": "50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]"
+    },
+    {
+      "video_id": "bDshE-aKXIA",
+      "title": "15 - The Masked Arab： A Eulogy [bDshE-aKXIA]"
+    },
+    {
+      "video_id": "biZFuWyB4lk",
+      "title": "22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]"
+    },
+    {
+      "video_id": "cDHrrbOKbl4",
+      "title": "52 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]"
+    },
+    {
+      "video_id": "dsMWdlzzfMk",
+      "title": "Sekularisasi Memusnah Negara Umat Islam!"
+    },
+    {
+      "video_id": "fJs5tuFw-UY",
+      "title": "32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]"
+    },
+    {
+      "video_id": "gmGnu1RBAoQ",
+      "title": "56 - DanielCompassionateImam [gmGnu1RBAoQ]"
+    },
+    {
+      "video_id": "hKdNF95UqVM",
+      "title": "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]"
+    },
+    {
+      "video_id": "kpjZwVzborI",
+      "title": "Debat Panas Mualaf vs Anti - Islam!"
+    },
+    {
+      "video_id": "nkuZ70p-inE",
+      "title": "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]"
+    },
+    {
+      "video_id": "qBkiwqMucY0",
+      "title": "29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]"
+    },
+    {
+      "video_id": "qbg8a1kpjCA",
+      "title": "Asadullah Ali Al-Andalusi on Really Hard Questions in Islam (MSA OSU GBM 10/29)"
+    },
+    {
+      "video_id": "rhufN0me6xg",
+      "title": "47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]"
+    },
+    {
+      "video_id": "s_BnmOrVaTg",
+      "title": "مناظره عبدالله اندلسی با عارف احمد    abdullah andalusi vs arif ahmad"
+    },
+    {
+      "video_id": "tJVwLXeWwng",
+      "title": "Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight"
+    },
+    {
+      "video_id": "tUHEAejm404",
+      "title": "34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]"
+    },
+    {
+      "video_id": "tW-mjwrE7YY",
+      "title": "13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]"
+    },
+    {
+      "video_id": "unmn_tY5r_c",
+      "title": "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project [unmn_tY5r_c]"
+    },
+    {
+      "video_id": "vI3Jz-OSH54",
+      "title": "DEBATE PREVIEW: Sharia law VS Secular law: Atheist ends up endorsing Sharia & desire for Caliphate"
+    },
+    {
+      "video_id": "vJRfL4Kal20",
+      "title": "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]"
+    },
+    {
+      "video_id": "vLkE81ZCMVs",
+      "title": "PUBLIC DEBATE: Does Morality Require a God? Copson & Pollock VS Andalusi & Wansbrough"
+    },
+    {
+      "video_id": "wUapqpCqBUk",
+      "title": "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]"
+    },
+    {
+      "video_id": "yUpHMaFHZ6s",
+      "title": "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]"
+    }
+  ],
+  "ungrouped_note": "Left ungrouped on purpose. A row that matches no series rule is not filed under an invented category, and the index page says so with this count. These recordings are all in the archive and all listed on the full transcript index and in the video catalogue; they simply are not parts of a series.",
+  "totals_are_not_counts_of_content": "Nothing on this page adds to the archive's published total of counted content. A series is a view over recordings that are already counted once each in _data/videos.json."
+}

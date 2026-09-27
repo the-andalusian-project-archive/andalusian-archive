@@ -324,4 +324,153 @@
 </script>
 {%- include breadcrumb.html parent_url="/articles/" parent_name="Blog Posts" %}
 
+{%- elsif seo_kind == "person" -%}
+
+{%- comment -%}
+  Person, for /asadullah-ali-al-andalususi/ (2026-09-28).
+
+  This is the archive's entity node, and the field list is short on purpose.
+
+  `alternateName` is a loop over `_data/entity_page.json` -> `name_variants`, so
+  the names in this block and the names in the page's visible table cannot
+  diverge: there is one list, and both surfaces read it. Every form in that
+  list is attested somewhere and the page says where, so nothing here is
+  invented - including the kunya, which `NOTICE.md` section 6.1 records is not
+  withheld, and including the `Ustadh` honorific, which is NOT attested in this
+  corpus and is marked as externally attested in the table beside it.
+
+  `sameAs` is a loop over the same file's `external_attestations`, restricted to
+  the rows flagged `profile: true`, so only third-party pages that identify HIM
+  become identity claims. The Internet Archive collection and the 2020 Q&A are
+  in the table but are not profiles and are not here: they identify a collection
+  and an interview, not the person. Every URL was checked by HTTP HEAD on the
+  date the data file records, and the status is printed in the page's table -
+  one of them answers 403 behind a Cloudflare challenge and says so.
+
+  `affiliation` and `worksFor` come from the same file's `roles`. The founder
+  role is emitted as `worksFor` with a NAME ONLY: The Andalusian Project has no
+  live page of its own any more, and the one domain it had is hijacked, so a URL
+  here would be either a dead link or a link to a gambling site. Neither is
+  emitted anywhere on this site, by the rule in `NOTICE.md` section 7.
+
+  NOT emitted, deliberately: `birthDate`, `award`, `alumniOf`, `knowsAbout`,
+  `jobTitle` and every social handle. Nothing in `_data/` states a birth date, a
+  credential he holds rather than taught, or an account of his own; the archive
+  holds two withheld personal names and no contact details, and a fabricated
+  field on an entity node is the single most damaging thing this corpus could
+  ship. `disambiguatingDescription` is a real schema.org property and would be
+  the right place for the Abdullah al-Andalusi note, but the brief's field list
+  did not include it and it is not added speculatively - the note is in the page
+  body, where a reader meets it before the structured data does.
+{%- endcomment -%}
+{%- assign ep = site.data.entity_page -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": {{ seo_abs | append: "#person" | jsonify }},
+  "name": {{ ep.canonical_name | jsonify }},
+  "alternateName": [{% assign _alt = 0 -%}
+    {%- for v in ep.name_variants -%}
+    {%- if _alt > 0 -%},{%- endif -%}{%- assign _alt = _alt | plus: 1 -%}
+    {{ v.form | jsonify }}
+    {%- endfor -%}
+  ],
+  "url": {{ seo_abs | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
+  "inLanguage": "en",
+  "description": {{ seo_desc | jsonify }},
+  {%- comment -%}
+    Comma placement in all three arrays is a LEADING comma emitted by every
+    entry except the first, counted with an assign. `forloop.last` cannot do
+    this job: a role or an attestation that is skipped inside the loop would
+    leave a trailing comma behind, and a trailing comma is not JSON. The
+    `_site` JSON-LD parse check in the verification step is what would catch it.
+  {%- endcomment -%}
+  "affiliation": [{% assign _aff = 0 -%}
+    {%- for r in ep.roles -%}
+    {%- if r.url and r.works_for != true -%}
+    {%- if _aff > 0 -%},{%- endif -%}{%- assign _aff = _aff | plus: 1 -%}
+    { "@type": "Organization", "name": {{ r.organisation | jsonify }}, "url": {{ r.url | jsonify }} }
+    {%- endif -%}
+    {%- endfor -%}
+  ],
+  {%- for r in ep.roles -%}
+  {%- if r.works_for -%}
+  "worksFor": { "@type": "Organization", "name": {{ r.organisation | jsonify }} },
+  {%- endif -%}
+  {%- endfor -%}
+  "sameAs": [{% assign _sa = 0 -%}
+    {%- for a in ep.external_attestations -%}
+    {%- if a.profile -%}
+    {%- if _sa > 0 -%},{%- endif -%}{%- assign _sa = _sa | plus: 1 -%}
+    {{ a.url | jsonify }}
+    {%- endif -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- include breadcrumb.html %}
+
+{%- elsif seo_kind == "faq" -%}
+
+{%- comment -%}
+  Article + FAQPage, for /asadullahali-com-what-happened/ (2026-09-28).
+
+  The FAQPage exists because the page body genuinely carries question/answer
+  pairs: `_data/entity_page.json` -> `queries` is the list of searches this
+  archive is the only page answering, and the SAME list is rendered as visible
+  prose immediately below this block. The `text` of every `Question` and the
+  `text` of every `Answer` is the `short` string from that file, which is the
+  string the reader sees. Nothing is marked up here that is not on the page,
+  which is the line between an FAQPage and a manual action.
+
+  The `Article` node carries the archive as `author`, not the subject. The page
+  is the archive's own account of what happened to his properties; he did not
+  write it and claiming otherwise would be a false byline. `datePublished` is
+  omitted for the reason every other site page omits it: a Jekyll page has no
+  authored publication date, and `site.time` would publish the build clock.
+{%- endcomment -%}
+{%- assign ep = site.data.entity_page -%}
+{%- assign entity_person_id = "/asadullah-ali-al-andalususi/" | absolute_url | append: "#person" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": {{ seo_abs | append: "#article" | jsonify }},
+  "headline": {{ seo_title | jsonify }},
+  "name": {{ seo_title | jsonify }},
+  "url": {{ seo_abs | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
+  "inLanguage": "en",
+  "about": { "@id": {{ entity_person_id | jsonify }} },
+  "author": { "@type": "Organization", "name": "The Andalusian Project Archive", "url": {{ site_abs | jsonify }} },
+  "publisher": { "@type": "Organization", "name": "The Andalusian Project Archive", "url": {{ site_abs | jsonify }} },
+  "isAccessibleForFree": true,
+  "description": {{ seo_desc | jsonify }}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": {{ seo_abs | append: "#faq" | jsonify }},
+  "url": {{ seo_abs | jsonify }},
+  "mainEntity": [{% assign _q = 0 -%}
+    {%- for qa in ep.queries -%}
+    {%- if _q > 0 -%},{%- endif -%}{%- assign _q = _q | plus: 1 -%}
+    {
+      "@type": "Question",
+      "name": {{ qa.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ qa.short | jsonify }}
+      }
+    }
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- include breadcrumb.html %}
+
 {%- endif -%}

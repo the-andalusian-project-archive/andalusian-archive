@@ -14,16 +14,28 @@ import pathlib
 import sys
 
 BASE = pathlib.Path(__file__).parent.parent
-# Row counts, updated 2026-09-27 by Task 7 / I1:
+# Row counts, updated 2026-09-27 by Task 7 / I1, frozen again by the approved
+# recount of 2026-09-28. These are the figures the site publishes.
 #   works  57 -> 72  (15 recovered works integrated)
 #   papers 18 -> 20  (2 legitimately obtained PDFs became new paper entries)
 #   videos  68 -> 67 (I2: 12 superseded mirrors removed, 11 new entries added)
 #              -> 68 (amendment A: G47Stp3pLss restored as a counted work by
 #                      user decision, not as a mirror of 7KBCENktOOU)
+#   captures 87     (CDX capture records; metadata, never counted as works)
 EXPECT_COUNTS = {
     "videos.json": 68,
     "papers.json": 20,
     "canonical_works.json": 72,
+    "blog_posts.json": 87,
+}
+# Files copied verbatim from _data/, which are therefore required to be
+# byte-equal and not merely parse-equal. canonical_works.json and
+# blog_posts.json are deliberately NOT in this set: sync_search_data.py adds an
+# excerpt/keyword index to them, so byte-equality is the wrong claim for those
+# two and would be a gate that could only ever fail.
+VERBATIM = {
+    "videos.json": "videos.json",
+    "papers.json": "papers.json",
 }
 # data file -> _data source for freshness checks
 SOURCES = {
@@ -70,10 +82,23 @@ def main():
             print("PASS: data/%s == %d" % (name, expected))
         check_titles("data/" + name, rows)
 
-    # Freshness: verbatim files must parse-equal their _data source.
+    # Freshness: the verbatim copies must be byte-equal to their _data source,
+    # not merely parse-equal. Parse-equality would accept a reserialised file
+    # with different key order, indentation or trailing newline - a drift that
+    # shows up as a noisy diff in every future review of a generated file.
     for name in ("videos.json", "papers.json"):
-        data = load(BASE / "data" / name)
-        src = load(BASE / "_data" / SOURCES[name])
+        data_path = BASE / "data" / name
+        src_path = BASE / "_data" / SOURCES[name]
+        if not data_path.is_file() or not src_path.is_file():
+            fail("%s or its _data source is missing" % name)
+            continue
+        if data_path.read_bytes() != src_path.read_bytes():
+            fail("data/%s is not byte-equal to _data/%s (run sync)"
+                 % (name, name))
+        else:
+            print("PASS: data/%s is byte-equal to _data/%s" % (name, name))
+        data = load(data_path)
+        src = load(src_path)
         if data is not None and src is not None:
             if data != src:
                 fail("data/%s differs from _data/%s (run sync)" % (name, name))
@@ -122,6 +147,17 @@ def main():
     if failures:
         print("test_search_sync: %d FAILURE(S)" % len(failures))
         return 1
+    # The searchable population the /search/ page prints is these three
+    # collections. Gating it here means the page's figure cannot be right about
+    # the data and wrong about itself.
+    searchable = (EXPECT_COUNTS["canonical_works.json"]
+                  + EXPECT_COUNTS["videos.json"]
+                  + EXPECT_COUNTS["papers.json"])
+    if searchable != 160:
+        fail("searchable total is %d, not the published 160" % searchable)
+    else:
+        print("PASS: searchable total = %d (72 works + 68 videos + 20 papers)"
+              % searchable)
     print("test_search_sync: ALL PASS")
     return 0
 

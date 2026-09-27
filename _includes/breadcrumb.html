@@ -12,8 +12,32 @@
 
   PARAMETERS: parent_url (site-relative, e.g. "/papers/"), parent_name.
   Inherited from seo_head.html: seo_abs, seo_title.
+
+  2026-09-28. `parent_url` became OPTIONAL, and omitting it emits a TWO-item
+  trail (Home -> this page) instead of three. The rule above says a flat page
+  gets no breadcrumb, and that is still true of /timeline/, /channel/ and
+  /search/ - all of which are unlinked utility or record pages with no second
+  level to name. The two pages added on 2026-09-28 are a different case and the
+  difference is worth stating rather than glossing:
+
+    /asadullah-ali-al-andalususi/ and /asadullahali-com-what-happened/ are named
+    entry points. The site's own nav and footer now publish them as such, they
+    are the destinations a reader arriving from a search engine is meant to land
+    on, and each has a Home link above it like every other page. A single-item
+    trail - Home alone - would state nothing at all, which is why it is still
+    rejected; but a two-item trail states the one thing that is true and
+    non-trivial about a top-level page: it is a destination, not a child of some
+    other part of the site.
+
+  No third level is invented for either. There is no parent page to name, and
+  naming a section that does not exist as a URL would be a breadcrumb that
+  points nowhere. A middle ListItem with a name and no `item` would also be
+  legal, but it would have to name something - and the only candidate is a
+  footer heading, which is a place on a page, not a place in the site. Inventing
+  a level to satisfy a pattern is the failure mode this file exists to prevent.
 {%- endcomment -%}
 {%- assign crumb_site = site.url | append: site.baseurl | append: "/" -%}
+{%- if include.parent_url and include.parent_url != "" -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -40,3 +64,25 @@
   ]
 }
 </script>
+{%- else -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ crumb_site | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ seo_title | jsonify }},
+      "item": {{ seo_abs | jsonify }}
+    }
+  ]
+}
+</script>
+{%- endif -%}

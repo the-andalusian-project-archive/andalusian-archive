@@ -43,12 +43,33 @@ def counted_mdi(rows):
     return len(counted), len(rows)
 
 
+def held_pdf_counts(rows):
+    """(PDF files held, paper rows that hold at least one) for papers.json.
+
+    Counted from the data rather than from the directory, so the published
+    figure and the files in _papers/pdfs/ are reconciled by the builder's own
+    assertion in build_collections.py. A paper's own `file` is one file; each
+    entry in `additional_files` is a further file (a translation), not a
+    further paper, which is why the two numbers differ.
+    """
+    files = 0
+    with_pdf = 0
+    for p in rows or []:
+        own = 1 if p.get("file") else 0
+        extra = p.get("additional_files") or []
+        if own or extra:
+            with_pdf += 1
+        files += own + len(extra)
+    return files, with_pdf
+
+
 def main():
     print("Building comprehensive content index...")
 
     captures = load_len("blog_posts.json")
     videos = load_len("videos.json")
     papers = load_len("papers.json")
+    held_pdf_files, held_pdf_papers = held_pdf_counts(load("papers.json", []))
     mdi_rows = load("mdi_articles.json", [])
     mdi_all = len(mdi_rows)
     mdi = counted_mdi(mdi_rows)[0]
@@ -71,19 +92,23 @@ def main():
     n_found = status_counts.get("found", 0)
     n_wayback = status_counts.get("wayback_only", 0)
     n_lost = status_counts.get("lost", 0)
-    works_phrase = ("%d works (%d full-text in repo, %d lost, %d Wayback-only)"
-                    % (works or 0, n_found, n_lost, n_wayback))
-    formula = ("%d works + %d videos + %d papers + %d MDI (of %d rows; %d are "
-               "second publications of a work already counted) + %d Yaqeen "
-               "(link-outs, sizes not stored) + %d AlBalagh (link-outs) + %d "
-               "interview = %d (excludes derived secondary_sources and the %d "
-               "uncounted announcements; blog uses works, not %d captures; the "
-               "Yaqeen and AlBalagh terms are row counts of link-outs, not "
-               "measured content)"
+    works_phrase = ("%d works (%d full-text in repo, %d Wayback-only, %d lost)"
+                    % (works or 0, n_found, n_wayback, n_lost))
+    # Every term is labelled and every term is a number read out of _data/, so
+    # the published string cannot drift from the files it summarises. The seven
+    # terms between the "+" signs are the arithmetic; the parentheticals name
+    # what each term counts and are deliberately outside the sum.
+    total_content = ((works or 0) + videos + papers + mdi + yaqeen + albalagh
+                     + interviews)
+    formula = ("%d works + %d videos + %d papers + %d MDI items (of %d rows; "
+               "%d are a second publication of a work already counted, so they "
+               "are not added again) + %d Yaqeen link-outs (row count; no page "
+               "body was downloaded, so no size is stored) + %d Al Balagh "
+               "link-outs (row count) + %d interview = %d (excludes the derived "
+               "secondary_sources and the %d uncounted announcements; the blog "
+               "term is the works list, not the %d CDX captures)"
                % (works or 0, videos, papers, mdi, mdi_all, mdi_dupes, yaqeen,
-                  albalagh, interviews,
-                  (works or 0) + videos + papers + mdi + yaqeen + albalagh
-                  + interviews, notices, captures))
+                  albalagh, interviews, total_content, notices, captures))
 
     # Preserve unsourced legacy stats if present (no source files exist).
     talks = translations = None
@@ -111,10 +136,9 @@ def main():
         "papers": {
             "description": "Academic papers and research articles",
             "count": papers,
-            "storage": ("LINKS to institutional repositories, plus %d held PDFs"
-                        % sum(1 for p in json.loads(
-                            (DATA_DIR / "papers.json").read_text(encoding="utf-8"))
-                            if p.get("file"))),
+            "storage": ("LINKS to institutional repositories, plus %d PDF files "
+                        "held across %d of the %d papers"
+                        % (held_pdf_files, held_pdf_papers, papers)),
             "risk_level": "LOW - institutionally hosted",
         },
         "mdi_articles": {
@@ -180,11 +204,17 @@ def main():
         # and the announcement notices, which are catalogued but never counted
         # as works. The formula string is computed, never hardcoded, so it can
         # never drift from the data again.
-        "total_content": (
-            (works if works is not None else captures)
-            + videos + papers + mdi + yaqeen + albalagh + interviews
-        ),
+        "total_content": total_content,
         "total_content_formula": formula,
+        "total_content_terms": {
+            "works": works if works is not None else captures,
+            "videos": videos,
+            "papers": papers,
+            "mdi_counted": mdi,
+            "yaqeen_linkouts": yaqeen,
+            "albalagh_linkouts": albalagh,
+            "interviews": interviews,
+        },
         "blog_status_counts": status_counts,
         "total_mdi_articles": mdi,
         "total_mdi_rows": mdi_all,

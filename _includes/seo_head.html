@@ -88,8 +88,26 @@
     {%- assign seo_kind = "work" -%}
   {%- endif -%}
 {%- elsif page.layout == "transcript" or page.layout == "video" or page.layout == "paper" -%}
-  {%- assign seo_kind = page.layout -%}
-{%- endif -%}
+    {%- assign seo_kind = page.layout -%}
+  {%- elsif page.schema == "person" -%}
+    {%- comment -%}
+      2026-09-28. The entity page, /asadullah-ali-al-andalususi/: the archive's
+      answer to "who is this and what did he write". It is a site page with no
+      collection behind it, so without this branch it would fall through to the
+      generic `page` kind and get a WebSite-shaped description and no entity
+      node at all - which is precisely the gap it was built to close. `schema` is
+      a front-matter key no other page in this site carries, so the branch cannot
+      change any existing page's classification.
+    {%- endcomment -%}
+    {%- assign seo_kind = "person" -%}
+  {%- elsif page.schema == "faq" -%}
+    {%- comment -%}
+      2026-09-28. /asadullahali-com-what-happened/: the lost-and-found page. Same
+      reasoning - it is a flat site page, and it needs its own node type plus the
+      question/answer pairs its body really does carry.
+    {%- endcomment -%}
+    {%- assign seo_kind = "faq" -%}
+  {%- endif -%}
 
 {%- comment -%} ------------------------------------------------------------------
   1. SOCIAL IMAGE.
@@ -224,8 +242,10 @@
   wrote, unique because the title or the capture identity is in every string.
   A 100-160 character band: short enough that a SERP does not truncate it,
   long enough to say what the page is. Clauses are added in tiers and the
-  result is cut at 160 on a word boundary, so no page claims anything the
-  data does not hold in order to reach a length.
+  result is cut at 160 characters, so no page claims anything the data does not
+  hold in order to reach a length. (The cut is at the character, not at a word
+  boundary - see the note on `truncate` in section 3 below. It is left that way
+  deliberately and the claim is not made anywhere else in this file.)
 
   Vary by kind and by status, deliberately: "preserved from the Wayback
   Machine" is true of some of this corpus and false of the rest, and printing
@@ -342,14 +362,54 @@
   {%- assign seo_desc = site.description -%}
 {%- endif -%}
 
-{%- comment -%} Normalise whitespace, cut at 160 on a word boundary, and floor
-  the length at 100 with a clause that is true of every page on this site.
-  The floor is applied AFTER the cut so it can never be lost to it, and the
-  result is stripped again afterwards, because `truncate` can leave a trailing
-  separator behind when it cuts a sentence that had not finished. {%- endcomment -%}
+{%- comment -%} Normalise whitespace, cut at 160 characters, and floor the
+  length at 100 with a clause that is true of every page on this site. The floor
+  is applied AFTER the cut so it can never be lost to it, and the result is
+  stripped again afterwards, because `truncate` can leave a trailing separator
+  behind when it cuts a sentence that had not finished.
+
+  2026-09-28 - TWO DEFECTS FOUND IN THIS BLOCK WHILE ADDING THE ENTITY AND
+  LOST-AND-FOUND PAGES. Both were pre-existing and both were live on the deployed
+  site; both are recorded here because the next editor will otherwise re-introduce
+  them.
+
+  1. THE LENGTH COMPARISON WAS SILENTLY WRONG, and this is the one that mattered.
+     The floor was written as
+
+         {% raw %}{% if seo_desc | size < 100 %}{% endraw %}
+
+     and Liquid evaluates that as TRUE for a 134-character string. Measured on a
+     page whose authored description is 134 characters, all three of these printed
+     the same input and disagreed:
+
+         {% raw %}{% if d | size < 100 %}   -> TRUE   (wrong){% endraw %}
+         {% raw %}{% assign n = d | size %}{% if n < 100 %}  -> FALSE  (right){% endraw %}
+         {% raw %}{% if d.size < 100 %}     -> FALSE  (right){% endraw %}
+
+     A filter applied directly to the left operand of a Liquid `if` comparison is
+     the trap: the filter is evaluated in a context where the comparison operand
+     does not survive, so the condition degenerates. The fix is the second form -
+     assign the size to a variable, then compare the variable - and the variable
+     form is used below for exactly that reason.
+
+     What it cost, before the fix: every page whose description was 100-159
+     characters had " Part of The Andalusian Project Archive." appended to it and
+     was then re-truncated at 160, which cut the sentence mid-word. On the
+     deployed site that was /channel/, /articles/, /transcripts/ and /404.html,
+     and it was mangling all ten pages added on 2026-09-28. The appended clause
+     contains no digits, so no published figure moved when it was fixed.
+
+  2. THE COMMENT ABOVE THIS BLOCK CLAIMED THE CUT WAS "ON A WORD BOUNDARY". It is
+     not. Jekyll's `truncate` cuts at exactly the length given, mid-word if that
+     is where the character falls, and `truncate: 160, ""` only removes the
+     ellipsis. Changing that would alter the description of every page on the
+     site that exceeds 160 characters, which is a wider change than the pass that
+     found it, so the behaviour is left alone and the claim is corrected here
+     instead of being left standing as a false statement about the code. {%- endcomment -%}
 {%- assign seo_desc = seo_desc | strip_html | normalize_whitespace | strip -%}
 {%- assign seo_desc = seo_desc | truncate: 160, "" -%}
-{%- if seo_desc | size < 100 -%}
+{%- assign seo_desc_len = seo_desc | size -%}
+{%- if seo_desc_len < 100 -%}
   {%- assign seo_desc = seo_desc | append: " Part of The Andalusian Project Archive." -%}
   {%- assign seo_desc = seo_desc | truncate: 160, "" -%}
 {%- endif -%}

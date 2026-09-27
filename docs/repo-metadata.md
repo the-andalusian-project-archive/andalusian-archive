@@ -20,8 +20,15 @@ is exactly its owner's login.** `the-andalusian-project-archive` is therefore th
 the name of the *profile README* repository (a profile README only renders if the repository
 name matches the username exactly, case-sensitive). The archive repository must carry a
 different name, and `andalusian-archive` is the zero-migration choice: `_config.yml:5` hardcodes
-`baseurl: "/andalusian-archive"`, which is load-bearing across 310 built pages, 7 published PDFs
-and 317 sitemap entries.
+`baseurl: "/andalusian-archive"`, which is load-bearing across 311 built pages, 6 published PDFs
+and 309 sitemap entries.
+
+> **Counted from the build, 2026-09-28.** 311 is the number of rendered `.html` files in
+> `_site/`, 6 is the number of PDFs it serves, and 309 is the number of `<loc>` values in
+> `sitemap.xml`. The two pages that are built but deliberately absent from the sitemap are
+> `404.html` and `search/` (the latter is `noindex`, because it is an application surface). All
+> 309 `<loc>` values are absolute and resolve to a file on disk. These three numbers are the ones
+> `README.md` quotes, so they are the numbers to change together if the corpus moves.
 
 Two repositories, two names:
 
@@ -40,8 +47,12 @@ Pages URL.
 ## 2. Owner-visible title
 
 ```
-The Andalusian Project — Asadullah Ali Al-Andalusi: Complete Recovered Works, Papers and Transcripts
+The Andalusian Project — Asadullah Ali Al-Andalusi: Recovered Works, Papers and Transcripts
 ```
+
+> **Corrected 2026-09-28.** This was written as `Complete Recovered Works…`. 24 of the 72 works
+> hold no text and 1 is unrecovered, so "Complete" overclaims; the repository H1 was corrected on
+> 2026-09-27 for that reason. The title here is quoted, not recommended, and now matches.
 
 100 characters. This is the site's H1, the `<title>` on the Pages build, and the first line of
 `README.md`.
@@ -158,11 +169,10 @@ https://the-andalusian-project-archive.github.io/andalusian-archive/
 ```
 
 This is the single most valuable field in the About area: it passes a link from every GitHub
-page for the repository to the site. It currently does not work as intended, and the reason is
-one line of config, not a metadata problem — `_config.yml:4` is `url: ""`, which makes every
-`<link rel="canonical">`, every `og:url` and all 317 `<loc>` values in `sitemap.xml`
-protocol-relative. **Set the homepage string now; fix `url:` before the site is announced** so
-the link resolves to a page whose own canonicals are absolute.
+page for the repository to the site. It is **fixed**: `_config.yml` now sets an absolute `url:`,
+so every `<link rel="canonical">`, every `og:url` and all 309 `<loc>` values in `sitemap.xml` are
+absolute. The `url: ""` P0 this section was written against is closed, and the live check on
+2026-09-27 returned absolute canonical and `og:url` with a 200.
 
 ---
 
@@ -271,7 +281,7 @@ and created **after July 2020** attach automatically; this one will be created n
 | **Pages** | **Already correct — no change.** Source: **GitHub Actions**. | `.github/workflows/deploy.yml` already uses `actions/configure-pages` → `bundle exec jekyll build --baseurl …` → `actions/upload-pages-artifact` → `actions/deploy-pages`, with permissions correctly scoped to `contents: read`, `pages: write`, `id-token: write`. Under an Actions deploy no `CNAME` file is needed and no `.nojekyll` is required. Do not switch to "Deploy from a branch": that would run Jekyll over `_site/` with `--safe` and break the four plugins the site depends on. |
 | **Issues** | **YES — enable.** | This is the single most likely and most valuable use of the surface. The realistic inbound is provenance, not feature requests: *"this transcript's opening is wrong"*, *"this source URL is dead as of today"*, *"this work exists and I have a copy"*, *"this DOI now resolves"*. Each one becomes a public, dated, per-item, linkable record — which is exactly the artefact an archive should generate, and exactly what a Discussions thread cannot do. Ship four issue templates: **provenance report**, **transcript correction**, **dead or changed source**, **new material I can supply**. Say in the README that privacy and takedown requests go to the contact in `NOTICE.md` and not to Issues. |
 | **Discussions** | **NO — disable.** | Three reasons, in order. (1) Function: the only substantive conversation this archive will have is a provenance dispute, and an Issue is per-item, closable, searchable, and referenceable from the commit or the data row that answers it; a Discussion is none of those. (2) Surface: a general public comment area on a deliberately neutral, polemical-content archive creates a moderation obligation the project has not staffed, and the failure mode is visible. (3) Precedent: the research found an active GitHub community complaint that over-long metadata "causes pollution in search results" — GitHub treats an open comment surface as a cost, not an asset. If it is wanted later, `has_discussions` is a one-line PATCH. |
-| **Wiki** | **OFF — leave disabled.** | A 310-page site *is* the archive; a wiki would duplicate it. The research is explicit that a wiki is not a reliable index surface for search. And it is a specific failure mode this project cannot afford: a second place where a number can be typed and go stale, when the whole Task 9 count gate exists to stop exactly that. `has_wiki` defaults to `true` — it must be sent `false` explicitly. |
+| **Wiki** | **OFF — leave disabled.** | A 311-page site *is* the archive; a wiki would duplicate it. The research is explicit that a wiki is not a reliable index surface for search. And it is a specific failure mode this project cannot afford: a second place where a number can be typed and go stale, when the whole count-approval pass exists to stop exactly that. `has_wiki` defaults to `true` — it must be sent `false` explicitly. |
 | **Projects** | **OFF.** | Nothing here is roadmapped as work. Set `has_projects: false` to keep the repo tab strip to Issues, Pull requests, Actions and Security. |
 | **Archive flag** | **YES — but only after the first re-check cycle. See the caveat.** | The flag marks the repository read-only, adds a banner, and removes it from language and framework search and code-navigation affordances. It is the correct signal here: the recovery is complete, the evidence trail is committed, the reviews are done, and the remaining work is publication and outreach rather than development. It also sets the right expectation for readers and for contributors whose work is in it — *cite this, don't send it a pull request.* **Caveat: the flag is effectively one-way, and this archive has a live re-check obligation.** `_data/lost_works.json` records one work as unrecovered with the note "re-check if a new capture appears", and the `channel_facts.json` timeline ends at a 2026-08-19 capture with a 2026-09-27 live check. Do not set the flag until at least one re-check cycle has run and been recorded. If the owner expects to keep recovering, do not set it at all; instead say so in the README and leave the repo writable. |
 | **Releases** | **Recommended, one release: `v1.0.0`.** | Not asked for, but it is the cheapest way to give the preservation claim a dated, citable artefact, and a `latest` download for people who want the corpus without cloning. Attach the archive manifest (the 21 `_data/*.json` files, or a generated manifest) as the release asset. The SEO research rates this medium-low but cheap and specifically notes it is the kind of artefact academics and archives actually cite. |

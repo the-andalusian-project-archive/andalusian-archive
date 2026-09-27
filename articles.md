@@ -6,15 +6,13 @@ description: "Every work this archive holds or has located, by status: full text
 {%- comment -%}
   2026-09-27 (task 8f, Phase-3 review C1): the four PUBLISHED figures on this
   page - the work total in the subtitle, the three status figures in the
-  page-note, the Preservation Method paragraph - were RESTORED to the values
-  published at db16e2c. The recount (works, full-text, Wayback-only, lost) is
-  correct in `_data/canonical_works.json` and is computed below, but publishing
-  it is Task 9's approval gate, and publishing it here made /articles/ contradict
-  the homepage, which still publishes the pre-recount totals. They are restored
-  as typed figures deliberately and are the only typed figures on this page.
-
-  Every other figure on this page is computed from the data at build time, and
-  the sections added in task 8a carry their own computed counts.
+  page-note, the Preservation Method paragraph - had been RESTORED to the values
+  published at db16e2c, because publishing the recount here while the homepage
+  still published the pre-recount totals made /articles/ contradict it. That
+  restoration is now reversed: the site owner has approved the recount, it is
+  applied in one pass across every page, and all four figures are computed from
+  `_data/canonical_works.json` like every other figure on this page. There is no
+  typed figure left on this page.
 {%- endcomment -%}
 {%- assign found = 0 -%}{%- for w in site.data.canonical_works -%}{%- if w.status == "found" -%}{%- assign found = found | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- assign wayback_only = 0 -%}{%- for w in site.data.canonical_works -%}{%- if w.status == "wayback_only" -%}{%- assign wayback_only = wayback_only | plus: 1 -%}{%- endif -%}{%- endfor -%}
@@ -40,9 +38,30 @@ description: "Every work this archive holds or has located, by status: full text
 {%- endfor -%}
 {%- assign mdi_under_100 = 0 -%}{%- for m in site.data.mdi_articles -%}{%- assign mwords = m.words | default: 0 -%}{%- if mwords < 100 -%}{%- assign mdi_under_100 = mdi_under_100 | plus: 1 -%}{%- endif -%}{%- endfor -%}
 
+{%- assign captures_total = 0 -%}{%- for b in site.data.blog_posts -%}{%- assign captures_total = captures_total | plus: 1 -%}{%- endfor -%}
+
 <h1 class="page-title">Blog Posts</h1>
-<p class="page-subtitle">57 works ({{ year_first }}-{{ year_last }}) from asadullahali.com, plus {{ mdi_total }} MDI pages, {{ notices_total }} announcements and {{ linkouts_total }} link-outs.</p>
-<p class="page-note">15 works are preserved full-text in this repository; 40 are available via the Wayback Machine only; 2 are lost with no archived copy located. 87 CDX captures are preserved as metadata.</p>
+<p class="page-subtitle">{{ works_total }} works ({{ year_first }}-{{ year_last }}) from asadullahali.com, plus {{ mdi_total }} MDI pages, {{ notices_total }} announcements and {{ linkouts_total }} link-outs.</p>
+<p class="page-note">{{ found }} work{% if found != 1 %}s{% endif %} {% if found == 1 %}is{% else %}are{% endif %} preserved full-text in this repository; {{ wayback_only }} {% if wayback_only == 1 %}is{% else %}are{% endif %} available via the Wayback Machine only; {{ lost }} {% if lost == 1 %}is{% else %}are{% endif %} lost with no archived copy located. {{ captures_total }} CDX captures are preserved as metadata.</p>
+{%- comment -%}
+  2026-09-28: the subtitle above names the domain the work was published on, and a
+  reader who searches that name lands somewhere that is no longer his. So the two
+  new pages are linked from the top of this index, before the cards, where the
+  reader meets the warning before any link on the page: one says what the domain
+  is now and why the Wayback links below are the ones to follow; the other says who
+  wrote all of this, and answers the question of which Al-Andalusi this is.
+{%- endcomment -%}
+<div class="info-block">
+  <h3>Before you follow any link on this page</h3>
+  <p>The work below was published on <code>asadullahali.com</code>, and that domain is no
+  longer the author&rsquo;s: it is defunct and now serves an unrelated, commercially
+  operated gambling site. <strong>Do not visit it.</strong> Every Wayback link here is a
+  timestamped capture of what he actually wrote, and those are the links to follow &mdash;
+  see <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to
+  the Andalusian Project&rsquo;s web presence</a> for the full account, and
+  <a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a> for
+  who wrote all of this and every form of his name.</p>
+</div>
 <div class="card-grid">
 {% for work in site.data.canonical_works %}
 {% if work.status != "lost" %}
@@ -107,7 +126,7 @@ description: "Every work this archive holds or has located, by status: full text
   counted as distinct items - the other {{ mdi_republished }} republish a work
   already in the list above and name it on their own page.
 {%- endcomment -%}
-<h2>Muslim Debate Initiative pages</h2>
+<h2 id="mdi">Muslim Debate Initiative pages</h2>
 <p class="page-note">{{ mdi_total }} pages he wrote for the Muslim Debate Initiative, all recovered from the MDI author archive on 2026-09-27 and preserved here verbatim. {{ mdi_counted }} are distinct items of content and are counted once; the rest republish a work listed above and are counted there instead. {{ mdi_under_100 }} of the {{ mdi_total }} are under 100 words, because the substance of those posts is an embedded video and the prose is its caption. They are kept as published.</p>
 <div class="card-grid">
 {% for m in site.data.mdi_articles %}
@@ -240,7 +259,7 @@ description: "Every work this archive holds or has located, by status: full text
     <h3>About This Collection</h3>
     <p>The original asadullahali.com website was the primary platform for The Andalusian Project's written content, covering Islamic philosophy, theology, and contemporary issues. Everything on this page is his own writing, published by him; the categories that hold other people's material are the video page and this page's link-out section.</p>
     <h3>Preservation Method</h3>
-    <p>57 canonical works identified from 87 Wayback Machine CDX captures. Full text of 30 works is preserved in this repository; 40 are Wayback-only; 2 are lost.</p>
+    <p>{{ works_total }} canonical works identified from {{ captures_total }} Wayback Machine CDX captures. Full text of {{ found }} work{% if found != 1 %}s{% endif %} {% if found == 1 %}is{% else %}are{% endif %} preserved in this repository; {{ wayback_only }} {% if wayback_only == 1 %}is{% else %}are{% endif %} Wayback-only; {{ lost }} {% if lost == 1 %}is{% else %}are{% endif %} lost.</p>
     <h3>Content Categories</h3>
     <ul>
       <li>Philosophy &mdash; Discussions on Islamic and Western philosophical traditions</li>

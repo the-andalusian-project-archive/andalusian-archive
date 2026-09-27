@@ -17,12 +17,35 @@ base = pathlib.Path(__file__).parent.parent
 canon = json.loads((base / "_data/canonical_works.json").read_text(encoding="utf-8"))
 caps = json.loads((base / "_data/blog_posts.json").read_text(encoding="utf-8"))
 notices = json.loads((base / "_data/notices.json").read_text(encoding="utf-8"))
+# The approved recount, frozen. These are the figures the site publishes, so a
+# data change that moves any of them is a change to a published number and must
+# fail here rather than reach the built site.
 assert len(canon) == 72, f"works={len(canon)} != 72"
 assert len(caps) == 87, f"captures={len(caps)} != 87"
-assert sum(1 for w in canon if w["status"] == "lost") == 1
+n_lost = sum(1 for w in canon if w["status"] == "lost")
+n_found = sum(1 for w in canon if w["status"] == "found")
+n_wayback = sum(1 for w in canon if w["status"] == "wayback_only")
+assert n_lost == 1, f"lost={n_lost} != 1"
 # Freeze gate (Reviewer A): builder assert is the other half; both must agree.
-assert sum(1 for w in canon if w["status"] == "found") == 47
-assert sum(1 for w in canon if w["status"] == "wayback_only") == 24
+assert n_found == 47, f"found={n_found} != 47"
+assert n_wayback == 24, f"wayback_only={n_wayback} != 24"
+# The three status buckets must partition the catalogue. Without this, a fourth
+# status value could be introduced and every count above would still pass while
+# the published total silently stopped summing to 72.
+assert n_found + n_wayback + n_lost == len(canon), (
+    "status buckets do not partition the catalogue: %d + %d + %d != %d (a row "
+    "must carry exactly one of found/wayback_only/lost)"
+    % (n_found, n_wayback, n_lost, len(canon)))
+assert {w["status"] for w in canon} == {"found", "wayback_only", "lost"}, (
+    "unexpected status value(s): %s"
+    % sorted({w["status"] for w in canon} - {"found", "wayback_only", "lost"}))
+# The 24 Wayback-only works must hold no local text, or "no text held" is false.
+for w in canon:
+    if w["status"] == "wayback_only":
+        assert not w.get("local_post"), \
+            f"wayback_only work has a local post: {w['slug']}"
+        assert not w.get("recovered_text_words"), \
+            f"wayback_only work claims recovered words: {w['slug']}"
 
 # Announcements are catalogued but must never be counted as works.
 assert len(notices) == 3, f"notices={len(notices)} != 3"
@@ -148,6 +171,11 @@ for r in mdi:
         assert r.get("measured_against", "").endswith(".md"), \
             f"{slug}: text_proven row must name the local file compared against"
 n_mdi_counted = sum(1 for r in mdi if r.get("counted_as_work", True) is not False)
+n_mdi_dupes = len(mdi) - n_mdi_counted
+# The MDI double count, frozen. 17 rows are catalogued and 4 are distinct items;
+# the site publishes both numbers, and the MDI term in total_content is the 4.
+assert n_mdi_counted == 4, f"mdi counted={n_mdi_counted} != 4"
+assert n_mdi_dupes == 13, f"mdi republished={n_mdi_dupes} != 13"
 
 # Every wayback_only work must carry fetch provenance from the bulk run.
 for w in canon:
@@ -162,8 +190,67 @@ for w in canon:
 drift = collection_drift()
 assert not drift, "collection/data drift:\n  " + "\n  ".join(drift)
 
-print(f"TEST_PASS works=72 captures=87 notices=3 "
-      f"found={sum(1 for w in canon if w['status'] == 'found')} "
-      f"wayback_only={sum(1 for w in canon if w['status'] == 'wayback_only')} "
-      f"lost=1 (all found have >=200w local files, "
-      f"{len(thin_seen)} audited exception(s); 0 collection/data drift)")
+# The published total, computed here from the same files the builder reads, and
+# checked against the string the site prints. The site says
+#   Total 207 = 72 + 68 + 20 + 4 + 9 + 33 + 1
+# so this assert fails if any term moves OR if content_index.json's stored total
+# and its own stored formula stop agreeing with the data they summarise.
+videos = json.loads((base / "_data/videos.json").read_text(encoding="utf-8"))
+papers = json.loads((base / "_data/papers.json").read_text(encoding="utf-8"))
+yaqeen = json.loads((base / "_data/yaqeen_papers.json").read_text(encoding="utf-8"))
+albalagh = json.loads((base / "_data/albalagh_courses.json").read_text(encoding="utf-8"))
+interviews = json.loads(
+    (base / "_data/external_interviews.json").read_text(encoding="utf-8"))
+terms = {
+    "works": len(canon),
+    "videos": len(videos),
+    "papers": len(papers),
+    "mdi_counted": n_mdi_counted,
+    "yaqeen_linkouts": len(yaqeen),
+    "albalagh_linkouts": len(albalagh),
+    "interviews": len(interviews),
+}
+expected_total = sum(terms.values())
+assert expected_total == 207, (
+    "total_content computed from _data/ is %d, not the approved 207: %r"
+    % (expected_total, terms))
+ci = json.loads((base / "_data/content_index.json").read_text(encoding="utf-8"))
+ci_stats = ci["statistics"]
+assert ci_stats["total_content"] == expected_total, (
+    "content_index.json total_content=%r but _data/ sums to %d; the published "
+    "total has drifted from the data" % (ci_stats.get("total_content"),
+                                         expected_total))
+# The stored terms must be the data's terms, not a second set of numbers.
+assert ci_stats["total_content_terms"] == terms, (
+    "content_index.json total_content_terms=%r != the data's %r"
+    % (ci_stats.get("total_content_terms"), terms))
+# The published formula string must name every term, and the numbers it names
+# must be the numbers above - so the arithmetic a reader can see is the
+# arithmetic that was actually performed.
+formula = ci_stats["total_content_formula"]
+for label, value in (("works", terms["works"]), ("videos", terms["videos"]),
+                     ("papers", terms["papers"]),
+                     ("MDI items", terms["mdi_counted"]),
+                     ("Yaqeen link-outs", terms["yaqeen_linkouts"]),
+                     ("Al Balagh link-outs", terms["albalagh_linkouts"]),
+                     ("interview", terms["interviews"])):
+    assert ("%d %s" % (value, label)) in formula, (
+        "published formula does not state '%d %s': %s" % (value, label, formula))
+assert ("= %d " % expected_total) in formula, (
+    "published formula does not state the total %d: %s" % (expected_total, formula))
+# The announcements and the derived secondary sources are catalogued and must
+# stay outside the total, or the site is counting the archive against itself.
+assert ci_stats["total_notices"] == 3, f"notices={ci_stats['total_notices']} != 3"
+secondary = json.loads(
+    (base / "_data/secondary_sources.json").read_text(encoding="utf-8"))
+assert ci_stats["total_secondary_sources"] == len(secondary), (
+    "secondary_sources count %r != %d rows"
+    % (ci_stats.get("total_secondary_sources"), len(secondary)))
+assert all(s.get("counted_as_content") is False for s in secondary), \
+    "a third-party source record is flagged counted_as_content"
+
+print(f"TEST_PASS works={len(canon)} captures={len(caps)} notices={len(notices)} "
+      f"found={n_found} wayback_only={n_wayback} lost={n_lost} "
+      f"mdi={n_mdi_counted}/{len(mdi)} (all found have >=200w local files, "
+      f"{len(thin_seen)} audited exception(s); 0 collection/data drift; "
+      f"total_content={expected_total} matches the published formula)")

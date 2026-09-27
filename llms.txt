@@ -25,13 +25,21 @@ This is a dated polemical archive. It preserves arguments that were published ag
 
 ## What it holds
 
-Figures as of 2026-09-27, counted from `_data/`. The corpus is **partial**; the parenthetical figures are the incompleteness, not decoration.
+Figures as of 2026-09-28, counted from `_data/`. The corpus is **partial**; the parenthetical figures are the incompleteness, not decoration.
 
-- **72 catalogued written works** - 47 with full text here, 24 catalogued Wayback-only with no text held, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. Recovered prose is verbatim: never summarised, paraphrased, reworded or silently merged.
-- **20 academic papers** - 6 PDFs held here, 1 withheld, the rest link-outs. A 24-row access ledger records what is open, restricted or dead, including one DOI whose publisher domain no longer resolves.
-- **68 video records** - 56 preserved as files in the Internet Archive, 12 catalogued as live re-uploads, with 36 mirror URLs attached to the 30 entries they duplicate.
-- **68 machine transcripts, 540,995 words** - one document per capture, each with its capture file, cue count, language and producing model. These are speech-recognition output and are a finding aid, not an authorised edition.
+- **72 catalogued written works** - 47 with full text here, 24 catalogued Wayback-only with no text held, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. Recovered prose is verbatim: never summarised, paraphrased, reworded or silently merged. 3 further announcements are catalogued and never counted.
+- **20 academic papers** - 6 PDF files held here across 5 of the paper records (one of the six is a translation of a paper already counted), 1 further PDF withheld, the rest link-outs. A 24-row access ledger records what is open, restricted or dead, including one DOI whose publisher domain no longer resolves.
+- **68 video records** - 56 preserved as files in the Internet Archive, 12 catalogued as live re-uploads, with 36 mirror URLs attached to the 30 entries they duplicate. A further 12 superseded duplicates are preserved in full and counted nowhere.
+- **68 machine transcripts, 540,995 words** - one document per capture, each with its capture file, cue count, language and producing model. These are speech-recognition output and are a finding aid, not an authorised edition. The 28 recordings that are parts of a numbered series are also grouped by series, each series on its own page.
 - **87 Wayback capture records**, 334 recovered images, 3 announcements, 10 link-outs, 70 third-party source records.
+
+**Total counted content: 207**, and it is a sum, not a figure anyone typed. The published formula is
+`72 works + 68 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview = 207`.
+Every term is counted from `_data/` at build time and printed in the order it is added. Three things
+are deliberately **outside** that sum and are catalogued rather than dropped: the 13 of 17 MDI rows
+that republish a work already counted, the 70 third-party source records (which are derived from
+this archive's own catalogue, so counting them would count the archive against itself), and the 3
+announcements and 10 link-outs.
 
 Read `_data/`, not prose summaries, for any figure. `README.md` gives the account; `docs/recovery-log/` gives the per-lane evidence behind every count.
 
@@ -68,7 +76,12 @@ Disclosed here because a silent gap is how an archive becomes unreliable. Full d
 ## Useful entry points
 
 - Archive home and the domain situation stated up front: https://the-andalusian-project-archive.github.io/andalusian-archive/
+- **Who the subject is**, every attested form of his name, the distinction from the different man also called Abdullah al-Andalusi, and a linked index into every collection: https://the-andalusian-project-archive.github.io/andalusian-archive/asadullah-ali-al-andalususi/
+- **What happened to his website**, the WordPress mirror, the YouTube channel and the dead publisher domain - including the safety warning that `asadullahali.com` is now an unrelated gambling site and must not be visited: https://the-andalusian-project-archive.github.io/andalusian-archive/asadullahali-com-what-happened/
+- Transcripts grouped into the series the channel itself numbered (Understanding Atheism, iJihad, A Muslim's Guide to Science and Scientism, iKhalifa and three more): https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/by-series/
+- The capture-dated record of what the YouTube channel showed, and what this archive refuses to claim about it: https://the-andalusian-project-archive.github.io/andalusian-archive/channel/
 - Per-item provenance and catalogue: `_data/canonical_works.json`, `_data/papers.json`, `_data/videos.json`
+- The registry behind the two pages above, and the series grouping rule: `_data/entity_page.json`, `_data/series.json` (generated and re-checkable via `scripts/build_series_index.py --check`)
 - Licence, redactions and withheld items: `NOTICE.md`, `LICENSE`
 - Every figure, with its evidence: `docs/recovery-log/`
 - Machine-readable citation metadata: `CITATION.cff`

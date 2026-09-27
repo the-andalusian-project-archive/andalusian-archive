@@ -72,6 +72,13 @@ BASE = pathlib.Path(__file__).parent.parent
 EXPECT_TRANSCRIBED = 57
 EXPECT_VIDEOS = 68
 EXPECT_CATALOGUE_ONLY = 11
+# The published corpus size, frozen by the approved recount of 2026-09-28 and
+# printed by /transcripts/, by README.md and by llms.txt. 540,995 is the figure
+# the data holds AND the figure the 68 published pages sum to; the check below
+# proves both, so the two cannot drift apart.
+EXPECT_DOCUMENTS = 68
+EXPECT_WORDS = 540995
+EXPECT_PARAGRAPHS = 37388
 # Restored as counted works by user decision (2026-09-27); their rows stay in
 # superseded_videos.json as the audit trail but they are no longer superseded.
 RESTORED_AS_WORKS = {"G47Stp3pLss"}
@@ -367,6 +374,37 @@ def main():
             assert_text_intact(alt, "re-parented alternate")
     print(f"PASS: {n_alt} re-parented alternate transcript(s) verified "
           f"on disk (file exists, non-null fields, size matches)")
+
+    # Every coverage row that CLAIMS a caption file must belong to something the
+    # archive can account for: a catalogued video entry, or an upload recorded in
+    # the superseded-video ledger. The second case is not a leak - it is the
+    # designed `superseded-upload` path of ruling R17, where the upload is no
+    # longer a catalogued entry in its own right but its text is published rather
+    # than kept in a directory the site does not serve. What must never exist is a
+    # third case: a capture with neither a catalogue entry nor a ledger row, which
+    # would be text the archive holds and publishes and can explain to nobody.
+    superseded_ids = {s.get("id") for s in json.loads(
+        (BASE / "_data" / "superseded_videos.json").read_text(encoding="utf-8"))}
+    catalogued_ids = {v["id"] for v in json.loads(
+        (BASE / "_data" / "videos.json").read_text(encoding="utf-8"))}
+    n_orphan_preserved = 0
+    for row in cov:
+        if not (row.get("captions") and row.get("file")):
+            continue
+        if row["video_id"] in catalogued_ids:
+            continue
+        if row["video_id"] in superseded_ids:
+            n_orphan_preserved += 1
+            continue
+        fail("transcript_coverage.json: %s claims a caption file but is neither "
+             "a catalogued video nor a row in superseded_videos.json"
+             % row["video_id"])
+    if not failures:
+        print(f"PASS: every coverage row claiming a caption file is accounted "
+              f"for ({len(catalogued_ids)} catalogued videos; "
+              f"{n_orphan_preserved} preserved capture(s) whose upload is in the "
+              f"superseded ledger)")
+
     if failures:
         print(f"test_transcripts: {len(failures)} FAILURE(S)")
         return 1
@@ -447,6 +485,50 @@ def main():
         else:
             print(f"PASS: transcript index reaches all {linked} published "
                   f"transcript(s)")
+        if index.get("documents") != EXPECT_DOCUMENTS:
+            fail("_data/transcript_index.json: documents=%r != %d"
+                 % (index.get("documents"), EXPECT_DOCUMENTS))
+        if index.get("words") != EXPECT_WORDS:
+            fail("_data/transcript_index.json: words=%r != %d"
+                 % (index.get("words"), EXPECT_WORDS))
+        if index.get("paragraphs") != EXPECT_PARAGRAPHS:
+            fail("_data/transcript_index.json: paragraphs=%r != %d"
+                 % (index.get("paragraphs"), EXPECT_PARAGRAPHS))
+        # The index's own headline totals must be the sum of its own documents.
+        # Without this, `words` could be edited in place and every other check
+        # would still pass while the published word total became a fiction.
+        docs = [d for v in index.get("by_recording", {}).values() for d in v]
+        summed_words = sum(d.get("words", 0) for d in docs)
+        summed_paras = sum(d.get("paragraphs", 0) for d in docs)
+        if len(docs) != index.get("documents"):
+            fail("transcript index: %d document entries but documents=%r"
+                 % (len(docs), index.get("documents")))
+        if summed_words != index.get("words"):
+            fail("transcript index: documents sum to %d words but words=%r"
+                 % (summed_words, index.get("words")))
+        if summed_paras != index.get("paragraphs"):
+            fail("transcript index: documents sum to %d paragraphs but "
+                 "paragraphs=%r" % (summed_paras, index.get("paragraphs")))
+        if not failures:
+            print(f"PASS: {EXPECT_DOCUMENTS} published transcripts, "
+                  f"{EXPECT_WORDS} words, {EXPECT_PARAGRAPHS} paragraphs, and "
+                  f"the totals are the sum of the documents")
+        # The split the /transcripts/ page prints, read back out of the index.
+        for key, want in (("catalogued_videos", EXPECT_VIDEOS),
+                          ("videos_attached", EXPECT_TRANSCRIBED),
+                          ("videos_catalogue_only", EXPECT_CATALOGUE_ONLY)):
+            if index.get(key) != want:
+                fail("transcript index: %s=%r != %d"
+                     % (key, index.get(key), want))
+        if (index.get("videos_attached", 0)
+                + index.get("videos_catalogue_only", -1)) != EXPECT_VIDEOS:
+            fail("transcript index: attached %r + catalogue-only %r != %d; the "
+                 "two must partition the catalogue"
+                 % (index.get("videos_attached"),
+                    index.get("videos_catalogue_only"), EXPECT_VIDEOS))
+        else:
+            print(f"PASS: transcript split {EXPECT_TRANSCRIBED} attached + "
+                  f"{EXPECT_CATALOGUE_ONLY} catalogue-only = {EXPECT_VIDEOS}")
 
     # Every published page carries the disclaimer VERBATIM, and the video page
     # layout prints the same bytes. Both are compared against the one constant
@@ -469,6 +551,41 @@ def main():
     if on_disk:
         print(f"PASS: {len(on_disk)} published transcript page(s) each carry "
               f"the verbatim disclaimer and their text")
+
+    # The word total the site publishes, re-derived from the PUBLISHED PAGES
+    # rather than from the index. The index and the pages are written by
+    # different code, so agreeing with each other is a real check: if the
+    # builder ever published a page with a different word count than the one it
+    # recorded, this is where it would show.
+    fm_words = fm_paras = 0
+    fm_missing = []
+    for page in sorted(TRANSCRIPTS_DIR.glob("*.md")):
+        head = page.read_text(encoding="utf-8").split("---", 2)
+        fm = head[1] if len(head) >= 3 else ""
+        m_w = re.search(r"^words:\s*(\d+)\s*$", fm, re.M)
+        m_p = re.search(r"^paragraphs:\s*(\d+)\s*$", fm, re.M)
+        if not m_w or not m_p:
+            fm_missing.append(page.name)
+            continue
+        fm_words += int(m_w.group(1))
+        fm_paras += int(m_p.group(1))
+    if fm_missing:
+        fail("%d published transcript page(s) carry no words/paragraphs in "
+             "front matter: %s" % (len(fm_missing), ", ".join(fm_missing[:5])))
+    if on_disk and not fm_missing:
+        if len(list(TRANSCRIPTS_DIR.glob("*.md"))) != EXPECT_DOCUMENTS:
+            fail("%d published transcript page(s) != the approved %d"
+                 % (len(list(TRANSCRIPTS_DIR.glob("*.md"))), EXPECT_DOCUMENTS))
+        if fm_words != EXPECT_WORDS:
+            fail("published transcript pages sum to %d words, not the approved "
+                 "%d" % (fm_words, EXPECT_WORDS))
+        if fm_paras != EXPECT_PARAGRAPHS:
+            fail("published transcript pages sum to %d paragraphs, not the "
+                 "approved %d" % (fm_paras, EXPECT_PARAGRAPHS))
+        if not failures:
+            print(f"PASS: the {EXPECT_DOCUMENTS} published pages themselves sum "
+                  f"to {fm_words} words and {fm_paras} paragraphs - the figure "
+                  f"the site publishes, re-derived from the pages")
 
     # The 57/11 split, pinned here as well as in build_collections.py. A
     # published transcript is not enough on its own: what a reader must not

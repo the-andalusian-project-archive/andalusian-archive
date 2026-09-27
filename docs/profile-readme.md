@@ -16,10 +16,11 @@ Andalusian Project** — openly available, preserved with provenance.
 - **68 video records** — 56 preserved as files in the Internet Archive's `andalusian-project`
   collection, 12 catalogued as live re-uploads, with the channel's capture-dated history and
   the claims this archive refuses to make recorded alongside it.
-- **68 published machine transcripts, 540,947 words** — one document per capture, each with its
+- **68 published machine transcripts, 540,995 words** — one document per capture, each with its
   capture file, cue count, language and producing model. Every page carries the
   machine-transcript disclaimer.
-- **20 papers** — 6 held as local PDFs, with a 24-row access ledger recording what is open,
+- **20 papers** — 6 PDF files held locally across 5 of the paper records, with a 24-row access
+  ledger recording what is open,
   what is restricted and what is dead, including one DOI whose publisher domain no longer
   resolves.
 - **The evidence trail.** Six recovery lanes, an append-only integration log, two independent

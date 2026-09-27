@@ -5,7 +5,9 @@ A preservation archive of the published work of **Asadullah Ali Al-Andalusi**, f
 research fellow at the [Yaqeen Institute for Islamic Research](https://yaqeeninstitute.org),
 a member of the [Muslim Debate Initiative](https://muslimdebate.org), and a lecturer on
 contemporary atheism, philosophy of science, Islamic political thought and information
-literacy.
+literacy. Every attested form of his name, where each is attested, and the distinction from the
+different and also-active speaker named Abdullah al-Andalusi are on
+[`/asadullah-ali-al-andalususi/`](asadullah-ali-al-andalususi.md).
 
 **The original web presence is gone.** `asadullahali.com` is no longer his: the domain resolves
 and answers HTTP 200, serving an unrelated slot-gambling operation. Do not use it, and do not
@@ -13,7 +15,9 @@ cite it as his site — this archive does not claim to control or represent it, 
 fact only because a reader searching his name will land there. His WordPress mirror at
 `asadullahali.wordpress.com` is still up but its post bodies have been removed: navigable,
 described, empty. His YouTube channel returned "This channel is not available." at the live
-check recorded on 2026-09-27.
+check recorded on 2026-09-27. All of that is set out, query by query, on
+[`/asadullahali-com-what-happened/`](asadullahali-com-what-happened.md) — the page that carries
+the safety warning, because a link to that domain would defeat it.
 
 This repository is what is left. It is a preservation archive: works, papers, articles,
 notices, link-outs, video records, machine transcripts, capture metadata and image inventories,
@@ -67,11 +71,11 @@ conference paper), with the recovered works themselves dated 2011-12-18 to 2020-
 papers dated 2014 to 2021. Wayback enumeration reached back to 2007 captures. The recovery date
 is 2026-09-27; the content is not from 2026.
 
-**All figures in this README are as of 2026-09-27**, the date the counts were read from
-`_data/`. They are marked at every use so they cannot rot silently. One caveat, stated plainly:
-these are the counts *in the data*. The site's published headline totals have not yet been
-reconciled with them pending the site owner's approval — see
-[Note on the published totals](#note-on-the-published-totals) at the end.
+**All figures in this README are as of 2026-09-28**, the date the counts were read from
+`_data/` after the recount was approved. They are marked at every use so they cannot rot
+silently. The site's published headline totals are no longer a separate matter: they were
+frozen pending approval of the recount, and the recount has now been applied in one pass, so
+this file and the site publish the same set of numbers.
 
 ---
 
@@ -84,13 +88,13 @@ the number of rows in it.
 |---|---:|---|
 | **Recovered works** | **72** | 47 with full text in the repository, 24 catalogued Wayback-only, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. |
 | **Video records** | **68** | 56 preserved as files in the Internet Archive's `andalusian-project` collection; 12 catalogued as live re-uploads. 36 mirror URLs attached to the 30 entries they duplicate. |
-| **Papers** | **20** | 6 held as local PDFs (7 PDF files, one being a Japanese translation). 2 carry a DOI on the paper record. |
+| **Papers** | **20** | 6 PDF files held locally across 5 of the paper records (one of the six is a Japanese translation of a paper already counted). 2 carry a DOI on the paper record. |
 | **Machine transcripts** | **68** | 540,995 words and 37,388 paragraphs, published one document per capture. 57 attached to a video record, 11 preserved but deliberately not attached. Three documents carry a redaction applied at publication time, which is why the word total is 48 higher than the raw captures' own count (see [`NOTICE.md`](NOTICE.md) §6.2). |
 | **MDI articles** | **17 rows / 4 items** | Full text of all 17 held verbatim, 24,081 words. 13 of the 17 are a second publication of a work already counted, decided by 5-gram text comparison rather than title similarity. |
 | **Notices** | **3** | Announcements that are not works (a book list, a library update, a link post). Catalogued, never counted. |
 | **Link-outs** | **10** | The conversion-story reprint (held as metadata only; its body was never fetched) and 9 Yaqeen pages (link-outs by policy; their text is never downloaded). |
-| **Secondary-source records** | **69** | Mentions, bios, reprints and critiques written by other people about him. 32 mentions, 27 bios, 8 reprints, 2 critiques. None is counted as content. |
-| **Recovered images** | **334** | Images referenced by the WordPress mirror: 40 PNG, 294 JPG, 68.3 MB. A further 3 URLs were third-party CDN references and are unrecoverable. |
+| **Secondary-source records** | **70** | Mentions, bios, reprints and critiques written by other people about him. 33 mentions, 27 bios, 8 reprints, 2 critiques. None is counted as content. |
+| **Recovered images** | **334** | Images referenced by the WordPress mirror: 40 PNG, 294 JPG. The mirror delivered 335 staged files totalling **70,818,428 bytes** — the 335th is one PDF — which deduplicate to 286 unique files at 64,283,508 bytes. A further 3 URLs were third-party CDN references and are unrecoverable. |
 | **Wayback capture records** | **87** | One record per CDX capture: 17 actual-post permalinks, 13 monthly archives, 10 feeds, 2 AMP pages, 45 query variants. 51 fetched, 36 recorded as holding no content. |
 | **Channel timeline** | **26 rows** | Capture-dated states of the YouTube channel, plus an 18-point subscriber series read from the channel's own header. |
 | **Works recovery log** | **74 rows** | Per-work verdicts from the re-fetch lanes, with the method and word count for each. |
@@ -100,7 +104,10 @@ archive against itself: 9 Yaqeen link-out rows, 33 Al Balagh Academy course rows
 taught by him), 1 external Q&A interview, 12 superseded video duplicates preserved in full,
 and 74 recovery-log rows.
 
-The built site is 310 HTML pages plus 7 PDFs, with a 317-entry sitemap.
+The built site is 321 HTML pages plus 6 PDFs, with a 319-entry sitemap. The two built pages that
+are deliberately absent from the sitemap are `404.html` and `/search/`, which is `noindex` because
+it is an application surface rather than a page. All 319 sitemap `<loc>` values are absolute and
+resolve to a file on disk.
 
 ---
 
@@ -111,17 +118,17 @@ integration log, both committed under `docs/recovery-log/`.
 
 | What was missing or degraded | What it is now |
 |---|---|
-| **22 permalinks the WordPress mirror no longer returns.** A fresh CDX enumeration found 42 post permalinks with a 200 capture; 20 were still in the mirror's API, 22 were gone, holding 110 available captures between them. | 17 recovered as items the archive did not have — 14 works plus 3 announcements, catalogued as notices rather than works. 2 more filled stubs on works already held. 5 verified against captures already recorded. 0 not found. 31,631 words of prose, 78 Wayback fetches, every one HTTP 200. |
+| **22 permalinks the WordPress mirror no longer returns.** A fresh CDX enumeration found 42 post permalinks with a 200 capture; 20 were still in the mirror's API, 22 were gone, holding 110 available captures between them. | **18 recovered as items the archive did not have — 15 works plus 3 announcements**, catalogued as notices rather than works. 2 more filled stubs on works already held. 5 verified against captures already recorded. 0 not found. 31,631 words of prose, 78 Wayback fetches, every one HTTP 200. |
 | **"The Inhumanity of Human Rights" was listed as lost.** | **Found**, at 629 words. 22 of its 65 available captures were fetched and every one returns the same 629 words ending "-To be continued-". No Part 2 exists in any capture, so the work is recorded as found and incomplete. |
 | **"Library Take Down Notice" was held as a 45-word stub.** | **Found**, at 216 words. |
 | **"Reviewing HaqiqatJou" was held at 54,296 words — an earlier, shorter capture of a work that runs to nearly 69,000 words.** | **68,903 words**, +14,607, adopted from the WordPress mirror's own copy (last modified 2021-07-14). Diffed against the `asadullahali.com` capture and adopted as the single best text, never summed. This was the largest single gain in the recovery. |
-| **8 other works whose fullest Wayback capture beat the copy the archive held.** | 8 fuller versions adopted, each diffed and each recorded as one text rather than a sum, gaining between 16 and 282 words each. |
+| **8 other works whose fullest Wayback capture beat the copy the archive held.** | 8 fuller versions adopted, each diffed and each recorded as one text rather than a sum, gaining between **50 and 366** words each. |
 | **17 Muslim Debate Initiative articles existed only as live pages.** | Full text recovered verbatim on 2026-09-27, 24,081 words, all 17 held three ways (extracted prose, JSON cross-check, raw source) with the cross-check matching exactly. |
 | **A channel that now returns "This channel is not available."** | 68 catalogued videos with their IDs, durations, byte sizes and archive URLs. 56 preserved as files in the Internet Archive's `andalusian-project` collection; 12 catalogued as live re-uploads with a named uploader; 36 mirror URLs attached to the 30 entries they duplicate; 12 removed duplicates preserved in full in a superseded-video ledger rather than deleted. |
 | **The channel's own history — which was being described incorrectly.** | A 26-row capture-dated timeline, an 18-point subscriber series read from the channel's own header (190 in 2015 rising to 15.7K in 2022), the channel-id continuity argument, and **three claims this archive refuses to make, each recorded with the evidence that rejects it.** |
-| **20 papers, most with no local copy.** | 6 held as PDFs and served from the site; a 24-row access ledger recording 8 open-access, 15 restricted and 1 dead item, so the gap is visible rather than implied; 5 DOIs recorded, including one that is dead and is recorded as dead. Three of the held PDFs carry an explicit byte-identity proof: one sha256 against the publisher's own file as captured by the Internet Archive, one sha256 against the university repository bitstream, and one against the archive's own earlier copy of the same file. |
+| **20 papers, most with no local copy.** | 6 PDF files held locally across 5 of the paper records, and served from the site; a 24-row access ledger recording 8 open-access, 15 restricted and 1 dead item, so the gap is visible rather than implied; 5 DOIs recorded, including one that is dead and is recorded as dead. Three of the held PDFs carry an explicit byte-identity proof: one sha256 against the publisher's own file as captured by the Internet Archive, one sha256 against the university repository bitstream, and one against the archive's own earlier copy of the same file. |
 | **Nothing at all — no text of any of the lectures.** | **68 published machine transcripts, 540,995 words**, one document per capture, each with its capture file, cue count, language and producing model. |
-| **334 images referenced by the mirror, none recovered.** | 334 retrieved and inventoried (68.3 MB). See [Note on the recovered images](#note-on-the-recovered-images) for their publication status. |
+| **334 images referenced by the mirror, none recovered.** | 334 retrieved and inventoried. The mirror delivered 335 staged files totalling 70,818,428 bytes, which deduplicate to 286 unique files at 64,283,508 bytes. See [Note on the recovered images](#note-on-the-recovered-images) for their publication status. |
 
 The theme running through all of it: **this material was not lost, it was scattered and
 unlinked.** The best copies of this work sit across Wayback replay URLs, an Internet Archive
@@ -314,29 +321,58 @@ generated `data/*.json` search indexes are produced from `_data/` by
 
 ```
 _data/            canonical source of truth. Every collection, every count, every
-                  provenance field. 21 JSON files; nothing on the site types a number
-                  that is not counted from here.
+                  provenance field. 23 JSON files; nothing on the site types a number
+                  that is not counted from here. `entity_page.json` holds the attested
+                  name forms, roles and external attestations behind the entity page;
+                  `series.json` is generated by `scripts/build_series_index.py`.
 _posts/           54 dated post files, the older of the two prose collections
 _articles/        92 pages: the remaining works, the 17 MDI articles, and the 3 notices
-_papers/          20 paper pages, with 7 PDFs in _papers/pdfs/
+_papers/          20 paper pages, with 6 PDFs in _papers/pdfs/
 _videos/          68 video records
 _transcripts/     68 published machine transcripts
 _layouts/         6 Jekyll layouts
 _includes/        shared partials
 assets/           stylesheet
 scripts/          build and test tooling: collection builders, taxonomy applier,
-                  search-data sync, fetchers, transcribers, and four test suites
+                  series-index builder, search-data sync, fetchers, transcribers,
+                  and four test suites
 data/             generated search indexes. Never hand-edit; built from _data/
 docs/             recovery-log/ — the committed evidence trail
 docs/demo/        the site tour: a screen recording of the live site, and its
                   provenance. Recorded 2026-09-27; re-record when the site changes
-docs/superpowers/  the plan this recovery was executed against
+docs/superpowers/ the plan this recovery was executed against
 .github/          the Pages deploy workflow
 _staging/         raw captures and binaries. Gitignored, deliberately not published
 _config.yml       Jekyll configuration
 index.md articles.md papers.md videos.md transcripts.md
 channel.md timeline.md search.md   site pages
+series/           the 7 transcript series pages (one file per series, each a
+                  thin wrapper around _includes/series_page.html)
+asadullah-ali-al-andalususi.md     the entity page: who the subject is
+asadullahali-com-what-happened.md  the lost-and-found page: what happened to the
+                                  site, the mirror, the channel and the domain
+transcripts/by-series.md           the series index
 ```
+
+### The three searchability surfaces (added 2026-09-28)
+
+Three pages were added because the queries people actually type about this corpus had no
+honest answer anywhere on the web. None of them changed a published figure, and each
+reads its facts and counts out of `_data/` at build time.
+
+| Page | Route | What it answers |
+|---|---|---|
+| Who this is | `/asadullah-ali-al-andalususi/` | Every attested form of his name and where each is attested; the distinction from the different, active speaker also called Abdullah al-Andalusi, with the byline gate that keeps their work apart; his four recorded roles with the corpus's own tense preserved; a linked index into the collections; the loss record; and what this archive is and is not. Emits `Person` + `BreadcrumbList` JSON-LD. |
+| What happened to the website | `/asadullahali-com-what-happened/` | `asadullahali.com`, the WordPress mirror, the YouTube channel and the dead publisher domain. Carries the safety warning that the domain is now an unrelated gambling site — printed as plain text, never as a link — and answers the seven queries the archive is the only page answering. Emits `Article` + `FAQPage` + `BreadcrumbList` JSON-LD. |
+| Transcripts by series | `/transcripts/by-series/` and 7 series pages | The 68 transcripts were one flat list, so a reader wanting session three of a series had nothing to land on. Grouped into the series the channel itself numbered, with each part's transcript linked directly. |
+
+The grouping signal is the channel's own `NN - <series name>` title shape, **not** the
+`themes`/`topics`/`tone` fields on the video rows: those are produced by a first-match-wins
+substring classifier (`scripts/generate_video_themes.py`) whose largest bucket is its
+`default` branch, so they relabel rows rather than group them, and no per-transcript topic
+field exists at all. 28 recordings group into 7 series; the other 40 are not filed under an
+invented category and the index says so with that count. The rule lives in
+`scripts/build_series_index.py` and is re-derivable with `--check`.
 
 ---
 
@@ -350,14 +386,36 @@ reader to discover.
 
 ## Note on the published totals
 
-The counts in this README are read from `_data/` and are correct. The site's own published
-headline totals are a separate, deliberate matter: they were frozen pending the site owner's
-approval of a recount, and a Phase 3 review caught and reversed an attempt to publish the new
-figures ahead of that approval. Until the recount is approved and applied in one pass across the
-homepage, the works index and this file, the two will not match. That is a known, recorded
-state of the project rather than an error, and it is why every figure above is dated.
+**The recount is approved and applied.** This section used to explain that the counts in this
+README were correct while the site's own headline totals were still frozen at their pre-recount
+values, and that the two would not match until the site owner approved the recount. That is no
+longer the state of the project.
+
+On 2026-09-28 the approval was given and the recount was applied in one pass, so this file and the
+site publish one set of numbers: 72 works (47 full-text, 24 Wayback-only, 1 lost), 68 videos, 20
+papers, 17 MDI rows of which 4 are counted, 3 announcements never counted, 70 third-party source
+records never counted, and a total of 207 that is a sum rather than a figure anyone typed.
+
+**The published total is now computed, not typed.** The site's headline panel reads its seven terms
+out of `_data/` in a Liquid loop and prints the arithmetic it performed:
+
+```
+Total 207 = 72 + 68 + 20 + 4 + 9 + 33 + 1
+```
+
+Every page that shows a count — the homepage, the works index, the papers index, the search page
+and the timeline — counts it from `_data/` at build time, and
+`scripts/test_canonical_57.py` recomputes the same total from the same files and fails if
+`_data/content_index.json` disagrees with either the data or its own published formula string.
+
+The history of the gate is worth keeping, because it is why the pass took this shape. Phase 3
+published the recount on the works and papers pages while the homepage still published the old
+figures; the independent review caught that as a Critical finding and the fix wave reversed it, so
+the site spent a day contradicting itself rather than contradicting the data. The gate existed so
+the owner would see one diff. It is now closed, and closed the only way that keeps working: by
+making the numbers impossible to type.
 
 ---
 
-*Figures as of 2026-09-27. Recovery method, per-lane counts, integration log and review
+*Figures as of 2026-09-28. Recovery method, per-lane counts, integration log and review
 rounds: [`docs/recovery-log/`](docs/recovery-log/README.md).*
