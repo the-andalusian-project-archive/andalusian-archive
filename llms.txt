@@ -1,0 +1,62 @@
+# The Andalusian Project Archive
+
+> A preservation record of the published written and spoken work of Asadullah Ali Al-Andalusi ("The Andalusian Project"), catalogued with per-item provenance after his original web presence was lost. The corpus is partial and says so. This archive takes no position on the claims it preserves.
+
+## What this is
+
+A recovery, not a publication. The author's original site, his WordPress mirror and his YouTube channel were taken down, emptied or taken over. The strongest surviving copies were scattered across Wayback replay URLs, an Internet Archive directory listing, live third-party sites and an emptied WordPress shell. This repository is the single citable place they now live, and every item records where it came from.
+
+This is a dated polemical archive. It preserves arguments that were published against particular interlocutors at particular times. The claims are the author's. The archive endorses none of them.
+
+## What it holds
+
+Figures as of 2026-09-27, counted from `_data/`. The corpus is **partial**; the parenthetical figures are the incompleteness, not decoration.
+
+- **72 catalogued written works** - 47 with full text here, 24 catalogued Wayback-only with no text held, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. Recovered prose is verbatim: never summarised, paraphrased, reworded or silently merged.
+- **20 academic papers** - 6 PDFs held here, 1 withheld, the rest link-outs. A 24-row access ledger records what is open, restricted or dead, including one DOI whose publisher domain no longer resolves.
+- **68 video records** - 56 preserved as files in the Internet Archive, 12 catalogued as live re-uploads, with 36 mirror URLs attached to the 30 entries they duplicate.
+- **68 machine transcripts, 540,995 words** - one document per capture, each with its capture file, cue count, language and producing model. These are speech-recognition output and are a finding aid, not an authorised edition.
+- **87 Wayback capture records**, 334 recovered images, 3 announcements, 10 link-outs, 70 third-party source records.
+
+Read `_data/`, not prose summaries, for any figure. `README.md` gives the account; `docs/recovery-log/` gives the per-lane evidence behind every count.
+
+## How to cite
+
+Cite the work, not this repository.
+
+```
+Asadullah Ali Al-Andalusi, "<title>", <date>. The Andalusian Project.
+Preserved in The Andalusian Project Archive,
+https://the-andalusian-project-archive.github.io/andalusian-archive/<path>/;
+original capture: <wayback_url>.
+```
+
+The capture timestamp is what makes the citation resolve to what he actually wrote. Crediting "The Andalusian Project Archive" alone does not satisfy attribution. For a paper, cite the publication first and treat the archive as the surviving copy. Every transcript must be cited with its disclaimer, reproduced in `NOTICE.md` section 5.
+
+## The licence split
+
+- **The author's works are not relicensed here.** They were openly readable when published, which is availability, not permission. No open licence was ever applied to them and none is applied here. Copyright is the author's - or, for journal and conference papers, his and his co-authors' and the publishers'. Reuse of that prose is governed by the rights holder's terms.
+- **The archive's own material is CC BY-NC 4.0** - the `_data/` files, the `scripts/`, the Jekyll layouts and includes, the stylesheet, and the editorial prose this archive wrote about the material. This is the only grant in the repository. See `LICENSE`.
+- **`CITATION.cff` states the split** and records the archive as author of the record, not of the works.
+
+## What is withheld, on purpose
+
+Disclosed here because a silent gap is how an archive becomes unreliable. Full detail in `NOTICE.md` section 6.
+
+- **Two personal names** - his legal name and his birth name - appear nowhere in the published material, at the site owner's decision. The `‖ birth name withheld ‖` marker is substituted at build time; the citations themselves are left intact so they still resolve at the publishing institutions.
+- **Three raw caption captures** that contain the birth name are untracked, withheld unedited rather than altered.
+- **One PDF** - an IAIS Malaysia book chapter - is held but not published, because no public source URL could be established for that exact file. The citation is retained; the text is not distributed.
+- **Nothing was obtained by bypassing a paywall, a robots rule or an access control.** Where a source was inaccessible, that is recorded as inaccessible. The Academia.edu Cloudflare challenge was not fought.
+- **The live `asadullahali.com` was contacted zero times.** The domain no longer belongs to him; it now serves an unrelated, commercially operated site. Do not link to it and do not treat anything served there as his work. Institutional pages still present it as his official site; those references are out of date.
+
+## Useful entry points
+
+- Archive home and the domain situation stated up front: https://the-andalusian-project-archive.github.io/andalusian-archive/
+- Per-item provenance and catalogue: `_data/canonical_works.json`, `_data/papers.json`, `_data/videos.json`
+- Licence, redactions and withheld items: `NOTICE.md`, `LICENSE`
+- Every figure, with its evidence: `docs/recovery-log/`
+- Machine-readable citation metadata: `CITATION.cff`
+
+## Reporting a defect
+
+Provenance errors, dead capture links, and rights or takedown requests have issue templates in `.github/ISSUE_TEMPLATE/`. Read `CONTRIBUTING.md` first.

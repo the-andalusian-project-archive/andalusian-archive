@@ -1,4 +1,4 @@
-# The Andalusian Project — Asadullah Ali Al-Andalusi: Complete Recovered Works, Papers and Transcripts
+# The Andalusian Project — Asadullah Ali Al-Andalusi: Recovered Works, Papers and Transcripts
 
 A preservation archive of the published work of **Asadullah Ali Al-Andalusi**, founder of
 **The Andalusian Project** — an independent Islamic-studies research platform. He has been a
@@ -27,7 +27,7 @@ the other as a recorded alternate, and never adds them together.
 
 ## Status
 
-**Full recovery completed 2026-09-27.** Six recovery lanes ran in parallel — the WordPress
+**Recovery run finished 2026-09-27; the corpus is partial, and the gaps are catalogued rather than hidden.** Six recovery lanes ran in parallel — the WordPress
 mirror, deleted mirror posts and stub-fills, the Muslim Debate Initiative, best-capture
 re-fetches of `asadullahali.com`, secondary sources and academic texts, and the video
 catalogue — then an integration pass moved every verified item into the repository, and

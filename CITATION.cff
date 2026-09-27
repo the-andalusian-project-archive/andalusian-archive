@@ -1,0 +1,91 @@
+cff-version: 1.2.0
+message: >-
+  Cite the specific work you used, not this repository. The reproduced works
+  are by Asadullah Ali Al-Andalusi, founder of The Andalusian Project, and
+  copyright in them is his (or, for journal and conference papers, his and his
+  co-authors' and the publishers'); this repository does not relicense them and
+  grants nothing over them. The CC BY-NC 4.0 licence below covers the archive's
+  own material only - its data files, scripts, site source and documentation.
+  Where an original host is gone, cite the archive's copy and name the Wayback
+  capture it came from. See NOTICE.md, which lists every withheld item.
+type: dataset
+title: "The Andalusian Project Archive"
+abstract: >-
+  A preservation record of the published written and spoken work of Asadullah Ali
+  Al-Andalusi ("The Andalusian Project"), assembled by archival recovery in 2026
+  after the original web presence was lost, and catalogued with per-item
+  provenance. The corpus is partial and the record says so: of 72 catalogued
+  written works, 47 have full text in the repository, 24 are catalogued as
+  Wayback-only with no text held, and 1 is unrecovered; 7 published post pages
+  hold partial captures that no lane was able to improve. Recovered prose is
+  reproduced verbatim, never summarised, paraphrased or merged. This record
+  preserves what was published and then lost. It takes no position on the claims
+  it preserves, and it is not an endorsement of them.
+version: "1.0.0"
+date-released: "2026-09-27"
+authors:
+  - name: "The Andalusian Project Archive"
+    alias: "andalusian-archive"
+    website: "https://the-andalusian-project-archive.github.io/andalusian-archive/"
+url: "https://the-andalusian-project-archive.github.io/andalusian-archive/"
+repository-code: "https://github.com/the-andalusian-project-archive/andalusian-archive"
+license: CC-BY-NC-4.0
+license-url: "https://creativecommons.org/licenses/by-nc/4.0/legalcode"
+keywords:
+  - "Asadullah Ali Al-Andalusi"
+  - "The Andalusian Project"
+  - "Yaqeen Institute"
+  - "Muslim Debate Initiative"
+  - "Al Balagh Academy"
+  - "apologetics"
+  - "Islam and atheism"
+  - "evidentialism"
+  - "Islamic intuitionism"
+  - "Qur'an 86:5-7"
+  - "philosophy of science"
+  - "scientism"
+  - "historiography of science"
+  - "information literacy"
+  - "digital preservation"
+  - "Wayback Machine"
+  - "Internet Archive"
+  - "oral history"
+  - "machine transcripts"
+  - "provenance"
+references:
+  - type: data
+    title: "The Andalusian Project Archive - NOTICE, licences, and withheld items"
+    authors:
+      - name: "The Andalusian Project Archive"
+    url: "https://github.com/the-andalusian-project-archive/andalusian-archive/blob/main/NOTICE.md"
+    notes: >-
+      Authoritative on what this archive is, what it deliberately does not
+      publish, and where its own licence grant stops. Read it before reusing
+      anything here.
+  - type: data
+    title: "The Andalusian Project Archive - recovery evidence trail"
+    authors:
+      - name: "The Andalusian Project Archive"
+    url: "https://github.com/the-andalusian-project-archive/andalusian-archive/tree/main/docs/recovery-log"
+    notes: >-
+      Per-lane counts and provenance, the append-only integration log, and two
+      independent review rounds. This is the source for every figure quoted
+      about the recovery.
+  - type: data
+    title: "The Andalusian Project Archive - the profile account"
+    authors:
+      - name: "The Andalusian Project Archive"
+    url: "https://github.com/the-andalusian-project-archive"
+    notes: "Owner account for this repository and the live site."
+  - type: generic
+    title: "Recovered works, papers, video records and machine transcripts of Asadullah Ali Al-Andalusi"
+    authors:
+      - family-names: "Al-Andalusi"
+        given-names: "Asadullah Ali"
+    year: 2026
+    notes: >-
+      The reproduced works. Copyright in these works is the author's (or, for
+      journal and conference papers, the author's, his co-authors' and the
+      publishers') and is unchanged by their presence in this repository. Cited
+      here to record authorship, not to imply that the author created,
+      maintains or endorses this archive.

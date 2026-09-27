@@ -1,0 +1,73 @@
+{%- comment -%}
+  Language and direction annotation for a string this site renders that is
+  wholly or partly in a non-Latin script (2026-09-27, on-page SEO pass).
+
+  WHY. A corpus scan of every title / name / label field in `_data/*.json`
+  found exactly three places where a non-Latin script reaches a rendered page:
+
+    1. one Arabic title in `_data/linkouts.json` (rendered by articles.md),
+    2. one Turkish title in the same file (rendered by articles.md),
+    3. one Japanese label in `_data/papers.json` (rendered by papers.md and
+       by the paper's own page).
+
+  A full string in a right-to-left script placed inside this site's
+  `lang="en"` LTR document will be reordered by the Unicode Bidi Algorithm
+  around the neutral characters at its boundaries - the full stop, the colon,
+  the surrounding spaces - so `dir` and `lang` on the ELEMENT are the correct
+  fix, not a document-level change. A run that mixes scripts needs isolation
+  instead, and gets `<bdi>`, which isolates without asserting a language.
+
+  NOT DONE HERE, DELIBERATELY:
+    * no `dir="rtl"` is set on any document, and no `<html dir>`. Every one of
+      these strings is a quoted or listed title inside an English document, so
+      the document itself is LTR and setting it RTL would be a bug (audit A6).
+    * no `hreflang`. The corpus has no parallel-language HTML pages - the
+      Arabic, Turkish and Japanese editions exist only as external links and
+      one PDF - and `hreflang` needs indexable HTML pairs. Inventing them
+      would be fabrication.
+    * no treatment of the Arabic Qur'anic quotations inside two article
+      bodies. Those are quotations in running English prose, already correctly
+      laid out, and the bodies are generated files this pass does not edit.
+
+  The Turkish title needs `lang="tr"` and NOT `dir="rtl"`: it is Latin script
+  with Turkish-specific glyphs (U+0130, U+0131, U+015E, U+015F). Getting that
+  distinction right is the point of the test order below.
+
+  PARAMETER: text.
+{%- endcomment -%}
+{%- assign t = include.text -%}
+{%- if t and t != "" -%}
+  {%- comment -%} Marker characters, one representative per script actually
+    present in this corpus (audit A6 section 6, verified by a full scan of
+    `_data/*.json`: Arabic alef U+0627, Arabic yeh U+064A, CJK U+6771,
+    Hiragana U+306E, and the CJK corner bracket U+300C). A `contains` test is
+    the only script test Liquid can do; the list is deliberately short and
+    corpus-specific rather than a guess at "any non-ASCII". {%- endcomment -%}
+  {%- assign has_arabic = false -%}
+  {%- if t contains 'ا' or t contains 'ي' or t contains 'إ' or t contains 'أ' -%}
+    {%- assign has_arabic = true -%}
+  {%- endif -%}
+  {%- assign has_cjk = false -%}
+  {%- if t contains '東' or t contains 'の' or t contains '「' or t contains 'ジ' -%}
+    {%- assign has_cjk = true -%}
+  {%- endif -%}
+  {%- assign has_turkish = false -%}
+  {%- if t contains 'İ' or t contains 'ı' or t contains 'ş' or t contains 'Ş' -%}
+    {%- assign has_turkish = true -%}
+  {%- endif -%}
+  {%- assign has_latin_run = false -%}
+  {%- for ch in '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ' -%}
+    {%- if t contains ch -%}{%- assign has_latin_run = true -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if has_arabic and has_latin_run -%}
+    <bdi lang="ar" style="unicode-bidi: isolate">{{ t }}</bdi>
+  {%- elsif has_arabic -%}
+    <span lang="ar" dir="rtl" style="unicode-bidi: isolate">{{ t }}</span>
+  {%- elsif has_cjk -%}
+    <span lang="ja" style="unicode-bidi: isolate">{{ t }}</span>
+  {%- elsif has_turkish -%}
+    <span lang="tr">{{ t }}</span>
+  {%- else -%}
+    {{ t }}
+  {%- endif -%}
+{%- endif -%}

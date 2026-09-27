@@ -1,0 +1,86 @@
+name: Rights, licensing or takedown request
+description: Ask about copyright, licensing, or ask for an item to be removed, corrected or unpublished.
+title: "[rights] "
+labels:
+  - rights
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This archive reproduces the published work of a living author, so rights
+        requests are taken seriously and answered by a person.
+
+        What this archive does and does not hold is set out in `NOTICE.md`. In
+        short: the author's prose was openly readable when published, which is
+        availability rather than permission; copyright in it is the author's and
+        is **not** relicensed here; the archive's own data, scripts and
+        documentation are CC BY-NC 4.0. This template covers questions about that
+        split, and requests to remove, correct or unpublish a specific item.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is this about?
+      options:
+        - I hold rights in, or represent the holder of rights in, material here, and I am making a formal request
+        - Takedown or removal of a specific item
+        - Correction of a misattribution of my work
+        - A licensing question about reusing something from this repository
+        - A question about a permission the archive recorded for an item
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: item
+    attributes:
+      label: Item or page concerned
+      description: The specific URL, item slug or filename. If the request covers everything, write "whole repository".
+    validations:
+      required: true
+
+  - type: input
+    id: identity
+    attributes:
+      label: Your name and your relationship to the material
+      description: "For example - the author; a publisher; an author's representative; a co-author; a rights holder's agent; a reader with a concern."
+    validations:
+      required: true
+
+  - type: input
+    id: standing
+    attributes:
+      label: Basis for a formal request
+      description: Only for takedown or removal requests. Say what you are and what you are authorised to act on, and identify the work.
+    validations:
+      required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: A working email address
+      description: Required, so a rights holder can be verified and replied to.
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: What would you like to happen?
+      description: |
+        State the outcome you are asking for. For a removal or takedown, say
+        which items and why. For a correction, say what the correct attribution
+        or fact is.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I understand the archive's position is recorded in NOTICE.md, including which items are deliberately withheld, and I have read it.
+          required: false
+        - label: I have not pasted long passages of recovered text into this issue.
+          required: true

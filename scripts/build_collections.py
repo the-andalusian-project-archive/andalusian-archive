@@ -1235,6 +1235,117 @@ def video_filenames(videos):
 # of the tag. A video URL must never contain one.
 _HREF_BREAK = re.compile(r'["<>`]')
 
+# 2026-09-27 (on-page SEO pass): bidirectional isolation for a mixed-script
+# title.
+#
+# `_data/videos.json` has exactly one title written in a right-to-left script
+# (`s_BnmOrVaTg`: an Arabic-script title followed by a Latin transliteration,
+# separated by neutral characters). Rendered inside this site's `lang="en"`
+# LTR document, the Unicode Bidi Algorithm may reorder the neutrals at the
+# boundary, so the title can appear scrambled in a browser and, worse, in a
+# search result.
+#
+# Liquid cannot detect a script, and `<bdi>` cannot be emitted from a layout
+# without knowing where the non-Latin run starts and ends. So the run is
+# detected here, where the string is, and the two outputs a page needs are
+# written into front matter:
+#
+#   title_runs  - a list of {text, lang, dir}, so the layout can print the
+#                 <span lang dir> per run and the reader sees correct shaping
+#                 and correct screen-reader pronunciation.
+#   title_iso   - the same string with U+2066 LEFT-TO-RIGHT ISOLATE /
+#                 U+2069 POP DIRECTIONAL ISOLATE wrapped around each non-Latin
+#                 run, for the places that cannot carry markup: <title>,
+#                 og:title, twitter:title and the JSON-LD `name`.
+#
+# A title with no non-Latin character gets neither field, so 67 of the 68 video
+# pages are byte-identical to what they were before this. Nothing is guessed:
+# the script ranges below are checked, not inferred, and an unrecognised
+# non-Latin run still gets isolated, just without a language tag.
+_BIDI_RANGES = (
+    ("ar", 0x0600, 0x06FF, "rtl"),   # Arabic
+    ("he", 0x0590, 0x05FF, "rtl"),   # Hebrew
+    ("fa", 0xFB50, 0xFDFF, "rtl"),   # Arabic Presentation Forms-A
+    ("ur", 0x08A0, 0x08FF, "rtl"),   # Arabic Extended-A
+)
+_BIDI_CJK_RANGES = (
+    ("ja", 0x3000, 0x30FF, None),    # CJK punctuation, Hiragana, Katakana
+    ("ja", 0x3400, 0x4DBF, None),    # CJK Extension A
+    ("zh", 0x4E00, 0x9FFF, None),    # CJK Unified Ideographs
+)
+_LRI = "⁦"   # LEFT-TO-RIGHT ISOLATE
+_RLI = "⁧"   # RIGHT-TO-LEFT ISOLATE
+_PDI = "⁩"   # POP DIRECTIONAL ISOLATE
+
+
+def _bidi_script(ch):
+    """(lang, dir) for a character, or None when it is not a non-Latin script."""
+    cp = ord(ch)
+    for lang, lo, hi, direction in _BIDI_RANGES:
+        if lo <= cp <= hi:
+            return lang, direction
+    for lang, lo, hi, _direction in _BIDI_CJK_RANGES:
+        if lo <= cp <= hi:
+            return lang, None
+    return None
+
+
+def title_bidi(title):
+    """Split a title into script runs. Returns [] when the title is plain.
+
+    Whitespace is NEUTRAL, so it is absorbed into the run before it rather than
+    treated as a script change of its own. Without that, an Arabic title
+    separated by single spaces would come back as one run per WORD
+    ("مناظره" | " " | "عبدالله" | ...), which is both unusable as markup and
+    useless for isolation, because the space is exactly the neutral character
+    that needs protecting. A leading space, having no run before it, joins the
+    first real run.
+    """
+    runs = []
+    for ch in str(title or ""):
+        if ch.isspace() and runs:
+            runs[-1][1] += ch
+            continue
+        script = _bidi_script(ch)
+        key = ("ltr", None) if script is None else script
+        if runs and tuple(runs[-1][0]) == key:
+            runs[-1][1] += ch
+        else:
+            runs.append([list(key), ch])
+    if not runs or (len(runs) == 1 and tuple(runs[0][0]) == ("ltr", None)):
+        return []
+    return [(r[0][0], r[0][1], r[1]) for r in runs]
+
+
+def front_matter_bidi(title):
+    """The two front-matter keys _layouts/video.html reads, or [] for a title
+    that needs no isolation at all.
+
+    `title_iso` wraps each non-Latin run in the matching directional isolate
+    pair (RLI...PDI for a right-to-left script, LRI...PDI otherwise) and leaves
+    the Latin runs alone, so the neutral characters at a boundary sit inside an
+    isolate and the Bidi Algorithm cannot move them across it.
+    """
+    runs = title_bidi(title)
+    if not runs:
+        return []
+    out = ["title_runs: [%s]" % ", ".join(
+        '{"text": %s, "lang": %s, "dir": %s}' % (
+            q(text), q(lang) if lang else "null",
+            q(direction) if direction else "null")
+        for lang, direction, text in runs
+    )]
+    iso = []
+    for lang, direction, text in runs:
+        if direction == "rtl":
+            iso.append(_RLI + text + _PDI)
+        elif direction is None and lang:
+            iso.append(_LRI + text + _PDI)
+        else:
+            iso.append(text)
+    out.append("title_iso: %s" % q("".join(iso)))
+    return out
+
 
 def build_videos():
     videos = json.loads(VIDEOS_JSON.read_text(encoding="utf-8"))
@@ -1370,6 +1481,10 @@ def build_videos():
             front.append("catalogue_source: %s" % q(v["source"]))
         if v.get("note"):
             front.append("note: %s" % q(v["note"]))
+        # 2026-09-27 (on-page SEO pass): bidirectional isolation for a title
+        # written in, or mixing, a non-Latin script. Emitted only for the one
+        # title that needs it; the other 67 pages get no new key at all.
+        front.extend(front_matter_bidi(title))
 
         body = ["# %s" % title, ""]
         if vid == DUP52_ID:

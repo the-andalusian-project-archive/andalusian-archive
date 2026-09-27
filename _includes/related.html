@@ -1,0 +1,380 @@
+{%- comment -%}
+  "Related" block: 3-5 sibling links per detail page, derived from join keys
+  the archive's own data already carries (2026-09-27, on-page SEO pass).
+
+  WHY THIS EXISTS. Measured before this file: 27 of the archive's 311 pages had
+  zero inbound internal links, and 20 of those were the entire academic-papers
+  collection, because `/papers/` linked only to PDFs. The papers index is now
+  fixed directly (papers.md), but the general defect is that a detail page
+  offers the reader no onward path, so a crawler arriving at one of the 300
+  other detail pages has nothing to follow. This is the fix for all of them.
+
+  WHAT COUNTS AS A RELATIONSHIP HERE. Every link below is a real, data-derived
+  one, and the label on each link says which relation it is, so a reader can
+  check the claim rather than take it:
+
+    works       shares a `tags` value, else shares a `categories` value, with
+                another work. Both are read from the recovered posts' own front
+                matter - the original site's own tag and category taxonomy.
+    papers      shares a named co-author, else shares a publishing venue, else
+                shares a publication type, with another paper.
+    videos      shares a `themes` or `topics` value with another recording, both
+                from `_data/videos.json`.
+    transcripts the recording it transcribes; then any other transcript of the
+                SAME recording; then, to fill out, recordings that share a
+                theme or topic with the recording it transcribes.
+
+  WHAT IS REFUSED. No cross-collection linking for its own sake: a paper is
+  never linked from a video because they are both "on Islam". No link to a page
+  that does not exist, and no link to a row without a published page - the
+  candidate list is only ever walked when the target collection is one this
+  archive actually publishes a page for. No corpus count appears in the block.
+
+  PARAMETERS
+    kind : "works" | "papers" | "videos" | "transcripts"
+    self : the slug / paper title / video id / recording id of THIS page
+{%- endcomment -%}
+
+{%- assign rel = "" -%}
+{%- assign rel_why = "" -%}
+
+{%- if include.kind == "videos" -%}
+
+  {%- assign my_themes = include.my_themes -%}
+  {%- assign my_topics = include.my_topics -%}
+  {%- for v in site.data.videos -%}
+    {%- if v.id != include.self -%}
+      {%- assign score = 0 -%}
+      {%- for t in my_themes -%}
+        {%- if v.themes and v.themes contains t -%}{%- assign score = score | plus: 3 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- for t in my_topics -%}
+        {%- if v.topics and v.topics contains t -%}{%- assign score = score | plus: 2 -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if score > 0 and rel | size < 2400 -%}
+        {%- assign rec = "||" | append: "/videos/" | append: v.id | append: "/~" | append: v.title | append: "~" -%}
+        {%- if rel contains rec -%}
+          {%- assign rec = "" -%}
+        {%- endif -%}
+        {%- if rec != "" -%}
+          {%- assign rel = rel | append: rec -%}
+          {%- assign why = "" -%}
+          {%- for t in my_themes -%}
+            {%- if why == "" and v.themes contains t -%}{%- assign why = "shares the theme " | append: t -%}{%- endif -%}
+          {%- endfor -%}
+          {%- for t in my_topics -%}
+            {%- if why == "" and v.topics contains t -%}{%- assign why = "shares the topic " | append: t -%}{%- endif -%}
+          {%- endfor -%}
+          {%- assign rel_why = rel_why | append: why | append: ";" -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+{%- elsif include.kind == "papers" -%}
+
+  {%- assign mine = nil -%}
+  {%- for p in site.data.papers -%}
+    {%- if p.title == include.self -%}{%- assign mine = p -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if mine -%}
+    {%- comment -%}
+      The record is built as a `url~label~` triple appended to one string, and
+      de-duplicated with `rel contains rec` before appending. Liquid cannot sort
+      or hold a list of maps, and a string accumulator is the standard way round
+      that; the de-duplication test uses the whole triple, so two papers with
+      the same title and the same venue cannot double up.
+    {%- endcomment -%}
+    {%- comment -%} Pass 1: a named co-author. The strongest relation this
+      corpus has - three of the twenty papers share a co-author with another. {%- endcomment -%}
+    {%- for c in mine.co_authors -%}
+      {%- for p in site.data.papers -%}
+        {%- if p.title != include.self and p.co_authors contains c -%}
+          {%- assign pdoc = nil -%}
+          {%- for d in site.papers -%}{%- if d.title == p.title -%}{%- assign pdoc = d -%}{%- endif -%}{%- endfor -%}
+          {%- if pdoc -%}
+            {%- assign rec = "||" | append: pdoc.url | append: "~" | append: p.title | append: "~" -%}
+            {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
+            {%- if rec != "" -%}
+              {%- assign rel = rel | append: rec -%}
+              {%- assign rel_why = rel_why | append: "co-authored with " | append: c | append: ";" -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- comment -%} Pass 2: a shared publishing venue. {%- endcomment -%}
+    {%- if mine.publisher_journal -%}
+      {%- for p in site.data.papers -%}
+        {%- if p.title != include.self and p.publisher_journal and p.publisher_journal == mine.publisher_journal and rel | size < 2400 -%}
+          {%- assign pdoc = nil -%}
+          {%- for d in site.papers -%}{%- if d.title == p.title -%}{%- assign pdoc = d -%}{%- endif -%}{%- endfor -%}
+          {%- if pdoc -%}
+            {%- assign rec = "||" | append: pdoc.url | append: "~" | append: p.title | append: "~" -%}
+            {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
+            {%- if rec != "" -%}
+              {%- assign rel = rel | append: rec -%}
+              {%- assign rel_why = rel_why | append: "same venue: " | append: p.publisher_journal | append: ";" -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {%- comment -%} Pass 3: a shared publication type. Weakest, so last, and
+      only used to top the block up to three. A paper that shares none of the
+      three gets no block, which is the right answer: with every paper here
+      written by one person, "another paper of the same type" is not a relation
+      worth printing. {%- endcomment -%}
+    {%- if rel | size == 0 and mine.type -%}
+      {%- for p in site.data.papers -%}
+        {%- if p.title != include.self and p.type and p.type == mine.type and rel | size < 2400 -%}
+          {%- assign pdoc = nil -%}
+          {%- for d in site.papers -%}{%- if d.title == p.title -%}{%- assign pdoc = d -%}{%- endif -%}{%- endfor -%}
+          {%- if pdoc -%}
+            {%- assign rec = "||" | append: pdoc.url | append: "~" | append: p.title | append: "~" -%}
+            {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
+            {%- if rec != "" -%}
+              {%- assign rel = rel | append: rec -%}
+              {%- assign rel_why = rel_why | append: "also a " | append: p.type | append: ";" -%}
+            {%- endif -%}
+            {%- if rel | size > 1200 -%}{%- break -%}{%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+
+{%- elsif include.kind == "transcripts" -%}
+
+  {%- assign sibs = site.data.transcript_index.by_recording[include.self] -%}
+  {%- if sibs -%}
+    {%- for d in sibs -%}
+      {%- if d.url != include.self_url and rel | size < 2000 -%}
+        {%- assign rel = rel | append: "||" | append: d.url | append: "~" | append: d.title | append: "~" -%}
+        {%- if d.role == "duplicate-upload" -%}
+          {%- assign rel_why = rel_why | append: "another transcript of the same recording, from a duplicate upload;" -%}
+        {%- else -%}
+          {%- assign rel_why = rel_why | append: "another transcript of the same recording;" -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- comment -%} Fill out with recordings that share a theme or topic with
+    THIS recording, read off the video row the transcript belongs to. {%- endcomment -%}
+  {%- assign rec_row = nil -%}
+  {%- for v in site.data.videos -%}
+    {%- if v.id == include.self -%}{%- assign rec_row = v -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if rec_row -%}
+    {%- for v in site.data.videos -%}
+      {%- if v.id != rec_row.id and rel | size < 2400 -%}
+        {%- assign hit = "" -%}
+        {%- for t in rec_row.themes -%}{%- if hit == "" and v.themes contains t -%}{%- assign hit = "shares the theme " | append: t -%}{%- endif -%}{%- endfor -%}
+        {%- for t in rec_row.topics -%}{%- if hit == "" and v.topics contains t -%}{%- assign hit = "shares the topic " | append: t -%}{%- endif -%}{%- endfor -%}
+        {%- if hit != "" -%}
+          {%- assign rec = "||" | append: "/videos/" | append: v.id | append: "/~" | append: v.title | append: "~" -%}
+          {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
+          {%- if rec != "" -%}
+            {%- assign rel = rel | append: rec -%}
+            {%- assign rel_why = rel_why | append: hit | append: " with the recording above;" -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+{%- elsif include.kind == "works" -%}
+
+  {%- assign my_tags = include.my_tags -%}
+  {%- assign my_cats = include.my_cats -%}
+  {%- comment -%}
+    A catalogue entry under /articles/<slug>/ carries no tags of its own - the
+    recovered post does. So when the caller is a catalogue entry and has not
+    supplied the tag list, it is read once here, from the post that claims
+    this slug. One lookup per page, not one per candidate.
+  {%- endcomment -%}
+  {%- if my_tags == nil and include.target == "articles" -%}
+    {%- for p in site.posts -%}
+      {%- if p.slug == include.self -%}
+        {%- assign my_tags = p.tags -%}
+        {%- assign my_cats = p.categories -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- comment -%}
+    `target` decides whether a neighbour is linked as its catalogue entry
+    (`/articles/<slug>/`) or as its full text (the recovered post's own path).
+    The full-text path can contain spaces and an apostrophe - it is built from
+    the original site's own category path - so those are percent-encoded here.
+    That is the same encoding the archive's own stub pages already emit for
+    these links, and it is verified after the build to resolve to a real page.
+  {%- endcomment -%}
+  {%- if include.target == "posts" -%}
+    {%- assign tgt_prefix = "" -%}
+  {%- else -%}
+    {%- assign tgt_prefix = "/articles/" -%}
+  {%- endif -%}
+  {%- comment -%} Pass 1: works sharing a recovered `tags` value. Walking
+    `site.posts` once per of this page's own tags (not once per candidate) is
+    what keeps this linear in the size of this page's tag list rather than
+    quadratic in the corpus. {%- endcomment -%}
+  {%- for t in my_tags -%}
+    {%- for p in site.posts -%}
+      {%- if p.slug != include.self and p.tags and p.tags contains t and rel | size < 2400 -%}
+        {%- assign turl = nil -%}
+        {%- if include.target == "posts" -%}
+          {%- assign turl = p.url -%}
+        {%- else -%}
+          {%- assign found_doc = false -%}
+          {%- for w in site.articles -%}
+            {%- if w.slug == p.slug -%}{%- assign found_doc = true -%}{%- endif -%}
+          {%- endfor -%}
+          {%- if found_doc -%}
+            {%- assign turl = "/articles/" | append: p.slug | append: "/" -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if turl -%}
+          {%- assign rec = "||" | append: turl | append: "~" | append: p.title | append: "~" -%}
+          {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
+          {%- if rec != "" -%}
+            {%- assign rel = rel | append: rec -%}
+            {%- assign rel_why = rel_why | append: "shares the tag " | append: t | append: ";" -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- comment -%} Pass 2: top up from the recovered `categories`, so a work
+    whose neighbours share no single tag still gets a real, stated relation
+    rather than nothing. {%- endcomment -%}
+  {%- for c in my_cats -%}
+    {%- for p in site.posts -%}
+      {%- if p.slug != include.self and p.categories and p.categories contains c and rel | size < 2400 -%}
+        {%- assign turl = nil -%}
+        {%- if include.target == "posts" -%}
+          {%- assign turl = p.url -%}
+        {%- else -%}
+          {%- assign found_doc = false -%}
+          {%- for w in site.articles -%}
+            {%- if w.slug == p.slug -%}{%- assign found_doc = true -%}{%- endif -%}
+          {%- endfor -%}
+          {%- if found_doc -%}
+            {%- assign turl = "/articles/" | append: p.slug | append: "/" -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if turl -%}
+          {%- assign rec = "||" | append: turl | append: "~" | append: p.title | append: "~" -%}
+          {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
+          {%- if rec != "" -%}
+            {%- assign rel = rel | append: rec -%}
+            {%- assign rel_why = rel_why | append: "filed under " | append: c | append: " as well;" -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- comment -%} Pass 3: the publication YEAR. A corpus-wide scan shows 54 of
+    the recovered posts carry no `tags` and no `categories` front matter at
+    all, so passes 1 and 2 find nothing for the works they claim and those
+    pages - the full text a reader is actually on - would get no onward path at
+    all. For a writer whose work was published in date order, "published in the
+    same year" is a real, checkable relationship and the archive's own
+    /timeline/ is already organised on exactly that axis, so the link is
+    consistent with how the site presents the corpus. The reason is printed on
+    the line, so it is never read as a claim that the two works are about the
+    same thing. {%- endcomment -%}
+  {%- if rel == "" -%}
+    {%- assign my_year = include.my_year -%}
+    {%- for w in site.articles -%}
+      {%- if my_year == nil and w.slug == include.self -%}
+        {%- assign _y = w.date | slice: 0, 4 -%}
+        {%- assign _yn = _y | plus: 0 -%}
+        {%- if _yn > 1000 and _yn < 10000 -%}{%- assign my_year = _y -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if my_year == nil and include.my_date -%}
+      {%- assign _y = include.my_date | slice: 0, 4 -%}
+      {%- assign _yn = _y | plus: 0 -%}
+      {%- if _yn > 1000 and _yn < 10000 -%}{%- assign my_year = _y -%}{%- endif -%}
+    {%- endif -%}
+    {%- if my_year -%}
+      {%- for w in site.data.canonical_works -%}
+        {%- if w.slug != include.self and rel | size < 1800 -%}
+          {%- assign _wy = w.date | slice: 0, 4 -%}
+          {%- if _wy == my_year -%}
+            {%- assign rec = "||/articles/" | append: w.slug | append: "/~" | append: w.title | append: "~" -%}
+            {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
+            {%- if rec != "" -%}
+              {%- assign rel = rel | append: rec -%}
+              {%- assign rel_why = rel_why | append: "another of his works published in " | append: my_year | append: ";" -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- comment -%} Pass 4: last resort, and only for a catalogue entry. A
+    work with no date match and no text would otherwise get a block of pure
+    filler, which is worse than no block; its sibling works whose full text
+    this archive holds are the only honest thing left to offer. {%- endcomment -%}
+  {%- if rel == "" and include.target == "articles" -%}
+    {%- for w in site.articles -%}
+      {%- if w.slug != include.self and w.status == "found" -%}
+        {%- assign rel = rel | append: "||" | append: "/articles/" | append: w.slug | append: "/" | append: "~" | append: w.title | append: "~" -%}
+        {%- assign rel_why = rel_why | append: "another work whose full text this archive holds;" -%}
+        {%- if rel | size > 1000 -%}{%- break -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+{%- elsif include.kind == "items" -%}
+
+  {%- comment -%} Sibling pages from the same recovered source collection: one
+    MDI page to another, one announcement to another. The relation is the
+    collection itself, which is a real one - they were recovered by the same
+    sweep from the same author archive on the same date. {%- endcomment -%}
+  {%- for d in site.articles -%}
+    {%- if d.status == include.group and d.slug != include.self and rel | size < 1800 -%}
+      {%- assign rel = rel | append: "||" | append: d.url | append: "~" | append: d.title | append: "~" -%}
+      {%- if include.group == "mdi_text" -%}
+        {%- assign rel_why = rel_why | append: "another page he wrote for the Muslim Debate Initiative, from the same recovered author archive;" -%}
+      {%- else -%}
+        {%- assign rel_why = rel_why | append: "another announcement preserved from the original site;" -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+{%- endif -%}
+
+{%- if rel != "" -%}
+  {%- comment -%}
+    `rel` is built by appending "||" BEFORE each record, so the first element of
+    `split('||')` is the empty string left by that leading separator, and the
+    record at array index N is the Nth record - one past the reason at index N.
+    An earlier version indexed the reasons with `forloop.index0` and was wrong
+    by exactly one on every line, printing each link with the NEXT link's
+    stated relationship. `idx` counts RECORDS SHOWN instead, so a skipped
+    record cannot shift a label off its own link, which is the failure that
+    matters: a reader must be able to check the claim on the line it is on.
+  {%- endcomment -%}
+  {%- assign rel_items = rel | split: '||' -%}
+  {%- assign rel_whys = rel_why | split: ';' -%}
+  <div class="detail-section related-block">
+    <h3>Related</h3>
+    <ul class="source-list">
+      {%- assign shown = 0 -%}
+      {%- assign idx = 0 -%}
+      {%- for item in rel_items -%}
+        {%- if shown < 5 -%}
+          {%- assign bits = item | split: '~' -%}
+          {%- if bits[0] and bits[0] != "" and bits[1] and bits[1] != "" -%}
+            {%- assign this_why = rel_whys[idx] -%}
+            <li><a href="{{ bits[0] | replace: ' ', '%20' | relative_url }}">{{ bits[1] }}</a>{% if this_why and this_why != "" %} &mdash; {{ this_why }}{% endif %}</li>
+            {%- assign shown = shown | plus: 1 -%}
+            {%- assign idx = idx | plus: 1 -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endif -%}

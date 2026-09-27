@@ -163,7 +163,18 @@ layout: default
       <div class="content">
         {{ content }}
       </div>
-      
+
+      {%- comment -%}
+        Related papers, 2026-09-27 (on-page SEO pass). Every one of the 20
+        paper pages had zero inbound internal links, because /papers/ linked
+        only to PDFs; papers.md now links the index, and this gives each paper
+        onward paths as well. The join keys are the ones _data/papers.json
+        actually carries: a named co-author, then a shared publishing venue,
+        then a shared publication type. A paper with no co-author, no shared
+        venue and no shared type gets no block rather than a random one.
+      {%- endcomment -%}
+      {% include related.html kind="papers" self=page.title %}
+
       <div class="back-link">
         <a href="{{ '/papers/' | relative_url }}">&larr; Back to Academic Papers</a>
       </div>

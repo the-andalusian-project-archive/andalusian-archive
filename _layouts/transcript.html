@@ -97,4 +97,14 @@ layout: default
   <div class="content transcript-text">
     {{ content }}
   </div>
+
+  {%- comment -%}
+    Related, 2026-09-27 (on-page SEO pass). The first relation is the strongest
+    one this page has and the one its own "Where this transcript sits" block
+    already states: another transcript of the SAME recording, kept when a
+    duplicate upload left the catalogue. The block then tops out with
+    recordings that share a theme or topic with the recording above, so a
+    reader who has finished the words can go on to the argument.
+  {%- endcomment -%}
+  {% include related.html kind="transcripts" self=page.recording self_url=page.permalink %}
 </article>

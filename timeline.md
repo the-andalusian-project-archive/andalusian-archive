@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Timeline
+description: The writing and the recordings in the order they were published, from the first works on asadullahali.com to the removal of the channel's videos in October 2022.
 ---
 
 <h1 class="page-title">Timeline</h1>

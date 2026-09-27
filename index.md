@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+description: "A digital preservation record of the writing and recordings of Asadullah Ali Al-Andalusi and The Andalusian Project: papers, videos, machine transcripts and works, catalogued with the state of each capture."
 ---
 
 <div class="hero">

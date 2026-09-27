@@ -1,0 +1,42 @@
+{%- comment -%}
+  BreadcrumbList, emitted as its own ld+json block alongside the entity block
+  (2026-09-27, on-page SEO pass).
+
+  Emitted ONLY where the site's own navigation states the hierarchy. Every page
+  in the site nav links to Home and to its collection, and every detail page
+  carries a "Back to <collection>" link, so Home -> <collection> -> item is the
+  hierarchy the reader is actually shown and the one the back-link on the page
+  offers. A flat page (/timeline/, /channel/, /search/) gets no breadcrumb: a
+  one-item trail states nothing, and `/search/` and `/404.html` are excluded
+  from the index anyway.
+
+  PARAMETERS: parent_url (site-relative, e.g. "/papers/"), parent_name.
+  Inherited from seo_head.html: seo_abs, seo_title.
+{%- endcomment -%}
+{%- assign crumb_site = site.url | append: site.baseurl | append: "/" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": {{ crumb_site | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": {{ include.parent_name | jsonify }},
+      "item": {{ include.parent_url | absolute_url | jsonify }}
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ seo_title | jsonify }},
+      "item": {{ seo_abs | jsonify }}
+    }
+  ]
+}
+</script>

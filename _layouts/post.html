@@ -2,15 +2,15 @@
 layout: default
 ---
 <article class="post-detail">
-      <h1>{{ page.title }}</h1>
-      
       {%- comment -%}
-        Category badge. A _posts file is the local text of a work, so its
-        category is the category of the work it holds. The join runs through
-        the generated _articles page, whose `local_post:` front matter names
-        this file (written by build_collections.py) and whose `slug:` is the
-        work slug. A partial local file that no counted work claims - the
-        documented UNCLAIMED_POSTS set - therefore renders no badge, which is
+        Work slug, resolved FIRST because both the category badge below and the
+        namespace note need it. A post's own `slug` is the original site's slug
+        for the post and is NOT always the archive's work slug - the recovered
+        post `charlie-hebdo.md` is the work `charlie-hebdo-coexistence-and-
+        crocodile-tears` - so the join goes through the generated _articles page
+        that names this file in `local_post:`, which is the only place the two
+        are related. A partial local file that no counted work claims - the
+        documented UNCLAIMED_POSTS set - therefore resolves no slug, which is
         the honest result: the page is text, and it is not a counted item.
       {%- endcomment -%}
       {%- assign work_slug = nil -%}
@@ -19,6 +19,64 @@ layout: default
           {%- assign work_slug = doc.slug -%}
         {%- endif -%}
       {%- endfor -%}
+
+      <h1>{{ page.title }}</h1>
+
+      {%- comment -%}
+        Namespace note, 2026-09-27 (on-page SEO pass).
+
+        `_config.yml` gives posts the site-wide `permalink:
+        /:categories/:title/`, and 18 of the recovered posts carry `Articles` as
+        their first category - a category from the ORIGINAL site, not from this
+        one. Those 18 therefore render at a path that begins with `/articles/`,
+        which is also where the `_articles` collection puts its catalogue
+        entries. Measured: no two pages collide, because none of the 18 has
+        `Articles` as its ONLY category, so the paths differ in their
+        category-path segments; but the prefix overlap is real, and one of the
+        18 was additionally invisible - it is a `needs_review` partial capture,
+        and those carry no catalogue entry, so nothing linked to it at all.
+
+        The least-damaging fix, and the one implemented, is to keep every
+        address exactly as published and indexed and make the overlap legible:
+          * /articles/ now lists all seven partial captures, so the colliding
+            page is reachable by browsing (see the "Partial captures" section);
+          * this note is printed on the page itself, so a reader who arrives
+            from a search result can see that the address is inherited from the
+            original site's category path rather than chosen by this archive;
+          * nothing was moved and nothing redirects.
+
+        Moving these 18 to clean paths was rejected: it would 301 addresses
+        that are already published and already in the sitemap, it would
+        collide head-on with the catalogue entries for the same works, and the
+        two colliding families cannot be separated without moving one of them
+        anyway. The overlap is documented rather than hidden.
+
+        The catalogue link is emitted only when `work_slug` resolved, i.e. only
+        when a counted work actually claims this file. On the seven unclaimed
+        partial captures it does not, and the note says so rather than printing
+        an address that does not exist.
+      {%- endcomment -%}
+      {%- if page.url contains '/articles/' -%}
+      <div class="info-block">
+        <p class="meta"><strong>About this address.</strong> This page&rsquo;s
+        address is inherited from the original site&rsquo;s own category path
+        (<code>{% for c in page.categories %}{{ c | escape }}{% unless forloop.last %} &rsaquo; {% endunless %}{% endfor %}</code>),
+        not chosen by this archive, which is why it sits under
+        <code>/articles/</code> rather than under a short slug.
+        {%- if work_slug %} The archive&rsquo;s catalogue entry for the same work is
+        <a href="{{ '/articles/' | relative_url }}{{ work_slug }}/"><code>/articles/{{ work_slug }}/</code></a>.
+        {%- else %} No counted work claims this file, so it is published as a partial
+        capture and carries no catalogue entry; it is listed under
+        <a href="{{ '/articles/' | relative_url }}#partial-captures">Partial captures</a> on the Blog Posts page.
+        {%- endif %}</p>
+      </div>
+      {%- endif -%}
+
+      {%- comment -%}
+        Category badge. A _posts file is the local text of a work, so its
+        category is the category of the work it holds. The join is the
+        `work_slug` resolved above.
+      {%- endcomment -%}
       {%- assign cat = nil -%}
       {%- if work_slug -%}
         {%- for row in site.data.canonical_works -%}
@@ -58,4 +116,14 @@ layout: default
       <div class="back-link">
         <a href="{{ '/articles/' | relative_url }}">&larr; Back to Blog Posts</a>
       </div>
+
+      {%- comment -%}
+        Related works, 2026-09-27 (on-page SEO pass). This page holds a work's
+        full text, so its neighbours are linked as full texts too - not as
+        catalogue entries, which would be a step backwards for a reader. The
+        join is the recovered posts' own `tags` and then their `categories`,
+        i.e. the original site's own taxonomy, and the page that is already
+        on-screen for each work is named in the block's own section above.
+      {%- endcomment -%}
+      {% include related.html kind="works" self=page.slug my_tags=page.tags my_cats=page.categories my_date=page.date target="posts" %}
 </article>

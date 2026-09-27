@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog Posts
+description: "Every work this archive holds or has located, by status: full text preserved in this repository, Wayback-only, and lost. Plus the MDI pages, the announcements and the link-outs."
 ---
 {%- comment -%}
   2026-09-27 (task 8f, Phase-3 review C1): the four PUBLISHED figures on this
@@ -159,7 +160,7 @@ title: Blog Posts
 <div class="card-grid">
 {% for l in site.data.linkouts %}
   <div class="card">
-    <h3>{{ l.title }}</h3>
+    <h3>{% include bidi.html text=l.title %}</h3>
     <div class="card-meta">
       {% if l.type == "conversion_story" %}{{ l.published_by }}{% if l.published %} &middot; {{ l.published }}{% endif %}{% else %}Yaqeen Institute for Islamic Research{% endif %}
     </div>
@@ -175,6 +176,64 @@ title: Blog Posts
   </div>
 {% endfor %}
 </div>
+
+{%- comment -%}
+  Partial captures (2026-09-27, on-page SEO pass).
+
+  Seven pages on this site were reachable only by typing their URL. They are
+  exactly the seven `_posts` files that
+  scripts/build_collections.py :: UNCLAIMED_POSTS names - the documented set of
+  partial captures the recovery could not tie to a counted work with
+  confidence. Before this section they had no inbound link from anywhere, which
+  the crawl graph measured as 7 orphan pages.
+
+  They are listed here, with the partial-capture status stated on the page
+  rather than hidden, and each is linked twice: once to the recovered fragment
+  itself, and once to the work entry the archive does catalogue for it, where
+  one exists. Nothing is claimed about them beyond what the data says. The set
+  is discovered by asking the posts for their own `needs_review` flag, not by
+  hardcoding seven URLs, so a future capture that joins the set is picked up by
+  the next build without an edit here.
+
+  The section is placed after the link-outs and before the closing about box
+  because it is not a collection: it is a list of pages that exist for a
+  provenance reason, and it is marked "partial capture" on every row so a
+  reader never mistakes one of these for a complete work.
+{%- endcomment -%}
+{%- assign partial_posts = site.posts | where_exp: "p", "p.needs_review" -%}
+{%- if partial_posts.size > 0 -%}
+<h2 id="partial-captures">Partial captures</h2>
+{%- if partial_posts.size == 1 -%}
+<p class="page-note">{{ partial_posts.size }} further page recovered from the original site that the archive could not confidently tie to a counted work, and which is therefore kept as a partial capture rather than counted. It is published exactly as it was recovered and is listed here so that it is reachable by browsing rather than only by direct address. <strong>It is a fragment, not a complete work</strong>, and the archive does not present it as such.</p>
+{%- else -%}
+<p class="page-note">{{ partial_posts.size }} further pages recovered from the original site that the archive could not confidently tie to a counted work, and which are therefore kept as partial captures rather than counted. Each is published exactly as it was recovered and each is listed here so that they are reachable by browsing rather than only by direct address. <strong>These are fragments, not complete works</strong>, and the archive does not present them as such.</p>
+{%- endif -%}
+<div class="card-grid">
+{%- for pp in partial_posts -%}
+  {%- assign catwork = nil -%}
+  {%- for w in site.data.canonical_works -%}
+    {%- if w.slug == pp.slug -%}{%- assign catwork = w -%}{%- endif -%}
+  {%- endfor -%}
+  <div class="card">
+    <h3>{{ pp.title }}</h3>
+    <div class="card-meta">
+      {{ pp.date | date: "%B %d, %Y" }}{% if pp.word_count %} &middot; {{ pp.word_count }} words recovered{% endif %}{% if pp.provenance %} &middot; capture {{ pp.provenance }}{% endif %}
+    </div>
+    <div class="card-tags">
+      <span class="tag tag-status">Partial capture &mdash; not counted</span>
+      {% if pp.categories %}{% for c in pp.categories %}<span class="tag tag-topic">{{ c }}</span>{% endfor %}{% endif %}
+    </div>
+    <div class="card-body">A fragment recovered from a Wayback Machine capture of the original site. It is short, it is unedited, and the archive has not established that it is a complete essay, so it is neither counted as a work nor presented as one. Its address is the original site's own category path, which is why some of these pages sit under a category URL rather than under <code>/articles/</code>.</div>
+    <div class="card-actions">
+      <a href="{{ pp.url | replace: ' ', '%20' | relative_url }}" class="btn btn-primary btn-sm">Read the recovered text</a>
+      {%- if catwork -%}
+      <a href="{{ '/articles/' | relative_url }}{{ catwork.slug }}/" class="btn btn-outline btn-sm">Catalogue entry</a>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endfor -%}
+</div>
+{%- endif -%}
 
 <div class="section">
   <div class="info-block">

@@ -67,4 +67,18 @@ layout: default
       <div class="back-link">
         <a href="{{ '/articles/' | relative_url }}">&larr; Back to Blog Posts</a>
       </div>
+
+      {%- comment -%}
+        Related, 2026-09-27 (on-page SEO pass). Three different page kinds share
+        this layout and each has a different honest relation to offer, so the
+        block is dispatched on the same `status` the category badge above reads:
+        a work's catalogue entry links to works that share a recovered tag or
+        category; an MDI text page links to the other MDI pages recovered by
+        the same author-archive sweep; a notice links to the other notices.
+      {%- endcomment -%}
+      {%- if page.status == "mdi_text" or page.status == "notice" -%}
+        {% include related.html kind="items" group=page.status self=page.slug %}
+      {%- else -%}
+        {% include related.html kind="works" self=page.slug target="articles" %}
+      {%- endif -%}
 </article>

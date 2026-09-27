@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: The archive itself (what it holds, and how to cite it)
+    url: https://the-andalusian-project-archive.github.io/andalusian-archive/
+    about: Browse the recovered works, papers, video records and transcripts, each with its provenance. Start here if you are not sure what a report should be about.
+  - name: NOTICE - licences, provenance, and what is withheld
+    url: https://github.com/the-andalusian-project-archive/andalusian-archive/blob/main/NOTICE.md
+    about: The authoritative statement of what this archive is, what it deliberately does not publish, and exactly where its own CC BY-NC 4.0 grant stops. Read this before filing a rights or provenance report.
+  - name: Recovery evidence trail (per-lane counts and provenance)
+    url: https://github.com/the-andalusian-project-archive/andalusian-archive/tree/main/docs/recovery-log
+    about: Lane manifests, the integration log and two independent review rounds. Use this to check a figure before reporting that it is wrong.

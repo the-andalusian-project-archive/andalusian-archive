@@ -1,11 +1,37 @@
 <!DOCTYPE html>
+{%- comment -%}
+  2026-09-27 (on-page SEO pass). The head used to emit a hand-rolled
+  `<meta name="description">` from page.excerpt, then call jekyll-seo-tag's
+  `seo` tag with `title=false`, then print its own `<title>`. That produced
+  TWO description tags on every page - the hand-rolled one first, so it won in
+  every consumer that takes the first match, and on the pages with no excerpt
+  it collapsed to one identical site-wide sentence - and left the title, the
+  Open Graph tags, the Twitter card and the JSON-LD to a plugin that has no
+  way to know about this site's four custom collections.
+
+  `_includes/seo_head.html` now owns the head, and `content` is captured into
+  `seo_rendered` BEFORE the head is written: the social image is read out of
+  the rendered body, so a page's og:image is by construction the image that
+  page actually displays. `content` is a Liquid template variable in scope
+  anywhere in a layout, so capturing it above the <head> is valid, and the
+  body below still prints it unchanged.
+
+  `noindex` is a front-matter key read by seo_head.html and emitted into the
+  real <head>. /404.md previously carried its robots meta in the document
+  BODY, which browsers hoist but which is not where it belongs.
+
+  NOTE for the next editor: never write a bare `}` inside a Liquid template
+  outside of a `raw` block. Liquid's tokenizer ends a variable at a SINGLE
+  closing brace, so a search-query placeholder like `?q={search_term_string}`
+  written inline truncates the variable. jsonld.html builds that one string
+  inside a `raw` block for exactly that reason.
+{%- endcomment -%}
+{%- assign seo_rendered = content -%}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ page.excerpt | strip_html | truncate: 160 | default: site.description }}">
-  {% seo title=false %}
-  <title>{{ page.title }} | {{ site.title }}</title>
+  {% include seo_head.html rendered=content %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>

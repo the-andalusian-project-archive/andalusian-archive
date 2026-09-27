@@ -1,0 +1,327 @@
+{%- comment -%}
+  JSON-LD, emitted per page type by the archive itself (2026-09-27, on-page
+  SEO pass). Replaces the single `BlogPosting` node jekyll-seo-tag put on 302
+  pages, which was the wrong type for every video record, every transcript
+  and every academic paper, and which carried no `author` at all.
+
+  RULES HELD TO THROUGHOUT THIS FILE
+  1. A field is emitted only when the page's own front matter or the row it
+     was generated from actually contains it. Where the data is silent -
+     a video's upload date, a paper's access status where the archive does not
+     mirror the text, a recording's thumbnail - the field is OMITTED, not
+     filled with a plausible value. There is no placeholder text anywhere in
+     the emitted output.
+  2. No corpus count appears in any node. The node inventory is expressed as
+     an ItemList of the site's own collection index pages, whose URLs are
+     facts, rather than as a number the site owner has not approved.
+  3. Every `@id` and `url` is absolute and is built from `url` + `baseurl` +
+     the page path, so a node can never disagree with its own canonical link
+     or with the sitemap.
+  4. String values go through `| jsonify`, so a title containing a quote, a
+     backslash or a full-width brace cannot produce invalid JSON. (The corpus
+     does contain such titles: `'"How NOT to be a Critic"'`.)
+  5. Breadcrumbs are emitted only where the site's own nav states the
+     hierarchy - Home -> collection -> item. A one-level breadcrumb on a flat
+     page (/timeline/, /channel/) states nothing and is not emitted.
+
+  PARAMETERS (all from seo_head.html): seo_kind, seo_title, seo_desc,
+  seo_abs, seo_date, seo_image, seo_author.
+{%- endcomment -%}
+
+{%- assign archive_subject = "Asadullah Ali Al-Andalusi" -%}
+{%- assign site_abs = site.url | append: site.baseurl | append: "/" -%}
+{%- assign papers_abs = "/papers/" | absolute_url -%}
+{%- assign videos_abs = "/videos/" | absolute_url -%}
+{%- assign transcripts_abs = "/transcripts/" | absolute_url -%}
+{%- assign articles_abs = "/articles/" | absolute_url -%}
+{%- comment -%}
+  The SearchAction query template. Written inside a `raw` block because
+  Liquid's tokenizer ends a variable at a SINGLE closing brace, so a
+  `?q={search_term_string}` placeholder written inline silently truncates the
+  whole `{{ ... }}` and fails the build. Here it is emitted as literal text and
+  appended afterwards, which is the only correct way to put a closing brace
+  through a Liquid template.
+
+  The absolute URL is then built by CONCATENATION rather than through
+  `absolute_url`: that filter percent-encodes the braces into
+  `%7Bsearch_term_string%7D`, and the spec wants the placeholder recognisable.
+{%- endcomment -%}
+{%- capture _qtmpl -%}{% raw %}q={search_term_string}{% endraw %}{%- endcapture -%}
+{%- assign search_url = site.url | append: site.baseurl | append: "/search/?" | append: _qtmpl -%}
+
+{%- if seo_kind == "home" -%}
+
+{%- comment -%} The archive itself: a WebSite with a real SearchAction
+  pointing at the site's own client-side search, and a CollectionPage whose
+  mainEntity is an ItemList of the six collection index pages. The list is a
+  list of URLs the site already publishes, so it states the archive's shape
+  to a crawler without asserting a single unapproved figure. {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ site_abs | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ site_abs | jsonify }},
+      "inLanguage": "en",
+      "description": {{ site.description | jsonify }},
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Andalusian Project Archive",
+        "url": {{ site_abs | jsonify }}
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": {{ search_url | jsonify }}
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": {{ site_abs | append: "#collection" | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "url": {{ site_abs | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": { "@id": {{ site_abs | jsonify }} },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Collections in this archive",
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "url": {{ papers_abs | jsonify }}, "name": "Academic Papers" },
+          { "@type": "ListItem", "position": 2, "url": {{ videos_abs | jsonify }}, "name": "Video Archive" },
+          { "@type": "ListItem", "position": 3, "url": {{ transcripts_abs | jsonify }}, "name": "Transcripts" },
+          { "@type": "ListItem", "position": 4, "url": {{ articles_abs | jsonify }}, "name": "Blog Posts" },
+          { "@type": "ListItem", "position": 5, "url": {{ "/channel/" | absolute_url | jsonify }}, "name": "The YouTube Channel Record" },
+          { "@type": "ListItem", "position": 6, "url": {{ "/timeline/" | absolute_url | jsonify }}, "name": "Timeline" }
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+{%- elsif seo_kind == "paper" -%}
+
+{%- comment -%} ScholarlyArticle. The co-author names are emitted as `author`
+  alongside the archive's subject only where `_data/papers.json` names them;
+  the one paper whose author line the site owner redacted carries an empty
+  `co_authors` list, so nothing withheld can reach this block. The one paper
+  whose `note` explains that redaction is deliberately NOT read here, because
+  that note is provenance prose, not a bibliographic field. {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": {{ seo_abs | append: "#scholarlyarticle" | jsonify }},
+  "headline": {{ seo_title | jsonify }},
+  "name": {{ seo_title | jsonify }},
+  "url": {{ seo_abs | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
+  "inLanguage": "en",
+  "author": [
+    {
+      "@type": "Person",
+      "name": {{ archive_subject | jsonify }},
+      "isSubjectOf": { "@id": {{ site_abs | jsonify }} }
+    }
+    {%- for c in page.co_authors %},
+    { "@type": "Person", "name": {{ c | jsonify }} }
+    {%- endfor %}
+  ],
+  "isPartOf": { "@type": "CollectionPage", "name": "Academic Papers", "url": {{ papers_abs | jsonify }} },
+  {%- if seo_date %}
+  "datePublished": {{ seo_date | jsonify }},
+  {%- endif %}
+  {%- if page.publisher_journal %}
+  "publisher": { "@type": "Organization", "name": {{ page.publisher_journal | jsonify }} },
+  {%- endif %}
+  {%- if page.volume_issue %}
+  "volumeIssue": {{ page.volume_issue | jsonify }},
+  {%- endif %}
+  {%- if page.doi %}
+  "identifier": {{ page.doi | jsonify }},
+  "sameAs": {{ page.doi | prepend: "https://doi.org/" | jsonify }},
+  {%- endif %}
+  {%- if page.type %}
+  "articleSection": {{ page.type | jsonify }},
+  {%- endif %}
+  {%- if page.file_url %}
+  "isAccessibleForFree": true,
+  "encoding": {
+    "@type": "MediaObject",
+    "contentUrl": {{ page.file_url | absolute_url | jsonify }},
+    "encodingFormat": "application/pdf",
+    "description": {{ page.file | jsonify }}
+  },
+  "encodingFormat": "application/pdf",
+  {%- else %}
+  {%- comment -%}
+    `isAccessibleForFree` is NOT emitted here. This archive does not mirror the
+    text, and whether the publisher's own copy is paywalled today is a fact
+    this archive does not hold; emitting `false` would be a claim about
+    someone else's page, and emitting `true` would be a claim this archive
+    cannot support. The field is left out and the availability is stated in
+    the description instead, where it is a statement about this site.
+  {%- endcomment -%}
+  {%- endif %}
+  "description": {{ seo_desc | jsonify }}
+}
+</script>
+{%- include breadcrumb.html parent_url="/papers/" parent_name="Academic Papers" %}
+
+{%- elsif seo_kind == "video" -%}
+
+{%- comment -%} VideoObject.
+
+  `duration` is converted from the row's own seconds - `616.26` -> PT10M16S -
+  so it is a measured value, not an estimate.
+
+  `uploadDate` is NOT emitted. `_data/videos.json` records no upload date for
+  any of the 68 recordings, and the archive's own channel record is explicit
+  that the captures establish what a channel showed on a date and nothing more.
+  An invented uploadDate would be the single most damaging field Google could
+  catch on this corpus.
+
+  `publisher` is stated only for category A entries, where the archive's own
+  taxonomy rule ("who made the recording") settles it, and is omitted for
+  category C entries, which are his appearances on other people's channels.
+  `thumbnailUrl` is omitted: the archive holds no thumbnail for a recording. {%- endcomment -%}
+{%- assign dur_iso = nil -%}
+{%- if page.duration and page.duration != "" -%}
+  {%- assign _d = page.duration | plus: 0 | round: 0 -%}
+  {%- if _d > 0 -%}
+    {%- assign _h = _d | divided_by: 3600 -%}
+    {%- assign _m = _d | modulo: 3600 | divided_by: 60 -%}
+    {%- assign _s = _d | modulo: 60 -%}
+    {%- if _h > 0 -%}
+      {%- assign dur_iso = "PT" | append: _h | append: "H" | append: _m | append: "M" | append: _s | append: "S" -%}
+    {%- elsif _m > 0 -%}
+      {%- assign dur_iso = "PT" | append: _m | append: "M" | append: _s | append: "S" -%}
+    {%- else -%}
+      {%- assign dur_iso = "PT" | append: _s | append: "S" -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "@id": {{ seo_abs | append: "#videoobject" | jsonify }},
+  "name": {{ seo_title | jsonify }},
+  "description": {{ seo_desc | jsonify }},
+  "url": {{ seo_abs | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
+  "inLanguage": "en",
+  "isPartOf": { "@type": "CollectionPage", "name": "Video Archive", "url": {{ videos_abs | jsonify }} },
+  {%- if dur_iso %}
+  "duration": {{ dur_iso | jsonify }},
+  {%- endif %}
+  {%- if page.archive_url and page.archive_url != "" and page.source != "youtube_not_archived" %}
+  "contentUrl": {{ page.archive_url | jsonify }},
+  {%- endif %}
+  {%- if page.format %}
+  "encodingFormat": {{ page.format | jsonify }},
+  {%- endif %}
+  {%- if page.catalogue_source %}
+  "publisher": { "@type": "Organization", "name": {{ page.catalogue_source | jsonify }} },
+  {%- endif %}
+  "description": {{ seo_desc | jsonify }}
+}
+</script>
+{%- include breadcrumb.html parent_url="/videos/" parent_name="Video Archive" %}
+
+{%- elsif seo_kind == "transcript" -%}
+
+{%- comment -%} DigitalDocument, not Article.
+
+  This is the one place the distinction matters most: the same recording is
+  published twice, once as a VideoObject and once as this. Marking the text
+  as a document is what tells a consumer the two pages are the same recording
+  in two media, rather than two different works that happen to share a
+  number in their path.
+
+  `isPartOf` points at the recording. When the recording is catalogued the
+  target is that recording's own VideoObject; when the capture belongs to an
+  upload that left the catalogue, the target is a bare CreativeWork carrying
+  the upload id - the fact the page itself states - rather than a URL that
+  does not exist. {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DigitalDocument",
+  "@id": {{ seo_abs | append: "#digitaldocument" | jsonify }},
+  "name": {{ seo_title | jsonify }},
+  "headline": {{ seo_title | jsonify }},
+  "url": {{ seo_abs | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
+  "inLanguage": {{ page.lang | jsonify }},
+  "encodingFormat": "text/html",
+  "isAccessibleForFree": true,
+  "isPartOf": {% if page.recording_url and page.recording_url != "" %}{
+    "@type": "VideoObject",
+    "name": {{ page.title | jsonify }},
+    "url": {{ page.recording_url | absolute_url | jsonify }}
+  }{% else %}{
+    "@type": "CreativeWork",
+    "name": {{ page.recording | jsonify }}
+  }{% endif %},
+  "description": {{ seo_desc | jsonify }}
+}
+</script>
+{%- include breadcrumb.html parent_url="/transcripts/" parent_name="Transcripts" %}
+
+{%- elsif seo_kind == "post" or seo_kind == "work" or seo_kind == "item" -%}
+
+{%- comment -%} Article for the written corpus.
+
+  `author` is the recovered byline where the page carries one (every `_posts`
+  document and every MDI page) and the archive's single subject where the page
+  is a catalogue entry for one of his works and therefore has no byline of its
+  own to print. The work's own date is `datePublished`: it is the day he
+  published it, which is what the field means, and it is never the day the
+  archive recovered it.
+
+  `isAccessibleForFree` is asserted only where the archive really does serve
+  the text. On a Wayback-only entry it is omitted rather than guessed, because
+  what the publisher's host does today is not something this archive knows. {%- endcomment -%}
+{%- assign ld_free = nil -%}
+{%- if seo_kind == "post" -%}{%- assign ld_free = "true" -%}
+{%- elsif seo_kind == "item" -%}{%- assign ld_free = "true" -%}
+{%- elsif page.status == "found" -%}{%- assign ld_free = "true" -%}{%- endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": {{ seo_abs | append: "#article" | jsonify }},
+  "headline": {{ seo_title | jsonify }},
+  "name": {{ seo_title | jsonify }},
+  "url": {{ seo_abs | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
+  "inLanguage": "en",
+  {%- if seo_date %}
+  "datePublished": {{ seo_date | jsonify }},
+  {%- endif %}
+  "author": { "@type": "Person", "name": {% if seo_author %}{{ seo_author | jsonify }}{% else %}{{ archive_subject | jsonify }}{% endif %} },
+  "publisher": { "@type": "Organization", "name": "The Andalusian Project Archive", "url": {{ site_abs | jsonify }} },
+  "isPartOf": { "@type": "CollectionPage", "name": "Blog Posts", "url": {{ articles_abs | jsonify }} },
+  {%- if ld_free %}
+  "isAccessibleForFree": {{ ld_free }},
+  {%- endif %}
+  {%- if page.tags and page.tags.size > 0 %}
+  "keywords": {{ page.tags | join: ", " | jsonify }},
+  {%- elsif page.categories and page.categories.size > 0 %}
+  "keywords": {{ page.categories | join: ", " | jsonify }},
+  {%- endif %}
+  "description": {{ seo_desc | jsonify }}
+}
+</script>
+{%- include breadcrumb.html parent_url="/articles/" parent_name="Blog Posts" %}
+
+{%- endif -%}

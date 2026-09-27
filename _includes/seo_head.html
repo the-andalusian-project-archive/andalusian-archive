@@ -1,0 +1,446 @@
+{%- comment -%}
+  On-page head metadata for every page (2026-09-27, on-page SEO pass).
+
+  WHY THIS FILE EXISTS INSTEAD OF `{% seo %}` (jekyll-seo-tag 2.9):
+
+  jekyll-seo-tag was emitting, on all 311 pages:
+    * TWO <meta name="description"> tags - one hand-rolled in
+      `_layouts/default.html` from `page.excerpt` (which fires FIRST and
+      therefore wins in every consumer that takes the first match, and which
+      collapses to one identical site-wide sentence on the 233 pages that have
+      no excerpt), and a second from the plugin. jekyll-seo-tag 2.9 has no
+      `description=false` switch - only `title=false` and `canonical=false` -
+      so the duplicate could not be suppressed from the outside, only worked
+      around by not calling the tag at all.
+    * a `BlogPosting` JSON-LD node on 302 pages, including 68 video records,
+      68 transcripts and 20 academic papers, and no `author` on any of them.
+      The plugin cannot know about this site's four custom collections, and it
+      has no way to be told.
+    * `og:title` = `page.title`, so the homepage announced itself as "Home",
+      and no `og:image` anywhere on the site, so `twitter:card` was pinned to
+      the small `summary` card on all 311 pages.
+    * a `description` truncated to a WORD count, not a character count, which
+      is how descriptions reached 671 characters.
+
+  The plugin stays enabled in `_config.yml` (that file is not this pass's to
+  edit, and leaving it is harmless); it is simply no longer called. Everything
+  below is emitted by this archive, so every field is one this archive can
+  account for, and nothing is emitted that the data does not contain.
+
+  INPUTS
+    `include.rendered` : the already-rendered page body, passed by
+      `default.html` as the `content` template variable. Note the `include.`
+      prefix: Jekyll 4.4's include tag publishes its parameters ONLY as
+      `include.<name>` (`context["include"] = parse_params(context)` in
+      `lib/jekyll/tags/include.rb`), so a bare `{{ rendered }}` inside this file
+      silently resolves to nothing. The social image is read out of the
+      rendered body rather than out of front matter, because the images on
+      this site live in the recovered post bodies and are not declared in any
+      front-matter key - so the page's own social image is, by construction,
+      the image that page actually displays. Never invented.
+
+  ORDERING RULE: every branch below reads a field the page's own generator
+  wrote. If a field is absent the corresponding tag is simply not emitted.
+  There are no placeholder strings anywhere in this file.
+{%- endcomment -%}
+
+{%- comment -%} ------------------------------------------------------------------
+  0. Which kind of page is this?
+
+  `page.layout` is the primary discriminator, because every document in the
+  site declares or inherits exactly one and it is what Jekyll itself used to
+  choose the layout. The front-matter key checks come FIRST, and only for the
+  three collections whose layout arrives through `_config.yml` defaults, so the
+  classification does not depend on defaults being applied.
+
+  The order matters in one specific place, and getting it wrong is a real bug:
+  a catalogue entry under /articles/<slug>/ carries `local_post` (the path of
+  the recovered post that holds its text) and a `slug`, while the post page
+  itself carries `provenance` and `word_count`. An earlier version of this file
+  tested `local_post` first and classified every catalogue entry as a full-text
+  page, which produced the title "Full text: X" on a page that holds no text
+  and a description with an empty capture id in it. Both are now keyed off
+  `page.layout`.
+  -------------------------------------------------------------------------- {%- endcomment -%}
+{%- assign seo_kind = "page" -%}
+{%- if page.url == "/" -%}
+  {%- assign seo_kind = "home" -%}
+{%- elsif page.transcript_id -%}
+  {%- assign seo_kind = "transcript" -%}
+{%- elsif page.video_id -%}
+  {%- assign seo_kind = "video" -%}
+{%- elsif page.publisher_journal or page.file_licence or page.doi or page.volume_issue or page.file_licence -%}
+  {%- assign seo_kind = "paper" -%}
+{%- elsif page.layout == "post" -%}
+  {%- assign seo_kind = "post" -%}
+{%- elsif page.layout == "article" -%}
+  {%- if page.status == "mdi_text" or page.status == "notice" -%}
+    {%- assign seo_kind = "item" -%}
+  {%- else -%}
+    {%- assign seo_kind = "work" -%}
+  {%- endif -%}
+{%- elsif page.layout == "transcript" or page.layout == "video" or page.layout == "paper" -%}
+  {%- assign seo_kind = page.layout -%}
+{%- endif -%}
+
+{%- comment -%} ------------------------------------------------------------------
+  1. SOCIAL IMAGE.
+
+  Read out of the rendered body: the first <img> whose src is a local
+  `assets/images/` path. Three deliberate refusals here:
+    * a Wayback replay URL is never used - it is a third-party hotlink on the
+      critical path of a social crawler, and the archive serves its own copies;
+    * a site-wide default image is never used, because the archive holds no
+      identity image, and reusing some recovered photograph as the social card
+      for 300 pages that do not contain it would be a fabrication;
+    * a page with no image gets no og:image and therefore keeps
+      `twitter:card=summary`, which is the honest card for a text document.
+  -------------------------------------------------------------------------- {%- endcomment -%}
+{%- assign seo_image = nil -%}
+{%- assign seo_image_alt = nil -%}
+{%- assign seo_body = include.rendered -%}
+{%- if seo_body and seo_body contains 'src="/' -%}
+  {%- assign _imgparts = seo_body | split: '<img ' -%}
+  {%- if _imgparts.size > 1 -%}
+    {%- assign _first = _imgparts[1] -%}
+    {%- assign _srcbits = _first | split: 'src="' -%}
+    {%- if _srcbits.size > 1 -%}
+      {%- assign _src = _srcbits[1] | split: '"' | first -%}
+      {%- if _src contains '/assets/images/' -%}
+        {%- assign seo_image = _src | absolute_url -%}
+        {%- assign _altbits = _first | split: 'alt="' -%}
+        {%- if _altbits.size > 1 -%}
+          {%- assign _alt = _altbits[1] | split: '"' | first | strip -%}
+          {%- if _alt != "" -%}{%- assign seo_image_alt = _alt -%}{%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} ------------------------------------------------------------------
+  2. TITLE.
+
+  Pattern: `<Item> | The Andalusian Project Archive`, human-readable and
+  unique per page. Uniqueness is a real requirement, not cosmetic: 173 of the
+  311 pages previously shared a title with at least one other page, because a
+  work in this archive is rendered TWICE (a catalogue entry and a full-text
+  page), a recording TWICE (a video record and its transcript), and a
+  duplicate upload's transcript a THIRD time. Rather than change any URL or
+  rename any work, each kind gets the qualifier that is literally true of it:
+
+    catalogue entry   <title>                       (unchanged)
+    full-text page    Full text: <title>
+    video record      <title>                       (unchanged)
+    transcript        Transcript: <title>
+    academic paper    Academic paper: <title>   ... but only when a catalogue
+                      entry carries the same title, which is the only case in
+                      which the two would otherwise be indistinguishable
+    homepage          The Andalusian Project Archive
+
+  A work title longer than the budget is truncated on a word boundary; the
+  distinguishing part is always the short prefix or the trailing upload id, so
+  truncation can never erase it.
+  -------------------------------------------------------------------------- {%- endcomment -%}
+{%- assign seo_title = page.title -%}
+{%- if seo_kind == "home" -%}
+  {%- assign seo_title = site.title -%}
+{%- elsif seo_kind == "transcript" -%}
+  {%- comment -%}
+    A transcript and the video record of the same recording share one display
+    title, and two transcripts of one recording taken from different duplicate
+    uploads share one too, so the clash test has to run on the TRUNCATED title
+    - otherwise a 120-character title is cut at 96 for both pages and the two
+    become identical strings that the raw-title test could not see. 85 is the
+    budget the "Transcript: " prefix spends out of 96.
+  {%- endcomment -%}
+  {%- assign seo_title_base = page.title -%}
+  {%- if seo_title_base | size > 85 -%}{%- assign seo_title_base = seo_title_base | truncate: 85, "" -%}{%- endif -%}
+  {%- assign seo_title_clash = false -%}
+  {%- for sib in site.transcripts -%}
+    {%- if sib.permalink != page.permalink and seo_title_clash == false -%}
+      {%- assign _sib = sib.title -%}
+      {%- if _sib | size > 85 -%}{%- assign _sib = _sib | truncate: 85, "" -%}{%- endif -%}
+      {%- if _sib == seo_title_base -%}{%- assign seo_title_clash = true -%}{%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign seo_title = "Transcript: " | append: seo_title_base -%}
+  {%- if seo_title_clash -%}
+    {%- assign seo_title = seo_title | append: ", from upload " | append: page.capture_video_id -%}
+  {%- endif -%}
+{%- elsif seo_kind == "post" -%}
+  {%- assign seo_title = "Full text: " | append: page.title -%}
+  {%- if seo_title | size > 96 -%}{%- assign seo_title = seo_title | truncate: 96, "" -%}{%- endif -%}
+{%- elsif seo_kind == "paper" or seo_kind == "item" -%}
+  {%- comment -%}
+    A paper and a catalogue entry, and an MDI page and the work it republishes,
+    can carry the same title. The collection each page belongs to is the honest
+    thing to state, and it is only stated where it is actually needed - the
+    other pages keep the bare title a reader would search for.
+  {%- endcomment -%}
+  {%- assign seo_title_base = page.title -%}
+  {%- if seo_title_base | size > 85 -%}{%- assign seo_title_base = seo_title_base | truncate: 85, "" -%}{%- endif -%}
+  {%- assign seo_title_clash = false -%}
+  {%- for w in site.articles -%}
+    {%- if w.title == page.title -%}{%- assign seo_title_clash = true -%}{%- endif -%}
+  {%- endfor -%}
+  {%- if seo_title_clash -%}
+    {%- if seo_kind == "item" -%}
+      {%- if page.status == "notice" -%}
+        {%- assign seo_title = "Announcement: " | append: seo_title_base -%}
+      {%- else -%}
+        {%- assign seo_title = "Muslim Debate Initiative: " | append: seo_title_base -%}
+      {%- endif -%}
+    {%- else -%}
+      {%- assign seo_title = "Academic paper: " | append: seo_title_base -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if seo_title == nil or seo_title == "" -%}{%- assign seo_title = site.title -%}{%- endif -%}
+{%- comment -%} A title that mixes scripts carries directional isolates, written
+  into front matter by build_collections.py. Isolates and not markup, because
+  this string goes into <title>, og:title and twitter:title, none of which can
+  carry a <span>. A page whose title is plain Latin gets no isolate and is
+  byte-identical to what it was. {%- endcomment -%}
+{%- if page.title_iso and seo_title == page.title -%}
+  {%- assign seo_full_title = page.title_iso | append: " | " | append: site.title -%}
+{%- else -%}
+  {%- assign seo_full_title = seo_title | append: " | " | append: site.title -%}
+  {%- if seo_kind == "home" -%}{%- assign seo_full_title = seo_title -%}{%- endif -%}
+{%- endif -%}
+
+{%- comment -%} ------------------------------------------------------------------
+  3. DESCRIPTION.
+
+  Exactly one per page, composed from the fields the page's own generator
+  wrote, unique because the title or the capture identity is in every string.
+  A 100-160 character band: short enough that a SERP does not truncate it,
+  long enough to say what the page is. Clauses are added in tiers and the
+  result is cut at 160 on a word boundary, so no page claims anything the
+  data does not hold in order to reach a length.
+
+  Vary by kind and by status, deliberately: "preserved from the Wayback
+  Machine" is true of some of this corpus and false of the rest, and printing
+  it on every page would make it stop being information.
+  -------------------------------------------------------------------------- {%- endcomment -%}
+{%- assign seo_desc = "" -%}
+{%- if page.description and page.description != "" -%}
+  {%- comment -%} An authored description in front matter always wins: index
+    pages, /channel/ and /404.html state their own scope in words. {%- endcomment -%}
+  {%- assign seo_desc = page.description -%}
+
+{%- elsif seo_kind == "paper" -%}
+  {%- assign seo_desc = page.title -%}
+  {%- if page.publisher_journal -%}
+    {%- assign seo_desc = page.publisher_journal | append: ". " | append: seo_desc -%}
+  {%- endif -%}
+  {%- if page.publication_date and page.publication_date != "" -%}
+    {%- assign seo_desc = seo_desc | append: " (" | append: page.publication_date | append: ")." -%}
+  {%- endif -%}
+  {%- if page.type -%}{%- assign seo_desc = seo_desc | append: " " | append: page.type | append: "." -%}{%- endif -%}
+  {%- if page.co_authors and page.co_authors.size > 0 -%}
+    {%- assign seo_desc = seo_desc | append: " Co-authored with " | append: page.co_authors | join: ", " | append: "." -%}
+  {%- endif -%}
+  {%- if page.file -%}
+    {%- assign seo_desc = seo_desc | append: " Full text held in this archive (" | append: page.file_pages | append: " pp.)." -%}
+  {%- else -%}
+    {%- assign seo_desc = seo_desc | append: " Link-out only: the archive records the citation and does not mirror the text." -%}
+  {%- endif -%}
+  {%- if page.doi -%}{%- assign seo_desc = seo_desc | append: " DOI " | append: page.doi | append: "." -%}{%- endif -%}
+
+{%- elsif seo_kind == "video" -%}
+  {%- assign seo_desc = page.title -%}
+  {%- if page.format -%}{%- assign seo_desc = seo_desc | append: ". " | append: page.format -%}{%- endif -%}
+  {%- if page.duration and page.duration != "" -%}
+    {%- assign _d = page.duration | plus: 0 | round: 0 -%}
+    {%- assign _h = _d | divided_by: 3600 -%}
+    {%- assign _m = _d | modulo: 3600 | divided_by: 60 -%}
+    {%- assign _s = _d | modulo: 60 -%}
+    {%- if _h > 0 -%}
+      {%- assign _dur = _h | append: "h " | append: _m | append: "m" -%}
+    {%- elsif _m > 0 -%}
+      {%- assign _dur = _m | append: "m " | append: _s | append: "s" -%}
+    {%- else -%}
+      {%- assign _dur = _s | append: "s" -%}
+    {%- endif -%}
+    {%- assign seo_desc = seo_desc | append: ", " | append: _dur -%}
+  {%- endif -%}
+  {%- if page.source == "youtube_not_archived" -%}
+    {%- assign seo_desc = seo_desc | append: ". Catalogue record only: no Internet Archive copy exists, so the recording survives as a YouTube upload." -%}
+  {%- else -%}
+    {%- assign seo_desc = seo_desc | append: ". Catalogue record with the archived recording on the Internet Archive." -%}
+  {%- endif -%}
+  {%- if page.themes and page.themes.size > 0 -%}
+    {%- assign seo_desc = seo_desc | append: " Themes: " | append: page.themes[0] -%}
+    {%- if page.themes.size > 1 -%}{%- assign seo_desc = seo_desc | append: ", " | append: page.themes[1] -%}{%- endif -%}
+    {%- assign seo_desc = seo_desc | append: "." -%}
+  {%- endif -%}
+
+{%- elsif seo_kind == "transcript" -%}
+  {%- comment -%} States, in one string, the four facts the transcripts index
+    asks every transcript page to state: what it is, which recording, which
+    capture, how much. No count of the corpus appears. {%- endcomment -%}
+  {%- assign seo_desc = "Machine transcript of " | append: page.title -%}
+  {%- assign seo_desc = seo_desc | append: ", from the capture file " | append: page.capture_file -%}
+  {%- assign seo_desc = seo_desc | append: " (" | append: page.words | append: " words, " | append: page.lang | append: ", " | append: page.source | append: ")." -%}
+  {%- if page.recording_url and page.recording_url != "" -%}
+    {%- assign seo_desc = seo_desc | append: " The recording's own catalogue page is linked above the text." -%}
+  {%- else -%}
+    {%- assign seo_desc = seo_desc | append: " The upload this capture came from is no longer catalogued in its own right." -%}
+  {%- endif -%}
+
+{%- elsif seo_kind == "post" -%}
+  {%- assign seo_desc = page.title -%}
+  {%- assign seo_desc = seo_desc | append: ". The archive's preserved full text of this essay, recovered from Wayback capture " -%}
+  {%- if page.provenance -%}{%- assign seo_desc = seo_desc | append: page.provenance -%}{%- endif -%}
+  {%- assign seo_desc = seo_desc | append: "." -%}
+  {%- if page.word_count and page.word_count > 0 -%}
+    {%- assign seo_desc = seo_desc | append: " " | append: page.word_count | append: " words, transcribed exactly as recovered." -%}
+  {%- endif -%}
+  {%- if page.categories and page.categories.size > 0 -%}
+    {%- assign seo_desc = seo_desc | append: " Filed under " | append: page.categories[0] -%}
+    {%- if page.categories.size > 1 -%}{%- assign seo_desc = seo_desc | append: ", " | append: page.categories[1] -%}{%- endif -%}
+    {%- assign seo_desc = seo_desc | append: "." -%}
+  {%- endif -%}
+
+{%- elsif seo_kind == "work" -%}
+  {%- assign seo_desc = page.title -%}
+  {%- if page.status == "found" -%}
+    {%- assign seo_desc = seo_desc | append: ". Archive catalogue entry: the full text of this work is preserved in this repository and is linked from this page." -%}
+  {%- elsif page.status == "wayback_only" -%}
+    {%- assign seo_desc = seo_desc | append: ". Archive catalogue entry: this work survives only as a Wayback Machine capture, linked from this page, and no full text is held here." -%}
+  {%- else -%}
+    {%- assign seo_desc = seo_desc | append: ". Archive catalogue entry for a work with no archived copy located; the title and date are kept for reference only." -%}
+  {%- endif -%}
+  {%- if page.date and page.date != "" -%}
+    {%- assign seo_desc = seo_desc | append: " Dated " | append: page.date | append: "." -%}
+  {%- endif -%}
+
+{%- elsif seo_kind == "item" -%}
+  {%- assign seo_desc = page.title -%}
+  {%- if page.status == "mdi_text" -%}
+    {%- assign seo_desc = seo_desc | append: ". Text of a page he wrote for the Muslim Debate Initiative, recovered from the MDI author archive and preserved here." -%}
+    {%- if page.words and page.words > 0 -%}
+      {%- assign seo_desc = seo_desc | append: " " | append: page.words | append: " words, kept as published." -%}
+    {%- endif -%}
+  {%- else -%}
+    {%- assign seo_desc = seo_desc | append: ". A preserved announcement from the original site: catalogued and readable, and deliberately not counted as a work." -%}
+  {%- endif -%}
+  {%- if page.publication_date and page.publication_date != "" -%}
+    {%- assign seo_desc = seo_desc | append: " Published " | append: page.publication_date | append: "." -%}
+  {%- endif -%}
+
+{%- else -%}
+  {%- assign seo_desc = site.description -%}
+{%- endif -%}
+
+{%- comment -%} Normalise whitespace, cut at 160 on a word boundary, and floor
+  the length at 100 with a clause that is true of every page on this site.
+  The floor is applied AFTER the cut so it can never be lost to it, and the
+  result is stripped again afterwards, because `truncate` can leave a trailing
+  separator behind when it cuts a sentence that had not finished. {%- endcomment -%}
+{%- assign seo_desc = seo_desc | strip_html | normalize_whitespace | strip -%}
+{%- assign seo_desc = seo_desc | truncate: 160, "" -%}
+{%- if seo_desc | size < 100 -%}
+  {%- assign seo_desc = seo_desc | append: " Part of The Andalusian Project Archive." -%}
+  {%- assign seo_desc = seo_desc | truncate: 160, "" -%}
+{%- endif -%}
+{%- assign seo_desc = seo_desc | strip -%}
+{%- assign _tail = seo_desc | slice: -1 -%}
+{%- if _tail == "," or _tail == ";" or _tail == "-" -%}
+  {%- assign seo_desc = seo_desc | truncate: 158, "" | append: "." -%}
+{%- endif -%}
+{%- assign seo_desc_esc = seo_desc | escape_once -%}
+{%- assign seo_title_esc = seo_full_title | escape_once -%}
+
+{%- comment -%} ------------------------------------------------------------------
+  4. CANONICAL + og:url. Absolute, from `url` + `baseurl` + the page's own
+  path - the same join jekyll-sitemap and the sitemap's <loc> values use, so
+  canonical, og:url, JSON-LD @id and the sitemap cannot disagree.
+  -------------------------------------------------------------------------- {%- endcomment -%}
+{%- assign seo_abs = page.url | absolute_url -%}
+
+{%- comment -%} ------------------------------------------------------------------
+  5. A real publication date, or none. `date` on a post/article page is the
+  work's own publication date; `publication_date` on a paper, MDI and notice
+  page is the row's own date. Where the archive has no date (papers published
+  only as a talk, video records) nothing is emitted - no date is invented.
+  -------------------------------------------------------------------------- {%- endcomment -%}
+{%- assign seo_date = nil -%}
+{%- if seo_kind == "paper" -%}
+  {%- assign _pd = page.publication_date -%}
+  {%- if _pd and _pd != "" -%}
+    {%- assign _pn = _pd | plus: 0 -%}
+    {%- if _pd | size == 4 and _pn > 1000 and _pn < 10000 -%}
+      {%- assign seo_date = _pd | append: "-01-01" -%}
+    {%- elsif _pd | size == 7 and _pd contains "-" -%}
+      {%- assign seo_date = _pd | append: "-01" -%}
+    {%- elsif _pd | size >= 10 and _pd contains "-" -%}
+      {%- assign seo_date = _pd -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- elsif seo_kind == "transcript" or seo_kind == "video" -%}
+  {%- comment -%} Neither the capture date nor an upload date is recorded for
+    a recording, so no date is emitted. See the JSON-LD for the same reason. {%- endcomment -%}
+{%- else -%}
+  {%- assign _d2 = page.date -%}
+  {%- if _d2 and _d2 != "" and _d2 | size >= 10 -%}
+    {%- assign seo_date = _d2 -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%} ------------------------------------------------------------------
+  6. Byline. Read from the page's own front matter only. `_articles` catalogue
+  entries, papers, videos and transcripts carry no `author` key, and none is
+  invented for them: for a paper the byline is settled by the collection it
+  sits in and is expressed as `creator` inside the JSON-LD node instead, and
+  for a recording the meaningful party is the channel it is on, which the
+  data does state. Pages with no byline emit none.
+  -------------------------------------------------------------------------- {%- endcomment -%}
+{%- assign seo_author = nil -%}
+{%- if page.author and page.author != "" -%}{%- assign seo_author = page.author -%}{%- endif -%}
+
+<title>{{ seo_title_esc }}</title>
+<meta name="description" content="{{ seo_desc_esc }}">
+<link rel="canonical" href="{{ seo_abs }}">
+{%- if seo_author %}
+<meta name="author" content="{{ seo_author | escape_once }}">
+{%- endif %}
+{%- if page.noindex %}
+<meta name="robots" content="noindex, follow">
+{%- endif %}
+<meta property="og:site_name" content="{{ site.title | escape_once }}">
+<meta property="og:locale" content="en">
+<meta property="og:title" content="{{ seo_title_esc }}">
+<meta property="og:description" content="{{ seo_desc_esc }}">
+<meta property="og:url" content="{{ seo_abs }}">
+{%- if seo_kind == "video" %}
+<meta property="og:type" content="video.other">
+{%- if page.archive_url and page.archive_url != "" %}
+<meta property="og:video" content="{{ page.archive_url | escape_once }}">
+<meta property="og:video:type" content="text/html">
+{%- endif %}
+{%- if page.youtube_url and page.youtube_url != "" %}
+<meta property="og:video" content="{{ page.youtube_url | escape_once }}">
+<meta property="og:video:type" content="text/html">
+{%- endif %}
+{%- elsif seo_kind == "home" %}
+<meta property="og:type" content="website">
+{%- else %}
+<meta property="og:type" content="article">
+{%- endif %}
+{%- if seo_date %}
+<meta property="article:published_time" content="{{ seo_date }}">
+{%- endif %}
+{%- if seo_image %}
+<meta property="og:image" content="{{ seo_image }}">
+{%- if seo_image_alt %}<meta property="og:image:alt" content="{{ seo_image_alt | escape_once }}">{%- endif %}
+{%- endif %}
+<meta name="twitter:card" content="{% if seo_image %}summary_large_image{% else %}summary{% endif %}">
+<meta name="twitter:title" content="{{ seo_title_esc }}">
+<meta name="twitter:description" content="{{ seo_desc_esc }}">
+{%- if seo_image %}
+<meta name="twitter:image" content="{{ seo_image }}">
+{%- if seo_image_alt %}<meta name="twitter:image:alt" content="{{ seo_image_alt | escape_once }}">{%- endif %}
+{%- endif %}
+{%- include jsonld.html seo_kind=seo_kind seo_title=seo_title seo_desc=seo_desc seo_abs=seo_abs seo_date=seo_date seo_image=seo_image seo_author=seo_author %}

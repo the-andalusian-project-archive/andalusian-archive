@@ -1,0 +1,80 @@
+name: Provenance correction or dead capture
+description: Report a wrong attribution, a misattributed source, an inaccurate provenance field, or a capture link that no longer resolves.
+title: "[provenance] "
+labels:
+  - provenance
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This archive's value is that every item says where it came from. If a
+        provenance field is wrong, a source is misattributed, or a capture link
+        no longer resolves, that is a defect and it should be reported.
+
+        Please give one item per report, so each can be verified and fixed on its
+        own. Do not paste recovered prose into the issue; a page URL and the field
+        at fault are enough.
+
+  - type: input
+    id: item
+    attributes:
+      label: Archive page or item this concerns
+      description: The full URL of the affected page, or the item slug.
+      placeholder: https://the-andalusian-project-archive.github.io/andalusian-archive/articles/.../
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of defect is it?
+      options:
+        - Dead capture - a Wayback or Internet Archive link does not resolve
+        - Wrong attribution - a work is credited to the wrong person
+        - Wrong source - the stated origin is not where the text came from
+        - Wrong date or timestamp
+        - Provenance field incomplete or self-contradictory
+        - Undisclosed withholding - something is missing that is not listed in NOTICE.md
+        - Count disagrees with the data - a figure on a page disagrees with _data/
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong, and what does the page currently say?
+      description: Quote the page's current wording or figure so the correction can be located.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: |
+        What supports your report? A working capture URL, a timestamped Wayback
+        URL, a DOI that resolves, a repository record, or an existing page that
+        states it correctly. Links are enough; please do not paste long passages.
+      placeholder: https://web.archive.org/web/20200811155718/...
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: How can you be reached if a follow-up question is needed?
+      description: Optional. An email address or a GitHub handle.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have not included the author's legal or birth name, which this archive withholds. See NOTICE.md section 6.1.
+          required: true
+        - label: I understand the archive reproduces recovered text verbatim and does not accept prose edits. If I am proposing a wording change, I have said so in the description above.
+          required: true

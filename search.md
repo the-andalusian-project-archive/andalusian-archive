@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Search
+noindex: true
+description: Client-side search across the archive's papers, video records and blog posts. The page is an application surface, so it is kept out of the search index while the pages it links to are not.
 ---
 
 <div class="search-container">
