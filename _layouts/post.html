@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<article class="post-detail">
+      <h1>{{ page.title }}</h1>
+      
+      {%- comment -%}
+        Category badge. A _posts file is the local text of a work, so its
+        category is the category of the work it holds. The join runs through
+        the generated _articles page, whose `local_post:` front matter names
+        this file (written by build_collections.py) and whose `slug:` is the
+        work slug. A partial local file that no counted work claims - the
+        documented UNCLAIMED_POSTS set - therefore renders no badge, which is
+        the honest result: the page is text, and it is not a counted item.
+      {%- endcomment -%}
+      {%- assign work_slug = nil -%}
+      {%- for doc in site.articles -%}
+        {%- if doc.local_post and doc.local_post == page.path -%}
+          {%- assign work_slug = doc.slug -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- assign cat = nil -%}
+      {%- if work_slug -%}
+        {%- for row in site.data.canonical_works -%}
+          {%- if row.slug == work_slug -%}{%- assign cat = row.category -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if cat -%}<div class="meta">{% include category_badge.html category=cat %}</div>{%- endif -%}
+      
+      <div class="meta">
+
+        {% if page.date %}
+        <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+        {% endif %}
+        {% if page.author %}
+        | <span class="author">{{ page.author }}</span>
+        {% endif %}
+      </div>
+      
+      <div class="detail-section">
+        <h3>Content</h3>
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </div>
+      
+      <div class="detail-section">
+        <h3>External Links</h3>
+        <div class="source-links">
+          {% include source_link.html url=page.original_url label="View Original" class="btn" %}
+          {% if page.wayback_url %}
+          <a href="{{ page.wayback_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Wayback Machine</a>
+          {% endif %}
+        </div>
+
+      </div>
+      
+      <div class="back-link">
+        <a href="{{ '/articles/' | relative_url }}">&larr; Back to Blog Posts</a>
+      </div>
+</article>

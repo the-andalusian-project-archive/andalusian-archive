@@ -1,0 +1,76 @@
+---
+title: "My Views On the Punishment For Apostasy"
+date: 2020-08-11
+slug: my-views-on-the-punishment-for-apostasy
+original_url: "https://asadullahali.com/2020/08/11/my-views-on-the-punishment-for-apostasy"
+wayback_url: "https://web.archive.org/web/20200813203840/https://asadullahali.com/2020/08/11/my-views-on-the-punishment-for-apostasy/"
+categories: [Articles, Current Issues, Personal]
+tags: [Apostasy, Islam]
+author: "Asadullah Ali Al-Andalusi"
+source: "The Andalusian Project Archive"
+provenance: "wayback-20200813203840"
+word_count: 2329
+layout: post
+---
+
+# My Views On the Punishment For Apostasy
+
+Posted on August 11, 2020ByAsadullah Ali
+
+2 Comments
+
+![A man seen from behind in a white shirt and dark trousers, standing with his arms slightly outstretched on bare sand dunes under a clear sky.]({{ "/assets/images/002_4ad90-desert-man.jpg" | relative_url }})
+
+This article is a brief overview of my position on the punishment for apostasy within Islam. Over the years, I have discussed it very few times, whether in video or on social media platforms. The reason being is because I never felt it necessary to discuss unless asked or challenged on a particular point. Most of my dawah work focused on refuting ex-Muslims and Islamophobes, yet there were few times it was relevant to bring up in debate.
+
+That said, recently I’ve seen some individuals attempt to take advantage of my short comments on the issue – and it appears they will be using those comments in the future as a means to slander me and undermine my credibility. As such, due to having a bit more foresight than my detractors (Alhamdullilah for an education), I have prepared this document in advance prior to their smears.
+
+Causing Fitna
+
+An individual by the name of Saajid Lipham was the first to attempt to misconstrue my views on apostasy:
+
+In response to an Ex-Muslim who essentially accused me of wanting to kill apostates, I responded that I “don’t support apostasy laws” because they “should no longer be operative because conditions have changed”. I then followed up that response with my usual explanation that, given there is a political element attached to the concept ofridda, the punishment “makes no sense today” in light of changing conditions.
+
+Saajid responded by committing astraw man fallacy, accusing me of claiming the Shariah “make[s] no sense today to [me],” as though I weredenyingthe prescriptions of Allah based on some arbitrary sentiment. However, I said no such thing. The Law of Allah makes perfect sense, but the application of a punishment without the necessary conditions (i.e. effective cause –‘illah/manât) does not. This was the context of my statement for all who can read rudimentary English. Given Saajid can’t even comprehend the standard use of the word ‘medieval,’[1]it’s not at all shocking he made this error. That said, it has prompted me to make this response before such an interpretation becomes contagious.
+
+Now, prior to elucidating my position, I do wish to concede that I may be wrong on this matter and am perfectly okay with being corrected. Unlike some in the dawah circuit today, I am more than willing to admit my errors. However, I will not concede to unwarranted claims that I’m “denying the Shari’ah” or think “it’s not part of Islam” and that I’m some “reformist”. This is completely unfair to me and what I actually believe.
+
+My Position
+
+My position is clear: The punishment forridda(apostasy) is part of the Shariah and should be applied when all the conditions are met. However, such conditions do not exist today because the political element (i.e. religious identity being tied to the state) is no longer present. In the event that such an element is brought back into existence (i.e. a legitimate caliphate), then the punishment should become operative again.
+
+The reason for my position stems from what I understand the effective cause of the punishment to be. Having read scholarly works on the issue, it is the consensus that a Muslim who commitsriddamust be killed. However, little else is discussed beyond that. Although the Prophet (ﷺ) is referenced as justification for applying the punishment, the reason behind it is largely absent from most explanations. For instance, Ibn Rushd states the following regarding the punishment for apostasy:
+
+> An apostate, if taken captive before he declares war, is to be executed by agreement in the case of a man, because of the words of the Prophet (ﷺ), “Slay those who change their din”. [….]Asking the apostate to repent was stipulated by Malik as a condition prior to his execution, on the basis of what is related from ‘Umar. One group of jurists said that his repentance is not acceptable. If the apostate becomes a maharib first and then an apostate, he is to be executed because of hiraba and is not required to repent, whether his hiraba occurs in the Muslim territory or later when he crosses over to the dar al-harb, except when he becomes a Muslim again. When the apostate muharib converts to Islam after he is captured or before it, they differ about his hukm. If his hiraba has occurred in the dar al-Islam, then his conversion to Islam absolves him of the liability to the hukm of hiraba only and his hukm is like that of an apostate for the offences committed by him during his apostasy in the dar al-Islam prior to conversion to Islam. The disciples of Malik however, differed in this with some, who took into account the day of offence, saying that his hukm is the hukm of the apostate, while others, who took into account the time of the hukm, said that his hukm is like that of a Muslim.Ibn Rusdh (2000) The Distinguished Jurist Primer (Bidayat al-Mujtahid), Trans. Imran Nyazee, p. 552.
+
+What’s fascinating about Ibn Rushd’s summary here is that although he doesn’t give an explicit reason behind the apostate’s execution, he writes something which suggests an implied characteristic of the apostate that goes beyond them simply not believing in Islam. In the first line, Ibn Rushd states clearly, “An apostate, if taken captivebefore he declares war, is to be executed”. The middle part of this statement appears to imply that it was expected of the apostate to declare war on the Muslim community, thereby suggesting that the act ofriddawas not just a declaration of disbelief, but outright treason that served as a threat to the state. And the reason this condition is implied centers around the nature of the state itself. As history has shown us, the caliphate came into existence during the Age of Empires, where each polity was in a default state of war and your religion was your citizenship. As such, revoking that citizenship (i.e.ridda) was seen as a declaration of war against the state by necessity. It was not like the nation state of today where citizenship is based on nationality and all polities have a default status of neutrality/peace. As such, the conditions are no longer present to properly apply the punishment, because an apostate no longer serves as an actual existential threat to the Muslim ummah.
+
+Now, the counter arguments I’ve seen and heard are that this is mistaken because an apostate is in fact a threat to Muslim communities by virtue of threatening the akhira of Muslims everywhere by poisoning their minds withshubuhat. However, I don’t see this position as sound for a number of reasons. Firstly, because I see no compelling evidence for this view in the Islamic tradition. Secondly, because it appears to contradict how deviants/innovators in the religion were typically dealt with. What I mean to say is, that if apostates must be killed because they’re spreading doubts, then why not just kill every single Muslim who has a deviant opinion? Why write tomes of refutations against their views when slaughter is the best method? Likewise, do not the kuffar spread doubts? So why are Muslims not simply calling to slaughter every single kafir for having an opinion contrary to Islam? Our intellectual tradition doesn’t seem to convey this idea that an apostate is killed for spreadingshubuhat, because if so, it would apply in equal measure to numerous groups across the board – groups and individuals which were not typically killed.
+
+Then there’s also another issue with the application of the punishment in the nation state system of today. That issue revolves around the fact that there doesn’t appear to be an actual Islamic authority or polity worthy enough of issuing said punishment (i.e. no caliphate or proper Islamically ruled polity is present).
+
+And finally, there is the issue of what counts as an “apostate”. As a Muslim youth counselor, I’ve met a lot of young people who claim they “no longer believe in Islam”. However, most of the time, I find out their reasons for apostasy stem from a confusion of what Islam actually is. In fact, I can even say with a great deal of certainty that some of these young people were never Muslim to begin with – often raised in secular households where their entire understanding of the religion was centered around holidays, food, and Arabic/Urdu terms. So, would such a person, neither raised Muslim nor living under an authentic Islamic authority, constitute as an apostate according to our Law? Should I inform them that they should be killed when they don’t even understand what it means to follow the Qur’an and Sunnah to begin with – when they don’t even know what theiraqidais?
+
+Many Muslims I find online often proudly declare that apostates should be killed according to the Shari’ah, yet they live in Muslim-majority societies which neither implement the punishment nor properly educate their citizens in matters of Islam. The entire Muslim world is suffering from the hegemony of Secular Liberal Westernization, yet what appears to be one of the main talking points behind Islamic revival is that we implement the punishment for apostasy to “protect Islam”. But this solution is working backwards. Apostasy is a symptom of a larger problem in our communities, such as a lack of proper Islamic education and governance. Are we so quick to execute people before ensuring they’re Muslim to begin with? Are we so quick to demand execution when most of these individuals are physically harmless and simply confused about what they believe while living in a societies bereft of Islamic values?
+
+Many Muslim nations like Bangladesh, Pakistan, Egypt, Tunisia, Lebanon, etc. are largely secular in nature and full of corruption and filth. Yet, instead of reversing those conditions and building Islamic values in our countries, some Muslims (at least online) think the solution is to just kill those birthed by the veryshubuhatalready present in their societies – doubts which they neither concern themselves with, attempt to address in an intellectual manner, nor understand the origins of to begin with.
+
+So yes, I do not support the punishment for apostasy today, because the conditions have not been met that would warrant its implementation. Not because I disagree with the Law or believe it’s not part of Islam. No, but because it would be unjust to not fulfill the conditions in accordance with our Law. When those conditions return, then we can apply it. However, what I do support is that we educate our brothers and sisters and bring them back from the temptations of atheism and other religions. I also support that we establish Islam in our own societies before punishing our own for being un-Islamic. Blaming a young Muslim man or woman for leaving the religion when they live in societies which don’t even encourage them to remain Muslims – teaching them the sweetness of faith – is an injustice. Most of the time, it is we Muslims who are at fault for the conditions of our brothers and sisters, as it is our responsibility to make sure they don’t have an excuse to leave our beautiful religion. Instead, we call to the punishment in social media posts, scaring those who are confused and in search of real answers. We indirectly threaten their lives when they don’t even know why they’re Muslim to begin with. And we do so all in the comfort of our rooms, behind a computer screen, living in societies where deviance and sin are everywhere, and in some places the norm. We expect these people to remain Muslim when we haven’t even given them any reason why they should.
+
+So, if my position is incorrect, I hope others will reach out to me to correct my view with sufficient evidence. That said, I will not concede being called a “liberal reformer” or any other such nonsense simply because I see this issue as complex and requiring justice. We live in a time like no other – the caliphate no longer exists and our new circumstances warrant evaluating how the Law operates in a just manner. If my detractors see this as a deviant position, then I merely ask this: “Why doyourefuse to kill an apostate?” The answers will vary, no doubt. Some will claim that they “lack authority”. Others will say that “the law isn’t in place”. Others will say because they “live in a non-Muslim society”. All of these are legitimate and agreeable.
+
+Now, I simply ask that my brothers and sisters uphold my rights by not assuming I “deny the Shari’ah” or am a “Liberal reformer” simply because I believe there is an additional condition that has yet to be met that would warrant the punishment.
+
+Jazak’Allahu khairan.
+
+For a concise, but scholarly view on the subject (that may or may not support my view, but is educational nonetheless), please refer to Sh. Hatem al-Haj’s article, “The Punishment for Apostasy – Can It Be Suspended“.
+
+---
+
+- “of, relating to, or characteristic of the Middle Ages,”https://www.merriam-webster.com/dictionary/medieval
+
+Category:Articles,Current Issues,PersonalTags:Apostasy,Islam
+
+### 2 Comments on “My Views On the Punishment For Apostasy”
+
+- Rayyan Islam - Worship Allah - The One Sustainer of the Universe11 Aug 2020Fascinating article. Was just thinking about this issue today. When I first started practicing Islam and still had remnants of a liberal mindset – the hadd for riddah was quite triggering when I found out about it. We must have emotional intelligence when discussing these matters because as you said, many ‘Muslims’ haven’t even experienced the ‘sweetness of faith.’ Having a cut-throat approach is appealing if you’ve escaped the liberal mindset – but we must empathise with the everyday liberal Muslim – though it is very hard. Jzk for educating us.Loading...ReplyR. Ahmed12 Aug 2020The punishment for ridda is justifiable under liberal values also akhi. John Lock, the Founding father of Modern Liberalism agreed to this stance. Check Out Br. Mohammad Hijabs lecture on Liberalism. Take care.Loading...Reply

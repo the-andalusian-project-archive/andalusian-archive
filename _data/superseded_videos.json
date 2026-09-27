@@ -1,0 +1,486 @@
+[
+  {
+    "id": "EK5oppX6C2U",
+    "title": "Understanding Atheism Session 1",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=EK5oppX6C2U",
+    "live": {
+      "title": "(Reupload - Read Description) Understanding Atheism | Session 1 by Andalusian Project",
+      "uploader": "Yb-Yt",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "NyAVl7RsEOs",
+    "duplicate_of_baseline_title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs].mp4",
+    "match_basis": "normalised-exact title",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=EK5oppX6C2U",
+      "source": "YouTube mirror",
+      "tone": "academic lecture",
+      "themes": [
+        "Philosophical analysis of atheistic worldviews",
+        "Epistemological frameworks for belief",
+        "Historical context of secular thought"
+      ],
+      "topics": [
+        "philosophy",
+        "atheism",
+        "epistemology"
+      ],
+      "title": "Understanding Atheism Session 1",
+      "id": "EK5oppX6C2U"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as NyAVl7RsEOs (01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=EK5oppX6C2U attached to NyAVl7RsEOs.mirror_urls"
+  },
+  {
+    "id": "fq1WejCHgXs",
+    "title": "A Muslims Guide to Science and Scientism Part 1",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=fq1WejCHgXs",
+    "live": {
+      "title": "A Muslims Guide to Science & Scientism | Al-Balagh Academy | Part 1 andalusian project (re upload)",
+      "uploader": "Shirkuh",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "X36xEj0OSV4",
+    "duplicate_of_baseline_title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4].mp4",
+    "match_basis": "token-overlap",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=fq1WejCHgXs",
+      "source": "YouTube mirror",
+      "tone": "educational lecture",
+      "themes": [
+        "Islamic perspective on scientific methodology",
+        "Critique of scientism",
+        "Relationship between religion and science"
+      ],
+      "topics": [
+        "science",
+        "scientism",
+        "islam"
+      ],
+      "title": "A Muslims Guide to Science and Scientism Part 1",
+      "id": "fq1WejCHgXs"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as X36xEj0OSV4 (16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=fq1WejCHgXs attached to X36xEj0OSV4.mirror_urls"
+  },
+  {
+    "id": "4maSZMzhmuI",
+    "title": "A Muslims Guide to Science and Scientism Part 2",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=4maSZMzhmuI",
+    "live": {
+      "title": "A Muslims Guide to Science & Scientism | Al-Balagh Academy | Part 2 andalusian project (re upload)",
+      "uploader": "Shirkuh",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "vh-6sisOncs",
+    "duplicate_of_baseline_title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs].mp4",
+    "match_basis": "token-overlap",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=4maSZMzhmuI",
+      "source": "YouTube mirror",
+      "tone": "educational lecture",
+      "themes": [
+        "Continuation of scientific methodology discussion",
+        "Islamic philosophy of science",
+        "Contemporary scientific debates"
+      ],
+      "topics": [
+        "science",
+        "philosophy",
+        "islam"
+      ],
+      "title": "A Muslims Guide to Science and Scientism Part 2",
+      "id": "4maSZMzhmuI"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as vh-6sisOncs (17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=4maSZMzhmuI attached to vh-6sisOncs.mirror_urls"
+  },
+  {
+    "id": "kDH1BOyhhYk",
+    "title": "A Muslims Guide to Science and Scientism Part 3",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=kDH1BOyhhYk",
+    "live": {
+      "title": "A Muslims Guide to Science & Scientism | Al-Balagh Academy | Part 3 andalusian project (re upload)",
+      "uploader": "Shirkuh",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "WED5mPmO_yU",
+    "duplicate_of_baseline_title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU].mp4",
+    "match_basis": "token-overlap",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=kDH1BOyhhYk",
+      "source": "YouTube mirror",
+      "tone": "educational lecture",
+      "themes": [
+        "Advanced topics in Islamic science philosophy",
+        "Historical scientific contributions",
+        "Modern applications"
+      ],
+      "topics": [
+        "science",
+        "history",
+        "philosophy"
+      ],
+      "title": "A Muslims Guide to Science and Scientism Part 3",
+      "id": "kDH1BOyhhYk"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as WED5mPmO_yU (18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=kDH1BOyhhYk attached to WED5mPmO_yU.mirror_urls"
+  },
+  {
+    "id": "eQ-frTAlcJc",
+    "title": "A Muslims Guide to Science and Scientism Part 4",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=eQ-frTAlcJc",
+    "live": {
+      "title": "A Muslims Guide to Science & Scientism | Al-Balagh Academy | Part 4 (re upload)",
+      "uploader": "Shirkuh",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "tIFhyQtxQXg",
+    "duplicate_of_baseline_title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg].mp4",
+    "match_basis": "token-overlap",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=eQ-frTAlcJc",
+      "source": "YouTube mirror",
+      "tone": "educational lecture",
+      "themes": [
+        "Islamic scientific tradition",
+        "Critique of Western scientific narrative",
+        "Integration of faith and reason"
+      ],
+      "topics": [
+        "science",
+        "faith",
+        "reason"
+      ],
+      "title": "A Muslims Guide to Science and Scientism Part 4",
+      "id": "eQ-frTAlcJc"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as tIFhyQtxQXg (19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=eQ-frTAlcJc attached to tIFhyQtxQXg.mirror_urls"
+  },
+  {
+    "id": "hURJIIm0tSY",
+    "title": "A Muslims Guide to Science and Scientism Part 5",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=hURJIIm0tSY",
+    "live": {
+      "title": "A Muslim  Guide to Science & Scientism | Al-Balagh Academy | Part 5 (re upload)",
+      "uploader": "Shirkuh",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "PoNiuiP3W4Y",
+    "duplicate_of_baseline_title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y].mp4",
+    "match_basis": "token-overlap",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=hURJIIm0tSY",
+      "source": "YouTube mirror",
+      "tone": "educational lecture",
+      "themes": [
+        "Conclusion of science series",
+        "Future of Islamic science",
+        "Practical applications"
+      ],
+      "topics": [
+        "science",
+        "future",
+        "education"
+      ],
+      "title": "A Muslims Guide to Science and Scientism Part 5",
+      "id": "hURJIIm0tSY"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as PoNiuiP3W4Y (20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=hURJIIm0tSY attached to PoNiuiP3W4Y.mirror_urls"
+  },
+  {
+    "id": "D2t0idkAqjA",
+    "title": "My Story",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=D2t0idkAqjA",
+    "live": {
+      "title": "(Reupload - Read Description) \"My Story\" by Andalusian Project (360p)",
+      "uploader": "Yb-Yt",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "7KBCENktOOU",
+    "duplicate_of_baseline_title": "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU].mp4",
+    "match_basis": "normalised-substring",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": {
+      "live_duration_seconds": 3753,
+      "baseline_duration_seconds": 3752.32,
+      "duration_delta_seconds": 0.68,
+      "duration_source": "Wayback ytInitialData lengthText at capture archived_20250825",
+      "chain": "two-hop: D2t0idkAqjA has no duration in any capture, so the pairing is evidenced through mirror DctcuGidoUI ('My Story'), whose duration was read off twin 7KBCENktOOU"
+    },
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=D2t0idkAqjA",
+      "source": "YouTube mirror",
+      "tone": "personal narrative",
+      "themes": [
+        "Personal conversion narrative",
+        "Journey to Islam",
+        "Intellectual transformation"
+      ],
+      "topics": [
+        "biography",
+        "conversion",
+        "personal"
+      ],
+      "title": "My Story",
+      "id": "D2t0idkAqjA"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as 7KBCENktOOU (24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=D2t0idkAqjA attached to 7KBCENktOOU.mirror_urls"
+  },
+  {
+    "id": "YjGHZwdM7XU",
+    "title": "Is Allah a Dictator?",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=YjGHZwdM7XU",
+    "live": {
+      "title": "Is Allah a Dictator? | Answer | andalusian project (re upload)",
+      "uploader": "Shirkuh",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "wUapqpCqBUk",
+    "duplicate_of_baseline_title": "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk].mp4",
+    "match_basis": "normalised-substring",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=YjGHZwdM7XU",
+      "source": "YouTube mirror",
+      "tone": "academic response",
+      "themes": [
+        "Divine sovereignty in Islamic theology",
+        "Freedom and predestination",
+        "Philosophical analysis of God attributes"
+      ],
+      "topics": [
+        "theology",
+        "philosophy",
+        "divine attributes"
+      ],
+      "title": "Is Allah a Dictator?",
+      "id": "YjGHZwdM7XU"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as wUapqpCqBUk (46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=YjGHZwdM7XU attached to wUapqpCqBUk.mirror_urls"
+  },
+  {
+    "id": "xhnU-1dNi3I",
+    "title": "Information Literacy Lesson One",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=xhnU-1dNi3I",
+    "live": {
+      "title": "Information Literacy - Lesson One Full Lecture (Andalusian Project Reupload)",
+      "uploader": "The Ilm Library",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": null,
+    "duplicate_of_baseline_title": null,
+    "duplicate_of_archive_url": null,
+    "match_basis": "no-match",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=xhnU-1dNi3I",
+      "source": "YouTube mirror",
+      "tone": "educational lecture",
+      "themes": [
+        "Library and information science",
+        "Information evaluation methods",
+        "Research methodology basics"
+      ],
+      "topics": [
+        "information science",
+        "education",
+        "research"
+      ],
+      "title": "Information Literacy Lesson One",
+      "id": "xhnU-1dNi3I"
+    },
+    "reason": "constraint-5 duplicate candidate: F6 found no archive.org twin for this id (match: no-match), so it is removed from _data/videos.json and counted nowhere; record preserved here for human review",
+    "disposition": "Removed from _data/videos.json and counted nowhere, but NOT discarded: by user decision (2026-09-27) its live URL is attached to baseline entry vJRfL4Kal20's mirror_urls, so the recording is counted once, under the baseline entry. The pairing rests on the four shared title tokens and the uploader's own 'Reupload' wording; no duration evidence exists for this id, so the 60 s rule remains unsatisfied and the confidence is recorded as medium-high on title, unevidenced on duration. This row is retained as the audit trail and is not a deletion.",
+    "candidate_twin": "vJRfL4Kal20",
+    "candidate_twin_title": "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]",
+    "candidate_twin_evidence": "live title 'Information Literacy - Lesson One Full Lecture (Andalusian Project Reupload)' carries the same four title tokens as baseline '55 - Lesson One [Full Lecture] | Information Literacy'; that recording's confirmed mirror o0laFCGufrw is already mapped to vJRfL4Kal20 (delta 0.15 s). No duration for xhnU-1dNi3I exists in any capture, so the pairing cannot be evidenced to the 60 s rule and was NOT attached.",
+    "candidate_twin_confidence": "medium-high on title, unevidenced on duration",
+    "mirror_attached_to": "vJRfL4Kal20",
+    "mirror_attached_url": "https://www.youtube.com/watch?v=xhnU-1dNi3I",
+    "mirror_attached_by": "user decision, 2026-09-27",
+    "mirror_attached_basis": "Title-token match on 'Information Literacy / Lesson One / Full Lecture' plus the live uploader title's own '(Andalusian Project Reupload)' wording. Duration unevidenced: no capture of this id exists, so this pairing is weaker than the duration-verified ones and is recorded as such."
+  },
+  {
+    "id": "G47Stp3pLss",
+    "title": "My Conversion Story",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=G47Stp3pLss",
+    "live": {
+      "title": "My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project",
+      "uploader": "F A",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": null,
+    "duplicate_of_baseline_title": null,
+    "duplicate_of_archive_url": null,
+    "match_basis": "no-match",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": null,
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=G47Stp3pLss",
+      "source": "YouTube mirror",
+      "tone": "personal narrative",
+      "themes": [
+        "Personal faith journey",
+        "Islam in the West",
+        "Spiritual transformation"
+      ],
+      "topics": [
+        "biography",
+        "conversion",
+        "personal"
+      ],
+      "title": "My Conversion Story",
+      "id": "G47Stp3pLss"
+    },
+    "reason": "Restored as a distinct counted work by user decision (2026-09-27): NOT a duplicate of 7KBCENktOOU 'MY STORY'. The two titles describe different things ('My Conversion Story' vs 'MY STORY'), F6 had no duration evidence either way, and they may be different recordings altogether. F6 flagged the live title against the byline gate (Global Constraint 4) because the uploader's title attributes the recording to 'Asadullah Ali Al-Andalusi (Abu Isabel)'; the byline claim is unverified, which is why this is recorded as a third-party re-upload of a recording and not an in-house production. The previous row in _data/superseded_videos.json is retained as the audit trail.",
+    "disposition": "RESTORED as a distinct counted video work in _data/videos.json by user decision (2026-09-27). It was previously removed and counted nowhere as a duplicate candidate of 7KBCENktOOU; that pairing was rejected because the titles differ, no duration evidence exists for either id, and they may be different recordings. Counted once, as its own entry, with kind=appearance and transcripts: 0. This row is retained as the audit trail of the original decision and is not a deletion.",
+    "candidate_twin": "7KBCENktOOU",
+    "candidate_twin_title": "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]",
+    "candidate_twin_evidence": "live title 'My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)]' is a conversion-story recording; the only baseline conversion narrative is 7KBCENktOOU 'MY STORY', but the titles are not the same work and no duration for G47Stp3pLss exists in any capture. F6 also flagged the live title against the byline gate (Global Constraint 4). NOT attached.",
+    "candidate_twin_confidence": "low",
+    "duplicate_pairing_rejected": {
+      "candidate_twin": "7KBCENktOOU",
+      "candidate_twin_title": "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]",
+      "original_verdict": "removed as a constraint-5 duplicate candidate (F6 match_basis: no-match, no twin resolved)",
+      "rejection_grounds": [
+        "titles differ: 'My Conversion Story' is not 'MY STORY'; the shared subject is not evidence of the same recording",
+        "no duration evidence for this id in any capture, so the 60 s pairing rule could not be satisfied in either direction",
+        "F6's own candidate_twin_confidence was 'low'",
+        "possibly a different recording altogether"
+      ],
+      "rejected_by": "user decision, 2026-09-27"
+    }
+  },
+  {
+    "id": "bRTI6Z5gggE",
+    "title": "Understanding Atheism Session 6",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=bRTI6Z5gggE",
+    "live": {
+      "title": "Understanding Atheism | Session 6",
+      "uploader": "[Archived] Andalusian Project",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "lS7h9SKKtVc",
+    "duplicate_of_baseline_title": "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc].mp4",
+    "match_basis": "normalised-exact title",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": {
+      "live_duration_seconds": 4515,
+      "baseline_duration_seconds": 4514.91,
+      "duration_delta_seconds": 0.09,
+      "duration_source": "Wayback ytInitialData lengthText (archived_20231010)"
+    },
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=bRTI6Z5gggE",
+      "source": "YouTube mirror",
+      "tone": "academic lecture",
+      "themes": [
+        "Advanced atheistic philosophical positions",
+        "Counter-arguments to atheism",
+        "Atheism and morality"
+      ],
+      "topics": [
+        "philosophy",
+        "atheism",
+        "ethics"
+      ],
+      "title": "Understanding Atheism Session 6",
+      "id": "bRTI6Z5gggE"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as lS7h9SKKtVc (06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=bRTI6Z5gggE attached to lS7h9SKKtVc.mirror_urls"
+  },
+  {
+    "id": "2tsI80MDUOI",
+    "title": "Understanding Atheism Session 1",
+    "source": "YouTube mirror",
+    "youtube_url": "https://www.youtube.com/watch?v=2tsI80MDUOI",
+    "live": {
+      "title": "Understanding Atheism | Session 1",
+      "uploader": "[Archived] Andalusian Project",
+      "status": "alive",
+      "http_status": "200"
+    },
+    "duplicate_of_baseline_id": "NyAVl7RsEOs",
+    "duplicate_of_baseline_title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]",
+    "duplicate_of_archive_url": "https://archive.org/download/andalusian-project/01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs].mp4",
+    "match_basis": "normalised-exact title",
+    "match_basis_source": "_staging/videos/baseline_duplicates.json",
+    "duration_evidence": {
+      "live_duration_seconds": 3624,
+      "baseline_duration_seconds": 3623.4,
+      "duration_delta_seconds": 0.6,
+      "duration_source": "Wayback ytInitialData lengthText (archived_20231010, archived_20250825)"
+    },
+    "superseded_record": {
+      "archive_url": "https://www.youtube.com/watch?v=2tsI80MDUOI",
+      "source": "YouTube mirror",
+      "tone": "academic lecture",
+      "themes": [
+        "Introduction to atheistic thought",
+        "Historical development of atheism",
+        "Foundational arguments"
+      ],
+      "topics": [
+        "philosophy",
+        "atheism",
+        "history"
+      ],
+      "title": "Understanding Atheism Session 1",
+      "id": "2tsI80MDUOI"
+    },
+    "reason": "constraint-5 duplicate: third-party re-upload of the same recording as NyAVl7RsEOs (01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]); removed from _data/videos.json and its live URL carried on that entry's mirror_urls so the video is counted once",
+    "disposition": "removed from _data/videos.json; https://www.youtube.com/watch?v=2tsI80MDUOI attached to NyAVl7RsEOs.mirror_urls"
+  }
+]

@@ -1,0 +1,128 @@
+{
+  "title": "The four categories this archive is sorted into",
+  "purpose": "Every countable item in this archive belongs to exactly one of four categories. The category says who made the thing, not what shape the thing is.",
+  "approved_by": "the four section names are the plan's: docs/superpowers/plans/2026-09-27-full-recovery-v6.md Task 8a ('A Works by Asadullah Ali / B Contributions & Collaborations / C Interviews, Reception & Mentions About Him / D Other Materials'). The plan was approved via grilling rounds 1-3 on 2026-09-27. The PAGE RENDERINGS of this taxonomy have NOT yet been put to the site owner: that is the Task 9 gate, and the published counts are still the pre-recount ones.",
+  "built": "2026-09-27",
+  "built_by": "scripts/apply_taxonomy.py stamps `category` and `counted` on every row of the data files named in `data_files`; run it with --check to verify the assignment without writing. The rule each file is held to is recorded in that script and in the per-file `note` below, so the assignment is reproducible from the repository instead of resting on one ad-hoc run.",
+  "ordering_rule": "Categorise by AUTHORSHIP, not by format. A video he produced is A even if it is a debate, a lecture, or a call-in show. A show he was a guest on is C even though it carries his voice, his name in the title, and his argument.",
+  "categories": [
+    {
+      "id": "A",
+      "label": "Works by Asadullah Ali",
+      "short": "Sole-authored corpus",
+      "includes": [
+        "Every row of canonical_works.json: the works he wrote for his own sites (72 rows).",
+        "The video productions he made himself: the numbered episodes of The Andalusian Project series, archived on archive.org, plus any third-party mirror of a recording he produced.",
+        "Papers he authored alone: every papers.json row whose co_authors list is empty.",
+        "MDI rows carrying counted_as_work: true, i.e. a distinct item of content published once (4 of the 17 rows)."
+      ],
+      "excludes": [
+        "A second publication of a work already counted (13 MDI rows): catalogued, uncounted, and pointed at the counted work by duplicate_of.",
+        "A recording produced by someone else in which he appears (category C).",
+        "A paper he wrote with someone else (category B)."
+      ],
+      "counted": true
+    },
+    {
+      "id": "B",
+      "label": "Contributions & Collaborations",
+      "short": "Co-authored and joint productions",
+      "includes": [
+        "Papers carrying a non-empty co_authors field: written with one or more named co-authors.",
+        "Works whose provenance records joint production rather than sole authorship."
+      ],
+      "excludes": [
+        "A record he only appeared in, however central he was to it: a debate he spoke in is C unless he produced it, and a co-written paper is B.",
+        "Items that are catalogued but never counted (notices, link-outs, the derived secondary_sources)."
+      ],
+      "counted": true
+    },
+    {
+      "id": "C",
+      "label": "Interviews, Reception & Mentions About Him",
+      "short": "He is the guest or the subject",
+      "includes": [
+        "His appearances in other people's shows: debate recordings uploaded by the Muslim Debate Initiative, MSA Ohio State, and other channels, plus translated and clipped excerpts of those appearances.",
+        "Reprints, critiques, biographies and passing mentions written by others about him.",
+        "The 69 rows of secondary_sources.json, which are DERIVED from the archive's own data and therefore never counted as content."
+      ],
+      "excludes": [
+        "A recording he made himself, even one that answers or criticises another person's claim: that is A.",
+        "The link-out rows (category D), which record a link rather than an appearance."
+      ],
+      "counted": true
+    },
+    {
+      "id": "D",
+      "label": "Other Materials",
+      "short": "Catalogued, never counted",
+      "includes": [
+        "Notices: announcements rather than works (3 rows).",
+        "Link-outs: the conversion-story reprint, held as metadata only, and 9 Yaqeen pages whose text is never downloaded by this project (10 rows).",
+        "Site and channel history material: what the site and channel were, when they went offline, and which figures about them are refused."
+      ],
+      "excludes": [
+        "Anything with recovered text that is counted: the archive never files real content in D to keep it out of a total."
+      ],
+      "counted": false
+    }
+  ],
+  "rules": {
+    "one_category_per_item": "A thing counted in two buckets is a bug. Every countable item carries exactly one category letter and counted: true, and every uncounted row carries counted: false.",
+    "never_counted": "Every row of secondary_sources.json, of notices.json and of linkouts.json is catalogued but NEVER counted. They are listed so a reader can see they exist; they add nothing to any total. The row counts those files carry are stated in `data_files` below, and scripts/apply_taxonomy.py --check fails if any of them drifts from the data.",
+    "format_is_not_authorship": "A debate he produced is A. A show he was a guest on is C. An interview he conducted is A because he made the recording. A paper he co-wrote is B. Never decide a category by the word 'interview', 'dialogue' or 'debate' in a title.",
+    "guest_vs_producer": "The test is who made the recording, read off the entry's own evidence (its archive_url host, its uploader named in source, its title, its note). A YouTube upload on somebody else's channel is their production unless the entry's own evidence says he produced the recording.",
+    "duplicates_are_not_a_fifth_place": "A second publication of a work already counted (13 MDI rows) keeps its category letter for orientation, but carries counted: false and duplicate_of, so the count still lands in exactly one bucket.",
+    "counts_are_computed": "No page may type a number. The homepage counts each category by counting rows in the data at build time.",
+    "ambiguity": "Where the entry's own evidence does not settle authorship, the item is assigned A, a category_basis string records why it was ambiguous, and the entry is listed for the controller in the Task 8a report. Guessing silently is not allowed."
+  },
+  "data_files": {
+    "canonical_works.json": {
+      "rows": 72,
+      "category": "A",
+      "counted": true,
+      "note": "All 72. No work row records joint production, so none is B. apostasy-beyond-the-rhetoric was first published on islamicdiscourseinitiative.com rather than asadullahali.com but is still his sole byline."
+    },
+    "videos.json": {
+      "rows": 68,
+      "category": "A or C by the entry's own evidence",
+      "counted": true,
+      "note": "57 A, 11 C. No entry carries kind: lecture, so the rule fell to the evidence on each entry: archive.org items of his own numbered series are A; a show he was a guest on is C."
+    },
+    "papers.json": {
+      "rows": 20,
+      "category": "A if co_authors is empty, B otherwise",
+      "counted": true,
+      "note": "17 A, 3 B. The type field is a format label (Talk, Interview, Conference Paper) and never decides the category."
+    },
+    "mdi_articles.json": {
+      "rows": 17,
+      "category": "A",
+      "counted": "counted_as_work: true on 4 rows, false on 13",
+      "note": "All 17 carry category A because the byline is his; the 13 that republish an already-counted work are counted: false and name the work they duplicate in duplicate_of."
+    },
+    "secondary_sources.json": {
+      "rows": 69,
+      "category": "C",
+      "counted": false,
+      "note": "Derived from the archive's own catalogue (mention, bio, reprint, critique). count_as_content is already false on every row; counted: false added for the same statement in one field name."
+    },
+    "notices.json": {
+      "rows": 3,
+      "category": "D",
+      "counted": false,
+      "note": "Announcements, not works. counted_as_work was already false; counted: false added."
+    },
+    "linkouts.json": {
+      "rows": 10,
+      "category": "D",
+      "counted": false,
+      "note": "1 conversion-story reprint held as metadata only, 9 Yaqeen pages. No text was downloaded for any of them, so no size is counted."
+    },
+    "channel_facts.json": {
+      "category": "D",
+      "counted": false,
+      "note": "Site and channel history material. Owned by another agent; read only, never written here. Rendered on its own page at /channel/."
+    }
+  }
+}

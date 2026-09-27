@@ -1,0 +1,15 @@
+{%- comment -%}
+Category badge. The letter AND the label both come from _data/taxonomy.json,
+so a category is defined in exactly one place and no template types its own
+label. Renders nothing when no category is passed: the layouts look the
+category up first and pass it in, and a badge appears only where a category
+exists for that page. (Liquid still tokenises tags inside a comment block, so
+this file names its call site in prose rather than writing the include tag
+literally.)
+{%- endcomment -%}
+{%- if include.category and include.category != "" -%}
+{%- assign entry = site.data.taxonomy.categories | where: "id", include.category | first -%}
+{%- if entry -%}
+<span class="tag tag-category tag-category-{{ include.category }}">{{ include.category }} &middot; {{ entry.label }}</span>
+{%- endif -%}
+{%- endif -%}

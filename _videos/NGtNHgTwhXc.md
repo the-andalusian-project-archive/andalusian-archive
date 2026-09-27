@@ -1,0 +1,25 @@
+---
+layout: video
+title: "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]"
+video_id: "NGtNHgTwhXc"
+id: "NGtNHgTwhXc"
+permalink: "/videos/NGtNHgTwhXc/"
+archive_url: "https://archive.org/download/andalusian-project/54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc].mp4"
+source: archive_org
+format: "MPEG4"
+duration: "1045.55"
+tone: "informal discussion"
+themes: ["Literary analysis and recommendations", "Intellectual resource curation", "Scholarly work discussions"]
+topics: ["literature", "education", "resources"]
+mirror_urls: []
+---
+
+# 54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]
+
+Preserved on the Internet Archive as part of the andalusian-project collection.
+
+- [Download from Archive.org](https://archive.org/download/andalusian-project/54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc].mp4)
+
+Theme descriptions use neutral academic language for research purposes.
+
+Themes: Literary analysis and recommendations; Intellectual resource curation; Scholarly work discussions

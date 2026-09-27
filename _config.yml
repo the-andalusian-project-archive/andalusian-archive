@@ -1,0 +1,159 @@
+title: The Andalusian Project Archive
+description: Digital preservation of Asadullah Ali Al-Andalusi's work
+
+# 2026-09-27 (P2 SEO): `url` was "" , and an empty `url` is not "the site sits
+# at the domain root" - it tells jekyll-seo-tag and jekyll-sitemap that the site
+# has no URL at all, so every absolute-URL filter degrades to `relative_url`.
+# Measured before the fix: 310/310 pages with a relative <link rel="canonical">
+# and a relative og:url, 316/316 sitemap <loc> values path-only, relative
+# @id/url in every JSON-LD block, a relative <link>/<id> in feed.xml, and
+# robots.txt reading "Sitemap: /andalusian-archive/sitemap.xml".
+# The site is published at
+# https://the-andalusian-project-archive.github.io/andalusian-archive/
+# (audit B11 option A: profile repo `the-andalusian-project-archive`, site repo
+# `andalusian-archive`). `url` carries the host ONLY, with no trailing slash
+# and no path: jekyll-seo-tag and jekyll-sitemap append `baseurl` themselves,
+# so a trailing slash or a path here would be emitted twice.
+url: "https://the-andalusian-project-archive.github.io"
+# `baseurl` is the path segment and must stay byte-identical to the value
+# deploy.yml passes at build time as
+# `--baseurl "${{ steps.pages.outputs.base_path }}"`, which
+# actions/configure-pages derives as `/andalusian-archive` from the repo name.
+# The two therefore agree, and a local `bundle exec jekyll build` emits the same
+# URLs as CI. If the repo is ever renamed, this line and the repo name must
+# change together or local and CI builds silently diverge (audit B10).
+baseurl: "/andalusian-archive"
+
+permalink: /:categories/:title/
+
+collections:
+  papers:
+    output: true
+    permalink: /papers/:name/
+  videos:
+    output: true
+    permalink: /videos/:name/
+  articles:
+    output: true
+    permalink: /articles/:name/
+  # 2026-09-27 (task 8d): the transcript TEXT, served. Every capture named by
+  # _data/transcript_coverage.json is rendered into one document here by
+  # scripts/build_collections.py :: build_transcripts(), so the text a reader
+  # needs is on the site instead of only in .firecrawl/transcripts/, which
+  # Jekyll excludes. Each document carries its own explicit permalink.
+  #
+  # 2026-09-27 (task 8f, M7): the collection-level `permalink: /transcripts/:name/`
+  # was removed. Every one of the 68 documents writes its own `permalink:` in
+  # front matter, so the default never applied to any of them; leaving it in
+  # place implied a live `:name` slug rule that no page uses, and would have
+  # quietly started governing a hand-added page. The other three collections keep
+  # their defaults because their documents do not carry their own.
+  transcripts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+  - scope:
+      path: ""
+      type: "videos"
+    values:
+      layout: "video"
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+      type: "transcripts"
+    values:
+      layout: "transcript"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  # 2026-09-27 (P2 SEO): jekyll-sitemap 1.4 lists every site static file whose
+  # extension is .htm/.html/.xhtml/.pdf, and for a file that sits inside a
+  # collection directory it writes StaticFile#relative_path rather than the URL
+  # Jekyll actually serves. The PDFs in _papers/pdfs/ are `papers` collection
+  # static files: their relative_path is `_papers/pdfs/<name>.pdf`, but
+  # StaticFile#url renders them through the collection permalink
+  # (/papers/:name/) so they are served at `/papers/<name>.pdf`. The two differ
+  # only by the collections dir and the extra `pdfs/` segment, so the sitemap
+  # advertised 6 URLs that do not exist. `sitemap: false` is read by the
+  # plugin's own filter (`where_exp:'page','page.sitemap != false'`) and drops
+  # exactly those entries. It does not touch the 20 paper detail pages: those
+  # are collection documents with relative_path `_papers/<name>.md`, which does
+  # not start with `_papers/pdfs`.
+  # Verified after a build: sitemap.xml contains no `_papers/` <loc>.
+  - scope:
+      path: "_papers/pdfs"
+    values:
+      sitemap: false
+  # 2026-09-27 (P2 SEO): /search/ is an application surface, not content. Its
+  # body is assembled client-side from data/*.json, it is already linked from
+  # the nav on all 310 pages, and its one line of static prose states an item
+  # count that is a known pending inconsistency (audit P2-10, Task 9 approval
+  # gate: "143 preserved items" here against "203" on the homepage). Keeping it
+  # out of the sitemap stops a search engine restating a number the site owner
+  # has not approved. Deliberately NOT `noindex`: that is an on-page content
+  # decision about search.md, which this change does not own, and the page is
+  # legitimately reachable. Scoped by path rather than typed into search.md so
+  # the decision lives with the rest of the build config.
+  - scope:
+      path: "search.md"
+    values:
+      sitemap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+
+exclude:
+  - scripts/
+  # 2026-09-27 (P2 SEO, the highest-impact line in the audit): `data/` was
+  # excluded here, so Jekyll deleted all four client-side search indexes from
+  # the build. `_site/data/` did not exist, every visitor to /search/ got
+  # "Failed to load search data", and the two CI steps that exist only to
+  # prepare these files (deploy.yml "Sync search data" and "Assert search-data
+  # sync") produced output the build then threw away. The drift test stayed
+  # green throughout, because it only proves the _data -> data half and never
+  # looks at what Jekyll kept.
+  # `data/` is a real directory in the source tree, so the correct mechanism is
+  # the one `assets/` already uses - let Jekyll copy the directory through.
+  # scripts/sync_search_data.py writes it (DATA_DIR = BASE / "data"), the four
+  # files are committed rather than gitignored, and search.md fetches each of
+  # them through `| relative_url`. No `include:`, no extra collection, no
+  # copy step in the workflow.
+  # Verified after a build: _site/data/{papers,videos,canonical_works,
+  # blog_posts}.json all present and parse as JSON, and all four fetch paths in
+  # _site/search/index.html resolve to a file inside _site.
+  #
+  # 2026-09-27 (task 8d): docs/ was not excluded, so Jekyll copied it into
+  # _site/ verbatim and the internal recovery log (review verdicts, lane
+  # names, scratch-tree paths) was published at /docs/recovery-log/ and the
+  # recovery plans at /docs/superpowers/plans/. Excluded here, in the same
+  # style as the other entries above. Verified after a build: no docs/ or
+  # recovery-log path exists in _site/.
+  - docs/
+  - README.md
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .env
+  - .env.example
+  - .github/
+  - .firecrawl/
+  - .jekyll-cache/
+  - .sass-cache/
+keep_files: [.nojekyll]

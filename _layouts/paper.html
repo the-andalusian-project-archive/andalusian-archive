@@ -1,0 +1,170 @@
+---
+layout: default
+---
+<article class="paper-detail">
+      <h1>{{ page.title }}</h1>
+      {%- comment -%}
+        Category badge, matched on title: build_collections.py writes the
+        paper row's title verbatim into this page's front matter, so an exact
+        match is the join key (slugifying the title instead would break on the
+        Arabic and Turkish titles).
+      {%- endcomment -%}
+      {%- assign cat = nil -%}
+      {%- assign coauthored = false -%}
+      {%- for row in site.data.papers -%}
+        {%- if row.title == page.title -%}
+          {%- assign cat = row.category -%}
+          {%- if row.co_authors and row.co_authors.size > 0 -%}{%- assign coauthored = true -%}{%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if cat -%}<div class="meta">{% include category_badge.html category=cat %}</div>{%- endif -%}
+      
+      {%- comment -%}
+        Publication date, printed from the raw source string.
+
+        M5 (Phase-3 review, 2026-09-27): the page used to print that string
+        verbatim, so a year-only row read "2020" and a year-month row "2020-03"
+        while the rest of the site writes dates out ("March 12, 2020"). Printing
+        it verbatim fixed a real bug and left a visible inconsistency; this
+        closes both.
+
+        It must not be re-run through the `date` filter unguarded. Liquid reads
+        an all-digits string as a Unix timestamp, so the year-only value "2020"
+        was rendered as "January 1970" - a publication date this archive does
+        not have. So the string's SHAPE is checked first, and every branch that
+        reaches `date` is a string that contains a hyphen and therefore cannot
+        be read as a timestamp; the year-only branch never reaches it at all:
+          2020          -> 2020           (no filter; a bare year is a year)
+          2020-03       -> March 2020     (month and year are known; the day
+                                           is not, so no day is invented, and
+                                           the 01 fed to the filter to reach it
+                                           is never printed)
+          2020-03-12    -> March 12, 2020
+        The year-only and year-month shapes are both fatal to Ruby date parsing
+        - `Time.parse("2020")` and `Time.parse("2020-03")` both raise - and
+        Liquid answers a raise by handing the input straight back, which is how
+        a naive fix leaves the page looking unchanged. The guards are numeric,
+        so a value that is not a date at all cannot reach `date` either.
+        Anything else falls through to the raw string, which is what the page
+        printed before. No branch can produce a date the source did not state.
+      {%- endcomment -%}
+      {%- assign pdate = page.publication_date -%}
+      {%- assign pyear = pdate | slice: 0, 4 -%}
+      {%- assign pmonth = pdate | slice: 5, 2 -%}
+      {%- assign pday = pdate | slice: 8, 2 -%}
+      {%- assign pyear_n = pyear | plus: 0 -%}
+      {%- assign pmonth_n = pmonth | plus: 0 -%}
+      {%- assign pday_n = pday | plus: 0 -%}
+      {%- assign pyear_month = pyear | append: "-" | append: pmonth | append: "-01" -%}
+      {%- assign shape_year_only = false -%}
+      {%- assign shape_year_month = false -%}
+      {%- assign shape_full = false -%}
+      {%- if pdate.size == 4 and pyear_n > 1000 and pyear_n < 10000 -%}
+        {%- assign shape_year_only = true -%}
+      {%- elsif pdate.size == 7 and pdate contains "-" and pyear_n > 1000 and pyear_n < 10000 and pmonth_n > 0 and pmonth_n < 13 -%}
+        {%- assign shape_year_month = true -%}
+      {%- elsif pdate.size == 10 and pdate contains "-" and pyear_n > 1000 and pyear_n < 10000 and pmonth_n > 0 and pmonth_n < 13 and pday_n > 0 and pday_n < 32 -%}
+        {%- assign shape_full = true -%}
+      {%- endif -%}
+      <div class="meta">
+
+        {% if page.publisher_journal %}
+        <span class="journal">{{ page.publisher_journal }}</span>
+        {% endif %}
+        {% if pdate and pdate != "" %}
+        | <span class="date">{% if shape_full %}{{ pdate | date: "%B %-d, %Y" }}{% elsif shape_year_month %}{{ pyear_month | date: "%B %Y" }}{% elsif shape_year_only %}{{ pyear }}{% else %}{{ pdate }}{% endif %}</span>
+        {% endif %}
+        {% if page.type %}
+        | <span class="type">{{ page.type }}</span>
+        {% endif %}
+        {% if page.status %}
+        | <span class="status status-{{ page.status }}">{{ page.status }}</span>
+        {% endif %}
+      </div>
+      
+      {% if page.co_authors and page.co_authors.size > 0 %}
+      <div class="detail-section">
+        <h3>Co-Authors</h3>
+        <p><span class="tag tag-category tag-category-{{ cat }}">Co-authored</span></p>
+        <p>Written with {{ page.co_authors | join: ", " }}. It is counted once, under category B, and not again among his sole-authored works.</p>
+      </div>
+      {% endif %}
+
+      
+      {% if page.volume_issue %}
+      <div class="detail-section">
+        <h3>Publication Details</h3>
+        <p>Volume/Issue: {{ page.volume_issue }}</p>
+      </div>
+      {% endif %}
+      
+      {% if page.abstract %}
+      <div class="detail-section">
+        <h3>Abstract</h3>
+        <div class="abstract">{{ page.abstract }}</div>
+      </div>
+      {% endif %}
+      
+      {% if page.doi %}
+      <div class="detail-section">
+        <h3>DOI</h3>
+        <p><a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener noreferrer">{{ page.doi }}</a></p>
+      </div>
+      {% endif %}
+      
+      {% if page.citation_count != null %}
+      <div class="detail-section">
+        <h3>Citations</h3>
+        <p>{{ page.citation_count }}</p>
+      </div>
+      {% endif %}
+      
+      <div class="detail-section">
+        <h3>Available Sources</h3>
+        {% if page.url_status == 'profile_page_only' %}
+        <div class="notice notice-unavailable"><strong>Availability: Unavailable</strong> — the source data links this entry to a generic author profile page, not a direct paper URL.</div>
+        {% endif %}
+        <div class="source-links">
+          {% include source_link.html url=page.original_url label="View Original" class="btn" %}
+          {%- comment -%}
+            `pdf_url` is a link-out to a publisher's copy, never to a file this
+            archive withholds, so the button is emitted whenever the page has
+            one. The one paper whose PDF this archive does NOT publish says so
+            in the note printed directly beneath these buttons, in the
+            `file_licence` line and in the body, which label the same URL
+            "link-out; not mirrored". Guarding the button on the withheld
+            paper would need a signal the page does not carry: build_papers.py
+            writes `file_status` only for rows that HAVE a file, so
+            `page.file_status` is null on exactly the page that would need it.
+          {%- endcomment -%}
+          {% if page.pdf_url %}
+          <a href="{{ page.pdf_url }}" target="_blank" rel="noopener noreferrer" class="btn">Download PDF</a>
+          {% endif %}
+          {% if page.wayback_url %}
+          <a href="{{ page.wayback_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Wayback Machine</a>
+          {% endif %}
+          {% for alt in page.alternate_urls %}
+          {% include source_link.html url=alt label="Alternate Source" class="btn btn-secondary" %}
+          {% endfor %}
+        </div>
+
+        {% if page.note %}
+        <p class="meta alternate-note">Note: {{ page.note }}</p>
+        {% endif %}
+        {% if page.sources and page.sources.size > 0 %}
+        <ul class="source-list">
+          {% for source in page.sources %}
+          <li>{{ source }}</li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      
+      <div class="content">
+        {{ content }}
+      </div>
+      
+      <div class="back-link">
+        <a href="{{ '/papers/' | relative_url }}">&larr; Back to Academic Papers</a>
+      </div>
+</article>

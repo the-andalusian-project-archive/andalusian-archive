@@ -1,0 +1,7 @@
+source: https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/
+fetch: HTTP 200, 151746 bytes, saved as .firecrawl/mdi-feminism-page.html (polite urllib, browser UA)
+facebook numeric IDs: 1151122181573034 (Mars vs Venus event page), 1170012363033222 (Zara Faris post), 1703193229912357 (IMEC 2015 talk), 1752342824997397 (the debate, linked twice)
+youtube IDs: 5eqYEVYZgdo only (illustrative example link, NOT the debate); sole iframe is WP likes widget
+debate anchor 1: The debate, which can be viewed HERE in full -> https://www.facebook.com/AsadullahAli.AlAndalusi/videos/1752342824997397/
+debate anchor 2: released the full debate HERE -> same URL
+verdict: facebook-only-no-transcript; Firecrawl credits spent: 0

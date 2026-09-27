@@ -1,0 +1,25 @@
+---
+title: "Hitchslapping the Hitch Out of His Followers"
+date: 2011-12-18
+slug: hitchslapping-the-hitch-out-of-his-followers
+original_url: "http://asadullahali.wordpress.com/2011/12/18/hitchslapping-the-hitch-out-of-his-followers/"
+wayback_url: "https://web.archive.org/web/20120717030040id_/http://asadullahali.wordpress.com:80/2011/12/18/hitchslapping-the-hitch-out-of-his-followers/"
+categories: [Atheism]
+tags: []
+author: "Asadullah Ali Al-Andalusi"
+source: "The Andalusian Project Archive"
+provenance: "F2 WordPress-mirror recovery via Wayback capture 20120717030040 (asadullahali.wordpress.com)"
+word_count: 740
+recovered_text_words: 740
+text_source: "_staging/deleted/posts/hitchslapping-the-hitch-out-of-his-followers.txt"
+notice: "Recovered 2026-09-27 from the WordPress mirror (asadullahali.wordpress.com) via Wayback; deleted from the live mirror before this recovery. Full text verbatim."
+layout: post
+---
+
+# Hitchslapping the Hitch Out of His Followers
+
+Christopher Hitchens has just passed away (Dec. 15, 2011) due to cancer and many across the journalistic, political and religious spectrum (or lack thereof) mourn his death, especially Hitchen’s followers. Recently I’ve come across many of his devotees praising his past work and lionizing his legacy as an “intellectual and journalist”. Absent of Hitchens fierce rhetorical skill I will say one word in response to these tears: disgusting.
+That is, as it will be made obvious, the only word I can come up with when witnessing these post-mortem cries of appreciation for a man that can only be considered awful in most senses of the word; and I reserve the most severe uses of the term for those who actually carried out the glee manifested in his war mongering wordplay. For indeed, Hitchens was perhaps one of the greatest sophists of the contemporary age: he was able to convince and awe his audience with a whip of the tongue without substance, salivating pleasure for the drums of war as they marched into Iraq and slaughtered thousands of men, women and children who could not offer a word in defense. Despite his horror at the tragic and criminal acts of the Vietman War or the eroding political system of the United States at the hands of extremists religious right-wing parties, his condemnations came to nothing but the usual opportunistic rants to expound on his own insight –pardon me– ego. Since the beginning of his support for the Iraq war till the very end, despite the massive failure of the campaign and the outright lie it has come to be known by every sensible person on the planet, he lost all credibility to speak of the horrors of war and facism. Till his very bitter end he thought himself right to support such a project and never recanted.
+“How could you speak so ill of a man at his death? Have you no respect?”, I will inevitably be met with by those who believed him to be a great man though they disagreed with him on the minor issue of whether the war in Iraq was justified or not. My response? If George Bush Jr. cleaned up his way of speaking and threw away the “shackles” of his religious convictions would you similarly think him a hero? And we wonder why so many contemporary atheists are still not taken seriously on issues of moral virtue when they are so fickle in stances depending on who is flying their flag? Of course they will retort that Bush Jr. actually ordered the war whereas Hitchen’s merely supported it. Im sure one would not be equal in their condemnation of Osama Bin Laden versus one of his supporters, but that does not relinquish either’s respective titles of douchebag.
+And for those still contemptuous at my attacks on his now rotting corpse, let us not be hypocritical. The tribute that I give Hitchens now is one that he would have certainly approved of, since he gave similar treatments to the late Mother Teresa and Jerry Fallwel . Whatever you may think of either of these people is irrelevant to the fact that he was no stranger to hitting a man while he was down in his casket. Never have I heard cries from his supporters at this being innapropriate, rather we heard laughter at the expense of the dead. I will be more fair, however, in that I will not ask for you to laugh at Hitchen’s death, since he had no comical tragedy, but rather to rithe in disgusts at his existence and the praise he is receiving now. Shall we wish him Mercy from Allah? Certainly, but if his arrogance wins the day–as it usually did in all his exchanges– let us then wish him a long peaceful rest, because on the Day of Judgment he will certainly need it when faced with every man, woman and child he ran under the ditch for his blood-thirsty fantasies.
+And to those who support him now? Well, my disgust does not falter with them either. I suppose because he was “one of us” (a phrase Samuel Huntington would be proud of), his death was far more tragic and meaningful than the brown skinned individual on the other side of the world, but then again, it certainly gives sufficient proof to the age we live in and shows the real face of the intellectual elite of godlessness.

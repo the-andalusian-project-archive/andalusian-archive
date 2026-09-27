@@ -1,0 +1,129 @@
+{
+  "last_updated": "2026-09-27T20:51:53.592148",
+  "project_name": "The Andalusian Project Archive",
+  "author": "Asadullah Ali Al-Andalusi",
+  "description": "Digital preservation of Asadullah Ali Al-Andalusi's work for academic research and education",
+  "statistics": {
+    "total_blog_works": 72,
+    "total_blog_captures": 87,
+    "total_notices": 3,
+    "total_videos": 68,
+    "total_papers": 20,
+    "total_content": 207,
+    "total_content_formula": "72 works + 68 videos + 20 papers + 4 MDI (of 17 rows; 13 are second publications of a work already counted) + 9 Yaqeen (link-outs, sizes not stored) + 33 AlBalagh (link-outs) + 1 interview = 207 (excludes derived secondary_sources and the 3 uncounted announcements; blog uses works, not 87 captures; the Yaqeen and AlBalagh terms are row counts of link-outs, not measured content)",
+    "blog_status_counts": {
+      "found": 47,
+      "lost": 1,
+      "wayback_only": 24
+    },
+    "total_mdi_articles": 4,
+    "total_mdi_rows": 17,
+    "total_mdi_duplicate_of_a_work": 13,
+    "total_yaqeen_papers": 9,
+    "total_albalagh_courses": 33,
+    "total_external_interviews": 1,
+    "total_secondary_sources": 70,
+    "total_talks": 19,
+    "total_translations": 11
+  },
+  "collections": {
+    "blog_posts": {
+      "description": "72 works (47 full-text in repo, 1 lost, 24 Wayback-only); 87 CDX captures preserved as metadata",
+      "count": 87,
+      "storage": "METADATA IN REPO (full text for 47 found works only)",
+      "risk_level": "HIGH - original site offline"
+    },
+    "videos": {
+      "description": "Video lectures and discussions from The Andalusian Project YouTube channel and mirrors",
+      "count": 68,
+      "storage": "IN REPO (Archive.org + YouTube mirrors)",
+      "risk_level": "MEDIUM - YouTube channel deleted, mirrors exist"
+    },
+    "papers": {
+      "description": "Academic papers and research articles",
+      "count": 20,
+      "storage": "LINKS to institutional repositories, plus 5 held PDFs",
+      "risk_level": "LOW - institutionally hosted"
+    },
+    "mdi_articles": {
+      "description": "Articles by Asadullah Ali on the Muslim Debate Initiative website; 13 of the 17 rows are a second publication of a work already counted",
+      "count": 4,
+      "rows": 17,
+      "duplicate_of_a_counted_work": 13,
+      "storage": "FULL TEXT IN REPO (recovered 2026-09-27, verbatim)",
+      "risk_level": "MEDIUM - site active but content may change",
+      "source_file": "mdi_articles.json"
+    },
+    "yaqeen_papers": {
+      "description": "Research papers and blog posts on Yaqeen Institute by Asadullah Ali",
+      "count": 9,
+      "sizes_known": 2,
+      "storage": "LINK-OUTS ONLY (Global Constraint 4). Row count, not a content count: 2 of the 9 rows have a known word count and 7 have none, because no Yaqeen page body was downloaded.",
+      "risk_level": "LOW - institutionally hosted",
+      "source_file": "yaqeen_papers.json"
+    },
+    "albalagh_courses": {
+      "description": "Online Islamic courses on Al Balagh Academy (including Asadullah Ali's courses)",
+      "count": 33,
+      "storage": "LINKS (scraped via Firecrawl)",
+      "risk_level": "LOW - institutionally hosted",
+      "source_file": "albalagh_courses.json"
+    },
+    "external_interviews": {
+      "description": "Interviews and Q&A features on external platforms",
+      "count": 1,
+      "storage": "LINKS (scraped via Firecrawl)",
+      "risk_level": "MEDIUM - third-party hosted",
+      "source_file": "external_interviews.json"
+    },
+    "secondary_sources": {
+      "description": "Combined index of all external content referencing Asadullah Ali and The Andalusian Project",
+      "count": 70,
+      "storage": "IN REPO",
+      "risk_level": "LOW - derived data",
+      "source_files": [
+        "mdi_articles.json",
+        "yaqeen_papers.json",
+        "albalagh_courses.json",
+        "external_interviews.json"
+      ]
+    }
+  },
+  "sources": {
+    "wayback_machine": {
+      "url": "https://web.archive.org",
+      "status": "Active",
+      "content": "Blog posts and website content"
+    },
+    "archive_org": {
+      "url": "https://archive.org/details/andalusian-project",
+      "status": "Active",
+      "content": "Video archive"
+    },
+    "yaqeen_institute": {
+      "url": "https://yaqeeninstitute.org",
+      "status": "Active",
+      "content": "Academic papers"
+    },
+    "muslim_debate_initiative": {
+      "url": "https://muslimdebate.org",
+      "status": "Active",
+      "content": "Articles and debates"
+    },
+    "al_balagh_academy": {
+      "url": "https://www.albalaghacademy.org",
+      "status": "Active",
+      "content": "Course materials"
+    }
+  },
+  "preservation_notes": {
+    "blog_posts": "72 works (47 full-text in repo, 1 lost, 24 Wayback-only); 87 CDX captures preserved as metadata. Recovered 2026-09-07 via canonical Wayback fetch, junk-purged 2026-09-08; WordPress-mirror, IDI and best-capture recoveries integrated 2026-09-27 (see recovery_log.json and bibliography.json).",
+    "notices": "3 announcements (book lists, library updates, link posts) catalogued in notices.json with counted_as_work=false. They carry the recovered text but are excluded from every total.",
+    "videos": "68 videos catalogued in videos.json; mirrors attach as mirror_urls and are never counted separately.",
+    "papers": "Academic papers are hosted by Yaqeen Institute and other institutions; links are provided for access, and the texts legitimately obtained are held under _papers/pdfs/. See bibliography.json for the full oa/restricted/dead ledger.",
+    "mdi_articles": "17 rows from the muslimdebate.org author archive, of which 13 are a second publication of a work already counted (decided by 5-gram text comparison, not title similarity) and 4 are a distinct item. Full text recovered 2026-09-27 and stored in this repository; 7 of the 17 are <100-word captions for an embedded video and are kept as published.",
+    "yaqeen_papers": "9 papers/blog posts from Asadullah Ali's Yaqeen Institute profile. Titles and URLs preserved; full content hosted by Yaqeen Institute.",
+    "albalagh_courses": "33 unique courses from Al Balagh Academy (deduped by canonical URL 2026-09-07), including 3 taught by Asadullah Ali. URLs and titles preserved.",
+    "external_interviews": "1 interview/Q&A features from external publications. Full Q&A text available in the scraped markdown."
+  }
+}

@@ -1,0 +1,701 @@
+[
+  {
+    "video_id": "-BwP55UIg3c",
+    "title": "31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]",
+    "captions": true,
+    "lang": "en",
+    "lines": 71,
+    "source": "whisper-base-local",
+    "file": "whisper--BwP55UIg3c.json"
+  },
+  {
+    "video_id": "0snGWjeqEeM",
+    "title": "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]",
+    "captions": true,
+    "lang": "en",
+    "lines": 245,
+    "source": "whisper-base-local",
+    "file": "whisper-0snGWjeqEeM.json"
+  },
+  {
+    "video_id": "1962338957360877",
+    "title": "11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]",
+    "captions": true,
+    "lang": "en",
+    "lines": 697,
+    "source": "whisper-tiny-local (re-muxed)",
+    "file": "whisper-1962338957360877.json",
+    "note": "speech ends 4429s with closing salutation; 4429-4606s is sung outro/music (tiny-tail probe hallucinated Arabic lyrics, excluded)"
+  },
+  {
+    "video_id": "1U6VfHosrqw",
+    "title": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]",
+    "captions": true,
+    "lang": "en",
+    "lines": 16560,
+    "source": "youtube-auto-captions",
+    "file": "cap-1U6VfHosrqw.en-orig.vtt"
+  },
+  {
+    "video_id": "4VcPzhkP9bE",
+    "title": "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]",
+    "captions": true,
+    "lang": "en",
+    "lines": 15216,
+    "source": "youtube-auto-captions",
+    "file": "cap-4VcPzhkP9bE.en-orig.vtt"
+  },
+  {
+    "video_id": "7KBCENktOOU",
+    "title": "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]",
+    "captions": true,
+    "lang": "en",
+    "lines": 15048,
+    "source": "youtube-auto-captions",
+    "file": "cap-7KBCENktOOU.en-orig.vtt",
+    "alternates": [
+      {
+        "title": "My Story",
+        "captions": true,
+        "lang": "en",
+        "lines": 15048,
+        "source": "youtube-auto-captions",
+        "file": "cap-D2t0idkAqjA.en-orig.vtt",
+        "video_id": "D2t0idkAqjA",
+        "reparented_onto": "7KBCENktOOU",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of 7KBCENktOOU; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-D2t0idkAqjA.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "7Rzu6BjvxjY",
+    "title": "07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]",
+    "captions": true,
+    "lang": "en",
+    "lines": 212,
+    "source": "whisper-base-local",
+    "file": "whisper-7Rzu6BjvxjY.json"
+  },
+  {
+    "video_id": "8rEb8NfMPuc",
+    "title": "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]",
+    "captions": true,
+    "lang": "en",
+    "lines": 922,
+    "source": "whisper-base-local",
+    "file": "whisper-8rEb8NfMPuc.json"
+  },
+  {
+    "video_id": "8vxbN2jZL6M",
+    "title": "35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]",
+    "captions": true,
+    "lang": "en",
+    "lines": 155,
+    "source": "whisper-base-local",
+    "file": "whisper-8vxbN2jZL6M.json"
+  },
+  {
+    "video_id": "A3dbBCBSFKk",
+    "title": "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]",
+    "captions": true,
+    "lang": "en",
+    "lines": 49544,
+    "source": "youtube-auto-captions",
+    "file": "cap-A3dbBCBSFKk.en-orig.vtt"
+  },
+  {
+    "video_id": "B7NW2AwtZaM",
+    "title": "44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]",
+    "captions": true,
+    "lang": "en",
+    "lines": 496,
+    "source": "whisper-base-local",
+    "file": "whisper-B7NW2AwtZaM.json"
+  },
+  {
+    "video_id": "BRDaCqipcwM",
+    "title": "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1285,
+    "source": "whisper-base-local",
+    "file": "whisper-BRDaCqipcwM.json"
+  },
+  {
+    "video_id": "CEzMdCn0Ims",
+    "title": "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1657,
+    "source": "whisper-base-local",
+    "file": "whisper-CEzMdCn0Ims.json"
+  },
+  {
+    "video_id": "DA9JGrHKHZA",
+    "title": "27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]",
+    "captions": true,
+    "lang": "fr",
+    "lines": 749,
+    "source": "whisper-base-local",
+    "file": "whisper-DA9JGrHKHZA.json"
+  },
+  {
+    "video_id": "Dr5IgXCHRIE",
+    "title": "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\"re upload\") [Dr5IgXCHRIE]",
+    "captions": true,
+    "lang": "en",
+    "lines": 35568,
+    "source": "youtube-auto-captions",
+    "file": "cap-Dr5IgXCHRIE.en-orig.vtt"
+  },
+  {
+    "video_id": "G47Stp3pLss",
+    "title": "My Conversion Story",
+    "captions": true,
+    "lang": "en",
+    "lines": 15048,
+    "source": "youtube-auto-captions",
+    "file": "cap-G47Stp3pLss.en-orig.vtt",
+    "superseded_at": "2026-09-27",
+    "note": "R25 (2026-09-27): ATTACHED. The user restored this video as a first-class counted work, so its preserved capture is now attached to the entry and the entry's page links the published transcript at /transcripts/G47Stp3pLss/ (11,126 words). The earlier decision to keep it unattached was made while the entry was catalogue-only; it is superseded by that restoration. `transcripts: 0` has been removed from the videos.json row, which is how every other transcribed entry in the catalogue is marked - a value of 0 now means, and only means, 'no transcript is attached to this entry'. The capture file is retained untouched and its coverage row is unchanged apart from this note and the flag.",
+    "attached_to_video_entry": true,
+    "attached_at": "2026-09-27"
+  },
+  {
+    "video_id": "IhE3ka7SQQs",
+    "title": "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]",
+    "captions": true,
+    "lang": "en",
+    "lines": 810,
+    "source": "whisper-base-local",
+    "file": "whisper-IhE3ka7SQQs.json"
+  },
+  {
+    "video_id": "KjUPbkqRxac",
+    "title": "49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]",
+    "captions": true,
+    "lang": "en",
+    "lines": 7256,
+    "source": "youtube-auto-captions",
+    "file": "cap-KjUPbkqRxac.en-orig.vtt"
+  },
+  {
+    "video_id": "Mj_J1Rk1esY",
+    "title": "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]",
+    "captions": true,
+    "lang": "en",
+    "lines": 179,
+    "source": "whisper-base-local",
+    "file": "whisper-Mj_J1Rk1esY.json"
+  },
+  {
+    "video_id": "NGtNHgTwhXc",
+    "title": "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]",
+    "captions": true,
+    "lang": "en",
+    "lines": 3936,
+    "source": "youtube-auto-captions",
+    "file": "cap-NGtNHgTwhXc.en-orig.vtt"
+  },
+  {
+    "video_id": "NyAVl7RsEOs",
+    "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1062,
+    "source": "whisper-base-local",
+    "file": "whisper-NyAVl7RsEOs.json",
+    "alternates": [
+      {
+        "title": "Understanding Atheism Session 1",
+        "captions": true,
+        "lang": "en",
+        "lines": 12504,
+        "source": "youtube-auto-captions",
+        "file": "cap-2tsI80MDUOI.en-orig.vtt",
+        "video_id": "2tsI80MDUOI",
+        "reparented_onto": "NyAVl7RsEOs",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of NyAVl7RsEOs; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-2tsI80MDUOI.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      },
+      {
+        "title": "Understanding Atheism Session 1",
+        "captions": true,
+        "lang": "en",
+        "lines": 13904,
+        "source": "youtube-auto-captions",
+        "file": "cap-EK5oppX6C2U.en-orig.vtt",
+        "video_id": "EK5oppX6C2U",
+        "reparented_onto": "NyAVl7RsEOs",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of NyAVl7RsEOs; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-EK5oppX6C2U.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "OTcAF8T-gD4",
+    "title": "21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]",
+    "captions": true,
+    "lang": "en",
+    "lines": 135,
+    "source": "whisper-base-local",
+    "file": "whisper-OTcAF8T-gD4.json"
+  },
+  {
+    "video_id": "PoNiuiP3W4Y",
+    "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]",
+    "captions": true,
+    "lang": "en",
+    "lines": 333,
+    "source": "whisper-base-local",
+    "file": "whisper-PoNiuiP3W4Y.json",
+    "alternates": [
+      {
+        "title": "A Muslims Guide to Science and Scientism Part 5",
+        "captions": true,
+        "lang": "en",
+        "lines": 4584,
+        "source": "youtube-auto-captions",
+        "file": "cap-hURJIIm0tSY.en-orig.vtt",
+        "video_id": "hURJIIm0tSY",
+        "reparented_onto": "PoNiuiP3W4Y",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of PoNiuiP3W4Y; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-hURJIIm0tSY.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "Qiay_L4IQ88",
+    "title": "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]",
+    "captions": true,
+    "lang": "en",
+    "lines": 4296,
+    "source": "youtube-auto-captions",
+    "file": "cap-Qiay_L4IQ88.en-orig.vtt"
+  },
+  {
+    "video_id": "RnkqSMTzvCg",
+    "title": "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]",
+    "captions": true,
+    "lang": "en",
+    "lines": 310,
+    "source": "whisper-base-local",
+    "file": "whisper-RnkqSMTzvCg.json"
+  },
+  {
+    "video_id": "WED5mPmO_yU",
+    "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]",
+    "captions": true,
+    "lang": "en",
+    "lines": 430,
+    "source": "whisper-base-local",
+    "file": "whisper-WED5mPmO_yU.json",
+    "alternates": [
+      {
+        "title": "A Muslims Guide to Science and Scientism Part 3",
+        "captions": true,
+        "lang": "en",
+        "lines": 6712,
+        "source": "youtube-auto-captions",
+        "file": "cap-kDH1BOyhhYk.en-orig.vtt",
+        "video_id": "kDH1BOyhhYk",
+        "reparented_onto": "WED5mPmO_yU",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of WED5mPmO_yU; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-kDH1BOyhhYk.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "X36xEj0OSV4",
+    "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]",
+    "captions": true,
+    "lang": "en",
+    "lines": 459,
+    "source": "whisper-base-local",
+    "file": "whisper-X36xEj0OSV4.json",
+    "alternates": [
+      {
+        "title": "A Muslims Guide to Science and Scientism Part 1",
+        "captions": true,
+        "lang": "en",
+        "lines": 4800,
+        "source": "youtube-auto-captions",
+        "file": "cap-fq1WejCHgXs.en-orig.vtt",
+        "video_id": "fq1WejCHgXs",
+        "reparented_onto": "X36xEj0OSV4",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of X36xEj0OSV4; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-fq1WejCHgXs.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "Xw2eGP1LRbk",
+    "title": "38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]",
+    "captions": true,
+    "lang": "en",
+    "lines": 127,
+    "source": "whisper-base-local",
+    "file": "whisper-Xw2eGP1LRbk.json"
+  },
+  {
+    "video_id": "Yu8rw5M0GF8",
+    "title": "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project [Yu8rw5M0GF8]",
+    "captions": true,
+    "lang": "en",
+    "lines": 13808,
+    "source": "youtube-auto-captions",
+    "file": "cap-Yu8rw5M0GF8.en-orig.vtt"
+  },
+  {
+    "video_id": "ZbcsxAoIVY0",
+    "title": "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]",
+    "captions": true,
+    "lang": "en",
+    "lines": 228,
+    "source": "whisper-base-local",
+    "file": "whisper-ZbcsxAoIVY0.json"
+  },
+  {
+    "video_id": "Zo-VRMEY-ic",
+    "title": "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]",
+    "captions": true,
+    "lang": "en",
+    "lines": 516,
+    "source": "whisper-base-local",
+    "file": "whisper-Zo-VRMEY-ic.json"
+  },
+  {
+    "video_id": "_C5ox2zZl0U",
+    "title": "26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]",
+    "captions": true,
+    "lang": "en",
+    "lines": 4736,
+    "source": "youtube-auto-captions",
+    "file": "cap-_C5ox2zZl0U.en-orig.vtt"
+  },
+  {
+    "video_id": "a1e0BMRLlr0",
+    "title": "50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1148,
+    "source": "whisper-base-local",
+    "file": "whisper-a1e0BMRLlr0.json"
+  },
+  {
+    "video_id": "aTJMDFJdgdg",
+    "title": "37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]",
+    "captions": true,
+    "lang": "en",
+    "lines": 539,
+    "source": "whisper-base-local",
+    "file": "whisper-aTJMDFJdgdg.json"
+  },
+  {
+    "video_id": "bDshE-aKXIA",
+    "title": "15 - The Masked Arab： A Eulogy [bDshE-aKXIA]",
+    "captions": true,
+    "lang": "en",
+    "lines": 965,
+    "source": "whisper-base-local",
+    "file": "whisper-bDshE-aKXIA.json"
+  },
+  {
+    "video_id": "biZFuWyB4lk",
+    "title": "22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]",
+    "captions": true,
+    "lang": "en",
+    "lines": 68,
+    "source": "whisper-base-local",
+    "file": "whisper-biZFuWyB4lk.json"
+  },
+  {
+    "video_id": "cDHrrbOKbl4",
+    "title": "52 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1912,
+    "source": "youtube-auto-captions",
+    "file": "cap-cDHrrbOKbl4.en-orig.vtt"
+  },
+  {
+    "video_id": "fJs5tuFw-UY",
+    "title": "32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1408,
+    "source": "whisper-base-local",
+    "file": "whisper-fJs5tuFw-UY.json"
+  },
+  {
+    "video_id": "fgsVa-khWp4",
+    "title": "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]",
+    "captions": true,
+    "lang": "en",
+    "lines": 225,
+    "source": "whisper-base-local",
+    "file": "whisper-fgsVa-khWp4.json"
+  },
+  {
+    "video_id": "gmGnu1RBAoQ",
+    "title": "56 - DanielCompassionateImam [gmGnu1RBAoQ]",
+    "captions": true,
+    "lang": "en",
+    "lines": 6,
+    "source": "whisper-base-local",
+    "file": "whisper-gmGnu1RBAoQ.json"
+  },
+  {
+    "video_id": "hKdNF95UqVM",
+    "title": "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]",
+    "captions": true,
+    "lang": "en",
+    "lines": 21608,
+    "source": "youtube-auto-captions",
+    "file": "cap-hKdNF95UqVM.en-orig.vtt"
+  },
+  {
+    "video_id": "lCqZB8gP4sk",
+    "title": "36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]",
+    "captions": true,
+    "lang": "en",
+    "lines": 299,
+    "source": "whisper-base-local",
+    "file": "whisper-lCqZB8gP4sk.json"
+  },
+  {
+    "video_id": "lS7h9SKKtVc",
+    "title": "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1072,
+    "source": "whisper-base-local",
+    "file": "whisper-lS7h9SKKtVc.json",
+    "alternates": [
+      {
+        "title": "Understanding Atheism Session 6",
+        "captions": true,
+        "lang": "en",
+        "lines": 16488,
+        "source": "youtube-auto-captions",
+        "file": "cap-bRTI6Z5gggE.en-orig.vtt",
+        "video_id": "bRTI6Z5gggE",
+        "reparented_onto": "lS7h9SKKtVc",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of lS7h9SKKtVc; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-bRTI6Z5gggE.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "lZkv38vd7bw",
+    "title": "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]",
+    "captions": true,
+    "lang": "en",
+    "lines": 2025,
+    "source": "whisper-base-local",
+    "file": "whisper-lZkv38vd7bw.json"
+  },
+  {
+    "video_id": "nkuZ70p-inE",
+    "title": "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1013,
+    "source": "whisper-base-local",
+    "file": "whisper-nkuZ70p-inE.json"
+  },
+  {
+    "video_id": "qBkiwqMucY0",
+    "title": "29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1032,
+    "source": "youtube-auto-captions",
+    "file": "cap-qBkiwqMucY0.en-orig.vtt"
+  },
+  {
+    "video_id": "rhufN0me6xg",
+    "title": "47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]",
+    "captions": true,
+    "lang": "en",
+    "lines": 60,
+    "source": "whisper-base-local",
+    "file": "whisper-rhufN0me6xg.json"
+  },
+  {
+    "video_id": "rtViqNWY1Bk",
+    "title": "30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]",
+    "captions": true,
+    "lang": "en",
+    "lines": 149,
+    "source": "whisper-base-local",
+    "file": "whisper-rtViqNWY1Bk.json"
+  },
+  {
+    "video_id": "tIFhyQtxQXg",
+    "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]",
+    "captions": true,
+    "lang": "en",
+    "lines": 535,
+    "source": "whisper-base-local",
+    "file": "whisper-tIFhyQtxQXg.json",
+    "alternates": [
+      {
+        "title": "A Muslims Guide to Science and Scientism Part 4",
+        "captions": true,
+        "lang": "en",
+        "lines": 5800,
+        "source": "youtube-auto-captions",
+        "file": "cap-eQ-frTAlcJc.en-orig.vtt",
+        "video_id": "eQ-frTAlcJc",
+        "reparented_onto": "tIFhyQtxQXg",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of tIFhyQtxQXg; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-eQ-frTAlcJc.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "tUHEAejm404",
+    "title": "34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]",
+    "captions": true,
+    "lang": "en",
+    "lines": 6664,
+    "source": "youtube-auto-captions",
+    "file": "cap-tUHEAejm404.en-orig.vtt"
+  },
+  {
+    "video_id": "tW-mjwrE7YY",
+    "title": "13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]",
+    "captions": true,
+    "lang": "en",
+    "lines": 8808,
+    "source": "youtube-auto-captions",
+    "file": "cap-tW-mjwrE7YY.en-orig.vtt"
+  },
+  {
+    "video_id": "unmn_tY5r_c",
+    "title": "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project [unmn_tY5r_c]",
+    "captions": true,
+    "lang": "en",
+    "lines": 27456,
+    "source": "youtube-auto-captions",
+    "file": "cap-unmn_tY5r_c.en-orig.vtt"
+  },
+  {
+    "video_id": "vJRfL4Kal20",
+    "title": "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1032,
+    "source": "whisper-base-local",
+    "file": "whisper-vJRfL4Kal20.json"
+  },
+  {
+    "video_id": "vh-6sisOncs",
+    "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]",
+    "captions": true,
+    "lang": "en",
+    "lines": 193,
+    "source": "whisper-base-local",
+    "file": "whisper-vh-6sisOncs.json",
+    "alternates": [
+      {
+        "title": "A Muslims Guide to Science and Scientism Part 2",
+        "captions": true,
+        "lang": "en",
+        "lines": 7672,
+        "source": "youtube-auto-captions",
+        "file": "cap-4maSZMzhmuI.en-orig.vtt",
+        "video_id": "4maSZMzhmuI",
+        "reparented_onto": "vh-6sisOncs",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of vh-6sisOncs; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-4maSZMzhmuI.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "wUapqpCqBUk",
+    "title": "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]",
+    "captions": true,
+    "lang": "en",
+    "lines": 81,
+    "source": "whisper-base-local",
+    "file": "whisper-wUapqpCqBUk.json",
+    "alternates": [
+      {
+        "title": "Is Allah a Dictator?",
+        "captions": true,
+        "lang": "en",
+        "lines": 1176,
+        "source": "youtube-auto-captions",
+        "file": "cap-YjGHZwdM7XU.en-orig.vtt",
+        "video_id": "YjGHZwdM7XU",
+        "reparented_onto": "wUapqpCqBUk",
+        "reparented_at": "2026-09-27",
+        "superseded": true,
+        "superseded_reason": "Duplicate re-upload of wUapqpCqBUk; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-YjGHZwdM7XU.en-orig.vtt) is retained; nothing was deleted.",
+        "record_preserved_in": "_data/superseded_videos.json"
+      }
+    ]
+  },
+  {
+    "video_id": "wVehdVlLdBI",
+    "title": "04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]",
+    "captions": true,
+    "lang": "en",
+    "lines": 638,
+    "source": "whisper-base-local",
+    "file": "whisper-wVehdVlLdBI.json"
+  },
+  {
+    "video_id": "xhnU-1dNi3I",
+    "title": "Information Literacy Lesson One",
+    "captions": true,
+    "lang": "en",
+    "lines": 23168,
+    "source": "youtube-auto-captions",
+    "file": "cap-xhnU-1dNi3I.en-orig.vtt",
+    "superseded": true,
+    "superseded_at": "2026-09-27",
+    "record_preserved_in": "_data/superseded_videos.json",
+    "note": "This video was removed from _data/videos.json as a duplicate with no archive.org twin, and by user decision (2026-09-27) its live URL was attached to vJRfL4Kal20's mirror_urls instead, so the recording is counted once under the baseline entry. This transcript row is kept so the text is not lost; it is not counted against the surviving video set. The capture file is retained untouched."
+  },
+  {
+    "video_id": "yUpHMaFHZ6s",
+    "title": "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]",
+    "captions": true,
+    "lang": "en",
+    "lines": 1456,
+    "source": "youtube-auto-captions",
+    "file": "cap-yUpHMaFHZ6s.en-orig.vtt"
+  },
+  {
+    "video_id": "1752342824997397",
+    "title": "Mars vs Venus debate: Do Muslim Women Need Feminism? (IIUM, 6 Apr 2016) [1752342824997397]",
+    "captions": false,
+    "lang": "und",
+    "lines": 0,
+    "source": "facebook-only-no-transcript",
+    "file": "",
+    "note": "MDI article links the debate viewed here in full twice to facebook video 1752342824997397; no YouTube embed for debate; per brief facebook-only-no-transcript"
+  }
+]

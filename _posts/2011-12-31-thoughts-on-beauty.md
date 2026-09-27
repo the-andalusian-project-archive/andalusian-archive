@@ -1,0 +1,34 @@
+---
+title: "Thoughts on Beauty"
+date: 2011-12-31
+author: Asadullah Ali
+category: [Articles, Philosophy]
+tags: [beauty, art, philosophy, aesthetics, Ibn Hazm, Heidegger]
+layout: post
+---
+
+# Thoughts on Beauty
+
+Posted on December 31, 2011ByAsadullah Ali
+
+1 Comment
+
+![A snow-covered fishing village on a still fjord at dusk, its lit windows and red-and-white houses reflected in the water beneath snow-capped mountains.]({{ "/assets/images/337_beautiful_lake_side_village_in_iceland.jpg" | relative_url }})
+
+I have come to some conclusions about my own aesthetic approach to beauty and art. It has been extremely eye opening over the course of the year. Through my own experiences of what we conventionally conceive of as “beautiful” and through the readings of other philosophers before me I have drawn some insights into the nature of these two concepts. In doing so, it has opened up my understanding of knowledge in general and my belief in God in particular. Note that my thoughts are primarily derived from the views of the late Andalusian scholar, Ibn Hazm and the late German Existentialists, Martin Heidegger. Below will be a cursory analysis of what I have come to believe.
+
+“Beauty”, as we conventionally understand it is not beauty at all. We may look at a painting at first sight or a a powerful work of architecture at first sight and initally conceive it as being a product of “beauty”, but it is typically not the case that the appearance draws us in to it’s actual essence. What I mean to say is that we are attracted to it, but to know whether it is “beautiful” or not is not something we usually understand. For understanding and beauty are intrinsically connnected. There is a vast difference between those laws of attraction and beauty itself. For my Muslim brothers and sisters allow me to bring up two controversial examples — more accustomed to the desires of men — in order to prove my point: Women and War.
+
+The two “W’s” of men’s desires are perfect examples by which to expound my view.
+
+Men desire women. For what attracts men are the features a woman possesses, both within her being and the structure outside of it. He is attracted to her innocence or her assertiveness, in that the main objective of these features is to please a man in the sense of how he communicates or interacts with her. He is pleased with her curves and the allure of her clothing or movements, in that he imagines himself with her sexually. These attributes are merely alustingand at first sight we call these things “beauty”. In fact, this is merely tastes. These are preferences by which we are commanded by the woman tolook…to beluredto her presence. But this luring is not outside of ourselves, but is a part of ourselves. For her luring, whether implicit or explicit, would not be possible without our own desires. They work hand in hand. This lust we possess should never be confused withlove, which is essentially just a term simultaneous withbeauty.Beauty, to call someonebeautiful, is to transcend these lures and this lust and to understand the person as a completion of the self. The person becomes, then, a reference to our humanity, both universally and individually. We do not lovebecauseof these external or internal features that are the object of our desires. We desire them because in their completion theycomplete us. What we refer to as the “I”ultimately becomes the “we“, for as humans our ultimate desire is unity. For lust is merely an incomplete desire in the finitude of another’s existence, whereas love is the desire of the infinitude of a unified existence. We love because we know. We love because we are known. It is through this relationship thatbeautyis felt throughout our entire being and encompasses us, becausebeautyis ultimately what and who we try to become and eventually do become.
+
+In this way we understand beauty as an experience more than an attribute of something. Art is essentially an obligation towards beauty and from beauty. Art is the force by which we attempt to come in communion with true existence.
+
+In the same way, war is a way by which we understand and appreciate beauty. There is no intrinsic aesthetic quality in theart of waritself, because war is chaotic and destructive, but we lust for blood and the extermination of our enemies because they appear to pose a threat to our very existence; our very desire for this communion. For if we do not destroy them, they will destroy us. And it is through overpowering our enemy that we reaffirm our existence and our communion, and through this we feel the same ecstasy of the beautiful through the protection of our existence. We do not crave war in a void, but in the context of preservation and it is through asserting ourselves as the better, as the victors of preservation, that we vindicate ourselves and our eternal quest towards the eternal. For men do not become patriotic in times of peace nor do they truly understand the importance of home, wealth and family until the thought of those things disappear from their minds. Thisnothingnessis merely the threat of a precious work of art being burned before our very eyes; a precious work of art that represents who we are and fulfills who we are. It is the destruction of this communion that we seek to fight against, and to be victor gives value to its presentation even more.
+
+Category:Articles,Philosophy
+
+### One Comment on “Thoughts on Beauty”
+
+- Islamotroll10 Mar 2012Salaam Alaykum Ali,This is SKhan. Nice post. I never thought beauty and war that way.Reply

@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>How Feminism undermines Islam and gender justice &#8211; The Muslim Debate Initiative</title>
+<meta name='robots' content='max-image-preview:large' />
+<meta name="google-site-verification" content="j7AtAPDOwtPOTIfdWeK6-JseNSFwUT5Cv2HpRxsGNwc" />
+
+<!-- Async WordPress.com Remote Login -->
+<script id="wpcom_remote_login_js">
+var wpcom_remote_login_extra_auth = '';
+function wpcom_remote_login_remove_dom_node_id( element_id ) {
+	var dom_node = document.getElementById( element_id );
+	if ( dom_node ) { dom_node.parentNode.removeChild( dom_node ); }
+}
+function wpcom_remote_login_remove_dom_node_classes( class_name ) {
+	var dom_nodes = document.querySelectorAll( '.' + class_name );
+	for ( var i = 0; i < dom_nodes.length; i++ ) {
+		dom_nodes[ i ].parentNode.removeChild( dom_nodes[ i ] );
+	}
+}
+function wpcom_remote_login_final_cleanup() {
+	wpcom_remote_login_remove_dom_node_classes( "wpcom_remote_login_msg" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_validate" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_js" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_iframe" );
+	wpcom_remote_login_remove_dom_node_id( "wpcom_request_access_styles" );
+}
+
+// Watch for messages back from the remote login
+window.addEventListener( "message", function( e ) {
+	if ( e.origin === "https://r-login.wordpress.com" ) {
+		var data = {};
+		try {
+			data = JSON.parse( e.data );
+		} catch( e ) {
+			wpcom_remote_login_final_cleanup();
+			return;
+		}
+
+		if ( data.msg === 'LOGIN' ) {
+			// Clean up the login check iframe
+			wpcom_remote_login_remove_dom_node_id( "wpcom_remote_login_key" );
+
+			var id_regex = new RegExp( /^[0-9]+$/ );
+			var token_regex = new RegExp( /^.*|.*|.*$/ );
+			if (
+				token_regex.test( data.token )
+				&& id_regex.test( data.wpcomid )
+			) {
+				// We have everything we need to ask for a login
+				var script = document.createElement( "script" );
+				script.setAttribute( "id", "wpcom_remote_login_validate" );
+				script.src = '/remote-login.php?wpcom_remote_login=validate'
+					+ '&wpcomid=' + data.wpcomid
+					+ '&token=' + encodeURIComponent( data.token )
+					+ '&host=' + window.location.protocol
+					+ '//' + window.location.hostname
+					+ '&postid=12611'
+					+ '&is_singular=1';
+				document.body.appendChild( script );
+			}
+
+			return;
+		}
+
+		// Safari ITP, not logged in, so redirect
+		if ( data.msg === 'LOGIN-REDIRECT' ) {
+			window.location = 'https://wordpress.com/log-in?redirect_to=' + window.location.href;
+			return;
+		}
+
+		// Safari ITP, storage access failed, remove the request
+		if ( data.msg === 'LOGIN-REMOVE' ) {
+			var css_zap = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } @media screen and ( max-width: 782px ) { html { margin-top: 0 !important; } * html body { margin-top: 0 !important; } }';
+			var style_zap = document.createElement( 'style' );
+			style_zap.type = 'text/css';
+			style_zap.appendChild( document.createTextNode( css_zap ) );
+			document.body.appendChild( style_zap );
+
+			var e = document.getElementById( 'wpcom_request_access_iframe' );
+			e.parentNode.removeChild( e );
+
+			document.cookie = 'wordpress_com_login_access=denied; path=/; max-age=31536000';
+
+			return;
+		}
+
+		// Safari ITP
+		if ( data.msg === 'REQUEST_ACCESS' ) {
+			console.log( 'request access: safari' );
+
+			// Check ITP iframe enable/disable knob
+			if ( wpcom_remote_login_extra_auth !== 'safari_itp_iframe' ) {
+				return;
+			}
+
+			// If we are in a "private window" there is no ITP.
+			var private_window = false;
+			try {
+				var opendb = window.openDatabase( null, null, null, null );
+			} catch( e ) {
+				private_window = true;
+			}
+
+			if ( private_window ) {
+				console.log( 'private window' );
+				return;
+			}
+
+			var iframe = document.createElement( 'iframe' );
+			iframe.id = 'wpcom_request_access_iframe';
+			iframe.setAttribute( 'scrolling', 'no' );
+			iframe.setAttribute( 'sandbox', 'allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-top-navigation-by-user-activation' );
+			iframe.src = 'https://r-login.wordpress.com/remote-login.php?wpcom_remote_login=request_access&origin=' + encodeURIComponent( data.origin ) + '&wpcomid=' + encodeURIComponent( data.wpcomid );
+
+			var css = 'html { -webkit-transition: margin-top 1s; transition: margin-top 1s; } /* 9001 */ html { margin-top: 46px !important; } * html body { margin-top: 46px !important; } @media screen and ( max-width: 660px ) { html { margin-top: 71px !important; } * html body { margin-top: 71px !important; } #wpcom_request_access_iframe { display: block; height: 71px !important; } } #wpcom_request_access_iframe { border: 0px; height: 46px; position: fixed; top: 0; left: 0; width: 100%; min-width: 100%; z-index: 99999; background: #23282d; } ';
+
+			var style = document.createElement( 'style' );
+			style.type = 'text/css';
+			style.id = 'wpcom_request_access_styles';
+			style.appendChild( document.createTextNode( css ) );
+			document.body.appendChild( style );
+
+			document.body.appendChild( iframe );
+		}
+
+		if ( data.msg === 'DONE' ) {
+			wpcom_remote_login_final_cleanup();
+		}
+	}
+}, false );
+
+// Inject the remote login iframe after the page has had a chance to load
+// more critical resources
+window.addEventListener( "DOMContentLoaded", function( e ) {
+	var iframe = document.createElement( "iframe" );
+	iframe.style.display = "none";
+	iframe.setAttribute( "scrolling", "no" );
+	iframe.setAttribute( "id", "wpcom_remote_login_key" );
+	iframe.src = "https://r-login.wordpress.com/remote-login.php"
+		+ "?wpcom_remote_login=key"
+		+ "&origin=aHR0cHM6Ly9tdXNsaW1kZWJhdGUub3Jn"
+		+ "&wpcomid=49128393"
+		+ "&time=" + Math.floor( Date.now() / 1000 );
+	document.body.appendChild( iframe );
+}, false );
+</script>
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//fonts-api.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="The Muslim Debate Initiative &raquo; Feed" href="https://muslimdebate.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Muslim Debate Initiative &raquo; Comments Feed" href="https://muslimdebate.org/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Muslim Debate Initiative &raquo; How Feminism undermines Islam and gender justice Comments Feed" href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-2-1' href='/_static/??-eJxtzN0KQEAQQOEXssaKcCHPsq1Jy+xPZjavL1JKLr86HTiSsjEIBgGfVaK8uMCwoiRjt8fAOYCPcyZk2JGM4KxSZPmotMwF/B/Jbfh+b1355EfdddWg26av1xMpeTR5&cssminify=yes' type='text/css' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.9.1/build/styles/block-library/common.min.css */
+</style>
+<style id="wp-block-library-inline-css-extra">
+.has-text-align-justify {
+	text-align:justify;
+}
+.has-text-align-justify{text-align:justify;}
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+.wp-block-button__link{background-color:#32373c;border-radius:9999px;box-shadow:none;color:#fff;font-size:1.125em;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-file__button{background:#32373c;color:#fff}.wp-block-accordion-heading{margin:0}.wp-block-accordion-heading__toggle{background-color:inherit!important;color:inherit!important}.wp-block-accordion-heading__toggle:not(:focus-visible){outline:none}.wp-block-accordion-heading__toggle:focus,.wp-block-accordion-heading__toggle:hover{background-color:inherit!important;border:none;box-shadow:none;color:inherit;padding:var(--wp--preset--spacing--20,1em) 0;text-decoration:none}.wp-block-accordion-heading__toggle:focus-visible{outline:auto;outline-offset:0}.wp-block-tab:not(.has-text-color){color:inherit!important}.wp-block-tab:not(.has-background){background-color:inherit!important}.wp-block-tab:focus,.wp-block-tab:hover{text-decoration:none}.wp-block-tab:focus-visible{outline:auto;outline-offset:0}
+/*# sourceURL=/wp-content/plugins/gutenberg-core/v23.9.1/build/styles/block-library/classic.min.css */
+</style>
+
+<style id="coblocks-inline-format-inline-css">
+.uppercase{text-transform:uppercase}
+/*# sourceURL=coblocks-inline-format-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-12-1' href='/_static/??-eJx9jkEOwjAMBD+EcSKBEAfEW5pgtYE4iWJHFb/HFT1w4rreWQ+uDWItSkVRF2ISbJ04Dca49FpSzISi72yHKIL0SFo7hFzjS46WHPBngQe0POZUrFw7Wc5t0q3BBk6U7UHRf9jajIEQTEIEdhX4mm3cnW/+fPWni3PePT8SaEbE&cssminify=yes' type='text/css' media='all' />
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 12.25px;--wp--preset--font-size--medium: 16.33px;--wp--preset--font-size--large: 24.5px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 14.29px;--wp--preset--font-size--huge: 32.66px;--wp--preset--font-family--albert-sans: 'Albert Sans', sans-serif;--wp--preset--font-family--alegreya: Alegreya, serif;--wp--preset--font-family--arvo: Arvo, serif;--wp--preset--font-family--bodoni-moda: 'Bodoni Moda', serif;--wp--preset--font-family--bricolage-grotesque: 'Bricolage Grotesque', sans-serif;--wp--preset--font-family--cabin: Cabin, sans-serif;--wp--preset--font-family--chivo: Chivo, sans-serif;--wp--preset--font-family--commissioner: Commissioner, sans-serif;--wp--preset--font-family--cormorant: Cormorant, serif;--wp--preset--font-family--courier-prime: 'Courier Prime', monospace;--wp--preset--font-family--crimson-pro: 'Crimson Pro', serif;--wp--preset--font-family--dm-mono: 'DM Mono', monospace;--wp--preset--font-family--dm-sans: 'DM Sans', sans-serif;--wp--preset--font-family--dm-serif-display: 'DM Serif Display', serif;--wp--preset--font-family--domine: Domine, serif;--wp--preset--font-family--eb-garamond: 'EB Garamond', serif;--wp--preset--font-family--epilogue: Epilogue, sans-serif;--wp--preset--font-family--fahkwang: Fahkwang, sans-serif;--wp--preset--font-family--figtree: Figtree, sans-serif;--wp--preset--font-family--fira-sans: 'Fira Sans', sans-serif;--wp--preset--font-family--fjalla-one: 'Fjalla One', sans-serif;--wp--preset--font-family--fraunces: Fraunces, serif;--wp--preset--font-family--gabarito: Gabarito, system-ui;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--ibm-plex-sans: 'IBM Plex Sans', sans-serif;--wp--preset--font-family--ibarra-real-nova: 'Ibarra Real Nova', serif;--wp--preset--font-family--instrument-serif: 'Instrument Serif', serif;--wp--preset--font-family--inter: Inter, sans-serif;--wp--preset--font-family--josefin-sans: 'Josefin Sans', sans-serif;--wp--preset--font-family--jost: Jost, sans-serif;--wp--preset--font-family--libre-baskerville: 'Libre Baskerville', serif;--wp--preset--font-family--libre-franklin: 'Libre Franklin', sans-serif;--wp--preset--font-family--literata: Literata, serif;--wp--preset--font-family--lora: Lora, serif;--wp--preset--font-family--merriweather: Merriweather, serif;--wp--preset--font-family--montserrat: Montserrat, sans-serif;--wp--preset--font-family--newsreader: Newsreader, serif;--wp--preset--font-family--noto-sans-mono: 'Noto Sans Mono', sans-serif;--wp--preset--font-family--nunito: Nunito, sans-serif;--wp--preset--font-family--open-sans: 'Open Sans', sans-serif;--wp--preset--font-family--overpass: Overpass, sans-serif;--wp--preset--font-family--pt-serif: 'PT Serif', serif;--wp--preset--font-family--petrona: Petrona, serif;--wp--preset--font-family--piazzolla: Piazzolla, serif;--wp--preset--font-family--playfair-display: 'Playfair Display', serif;--wp--preset--font-family--plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;--wp--preset--font-family--poppins: Poppins, sans-serif;--wp--preset--font-family--raleway: Raleway, sans-serif;--wp--preset--font-family--roboto: Roboto, sans-serif;--wp--preset--font-family--roboto-slab: 'Roboto Slab', serif;--wp--preset--font-family--rubik: Rubik, sans-serif;--wp--preset--font-family--rufina: Rufina, serif;--wp--preset--font-family--sora: Sora, sans-serif;--wp--preset--font-family--source-sans-3: 'Source Sans 3', sans-serif;--wp--preset--font-family--source-serif-4: 'Source Serif 4', serif;--wp--preset--font-family--space-mono: 'Space Mono', monospace;--wp--preset--font-family--syne: Syne, sans-serif;--wp--preset--font-family--texturina: Texturina, serif;--wp--preset--font-family--urbanist: Urbanist, sans-serif;--wp--preset--font-family--work-sans: 'Work Sans', sans-serif;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-normal-font-size{font-size: var(--wp--preset--font-size--normal) !important;}.has-huge-font-size{font-size: var(--wp--preset--font-size--huge) !important;}.has-albert-sans-font-family{font-family: var(--wp--preset--font-family--albert-sans) !important;}.has-alegreya-font-family{font-family: var(--wp--preset--font-family--alegreya) !important;}.has-arvo-font-family{font-family: var(--wp--preset--font-family--arvo) !important;}.has-bodoni-moda-font-family{font-family: var(--wp--preset--font-family--bodoni-moda) !important;}.has-bricolage-grotesque-font-family{font-family: var(--wp--preset--font-family--bricolage-grotesque) !important;}.has-cabin-font-family{font-family: var(--wp--preset--font-family--cabin) !important;}.has-chivo-font-family{font-family: var(--wp--preset--font-family--chivo) !important;}.has-commissioner-font-family{font-family: var(--wp--preset--font-family--commissioner) !important;}.has-cormorant-font-family{font-family: var(--wp--preset--font-family--cormorant) !important;}.has-courier-prime-font-family{font-family: var(--wp--preset--font-family--courier-prime) !important;}.has-crimson-pro-font-family{font-family: var(--wp--preset--font-family--crimson-pro) !important;}.has-dm-mono-font-family{font-family: var(--wp--preset--font-family--dm-mono) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-dm-serif-display-font-family{font-family: var(--wp--preset--font-family--dm-serif-display) !important;}.has-domine-font-family{font-family: var(--wp--preset--font-family--domine) !important;}.has-eb-garamond-font-family{font-family: var(--wp--preset--font-family--eb-garamond) !important;}.has-epilogue-font-family{font-family: var(--wp--preset--font-family--epilogue) !important;}.has-fahkwang-font-family{font-family: var(--wp--preset--font-family--fahkwang) !important;}.has-figtree-font-family{font-family: var(--wp--preset--font-family--figtree) !important;}.has-fira-sans-font-family{font-family: var(--wp--preset--font-family--fira-sans) !important;}.has-fjalla-one-font-family{font-family: var(--wp--preset--font-family--fjalla-one) !important;}.has-fraunces-font-family{font-family: var(--wp--preset--font-family--fraunces) !important;}.has-gabarito-font-family{font-family: var(--wp--preset--font-family--gabarito) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-ibm-plex-sans-font-family{font-family: var(--wp--preset--font-family--ibm-plex-sans) !important;}.has-ibarra-real-nova-font-family{font-family: var(--wp--preset--font-family--ibarra-real-nova) !important;}.has-instrument-serif-font-family{font-family: var(--wp--preset--font-family--instrument-serif) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-josefin-sans-font-family{font-family: var(--wp--preset--font-family--josefin-sans) !important;}.has-jost-font-family{font-family: var(--wp--preset--font-family--jost) !important;}.has-libre-baskerville-font-family{font-family: var(--wp--preset--font-family--libre-baskerville) !important;}.has-libre-franklin-font-family{font-family: var(--wp--preset--font-family--libre-franklin) !important;}.has-literata-font-family{font-family: var(--wp--preset--font-family--literata) !important;}.has-lora-font-family{font-family: var(--wp--preset--font-family--lora) !important;}.has-merriweather-font-family{font-family: var(--wp--preset--font-family--merriweather) !important;}.has-montserrat-font-family{font-family: var(--wp--preset--font-family--montserrat) !important;}.has-newsreader-font-family{font-family: var(--wp--preset--font-family--newsreader) !important;}.has-noto-sans-mono-font-family{font-family: var(--wp--preset--font-family--noto-sans-mono) !important;}.has-nunito-font-family{font-family: var(--wp--preset--font-family--nunito) !important;}.has-open-sans-font-family{font-family: var(--wp--preset--font-family--open-sans) !important;}.has-overpass-font-family{font-family: var(--wp--preset--font-family--overpass) !important;}.has-pt-serif-font-family{font-family: var(--wp--preset--font-family--pt-serif) !important;}.has-petrona-font-family{font-family: var(--wp--preset--font-family--petrona) !important;}.has-piazzolla-font-family{font-family: var(--wp--preset--font-family--piazzolla) !important;}.has-playfair-display-font-family{font-family: var(--wp--preset--font-family--playfair-display) !important;}.has-plus-jakarta-sans-font-family{font-family: var(--wp--preset--font-family--plus-jakarta-sans) !important;}.has-poppins-font-family{font-family: var(--wp--preset--font-family--poppins) !important;}.has-raleway-font-family{font-family: var(--wp--preset--font-family--raleway) !important;}.has-roboto-font-family{font-family: var(--wp--preset--font-family--roboto) !important;}.has-roboto-slab-font-family{font-family: var(--wp--preset--font-family--roboto-slab) !important;}.has-rubik-font-family{font-family: var(--wp--preset--font-family--rubik) !important;}.has-rufina-font-family{font-family: var(--wp--preset--font-family--rufina) !important;}.has-sora-font-family{font-family: var(--wp--preset--font-family--sora) !important;}.has-source-sans-3-font-family{font-family: var(--wp--preset--font-family--source-sans-3) !important;}.has-source-serif-4-font-family{font-family: var(--wp--preset--font-family--source-serif-4) !important;}.has-space-mono-font-family{font-family: var(--wp--preset--font-family--space-mono) !important;}.has-syne-font-family{font-family: var(--wp--preset--font-family--syne) !important;}.has-texturina-font-family{font-family: var(--wp--preset--font-family--texturina) !important;}.has-urbanist-font-family{font-family: var(--wp--preset--font-family--urbanist) !important;}.has-work-sans-font-family{font-family: var(--wp--preset--font-family--work-sans) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-14-1' href='/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/verbum-comments/verbum-comments.css?m=1785880900i&cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='verbum-gutenberg-css-css' href='https://widgets.wp.com/verbum-block-editor/block-editor.css?ver=1771405207' media='all' />
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-16-1' href='/_static/??/wp-content/themes/premium/chronicle/style.css,/wp-content/mu-plugins/jetpack-plugin/sun/_inc/genericons/genericons/genericons.css?m=1771607505j&cssminify=yes' type='text/css' media='all' />
+<style id="jetpack_facebook_likebox-inline-css">
+.widget_facebook_likebox {
+	overflow: hidden;
+}
+
+/*# sourceURL=/wp-content/mu-plugins/jetpack-plugin/sun/modules/widgets/facebook-likebox/style.css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-18-1' href='/_static/??-eJzTLy/QTc7PK0nNK9HPLdUtyClNz8wr1i9KTcrJTwcy0/WTi5G5ekCujj52Temp+bo5+cmJJZn5eSgc3bScxMwikFb7XFtDE1NLExMLc0OTLACohS2q&cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='chronicle-fonts-css' href='https://fonts-api.wp.com/css?family=Lato%3A400%2C900&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=1.0' media='all' />
+<style id="jetpack-global-styles-frontend-style-inline-css">
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+/*# sourceURL=jetpack-global-styles-frontend-style-inline-css */
+</style>
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-22-1' href='/_static/??-eJyNjcsKAjEMRX/ImhmUURfip0inLW3GNCmmQfx7H7gRN+7ugcs5cGsuCPfEHaq5RpaRFZbUmw+XD4MaQ5VolBS0+GuKPsb7eyLndVBdwd+iM3KA2ZAiqAT05Eiy6Bf8KHtJ9RkvW8gks6fX4VSP426/mQ7TMA7LA38FSqA=&cssminify=yes' type='text/css' media='all' />
+<script id="jetpack_related-posts-js-extra">
+var related_posts_js_options = {"post_heading":"h4"};
+//# sourceURL=jetpack_related-posts-js-extra
+</script>
+<script id="broadsheet-script-main-js-extra">
+var js_i18n = {"next":"next","prev":"previous","menu":"Menu"};
+//# sourceURL=broadsheet-script-main-js-extra
+</script>
+<script id="wpcom-actionbar-placeholder-js-extra">
+var actionbardata = {"siteID":"49128393","postID":"12611","siteURL":"https://muslimdebate.org","xhrURL":"https://muslimdebate.org/wp-admin/admin-ajax.php","nonce":"ec790efa96","isLoggedIn":"","statusMessage":"","subsEmailDefault":"instantly","proxyScriptUrl":"https://s0.wp.com/wp-content/js/wpcom-proxy-request.js?m=1513050504i&amp;ver=20211021","shortlink":"https://wp.me/p3k8xr-3hp","i18n":{"followedText":"New posts from this site will now appear in your \u003Ca href=\"https://wordpress.com/reader\"\u003EReader\u003C/a\u003E","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","shortLinkCopied":"Shortlink copied to clipboard."}};
+//# sourceURL=wpcom-actionbar-placeholder-js-extra
+</script>
+<script id="jetpack-mu-wpcom-settings-js-before">
+var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://s1.wp.com/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/"};
+//# sourceURL=jetpack-mu-wpcom-settings-js-before
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??-eJyVjlsKwjAQRTdkOgiFth/iUiRNhnZiXmYStLs3SoUKivg1XO7jDFyjUMFn9BlcEdGWiTyDwRylOq8auHg4kVcwFrIaElqZUYsYOPO7ahz5xvAONrumZmwWMYXb8vLqmC0a+WGaS8G0rGc78DUkHE2pQj/R8oyuVmJCR8XBmILUPCM+/2BLGtNfFSd/MtScgidlcZM/usO+6/tuaIe+NXeNFIYi'></script>
+<script id="rlt-proxy-js-after">
+	rltInitialize( {"token":null,"iframeOrigins":["https:\/\/widgets.wp.com"]} );
+//# sourceURL=rlt-proxy-js-after
+</script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thedebateinitiative.wordpress.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/" />
+<link rel='shortlink' href='https://wp.me/p3k8xr-3hp' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fmuslimdebate.org%2F2016%2F05%2F01%2Fhow-feminism-undermines-islam-and-gender-justice%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fmuslimdebate.org%2F2016%2F05%2F01%2Fhow-feminism-undermines-islam-and-gender-justice%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How Feminism undermines Islam and gender justice" />
+<meta property="og:url" content="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/" />
+<meta property="og:description" content="MDI Comment: A well written post by MDI Malaysia member, Asadullah Ali Al-Andalusi, on the recent events in Malaysia surrounding a debate on Feminism, and the absurdities of Feminists (Secular Libe…" />
+<meta property="article:published_time" content="2016-05-01T02:45:12+00:00" />
+<meta property="article:modified_time" content="2016-05-01T13:06:57+00:00" />
+<meta property="og:site_name" content="The Muslim Debate Initiative" />
+<meta property="og:image" content="https://muslimdebate.org/wp-content/uploads/2016/05/screen-shot-2016-05-01-at-03-47-05.png" />
+<meta property="og:image:width" content="708" />
+<meta property="og:image:height" content="626" />
+<meta property="og:image:alt" content="" />
+<meta property="og:locale" content="en_US" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:creator" content="@mdicomms" />
+<meta name="twitter:site" content="@mdicomms" />
+<meta name="twitter:text:title" content="How Feminism undermines Islam and gender justice" />
+<meta name="twitter:image" content="https://muslimdebate.org/wp-content/uploads/2016/05/screen-shot-2016-05-01-at-03-47-05.png?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=114" />
+<link rel='openid.server' href='https://muslimdebate.org/?openidserver=1' />
+<link rel='openid.delegate' href='https://muslimdebate.org/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://muslimdebate.org/osd.xml" title="The Muslim Debate Initiative" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<meta name="theme-color" content="#eefaea" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="description" content="MDI Comment: A well written post by MDI Malaysia member, Asadullah Ali Al-Andalusi, on the recent events in Malaysia surrounding a debate on Feminism, and the absurdities of Feminists (Secular Liberals) shutting down debate, spreading anti-intellectualism, and dividing the Muslim world by gender asabiyah (sectarianism). We also note, that Liberals in Malaysia like to argue that&hellip;" />
+<style>
+	.masthead .branding h1.logo a,
+	.masthead .branding h1.logo a:hover,
+	.masthead .branding h2.description {
+		color:#000000;
+	}
+</style>
+<style id="custom-background-css">
+body.custom-background { background-color: #eefaea; }
+</style>
+<style type="text/css" id="custom-colors-css">input[type=submit] { color: #444444;}
+nav.menu-primary .menu a { color: #444444;}
+nav.menu-primary .menu a:hover { color: #444444;}
+nav.menu-primary .menu .menu-toggle { color: #444444;}
+nav.menu-primary .social_links a:before, nav.menu-primary .social_links a:hover:before { color: #444444;}
+.main .archive-pagination span.current { color: #444444;}
+.primary-content nav a.selected { background-color: #444444;}
+.main article a.post-lead-category:hover { color: #444444;}
+ol.commentlist li.comment .reply a, ol.commentlist li.trackback .reply a, ol.commentlist li.pingback .reply a { color: #444444;}
+.infinite-scroll #infinite-handle span { color: #0F0F0F;}
+.testimonials-wrapper header a.button { color: #0F0F0F;}
+.menu-primary .menu-on.menu ul ul li a, .menu-primary .menu-on.menu li ul li a, .menu-primary .menu-on.menu ul li a, .menu-primary .menu-on.menu li li a, .menu-primary .menu-on.menu ul a, .menu-primary .menu-on.menu li a { color: #444444;}
+ol.commentlist li.comment .reply a:hover, ol.commentlist li.trackback .reply a:hover, ol.commentlist li.pingback .reply a:hover { color: #2D2D2D;}
+input[type=submit]:hover { color: #2D2D2D;}
+nav.menu-primary .menu ul ul a { color: #FFFFFF;}
+.main .category_description { color: #5E5E5E;}
+nav.menu-primary .menu li.current-menu-item > a, nav.menu-primary .menu li li.current-menu-item > a, nav.menu-primary .menu li.current_page_item > a, nav.menu-primary .menu li li.current_page_item > a { background: #191919;}
+nav.menu-primary .menu li.current-menu-item > a, nav.menu-primary .menu li li.current-menu-item > a, nav.menu-primary .menu li.current_page_item > a, nav.menu-primary .menu li li.current_page_item > a { background: rgba( 25, 25, 25, 0.2 );}
+body { background-color: #eefaea;}
+.widget h3.widgettitle:before { color: #2A7F19;}
+ol.commentlist li.comment .reply a:hover, ol.commentlist li.trackback .reply a:hover, ol.commentlist li.pingback .reply a:hover { background-color: #74a973;}
+input[type=submit]:hover { background-color: #74a973;}
+input[type=submit]:hover { border-color: #74a973;}
+.archive .title, .pagination a, .pagination a:hover { color: #487447;}
+.main h1.title a, .main h2.title a, .main h2.posttitle a, h1, h2, h3, h4, h5, h6, .masthead h1.logo,.masthead .branding h1.logo a, .masthead .branding h1.logo a:hover, .masthead .branding h2.description { color: #4A7849;}
+.primary-content .primary-wrapper .item .postmetadata { color: #74A973;}
+input[type=submit] { background-color: #a1c5ab;}
+input[type=submit] { border-color: #a1c5ab;}
+.infinite-scroll #infinite-handle span { background-color: #a1c5ab;}
+.infinite-scroll #infinite-handle span:hover { background-color: #609E72;}
+.testimonials-wrapper header a.button { background-color: #a1c5ab;}
+.testimonials-wrapper header a.button { border-color: #a1c5ab;}
+.testimonials-wrapper header a.button:hover { background-color: #609E72;}
+nav.menu-primary { background-color: #a1c5ab;}
+.main .archive-pagination span.current { background-color: #a1c5ab;}
+.primary-content nav { background-color: #a1c5ab;}
+nav.menu-primary .menu ul li a:before { color: #80B18E;}
+.main article a.post-lead-category:hover { background-color: #80B18E;}
+blockquote { border-left-color: #a1c5ab;}
+ol.commentlist li.comment .reply a, ol.commentlist li.trackback .reply a, ol.commentlist li.pingback .reply a { background-color: #a1c5ab;}
+.primary-content nav a { background-color: #80B18E;}
+nav.menu-primary .menu > li.page_item_has_children > a:after, nav.menu-primary .menu > li.menu-item-has-children > a:after { background-color: #a1c5ab;}
+nav.menu-primary .menu li.page_item_has_children > a:after, nav.menu-primary .menu li.menu-item-has-children > a:after { border-top-color: #BFD8C6;}
+ol.commentlist li.comment.bypostauthor > article, ol.commentlist li.trackback.bypostauthor > article, ol.commentlist li.pingback.bypostauthor > article { border-color: #a1c5ab;}
+a { color: #497856;}
+.main article .postmetadata a { color: #497856;}
+.social_links a:hover:before { color: #497856;}
+a:hover { color: #497856;}
+.main article .postmetadata a:hover { color: #497856;}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input.text:focus, textarea:focus, input.settings-input:focus { border-color: #497856;}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input.text:focus, textarea:focus, input.settings-input:focus { outline-color: #497856;}
+.masthead .search-wrapper form.searchform button.searchsubmit { color: #497856;}
+.sidebar-main .widget h3.widgettitle a, .sidebar-small .widget h3.widgettitle a { color: #497856;}
+.main h1.title a:hover, .main h2.title a:hover, .main h2.posttitle a:hover { color: #67A179;}
+nav.menu-primary .menu .social_links a:before { color: #2B4933;}
+.main .category_description a { color: #3D664A;}
+</style>
+
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://muslimdebate.org/xmlrpc.php" />
+
+	<!--[if lt IE 9]>
+	<script src="https://s2.wp.com/wp-content/themes/premium/broadsheet/js/html5.js?m=1393348654i" type="text/javascript"></script>
+	<![endif]-->
+
+<link crossorigin='anonymous' rel='stylesheet' id='all-css-0-3' href='/_static/??-eJyNjMEKgzAQBX9IfVpq60X8lGLXRaLJJrhZ/P1SUM8eZxgGeyopSmbJCFYmb7MTxcI5jbQeDDXBxwnh6yOtCt1d4q0i1QK3ByFO5llB4xZN2V/NKf6/IfTNu2sfzbPuXssPrlM6pw==&cssminify=yes' type='text/css' media='all' />
+<style id="jetpack-subscriptions-inline-css">
+#subscribe-email input {
+	width: 95%;
+}
+
+.comment-subscription-form {
+	margin-bottom: 1em;
+}
+
+.comment-subscription-form .subscribe-label {
+	display: inline !important;
+}
+
+/*
+Text meant only for screen readers.
+Provides support for themes that do not bundle this CSS yet.
+@see https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/
+***********************************/
+.screen-reader-text {
+	border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	overflow-wrap: normal !important;
+}
+
+/*# sourceURL=/wp-content/mu-plugins/jetpack-plugin/sun/_inc/build/subscriptions/subscriptions.min.css */
+</style>
+
+</head>
+
+<body class="wp-singular post-template-default single single-post postid-12611 single-format-standard custom-background wp-embed-responsive wp-theme-premiumbroadsheet wp-child-theme-premiumchronicle customizer-styles-applied singular themes-sidebar1-active themes-sidebar2-inactive themes-sidebar3-inactive themes-category-summaries-active themes-has-featured-posts themes-has-primary-content jetpack-reblog-enabled custom-colors">
+	
+	<nav class="menu-primary" role="navigation">
+		<div class="container">
+			<div class="social_links menu-social-links"><a href="http://twitter.com/MDIcomms" class="social_link_twitter"><span>Twitter<span></a><a href="https://www.facebook.com/MuslimDebateInitiative" class="social_link_facebook"><span>Facebook<span></a></div>			<div class="menu">
+				<h3 class="menu-toggle">Menu</h3>
+				<div class="menu-mdi-menu-container"><ul id="nav" class="menu-wrap clearfix"><li id="menu-item-6973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6973"><a href="http://thedebateinitiative.com/">Home</a></li>
+<li id="menu-item-6974" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-6974"><a href="https://muslimdebate.org/about-2/">About MDI</a>
+<ul class="sub-menu">
+	<li id="menu-item-7859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7859"><a href="https://muslimdebate.org/about-2/">About us</a></li>
+	<li id="menu-item-9946" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9946"><a href="https://muslimdebate.org/category/mdi-news/mdi-press-releases/">MDI Press Releases</a></li>
+</ul>
+</li>
+<li id="menu-item-7703" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-7703"><a href="https://muslimdebate.org/category/mdi-news/upcoming-events/">Events</a>
+<ul class="sub-menu">
+	<li id="menu-item-7705" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7705"><a href="https://muslimdebate.org/category/mdi-news/upcoming-events/">Upcoming Events</a></li>
+	<li id="menu-item-7708" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7708"><a href="https://muslimdebate.org/category/mdi-news/previous-events/">Previous Events</a></li>
+	<li id="menu-item-7848" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7848"><a href="https://muslimdebate.org/category/mdi-news/event-reviews/">Event Reviews</a></li>
+</ul>
+</li>
+<li id="menu-item-6983" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-6983"><a href="https://muslimdebate.org/category/videos/">Videos</a>
+<ul class="sub-menu">
+	<li id="menu-item-6979" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6979"><a href="https://muslimdebate.org/category/videos/lectures/">Lectures</a></li>
+	<li id="menu-item-6978" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6978"><a href="https://muslimdebate.org/category/videos/debates/">Debates</a></li>
+	<li id="menu-item-10749" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10749"><a href="https://muslimdebate.org/category/videos/media-appearences/">Media Appearences</a></li>
+	<li id="menu-item-10867" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10867"><a href="https://muslimdebate.org/category/videos/interviews/">Interviews</a></li>
+	<li id="menu-item-7857" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7857"><a href="https://muslimdebate.org/category/mdi-news/transcripts/">Transcripts</a></li>
+	<li id="menu-item-7865" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7865"><a href="https://muslimdebate.org/category/videos/video-excerpts/">Video Excerpts</a></li>
+	<li id="menu-item-7864" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7864"><a href="https://muslimdebate.org/category/videos/trailer/">Trailers</a></li>
+	<li id="menu-item-7858" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7858"><a href="https://muslimdebate.org/category/videos/vlogs/">Video logs</a></li>
+</ul>
+</li>
+<li id="menu-item-9834" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-9834"><a href="https://muslimdebate.org/category/subject/">Subject</a>
+<ul class="sub-menu">
+	<li id="menu-item-9969" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9969"><a href="https://muslimdebate.org/category/subject/ahmadiyya-subject/">Ahmadiyya</a></li>
+	<li id="menu-item-9835" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9835"><a href="https://muslimdebate.org/category/subject/atheism/">Atheism</a></li>
+	<li id="menu-item-9836" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9836"><a href="https://muslimdebate.org/category/subject/christianity/" title="Trinitarian">Christianity</a></li>
+	<li id="menu-item-9837" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9837"><a href="https://muslimdebate.org/category/subject/economics/">Economics</a></li>
+	<li id="menu-item-9838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9838"><a href="https://muslimdebate.org/category/subject/evolution/">Evolution</a></li>
+	<li id="menu-item-9839" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-9839"><a href="https://muslimdebate.org/category/subject/feminism-subject/">Feminism</a></li>
+	<li id="menu-item-9840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9840"><a href="https://muslimdebate.org/category/subject/hinduism/">Hinduism</a></li>
+	<li id="menu-item-9841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9841"><a href="https://muslimdebate.org/category/subject/history/">History</a></li>
+	<li id="menu-item-9842" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9842"><a href="https://muslimdebate.org/category/subject/homosexuality/">Homosexuality</a></li>
+	<li id="menu-item-9843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-9843"><a href="https://muslimdebate.org/category/subject/islam/">Islam</a>
+	<ul class="sub-menu">
+		<li id="menu-item-12075" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12075"><a href="https://muslimdebate.org/category/subject/islam/god-proof-for-existence/">God (Proof for Existence)</a></li>
+		<li id="menu-item-12074" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12074"><a href="https://muslimdebate.org/category/subject/islam/evidences-for-the-qurans-claims/">Evidences for the Quran&#8217;s Claims</a></li>
+		<li id="menu-item-12076" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12076"><a href="https://muslimdebate.org/category/subject/islam/islam-science/">Islam &amp; Science</a></li>
+		<li id="menu-item-12082" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12082"><a href="https://muslimdebate.org/category/subject/women-in-islam/">Women in Islam</a></li>
+	</ul>
+</li>
+	<li id="menu-item-9844" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-9844"><a href="https://muslimdebate.org/category/subject/islamophobia/">Islamophobia</a>
+	<ul class="sub-menu">
+		<li id="menu-item-12073" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12073"><a href="https://muslimdebate.org/category/subject/humanity-of-muslims-and-islam/">Humanity of Muslims and Islam</a></li>
+	</ul>
+</li>
+	<li id="menu-item-9845" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9845"><a href="https://muslimdebate.org/category/subject/judaism-subject/">Judaism</a></li>
+	<li id="menu-item-9846" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-9846"><a href="https://muslimdebate.org/category/subject/liberalism-secular-democracy/">Liberalism &amp; Secular Democracy</a>
+	<ul class="sub-menu">
+		<li id="menu-item-12077" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12077"><a href="https://muslimdebate.org/category/subject/liberalism-secular-democracy/secular-liberal-intolerance/">Secular Liberal Intolerance</a></li>
+		<li id="menu-item-12078" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12078"><a href="https://muslimdebate.org/category/subject/liberalism-secular-democracy/secular-liberal-intolerance/secular-intolerance-of-christianity/">Secular Intolerance of Christianity</a></li>
+		<li id="menu-item-12081" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12081"><a href="https://muslimdebate.org/category/subject/history/western-xenophobia/">Western Xenophobia</a></li>
+	</ul>
+</li>
+	<li id="menu-item-9890" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-9890"><a href="https://muslimdebate.org/category/subject/modernism-muslim-secularism/">&#8216;Muslim&#8217; Modernists &amp; Reformists</a>
+	<ul class="sub-menu">
+		<li id="menu-item-12079" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12079"><a href="https://muslimdebate.org/category/subject/responses-to-anti-islamic-polemics/historical-revisionism-against-islam/">Historical Revisionism against Islam</a></li>
+	</ul>
+</li>
+	<li id="menu-item-9847" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9847"><a href="https://muslimdebate.org/category/subject/responses-to-anti-islamic-polemics/">Responses to anti-Islamic Polemics</a></li>
+	<li id="menu-item-12080" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12080"><a href="https://muslimdebate.org/category/subject/terrorism-subject/">Terrorism</a></li>
+	<li id="menu-item-9848" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9848"><a href="https://muslimdebate.org/category/subject/zionism/">Zionism</a></li>
+</ul>
+</li>
+<li id="menu-item-12070" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-12070"><a href="https://muslimdebate.org/category/resources/">RESOURCES</a>
+<ul class="sub-menu">
+	<li id="menu-item-12072" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12072"><a href="https://muslimdebate.org/category/resources/learning-dawah-debate/">Approaching Dawah &amp; Debate</a></li>
+	<li id="menu-item-12071" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12071"><a href="https://muslimdebate.org/category/resources/book-reviewrecommendation/">Book reviews &amp; recommended reading</a></li>
+</ul>
+</li>
+<li id="menu-item-6975" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6975"><a href="https://muslimdebate.org/book-an-mdi-speaker/">Event Booking</a></li>
+<li id="menu-item-7007" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7007"><a href="https://muslimdebate.org/fgdfgd/">Contact us</a></li>
+</ul></div>			</div>
+		</div>
+	</nav>
+	<header class="masthead" role="banner">
+		<div class="container">
+						<div class="branding">
+				<a href="https://muslimdebate.org/" class="site-logo-link" rel="home" itemprop="url"></a>				<h1 class="logo">
+					<a href="https://muslimdebate.org/" title="Home">
+						The Muslim Debate Initiative					</a>
+				</h1>
+				<h2 class="description">
+					Muslim Debate News, Commentary and Events				</h2>
+			</div>
+			<div class="search-wrapper">
+				<form method="get" class="searchform" action="https://muslimdebate.org/" role="search">
+	<label>
+		<span class="screen-reader">Search for...</span>
+		<input type="search" value="" name="s" class="searchfield text" placeholder="Search..." />
+	</label>
+	<button class="searchsubmit">&#62464;</button>
+</form>
+			</div>
+		</div>
+	</header>
+
+	<div class="container hfeed">
+
+	
+	<div class="main">
+	<div class="main-content">
+<article id="post-12611" class="post-12611 post type-post status-publish format-standard has-post-thumbnail hentry category-feminism-subject category-mdi-malaysia category-mdi-news category-subject layout-horizontal-left">
+<a href="https://muslimdebate.org/category/subject/feminism-subject/" class="post-lead-category">Feminism</a>
+<h1 class="title">How Feminism undermines Islam and gender justice</h1>	<div class="postmetadata">
+<span class="text-by">By</span> <span class="author vcard"><a class="url fn n" href="https://muslimdebate.org/author/mdiadmin1/" title="View all posts by MDI TEAM" rel="author">MDI TEAM</a></span> <span class="text-on">on</span> <a href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/" title="2:45 am" rel="bookmark"><time class="entry-date" datetime="2016-05-01T02:45:12+00:00">May 1, 2016</time></a>		<span class="sep sep-commentcount">&bull;</span> <span class="commentcount">( <a href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/#respond">Leave a comment</a> )</span>
+	</div>
+	<section class="entry">
+<p><strong>MDI Comment:</strong></p>
+<p>A well written post by MDI Malaysia member, <a href="https://asadullahali.com/">Asadullah Ali Al-Andalusi</a>, on the recent events in Malaysia surrounding a debate on Feminism, and the absurdities of Feminists (Secular Liberals) shutting down debate, spreading anti-intellectualism, and dividing the Muslim world by gender asabiyah (sectarianism).</p>
+<p>We also note, that Liberals in Malaysia like to argue that portraying Feminism as Western, &#8216;shouldn&#8217;t mean its wrong for us to take ideas from the West, civilisations learn from each other&#8217;. However, these self same Liberals, while speaking perfect ENGLISH (a notably non-Malay language), slyly use hashtags like #ArabisationOfMalaysia to attack Muslims calling for Islam, claiming it is &#8216;Arabisation&#8217;. So borrowing from the West is ok, but uniting behind Islam is bad because Islam represents &#8216;Arabisation&#8217; and Malays shouldn&#8217;t follow foreign ideas?&#8230;</p>
+<p>Secondly, during recent events in Malaysia, the Secular Liberals there like to argue that &#8216;Islamists&#8217; (i.e. Muslims) are forcing sharia law upon the people. Considering that only the government has the ability to implement laws, and the &#8216;Islamists&#8217; referenced are merely Muslims who are public advocates for Islam, I&#8217;d like to know what the Secular Liberals are doing if not equally FORCING Secular Liberalism down the throats of the people of Malaysia by their own criteria.</p>
+<hr />
+<p><strong>Originally posted on <a href="http://www.ismaweb.net/2016/04/how-feminism-undermines-islam-and-gender-justice/">ISMAweb</a>.</strong></p>
+<p>On 6<sup>th</sup> April 2016, at the International Islamic University of Malaysia (IIUM), I and another brother by the name of Muhammad Kashmiri were invited to participate in an event called “<a href="https://www.facebook.com/events/1151122181573034/">Mars vs. Venus</a>”, which goal was to “highlight the status of women in Islam and give a clear understanding of women’s rights and duties…also to point out the responsibilities of both men and women in making a better world and participating in achieving a bright future.”</p>
+<p>Prior to the program, the organizers requested to have a meeting to discuss how we would contribute. I went with my wife to meet the organizers at the university library, who were made up entirely of women.  We sat for nearly two hours going over logistics and also what role I and Muhammad would be playing. Essentially, that night we all agreed that the program would begin at 8 pm, start with an opening speech by a woman, followed by academic lectures given by women, a spoken word performed by a woman, a play conducted by women (called “Her Confessions”), and then finally ending off at 9:45 pm with a debate between myself and Muhammad on the topic of “Do Muslim Women Need Feminism?” – followed by a short question and answer session with a shared panel between all the event participants. Despite Muhammad’s protest at being chosen to defend feminism, he accepted on the condition that he would be able to qualify himself during his opening speech. In other words, neither he nor I wanted to defend feminism – and the women organizers didn’t want us to either. Why? Because of the shared understanding between us that Islam was sufficient for granting women their rights.<br />
+<span id="more-1474"></span><br />
+Now, none of the organizers seemed too concerned about the fact that they had chosen two males to debate the subject; it was never even brought up as an issue. I didn’t really see a problem with it myself because I hold both graduate and post-graduate degrees in philosophy, which conveniently gives me a great deal of insight into liberal ideologies like feminism. And knowing that feminism is defined as an ideology promoting “gender equality”, I assumed that this allowed other genders (particularly my own) to participate in such a discussion. Add on the fact that I’m also a PhD candidate in Islamic Studies at the University of Malaya, am currently an assistant researcher for the UM Grand Challenge Research Grant on Sustainable Development and Gender Justice, have co-authored an <a href="https://www.academia.edu/18640397/Gender_Equality_Islam_and_Law">academic article</a> on gender equality from the Islamic perspective, and had been previously invited by Wanita ISMA as the only male speaker to give a <a href="https://www.facebook.com/AsadullahAli.AlAndalusi/videos/1703193229912357/">talk</a> at the International Muslimah Empowerment Conference (IMEC 2015) – debating about feminism for an Islamic perspective, and whether Muslim women need it, would appear to be within the bounds of my expertise.</p>
+<p>Despite all of the above, feminists would soon come to inform me that I had no right to participate in the discussion. Why? <em>Because I’m a man</em>.</p>
+<p>Unbeknownst to me at the time, there were consorted efforts being taken by a particular feminist and her sycophants to sabotage the event. By the time I had found out what was going on, it was too late. What followed was not only an attempt to disrupt a program on gender rights by so-called “gender rights activists”, but a social-media slur campaign which has continued to lead to my harassment and attempts to silence me to this day. What follows is my rendition of what occurred for the sake of showing how feminists actively attempt to undermine Islam and true gender justice. If you want evidence of the invasiveness of feminism in Malaysia and the Muslim world at large, then look no further.</p>
+<p><strong>Female Chauvinism: The Story of Maryam Lee</strong></p>
+<p>The debate, which can be viewed <a href="https://www.facebook.com/AsadullahAli.AlAndalusi/videos/1752342824997397/">here</a> in full, began on schedule with my opponent starting his opening speech and declaring that he too did not agree with feminism. He qualified that his position that night was about whether or not Muslims should work alongside feminists in the implementation of women’s rights. However, not knowing that he was going to qualify to that extent, I stuck on topic and gave my opening speech afterwards, declaring that Muslim women did not need feminism due to three reasons: (1) Islam already gives women rights, (2) feminism is an invasive Western construct, and (3) feminism leads to disharmony between the genders. Now, whether you agree with my points or not, nowhere did I argue <em>against</em> women’s rights or try to justify injustices committed against women. I clearly argue the exact opposite, suggesting that feminism only exacerbates these problems. You can also tell that the mostly-female audience were agreeing with many of my points given their cheers and applause; an agreement which would later be reiterated in the question and answer session.</p>
+<p>As the debate went to a close, the question and answer session began with all the participants in the program – both men and women. The audience members were asked to que up at the microphone if they wanted to asks any questions. As per IIUM rules and Islamic etiquette, gender segregation was enforced, with men on one side and women on the other. However, a microphone was provided for each side. As such, the women were allowed to go first. The first question was from a sister and directed towards myself in the form of a challenge to some of the points I gave during the debate. She introduced herself as a student from the University of Malaya and that her name was Fariza. I remember quite clearly how agitated she was; as if I had somehow personally harmed her. I didn’t quite understand why she was so angry (although I would find out soon enough). She kept telling me I was wrong and that if it wasn’t for feminism the Muslim women in the audience would “never have the right to vote” and other such things. Never mind the fact that Islam had already given Muslim women this right and that it was only taken away after European powers colonized the Muslim world. Despite this, I calmly waited and then responded accordingly to her accusations. Then the real commotion began.</p>
+<p>Cue Maryam Lee.</p>
+<p><img class=" size-full wp-image-1482 aligncenter" src="https://asadullahali.files.wordpress.com/2016/04/idearaya_maryam_ramli_lee_620_413_70.jpg?w=676" alt="IdeaRaya_Maryam_Ramli_Lee_620_413_70" /></p>
+<p>As it was now the men’s turn to ask a question, I focused my attention to the other side of the room, only to witness a shouting match between the brothers and one Muslim sister. Maryam Lee had decided to force herself to the front of men’s que and tried to take control of the microphone. As chaos ensued, one of the woman organizers approached me on stage and told me they were calling security to have Maryam removed. However, I told her not to and to let her speak. As a result, Maryam then moved to the middle of the hall and literally began screaming towards the stage at me saying, “Men cannot tell women how to think, or how to act, or what to do!”. Noticing her lack of concern for any real discussion, I decided to fire back, attempting to appeal to her supposed Muslim upbringing: “Except when it’s your father”. My point? There is nothing wrong with being a man – so if you have a problem with authority <em>because</em> that person is a man, then you’re a sexist bigot. As such, she should not insult her own father, whom Islamically she is supposed to obey (along with her mother). Let’s not also forget that the Prophet Muhammad (<em>sallAllahu alayhi wasallam</em>) was a man. So if you claim that simply being male discredits any authority someone has over someone else, then you also technically discredit everything the Prophet Muhammad (<em>sallAllahu alayhi wasallam</em>) preached, because he was also a man.</p>
+<p>The irony was not lost on the women in the audience who erupted in applause. Then Maryam went quiet for a little while. After that, she attempted to shout again, only to be silenced by the crowd once more. Due to the amount of time wasted on the unexpected drama, only two more members of the audience were allowed to ask questions – one brother and one sister. Despite this, post-event was filled with lively discussion between the brothers and sisters. I even caught a glimpse of Maryam outside the hall talking to her accomplice Fariza. No one else bothered to speak with her and some of the discussion was focused on her lack of civility. Afterwards, everyone went home and I thought that was the end of it. Although, I was still confused as to what had happened earlier. I didn’t quite understand why two Muslim sisters would come all the way from UM just to try and shout me down.</p>
+<p>Then I found what had happened. Once I opened my Facebook I was swarmed by social-media abuse predicated by a campaign by Maryam that had begun right from the start of the event itself at 8:00 pm. On her Facebook page she had publicly shared only one of the event photos – the debate – and proclaimed that it was “ridiculous” that women were being “excluded”. She went on to say that “Feminism is OUR space FIRST, not yours (men)” and complained that “Patriarchal privileges are set in place in every social system you can think of…”. Aside from the blatant fact that Maryam never even bothered to contact the women organizers to confirm whether or not women had been “excluded”, she clearly shows intense bias even against the idea of men discussing this issue. What is even more telling is that despite the fact that women make up 70% of all tertiary students in Malaysia, and the fact that Maryam herself attends one of the most prestigious universities in South East Asia (UM), she still believes she is being oppressed by supposedly over-privileged men. The fact that most men in this country will never even get a chance to attend university, while Maryam complains about them “taking her space”, is not only indicative of privilege, but one with a delusional sense of entitlement. Perhaps she would like to explain how “underprivileged” she is compared to the uneducated construction workers (men) who built the nice air-conditioned university she now has the luxury of attending – I’m sure they would love to hear how they’re responsible for her angst. But I digress.</p>
+<p><img class=" size-full wp-image-1483 aligncenter" src="https://asadullahali.files.wordpress.com/2016/04/lee1.jpg?w=676" alt="Lee1" /></p>
+<p><strong> </strong></p>
+<p>At 10:11 pm, Maryam and Fariza finally decide to arrive at the program. Shortly thereafter, Maryam makes another post on her Facebook page:</p>
+<p><img class=" size-full wp-image-1484 aligncenter" src="https://asadullahali.files.wordpress.com/2016/04/lee2.jpg?w=676" alt="Lee2" /></p>
+<p>Before going on, allow me to reiterate: not only had Maryam already passed judgment on an event she had no awareness of – and never even bothered to enquire about from the organizers – but she shows up 2 hours late and half way through the debate, already deciding within a minute of her arrival that she intends <em>not</em> to be civil.</p>
+<p>But this is only the beginning. Maryam also insists on misquoting me. Contrary to her own post, what I actually said was, “If the patriarchy were to exist, men would have a lot more benefits than we currently do” (23 minutes in). This was after mentioning many of the injustices that are male-exclusive, such as lower lifespans, more dangerous jobs and deaths at the workforce, more active military duty, etc. This was not some arbitrary statement where I complained about “having less power”.</p>
+<p>What’s more, is that Maryam decided that she did not want to follow IIUM regulations, purposefully sitting herself on the men’s side of the hall, just a seat away from a brother (pictured above). When she was asked by the women organizers to switch sides, she declined. She then later proudly announced her uncivil behavior – yet again – on Facebook:</p>
+<p><img class="alignnone size-full wp-image-1485" src="https://asadullahali.files.wordpress.com/2016/04/lee3.jpg?w=676" alt="Lee3" /></p>
+<p>Aside from the clear lie that she was “20 seats away” – Maryam feels the need to inform everyone that rules don’t apply to her because “I am a grown educated woman and I don’t need to be told where to sit”. According to the logic of #ISitWhereIWantToSit, she can invite herself to a wedding, decide to sit next to the groom without consent from his wife or family, and feel oppressed when people object to her lack of etiquette. In other words, for Maryam, the rules only apply when it’s her rules – when it comes to other people’s values and personal space, they have to change in order to accommodate her fragile sensibilities.</p>
+<p>And in case any of the liberal spectators reading this article still don’t see the problem, allow yourself a moment of reflection. Had a group of students from IIUM decided to invite themselves to a lecture being held at UM because they didn’t like who was talking, walked into the hall 2 hours late with the intention of not being civil, disregarded university regulations, attempted to impose their values on the audience members by objecting to seating arrangements, and then forced their way to the microphone for the sake of shouting down the speakers – honestly, how would that be taken?</p>
+<p>Within seconds every liberal in Malaysia would be Facebooking about how “Islamists” were trying to force Shari’ah Law on everyone. Hashtags of #ArabisationOfMalaysia would ignite twitter feeds. The MalayMail would start booking interviews with audience members before the event even finished. And the next morning, you would get [ridiculous] headlines like this:</p>
+<p>But don’t worry, Maryam feels completely justified in her behavior because “of the extreme situation” of men “hijacking her space”. Apparently no one informed the women organizers that their space was being “hijacked”:</p>
+<p><img class=" size-full wp-image-1488 aligncenter" src="https://asadullahali.files.wordpress.com/2016/04/mrym5.jpg?w=676" alt="mrym5" /></p>
+<p>After the event, Maryam decided that her next move would be to take revenge for her public display of delusional entitlement not being warmly welcomed by the audience (how surprising). She went about carefully weaving her narrative and then solicited it on social media and feminists’ blogger sites. The first of these to be published was an article by <a href="https://asiancorrespondent.com/author/hanis-maketab/">Hanis Meketab</a> in the Asian Correspondent titled, “<a href="http://asiancorrespondent.com/2016/04/malaysia-muslim-women-feminism-debate/">Why Can Only Muslim Men Debate Whether Muslim Women Need Feminism?</a>” implying that the program was the victim of a male hostile takeover. The “reporter” not only didn’t care to contact the organizers or the speakers to ask them what happened at the event, but conveniently was only able to interview one audience member – Maryam Lee. In the article, Maryam was quoted claiming that “Women’s physique and biology were used to justify the systemic and structural oppression of women…” that “Saudia Arabia [was used] as a prime example of how well women are treated” and that “[Only] the men were given the space to have their say, but when I wanted to say something, I was told by the organizers that we were out of time…”. Aside from these blatant lies which are proven wrong by the debate video itself and Maryam’s own account of the event elsewhere, the Asian Correspondent decided it would only be fitting to link to one portion of the debate where I am <em>responding</em> to Muhammad – completely removing any context behind the statements being made in an attempt to have the article come off as objective.</p>
+<p>As a result, this article was shared over 6000 times and led to further abuse, with none of the angry feminists even bothering to figure out what actually happened that night. That’s when I then released the full debate <a href="https://www.facebook.com/AsadullahAli.AlAndalusi/videos/1752342824997397/">here</a>.</p>
+<p>In response, Maryam then followed up with her own article (read, “damage control”), which she titled “<a href="https://thegblog.org/2016/04/18/reclaim-feminist-spaces-in-public-discourse/">Reclaim: Feminists Spaces in Public Discourse</a>”. Therein she claims that I was “trying to justify patriarchy”, despite the fact that I don’t even believe one exist. She may as well have said “atheists believe in god” for added nonsensicalness. More revealing, however, was her admission to her poor behavior that night, all the while trying to rationalize why she was somehow obligated to act that way:</p>
+<p><img class=" size-full wp-image-1489 aligncenter" src="https://asadullahali.files.wordpress.com/2016/04/mrymblog.jpg?w=676" alt="MrymBlog" /></p>
+<p>So now, my retort to her obnoxious sexism was an “insult to her father” and me “comparing myself to her father and the Prophet Muhammad (<em>sallAllahu alayhi wasallam</em>)”. Let me just go on record again as stating that the comment – and subsequent ones – had nothing to do with some arbitrary insistence on my part to make these comparisons or to insinuate that all men should somehow be obeyed. Had that been the case, I assure you that every other woman in the audience would not have taken a liking to what I said and then cheered for my comments. The fact that Maryam has to go to such lengths in order to get revenge for embarrassing herself is not only typical of female chauvinism, but feminism’s insistence that men be responsible for what women do wrong.</p>
+<p>Despite this negative experience, I learned quite a lot. Not only was I able to finally experience the ire of feminists directly, but I was also able to gather other feminists who revealed exactly the same behaviors. Maryam’s media campaign against me drew together a rather large sample size of self-proclaimed feminists whom all exhibited the same arguments and tactics. As a result, I decided to take advantage of my situation and perform a small survey; collecting together the most common responses from feminists as well as why I find them irrational.</p>
+<p><strong>Feminists Tactics that Undermine Islam and Gender Justice</strong></p>
+<p>Maryam Lee had exhibited several fallacious reasons for why men should not be able to speak about her idol: feminism. But she was not the only one. In fact, I found that there was actually a trend of common responses which feminists use to not only undermine genuine discourse on feminism, but to silence their critics and undermine genuine gender justice. Below are 5 of the main tactics that feminists use and why they are irrational:</p>
+<p><strong>(1)</strong> <strong>“Mansplaining”</strong></p>
+<p>As notable from the above, the number one tactic used by feminists to undermine gender equality is to claim that all criticisms of their views are misogynistic attempts to silence them. In other words, simply disagreeing with the idea that there is a ‘patriarchy’ makes you an oppressor of women. Never mind the fact that most men are not bad at all. Are there bad men in the world? Of course; just the same as there are bad women. Have there been many cultures at points in their history which have devalued women? Certainly. But to claim that this is <em>the norm</em>and that the majority of men are somehow programmed from birth to make women suffer? This is pure misandry. Neither gender has the monopoly on moral virtue or vice.</p>
+<p>“<em>But what about the Taliban?</em>” Well, what about them? Once again, I recognize that in certain points of many cultural histories that women were less valued than men. But let’s be honest here, the Taliban are not devaluing women for the sake of devaluing women. In other words, it has more to do with social and economic factors that have nothing to do with gender.</p>
+<p>“<em>What? How dare you!</em>” No seriously, forget about my gender for one moment. Listen to reason; it’s gender neutral. No one here is justifying what is currently happening to women in Afghanistan, but if you’re solution to the problem is “blame men”, then frankly you have no idea what’s going on in the world.</p>
+<p>That’s not an insult – that’s a fact.</p>
+<p>The Taliban didn’t just wake up one day and go, “<em>I think it would be a great idea to oppress women! Let’s do it!</em>”. The Taliban are a recent phenomenon created by constant instability and war in the region. With little to no economic opportunities, little to no educational institutions, inadequate infrastructure, and constant violence, to suggest this is just a problem for women completely misses the target. In conditions like these, naturally men are going to take advantage of every and all socio-economic structures of power –  because they are typically the only ones obligated to take care of their families while simultaneously fulfilling mandatory military duty. Trying to “equalize women” under these conditions would be absurd without fixing the injustices happening to the men as well. You cannot ask for 50% employment and educational quotas to be met for women when the men barely fill 10%.  You want equality? First ask the women of that society to pick up guns and do heavy manual labor; I guarantee you’ll have a hard time convincing them. Even in societies where women are free to choose these positions – such as the United States and Europe – most opt out. Why? Because women tend to prefer safer environments and less physically demanding jobs. In other words, they prefer men to do all the stuff they don’t want to do. In any case, it’s civilizational suicide to expect women to normatively fill more dangerous roles, because if the rates of death are higher among members of the population necessary to produce more of those members (i.e. children), then your society isn’t going to last very long. This is especially the case for species of animals where only one female produces offspring (e.g. ants, bees, etc.). Kill the queen and you kill the whole population. But don’t trust me, try experimenting with it yourself. After your society dies out, let me know how it went.</p>
+<p>“<em>But what about China’s one child boy policy?</em>” Well, what about it? Once again, this is not an issue of gender insomuch as it is about economic structures needing reform. As Chinese mainlanders are well aware, men are culturally obligated to not only take care of their wives and children, but their parents as well. In other words, a male child is <em>both</em> a mother and father’s insurance policy. When he gets old enough, that not only marks the end of his parents supporting him, but also themselves. Girls on the other hand are not obligated to perform this role. Hence, Chinese parents – pressured to have only one child – chose to have boys, not because they arbitrarily hated girls, but because poor policies created the conditions where boys were seen as the best economic option. Now, having seen the unintended negative results of that policy –  not enough women to marry and bear children – the Chinese government has since overturned it. Did they do this because they suddenly became feminists and voted for an all-female parliament? No. To suggests that China’s policies were solely about <em>gender</em> once again misinterprets the nature of the problem and undermines effective solutions towards holistic implementations for justice.</p>
+<p>That said, most men love and want what is best for their own mothers, wives, and daughters. Most oppression towards women is often also because of oppression happening to men related to factors beyond gender. Thus, to suggest that it is “bigotry” when a man disagrees with the ‘patriarchy’, is nonsensical. Men should have a right to speak about things which pertain to them. If you’re going to claim that feminism is about gender equality, then a man saying “<em>Hey, most of us are not monsters</em>” should not be an offense to your sensibilities.</p>
+<p>But this is “mansplaining” right? Facts are a patriarchal conspiracy! Except when a <a href="https://www.youtube.com/watch?v=5eqYEVYZgdo">woman says everything I just explained above</a>.</p>
+<p><strong>(2) “The Lived Experience”</strong></p>
+<p>Another way which feminists try to undermine gender justice is by claiming that women are the only ones allowed to talk about feminism with any real authority. This may otherwise be considered the “Queen Fallacy” – an analogy to chess representing an unjust sense of female entitlement. Feminists will often compare men speaking about feminism with a “a person who’s never rode a bike talking about how to bicycle”. Although a clever retort, it doesn’t make much sense in this situation – especially given the fact that feminism is supposedly about “gender equality” which <em>includes</em> <em>the male gender</em>. In other words, contrary to claims about the inclusivity of feminism, this accusation reeks of gender chauvinism (i.e. sexism). Now, as a man I cannot possibly tell you “how it is to be a woman” from personal experience (e.g. being pregnant, etc.). However, if I were a medical doctor, I could tell you some facts about these experiences from a more technical viewpoint, and I may even be able to tell you what other women have told me. I can also empathize with people who have had these experiences. So, to suggests that I have no right to speak about women <em>under any capacity</em> is frankly wrong. According to said logic, I cannot talk about the struggles of my mother who raised me as a single parent, or about my wife, or even my possible future daughter. According to this logic, I’m not even allowed to fight for women’s rights, writing articles in favor of women, or protect women from the injustices of misogynistic men – all because I am a man.</p>
+<p>It is also awkward that feminists complain about men speaking about feminism, since feminists talk about men <em>all the time </em>without concern for whether or not a man is actually present at the discussion. This is essentially what all feminism conferences are about: women talking about how bad men are. What is the ‘patriarchy’, but about “men’s lived experience”? Academic and senior speaker of the Muslim Debate Initiative, Zara Faris, elucidates this contradiction quite beautifully in a<a href="https://www.facebook.com/zara.huda.faris/posts/1170012363033222">Facebook post</a>:</p>
+<p><strong><img class=" size-full wp-image-1499 aligncenter" src="https://asadullahali.files.wordpress.com/2016/04/zara1.jpg?w=676" alt="Zara1.jpg" /></strong></p>
+<p><strong>(3) “Brainwashing”</strong></p>
+<p>The third tactic feminists use to undermine gender equality is specifically reserved for <em>women</em> who disagree with feminism, such as academics like the aforementioned Zara Faris and Cristina Hoff Summers. Apparently, if a woman disagrees with feminism she must be “brainwashed by the patriarchy” and is suffering from “Stockholm Syndrome” (a most telling accusation, comparing men to an enemy military force).</p>
+<p>This particular claim is amusing for its irony.</p>
+<p>On the one hand, feminists supposedly call for equality among the genders through empowering women’s autonomous agency, while simultaneously claiming that women who disagree with them are not capable of thinking for themselves and must be saved from their own self-imposed oppression. It should be noted that this accusation has often been used as an effective means for justifying things like the Iraq War. Mainstream feminist’s organizations have continuously lobbied in support of military intervention in the Middle East to “free” women from the oppression of not being able to wear bikinis, not being educated in places with no schools, and not being employed in places with no jobs.</p>
+<p>To save Muslim women, feminists asked the patriarchy to drop bombs on them. How liberating.</p>
+<p>Does this mean all feminists are in support of unjust warfare? Of course not. However, if you’re going to accuse other women of lacking agency because they disagree with you, then you’re indirectly in support of the same reasoning that leads to such disastrous consequences. What’s worse is that these same feminists will still blame the ‘patriarchy’ for these wars while excusing the women who support them. In other words, according to feminists, women can never be held responsible for their own actions. Why? Because all men are Sith Lords who meet on weekends at the Patriarchy Death Star and actively plan the suppression of the Female Rebel Alliance.</p>
+<p><strong>(4) “Patriarchy Hurts Men Too!”</strong></p>
+<p>Perhaps one of the more patronizing attempts by feminists to undermine gender equality is this idea that ‘patriarchy’ is somehow also oppressing men. In other words, when men point out the obvious fact that they are not that privileged and endure equal amounts of injustice (sometimes even more), feminists counter by claiming that – once again – it’s all men’s fault. So according to feminists, men are too stupid or naive to realize that the system we put in place for our own privilege is actually bad for us. Apparently men are so stupid and naive that we need women to tell us how privileged we are, so we can understand just how unprivileged we are.</p>
+<p>Wait? What? Does that make sense? Of course not, because it’s a ridiculous misandrist explanation.</p>
+<p>Having lower life expectancies, choosing to give away the majority of our income to our families, being forced to work the most difficult and life threatening jobs on the planet (because frankly most women choose not to), making up the majority of military personnel and military deaths (once again, because most women choose not to), being expendable in every major disaster (because women prefer priority access to lifeboats), and being blamed for all women’s problems while being expected to fix them – apparently all of this is evidence of a ‘patriarchy’ where men get to lay around all day being fanned with palm branches and hand-fed grapes by female slaves.</p>
+<p>Forget Caesar and Genghis Khan; they were jerks. Most men are obviously not like that.</p>
+<p>Once again, me pointing out the absurdity of this claim doesn’t mean I don’t recognize abusive men or abused women – what it means is that the vast majority of us don’t deserve these pejorative labels and accusations when we do our best to give up privilege for the sake of women. Trust me, I’d be far more financially well off if I wasn’t married, but I’m not complaining because I love my wife more than money. I don’t go to work every day for the sake of my salary – I go to work every day so that I can pay the bills and make my family happy. It’s simply unfair to claim men have so much “privilege” when it is women who we often work, fight, and die for. To suggests men’s genuine sacrifices for female privilege are “oppressive” is not only appalling, but clear proof of misandry.</p>
+<p><strong>(5) “Patriarchy. It’s EVERYWHERE”</strong></p>
+<p>Prepare your tin-foil hats. The final claim typically made by feminists which undermines gender equality is the assumption that <em>every</em> injustice is the result of ‘patriarchy’. Even when this view is contradicted by factual data, feminists will still find ways to blame it on male dominance and privilege. Typically, counter evidence works as a means to modify or reject a belief all-together. This is rationality. However, when discussing ‘patriarchy’, none of the standard rules apply for feminists. This is why feminism is ultimately immune from critique and must resort to all the above tactics to preserve its own integrity. Anything remotely contradicting the foundational thesis that “men-are-responsible-for-everything-wrong” is absolutely not tolerated. So when women like Myanmar Prime Minister Aung San Suu Kyi are engaged in the genocide of Burmese Muslims, or Secretary of State Hillary Clinton is one of the main actors behind the destruction of Libya (where ISIS now reigns supreme), this isn’t the fault of those women and their particular ideologies – it’s the fault of patriarchy.</p>
+<p>Just ask the feminists: “<em>Is there anything that could possibly disprove your ideas on patriarchy?</em>”</p>
+<p>The answer will most likely be the following: “<em>No, you stupid misogynist!</em>”</p>
+<p>To be fair, there has been a recent trend towards something called ‘intersectional feminism’, which is just a fancy term for “feminism and everything else that oppresses women [racism, war, poverty, etc.]”. This form of feminism gives the impression that it is more diverse and understanding of the multiple facets of life. However, according to intersectional feminism, all of these “other reasons” are still less important and still fall under the problem of ‘patriarchy’. So nothing has really changed except that now there are more things for feminists to blame men for. Thank you feminists for making me feel even more guilty for being born male. Now I can add genocide, xenophobia, racism, economic exploitation, and the pain you experience after stepping on a Lego to my list of unearned crimes.</p>
+<p><strong>Why Muslim Women <em>Do Not</em> Need Feminism</strong></p>
+<p>If there is any evidence worthy of showing why feminism is not necessary for Muslim women, I think it would be everything I outlined above. But in a way many may be reading this article and wondering what alternatives there are for Muslim women to achieve their rights. The very obvious answer to this is that women already have their rights from Islam. All that men and women need to do is to reclaim them from the liberal ideologies and politics which continue to bring them down. Gender justice cannot be achieved overnight and the corruption committed by some men who take advantage of instability to abuse and harm women should never be used as an excuse to believe that all men are a problem or that Islam needs something more to be perfect. In order to empower and uplift Muslim women in Malaysia and the world over, <em>every</em> Muslim needs to respond to all injustices equally – fostering a holistic implementation of justice and morality for all. We as Muslims need to react and cater to the cries of the oppressed, regardless of gender, age, and social status. This is why Islam is <em>wasatiyyah</em>, and why feminism is not.</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-twitter-12611"
+				class="share-twitter sd-button share-icon no-text"
+				href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/?share=twitter"
+				target="_blank"
+				aria-labelledby="sharing-twitter-12611"
+				>
+				<span id="sharing-twitter-12611" hidden>Share on X (Opens in new window)</span>
+				<span>X</span>
+			</a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-facebook-12611"
+				class="share-facebook sd-button share-icon no-text"
+				href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/?share=facebook"
+				target="_blank"
+				aria-labelledby="sharing-facebook-12611"
+				>
+				<span id="sharing-facebook-12611" hidden>Share on Facebook (Opens in new window)</span>
+				<span>Facebook</span>
+			</a></li><li class="share-jetpack-whatsapp"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-whatsapp-12611"
+				class="share-jetpack-whatsapp sd-button share-icon no-text"
+				href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/?share=jetpack-whatsapp"
+				target="_blank"
+				aria-labelledby="sharing-whatsapp-12611"
+				>
+				<span id="sharing-whatsapp-12611" hidden>Share on WhatsApp (Opens in new window)</span>
+				<span>WhatsApp</span>
+			</a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-reddit-12611"
+				class="share-reddit sd-button share-icon no-text"
+				href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/?share=reddit"
+				target="_blank"
+				aria-labelledby="sharing-reddit-12611"
+				>
+				<span id="sharing-reddit-12611" hidden>Share on Reddit (Opens in new window)</span>
+				<span>Reddit</span>
+			</a></li><li class="share-email"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-email-12611"
+				class="share-email sd-button share-icon no-text"
+				href="mailto:?subject=%5BShared%20Post%5D%20How%20Feminism%20undermines%20Islam%20and%20gender%20justice&#038;body=https%3A%2F%2Fmuslimdebate.org%2F2016%2F05%2F01%2Fhow-feminism-undermines-islam-and-gender-justice%2F&#038;share=email"
+				target="_blank"
+				aria-labelledby="sharing-email-12611"
+				data-email-share-error-title="Do you have email set up?" data-email-share-error-text="If you&#039;re having problems sharing via email, you might not have email set up for your browser. You may need to create a new email yourself." data-email-share-nonce="d769f289d4" data-email-share-track-url="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/?share=email">
+				<span id="sharing-email-12611" hidden>Email a link to a friend (Opens in new window)</span>
+				<span>Email</span>
+			</a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-tumblr-12611"
+				class="share-tumblr sd-button share-icon no-text"
+				href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/?share=tumblr"
+				target="_blank"
+				aria-labelledby="sharing-tumblr-12611"
+				>
+				<span id="sharing-tumblr-12611" hidden>Share on Tumblr (Opens in new window)</span>
+				<span>Tumblr</span>
+			</a></li><li class="share-print"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-print-12611"
+				class="share-print sd-button share-icon no-text"
+				href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/#print?share=print"
+				target="_blank"
+				aria-labelledby="sharing-print-12611"
+				>
+				<span id="sharing-print-12611" hidden>Print (Opens in new window)</span>
+				<span>Print</span>
+			</a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer"
+				data-shared="sharing-linkedin-12611"
+				class="share-linkedin sd-button share-icon no-text"
+				href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/?share=linkedin"
+				target="_blank"
+				aria-labelledby="sharing-linkedin-12611"
+				>
+				<span id="sharing-linkedin-12611" hidden>Share on LinkedIn (Opens in new window)</span>
+				<span>LinkedIn</span>
+			</a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-49128393-12611-6aa3fdc7660ba' data-src='//widgets.wp.com/likes/index.html?ver=20260911#blog_id=49128393&amp;post_id=12611&amp;origin=thedebateinitiative.wordpress.com&amp;obj_id=49128393-12611-6aa3fdc7660ba&amp;domain=muslimdebate.org' data-name='like-post-frame-49128393-12611-6aa3fdc7660ba' data-title='Like or Reblog'><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class='loading'>Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>	<div class="taxonomies">
+		<p class="tax-categories taxonomy">
+Categories: <a href="https://muslimdebate.org/category/subject/feminism-subject/" rel="category tag">Feminism</a>, <a href="https://muslimdebate.org/category/mdi-news/mdi-malaysia/" rel="category tag">MDI Malaysia</a>, <a href="https://muslimdebate.org/category/mdi-news/" rel="category tag">MDI News</a>, <a href="https://muslimdebate.org/category/subject/" rel="category tag">Subject</a>		</p>
+	</div>
+	</section>
+</article>
+<nav class="postnav">
+	<h1 class="screen-reader">Post navigation</h1>
+	<div class="prev">
+		<span class="more-link"><a href="https://muslimdebate.org/2016/04/18/an-antidote-for-extremism/" rel="prev">An Antidote For Extremism</a></span>
+	</div>
+	<div class="next">
+		<span class="more-link"><a href="https://muslimdebate.org/2016/05/09/public-debate-the-bible-or-the-quran-which-one-should-we-trust-dr-tony-costa-vs-sadat-anwar/" rel="next">Public Debate: &#8220;The Bible or the Quran? Which one should we trust?&#8221; Dr Tony Costa vs Sadat Anwar</a></span>
+	</div>
+</nav>
+<section class="content-comments">
+	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2016/05/01/how-feminism-undermines-islam-and-gender-justice/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://muslimdebate.org/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+
+
+<div class="comment-form__verbum transparent"></div><div class="verbum-form-meta"><input type='hidden' name='comment_post_ID' value='12611' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+
+			<input type="hidden" name="highlander_comment_nonce" id="highlander_comment_nonce" value="4977e8fe70" />
+			<input type="hidden" name="verbum_show_subscription_modal" value="" /></div><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="2bf2339cdc" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="18"/><script>
+document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
+</script>
+</p></form>	</div><!-- #respond -->
+	</section>
+	</div>
+	</div>
+<div class="col-sidebar sidebar-main" role="complementary">
+<section id="media_image-14" class="widget widget_media_image"><div class="widget-wrap"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><img width="1300" height="510" src="https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg" class="image wp-image-13533 aligncenter attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async" loading="lazy" srcset="https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg?w=1300&amp;h=510 1300w, https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg?w=150&amp;h=59 150w, https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg?w=300&amp;h=118 300w, https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg?w=768&amp;h=301 768w, https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg?w=1024&amp;h=401 1024w, https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg?w=1440&amp;h=564 1440w, https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg 1500w" sizes="auto, (max-width: 1300px) 100vw, 1300px" data-attachment-id="13533" data-permalink="https://muslimdebate.org/mdi_big/" data-orig-file="https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg" data-orig-size="1500,588" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MDI_Big" data-image-description="" data-image-caption="" data-large-file="https://muslimdebate.org/wp-content/uploads/2017/03/mdi_big.jpg?w=1024" /></div></section><section id="blog_subscription-2" class="widget widget_blog_subscription jetpack_subscription_widget"><div class="widget-wrap"><h3 class="widgettitle"><label for="subscribe-field">Follow this site</label></h3>
+
+			<div class="wp-block-jetpack-subscriptions__container">
+			<form
+				action="https://subscribe.wordpress.com"
+				method="post"
+				accept-charset="utf-8"
+				data-blog="49128393"
+				data-post_access_level="everybody"
+				id="subscribe-blog"
+			>
+				<p>Enter your email address to subscribe to MDI Updates and receive notifications of new posts by email.</p>
+				<p id="subscribe-email">
+					<label
+						id="subscribe-field-label"
+						for="subscribe-field"
+						class="screen-reader-text"
+					>
+						Email Address:					</label>
+
+					<input
+							type="email"
+							name="email"
+							autocomplete="email"
+							
+							style="width: 95%; padding: 1px 10px"
+							placeholder="Email Address"
+							value=""
+							id="subscribe-field"
+							required
+						/>				</p>
+
+				<p id="subscribe-submit"
+									>
+					<input type="hidden" name="action" value="subscribe"/>
+					<input type="hidden" name="blog_id" value="49128393"/>
+					<input type="hidden" name="source" value="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/"/>
+					<input type="hidden" name="sub-type" value="widget"/>
+					<input type="hidden" name="redirect_fragment" value="subscribe-blog"/>
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="41b6e495c3" />					<button type="submit"
+													class="wp-block-button__link"
+																	>
+						Sign me up!					</button>
+				</p>
+			</form>
+							<div class="wp-block-jetpack-subscriptions__subscount">
+					Join 6,106 other subscribers				</div>
+						</div>
+			
+</div></section><section id="twitter-2" class="widget widget_twitter"><div class="widget-wrap"><h3 class="widgettitle"><a href='http://twitter.com/MDIcomms'>MDI on Twitter</a></h3><a class="twitter-timeline" data-height="600" data-dnt="true" href="https://twitter.com/MDIcomms">Tweets by MDIcomms</a></div></section><section id="facebook-likebox-2" class="widget widget_facebook_likebox"><div class="widget-wrap"><h3 class="widgettitle"><a href="https://www.facebook.com/MuslimDebateInitiative">MDI&#8217;s Facebook Page</a></h3>		<div id="fb-root"></div>
+		<div class="fb-page" data-href="https://www.facebook.com/MuslimDebateInitiative" data-width="290"  data-height="432" data-hide-cover="false" data-show-facepile="true" data-tabs="false" data-hide-cta="false" data-small-header="false">
+		<div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/MuslimDebateInitiative"><a href="https://www.facebook.com/MuslimDebateInitiative">MDI&#8217;s Facebook Page</a></blockquote></div>
+		</div>
+		</div></section></div>
+</div>
+
+<footer role="contentinfo" id="footer" class="container">
+	<section class="footer-wrap">
+		<ul class="footer-site-content-links">
+			<li class="footer-top-categories"><strong>Top categories: </strong> <a href="https://muslimdebate.org/category/current-affairs/">Current Affairs</a> <a href="https://muslimdebate.org/tag/france/">france</a></li><li class="footer-social-links"><strong>Social links: </strong> <div class="social_links menu-social-links"><a href="http://twitter.com/MDIcomms" class="social_link_twitter"><span>Twitter<span></a><a href="https://www.facebook.com/MuslimDebateInitiative" class="social_link_facebook"><span>Facebook<span></a></div></li>		</ul>
+		<div class="footer-credits">
+			<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a>
+			
+		</div>
+	</section>
+</footer>
+
+<!--  -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/files/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/premium/chronicle/*","/wp-content/themes/premium/broadsheet/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="grofiles-cards-js" src="//0.gravatar.com/js/hovercards/hovercards.min.js?ver=202637d1133547e8a1f2801609f51cef12522abe7f6647d869e9fbc974fe356a37e613"></script>
+<script id="wpgroho-js-extra">
+var WPGroHo = {"my_hash":""};
+//# sourceURL=wpgroho-js-extra
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1610363240i'></script>
+
+	<script>
+		// Initialize and attach hovercards to all gravatars
+		( function() {
+			function init() {
+				if ( typeof Gravatar === 'undefined' ) {
+					return;
+				}
+
+				if ( typeof Gravatar.init !== 'function' ) {
+					return;
+				}
+
+				Gravatar.profile_cb = function ( hash, id ) {
+					WPGroHo.syncProfileData( hash, id );
+				};
+
+				Gravatar.my_hash = WPGroHo.my_hash;
+				Gravatar.init(
+					'body',
+					'#wp-admin-bar-my-account',
+					{
+						i18n: {
+							'Edit your profile →': 'Edit your profile →',
+							'View profile →': 'View profile →',
+							'Contact': 'Contact',
+							'Send money': 'Send money',
+							'Sorry, we are unable to load this Gravatar profile.': 'Sorry, we are unable to load this Gravatar profile.',
+							'Gravatar not found.': 'Gravatar not found.',
+							'Too Many Requests.': 'Too Many Requests.',
+							'Internal Server Error.': 'Internal Server Error.',
+							'Is this you?': 'Is this you?',
+							'Claim your free profile.': 'Claim your free profile.',
+							'Email': 'Email',
+							'Home Phone': 'Home Phone',
+							'Work Phone': 'Work Phone',
+							'Cell Phone': 'Cell Phone',
+							'Contact Form': 'Contact Form',
+							'Calendar': 'Calendar',
+						},
+					}
+				);
+			}
+
+			if ( document.readyState !== 'loading' ) {
+				init();
+			} else {
+				document.addEventListener( 'DOMContentLoaded', init );
+			}
+		} )();
+	</script>
+
+		<div style="display:none">
+	</div>
+		<div id="actionbar" dir="ltr" style="display: none;"
+			class="actnbr-premium-chronicle actnbr-has-follow actnbr-has-actions">
+		<ul>
+								<li class="actnbr-btn actnbr-hidden">
+						<a class="actnbr-action actnbr-actn-comment" href="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/#respond">
+							<svg class="gridicon gridicons-comment" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M12 16l-5 5v-5H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v9c0 1.1-.9 2-2 2h-7z"/></g></svg>							<span>Comment						</span>
+						</a>
+					</li>
+									<li class="actnbr-btn actnbr-hidden">
+						<a class="actnbr-action actnbr-actn-reblog" href="">
+							<svg class="gridicon gridicons-reblog" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M22.086 9.914L20 7.828V18c0 1.105-.895 2-2 2h-7v-2h7V7.828l-2.086 2.086L14.5 8.5 19 4l4.5 4.5-1.414 1.414zM6 16.172V6h7V4H6c-1.105 0-2 .895-2 2v10.172l-2.086-2.086L.5 15.5 5 20l4.5-4.5-1.414-1.414L6 16.172z"/></g></svg><span>Reblog</span>
+						</a>
+					</li>
+									<li class="actnbr-btn actnbr-hidden">
+								<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V3H17.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H14.5V13.5H10.5V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path d="M19.5303 15.0303L15.5 19.0605L12.9697 16.5303L14.0303 15.4697L15.5 16.9395L18.4697 13.9697L19.5303 15.0303Z" fill="#008A20"></path></svg>
+			<span>Subscribed</span>
+		</a>
+							<div class="actnbr-popover tip tip-top-left actnbr-notice" id="follow-bubble">
+							<div class="tip-arrow"></div>
+							<div class="tip-inner actnbr-follow-bubble">
+															<ul>
+											<li class="actnbr-sitename">
+			<a href="https://muslimdebate.org">
+				<img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=75&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=100&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=150&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=200&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' />				The Muslim Debate Initiative			</a>
+		</li>
+										<div class="actnbr-message no-display"></div>
+									<form method="post" action="https://subscribe.wordpress.com" accept-charset="utf-8" style="display: none;">
+																						<div class="actnbr-follow-count">Join 826 other subscribers</div>
+																					<div>
+										<input type="email" name="email" placeholder="Enter your email address" class="actnbr-email-field" aria-label="Enter your email address" />
+										</div>
+										<input type="hidden" name="action" value="subscribe" />
+										<input type="hidden" name="blog_id" value="49128393" />
+										<input type="hidden" name="source" value="https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/" />
+										<input type="hidden" name="sub-type" value="actionbar-follow" />
+										<input type="hidden" id="_wpnonce" name="_wpnonce" value="41b6e495c3" />										<div class="actnbr-button-wrap">
+											<button type="submit" value="Sign me up">
+												Sign me up											</button>
+										</div>
+									</form>
+									<li class="actnbr-login-nudge">
+										<div>
+											Already have a WordPress.com account? <a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fmuslimdebate.org%252F2016%252F05%252F01%252Fhow-feminism-undermines-islam-and-gender-justice%252F">Log in now.</a>										</div>
+									</li>
+								</ul>
+															</div>
+						</div>
+					</li>
+							<li class="actnbr-ellipsis actnbr-hidden">
+				<svg class="gridicon gridicons-ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M7 12c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm12-2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-7 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z"/></g></svg>				<div class="actnbr-popover tip tip-top-left actnbr-more">
+					<div class="tip-arrow"></div>
+					<div class="tip-inner">
+						<ul>
+								<li class="actnbr-sitename">
+			<a href="https://muslimdebate.org">
+				<img loading='lazy' alt='' src='https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' srcset='https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=50&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=75&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 1.5x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=100&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 2x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=150&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 3x, https://secure.gravatar.com/blavatar/e965eb6b582f7e65b45a356a95d47e786fc5bd8241be2780842c48a7c9059c08?s=200&#038;d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png 4x' class='avatar avatar-50' height='50' width='50' />				The Muslim Debate Initiative			</a>
+		</li>
+								<li class="actnbr-folded-follow">
+										<a class="actnbr-action actnbr-actn-follow " href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path clip-rule="evenodd" d="m4 4.5h12v6.5h1.5v-6.5-1.5h-1.5-12-1.5v1.5 10.5c0 1.1046.89543 2 2 2h7v-1.5h-7c-.27614 0-.5-.2239-.5-.5zm10.5 2h-9v1.5h9zm-5 3h-4v1.5h4zm3.5 1.5h-1v1h1zm-1-1.5h-1.5v1.5 1 1.5h1.5 1 1.5v-1.5-1-1.5h-1.5zm-2.5 2.5h-4v1.5h4zm6.5 1.25h1.5v2.25h2.25v1.5h-2.25v2.25h-1.5v-2.25h-2.25v-1.5h2.25z"  fill-rule="evenodd"></path></svg>
+			<span>Subscribe</span>
+		</a>
+		<a class="actnbr-action actnbr-actn-following  no-display" href="">
+			<svg class="gridicon" height="20" width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 4.5H4V15C4 15.2761 4.22386 15.5 4.5 15.5H11.5V17H4.5C3.39543 17 2.5 16.1046 2.5 15V3H17.5V12.5H16V4.5ZM5.5 6.5H14.5V8H5.5V6.5ZM5.5 9.5H9.5V11H5.5V9.5ZM12 11H13V12H12V11ZM10.5 9.5H14.5V13.5H10.5V9.5ZM5.5 12H9.5V13.5H5.5V12Z" fill="#008A20"></path><path d="M19.5303 15.0303L15.5 19.0605L12.9697 16.5303L14.0303 15.4697L15.5 16.9395L18.4697 13.9697L19.5303 15.0303Z" fill="#008A20"></path></svg>
+			<span>Subscribed</span>
+		</a>
+								</li>
+														<li class="actnbr-signup"><a href="https://wordpress.com/start/">Sign up</a></li>
+							<li class="actnbr-login"><a href="https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Fmuslimdebate.org%252F2016%252F05%252F01%252Fhow-feminism-undermines-islam-and-gender-justice%252F">Log in</a></li>
+																<li class="actnbr-shortlink">
+										<a href="https://wp.me/p3k8xr-3hp">
+											<span class="actnbr-shortlink__text">Copy shortlink</span>
+											<span class="actnbr-shortlink__icon"><svg class="gridicon gridicons-checkmark" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M9 19.414l-6.707-6.707 1.414-1.414L9 16.586 20.293 5.293l1.414 1.414"/></g></svg></span>
+										</a>
+									</li>
+																<li class="flb-report">
+									<a href="https://wordpress.com/abuse/?report_url=https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/" target="_blank" rel="noopener noreferrer">
+										Report this content									</a>
+								</li>
+															<li class="actnbr-reader">
+									<a href="https://wordpress.com/reader/blogs/49128393/posts/12611">
+										View post in Reader									</a>
+								</li>
+															<li class="actnbr-subs">
+									<a href="https://subscribe.wordpress.com/">Manage subscriptions</a>
+								</li>
+																<li class="actnbr-fold"><a href="">Collapse this bar</a></li>
+														</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+<script>
+window.addEventListener( "DOMContentLoaded", function( event ) {
+	var link = document.createElement( "link" );
+	link.href = "/wp-content/mu-plugins/actionbar/actionbar.css?v=20250116";
+	link.type = "text/css";
+	link.rel = "stylesheet";
+	document.head.appendChild( link );
+
+	var script = document.createElement( "script" );
+	script.src = "/wp-content/mu-plugins/actionbar/actionbar.js?v=20250204";
+	document.body.appendChild( script );
+} );
+</script>
+
+			<div id="jp-carousel-loading-overlay" style="display: none;">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading"><svg class="jetpack-spinner" width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="46" fill="none" stroke="#ddd" stroke-width="8"/><path d="M 50 4 A 46 46 0 0 1 96 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" dur="1.4s" from="0 50 50" to="360 50 50" repeatCount="indefinite"/></path></svg></span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<div class="jp-carousel-photo-caption"></div>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<div class="jp-carousel-photo-title"></div>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner"><svg class="jetpack-spinner" width="20" height="20" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><circle cx="50" cy="50" r="46" fill="none" stroke="#ddd" stroke-width="8"/><path d="M 50 4 A 46 46 0 0 1 96 50" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"><animateTransform attributeName="transform" type="rotate" dur="1.4s" from="0 50 50" to="360 50 50" repeatCount="indefinite"/></path></svg></span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Write a Comment..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Post Comment" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<div class="jp-carousel-caption" itemprop="caption description"></div>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<a class="jp-carousel-image-download" href="#" aria-label="Download image" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https://muslimdebate.org/2016/05/01/how-feminism-undermines-islam-and-gender-justice/":12611};
+	</script>
+				
+	<script type="text/javascript">
+		(function () {
+			var wpcom_reblog = {
+				source: 'toolbar',
+
+				toggle_reblog_box_flair: function (obj_id, post_id) {
+
+					// Go to site selector. This will redirect to their blog if they only have one.
+					const postEndpoint = `https://wordpress.com/post`;
+
+					// Ideally we would use the permalink here, but fortunately this will be replaced with the 
+					// post permalink in the editor.
+					const originalURL = `${ document.location.href }?page_id=${ post_id }`; 
+					
+					const url =
+						postEndpoint +
+						'?url=' +
+						encodeURIComponent( originalURL ) +
+						'&is_post_share=true' +
+						'&v=5';
+
+					const redirect = function () {
+						if (
+							! window.open( url, '_blank' )
+						) {
+							location.href = url;
+						}
+					};
+
+					if ( /Firefox/.test( navigator.userAgent ) ) {
+						setTimeout( redirect, 0 );
+					} else {
+						redirect();
+					}
+				},
+			};
+
+			window.wpcom_reblog = wpcom_reblog;
+		})();
+	</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/wp-content/mu-plugins/likes/queuehandler.js?m=1741961244i'></script>
+<script id="jetpack-testimonial-theme-supports-js-after">
+const jetpack_testimonial_theme_supports = false
+//# sourceURL=jetpack-testimonial-theme-supports-js-after
+</script>
+<script id="wp-hooks-js" src="/wp-content/plugins/gutenberg-core/v23.9.1/build/scripts/hooks/index.min.js?m=1788785546i&#038;ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="/wp-content/plugins/gutenberg-core/v23.9.1/build/scripts/i18n/index.min.js?m=1788785546i&#038;ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="verbum-settings-js-before">
+window.VerbumComments = {"Log in or provide your name and email to leave a reply.":"Log in or provide your name and email to leave a reply.","Log in or provide your name and email to leave a comment.":"Log in or provide your name and email to leave a comment.","Receive web and mobile notifications for posts on this site.":"Receive web and mobile notifications for posts on this site.","Name":"Name","Email (address never made public)":"Email (address never made public)","Website (optional)":"Website (optional)","Leave a reply. (log in optional)":"Leave a reply. (log in optional)","Leave a comment. (log in optional)":"Leave a comment. (log in optional)","Log in to leave a reply.":"Log in to leave a reply.","Log in to leave a comment.":"Log in to leave a comment.","Logged in via %s":"Logged in via %s","Log out":"Log out","Your browser is blocking the cookies needed to log in and comment here. Allow cookies in your privacy settings, then reload the page.":"Your browser is blocking the cookies needed to log in and comment here. Allow cookies in your privacy settings, then reload the page.","Email":"Email","(Address never made public)":"(Address never made public)","Instantly":"Instantly","Daily":"Daily","Reply":"Reply","Comment":"Comment","WordPress":"WordPress","Weekly":"Weekly","Notify me of new posts":"Notify me of new posts","Email me new posts":"Email me new posts","Email me new comments":"Email me new comments","Cancel":"Cancel","Write a comment...":"Write a comment...","Write a reply...":"Write a reply...","Website":"Website","Optional":"Optional","We'll keep you in the loop!":"We'll keep you in the loop!","Loading your comment...":"Loading your comment...","Discover more from":"Discover more from The Muslim Debate Initiative","Subscribe now to keep reading and get access to the full archive.":"Subscribe now to keep reading and get access to the full archive.","Continue reading":"Continue reading","Never miss a beat!":"Never miss a beat!","Interested in getting blog post updates? Simply click the button below to stay in the loop!":"Interested in getting blog post updates? Simply click the button below to stay in the loop!","Enter your email address":"Enter your email address","Subscribe":"Subscribe","Comment sent successfully":"Comment sent successfully","Save my name, email, and website in this browser for the next time I comment.":"Save my name, email, and website in this browser for the next time I comment.","hovercardi18n":{"Edit your profile \u2192":"Edit your profile \u2192","View profile \u2192":"View profile \u2192","Contact":"Contact","Send money":"Send money","Gravatar not found.":"Gravatar not found.","This profile is private.":"This profile is private.","Too Many Requests.":"Too Many Requests.","Internal Server Error.":"Internal Server Error.","Sorry, we are unable to load this Gravatar profile.":"Sorry, we are unable to load this Gravatar profile."},"siteId":49128393,"postId":12611,"mustLogIn":false,"requireNameEmail":true,"commentRegistration":false,"connectURL":"https://thedebateinitiative.wordpress.com/public.api/connect/?action=request\u0026domain=muslimdebate.org","logoutURL":"https://thedebateinitiative.wordpress.com/wp-login.php?action=logout\u0026_wpnonce=cd5c54d02c","homeURL":"https://muslimdebate.org/","subscribeToBlog":true,"subscribeToComment":true,"isJetpackCommentsLoggedIn":false,"jetpackUsername":"","jetpackUserId":0,"jetpackSignature":"","jetpackAvatar":"https://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=96","enableBlocks":true,"enableSubscriptionModal":true,"currentLocale":"en","isJetpackComments":false,"allowedBlocks":["core/paragraph","core/list","core/code","core/list-item","core/quote","core/image","core/embed","core/quote","core/code"],"embedNonce":"954269618b","verbumBundleUrl":"/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/features/verbum-comments/dist/index.js","isRTL":false,"vbeCacheBuster":1771405207,"iframeUniqueId":0,"colorScheme":false}
+//# sourceURL=verbum-settings-js-before
+</script>
+<script data-wp-strategy="defer" defer id="verbum-dynamic-loader-js" src="/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/verbum-comments/assets/dynamic-loader.js?m=1772522099i&#038;minify=false&#038;ver=8b5296f9195db92c42e4"></script>
+<script id="jetpack-facebook-embed-js-extra">
+var jpfbembed = {"appid":"249643311490","locale":"en_US"};
+//# sourceURL=jetpack-facebook-embed-js-extra
+</script>
+<script id="jetpack-carousel-js-extra">
+var jetpackSwiperLibraryPath = {"url":"/wp-content/mu-plugins/jetpack-plugin/sun/_inc/blocks/swiper.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https://muslimdebate.org/wp-admin/admin-ajax.php","nonce":"b231f16c69","display_exif":"1","display_comments":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","image_label":"Open image in full-screen.","download_original":"View full size \u003Cspan class=\"photo-size\"\u003E{0}\u003Cspan class=\"photo-size-times\"\u003E\u00d7\u003C/span\u003E{1}\u003C/span\u003E","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https://thedebateinitiative.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fmuslimdebate.org%2F2016%2F05%2F01%2Fhow-feminism-undermines-islam-and-gender-justice%2F","blog_id":"49128393","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"stats_query_args":"blog=49128393&v=wpcom&tz=0&user_id=0&subd=thedebateinitiative","is_public":"1"};
+//# sourceURL=jetpack-carousel-js-extra
+</script>
+<script id="jetpack-script-data-js-before">
+window.JetpackScriptData = {"site":{"host":"wpcom","is_wpcom_platform":true}};
+//# sourceURL=jetpack-script-data-js-before
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??-eJydkMkOwjAMRH+I1CDE0gPiU5CbuChtNsUOiL8nLK24gTh6ZvxsDVyTskG7YohhYNDRewqiMiV3a7wNzcALqCEdg1QDfFHJlbMNNU6SUI/vGbgEOFUW9Kipi3FU5DsyPwCqdE318ifp7Z0uFEzMgEWiRxGr5y1kJmHoinVmFllnm0QZFPzj8xdLY46Fyc2xSfjSB46WPYlaN8sXbhL6/Aw/qjj6w2q337TrdtNuhzszUI6Y'></script>
+<script id="twitter-widgets-js" src="https://platform.twitter.com/widgets.js?ver=20111117"></script>
+<script id="sharing-js-js-extra">
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+//# sourceURL=sharing-js-js-extra
+</script>
+<script crossorigin='anonymous' type='text/javascript'  src='/_static/??/wp-content/mu-plugins/carousel-wpcom/carousel-wpcom.js,/wp-content/mu-plugins/jetpack-plugin/sun/_inc/build/sharedaddy/sharing.min.js?m=1787944794j'></script>
+<script id="sharing-js-js-after">
+window.WPCOM_sharing_popups = window.WPCOM_sharing_popups || {};
+window.WPCOM_sharing_popups[ "twitter" ] = "menubar=1,resizable=1,width=600,height=350";
+window.WPCOM_sharing_popups = window.WPCOM_sharing_popups || {};
+window.WPCOM_sharing_popups[ "facebook" ] = "menubar=1,resizable=1,width=600,height=400";
+window.WPCOM_sharing_popups = window.WPCOM_sharing_popups || {};
+window.WPCOM_sharing_popups[ "tumblr" ] = "menubar=1,resizable=1,width=450,height=450";
+window.WPCOM_sharing_popups = window.WPCOM_sharing_popups || {};
+window.WPCOM_sharing_popups[ "linkedin" ] = "menubar=1,resizable=1,width=580,height=450";
+//# sourceURL=sharing-js-js-after
+</script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/72x72/","ext":".png","svgUrl":"https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?m=1783090810i&ver=7.1.1-alpha-63555"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+	<iframe src='https://widgets.wp.com/likes/master.html?ver=20260911#ver=20260911' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+	<div id='likes-other-gravatars' role="dialog" aria-hidden="true" tabindex="-1"><div class="likes-text"><span>%d</span></div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	<script src="//stats.wp.com/w.js?69" defer></script> <script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'49128393','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+		// Prevent sending pageview tracking from WP-Admin pages.
+		_stq.push(['view', {'blog':'49128393','v':'wpcom','tz':'0','user_id':'0','post':'12611','subd':'thedebateinitiative'}]);
+		_stq.push(['extra', {'crypt':'UE5tW3cvZGQ9MHx0JVAsaXkwdSxQOEV5ZzFRNj9HMzhnV19TOUswaG1qJkZ0dTI1dmRLNktKWkR2b35WcF9TTVhhaDB4bk5kTlJzVjF0N2d6al01b3JyPXNHMG1ETWE9WSxSbStONzBreThRSDFKTFNSNU9iMVdMZlBPOC1CJjRDNU02M3hVMXc/JTJZc18sUmRSQWNRbUFrUVtDeHJ3aHcsYmp+LkssXVtHY0hWclQ3JmdMLmN+W24ma2hxSURxWUZ1OSViVWJ0dEl5T1I/VD9xcTNNNmZOTCxuS2JNcmlzaVZIdWQycSZlc1syUV9qfldvYlsyWDcsWy8='}]);
+_stq.push([ 'clickTrackerInit', '49128393', '12611' ]);
+</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:1px;width:1px;overflow:hidden;position:absolute;bottom:1px;" alt="" /></noscript>
+<meta id="bilmur" property="bilmur:data" content="" data-provider="wordpress.com" data-service="simple" data-site-tz="Etc/GMT-0" data-custom-props="{&quot;enq_jquery&quot;:&quot;1&quot;,&quot;logged_in&quot;:&quot;0&quot;,&quot;wptheme&quot;:&quot;premium\/chronicle&quot;,&quot;wptheme_is_block&quot;:&quot;0&quot;}"   >
+		<script defer src="/wp-content/js/bilmur.min.js?i=17&amp;m=202637"></script> 	
+<script>
+(function() {
+	'use strict';
+
+	const fetches = {};
+	const promises = {};
+	const urls = {
+		'wp-polyfill': '/wp-includes/js/dist/vendor/wp-polyfill.min.js?m=1786440387i&ver=3.15.0',
+		'verbum': '/wp-content/mu-plugins/jetpack-mu-wpcom-plugin/sun/jetpack_vendor/automattic/jetpack-mu-wpcom/src/build/verbum-comments/verbum-comments.js?m=1788900463i&minify=false&ver=3d6130a57c3104d5bc3b'
+	};
+	const loaders = {
+		'verbum': () => {
+			fetchExternalScript('wp-polyfill');
+			fetchExternalScript('verbum');
+			promises['wp-polyfill'] = promises['wp-polyfill'] || loadWPScript('wp-polyfill');
+			promises['verbum'] = promises['verbum'] || promises['wp-polyfill'].then( () => loadWPScript('verbum') );
+			return promises['verbum'];
+		},
+		
+	};
+	const scriptExtras = {
+		
+	};
+
+	window.WP_Enqueue_Dynamic_Script = {
+		loadScript: (handle) => {
+			if (!loaders[handle]) {
+				console.error('WP_Enqueue_Dynamic_Script: unregistered script `' + handle + '`.');
+			}
+			return loaders[handle]();
+		}
+	};
+
+	function fetchExternalScript(handle) {
+		if (!urls[handle]) {
+			return Promise.resolve();
+		}
+
+		fetches[handle] = fetches[handle] || fetch(urls[handle], { mode: 'no-cors' });
+		return fetches[handle];
+	}
+
+	function runExtraScript(handle, type, index) {
+		const id = 'wp-enqueue-dynamic-script:' + handle + ':' + type + ':' + (index + 1);
+		const template = document.getElementById(id);
+		if (!template) {
+			return Promise.reject();
+		}
+
+		const script = document.createElement( 'script' );
+		script.innerHTML = template.innerHTML;
+		document.body.appendChild( script );
+		return Promise.resolve();
+	}
+
+	function loadExternalScript(handle) {
+		if (!urls[handle]) {
+			return Promise.resolve();
+		}
+
+		return fetches[handle].then(() => {
+			return new Promise((resolve, reject) => {
+				const script = document.createElement('script');
+				script.onload = () => resolve();
+				script.onerror = (e) => reject(e);
+				script.src = urls[handle];
+				document.body.appendChild(script);
+			});
+		});
+	}
+
+	function loadExtra(handle, pos) {
+		const count = (scriptExtras[handle] && scriptExtras[handle][pos]) || 0;
+		let promise = Promise.resolve();
+
+		for (let i = 0; i < count; i++) {
+			promise = promise.then(() => runExtraScript(handle, pos, i));
+		}
+
+		return promise;
+	}
+
+	function loadWPScript(handle) {
+		// Core loads scripts in this order. See: https://github.com/WordPress/WordPress/blob/a59eb9d39c4fcba834b70c9e8dfd64feeec10ba6/wp-includes/class-wp-scripts.php#L428.
+		return loadExtra(handle, 'translations')
+			.then(() => loadExtra(handle, 'before'))
+			.then(() => loadExternalScript(handle))
+			.then(() => loadExtra(handle, 'after'));
+	}
+} )();
+</script>
+
+</body>
+</html>
+<!--
+	generated in 0.230 seconds
+	153076 bytes batcached for 300 seconds
+-->

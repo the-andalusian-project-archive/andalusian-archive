@@ -1,0 +1,471 @@
+[
+  {
+    "id": 1,
+    "title": "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2015-04",
+    "publisher_journal": "ICR Journal",
+    "volume_issue": "6(2):229-246",
+    "url": "https://icrjournal.org/index.php/icr/article/view/333",
+    "pdf_url": null,
+    "wayback_url": "https://web.archive.org/web/2024/https://icrjournal.org/index.php/icr/article/view/333",
+    "doi": "10.52282/icr.v6i2.333",
+    "co_authors": [],
+    "citation_count": 4,
+    "sources": [
+      "ResearchGate",
+      "ICR Journal",
+      "Academia.edu"
+    ],
+    "type": "Journal Article",
+    "status": "available",
+    "file": "the-rise-and-decline-of-scientific-productivity.pdf",
+    "file_source": "https://web.archive.org/web/20241118015954id_/https://icrjournal.org/index.php/icr/article/download/333/319",
+    "file_pages": 18,
+    "file_status": "held",
+    "note": "Full text held in this repository (18 pp.). The publisher host icrjournal.org no longer resolves in DNS, so the copy was verified against the Internet Archive capture of the publisher PDF (original filename admin-ar-6.pdf) and is byte-identical to it. DOI 10.52282/icr.v6i2.333 is DEAD (DNS); the article is registered as 10.12816/0019168, whose Kezana.ai landing page reports IsOpenAccess=false.",
+    "alternate_urls": [
+      "https://doi.org/10.12816/0019168"
+    ],
+    "file_licence": "ICR Journal 6(2):229-246, produced and distributed by IAIS Malaysia. The publisher host icrjournal.org no longer resolves in DNS, so the copy is the Internet Archive capture of the publisher PDF (original filename admin-ar-6.pdf), sha256 byte-identical to it. Open access.",
+    "file_url": "/papers/the-rise-and-decline-of-scientific-productivity.pdf"
+  },
+  {
+    "id": 2,
+    "title": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2017-05-01",
+    "publisher_journal": "Yaqeen Institute for Islamic Research",
+    "url": "https://yaqeeninstitute.org/read/paper/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables",
+    "pdf_url": "https://cdn2.hubspot.net/hubfs/4713562/Website-Paper-PDFs/FINAL-The-Structure-of-Scientific-Productivity-in-Islamic-Civilization-1-1.pdf",
+    "wayback_url": "https://web.archive.org/web/20170508023741/https://asadullahali.com/2017/05/07/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/",
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "Yaqeen Institute",
+      "Academia.edu"
+    ],
+    "type": "Yaqeen Paper",
+    "status": "available"
+  },
+  {
+    "id": 3,
+    "title": "Understanding Aisha's Age: An Interdisciplinary Approach",
+    "category": "B",
+    "counted": true,
+    "publication_date": "2018-10-02",
+    "publisher_journal": "Yaqeen Institute for Islamic Research",
+    "url": "https://yaqeeninstitute.org/read/paper/understanding-aishas-age-an-interdisciplinary-approach",
+    "pdf_url": "https://cdn2.hubspot.net/hubfs/4713562/Website-Paper-PDFs/Understanding%20Ayesha%E2%80%99s%20Age_%20An%20Interdisciplinary%20Approach%20(FINAL)%20(1).pdf",
+    "wayback_url": "https://web.archive.org/web/20190722201454/https://asadullahali.com/2018/10/02/understanding-aishas-age-an-interdisciplinary-approach/",
+    "doi": "10.65061/HDXB1161",
+    "co_authors": [
+      "Dr. Jonathan Brown"
+    ],
+    "citation_count": null,
+    "sources": [
+      "Yaqeen Institute",
+      "Academia.edu"
+    ],
+    "type": "Yaqeen Paper",
+    "status": "available"
+  },
+  {
+    "id": 4,
+    "title": "Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2020",
+    "publisher_journal": "Internet Archive / Independent",
+    "url": "https://archive.org/details/between-a-backbone-and-ribs-asadullah",
+    "pdf_url": "https://archive.org/download/between-a-backbone-and-ribs-asadullah/Between%20a%20Backbone%20and%20Ribs%20-%20Asadullah.pdf",
+    "wayback_url": "https://web.archive.org/web/20200205203241/https://asadullahali.com/2020/01/23/backbone-ribs/",
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "Internet Archive",
+      "Wayback Machine"
+    ],
+    "type": "Research Paper",
+    "status": "preserved",
+    "file": "between-a-backbone-and-ribs.pdf",
+    "file_source": "https://archive.org/download/between-a-backbone-and-ribs-asadullah/Between%20a%20Backbone%20and%20Ribs%20-%20Asadullah.pdf",
+    "file_pages": 63,
+    "file_status": "held",
+    "note": "Full text held in this repository (63 pp.), downloaded and verified in the 2026-09-27 recovery. The archive.org copy is the CC-licensed edition.",
+    "file_licence": "Internet Archive item between-a-backbone-and-ribs-asadullah — the author's own CC-licensed deposit, item page https://archive.org/details/between-a-backbone-and-ribs-asadullah. CC-licensed; this is the one paper the archive is permitted to mirror.",
+    "file_url": "/papers/between-a-backbone-and-ribs.pdf"
+  },
+  {
+    "id": 5,
+    "title": "From Science to Scientism",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2017-01-11",
+    "publisher_journal": "Yaqeen Institute for Islamic Research (Blog)",
+    "url": "https://yaqeeninstitute.org/read/blog/from-science-to-scientism-behind-the-scenes",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "Yaqeen Institute"
+    ],
+    "type": "Yaqeen Blog",
+    "status": "available",
+    "note": "exact slug lost; see successor paper (structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables)"
+  },
+  {
+    "id": 6,
+    "title": "The Archetype of Beauty in Islam",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Independent/Academia.edu",
+    "url": "https://www.academia.edu/13215503/The_Archetype_of_Beauty_in_Islam",
+    "pdf_url": "https://www.academia.edu/attachments/38037935/download_file?s=profile",
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Research Paper",
+    "status": "available"
+  },
+  {
+    "id": 7,
+    "title": "Gender Equality, Islam, and Law",
+    "category": "B",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Independent/Academia.edu",
+    "url": "https://www.academia.edu/18640397/Gender_Equality_Islam_and_Law",
+    "pdf_url": "https://www.academia.edu/attachments/37976807/download_file?s=profile",
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [
+      "Raihanah Abdullah"
+    ],
+    "citation_count": null,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Research Paper",
+    "status": "available",
+    "file": "gender-equality-islam-and-law.pdf",
+    "file_source": "https://www.totetu.org/assets/media/paper/j025_020.pdf",
+    "file_pages": 17,
+    "file_status": "held",
+    "note": "Full text held in this repository (17 pp., The Journal of Oriental Studies 25 (2015), pp. 20-36), re-downloaded from the publisher-side open copy and byte-identical to the prior temp file, which confirms provenance. A Japanese translation of the same work is held alongside it and is listed under \"Full text held in this repository\" below. The Japanese copy is recorded as a translation of this paper, never as a separate paper.",
+    "additional_files": [
+      {
+        "file": "gender-equality-islam-and-law-japanese.pdf",
+        "label": "Japanese translation (東洋学術研究 175号 / 54(2), TOTETU 2015)",
+        "pages": 20,
+        "venue_url": "https://www.totetu.org/publication/jos-jp/gakujutukenkyu-175.html",
+        "note": "A real 20-page PDF, but the issue is a commercial out-of-print publication: the identified venue is the issue page and no open PDF URL for it exists, so this copy came from the prior-research pool. Recorded as a translation of this same work, never as a separate paper.",
+        "file_licence": "Japanese translation in 東洋学術研究 175号 (54(2)), TOTETU / Institute for Oriental Philosophy, 2015. The issue is a commercial, out-of-print publication: the identified venue is the issue page, and no open PDF URL for it exists, so this copy came from the prior-research pool and its public provenance is NOT verified.",
+        "file_url": "/papers/gender-equality-islam-and-law-japanese.pdf"
+      }
+    ],
+    "file_licence": "The Journal of Oriental Studies 25 (2015), pp. 20-36, open copy at TOTETU (totetu.org). Open access.",
+    "file_url": "/papers/gender-equality-islam-and-law.pdf"
+  },
+  {
+    "id": 8,
+    "title": "Architects of Civilisation: Sallahuddin Ayubi",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "IAIS Malaysia",
+    "url": "https://www.academia.edu/19782374/Architects_of_Civilisation_Sallahuddin_Ayubi",
+    "pdf_url": "https://www.academia.edu/attachments/40842068/download_file?s=profile",
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Book Chapter",
+    "status": "available",
+    "file": null,
+    "file_source": null,
+    "file_pages": 5,
+    "file_status": "withheld_unverified_provenance",
+    "note": "PDF NOT INCLUDED: this 5-page IAIS Malaysia book chapter was held in the archive but is not published, because no confirmed public URL for that exact file could be established (the Academia.edu listing that would attribute it is behind a Cloudflare challenge). The archive does not publish a file whose provenance it cannot state, so the local PDF was withdrawn from the served tree on 2026-09-27. The citation is unchanged and still resolves; the Academia.edu listing is a link-out, not a mirror.",
+    "file_licence": "NOT PUBLISHED. IAIS Malaysia book chapter (5 pp.), withheld from this archive because its provenance could not be verified against a public source URL. Attribution and full citation are retained; the text itself is not distributed here. See NOTICE.md.",
+    "file_url": null
+  },
+  {
+    "id": 9,
+    "title": "International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2015-07",
+    "publisher_journal": "Islam and Civilisational Renewal",
+    "url": "https://www.researchgate.net/publication/300371789",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": 0,
+    "sources": [
+      "ResearchGate"
+    ],
+    "type": "Conference Paper",
+    "status": "available"
+  },
+  {
+    "id": 10,
+    "title": "International Conference on Developing Synergies Between Islam and Science and Technology",
+    "category": "B",
+    "counted": true,
+    "publication_date": "2014-10",
+    "publisher_journal": "Islam and Civilisational Renewal",
+    "url": "https://www.researchgate.net/publication/284307823",
+    "pdf_url": "https://www.researchgate.net/scientific-contributions/profile/Daud-Batchelor/publication/284307823_International_Conference_on_Developing_Synergies_Between_Islam_and_Science_and_Technology_for_Mankind's_Benefit_Kuala_Lumpur_1_-_2_October_2014/links/63b6697da03100368a53d3b1/International-Conference-on-Developing-Synergies-Between-Islam-and-Science-and-Technology-for-Mankinds-Benefit-Kuala-Lumpur-1-2-October-2014.pdf",
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [
+      "Daud Batchelor"
+    ],
+    "citation_count": 0,
+    "sources": [
+      "ResearchGate"
+    ],
+    "type": "Conference Paper",
+    "status": "available"
+  },
+  {
+    "id": 11,
+    "title": "Decoding Contemporary Liberalism: Rise, Development, and Crisis",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Darul Hidayah / Al Balagh Academy",
+    "url": "https://hidayah.albalaghacademy.org/decoding-contemporary-liberalism-rise-development-and-crisis/",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "Darul Hidayah"
+    ],
+    "type": "Article",
+    "status": "available"
+  },
+  {
+    "id": 12,
+    "title": "The Qur'an and Science: A Forced Marriage",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Academia.edu",
+    "url": "https://asadullahali.wordpress.com/2018/11/14/the-quran-science-a-forced-marriage/",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "views": 144,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Talk",
+    "status": "available"
+  },
+  {
+    "id": 13,
+    "title": "Doubting your Doubts: Atheism Among Muslim Youth",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Academia.edu",
+    "url": "https://yaqeeninstitute.org/watch/lecture/atheism-doubting-your-doubts-asadullah-ali-yaqeen-in-ny",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "views": 134,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Talk",
+    "status": "available",
+    "note": "Academia abstract places this lecture at the MSA of Queens University; the Yaqeen page brands the same talk 'Yaqeen in NY'. Same pragmatic-atheism lecture (problem of evil, representation, belief)."
+  },
+  {
+    "id": 14,
+    "title": "Extremism in Muslim Thought",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Academia.edu",
+    "url": "https://asadullahali.wordpress.com/2017/12/22/extremism-in-muslim-thought/",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "views": 72,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Interview",
+    "status": "available"
+  },
+  {
+    "id": 15,
+    "title": "Islam and Terrorism",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2016-04-06",
+    "publisher_journal": "International Islamic University of Malaysia",
+    "url": "https://asadullahali.wordpress.com/2017/12/22/islam-and-terrorism/",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "views": 77,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Talk",
+    "status": "available"
+  },
+  {
+    "id": 16,
+    "title": "Understanding Atheism",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Academia.edu",
+    "url": "https://muslimdebate.org/2015/02/08/understanding-atheism-series",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "views": 158,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Talk",
+    "status": "available",
+    "note": "MDI Understanding Atheism series page matches the Academia abstract (two-day lecture on contemporary atheism and the Islamic response). A WordPress author mirror is a candidate alternate but its URL is unverified, so none is attached."
+  },
+  {
+    "id": 17,
+    "title": "Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Academia.edu",
+    "url": "https://muslimdebate.org/2015/10/15/towards-litter-reduction-an-islamic-approach/",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "views": 61,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Talk",
+    "status": "available",
+    "note": "MDI page is primary; author WordPress mirror attached as alternate.",
+    "alternate_urls": [
+      "https://asadullahali.wordpress.com/2017/12/22/islam-and-litter-reduction/"
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Still Colonized? Liberalism in Muslim Thought",
+    "category": "A",
+    "counted": true,
+    "publication_date": null,
+    "publisher_journal": "Academia.edu",
+    "url": "https://asadullahali.wordpress.com/2017/12/22/liberalism-in-muslim-thought/",
+    "pdf_url": null,
+    "wayback_url": null,
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "views": 191,
+    "sources": [
+      "Academia.edu"
+    ],
+    "type": "Talk",
+    "status": "available"
+  },
+  {
+    "id": 19,
+    "title": "Islamic Intuitionism: The Case Against Atheistic Evidentialism",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2014-06",
+    "publisher_journal": "International Institute of Islamic Thought and Civilization (IIUM), MA thesis",
+    "volume_issue": "MPECI, 24-page open excerpt of an 86-leaf thesis",
+    "url": "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download",
+    "pdf_url": null,
+    "wayback_url": "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download",
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "IIUM Student Repository"
+    ],
+    "type": "MA Thesis",
+    "status": "available",
+    "file": "islamic-intuitionism-thesis.pdf",
+    "file_source": "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download",
+    "file_pages": 24,
+    "file_status": "held",
+    "alternate_urls": [
+      "https://studentrepo.iium.edu.my/bitstreams/f64566a4-bda7-43a4-81d9-ee0a194b4cb7/download"
+    ],
+    "note": "Author name at the time of the MA: Asadullah Ali [real name withheld at the site owner's request; the IIUM Student Repository record is public and the bitstream below still resolves - see NOTICE.md]. Provenance proven by sha256 byte-identity with the IIUM Student Repository bitstream 0824286e. CORRECTION to earlier archive notes: the file previously labelled iium_thesis.pdf is THIS thesis, not a litter-reduction paper. The full 86-leaf thesis bitstream returns an HTML viewer page rather than a PDF and is recorded as restricted in bibliography.json; no access request or workaround was attempted.",
+    "author_name_redacted": true,
+    "redaction_note": "Real name withheld at the site owner's request. The author line of the source record at the issuing institution (IIUM Student Repository) is public and is left unchanged there; the citation in this row is otherwise factually intact, including the repository bitstream and the alternate URL, so it still resolves. See NOTICE.md.",
+    "file_licence": "IIUM Student Repository open excerpt, bitstream 0824286e-…; sha256 verified byte-identical to the repository copy. Openly published by the university; no licence restriction recorded.",
+    "file_url": "/papers/islamic-intuitionism-thesis.pdf"
+  },
+  {
+    "id": 20,
+    "title": "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts",
+    "category": "A",
+    "counted": true,
+    "publication_date": "2021-09",
+    "publisher_journal": "American Muslim Youth Academy (AMJA)",
+    "volume_issue": "Conference paper, 31 pp.",
+    "url": "https://www.amjaonline.org/wp-content/uploads/2021/09/Deconstructing-Contemporary-Atheist-Thought-al-Andalusi.pdf",
+    "pdf_url": null,
+    "wayback_url": "https://www.amjaonline.org/conference/the-challenge-of-atheism-among-muslim-youth",
+    "doi": null,
+    "co_authors": [],
+    "citation_count": null,
+    "sources": [
+      "AMJA"
+    ],
+    "type": "Conference Paper",
+    "status": "available",
+    "file": "deconstructing-contemporary-atheist-thought.pdf",
+    "file_source": "https://www.amjaonline.org/wp-content/uploads/2021/09/Deconstructing-Contemporary-Atheist-Thought-al-Andalusi.pdf",
+    "file_pages": 31,
+    "file_status": "held",
+    "note": "Full text held in this repository (31 pp.), publicly linked from the AMJA conference programme page. A commercial print edition exists and was not touched.",
+    "file_licence": "AMJA (amjaonline.org) conference paper, publicly linked from the conference programme page; open access, no licence restriction recorded.",
+    "file_url": "/papers/deconstructing-contemporary-atheist-thought.pdf"
+  }
+]

@@ -1,0 +1,347 @@
+{
+  "description": "Every academic text, conference proceeding and DOI the archive tracks, whether or not the full text was obtained. Restricted and dead items are listed so the gap is visible; they are NOT counted as held texts. Built from F5's staged evidence on 2026-09-27.",
+  "built": "2026-09-27",
+  "built_from": [
+    "_staging/secondary/papers.csv",
+    "_staging/secondary/dois.csv"
+  ],
+  "counts": {
+    "paper_rows": 24,
+    "of_which_conference_reports": 2,
+    "doi_rows": 5,
+    "total_records": 29,
+    "oa": 8,
+    "restricted": 15,
+    "dead": 1
+  },
+  "policy": [
+    "Yaqeen Institute papers are link-outs only; their PDFs are never downloaded (Global Constraint 4).",
+    "Academia.edu items return HTTP 403 behind a managed Cloudflare challenge; the challenge was not fought and no UA spoofing or credential was used.",
+    "Nothing in this file was obtained by circumventing a paywall, robots rule or access control.",
+    "REDACTION (2026-09-27, site owner's decision): the author's legal/real name is not published in this archive. Where an institutional record prints it in the author line, the name is replaced with '[real name withheld]', the row is flagged author_name_redacted, and a redaction_note says why. The citation itself is left factually intact - source_url, DOI and issuing institution are unchanged, so the reference still resolves at the institution that published it. See NOTICE.md."
+  ],
+  "papers": [
+    {
+      "title": "Islamic Intuitionism: The Case Against Atheistic Evidentialism",
+      "author_line": "Asadullah Ali [real name withheld]",
+      "author_name_redacted": true,
+      "redaction_note": "Real name withheld at the site owner's request; the source record is public at the issuing institution and source_url below is unchanged and still resolves. See NOTICE.md.",
+      "source_url": "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download",
+      "file": "_papers/pdfs/iium-thesis-islamic-intuitionism.pdf",
+      "staged_file": "_staging/secondary/papers/iium-thesis-islamic-intuitionism.pdf",
+      "pages": 24,
+      "status": "oa",
+      "kind": "paper",
+      "notes": "IIUM MA thesis (MPECI), June 2014. Open 24-page excerpt t11100324531AsadullahAli_SEC_24.pdf from the IIUM Student Repository; sha256 verified byte-identical to the prior-research temp file iium_thesis.pdf. NOTE: the temp file is NOT the litter-reduction paper - it is this thesis. Full 86-leaf thesis bitstream returns an HTML page, not a PDF (see the restricted row below)."
+    },
+    {
+      "title": "Gender Equality, Islam, and Law",
+      "author_line": "Raihanah Abdullah; Asadullah Ali; Siti Aminah Hamid",
+      "source_url": "https://www.totetu.org/assets/media/paper/j025_020.pdf",
+      "file": "_papers/pdfs/gender-equality-islam-and-law.pdf",
+      "staged_file": "_staging/secondary/papers/gender-equality-islam-and-law.pdf",
+      "pages": 17,
+      "status": "oa",
+      "kind": "paper",
+      "notes": "The Journal of Oriental Studies 25 (2015), pp. 20-36. Re-downloaded from the publisher-side open copy; sha256 byte-identical to the temp file, which confirms provenance. Also listed on Academia.edu as work 18640397."
+    },
+    {
+      "title": "Gender Equality, Islam, and Law (Japanese translation: ジェンダーの平等、イスラーム、法)",
+      "author_line": "ライハナ・アブドゥッラー / アサドゥッラー・アリー / サイト・アミナーハミード (trans. 柚洛正広)",
+      "source_url": "https://www.totetu.org/publication/jos-jp/gakujutukenkyu-175.html",
+      "file": "_papers/pdfs/gender-equality-islam-and-law-japanese.pdf",
+      "staged_file": "_staging/secondary/papers/gender-equality-islam-and-law-japanese.pdf",
+      "pages": 20,
+      "status": "oa",
+      "kind": "paper",
+      "notes": "「東洋学术研究」通巷175号（第54巻第2号，TOTETU / Institute for Oriental Philosophy, 2015. The issue page is the identified venue; the issue is a commercial out-of-print publication and no separate open PDF URL exists, so the PDF came from the prior-research temp pool."
+    },
+    {
+      "title": "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://web.archive.org/web/20241118015954id_/https://icrjournal.org/index.php/icr/article/download/333/319",
+      "file": "_papers/pdfs/the-rise-and-decline-of-scientific-productivity.pdf",
+      "staged_file": "_staging/secondary/papers/the-rise-and-decline-of-scientific-productivity.pdf",
+      "pages": 18,
+      "status": "oa",
+      "kind": "paper",
+      "notes": "ICR Journal 6(2):229-246, produced and distributed by IAIS Malaysia. icrjournal.org no longer resolves in DNS, so the copy was verified against the Internet Archive capture of the publisher PDF (original filename admin-ar-6.pdf); sha256 byte-identical to the temp file. Carries DOI 10.12816/0019168 (Kezana.ai, IsOpenAccess=false)."
+    },
+    {
+      "title": "Architects of Civilisation: Sallahuddin Ayubi",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/19782374/Architects_of_Civilisation_Sallahuddin_Ayubi",
+      "file": null,
+      "file_status": "withheld",
+      "staged_file": "_staging/secondary/papers/architects-of-civilisation-sallahuddin-ayubi.pdf",
+      "pages": 5,
+      "status": "oa",
+      "kind": "paper",
+      "notes": "IAIS Malaysia book chapter (5 pp.). THE PDF IS NOT PUBLISHED IN THIS ARCHIVE: the file came from the prior-research temp pool and its exact public URL is UNVERIFIED because the Academia listing is Cloudflare-blocked (see restrictions), so its provenance could not be confirmed to a standard this archive is willing to publish under. The citation is retained in full and the listing above still resolves. The held copy remains in the private staging area for re-checking. Third-party full-text mirrors exist and are recorded in secondary_sources.csv, but were not used as a source."
+    },
+    {
+      "title": "Between a Backbone and Ribs: An Analysis of Al-Quran 86:5-7",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://archive.org/download/between-a-backbone-and-ribs-asadullah/Between%20a%20Backbone%20and%20Ribs%20-%20Asadullah.pdf",
+      "file": "_papers/pdfs/between-a-backbone-and-ribs.pdf",
+      "staged_file": "_staging/secondary/papers/between-a-backbone-and-ribs.pdf",
+      "pages": 63,
+      "status": "oa",
+      "kind": "paper",
+      "notes": "Internet Archive copy (item between-a-backbone-and-ribs-asadullah), downloaded and verified in this lane. 63 pages."
+    },
+    {
+      "title": "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts",
+      "author_line": "Asadullah Ali al-Andalusi",
+      "source_url": "https://www.amjaonline.org/wp-content/uploads/2021/09/Deconstructing-Contemporary-Atheist-Thought-al-Andalusi.pdf",
+      "file": "_papers/pdfs/deconstructing-contemporary-atheist-thought.pdf",
+      "staged_file": "_staging/secondary/papers/deconstructing-contemporary-atheist-thought.pdf",
+      "pages": 31,
+      "status": "oa",
+      "kind": "paper",
+      "notes": "AMJA (amjaonline.org) conference paper, 31 pp. - matches the 31-page figure in the brief. Publicly linked from the conference programme page https://www.amjaonline.org/conference/the-challenge-of-atheism-among-muslim-youth. The first fetch was clipped by 8 bytes (no %PDF- header); the single permitted retry returned a complete, standards-conformant file, which is the copy kept here."
+    },
+    {
+      "title": "The Archetype of Beauty in Islam",
+      "author_line": "Asadullah Ali",
+      "source_url": "https://www.academia.edu/13215503/The_Archetype_of_Beauty_in_Islam",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used. No non-academia open copy was found; the full text circulates on academia.edu as related-item previews only."
+    },
+    {
+      "title": "Understanding Atheism (two-day lecture series)",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/20038012/Understanding_Atheism",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "Still Colonized? Liberalism in Muslim Thought",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/12984601/Still_Colonized_Liberalism_in_Muslim_Thought",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "Doubting your Doubts: Atheism Among Muslim Youth",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/37974208/Doubting_your_Doubts_Atheism_Among_Muslim_Youth",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "The Qur'an and Science: A Forced Marriage",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/37974238/The_Quran_and_Science_A_Forced_Marriage",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "Islam and Terrorism",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/30386585/Islam_and_Terrorism",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "Extremism in Muslim Thought",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/30386624/Extremism_in_Muslim_Thought",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/16767564/Sustaining_the_Malaysian_Environment_through_Litter_Reduction_A_Maqasidi_Approach",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "Understanding Aisha's Age: An Interdisciplinary Approach",
+      "author_line": "Asadullah Ali Al-Andalusi; Jonathan Brown (co-author)",
+      "source_url": "https://www.academia.edu/37974215/Understanding_Aishas_Age_An_Interdisciplinary_Approach",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED BY POLICY: Yaqeen Institute paper - Global Constraint 4 makes these link-outs only; the publisher PDF is never downloaded by this project. RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://www.academia.edu/32865802/The_Structure_of_Scientific_Productivity_in_Islamic_Civilization_Orientalists_Fables",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED BY POLICY: Yaqeen Institute paper - Global Constraint 4 makes these link-outs only; the publisher PDF is never downloaded by this project. RESTRICTED: independent.academia.edu and www.academia.edu both return HTTP 403 behind a managed Cloudflare JS challenge (cf_chl_opt / 'Just a moment...'). Per this lane's hard rule the challenge was NOT fought and no UA spoofing or credential was used."
+    },
+    {
+      "title": "Islamic intuitionism: the case against atheistic evidentialism (full 86-leaf thesis)",
+      "author_line": "Asadullah Ali [real name withheld]",
+      "author_name_redacted": true,
+      "redaction_note": "Real name withheld at the site owner's request; the source record is public at the issuing institution and source_url below is unchanged and still resolves. See NOTICE.md.",
+      "source_url": "https://studentrepo.iium.edu.my/bitstreams/f64566a4-bda7-43a4-81d9-ee0a194b4cb7/download",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED: the full-thesis bitstream returns HTTP 200 but the body is a 391 KB HTML viewer page (text/html), not a PDF. Only the 24-page SEC excerpt is openly downloadable. No access request or workaround was attempted."
+    },
+    {
+      "title": "International Conference on Developing Synergies between Islam and Science and Technology for Mankind's Benefit (Kuala Lumpur, 1-2 October 2014)",
+      "author_line": "IAIS Malaysia (conference proceedings; Asadullah Ali contributor)",
+      "source_url": "https://kezana.ai/Reader/Article/F63F7E5425580F4D6526C301FFDC0A65",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "conference_proceedings",
+      "notes": "DOI 10.12816/0009888 resolves to a Kezana.ai (Almanhal) reader page whose own metadata says IsOpenAccess=false and DisableDownload=false, i.e. the document is gated on that platform. No public PDF link is exposed. The ResearchGate copy listed in _data/papers.json also returns HTTP 403 (bot wall) - not circumvented."
+    },
+    {
+      "title": "International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance (IAIS Malaysia, 15-16 June 2015)",
+      "author_line": "IAIS Malaysia (conference proceedings; Asadullah Ali contributor)",
+      "source_url": "https://kezana.ai/Reader/Article/84847FB0F5F5394F38BA1B07D84EB87B",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "conference_proceedings",
+      "notes": "DOI 10.12816/0019212 resolves to a Kezana.ai reader page with IsOpenAccess=false; no public PDF link exposed."
+    },
+    {
+      "title": "Understanding Aisha's Age: An Interdisciplinary Approach (Yaqeen PDF)",
+      "author_line": "Asadullah Ali Al-Andalusi; Jonathan Brown",
+      "source_url": "https://yaqeeninstitute.org/read/paper/understanding-aishas-age-an-interdisciplinary-approach",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED BY POLICY: Yaqeen Institute paper - Global Constraint 4 makes these link-outs only; the publisher PDF is never downloaded by this project. DOI 10.65061/HDXB1161 (Hub DOI)."
+    },
+    {
+      "title": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables (Yaqeen PDF)",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://yaqeeninstitute.org/read/paper/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "restricted",
+      "kind": "paper",
+      "notes": "RESTRICTED BY POLICY: Yaqeen Institute paper - Global Constraint 4 makes these link-outs only; the publisher PDF is never downloaded by this project."
+    },
+    {
+      "title": "The Rise and Decline of Scientific Productivity in the Muslim World (DOI 10.52282/icr.v6i2.333)",
+      "author_line": "Asadullah Ali Al-Andalusi",
+      "source_url": "https://doi.org/10.52282/icr.v6i2.333",
+      "file": null,
+      "staged_file": null,
+      "pages": null,
+      "status": "dead",
+      "kind": "paper",
+      "notes": "DEAD DOI: doi.org redirects to icrjournal.org, whose hostname no longer resolves (DNS failure). The article itself is not lost - the same paper is registered as 10.12816/0019168 and its PDF is in this lane."
+    },
+    {
+      "title": "Apostasy: Beyond the Rhetoric",
+      "author_line": "Asadullah Ali Al-Andalusi (IDI byline 'Guest')",
+      "source_url": "https://www.islamicdiscourseinitiative.com/apologetics/apostasy-beyond-the-rhetoric/",
+      "file": null,
+      "staged_file": "_staging/secondary/idi_apostasy.txt",
+      "pages": null,
+      "status": "oa",
+      "kind": "authored_article",
+      "notes": "NOT A PAPER - an authored article. Full text captured (2,272 words, social-share and related-post boilerplate trimmed) in idi_apostasy.txt / idi_apostasy.json. Per SDD ledger ruling R4 the integrator files this as a Category-A WORK, not as a paper, so it must not be counted in papers 18->23. Published 2018-05-22 by the Islamic Discourse Initiative."
+    }
+  ],
+  "conference_reports": [
+    {
+      "title": "International Conference on Developing Synergies between Islam and Science and Technology for Mankind's Benefit (Kuala Lumpur, 1-2 October 2014)",
+      "source_url": "https://kezana.ai/Reader/Article/F63F7E5425580F4D6526C301FFDC0A65",
+      "doi": "10.12816/0009888",
+      "status": "restricted",
+      "notes": "DOI 10.12816/0009888 resolves to a Kezana.ai (Almanhal) reader page whose own metadata says IsOpenAccess=false and DisableDownload=false, i.e. the document is gated on that platform. No public PDF link is exposed. The ResearchGate copy listed in _data/papers.json also returns HTTP 403 (bot wall) - not circumvented."
+    },
+    {
+      "title": "International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance (IAIS Malaysia, 15-16 June 2015)",
+      "source_url": "https://kezana.ai/Reader/Article/84847FB0F5F5394F38BA1B07D84EB87B",
+      "doi": "10.12816/0019212",
+      "status": "restricted",
+      "notes": "DOI 10.12816/0019212 resolves to a Kezana.ai reader page with IsOpenAccess=false; no public PDF link exposed."
+    }
+  ],
+  "dois": [
+    {
+      "doi": "10.12816/0019168",
+      "landing_url": "https://kezana.ai/Reader/Article/69F08D432E9145F5FDD8ECE5ECAC7726",
+      "status": "restricted",
+      "file": null,
+      "notes": "IAIS Malaysia via Kezana.ai. Platform metadata IsOpenAccess=false. The same article's PDF IS in the lane as the-rise-and-decline-of-scientific-productivity.pdf, obtained from the Internet Archive capture of the ICR Journal PDF (DOI 10.52282/icr.v6i2.333 is dead)."
+    },
+    {
+      "doi": "10.12816/0019212",
+      "landing_url": "https://kezana.ai/Reader/Article/84847FB0F5F5394F38BA1B07D84EB87B",
+      "status": "restricted",
+      "file": null,
+      "notes": "IAIS Malaysia Maqasid conference proceedings via Kezana.ai. IsOpenAccess=false."
+    },
+    {
+      "doi": "10.12816/0009888",
+      "landing_url": "https://kezana.ai/Reader/Article/F63F7E5425580F4D6526C301FFDC0A65",
+      "status": "restricted",
+      "file": null,
+      "notes": "IAIS Malaysia 2014 Synergies conference proceedings via Kezana.ai. IsOpenAccess=false. The ResearchGate copy in _data/papers.json returns HTTP 403 (bot wall)."
+    },
+    {
+      "doi": "10.52282/icr.v6i2.333",
+      "landing_url": null,
+      "status": "dead",
+      "file": null,
+      "notes": "doi.org redirects to icrjournal.org, whose hostname no longer resolves (DNS failure). No landing URL reachable. Content recovered under 10.12816/0019168 instead."
+    },
+    {
+      "doi": "10.65061/HDXB1161",
+      "landing_url": "https://yaqeeninstitute.org/read/paper/understanding-aishas-age-an-interdisciplinary-approach",
+      "status": "restricted",
+      "file": null,
+      "notes": "Yaqeen Institute (Hub DOI). Landing page is public, but the paper PDF is a link-out only by Global Constraint 4 and was deliberately not downloaded."
+    }
+  ]
+}

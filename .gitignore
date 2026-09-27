@@ -1,0 +1,70 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+node_modules/
+scripts/__pycache__/
+__pycache__/
+*.pyc
+.env
+_staging/
+.ua/
+
+# --- The redaction list itself (2026-09-27) ---------------------------------
+# scripts/build_collections.py must redact a withheld identifier at document-
+# build time, and it must NOT name it: this repository is published, so a name
+# written as a literal in a tracked script is published, and the redaction
+# defeats itself. The identifier is held here instead, in a file that is never
+# tracked. `git rm --cached .redaction.local.json` if it is ever added by
+# mistake; there is no substitute for it in the tree.
+#
+# Shape:
+#   { "names": ["<identifier to withhold>", ...],
+#     "marker": "<the visible marker substituted in its place>" }
+#
+# If this file is absent the build still succeeds - a public clone has no
+# capture files either and must not be broken by this - but NOTHING is redacted
+# and build_collections.py prints a loud warning naming this path. It is not
+# obfuscated, encoded or split anywhere in the tree; there is no copy to find.
+.redaction.local.json
+
+# --- Publication redaction (P1, 2026-09-27) ---------------------------------
+# Two categories of material are kept out of the PUBLISHED repository. Both are
+# withheld, not edited: the bytes are evidence, so the working tree keeps them
+# and only the git index drops them. The controller applies
+# `git rm --cached <path>` for each; see the per-file notes below before
+# removing anything from disk as well.
+#
+# 1. Three raw WebVTT caption captures of his own conversion-story video. They
+#    contain his BIRTH NAME. Verbatim source evidence, so they are untracked
+#    rather than redacted. The reader-facing text built from them is served
+#    under /_transcripts/.
+#
+#    PER-FILE, because they are NOT interchangeable and all three are
+#    load-bearing. Corrected 2026-09-27: the first rule below named
+#    cap-7KBCENktOUU, which is not a file that exists, so the capture that
+#    actually holds the birth name was not ignored and would have been
+#    published by `git add -A`. The real name is cap-7KBCENktOOU.
+#      cap-7KBCENktOOU  - REQUIRED ON DISK. Named by the coverage row for video
+#                         7KBCENktOOU (15,048 lines).
+#      cap-D2t0idkAqjA  - REQUIRED ON DISK. Named by that row's `alternates`,
+#                         re-parented onto 7KBCENktOOU; the page published at
+#                         /transcripts/D2t0idkAqjA-duplicate-upload/ is built
+#                         from it.
+#      cap-G47Stp3pLss  - REQUIRED ON DISK. The only capture named by the
+#                         coverage row for video G47Stp3pLss.
+#    scripts/test_transcripts.py re-derives all 68 published transcripts from
+#    the capture files the coverage data names, so `git rm --cached` is correct
+#    for all three and DELETING any of them from disk is not: it breaks the
+#    suite and orphans a served page.
+#    Do NOT blanket-ignore .firecrawl/ - 26 further captures and 39 whisper
+#    JSONs in that directory are named by the coverage file and are load-bearing.
+.firecrawl/transcripts/cap-7KBCENktOOU.en-orig.vtt
+.firecrawl/transcripts/cap-D2t0idkAqjA.en-orig.vtt
+.firecrawl/transcripts/cap-G47Stp3pLss.en-orig.vtt
+#
+# 2. One held PDF whose provenance could not be verified against any public
+#    source URL, so the archive declines to publish it. Already removed from the
+#    served tree and from its _data row; this rule only stops it being re-added.
+_papers/pdfs/architects-of-civilisation-sallahuddin-ayubi.pdf
+

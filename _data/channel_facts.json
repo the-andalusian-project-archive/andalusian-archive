@@ -1,0 +1,775 @@
+{
+  "purpose": "Capture-dated facts about the Andalusian Project YouTube channel and the re-uploads that stand in for it. Every row is a Wayback capture that F6 (task 6) already had on disk; no network request was made for this file. Interpretations are held to what a capture can show: a capture records a channel's state, never its operator.",
+  "channel": {
+    "display_name": "The Andalusian Project",
+    "uc_id": "UCqYAQa28E9Fbsak6zM4hA3w",
+    "uc_id_status": "historical identifier, and a stable one. The videos were removed from the channel around October 2022; the same channel id was re-populated with 84 items by May 2023; those items were gone again by August 2025; and the 2025-08-20 and 2026-08-19 captures plus the controller's 2026-09-27 live check all show the page unavailable with no videos.",
+    "do_not_link_uc_id": true,
+    "do_not_link_reason": "two reasons, neither of which requires knowing who controlled the account. (1) The live page is unavailable - the 2026-09-27 live check returned 'This channel is not available.' - and the 2025-08-20 and 2026-08-19 captures show 0 videos, so a link leads a reader nowhere. (2) The 2023 contents are of undetermined authorship, so linking the id would present unverified uploads as his. The id is recorded here as provenance only.",
+    "earliest_capture_on_disk": "20150629083148",
+    "current_state": "unavailable (terminal as of the 2026-09-27 live check)"
+  },
+  "do_not_link": [
+    {
+      "handle": "@andalusianproject6093",
+      "appears_in_captures": [
+        "20230315030306",
+        "20230527152139",
+        "20230527152331",
+        "20230527152800",
+        "20230527153138",
+        "20230527153742",
+        "20230729235946",
+        "20230730000122",
+        "20250820022244",
+        "20250820045553",
+        "20260819144248"
+      ],
+      "authorship": "undetermined",
+      "is_his": null,
+      "is_his_meaning": "unknown - deliberately not asserted in either direction",
+      "marker": "DO NOT LINK - never link this handle",
+      "why_do_not_link": "the handle is attached to a channel that shows 0 videos and has reported itself unavailable since the 2025-08-20 capture, and the 84 items visible in the 2023 captures cannot be attributed to Asadullah Ali from the captures alone. The handle is withheld on those two grounds; it is NOT withheld because ownership has been established against him.",
+      "provable_timeline": "the /channel/UCqYAQa28E9Fbsak6zM4hA3w captures from 2015-06-29 to 2022-03-20 all carry rel=canonical = that same id; the videos were removed around October 2022; the 2023-05-27 /about capture shows the same id re-populated with 84 videos and 15.4K subscribers under the handle @andalusianproject6093; the 2025-08-20 and 2026-08-19 captures show 0 videos; the 2026-09-27 live check reports the channel unavailable.",
+      "not_established": "who controlled the account in 2023 - Asadullah Ali himself, or a third party with access to it. The captures cannot settle this, so no claim is made either way."
+    }
+  ],
+  "account_control": {
+    "statement": "YouTube does not transfer a channel (UC) id between accounts, so whatever was uploaded to UCqYAQa28E9Fbsak6zM4hA3w in 2023 was uploaded through the same account that held the channel before October 2022.",
+    "what_the_2023_items_are_consistent_with": "a re-upload or a return of material to the existing account. The 84 videos in the 2023-05-27 /about capture are consistent with that; the captures are also consistent with material he had not previously published, so consistency is not confirmation.",
+    "what_cannot_be_determined_from_captures": "who operated that account in 2023. A capture shows the account's state, not its operator. This file therefore makes no claim about who held the account in 2023, in either direction.",
+    "evidence": "_staging/videos/discovery/mirror_pages/ap6093_about_20230527.raw (342,946 bytes), capture 20230527152331, 2023-05-27 /about: rel=canonical and canonicalBaseUrl resolve to the channel's own /channel/UCqYAQa28E9Fbsak6zM4hA3w path and to the handle @andalusianproject6093 respectively; videosCountText = '84 videos'; subscriberCountText = '15.4K subscribers'. The canonical is recorded as text, never as a link - see channel.do_not_link_uc_id."
+  },
+  "timeline": [
+    {
+      "date": "2015-06-29",
+      "capture": "20150629083148",
+      "page": "channel root",
+      "subscribers": "190",
+      "videos_on_page": 9,
+      "evidence": "yt-subscription-button ... data-channel-external-id=\"UCqYAQa28E9Fbsak6zM4hA3w\" ... aria-label=\"190 subscribers\"; og:title 'Asadullah Ali al-Andalusi'",
+      "note": "earliest capture on disk",
+      "source_file": "_staging/videos/discovery/pages/20150629083148.raw",
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    },
+    {
+      "date": "2018-05-24",
+      "capture": "20180524110846",
+      "page": "channel root (?app=desktop)",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w?app=desktop",
+      "subscribers": "2,526",
+      "videos_on_page": null,
+      "evidence": "own subscription button: yt-subscription-button-subscriber-count-branded-horizontal subscribed ... title=\"2,526\" aria-label=\"2,526 subscribers\", on the button whose data-channel-external-id is UCqYAQa28E9Fbsak6zM4hA3w; rel=canonical = the same /channel/UCqYAQa28E9Fbsak6zM4hA3w path (the href is quoted in prose, never emitted as a link - see do_not_link_rule)",
+      "note": "head+body capture; 11 further subscription buttons in the same page carry other channels' counts and are not this channel's",
+      "source_file": "_staging/videos/discovery/pages/20180524110846.raw",
+      "source_bytes": 404262,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2018-08-22",
+      "capture": "20180822164640",
+      "page": "/playlists?disable_polymer=1&spf=navigate",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/playlists?disable_polymer=1&spf=navigate",
+      "subscribers": "3,130",
+      "videos_on_page": null,
+      "evidence": "own subscription button ... title=\"3,130\" aria-label=\"3,130 subscribers\"; the capture record's url field is the channel's own /playlists path",
+      "note": "head-only Wayback capture (no archived body), so no video count can be read; the archived head carries no rel=canonical tag, but the recorded url and data-channel-external-id both carry the channel id",
+      "source_file": "_staging/videos/discovery/pages/20180822164640.raw",
+      "source_bytes": 144903,
+      "canonical_in_capture": "absent from the archived head (see identity_continuity.canonical_link)"
+    },
+    {
+      "date": "2018-08-22",
+      "capture": "20180822164710",
+      "page": "channel root (?spf=navigate-back)",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w?spf=navigate-back",
+      "subscribers": "3,130",
+      "videos_on_page": null,
+      "evidence": "own subscription button ... title=\"3,130\" aria-label=\"3,130 subscribers\"; 30 seconds after the /playlists capture, same count",
+      "note": "head-only capture (no archived body); no rel=canonical tag in the archived head",
+      "source_file": "_staging/videos/discovery/pages/20180822164710.raw",
+      "source_bytes": 473027,
+      "canonical_in_capture": "absent from the archived head (see identity_continuity.canonical_link)"
+    },
+    {
+      "date": "2019-03-21",
+      "capture": "20190321101143",
+      "page": "/videos?disable_polymer=1&spf=navigate",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/videos?disable_polymer=1&spf=navigate",
+      "subscribers": "5,559",
+      "videos_on_page": null,
+      "evidence": "own subscription button ... title=\"5,559\" aria-label=\"5,559 subscribers\"",
+      "note": "head-only capture (no archived body); no rel=canonical tag in the archived head",
+      "source_file": "_staging/videos/discovery/pages/20190321101143.raw",
+      "source_bytes": 286072,
+      "canonical_in_capture": "absent from the archived head (see identity_continuity.canonical_link)"
+    },
+    {
+      "date": "2019-10-30",
+      "capture": "20191030013134",
+      "page": "/videos",
+      "subscribers": "6.97K",
+      "videos_on_page": null,
+      "evidence": "own c4TabbedHeaderRenderer subscriberCountText",
+      "note": "added 2026-09-27 (task 8b): the same capture holds 30 distinct videoIds, so the row evidences 30 uploads on the /videos tab on that date",
+      "source_file": "_staging/videos/discovery/pages/20191030013134.raw",
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    },
+    {
+      "date": "2020-10-07",
+      "capture": "20201007152551",
+      "page": "channel root (?disable_polymer=1)",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w?disable_polymer=1",
+      "subscribers": "11.2K",
+      "videos_on_page": null,
+      "evidence": "own subscription button ... title=\"11.2K\" aria-label=\"11.2K subscribers\"; rel=canonical = the same /channel/<UC id>",
+      "source_file": "_staging/videos/discovery/pages/20201007152551.raw",
+      "source_bytes": 393452,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2020-10-07",
+      "capture": "20201007152600",
+      "page": "/channels?disable_polymer=1",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/channels?disable_polymer=1",
+      "subscribers": null,
+      "videos_on_page": null,
+      "evidence": "Wayback returned 0 bytes for this capture (no payload on disk); no evidence either way",
+      "note": "recorded so the gap is not mistaken for a data loss",
+      "source_file": "_staging/videos/discovery/pages/20201007152600.raw (0 bytes - capture not retrievable)",
+      "source_bytes": 0
+    },
+    {
+      "date": "2020-10-07",
+      "capture": "20201007152603",
+      "page": "/playlists",
+      "subscribers": "11.2K",
+      "videos_on_page": 7,
+      "evidence": "single subscriber token in the capture; 7 watch ids (one per playlist lockup)",
+      "note": "7 playlists named here: Responses, iJihad Season 1, iKhalifa, Lectures, Vlogs, Understanding Jihad w/ Robert Spencer, Discussions",
+      "source_file": "_staging/videos/discovery/pages/20201007152603.raw",
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    },
+    {
+      "date": "2020-10-07",
+      "capture": "20201007152606",
+      "page": "/channels?view=60&disable_polymer=1",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/channels?view=60&disable_polymer=1",
+      "subscribers": "11.2K",
+      "videos_on_page": 0,
+      "evidence": "own subscription button ... title=\"11.2K\" aria-label=\"11.2K subscribers\"; 10 further subscription buttons carry other channels' counts (310K, 251K, 247K, 78.5K, 29.8K, 22.6K, 21.7K, 9.32K, 4.8K, 1.89K)",
+      "note": "the /channels tab lists related channels, not uploads, so 0 video ids in the capture is expected and is not a removal",
+      "source_file": "_staging/videos/discovery/pages/20201007152606.raw",
+      "source_bytes": 144959,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2020-10-07",
+      "capture": "20201007152609",
+      "page": "/playlists?view=1&disable_polymer=1",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/playlists?view=1&disable_polymer=1",
+      "subscribers": "11.2K",
+      "videos_on_page": null,
+      "evidence": "own subscription button ... title=\"11.2K\" aria-label=\"11.2K subscribers\"",
+      "source_file": "_staging/videos/discovery/pages/20201007152609.raw",
+      "source_bytes": 132987,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2020-10-11",
+      "capture": "20201011145042",
+      "page": "channel root (?spf=navigate)",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w?spf=navigate",
+      "subscribers": "11.3K",
+      "videos_on_page": null,
+      "evidence": "own subscription button ... title=\"11.3K\" aria-label=\"11.3K subscribers\"",
+      "note": "head-only capture (no archived body); no rel=canonical tag in the archived head",
+      "source_file": "_staging/videos/discovery/pages/20201011145042.raw",
+      "source_bytes": 393227,
+      "canonical_in_capture": "absent from the archived head (see identity_continuity.canonical_link)"
+    },
+    {
+      "date": "2020-11-11",
+      "capture": "20201111194329",
+      "page": "/community",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/community",
+      "subscribers": "11.5K",
+      "videos_on_page": null,
+      "evidence": "own c4TabbedHeaderRenderer (channelId UCqYAQa28E9Fbsak6zM4hA3w) subscriberCountText '11.5K subscribers'; rel=canonical = the same /channel/<UC id>",
+      "note": "the same page carries other channels' counts in its sidebar (329K, 253K, 254K, 79K, 31K, 22K, 21K, 9.3K, 4.8K, 1.9K) - see rejected_claims for the 329K reading",
+      "source_file": "_staging/videos/discovery/pages/20201111194329.raw",
+      "source_bytes": 241925,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2021-07-14",
+      "capture": "20210714184105",
+      "page": "/community (a single post)",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/community?lb=UgzPHGRFwoKP_VHgBgF4AaABCQ",
+      "subscribers": null,
+      "videos_on_page": 0,
+      "evidence": "rel=canonical = the same /channel/<UC id>; og:title 'Andalusian Project'; no subscriber token anywhere in the payload",
+      "note": "recorded so the gap is not mistaken for a data loss: the /community tab does not carry the subscriber badge, so this capture evidences continuity of the id, not a subscriber count",
+      "source_file": "_staging/videos/discovery/pages/20210714184105.raw",
+      "source_bytes": 199771,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2021-09-04",
+      "capture": "20210904223751",
+      "page": "/featured?app=desktop",
+      "subscribers": "14.4K",
+      "videos_on_page": 59,
+      "evidence": "own c4TabbedHeaderRenderer (channelId UCqYAQa28E9Fbsak6zM4hA3w) subscriberCountText",
+      "note": "the 585K / 1,245-videos pair in this capture belongs to a recommended channel in the sidebar (navigationEndpoint /channel/UC3vHW2h22WE-pNi5WJtRIjg), NOT to the Andalusian Project - see rejected_claims",
+      "source_file": "_staging/videos/discovery/pages/20210904223751.raw",
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    },
+    {
+      "date": "2022-03-20",
+      "capture": "20220320030541",
+      "page": "/about",
+      "subscribers": "15.7K",
+      "videos_on_page": null,
+      "evidence": "own c4TabbedHeaderRenderer subscriberCountText",
+      "note": "last capture with the /channel/<UC id> URL as canonical base",
+      "source_file": "_staging/videos/discovery/pages/20220320030541.raw",
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    },
+    {
+      "date": "2022-10-03",
+      "capture": "20221003041455",
+      "page": "/channels",
+      "subscribers": null,
+      "videos_on_page": 0,
+      "evidence": "page body: 'This channel is not available.'",
+      "note": "videos removed from the channel around October 2022; 0 watch ids in the capture and the page body reports the channel as unavailable",
+      "source_file": "_staging/videos/discovery/mirror_pages/own_channels_20221003.raw",
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    },
+    {
+      "date": "2022-10-05",
+      "capture": "20221005204852",
+      "page": "/featured?pbj=1",
+      "subscribers": null,
+      "videos_on_page": null,
+      "evidence": "capture is 21 bytes (empty); no evidence either way",
+      "note": "recorded so the gap is not mistaken for a data loss",
+      "source_file": "_staging/videos/discovery/pages/20221005204852.raw",
+      "source_bytes": 21,
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    },
+    {
+      "date": "2023-03-15",
+      "capture": "20230315030306",
+      "page": "channel root under @andalusianproject6093",
+      "original_path": "/@andalusianproject6093",
+      "wayback_url": "https://web.archive.org/web/20230315030306id_/https://www.youtube.com/@andalusianproject6093",
+      "subscribers": "15.5K",
+      "videos": 81,
+      "videos_on_page": 35,
+      "evidence": "own c4TabbedHeaderRenderer (channelId UCqYAQa28E9Fbsak6zM4hA3w, title 'Andalusian Project'): videosCountText '81 videos', subscriberCountText '15.5K subscribers', navigationEndpoint canonicalBaseUrl '/@andalusianproject6093'; 35 distinct videoIds on the page; rel=canonical = the same /channel/<UC id>",
+      "note": "the earliest 2023 evidence in the archive: the same channel id was already re-populated (81 items) under the new handle two months before the 2023-05-27 /about capture. 95 video ids were harvested from the 2023 captures in total, all dead by 2026. Who operated the account in 2023 is not determinable from captures - see account_control.",
+      "source_file": "_staging/videos/discovery/mirror_pages/own_root_20230315.raw",
+      "source_bytes": 607943,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2023-05-27",
+      "capture": "20230527152139",
+      "page": "/videos under @andalusianproject6093",
+      "subscribers": "15.4K",
+      "videos_on_page": 30,
+      "evidence": "30 distinct videoIds in the capture",
+      "source_file": "_staging/videos/discovery/mirror_pages/ap6093_videos_20230527.raw",
+      "wayback_url": "https://web.archive.org/web/20230527152139id_/https://www.youtube.com/@andalusianproject6093/videos"
+    },
+    {
+      "date": "2023-05-27",
+      "capture": "20230527152331",
+      "page": "/about under @andalusianproject6093",
+      "subscribers": "15.4K",
+      "videos": 84,
+      "evidence": "own c4TabbedHeaderRenderer (channelId UCqYAQa28E9Fbsak6zM4hA3w): videosCountText '84 videos', subscriberCountText '15.4K subscribers'; rel=canonical and canonicalBaseUrl resolve to the channel's own /channel/UCqYAQa28E9Fbsak6zM4hA3w path and to the handle @andalusianproject6093 respectively. Source: the 20230527152331 capture (342,946 bytes).",
+      "note": "the 84 items were uploaded through the same account that held the channel before October 2022 (a UC id is not transferable between accounts); who operated that account in 2023 is not determinable from captures - see account_control. This is also the window F6 harvested: 95 video ids from the 2023 captures, all dead by 2026.",
+      "source_file": "_staging/videos/discovery/mirror_pages/ap6093_about_20230527.raw",
+      "source_bytes": 342946,
+      "wayback_url": "https://web.archive.org/web/20230527152331id_/https://www.youtube.com/@andalusianproject6093/about"
+    },
+    {
+      "date": "2023-07-29",
+      "capture": "20230729235946",
+      "page": "/videos under @andalusianproject6093",
+      "original_path": "/@andalusianproject6093/videos",
+      "wayback_url": "https://web.archive.org/web/20230729235946id_/https://www.youtube.com/@andalusianproject6093/videos",
+      "subscribers": "15.4K",
+      "videos": 85,
+      "videos_on_page": 30,
+      "evidence": "own c4TabbedHeaderRenderer videosCountText '85 videos' + subscriberCountText '15.4K subscribers'; 30 distinct videoIds on the page",
+      "source_file": "_staging/videos/discovery/mirror_pages/ap6093_videos_20230729.raw",
+      "source_bytes": 585353,
+      "canonical_in_capture": "present"
+    },
+    {
+      "date": "2023-07-30",
+      "capture": "20230730000122",
+      "page": "/about under @andalusianproject6093",
+      "subscribers": "15.4K",
+      "videos": 85,
+      "evidence": "own c4TabbedHeaderRenderer videosCountText '85 videos' + 15.4K subscribers",
+      "source_file": "_staging/videos/discovery/mirror_pages/own_about_20230730.raw",
+      "note": "same account, 85 items two months later; operator in 2023 still not determinable from captures",
+      "wayback_url": "https://web.archive.org/web/20230730000122id_/https://www.youtube.com/@andalusianproject6093/about"
+    },
+    {
+      "date": "2025-08-20",
+      "capture": "20250820022244",
+      "page": "channel root under @andalusianproject6093",
+      "subscribers": null,
+      "videos_on_page": 0,
+      "evidence": "page body: 'This channel is not available.'; 0 watch ids",
+      "note": "0 videos in the capture; the page body reports the channel as unavailable",
+      "source_file": "_staging/videos/discovery/mirror_pages/own_root_20250820.raw",
+      "wayback_url": "https://web.archive.org/web/20250820022244id_/https://www.youtube.com/@andalusianproject6093"
+    },
+    {
+      "date": "2025-08-20",
+      "capture": "20250820045553",
+      "page": "/videos under the channel id (second capture of the day)",
+      "original_path": "/channel/UCqYAQa28E9Fbsak6zM4hA3w/videos?disable_polymer=1",
+      "subscribers": null,
+      "videos_on_page": 0,
+      "evidence": "page body: alertRenderer type=ERROR 'This channel is not available.'; 0 video ids; the header block still carries channelId UCqYAQa28E9Fbsak6zM4hA3w",
+      "note": "same day as the 20250820022244 handle capture, and the same verdict - the channel was already unavailable",
+      "source_file": "_staging/videos/discovery/mirror_pages/own_videos2025_20250820.raw",
+      "source_bytes": 663286
+    },
+    {
+      "date": "2026-08-19",
+      "capture": "20260819144248",
+      "page": "/featured/featured",
+      "subscribers": null,
+      "videos_on_page": 0,
+      "evidence": "page body: 'This channel is not available.'; 0 watch ids",
+      "source_file": "_staging/videos/discovery/mirror_pages/own_featured_20260819.raw",
+      "note": "0 videos in the capture; the page body reports the channel as unavailable",
+      "original_path": "(archived under the channel's own /channel/<UC id> path - see _staging/videos/manifest.json, deleted after the final phase)"
+    }
+  ],
+  "live_check": {
+    "date": "2026-09-27",
+    "result": "This channel is not available.",
+    "how": "controller live check recorded in the SDD ledger (progress.md, Checkpoint 1): YouTube served alertRenderer type=ERROR with the text above",
+    "fetched_by": "controller",
+    "note": "I2 made no network request; this row restates the ledger's recorded result"
+  },
+  "rejected_claims": [
+    {
+      "claim": "585K subscribers (and 1,245 videos) on 2021-09-04",
+      "verdict": "REJECTED - belongs to another channel",
+      "evidence": "in capture 20210904223751 the block carrying videoCountText '1,245 videos' + subscriberCountText '585K subscribers' is a sidebar recommendation whose navigationEndpoint points at /channel/UC3vHW2h22WE-pNi5WJtRIjg. The channel's own c4TabbedHeaderRenderer in the same capture says 14.4K subscribers, and the own-header counts run 190 (2015) -> 6.97K (2019) -> 11.2K (2020) -> 14.4K (2021) -> 15.7K (2022), which a 585K reading would make impossible.",
+      "recorded_from": "task 7 brief item 6 and task-6 report section 3a"
+    },
+    {
+      "claim": "the channel was 'deleted' in October 2022",
+      "verdict": "REFINED - videos removed / channel reported unavailable in Oct 2022; the same channel id was re-populated with 84 videos by May 2023 under a new handle, with the operator unknown",
+      "evidence": "the 2022-10-03 capture says 'This channel is not available.' and the 2022-10-05 capture is empty (21 bytes), so the videos were gone by October 2022; the 2023-05-27 /about capture (20230527152331, 342,946 bytes) then serves the same UC id under @andalusianproject6093 with 84 videos and 15.4K subscribers. A UC id is not transferable between accounts, so the 2023 uploads went through the original account; the captures do not show who was operating it.",
+      "recorded_from": "task 6 report section 1"
+    },
+    {
+      "claim": "329K subscribers (on the 2020-11-11 capture)",
+      "verdict": "REJECTED - belongs to another channel, in a suggested-channel widget",
+      "evidence": "in capture 20201111194329 the block carrying videoCountText '887 videos' + subscriberCountText '329K' has browseEndpoint browseId 'UC3vHW2h22WE-pNi5WJtRIjg' - the same other channel as the 585K reading. The channel's own c4TabbedHeaderRenderer in that same capture says 11.5K subscribers.",
+      "recorded_from": "verified 2026-09-27 against the 2020-11-11 capture (20201111194329)"
+    },
+    {
+      "claim": "1.01 million subscribers (on the 2023-03-15 capture)",
+      "verdict": "REJECTED - belongs to another channel",
+      "evidence": "capture 20230315030306 (own root page, 2023-03-15) prints '1.01 million subscribers' among 12 different subscriber counts on the page. The channel's own c4TabbedHeaderRenderer says 15.5K. This is the same failure mode as 585K and 329K: a neighbouring channel's number read off the same page.",
+      "recorded_from": "verified 2026-09-27 against the 2023-03-15 capture (20230315030306)"
+    },
+    {
+      "claim": "the 2023 uploads are his (or are not his)",
+      "verdict": "NOT DETERMINABLE - no claim is made in either direction",
+      "evidence": "a UC id is not transferable between accounts, so the 2023 items were uploaded through the account that held the channel before October 2022. A Wayback capture records an account's state, not its operator, so the captures cannot show whether he or a third party with access was operating it. See account_control and do_not_link[0].is_his (null).",
+      "recorded_from": "ledger ruling R19 (review round), reaffirmed 2026-09-27"
+    }
+  ],
+  "subscriber_series": [
+    {
+      "capture": "20150629083148",
+      "date": "2015-06-29",
+      "subscribers": 190
+    },
+    {
+      "capture": "20180524110846",
+      "date": "2018-05-24",
+      "subscribers": 2526
+    },
+    {
+      "capture": "20180822164640",
+      "date": "2018-08-22",
+      "subscribers": 3130
+    },
+    {
+      "capture": "20180822164710",
+      "date": "2018-08-22",
+      "subscribers": 3130
+    },
+    {
+      "capture": "20190321101143",
+      "date": "2019-03-21",
+      "subscribers": 5559
+    },
+    {
+      "capture": "20191030013134",
+      "date": "2019-10-30",
+      "subscribers": 6970
+    },
+    {
+      "capture": "20201007152551",
+      "date": "2020-10-07",
+      "subscribers": 11200
+    },
+    {
+      "capture": "20201007152603",
+      "date": "2020-10-07",
+      "subscribers": 11200
+    },
+    {
+      "capture": "20201007152606",
+      "date": "2020-10-07",
+      "subscribers": 11200
+    },
+    {
+      "capture": "20201007152609",
+      "date": "2020-10-07",
+      "subscribers": 11200
+    },
+    {
+      "capture": "20201011145042",
+      "date": "2020-10-11",
+      "subscribers": 11300
+    },
+    {
+      "capture": "20201111194329",
+      "date": "2020-11-11",
+      "subscribers": 11500
+    },
+    {
+      "capture": "20210904223751",
+      "date": "2021-09-04",
+      "subscribers": 14400
+    },
+    {
+      "capture": "20220320030541",
+      "date": "2022-03-20",
+      "subscribers": 15700
+    },
+    {
+      "capture": "20230315030306",
+      "date": "2023-03-15",
+      "subscribers": 15500
+    },
+    {
+      "capture": "20230527152331",
+      "date": "2023-05-27",
+      "subscribers": 15400
+    },
+    {
+      "capture": "20230729235946",
+      "date": "2023-07-29",
+      "subscribers": 15400
+    },
+    {
+      "capture": "20230730000122",
+      "date": "2023-07-30",
+      "subscribers": 15400
+    }
+  ],
+  "preservation": {
+    "archive_org_collection": "andalusian-project",
+    "archive_org_entries": 56,
+    "mirrors_attached_as_mirror_urls": 36,
+    "catalogue_only_live_entries": 12,
+    "note": "the channel page is gone or unavailable; the archive is the preservation. Mirror URLs are attached to the entry they duplicate (constraint 5) and are never counted as separate works. Counts here are read from _data/videos.json at the time this file was written (56 archive.org entries, 36 attached mirror URLs, 12 catalogue-only live entries). The do-not-link rule above is link hygiene, not a claim about ownership: the archive stands on those files, not on who controlled the account in 2023.",
+    "transcript_baseline": 56,
+    "catalogue_only_with_transcripts_zero": 12,
+    "superseded_duplicate_rows_preserved": 12,
+    "entries_carrying_mirror_urls": 30,
+    "standing_reupload_channels": 11,
+    "see_also": "preservation_record (the page-facing statement of the same counts, read 2026-09-27) and standing_reuploads"
+  },
+  "identity_continuity": {
+    "statement": "The channel id UCqYAQa28E9Fbsak6zM4hA3w is the same id in every capture on disk, from 2015-06-29 to 2026-08-19. Nothing in the captures shows it being replaced, and YouTube does not transfer a channel (UC) id between accounts, so no account swap can hide behind it.",
+    "how_the_continuity_is_evidenced": [
+      "captures 2015-06-29, 2018-05-24, 2019-10-30, 2020-10-07 (x4), 2020-11-11, 2021-07-14, 2021-09-04 and 2022-03-20 carry a rel=canonical link whose href is the channel's own /channel/UCqYAQa28E9Fbsak6zM4hA3w path - 11 of the 14 non-empty page captures (the archived path is recorded as text so no live channel URL is emitted)",
+      "the 2023 captures carry the same rel=canonical while the channel header's canonicalBaseUrl is the handle /@andalusianproject6093 - the handle changed, the id did not",
+      "the 2025-08-20 and 2026-08-19 captures are served under the same id and the same handle, and both return 'This channel is not available.'",
+      "in the four head-only captures (20180822164640, 20180822164710, 20190321101143, 20201011145042) the archived head is truncated before the canonical tag, but each capture record's url field and the subscription button's data-channel-external-id both carry the same id"
+    ],
+    "canonical_link": {
+      "present_in": [
+        "20150629083148",
+        "20180524110846",
+        "20191030013134",
+        "20201007152551",
+        "20201007152603",
+        "20201007152606",
+        "20201007152609",
+        "20201111194329",
+        "20210714184105",
+        "20210904223751",
+        "20220320030541",
+        "20230315030306",
+        "20230527152139",
+        "20230527152331",
+        "20230729235946",
+        "20230730000122"
+      ],
+      "absent_from_archived_head": [
+        "20180822164640",
+        "20180822164710",
+        "20190321101143",
+        "20201011145042"
+      ],
+      "why_absent": "those four are head-only captures: the Wayback record stored the document head and no body, and the head as archived stops before the canonical link. This is a property of the capture, not evidence of a different channel - the same captures name the same id in their url field and on the subscription button.",
+      "not_retrievable": [
+        "20201007152600",
+        "20221003041455",
+        "20221005204852"
+      ],
+      "why_not_retrievable": "Wayback returned 0 bytes, 0 bytes and 21 bytes respectively. They are listed so the gaps are not mistaken for losses of evidence."
+    }
+  },
+  "subscriber_series_note": "One row per capture that carries the channel's OWN subscriber count - never another channel's. The pre-2023 counts are read from the branded subscription button (the one whose data-channel-external-id is UCqYAQa28E9Fbsak6zM4hA3w); the 2019-10-30 and later counts are read from the channel's own c4TabbedHeaderRenderer. Several of these captures also print other channels' counts in the same page (up to 1.01 million on the 2023-03-15 capture); none of them are this channel's. Numbers are transcribed exactly as YouTube rounded them, so 11.2K means 11,200 +/- 50, not an exact count. Captures with no readable count (2021-07-14 /community) are absent from this series and are recorded in the timeline instead.",
+  "preservation_record": {
+    "headline": "The archive is the durable copy, not YouTube.",
+    "counts_read_from": "_data/videos.json, _data/transcript_coverage.json, _data/superseded_videos.json (read 2026-09-27)",
+    "catalogued_videos": 68,
+    "archive_org_files": 56,
+    "catalogue_only_live_reuploads": 12,
+    "how_split": "56 entries carry an archive.org file (archive_org_id + filename + size_bytes) in the andalusian-project collection; the other 12 survive only as live re-uploads elsewhere and are marked with kind (appearance 8, clip 4) and a named source. All 68 entries are counted exactly once.",
+    "transcripts": "56 baseline transcripts - one per archive.org entry, all 56 covered by _data/transcript_coverage.json - produced from 38 whisper-base-local passes, 1 whisper-tiny re-mux and 18 YouTube auto-caption files (one French, the rest English). The 12 catalogue-only entries carry transcripts: 0, which means 'no transcript attached', not 'no transcript exists': G47Stp3pLss's caption capture is preserved in transcript_coverage.json and deliberately not attached, because the entry is catalogue-only by design.",
+    "transcripts_reparented": "10 caption files from duplicate re-uploads were re-parented onto the archive.org entry they duplicate (alternates in transcript_coverage.json, reparented_at 2026-09-27) and are flagged superseded. No transcript text was deleted: the capture files are retained and the text sits in the alternate rows.",
+    "mirror_urls": "36 live re-upload URLs are attached to the 30 archive.org entries they duplicate, and are never counted as separate videos (counting-constraint 5). All 68 entries carry the mirror_urls key, empty where a video has no known re-upload.",
+    "superseded_duplicates": "_data/superseded_videos.json preserves 12 removed duplicate rows in full: title, live uploader, HTTP status, the baseline entry each duplicates, the match basis, duration evidence where it exists (3 of 12), and the verbatim superseded_record. 11 of the 12 are now carried as mirror_urls on the twin they duplicate; the twelfth, G47Stp3pLss, was restored as a distinct counted entry by user decision on 2026-09-27. This file is an audit trail, not a deletion.",
+    "archive_org_collection": "andalusian-project (https://archive.org/details/andalusian-project)",
+    "caveat": "these counts are the state of the data files on 2026-09-27. The final recount is a separate approval gate (Task 9); if it changes a number, this record changes with it."
+  },
+  "standing_reuploads": {
+    "what_this_is": "Third-party YouTube channels that currently host re-uploads of recordings this archive catalogued. Every entry below was checked live by F6 on 2026-09-27 and returned HTTP 200. They are re-uploads of the archived recordings - none of them is the original channel, and none of them is operated by this archive.",
+    "counting_rule": "a re-upload is never counted as a separate video. Where it duplicates a catalogued recording, its URL is attached to that entry as a mirror_url; where it is the only surviving copy of a recording, the video is catalogued once in its own right.",
+    "totals": {
+      "channels": 11,
+      "recorded_re_upload_placements": 60,
+      "distinct_re_upload_recordings": 47,
+      "breakdown": "36 attached as mirror_urls + 12 superseded-row audit entries + 12 catalogue-only entries (G47Stp3pLss appears in both the superseded audit trail and the catalogue, so the distinct count is 47)"
+    },
+    "derived_from": [
+      "_data/superseded_videos.json -> live.uploader (12 rows)",
+      "_data/videos.json -> mirror_urls (36 URLs on 30 entries)",
+      "_data/videos.json -> source on the 12 catalogue-only entries (uploader name in parentheses)",
+      "uploader -> channel handle resolved from _staging/videos/discovery/oembed_results.json (F6's 239-id oEmbed sweep); that file is deleted after the final phase, so the resolution is recorded here"
+    ],
+    "channels": [
+      {
+        "name": "[Archived] Andalusian Project",
+        "channel_url": "https://www.youtube.com/@archivedandalusianproject",
+        "what_it_is": "an unofficial archive channel - a different channel, with its own channel id, not the original one; its channel page was itself captured on 2025-08-25",
+        "attached_as_mirror_urls": 27,
+        "superseded_rows": 2,
+        "counted_entries": 0,
+        "total": 29,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "Shirkuh",
+        "channel_url": "https://www.youtube.com/@Shirkuh-ll7uv",
+        "what_it_is": "third-party re-uploader; its own titles say '(re upload)' and name the Andalusian Project",
+        "attached_as_mirror_urls": 6,
+        "superseded_rows": 6,
+        "counted_entries": 0,
+        "total": 12,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "Yb-Yt",
+        "channel_url": "https://www.youtube.com/@ybyt-r8b",
+        "what_it_is": "third-party re-uploader; its own titles say '(Reupload - Read Description)'",
+        "attached_as_mirror_urls": 2,
+        "superseded_rows": 2,
+        "counted_entries": 0,
+        "total": 4,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "The Ilm Library",
+        "channel_url": "https://www.youtube.com/@TheIlmLibrary",
+        "what_it_is": "third-party re-uploader; its own title says '(Andalusian Project Reupload)'",
+        "attached_as_mirror_urls": 1,
+        "superseded_rows": 1,
+        "counted_entries": 0,
+        "total": 2,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "F A",
+        "channel_url": "https://www.youtube.com/@FA-lk3oc",
+        "what_it_is": "third-party re-uploader of a conversion-story recording; its own title attributes the recording to Asadullah Ali Al-Andalusi (Abu Isabel), which this archive records as an unverified byline claim, not as an attribution",
+        "attached_as_mirror_urls": 0,
+        "superseded_rows": 1,
+        "counted_entries": 1,
+        "total": 2,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "Muslim Debate Initiative",
+        "channel_url": "https://www.youtube.com/@MuslimDebateInitiative",
+        "what_it_is": "MDI's own channel, which hosts the debates he appeared in; these are his appearances, not his uploads",
+        "attached_as_mirror_urls": 0,
+        "superseded_rows": 0,
+        "counted_entries": 5,
+        "total": 5,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "Fakir Ilmu",
+        "channel_url": "https://www.youtube.com/@FakirIlmu",
+        "what_it_is": "third-party channel hosting Malay-language re-uploads and excerpts of his debate appearances",
+        "attached_as_mirror_urls": 0,
+        "superseded_rows": 0,
+        "counted_entries": 2,
+        "total": 2,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "Muslim Debate Initiative Archive",
+        "channel_url": "https://www.youtube.com/@MuslimDebateInitiativeArchive",
+        "what_it_is": "MDI's archive channel",
+        "attached_as_mirror_urls": 0,
+        "superseded_rows": 0,
+        "counted_entries": 1,
+        "total": 1,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "MSA OhioState",
+        "channel_url": "https://www.youtube.com/@msaosu",
+        "what_it_is": "Muslim Student Association at Ohio State, which hosted a Q&A he gave",
+        "attached_as_mirror_urls": 0,
+        "superseded_rows": 0,
+        "counted_entries": 1,
+        "total": 1,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "انتي شبهات",
+        "channel_url": "https://www.youtube.com/@%D8%A7%D9%86%D8%AA%DB%8C%D8%B4%D8%A8%D9%87%D8%A7%D8%AA",
+        "what_it_is": "third-party channel hosting a Persian translation of one of his debate appearances",
+        "attached_as_mirror_urls": 0,
+        "superseded_rows": 0,
+        "counted_entries": 1,
+        "total": 1,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      },
+      {
+        "name": "Imam Murrah The Time Traveller",
+        "channel_url": "https://www.youtube.com/@ImamMurrahTheTimeTraveller",
+        "what_it_is": "short-form channel carrying an 8-minute clip of him; the title names him, which is why it is catalogued as an appearance",
+        "attached_as_mirror_urls": 0,
+        "superseded_rows": 0,
+        "counted_entries": 1,
+        "total": 1,
+        "status": "alive (HTTP 200, 2026-09-27)"
+      }
+    ]
+  },
+  "do_not_link_rule": {
+    "statement": "Three things are never linked from this archive, and the reasons are operational, not rhetorical.",
+    "rules": [
+      {
+        "item": "the live channel page",
+        "rule": "never linked",
+        "why": "it is unavailable. The 2026-09-27 live check returned 'This channel is not available.', and the 2025-08-20 and 2026-08-19 captures show 0 videos, so a link leads a reader nowhere."
+      },
+      {
+        "item": "the channel id UCqYAQa28E9Fbsak6zM4hA3w",
+        "rule": "recorded as text only, never as a link",
+        "why": "the id is a historical identifier and nothing more. Every Wayback URL for the pre-2023 captures embeds that dead channel path, so those captures are cited here by their capture timestamp and archived path instead, and the id is printed as plain text."
+      },
+      {
+        "item": "the 2023 handle @andalusianproject6093",
+        "rule": "never linked as his channel",
+        "why": "the 84-85 items in the 2023 captures are of undetermined authorship, so linking it would present unverified uploads as his. It is also attached to a channel that shows 0 videos and has reported itself unavailable since 2025-08-20. It is NOT withheld because ownership has been established against him - it is withheld because it cannot be established for him either."
+      }
+    ],
+    "what_is_not_being_claimed": "The do-not-link rule is link hygiene. It is not a finding about who controlled the account in 2023, and the archive's standing does not depend on it: the archive stands on its own files, not on the channel."
+  },
+  "evidence_files": {
+    "staging_is_temporary": "Every capture behind this file was read from a local staging area that is gitignored and deleted after the final phase. Nothing on the public page depends on those files existing: each claim carries its capture timestamp and, where the archived URL is not a dead channel path, a Wayback link. The local payload filename and the archived path stay recorded per row in this data file and are never printed on the page, so any claim can still be re-checked against the Wayback Machine by timestamp.",
+    "how_to_recheck_a_row": "take the capture timestamp (e.g. 20220320030541), open the Wayback Machine for that timestamp, and read the channel's own header. Sub-page paths and query strings varied between captures (?app=desktop, ?disable_polymer=1, /videos, /about, /community, /featured) - that variation is YouTube's, not the archive's, and the canonical id is the same in every one of them.",
+    "staging_paths_cited": [
+      "_staging/videos/discovery/pages/<timestamp>.raw (the /channel/<id> captures, 2015-2022)",
+      "_staging/videos/discovery/mirror_pages/*.raw (the 2022-2026 captures, own_root / own_about / own_channels / ap6093_* / own_featured / own_videos2025)",
+      "_staging/videos/manifest.json (the exact archived URL behind every capture above)",
+      "_staging/videos/discovery/oembed_results.json (F6's 239-id oEmbed sweep: uploader and channel handle behind every live re-upload)"
+    ]
+  },
+  "page_section_order": [
+    {
+      "key": "timeline",
+      "heading": "The verified timeline",
+      "source": "timeline + live_check",
+      "lead": "Every row is one Wayback capture, dated by its capture timestamp. Subscriber counts are the channel's own, never a neighbour's."
+    },
+    {
+      "key": "rejected_claims",
+      "heading": "Claims this archive rejects",
+      "source": "rejected_claims",
+      "lead": "These numbers are in circulation. Each is traceable to a real capture, and in each case the number belongs to a different channel."
+    },
+    {
+      "key": "identity",
+      "heading": "The 2023 uploads: what is known and what cannot be",
+      "source": "account_control + do_not_link",
+      "lead": "The captures settle what was uploaded and through which account. They do not settle who was operating it."
+    },
+    {
+      "key": "preservation",
+      "heading": "What this archive preserves instead",
+      "source": "preservation_record",
+      "lead": "The channel is gone. The recordings are not."
+    },
+    {
+      "key": "standing_reuploads",
+      "heading": "Standing re-uploads on third-party channels",
+      "source": "standing_reuploads",
+      "lead": "Eleven third-party channels currently host re-uploads of catalogued recordings. They are listed so a reader can find them, and they are never counted as separate videos."
+    },
+    {
+      "key": "do_not_link",
+      "heading": "The do-not-link rule",
+      "source": "do_not_link_rule",
+      "lead": "What this archive refuses to link, and why."
+    },
+    {
+      "key": "evidence",
+      "heading": "Where these claims come from",
+      "source": "evidence_files",
+      "lead": "Every capture behind this page is a Wayback capture, cited by timestamp."
+    }
+  ],
+  "revision": {
+    "date": "2026-09-27",
+    "by": "task 8b",
+    "added": [
+      "10 <=2022 capture rows (2018-05-24, 2018-08-22 x2, 2019-03-21, 2020-10-07 x3 + one 0-byte capture, 2020-10-11, 2020-11-11, 2021-07-14)",
+      "3 later rows (2023-03-15, 2023-07-29, 2025-08-20 second capture)",
+      "identity_continuity, subscriber_series_note, 3 rejected_claims, preservation_record, standing_reuploads, do_not_link_rule, evidence_files, page_section_order",
+      "per-row original_path and wayback_url (handle-based rows only)"
+    ],
+    "removed": "nothing - every key and every pre-existing timeline row is retained verbatim; this revision only adds",
+    "not_asserted": "no claim about who controlled the account in 2023, in either direction; no subscriber figure other than the channel's own"
+  }
+}

@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<article class="post-detail">
+      <h1>{{ page.title }}</h1>
+      {%- comment -%}
+        Category badge. _articles holds three kinds of page and each one reads
+        its category from its own data file, chosen by the page's `status`:
+        a work (found | wayback_only | lost) from canonical_works.json, an MDI
+        text page from mdi_articles.json (its slug carries an "mdi-" prefix),
+        a notice page from notices.json (prefix "notice-").
+      {%- endcomment -%}
+      {%- assign cat = nil -%}
+      {%- if page.status == "mdi_text" -%}
+        {%- assign lookup = page.slug | remove_first: "mdi-" -%}
+        {%- for row in site.data.mdi_articles -%}
+          {%- if row.slug == lookup -%}{%- assign cat = row.category -%}{%- endif -%}
+        {%- endfor -%}
+      {%- elsif page.status == "notice" -%}
+        {%- assign lookup = page.slug | remove_first: "notice-" -%}
+        {%- for row in site.data.notices -%}
+          {%- if row.slug == lookup -%}{%- assign cat = row.category -%}{%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- for row in site.data.canonical_works -%}
+          {%- if row.slug == page.slug -%}{%- assign cat = row.category -%}{%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if cat -%}<div class="meta">{% include category_badge.html category=cat %}</div>{%- endif -%}
+      <div class="meta">
+
+        <span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+        {% if page.status %} | <span class="status status-archived">{{ page.status }}</span>{% endif %}
+      </div>
+      
+      <div class="detail-section">
+        <h3>Content</h3>
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </div>
+      
+      <div class="detail-section">
+        <h3>External Links</h3>
+        <div class="source-links">
+          {%- comment -%}
+            `source_link.html` prints a live-domain URL as plain text with the
+            reason attached and never as a link, and runs site-relative URLs
+            through `relative_url`. The Wayback capture below stays the
+            clickable source: removing the provenance is not the point, removing
+            the ability to click through to a hijacked domain is.
+          {%- endcomment -%}
+          {% include source_link.html url=page.original_url label="View Original" class="btn" %}
+          {% if page.wayback_url %}
+          <a href="{{ page.wayback_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Wayback Machine</a>
+          {% endif %}
+          {% for alt in page.alternate_urls %}
+          {% include source_link.html url=alt label="Alternate Source" class="btn btn-secondary" %}
+          {% endfor %}
+        </div>
+        {% if page.alternate_note %}
+
+        <p class="meta alternate-note">Note: {{ page.alternate_note }}</p>
+        {% endif %}
+      </div>
+      
+      <div class="back-link">
+        <a href="{{ '/articles/' | relative_url }}">&larr; Back to Blog Posts</a>
+      </div>
+</article>

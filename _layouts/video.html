@@ -1,0 +1,154 @@
+---
+layout: default
+---
+<article class="video">
+      <h1>{{ page.title }}</h1>
+
+      {%- comment -%}
+        Category badge, joined on video_id: build_collections.py writes the
+        videos.json `id` into the page's `video_id` front matter (it also writes
+        `id`, but `id` is a reserved page key, so `video_id` is the safe read).
+      {%- endcomment -%}
+      {%- assign cat = nil -%}
+      {%- for row in site.data.videos -%}
+        {%- if row.id == page.video_id -%}{%- assign cat = row.category -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if cat -%}<div class="meta">{% include category_badge.html category=cat %}</div>{%- endif -%}
+
+      <div class="meta">
+        <span class="format">{{ page.format }}</span>
+        {% if page.duration %} | <span class="duration">{{ page.duration }}</span>{% endif %}
+      </div>
+      
+      {% if page.themes %}
+      <div class="themes">
+        <h3>Themes</h3>
+        <ul>
+          {% for theme in page.themes %}
+          <li>{{ theme }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      
+      {% if page.topics %}
+      <div class="topics">
+        <h3>Topics</h3>
+        <ul>
+          {% for topic in page.topics %}
+          <li>{{ topic }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      
+      {% if page.source == 'youtube_not_archived' %}
+      <div class="notice notice-youtube"><strong>Source: YouTube (not archived)</strong> — no Internet Archive copy in the source data.</div>
+      <div class="sources">
+        <a href="{{ page.youtube_url | default: page.archive_url }}" target="_blank" rel="noopener noreferrer" class="btn">Watch on YouTube (not archived)</a>
+      </div>
+      {% elsif page.archive_url %}
+      <div class="sources">
+        <a href="{{ page.archive_url }}" target="_blank" rel="noopener noreferrer" class="btn">Download from Archive.org</a>
+      </div>
+      {% endif %}
+
+      {%- comment -%}
+        Mirrors are NOT repeated here: build_collections.py already prints every
+        one of them, with its count, in the page body below. Saying it twice on
+        one page would be noise, and the body copy is the one the data gate
+        (build_collections.py's mirror_urls assert) keeps honest.
+      {%- endcomment %}
+      
+      <div class="content">
+        {{ content }}
+      </div>
+
+      {%- comment -%}
+        Transcript section. Four cases, decided by the data, never by
+        guesswork:
+
+        1. a coverage row for this video with captions, and the entry does not
+           declare `transcripts: 0` -> the transcript exists AND its text is
+           published. The disclaimer is printed VERBATIM as the brief requires,
+           the capture's provenance is given, and the text is linked. The
+           index is _data/transcript_index.json, written by
+           scripts/build_collections.py :: build_transcripts(), keyed by the
+           recording the capture transcribes - so a capture re-parented from a
+           superseded duplicate upload is listed here as an ADDITIONAL
+           transcript of this same recording, attributed to its own upload.
+        2. `transcripts: 0` -> a neutral "not yet available" note. No promise
+           that one is coming, and no link to a file that is not there. Where
+           a capture exists but is deliberately unattached, the note says so
+           factually and still links nothing: that entry's page does not
+           present a transcript, because the archive decided it should not.
+        3. a coverage row that names a file but has no captions flag -> the
+           recording could not be captioned at all; the same neutral note.
+        4. a capture whose words are also printed with the essay it belongs to
+           -> the article is linked as well, so a reader who came for the
+           writing is not sent to a machine transcript instead.
+      {%- endcomment -%}
+      {%- assign cov = site.data.transcript_coverage | where: "video_id", page.video_id | first -%}
+      {%- assign tdocs = site.data.transcript_index.by_recording[page.video_id] -%}
+      <div class="detail-section transcript-block">
+        <h3>Transcript</h3>
+        {%- if page.transcripts == 0 -%}
+        <p class="transcript-status">Transcript not yet available for this entry.</p>
+        {%- if cov and cov.captions -%}
+        <p class="transcript-status-detail">A machine transcript of this recording
+        is preserved in the archive&rsquo;s coverage file
+        (<code>{{ cov.file }}</code>, {{ cov.lines }} lines, {{ cov.lang }},
+        {{ cov.source }}) and is deliberately not attached to this entry. Nothing
+        has been deleted; the capture is retained as it was made.</p>
+        {%- endif -%}
+        {%- elsif cov and cov.captions -%}
+        <p><em>Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source.</em></p>
+        <p class="transcript-status">A machine transcript of this recording is preserved:
+        <code>{{ cov.file }}</code> &mdash; {{ cov.lines }} lines, language {{ cov.lang }},
+        produced by {{ cov.source }}.</p>
+        {%- if tdocs and tdocs.size > 0 -%}
+        <p class="transcript-status-detail">The transcript text is published:
+        {%- for d in tdocs -%}
+        <a href="{{ d.url | relative_url }}">read the transcript{% if d.role == "duplicate-upload" %} taken from the duplicate upload <code>{{ d.capture_video_id }}</code>{% endif %}</a> ({{ d.words }} words){%- unless forloop.last %}; and{% endunless -%}
+        {%- endfor -%}.</p>
+        {%- endif -%}
+        {%- assign printed = 0 -%}
+        {%- assign watch = page.video_id | prepend: "https://www.youtube.com/watch?v=" -%}
+        {%- for doc in site.articles -%}
+          {%- if doc.transcript and watch and doc.content contains watch -%}
+            {%- assign printed = printed | plus: 1 -%}
+            <p class="transcript-status-detail">The same recording&rsquo;s transcript
+            is also printed with
+            <a href="{{ doc.url | relative_url }}">{{ doc.title }}</a>.</p>
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if cov.alternates and cov.alternates.size > 0 -%}
+        <p class="transcript-status-detail">This recording was also transcribed from
+        {{ cov.alternates.size }} duplicate upload{% if cov.alternates.size != 1 %}s{% endif %}
+        that left the video catalogue, preserved rather than deleted. They are additional
+        transcripts of the same recording, not separate recordings, and each is published
+        and attributed on its own page:</p>
+        <ul class="source-list">
+          {%- for alt in cov.alternates -%}
+          {%- comment -%} Match on the upload's own id, not on position: a
+            recording can have more than one re-parented capture, and index 1
+            would be the same page for all of them. {%- endcomment -%}
+          {%- assign altlink = nil -%}
+          {%- if tdocs -%}
+            {%- for d in tdocs -%}
+              {%- if d.capture_video_id == alt.video_id -%}{%- assign altlink = d -%}{%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+          <li><strong>{{ alt.title }}</strong> &mdash; {{ alt.source }}, {{ alt.lang }},
+          {{ alt.lines }} lines, capture <code>{{ alt.file }}</code>
+          (video id <code>{{ alt.video_id }}</code>, re-parented {{ alt.reparented_at }}){% if altlink %} &mdash;
+          <a href="{{ altlink.url | relative_url }}">read this transcript</a>{% else %} &mdash;
+          this alternate capture is not published{% endif %}.</li>
+          {%- endfor -%}
+        </ul>
+        {%- endif -%}
+        {%- else -%}
+        <p class="transcript-status">Transcript not yet available for this entry.</p>
+        {%- endif -%}
+      </div>
+</article>

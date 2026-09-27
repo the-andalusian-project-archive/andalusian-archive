@@ -1,0 +1,87 @@
+{%- comment -%}
+  Renders ONE provenance URL, under the archive's standing rule that the
+  subject's former live domain is never emitted as a clickable link.
+
+  Why this exists
+  ---------------
+  `asadullahali.com` is dead AND has been taken over by an unrelated,
+  commercially operated site. Third-party pages - institutional profiles,
+  course listings, faculty pages, and this archive's own recovered front
+  matter - still point at it as his official site, so a reader arriving from
+  one of those links arrives at a gambling operation. The archive states the
+  rule in NOTICE.md section 7 and in the README: never link the live domain.
+  The layouts were emitting it anyway, as the "View Original" button on every
+  work whose `original_url` was his own site.
+
+  The rule this partial implements
+  -------------------------------
+  A live-domain URL is printed as PLAIN TEXT with the reason attached. The
+  provenance is not removed - the URL is still there, still readable, still
+  copyable, and the Wayback capture beside it remains the clickable link,
+  which is the citable source. What is withheld is only the ability to click
+  through to a hijacked domain. Where a work has no Wayback capture the domain
+  is still printed, as text, with no link at all.
+
+  How the two cases are decided
+  -----------------------------
+  Two independent facts, each computed into its own flag with a single
+  comparison. They are deliberately NOT combined into one `if a or b` test:
+  an earlier revision of this partial did that, and the compound condition
+  silently failed for the Wayback replay URLs, routing them into the
+  site-relative branch and producing
+  `/andalusian-archive/https://web.archive.org/...` - a link to nothing. A
+  flag per fact, each set by one `=`, cannot fail that way.
+
+  1. `is_dead`    - the URL's HOST is the hijacked domain.
+  2. `is_internal` - the URL carries no `://`, i.e. it is a site-relative path
+                     such as `/articles/<slug>/`. Those are run through
+                     `relative_url` so they carry the site's baseurl; without
+                     it a recovered `/articles/<slug>/` written into front
+                     matter resolves to the domain root and 404s on GitHub
+                     Pages, because the site is served from a subpath.
+
+  Host extraction, without a regex filter (Liquid has none): strip both
+  schemes anywhere in the string, not just at the front, then read what is
+  left of the first path segment up to any port, query or fragment. Stripping
+  the scheme globally is what makes a Wayback replay URL -
+  https://web.archive.org/web/2015/http://asadullahali.com/... - resolve to
+  the host `web.archive.org`, which is correct: that link is not a live-domain
+  link, and the archive must keep it clickable because the capture is the
+  citable source.
+
+  Parameters
+  ----------
+  url   - the URL to render. Empty/nil renders nothing.
+  label - link text. Unused on the dead-domain branch, which prints text.
+  class - CSS classes for the anchor, e.g. "btn btn-secondary".
+{%- endcomment -%}
+{%- if include.url and include.url != "" -%}
+  {%- assign probe = include.url | remove: "https://" | remove: "http://" -%}
+  {%- assign seg = probe | split: "/" | first | split: "?" | first | split: "#" | first -%}
+  {%- assign host = seg | split: ":" | first | downcase -%}
+
+  {%- assign is_dead = false -%}
+  {%- if host == "asadullahali.com" -%}{%- assign is_dead = true -%}{%- endif -%}
+  {%- if host == "www.asadullahali.com" -%}{%- assign is_dead = true -%}{%- endif -%}
+
+  {%- assign is_internal = true -%}
+  {%- if include.url contains "://" -%}{%- assign is_internal = false -%}{%- endif -%}
+
+  {%- comment -%}
+    A site-relative value may or may not already begin with a slash; both
+    forms occur in the recovered front matter. `relative_url` needs exactly
+    one, so the slash is added only when it is missing - prepending
+    unconditionally yields `/andalusian-archive//articles/...`, which 404s.
+  {%- endcomment -%}
+  {%- assign path = include.url -%}
+  {%- assign lead = path | slice: 0 -%}
+  {%- if lead != "/" -%}{%- assign path = path | prepend: "/" -%}{%- endif -%}
+
+  {%- if is_dead -%}
+    <span class="source-dead" title="The domain this work was published on. It is no longer the author's: it now answers with an unrelated, commercially operated site. Follow the Wayback capture beside this instead.">{{ include.url }} (defunct, later hijacked &mdash; do not visit)</span>
+  {%- elsif is_internal -%}
+    <a href="{{ path | relative_url }}" target="_blank" rel="noopener noreferrer"{% if include.class %} class="{{ include.class }}"{% endif %}>{{ include.label }}</a>
+  {%- else -%}
+    <a href="{{ include.url }}" target="_blank" rel="noopener noreferrer"{% if include.class %} class="{{ include.class }}"{% endif %}>{{ include.label }}</a>
+  {%- endif -%}
+{%- endif -%}

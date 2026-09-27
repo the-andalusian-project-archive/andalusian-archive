@@ -1,0 +1,84 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Sync search data (_data -> data)
+        run: python3 scripts/sync_search_data.py
+
+      - name: Assert search-data sync
+        run: python3 scripts/test_search_sync.py
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      # Regression guard for the 2026-09-27 P0. `exclude: - data/` in
+      # _config.yml deleted all four client-side search indexes from _site/
+      # while every gate stayed green - test_search_sync.py above proves the
+      # _data -> data half and never looks at what Jekyll kept - and /search/
+      # then rendered "Failed to load search data" for every visitor. The
+      # existing steps cannot see that failure; this one can. It asserts the
+      # built output, so any future Jekyll-side regression in the data/ pipeline
+      # fails here rather than in production.
+      - name: Assert search data reached the build
+        run: |
+          missing=0
+          for f in papers videos canonical_works blog_posts; do
+            if [ ! -f "_site/data/$f.json" ]; then
+              echo "MISSING _site/data/$f.json"
+              missing=1
+            elif python3 -c "import json,sys; json.load(open(sys.argv[1], encoding='utf-8'))" "_site/data/$f.json"; then
+              echo "ok _site/data/$f.json"
+            else
+              echo "INVALID JSON _site/data/$f.json"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            echo "::error::the data/ search index was not published - check the exclude: list in _config.yml"
+            exit 1
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
