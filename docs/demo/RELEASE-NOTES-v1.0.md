@@ -137,7 +137,8 @@ the work, and the capture.
 
 ### The no-contact notice
 
-The author has asked not to be contacted, and he keeps a private life. It is
+The author has left online dawah, has asked not to be contacted, and keeps a
+private life. It is
 stated in the same words in every place a reader meets it: this file's
 `NOTICE.md` §10, linked from the footer of **every** built page; `README.md`
 above the contents table; `CONTRIBUTING.md` as its first section; `llms.txt` for
@@ -222,7 +223,9 @@ Tag: `v1.0.0` · Title: `The Andalusian Project Archive v1.0.0`
 > archive's own material — the data, the scripts, the site source and the
 > documentation — is CC BY-NC 4.0. See `LICENSE` and `NOTICE.md`.
 >
-> **The author has asked not to be contacted.** See `NOTICE.md` §10.
+> **The author has left online dawah and has asked not to be contacted.**
+> See `NOTICE.md` section 10, which names the recording and discloses that it is a
+> third-party re-upload whose transcript this archive does not hold.
 >
 > Attached: the site tour (`site-tour.mp4`, `site-tour.gif`), recorded
 > 2026-09-28 in the light theme from a local build of the current commit, after

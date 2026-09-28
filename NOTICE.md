@@ -9,7 +9,10 @@ It is not boilerplate: it states what this archive is, what it does **not**
 have the right to license, what has been deliberately withheld, and what will
 mislead you.
 
-It also states, in section 10, that the author has asked not to be contacted.
+It also states, in section 10, that the author has left online dawah and has
+asked not to be contacted. That section names the recording in which he says so,
+and discloses that the video is a third-party re-upload whose transcript this
+archive does not hold.
 That section is linked from the footer of every page on the site.
 
 

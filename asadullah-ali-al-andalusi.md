@@ -436,7 +436,7 @@ Andalusian Project&rsquo;s web presence</a>.</p>
 
 <div class="info-block">
   <h3>Do not contact the author</h3>
-  <p>The author has asked not to be contacted, and the archive&rsquo;s maintainers cannot
+  <p>The author has left online dawah and has asked not to be contacted, and the archive&rsquo;s maintainers cannot
   forward requests and cannot put them through. The full notice is
   <a href="{{ '/NOTICE.md' | relative_url }}#do-not-contact-the-author">NOTICE.md section
   10</a>, and the same wording is on every page of this site. Nothing on this page is an

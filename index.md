@@ -43,7 +43,7 @@ last_modified_at: 2026-09-28
   unavailable. This is what survives &mdash; his writing, his papers, his
   recordings and their transcripts &mdash; rescued from web archives, with a record
   of where every item came from and whether any text is actually held.</p>
-  <p><strong>He has asked not to be contacted, and the archive does not contact
+  <p><strong>He has left online dawah, has asked not to be contacted, and the archive does not contact
   him.</strong> The point of preserving this is so the work can be read, cited and
   taught from.</p>
 </div>
