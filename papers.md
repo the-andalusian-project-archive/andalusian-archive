@@ -30,6 +30,23 @@ description: The archive's academic papers by venue and date, with the full text
 {%- assign coauthored = 0 -%}{%- for p in site.data.papers -%}{%- if p.co_authors and p.co_authors.size > 0 -%}{%- assign coauthored = coauthored | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- assign sole = total | minus: coauthored -%}
 {%- assign held = 0 -%}{%- assign held_files = 0 -%}{%- for p in site.data.papers -%}{%- if p.file -%}{%- assign held = held | plus: 1 -%}{%- assign held_files = held_files | plus: 1 -%}{%- endif -%}{%- if p.additional_files -%}{%- assign held_files = held_files | plus: p.additional_files.size -%}{%- endif -%}{%- endfor -%}
+{%- comment -%}
+  2026-09-28: papers that have at least one external registry record, counted
+  for the cross-link to /scholarly-records/ below. The join is
+  `_data/papers.json` row id -> `archive_paper_id` on every registry record in
+  `_data/registries.json`, including each registry's `additional_records`. A
+  paper is counted ONCE however many registries hold it, so a work registered
+  under two DOIs does not inflate this figure. Nothing is typed.
+{%- endcomment -%}
+{%- assign n_covered = 0 -%}{%- assign n_bare = 0 -%}
+{%- for p in site.data.papers -%}
+  {%- assign hit = false -%}
+  {%- for r in site.data.registries.registries -%}
+    {%- for rec in r.records -%}{%- if rec.archive_paper_id == p.id -%}{%- assign hit = true -%}{%- endif -%}{%- endfor -%}
+    {%- for rec in r.additional_records -%}{%- if rec.archive_paper_id == p.id -%}{%- assign hit = true -%}{%- endif -%}{%- endfor -%}
+  {%- endfor -%}
+  {%- if hit -%}{%- assign n_covered = n_covered | plus: 1 -%}{%- else -%}{%- assign n_bare = n_bare | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
 
 <h1 class="page-title">Academic Papers</h1>
 <p class="page-subtitle">{{ total }} research papers, articles, talks and book chapters, listed by publication venue.</p>
@@ -51,6 +68,26 @@ the corrected citation is printed on the paper&rsquo;s own page. For who wrote t
 what became of the sites these papers were announced on, see
 <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to the
 Andalusian Project&rsquo;s web presence</a>.</p>
+
+{%- comment -%}
+  2026-09-28: the cross-link to the bibliography-reconciliation page, placed here
+  because this index is the page a reader lands on when they are checking a
+  citation. The link answers the question the access ledger below cannot: not
+  "is the publisher reachable" but "what do other people&rsquo;s bibliographies
+  say about this paper, and what is wrong with those records". The sentence
+  states the real figure rather than gesturing at the page, and that figure is
+  counted from the two data files at build time - {{ n_covered }} of {{ total }}
+  papers have an external record, computed by joining _data/papers.json to the
+  archive_paper_id on each _data/registries.json record. A hand-typed number
+  here would be the one thing on this page that could go stale silently.
+{%- endcomment -%}
+<p class="page-note">For the other half of a bibliography &mdash; where these papers are
+recorded in OpenAlex, Semantic Scholar, Crossref, DOAJ, ORCID and the Internet Archive,
+which of them are co-authored, and which DOIs no longer resolve to the article &mdash; see
+<a href="{{ '/scholarly-records/' | relative_url }}">scholarly records</a>. That page
+reconciles all {{ total }} of these papers against every registry surveyed, and
+{{ n_covered }} of them have at least one external record; the remaining {{ n_bare }} have
+none, which is a fact about what registries index and not a judgement on the work.</p>
 
 <h2>Sole-authored</h2>
 {%- comment -%}

@@ -107,6 +107,17 @@
       question/answer pairs its body really does carry.
     {%- endcomment -%}
     {%- assign seo_kind = "faq" -%}
+  {%- elsif page.schema == "dataset" -%}
+    {%- comment -%}
+      2026-09-28. /scholarly-records/: the bibliography-reconciliation page. Same
+      reasoning again - a flat site page whose body is a set of tables about
+      third-party datasets, so it needs a `dataset` kind and a `Dataset` node
+      rather than the generic WebSite-shaped description. `schema` is a
+      front-matter key carried by exactly three pages in this site (person, faq,
+      dataset) and the branches test it in that order, so no existing page's
+      classification can change.
+    {%- endcomment -%}
+    {%- assign seo_kind = "dataset" -%}
   {%- endif -%}
 
 {%- comment -%} ------------------------------------------------------------------

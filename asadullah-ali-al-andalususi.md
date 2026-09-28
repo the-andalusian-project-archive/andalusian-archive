@@ -47,6 +47,16 @@ last_modified_at: 2026-09-28
   {%- if p.file -%}{%- assign pdf_files = pdf_files | plus: 1 -%}{%- endif -%}
   {%- if p.additional_files -%}{%- assign pdf_files = pdf_files | plus: p.additional_files.size -%}{%- endif -%}
 {%- endfor -%}
+{%- comment -%}
+  2026-09-28: the co-authorship split, for the collaborations table in section
+  4. Counted from the same `_data/papers.json` rows the rest of this page
+  already counts, so the two cannot disagree. `collab_total` is deliberately
+  derived from the DATA rather than from the taxonomy's stated 17/3 split: a
+  page that printed the taxonomy's number would be printing a second source of
+  truth, and this page has one.
+{%- endcomment -%}
+{%- assign collab_total = 0 -%}{%- for p in site.data.papers -%}{%- if p.co_authors and p.co_authors.size > 0 -%}{%- assign collab_total = collab_total | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- assign sole_total = papers_total | minus: collab_total -%}
 {%- assign mdi_total = 0 -%}{%- assign mdi_counted = 0 -%}
 {%- for m in site.data.mdi_articles -%}
   {%- assign mdi_total = mdi_total | plus: 1 -%}
@@ -283,6 +293,74 @@ outward rather than compete.</p>
   <a href="{{ '/channel/' | relative_url }}">the channel page</a> is the dated record of
   what the original channel showed.</li>
 </ul>
+
+{%- comment -%}
+  2026-09-28: collaborations, surfaced on the entity page.
+
+  WHY HERE. The archive's data recorded every co-authorship correctly from the
+  start, and the papers index and each paper's own page already print the
+  co-author names. What was missing was the page a reader arrives on asking WHO
+  this is: it named one co-authored paper in passing, inside a paragraph about
+  publishers, and never said that a third of the paper catalogue was written
+  with someone else. A reader who came here first and read nothing else would
+  have formed a wrong picture of the corpus.
+
+  NOTHING IS ADDED TO ANY COUNT. Every figure below is counted from
+  `_data/papers.json` at build time and the category letters are read from the
+  same rows, so this is a display correction and not a new work. All
+  {{ collab_total }} of these papers are already counted, each once, under
+  category B.
+
+  The co-author names come from the `co_authors` field the data already
+  carried, not from a new source, and the two external confirmations behind the
+  claim are on <a href="{{ '/scholarly-records/' | relative_url }}">the scholarly-records
+  page</a> with their registry identifiers.
+{%- endcomment -%}
+<h3>Collaborations: {{ collab_total }} of the {{ papers_total }} papers were written with someone else</h3>
+<p>Every countable item in this archive is filed under one of four categories
+(<code>_data/taxonomy.json</code>), and the category says who made the thing.
+The written corpus divides by authorship: {{ sole_total }} papers are his alone and
+{{ collab_total }} were written with a named co-author. A co-authored paper is
+<strong>counted once, under category B &mdash; Contributions &amp; Collaborations &mdash;
+and not again among his sole-authored work</strong>, so this is a statement about
+attribution rather than about how much there is.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paper</th>
+      <th>Written with</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+  {%- for p in site.data.papers -%}
+    {%- if p.co_authors and p.co_authors.size > 0 -%}
+    {%- assign ppage = nil -%}
+    {%- for doc in site.papers -%}
+      {%- if doc.title == p.title -%}{%- assign ppage = doc -%}{%- endif -%}
+    {%- endfor %}
+    <tr>
+      <td>{% if ppage %}<a href="{{ ppage.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}
+        <br><span class="meta">{{ p.publisher_journal }}{% if p.publication_date %} &middot; {{ p.publication_date }}{% endif %}</span></td>
+      <td><strong>{{ p.co_authors | join: ", " }}</strong></td>
+      <td>{% include category_badge.html category=p.category %}</td>
+    </tr>
+    {%- endif -%}
+  {%- endfor %}
+  </tbody>
+</table>
+
+<p class="page-note"><strong>Two of the three are also confirmed by external registries, and
+one paper that looks adjacent is not a collaboration at all.</strong> The 2015
+<em>Shari&rsquo;ah Objectives (Maqasid)</em> conference paper is the third conference paper
+in this catalogue and readers often group it with the other two; all three external
+registries that hold it record him as its <strong>sole</strong> author, so it is a
+category A work. The identifiers, the registry records behind each of these statements,
+and the two places where the registries contradict themselves about the same work are on
+<a href="{{ '/scholarly-records/' | relative_url }}">the scholarly-records page</a>, which is
+this archive&rsquo;s account of where his work is registered outside itself and what is wrong
+with those registrations.</p>
 
 <h2 id="loss">5. What was lost, and what this archive recovered</h2>
 <p>Four things stopped being available, for four different reasons, and the archive keeps

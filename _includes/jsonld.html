@@ -114,7 +114,92 @@
   the one paper whose author line the site owner redacted carries an empty
   `co_authors` list, so nothing withheld can reach this block. The one paper
   whose `note` explains that redaction is deliberately NOT read here, because
-  that note is provenance prose, not a bibliographic field. {%- endcomment -%}
+  that note is provenance prose, not a bibliographic field.
+
+  `sameAs`, 2026-09-28. The two lookup paths below, in precedence order, and
+  why there are two:
+
+    1. `page.sameAs` - the paper page's own front matter. Authored, so a
+       reader editing one paper page can see and change what that page claims
+       without opening a data file.
+    2. `_data/registries.json`, joined on the paper's title. This is the
+       DURABLE source, and it is the one the /scholarly-records/ page renders
+       from. It matters because `scripts/build_collections.py :: build_papers()`
+       calls `clear_md(_papers/)` and regenerates every paper page from
+       `_data/papers.json` on each run, which would erase path 1 entirely.
+       Path 2 is what survives a builder re-run.
+
+  Neither path can invent an identifier. Path 1 holds only identifiers verified
+  against a live registry on 2026-09-27/28; path 2 holds the same values plus
+  the registry record they came from. A paper with a DOI and no registry record
+  falls through to the original single-DOI behaviour, byte-identical to what
+  this branch emitted before 2026-09-28.
+
+  The join is on `title` because that is the key `build_papers.py` writes
+  verbatim into the front matter and the key the rest of this site already
+  joins papers on. A title that matches no registry record yields no identifier,
+  which is the correct outcome rather than a failure. {%- endcomment -%}
+{%- assign reg = site.data.registries -%}
+{%- comment -%}
+  Build `sameAs` as a PIPE-DELIMITED STRING, then split it once. Two Liquid
+  traps are being dodged here and both were hit while building this:
+
+  1. `split` calls `to_s` on its input, and Ruby's `Array#to_s` is `inspect`,
+     so splitting a real array directly yields `["https://...",` and
+     `"https://..."]` - two quoted fragments that are valid JSON-LD and wrong
+     as identifiers.
+  2. The same work is listed by more than one registry, and its `same_as`
+     arrays genuinely overlap: 10.12816/0019212 is on both the OpenAlex record
+     and the Crossref record. Emitting both means a `sameAs` array with the same
+     URL twice. A `contains` test on a bare substring would also false-positive
+     (`.../0009888` inside `.../00098881`), so the membership test is done on
+     the PIPE-DELIMITED token `|value|`.
+
+  The accumulator is seeded with a single leading pipe and the first element
+  appended as `value|`, which is what makes the `|value|` test true for the
+  first element as well as for every later one. The leading pipe is stripped
+  with `remove_first` before the split, because `"".split("|")` leaves an empty
+  string that Liquid's `compact` does not remove (it drops nil, not "").
+{%- endcomment -%}
+{%- assign same_d = "|" -%}
+{%- if page.sameAs and page.sameAs.size > 0 -%}
+  {%- for _s in page.sameAs -%}
+    {%- assign _tok = "|" | append: _s | append: "|" -%}
+    {%- unless same_d contains _tok -%}{%- assign same_d = same_d | append: _s | append: "|" -%}{%- endunless -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- for _p in site.data.papers -%}
+    {%- if _p.title == page.title -%}
+      {%- for _r2 in reg.registries -%}
+        {%- for _rec2 in _r2.records -%}
+          {%- if _rec2.archive_paper_id == _p.id -%}
+            {%- for _s2 in _rec2.same_as -%}
+              {%- assign _tok2 = "|" | append: _s2 | append: "|" -%}
+              {%- unless same_d contains _tok2 -%}{%- assign same_d = same_d | append: _s2 | append: "|" -%}{%- endunless -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- for _rec2 in _r2.additional_records -%}
+          {%- if _rec2.archive_paper_id == _p.id -%}
+            {%- for _s2 in _rec2.same_as -%}
+              {%- assign _tok3 = "|" | append: _s2 | append: "|" -%}
+              {%- unless same_d contains _tok3 -%}{%- assign same_d = same_d | append: _s2 | append: "|" -%}{%- endunless -%}
+            {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- comment -%}
+  The page's own DOI is always included, deduped by the same test.
+{%- endcomment -%}
+{%- if page.doi -%}
+  {%- assign doi_url = page.doi | prepend: "https://doi.org/" -%}
+  {%- assign doi_tok = "|" | append: doi_url | append: "|" -%}
+  {%- unless same_d contains doi_tok -%}{%- assign same_d = same_d | append: doi_url | append: "|" -%}{%- endunless -%}
+{%- endif -%}
+{%- assign same_list = same_d | remove_first: "|" | split: "|" -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -147,7 +232,14 @@
   {%- endif %}
   {%- if page.doi %}
   "identifier": {{ page.doi | jsonify }},
-  "sameAs": {{ page.doi | prepend: "https://doi.org/" | jsonify }},
+  {%- endif %}
+  {%- if same_list.size > 0 %}
+  "sameAs": [{% assign _sa2 = 0 -%}
+    {%- for s in same_list -%}
+    {%- if _sa2 > 0 -%},{%- endif -%}{%- assign _sa2 = _sa2 | plus: 1 -%}
+    {{ s | jsonify }}
+    {%- endfor -%}
+  ],
   {%- endif %}
   {%- if page.type %}
   "articleSection": {{ page.type | jsonify }},
@@ -468,6 +560,89 @@
       }
     }
     {%- endfor -%}
+  ]
+}
+</script>
+{%- include breadcrumb.html %}
+
+{%- elsif seo_kind == "dataset" -%}
+
+{%- comment -%}
+  Dataset + CollectionPage + ItemList, for /scholarly-records/ (2026-09-28).
+
+  This is the archive's bibliography-reconciliation page: a dated survey of what
+  the public scholarly registries hold for the subject, reconciled against this
+  archive's own paper catalogue. `Dataset` is the correct type for it and
+  `CollectionPage` is the correct type for the page, so both are emitted in one
+  @graph rather than choosing between them.
+
+  `temporalCoverage` is the survey date out of `_data/registries.json` and is the
+  single most important field in the node: every claim on the page is true as of
+  that date and registries change, so publishing the date is what stops a dated
+  snapshot from being read as a standing fact. It is a real schema.org property
+  for exactly this use.
+
+  The ItemList enumerates the REGISTRIES, not the papers. A reader arriving from
+  a search engine wants to know which databases were checked, and every entry is
+  a URL this archive has actually read, so the list states the survey's scope
+  without asserting a single unapproved figure.
+
+  NOT emitted: `distribution`, `creator` as a Person, and any count of works.
+  The registries hold their own counts of their own records; reproducing a
+  number here that is not computed from _data/ on the rendered page would be
+  exactly the typed-literal this site forbids. `creator` is the archive as an
+  Organization, which is a true statement about who ran the survey.
+
+  The `sameAs` on the paper pages is a separate matter and is read from the
+  paper's own front matter `sameAs` key, falling back to the join into
+  _data/registries.json. See the `paper` branch above.
+{%- endcomment -%}
+{%- assign reg = site.data.registries -%}
+{%- assign entity_person_id = "/asadullah-ali-al-andalususi/" | absolute_url | append: "#person" -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dataset",
+      "@id": {{ seo_abs | append: "#dataset" | jsonify }},
+      "name": {{ reg.title | jsonify }},
+      "description": {{ seo_desc | jsonify }},
+      "url": {{ seo_abs | jsonify }},
+      "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
+      "inLanguage": "en",
+      "temporalCoverage": {{ reg.survey.verified_on | jsonify }},
+      "dateModified": {{ reg.survey.reverified_on | jsonify }},
+      "creator": { "@type": "Organization", "name": "The Andalusian Project Archive", "url": {{ site_abs | jsonify }} },
+      "isBasedOn": [
+        {%- for r in reg.registries -%}
+        { "@type": "Dataset", "name": {{ r.name | jsonify }}, "url": {{ r.record_url | jsonify }} }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ],
+      "license": {{ "/NOTICE.md/" | absolute_url | jsonify }}
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": {{ seo_abs | append: "#collectionpage" | jsonify }},
+      "name": {{ seo_title | jsonify }},
+      "url": {{ seo_abs | jsonify }},
+      "description": {{ seo_desc | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": { "@id": {{ site_abs | jsonify }} },
+      "about": { "@id": {{ entity_person_id | jsonify }} },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Registries surveyed",
+        "itemListOrder": "https://schema.org/ItemListUnordered",
+        "numberOfItems": {{ reg.registries | size }},
+        "itemListElement": [{% assign _ri = 0 -%}
+          {%- for r in reg.registries -%}
+          {%- if _ri > 0 -%},{%- endif -%}{%- assign _ri = _ri | plus: 1 -%}
+          { "@type": "ListItem", "position": {{ _ri }}, "url": {{ r.record_url | jsonify }}, "name": {{ r.name | jsonify }} }
+          {%- endfor -%}
+        ]
+      }
+    }
   ]
 }
 </script>

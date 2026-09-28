@@ -126,7 +126,28 @@ description: What the captures of The Andalusian Project's YouTube channel show,
   <p>{{ f.preservation_record.mirror_urls | escape }}</p>
   <h3>Superseded duplicates</h3>
   <p>{{ f.preservation_record.superseded_duplicates | escape }}</p>
-  <p><a href="https://archive.org/details/{{ f.preservation_record.archive_org_collection }}" target="_blank" rel="noopener noreferrer">The andalusian-project collection on the Internet Archive</a> is where the {{ f.preservation_record.archive_org_files }} files live.</p>
+  {%- comment -%}
+    2026-09-28: a broken link, found while adding the Internet Archive link this
+    section is supposed to carry - the link was already here and did not work.
+
+    `preservation_record.archive_org_collection` is the PAGE-FACING statement
+    of the collection and it reads
+
+        andalusian-project (https://archive.org/details/andalusian-project)
+
+    i.e. a sentence with the URL in it, not an identifier. Interpolating it into
+    an href produced, in the built site:
+
+        href="https://archive.org/details/andalusian-project (https://archive.org/details/andalusian-project)"
+
+    which is a dead href with a space and a pair of parentheses in it. The
+    sibling key `preservation.archive_org_collection` holds the bare identifier
+    and is what belongs in a URL, so that is what is read here. No literal is
+    typed and `_data/channel_facts.json` is not edited - the taxonomy records
+    that file as owned by another agent and read-only here. The one link this
+    section prints for the collection is now the one that resolves.
+  {%- endcomment -%}
+  <p><a href="https://archive.org/details/{{ f.preservation.archive_org_collection }}" target="_blank" rel="noopener noreferrer">The {{ f.preservation.archive_org_collection }} collection on the Internet Archive</a> is where the {{ f.preservation_record.archive_org_files }} files live. This collection is the live third-party preservation of the channel, and it is also the first entry on <a href="{{ '/scholarly-records/' | relative_url }}">the scholarly-records page</a>, which is this archive&rsquo;s account of where this work is registered in scholarly registries and what is wrong with those registrations.</p>
   <p class="meta">{{ f.preservation_record.caveat | escape }}</p>
 </div>
 

@@ -1,0 +1,531 @@
+{
+  "title": "Scholarly registry records for Asadullah Ali Al-Andalusi",
+  "purpose": "A dated, machine-readable record of what the public scholarly registries actually hold for Asadullah Ali Al-Andalusi, which of his catalogued papers each record refers to, and where those records are wrong, incomplete or hazardous to cite. This file is the ONLY source for the /scholarly-records/ page: that page renders from here and types no identifier of its own.",
+  "authority": "Every identifier in this file was read out of a live public API on the date in `survey.verified_on` and the reading is recorded per registry. Nothing here is inferred from a search-engine result, a citation string or a third-party page's summary of someone else's work.",
+  "subject": {
+    "name": "Asadullah Ali Al-Andalusi",
+    "display_names_in_registries": [
+      "Asadullah Ali Al-Andalusi",
+      "A. Al-Andalusi",
+      "Asadullah Ali al-Andalusi",
+      "Asadullah Ali Al-Andalusi"
+    ],
+    "note": "No registry records the subject under a single canonical form. OpenAlex holds him as \"Asadullah Ali Al-Andalusi\"; Semantic Scholar holds him as the abbreviated \"A. Al-Andalusi\"; Crossref holds one 10.12816 record with the family name capitalised and one with it lower-cased, and holds the Yaqeen DOI with the family name joined to the given name as a single string. A reader searching one form will not find the others, which is the first thing this page exists to say."
+  },
+  "survey": {
+    "verified_on": "2026-09-27",
+    "reverified_on": "2026-09-28",
+    "method": "Each registry was queried over its own public, anonymous HTTP API and the raw response was read field by field. Where a registry offers both a single-record endpoint and a search endpoint, both were used: the single-record endpoint to confirm an identifier resolves to the expected record, and the search endpoint to find records the survey did not already know about.",
+    "apis_used": [
+      "api.openalex.org/authors/{id} and api.openalex.org/works/{id}",
+      "api.semanticscholar.org/graph/v1/author/{id} and .../author/{id}/papers",
+      "api.crossref.org/works/{doi}",
+      "doaj.org/api/search/articles/authors.name:",
+      "pub.orcid.org/v3.0/search/ and pub.orcid.org/v3.0/{orcid}/person",
+      "archive.org/metadata/{collection}"
+    ],
+    "not_consulted": [
+      {
+        "name": "CORE",
+        "reason": "Requires an API key. This project holds no key and will not register for one, so no claim is made either way about what CORE holds."
+      }
+    ],
+    "access_caveats": [
+      "api.openalex.org answers anonymous requests and every reading on this page was taken from it. The human-facing pages on openalex.org answered HTTP 403 to a non-browser client, so the record_url values below are the canonical openalex.org addresses and their CONTENT was verified through the API rather than through the web page.",
+      "semanticscholar.org answered HTTP 202 to a non-browser client, which is a challenge rather than a page. Every Semantic Scholar reading here was taken from api.semanticscholar.org instead."
+    ]
+  },
+  "registries": [
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "record_url": "https://openalex.org/A5078673953",
+      "verified_on": "2026-09-27",
+      "what_it_holds": "One author record carrying 5 works and 2 received citations. The record carries no ORCID and no affiliations. It is the broadest of the three bibliographic registries surveyed and still names a fraction of the archive's own paper catalogue.",
+      "records_unit": "works on one author record",
+      "write_access": "none — read-only API, no anonymous deposit. OpenAlex builds its graph from Crossref, ORCID, DOAJ, PubMed and a curated list of repositories; a work appears because its data source supplied it, and this archive is not a data source for any of those.",
+      "author_record": {
+        "id": "A5078673953",
+        "display_name": "Asadullah Ali Al-Andalusi",
+        "works_count": 5,
+        "cited_by_count": 2,
+        "orcid": null,
+        "affiliations": [],
+        "affiliations_note": "Zero affiliations on the author record. One WORK record, W4245101343, carries a raw affiliation string \"Yaqeen Fellow\" with no institution id behind it, so it is a free-text byline and not an institutional record.",
+        "topics_named_in_the_brief": [
+          "Education and Islamic Studies",
+          "Islamic Studies and History"
+        ],
+        "topics_note": "The brief for this survey named two topics. On re-verification the live record carried five, the two named plus Islamic Finance and Banking Studies, Medieval and Classical Philosophy, and Linguistic, Cultural, and Literary Studies. OpenAlex derives topics automatically and they change; the two are reproduced because they were the two surveyed, and the drift is recorded rather than smoothed over."
+      },
+      "records": [
+        {
+          "openalex_id": "W2166612418",
+          "registry_url": "https://openalex.org/W2166612418",
+          "title": "International Conference on Developing Synergies Between Islam and Science and Technology for Mankind's Benefit ( Kuala Lumpur , 1 - 2 October 2014 )",
+          "year": 2014,
+          "doi": "10.12816/0009888",
+          "cited_by": 0,
+          "is_oa": false,
+          "co_authors": [
+            "Daud Abdul-Fattah Batchelor"
+          ],
+          "author_position": "last",
+          "raw_author_name": "Asadullah Ali al-Andalusi",
+          "archive_paper_id": 10,
+          "same_as": [
+            "https://openalex.org/W2166612418",
+            "https://doi.org/10.12816/0009888"
+          ],
+          "note": "The only record in the whole survey that names a co-author on the OpenAlex side. The co-author holds his own OpenAlex author record, A5110436658, and the raw string on that authorship is \"Daud Abdulfattah Batchelor\"."
+        },
+        {
+          "openalex_id": "W584560584",
+          "registry_url": "https://openalex.org/W584560584",
+          "title": "The Rise and Decline of Scientific Productivity in the Muslim World : A Preliminary Analysis",
+          "year": 2015,
+          "doi": "10.12816/0019168",
+          "cited_by": 2,
+          "is_oa": false,
+          "co_authors": [],
+          "archive_paper_id": 1,
+          "duplicate_of": "W4245101343",
+          "same_as": [
+            "https://openalex.org/W584560584",
+            "https://doi.org/10.12816/0019168"
+          ],
+          "note": "One of the two records for the 2015 journal article. This one carries the 2 citations and is closed access."
+        },
+        {
+          "openalex_id": "W2279455005",
+          "registry_url": "https://openalex.org/W2279455005",
+          "title": "International Conference on Maqasid al-Shari'ah in Public Policy and Governance (Kuala Lumpur, 15-16 June 2015)",
+          "year": 2015,
+          "doi": null,
+          "cited_by": 0,
+          "is_oa": false,
+          "co_authors": [],
+          "archive_paper_id": 9,
+          "duplicate_of": "W2322138998",
+          "same_as": [
+            "https://openalex.org/W2279455005"
+          ],
+          "note": "The title variant of the 2015 Maqasid conference record, carrying no DOI at all. Same conference, same dates, same sole author as W2322138998."
+        },
+        {
+          "openalex_id": "W2322138998",
+          "registry_url": "https://openalex.org/W2322138998",
+          "title": "International Conference on Shari'ah Objectives ( Maqasid ) in Public Policy and Governance ( IAIS Malaysia , 15 - 16 June 2015 )",
+          "year": 2015,
+          "doi": "10.12816/0019212",
+          "cited_by": 0,
+          "is_oa": false,
+          "co_authors": [],
+          "archive_paper_id": 9,
+          "same_as": [
+            "https://openalex.org/W2322138998",
+            "https://doi.org/10.12816/0019212"
+          ],
+          "note": "The DOI-bearing record of the same 2015 Maqasid conference, and the only OpenAlex record of the three conference papers that carries a DOI."
+        },
+        {
+          "openalex_id": "W4245101343",
+          "registry_url": "https://openalex.org/W4245101343",
+          "title": "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis",
+          "year": 2015,
+          "doi": "10.52282/icr.v6i2.333",
+          "cited_by": 0,
+          "is_oa": true,
+          "oa_status": "bronze",
+          "oa_url": "https://icrjournal.org/index.php/icr/article/download/333/319",
+          "co_authors": [],
+          "archive_paper_id": 1,
+          "duplicate_of": "W584560584",
+          "raw_affiliation_strings": [
+            "Yaqeen Fellow"
+          ],
+          "same_as": [
+            "https://openalex.org/W4245101343",
+            "https://doi.org/10.52282/icr.v6i2.333"
+          ],
+          "note": "The other record for the 2015 journal article, and the only open-access record in the whole OpenAlex survey. Its oa_url is the publisher PDF on icrjournal.org, a host that no longer resolves in DNS, so the open-access flag points at a URL that cannot be fetched."
+        }
+      ],
+      "additional_records": [
+        {
+          "openalex_id": "W4415881166",
+          "registry_url": "https://openalex.org/W4415881166",
+          "title": "Understanding Aisha's Age: An Interdisciplinary Approach",
+          "year": 2018,
+          "doi": "10.65061/hdxb1161",
+          "cited_by": 0,
+          "is_oa": false,
+          "co_authors": [
+            "Jonathan Brown"
+          ],
+          "archive_paper_id": 3,
+          "on_author_record": false,
+          "same_as": [
+            "https://openalex.org/W4415881166",
+            "https://doi.org/10.65061/hdxb1161"
+          ],
+          "note": "Found by querying the DOI, NOT by walking the author record: it is absent from the 5 works on A5078673953. A work of his that the author record does not list is a different kind of gap from a work nobody has recorded, and it is why an author record is not a catalogue."
+        }
+      ]
+    },
+    {
+      "id": "semantic_scholar",
+      "name": "Semantic Scholar",
+      "record_url": "https://www.semanticscholar.org/author/1412648752",
+      "verified_on": "2026-09-27",
+      "what_it_holds": "One author record under the abbreviated name \"A. Al-Andalusi\", carrying 4 papers, 1 citation and an h-index of 1.",
+      "records_unit": "papers on one author record",
+      "write_access": "none — read-only API, no anonymous deposit. Semantic Scholar assembles its graph from partner APIs and from claims an author makes on a Semantic Scholar author page; this archive holds no such account and will not create one on his behalf.",
+      "author_record": {
+        "id": "1412648752",
+        "display_name": "A. Al-Andalusi",
+        "paper_count": 4,
+        "citation_count": 1,
+        "h_index": 1
+      },
+      "cross_check": "Each of the 4 Semantic Scholar papers carries a Microsoft Academic Graph id whose digits are exactly the digits of the corresponding OpenAlex work id - 2166612418, 584560584, 2279455005, 2322138998. Two independently built indexes agreeing on the numeric suffix of every record is the strongest single piece of evidence in this survey that the four records and the five OpenAlex records describe the same set of works.",
+      "records": [
+        {
+          "corpus_id": 146365015,
+          "registry_url": "https://www.semanticscholar.org/author/1412648752",
+          "title": "International Conference on Developing Synergies Between Islam and Science, & Technology for Mankind's Benefit (Kuala Lumpur, 1-2 October 2014)",
+          "year": 2014,
+          "doi": "10.12816/0009888",
+          "mag_id": "2166612418",
+          "archive_paper_id": 10,
+          "note": "A third title variant of the same conference paper, differing from the OpenAlex and Crossref titles in punctuation and word order."
+        },
+        {
+          "corpus_id": 142373738,
+          "registry_url": "https://www.semanticscholar.org/author/1412648752",
+          "title": "The Rise and Decline of Scientific Productivity In The Muslim World: A Preliminary Analysis",
+          "year": 2015,
+          "doi": "10.12816/0019168",
+          "mag_id": "584560584",
+          "archive_paper_id": 1,
+          "note": "The citation sits on the 10.12816 record, not on the 10.52282 one."
+        },
+        {
+          "corpus_id": 159771405,
+          "registry_url": "https://www.semanticscholar.org/author/1412648752",
+          "title": "International Conference on Shari'ah Objectives ( Maqasid ) in Public Policy and Governance ( IAIS Malaysia , 15 - 16 June 2015 )",
+          "year": 2015,
+          "doi": "10.12816/0019212",
+          "mag_id": "2322138998",
+          "archive_paper_id": 9
+        },
+        {
+          "corpus_id": 147156149,
+          "registry_url": "https://www.semanticscholar.org/author/1412648752",
+          "title": "International Conference on Maqasid al-Shari'ah in Public Policy and Governance (Kuala Lumpur, 15-16 June 2015)",
+          "year": 2015,
+          "doi": null,
+          "mag_id": "2279455005",
+          "archive_paper_id": 9,
+          "note": "Semantic Scholar holds BOTH Maqasid records as separate papers, exactly as OpenAlex does. The duplication is therefore not an OpenAlex artefact: two independent indexes carry it."
+        }
+      ]
+    },
+    {
+      "id": "crossref",
+      "name": "Crossref",
+      "record_url": "https://search.crossref.org/?q=Asadullah+Ali+Al-Andalusi",
+      "verified_on": "2026-09-27",
+      "what_it_holds": "The DOI registration agency for the publishing side of this corpus. It holds 4 of his DOIs: the three with the 10.12816 prefix, deposited by the journal's publisher, and the Yaqeen DOI, deposited by Yaqeen. It holds no author record, so \"what Crossref holds about him\" is the set of DOIs he is an author on.",
+      "records_unit": "DOI registrations where he is an author",
+      "write_access": "none — read-only API, no anonymous deposit. Crossref accepts a deposit only from the DOI registrant. For all four records here the registrant is the publishing organisation, not this archive, and this project holds no membership with Crossref and will not seek any.",
+      "records": [
+        {
+          "doi": "10.12816/0009888",
+          "registry_url": "https://doi.org/10.12816/0009888",
+          "title": "International Conference on Developing Synergies Between Islam and Science and Technology for Mankind's Benefit ( Kuala Lumpur , 1 - 2 October 2014 )",
+          "container_title": "Islam and Civilisational Renewal",
+          "short_container_title": "ICR",
+          "volume": "5",
+          "issue": "4",
+          "pages": "599-602",
+          "year": 2014,
+          "month": "10",
+          "issn": "1394-0937",
+          "registrant_publisher": "TechKnowledge General Trading LLC",
+          "crossref_member": "5068",
+          "authors": [
+            {
+              "given": "Daud Abdulfattah",
+              "family": "Batchelor",
+              "sequence": "first"
+            },
+            {
+              "given": "Asadullah Ali",
+              "family": "al-Andalusi",
+              "sequence": "additional"
+            }
+          ],
+          "archive_paper_id": 10,
+          "same_as": [
+            "https://doi.org/10.12816/0009888"
+          ],
+          "note": "Crossref independently confirms the co-authorship, and records his family name lower-cased here where the same registry's 10.12816/0019168 record capitalises it. The pagination 599-602 is not recorded anywhere in the archive's own catalogue."
+        },
+        {
+          "doi": "10.12816/0019168",
+          "registry_url": "https://doi.org/10.12816/0019168",
+          "title": "The Rise and Decline of Scientific Productivity in the Muslim World : A Preliminary Analysis",
+          "container_title": "Islam and Civilisational Renewal",
+          "short_container_title": "ICR",
+          "volume": "6",
+          "issue": "2",
+          "pages": "229-246",
+          "year": 2015,
+          "month": "04",
+          "issn": "1394-0937",
+          "registrant_publisher": "TechKnowledge General Trading LLC",
+          "crossref_member": "5068",
+          "is_referenced_by_count": 1,
+          "authors": [
+            {
+              "given": "Asadullah Ali",
+              "family": "Al-Andalusi",
+              "sequence": "first"
+            }
+          ],
+          "archive_paper_id": 1,
+          "same_as": [
+            "https://doi.org/10.12816/0019168"
+          ],
+          "note": "The container is Islam and Civilisational Renewal, ICR 6(2), pages 229-246, published 2015-04. The archive's own record for the same work names the venue \"ICR Journal\" and gives volume_issue 6(2):229-246 and publication_date 2015-04. The pagination, the issue and the month therefore agree exactly across the archive and Crossref, while the JOURNAL NAME does not: ICR is the abbreviation Crossref records for Islam and Civilisational Renewal."
+        },
+        {
+          "doi": "10.12816/0019212",
+          "registry_url": "https://doi.org/10.12816/0019212",
+          "title": "International Conference on Shari'ah Objectives ( Maqasid ) in Public Policy and Governance ( IAIS Malaysia , 15 - 16 June 2015 )",
+          "container_title": "Islam and Civilisational Renewal",
+          "short_container_title": "ICR",
+          "volume": "6",
+          "issue": "3",
+          "pages": "431-433",
+          "year": 2015,
+          "month": "07",
+          "issn": "1394-0937",
+          "registrant_publisher": "TechKnowledge General Trading LLC",
+          "crossref_member": "5068",
+          "authors": [
+            {
+              "given": "Asadullah Ali",
+              "family": "Al-Andalusi",
+              "sequence": "first"
+            }
+          ],
+          "archive_paper_id": 9,
+          "same_as": [
+            "https://doi.org/10.12816/0019212"
+          ],
+          "note": "A sole-authored record, which is the evidence that the 2015 Maqasid conference paper is NOT a collaboration. The pagination 431-433 is not recorded anywhere in the archive's own catalogue."
+        },
+        {
+          "doi": "10.65061/hdxb1161",
+          "registry_url": "https://doi.org/10.65061/hdxb1161",
+          "title": "Understanding Aisha\u2019s Age: An Interdisciplinary Approach",
+          "container_title": "Yaqeen Institute for Islamic Research",
+          "short_container_title": "YIIR",
+          "year": 2018,
+          "month": "10",
+          "day": "02",
+          "issn": "3071-1487",
+          "registrant_publisher": "Yaqeen Institute for Islamic Research",
+          "crossref_member": "54535",
+          "authors": [
+            {
+              "given": "Asadullah",
+              "family": "Ali Al-Andalusi",
+              "sequence": "first"
+            },
+            {
+              "given": "Jonathan",
+              "family": "Brown",
+              "sequence": "additional"
+            }
+          ],
+          "archive_paper_id": 3,
+          "same_as": [
+            "https://doi.org/10.65061/hdxb1161"
+          ],
+          "note": "A fourth Crossref record, found by querying this DOI during the survey. It independently confirms the co-authorship with Jonathan Brown, and its publication date 2018-10-02 is the exact date the archive's own record carries. The only DOI in this corpus whose resolution target is the publisher."
+        }
+      ]
+    },
+    {
+      "id": "doaj",
+      "name": "DOAJ",
+      "record_url": "https://doaj.org/api/search/articles/authors.name:asadullah%20andalusi",
+      "verified_on": "2026-09-27",
+      "what_it_holds": "Nothing. Three author-name searches - \"asadullah andalusi\", \"asadullah al-andalusi\" and the bare family name - each returned a total of 0.",
+      "records_unit": "records for his name",
+      "write_access": "none — read-only API, no anonymous deposit. DOAJ indexes journals and takes its article metadata from those journals; an article appears when an indexed journal supplies it.",
+      "records": [],
+      "no_record_reason": "Zero is the honest reading and it is not a verdict on the work. DOAJ indexes open-access journals, and the three venues that hold his papers - Islam and Civilisational Renewal, Yaqeen Institute and the ICR Journal - are indexed by Crossref and by their own registries rather than through DOAJ. A DOAJ search returning nothing is a fact about DOAJ's coverage, not about the papers."
+    },
+    {
+      "id": "orcid",
+      "name": "ORCID",
+      "record_url": "https://pub.orcid.org/v3.0/search/?q=family-name:Al-Andalusi+AND+given-names:Asadullah",
+      "verified_on": "2026-09-27",
+      "what_it_holds": "Nothing that is his. The public search for his name returned 3 records, and all 3 were read and rejected: they belong to Asadullah Al Galif, Asadullah Al azhari and Asadullah Al Galib. None carries an alternative name, an affiliation, an email or a single work, so none of them is a match beyond the given name and a similar family name.",
+      "records_unit": "records that are his",
+      "write_access": "none from this project — an ORCID record can only be created and then claimed by the researcher themself, using their own credentials and their own email domain. This project holds no such credentials, will not seek them, and will not create an unaffiliated ORCID record on his behalf.",
+      "records": [],
+      "no_record_reason": "The three near-miss records are the reason this entry is a searched negative rather than an unchecked one. They are named here so that the next person to run this search knows the three identifiers have already been examined and rejected, and does not have to assume a name match is him.",
+      "rejected_candidates": [
+        {
+          "orcid": "0000-0001-5714-0387",
+          "name_as_recorded": "Asadullah Al Galif",
+          "why_rejected": "Different family name. No other names, no affiliations, no external identifiers and no works on the record."
+        },
+        {
+          "orcid": "0009-0005-0919-124X",
+          "name_as_recorded": "Asadullah Al azhari",
+          "why_rejected": "Different family name. No other names, no affiliations, no external identifiers and no works on the record."
+        },
+        {
+          "orcid": "0009-0002-3571-9480",
+          "name_as_recorded": "Asadullah Al Galib",
+          "why_rejected": "Different family name. No other names, no affiliations, no external identifiers and no works on the record."
+        }
+      ]
+    },
+    {
+      "id": "internet_archive",
+      "name": "Internet Archive",
+      "record_url": "https://archive.org/details/andalusian-project",
+      "verified_on": "2026-09-27",
+      "what_it_holds": "Not bibliographic identifiers but the physical preservation itself: the andalusian-project collection, titled \"Andalusian Project Youtube Channel Archive\", mediatype movies, made public 2022-10-06, holding about 15.09 GB. It is the live third-party preservation of the channel whose files the archive's own video records point at.",
+      "records_unit": "preservation collections",
+      "write_access": "this archive does not deposit. The collection is a third party's preservation of the author's channel, and its items are not derived from anything in this repository.",
+      "records": [
+        {
+          "collection_id": "andalusian-project",
+          "registry_url": "https://archive.org/details/andalusian-project",
+          "title": "Andalusian Project Youtube Channel Archive",
+          "mediatype": "movies",
+          "publicdate": "2022-10-06",
+          "item_size_bytes": 15086068695,
+          "item_size_human": "about 15.09 GB",
+          "ia_parent_collections": [
+            "spiritualityandreligion"
+          ],
+          "note": "Listed on this page because it is a registry the archive reads rather than writes, and because it is the one registry here whose absence would cost the corpus its recordings rather than its citations."
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "collaborations",
+      "title": "Three of his papers are contributions, not sole works",
+      "statement": "Two conference papers are co-authored with Daud Abdul-Fattah Batchelor, and \"Understanding Aisha's Age\" is co-authored with Jonathan Brown. They are contributions to other people's work, and the archive files them as category B, Contributions & Collaborations, rather than as sole-authored works. None of them is a new work and none changes a count: all three are already counted once, and this is a statement about how each is attributed, not about how many there are.",
+      "evidence": [
+        {
+          "fact": "\"International Conference on Developing Synergies Between Islam and Science and Technology\" is co-authored with Daud Abdul-Fattah Batchelor, who is first author.",
+          "sources": "OpenAlex W2166612418 names two authorships, Daud Abdul-Fattah Batchelor (A5110436658) first and Asadullah Ali al-Andalusi last. Crossref 10.12816/0009888 independently names Daud Abdulfattah Batchelor first and Asadullah Ali al-Andalusi additional. Three title variants of this one paper exist across the two registries."
+        },
+        {
+          "fact": "\"Understanding Aisha's Age: An Interdisciplinary Approach\" is co-authored with Jonathan Brown.",
+          "sources": "OpenAlex W4415881166 names Asadullah Ali Al-Andalusi and Jonathan Brown. Crossref 10.65061/hdxb1161 names Asadullah Ali Al-Andalusi first and Jonathan Brown additional. Two independent registries agree, and the archive's own record for the paper already carries Dr. Jonathan Brown as a co-author."
+        },
+        {
+          "fact": "The 2015 Maqasid conference paper is NOT a collaboration.",
+          "sources": "Crossref 10.12816/0019212 and OpenAlex W2279455005 and W2322138998 all record exactly one author on it. This is recorded as a negative finding because it is the adjacent claim: a reader looking at the conference papers as a group would otherwise assume all three were joint."
+        }
+      ],
+      "why_it_matters_to_a_reader": "Attribution is the first thing a reader checks and the last thing a registry gets right. A paper co-written with someone else is cited to both authors; presenting it as a sole work misstates the scholarship, and presenting it as the subject's alone takes credit that belongs partly to a co-author.",
+      "archive_handling": "The archive's own data already records both co-authorships. What was missing was a page that said so where a reader arrives asking who he is, and that is what this page and the entity page now do. No data file was edited to achieve it."
+    },
+    {
+      "id": "duplicate-dois",
+      "title": "One journal article is registered under two DOIs, and the two records disagree about whether it is open",
+      "statement": "\"The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis\" (2015) exists in OpenAlex as two separate works under two different DOIs for what is one article. OpenAlex W584560584 carries DOI 10.12816/0019168 and is closed access. OpenAlex W4245101343 carries DOI 10.52282/icr.v6i2.333 and is open access, bronze, with an oa_url pointing at the publisher PDF on icrjournal.org - a host that no longer resolves in DNS, so the open-access flag points at a URL nobody can fetch. Semantic Scholar carries only the 10.12816 record.",
+      "evidence": [
+        {
+          "fact": "The two records are one article.",
+          "sources": "Same sole author, same year, titles identical but for spacing. Crossref gives 10.12816/0019168 the venue Islam and Civilisational Renewal 6(2), pages 229-246, published 2015-04; the archive's own record for 10.52282/icr.v6i2.333 gives volume_issue 6(2):229-246 and publication_date 2015-04. The issue, the pagination and the month agree exactly across two independent sources."
+        },
+        {
+          "fact": "This is the only surviving registry record of a work whose publisher page is dead.",
+          "sources": "DOI 10.52282/icr.v6i2.333 resolves to icrjournal.org, which does not resolve in DNS; the resolution was re-checked on 2026-09-28 and failed. The archive holds the 18-page publisher PDF, verified byte-identical to the Internet Archive capture of the publisher's own file, so the text survives even though both the publisher and one of the two DOIs do not."
+        },
+        {
+          "fact": "The two DOIs are not interchangeable for a citation.",
+          "sources": "They carry different publisher registrations, different volume/issue metadata and different open-access status in OpenAlex. A reader who follows either one is not reliably taken to the article."
+        }
+      ],
+      "why_it_matters_to_a_reader": "This is the case where the registries are the only surviving index of a work and they still contradict each other. It is also the one place a citation is most likely to break for good, because the publisher's own host is gone.",
+      "archive_handling": "The archive already records the dead DOI, the surviving 10.12816 alternate, and the byte-identity proof for the held PDF. This page states the duplicate as a registry defect, which is what it is, without changing the archive's record of the work itself."
+    },
+    {
+      "id": "maqasid-duplicate",
+      "title": "The 2015 Maqasid conference is registered twice, under two titles and one DOI",
+      "statement": "One conference, held in Kuala Lumpur on 15-16 June 2015, is present as two records in OpenAlex and two in Semantic Scholar. OpenAlex W2322138998 carries the DOI 10.12816/0019212 and the title \"International Conference on Shari'ah Objectives ( Maqasid ) in Public Policy and Governance ( IAIS Malaysia , 15 - 16 June 2015 )\". OpenAlex W2279455005 carries no DOI at all and the title \"International Conference on Maqasid al-Shari'ah in Public Policy and Governance (Kuala Lumpur, 15-16 June 2015)\". Semantic Scholar holds both, as corpus ids 159771405 and 147156149.",
+      "evidence": [
+        {
+          "fact": "The two records share a sole author, the same two dates and the same conference.",
+          "sources": "W2322138998 and W2279455005 each carry exactly one authorship, Asadullah Ali Al-Andalusi, and each is dated 15-16 June 2015 in Kuala Lumpur. IAIS Malaysia, named in one title, is the organiser named in the archive's own record for the same paper."
+        },
+        {
+          "fact": "The duplication is in two independent indexes, not one.",
+          "sources": "Semantic Scholar carries both records separately, with distinct corpus ids, exactly as OpenAlex does. An artefact of a single registry's matching would not appear twice."
+        },
+        {
+          "fact": "What is NOT established, stated plainly.",
+          "sources": "The two records share no identifier: one has a DOI and one does not, and there is no field linking them. The match rests on the conference name, the exact dates and the sole author. That is strong and it is not a shared identifier, and a reader reconciling a bibliography should know which it is."
+        }
+      ],
+      "why_it_matters_to_a_reader": "Anyone counting his conference papers from a registry will get two where the archive counts one, and will not know which count to trust. The archive's count of one is the defensible one, and this page says why.",
+      "archive_handling": "The archive's catalogue holds this as one paper. The reconciliation table below reconciles all registry records onto that one row, so the duplicate is visible and does not propagate into any total."
+    },
+    {
+      "id": "doi-resolution-hazard",
+      "title": "The three 10.12816 DOIs no longer resolve to the article, or to any publisher",
+      "statement": "All three DOIs with the 10.12816 prefix - 10.12816/0009888, 10.12816/0019168 and 10.12816/0019212 - resolve through doi.org with HTTP 200 to https://kezana.ai/, which is the homepage of a third-party document reader, not a landing page for the article and not the publisher. A reader who follows the citation link arrives at a site's front door with no indication of which of thousands of documents they asked for. By contrast 10.65061/HDXB1161 resolves correctly to the Yaqeen Institute page for the article.",
+      "evidence": [
+        {
+          "fact": "All three were re-checked on 2026-09-28 and all three land on the same root URL.",
+          "sources": "HEAD requests to https://doi.org/10.12816/0009888, /0019168 and /0019212 each returned HTTP 200 with the final URL https://kezana.ai/. kezana.ai resolves in DNS (98.88.185.178). The four 10.12816 records' own Crossref resource field points instead at Platform.almanhal.com, the journal's original platform."
+        },
+        {
+          "fact": "This is a live hazard for a citation, not a historical one.",
+          "sources": "The DOI resolves successfully, so a link checker reports the citation as healthy. The hazard is invisible to every automated check and only a reader following the link discovers it."
+        }
+      ],
+      "why_it_matters_to_a_reader": "A DOI that resolves HTTP 200 is the most trusted signal in a citation, and here it resolves to a page that is not the article. The archive's own pages name these DOIs because they are real and they are the identifiers of record, and they state the hazard here rather than leaving a reader to find it.",
+      "archive_handling": "No DOI in this corpus was altered, removed or replaced. The hazard is recorded so that anyone citing from this archive cites with it in view."
+    }
+  ],
+  "not_created": [
+    {
+      "item": "A Wikipedia article",
+      "decision": "not created",
+      "reason": "There is no English Wikipedia article about him, and none should be written by this archive. A Wikipedia article is a claim that a subject meets the notability standard, it is written under a conflict-of-interest policy that this archive cannot satisfy while being the subject's principal documenter, and creating one from inside the archive would be self-promotion dressed as encyclopaedia work. Verified empty on 2026-09-28: a search for his name returns only an index page, a list of Muslim historians, an unrelated person and an unrelated topic.",
+      "verified": "empty"
+    },
+    {
+      "item": "A Wikidata item",
+      "decision": "not created",
+      "reason": "There is no Wikidata item about him, and this archive did not create one. A Wikidata item is a set of structured claims about a person that other projects cite; minting one for a living private individual from a recovery project, without his participation, is exactly the kind of durable identity claim this archive refuses to make about anyone. Verified empty on 2026-09-28: three spellings of his name each return 0 items, and the 8 items returned for the bare family name are all about Al-Andalus, the mosque, or an unrelated person.",
+      "verified": "empty"
+    }
+  ],
+  "limitations": [
+    "This is a point-in-time snapshot taken on 2026-09-27 and re-verified on 2026-09-28. Bibliographic registries change: OpenAlex derives topics automatically and had already changed the subject's topic list between the survey and the re-verification, and a DOI that resolves today may not resolve tomorrow.",
+    "The OpenAlex author record holds 5 works. The archive's own paper catalogue holds 20. A 5-work author record is much narrower than the catalogue, and the gap is not evidence that 15 papers are unimportant - several of them are talks and lectures that were never published in a journal and so were never offered to a DOI registry at all.",
+    "Absence of a record is not evidence that a work does not exist. The survey establishes only that a registry holds no record of it as of the survey date. Several of his works are talks, lectures and essays that no bibliographic registry indexes, and the archive holds them from other sources entirely.",
+    "Two registries were searched by name, which is the only way they can be searched, and name search is a weak instrument: it is why the ORCID entry records the three candidate records that were read and rejected rather than a bare zero, and why the archive's entity page treats name variants as a reconciliation problem in their own right.",
+    "One registry, CORE, was not consulted at all because it requires an API key. No claim is made about what CORE holds.",
+    "The archive holds the machine transcripts of the recordings; none of these registries indexes a recording, so the 68 recordings in this archive have no external bibliographic record to reconcile against. That is a property of the corpus, not a gap in the survey.",
+    "The survey reconciled the archive's PAPER catalogue only. It says nothing about the written works, the articles or the notices, none of which were offered to these registries under a persistent identifier that this survey looked for."
+  ]
+}
