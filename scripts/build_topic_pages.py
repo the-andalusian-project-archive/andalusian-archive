@@ -234,28 +234,41 @@ def render_shelf(shelf_out: list[dict]) -> str:
 {lis}
 </ul>"""
         )
+    # NOTE the indentation: this `return` sits AFTER the loop, not inside it.
+    # Indented one level too deep it returned after the first kind group, so
+    # every page showed one kind and the rest of the shelf silently vanished -
+    # with the taxonomy still correct, which is what made it hard to see. The
+    # page/taxonomy check in scripts/test_quotes.py is what caught it.
     return f"""
 <h2>Everything else on this subject</h2>
-<p class="note">The passages above are what this archive can <em>prove</em> answers the
-question, because each one is quoted and cited. This is everything else in the
-archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
-categories and themes rather than on a researcher&rsquo;s selection. A work may
-appear on more than one subject page; that is the tags speaking, not an editorial
-decision.</p>
+<p class="note">The passages above are what the archive can <em>prove</em> bears on the
+question, because each one is quoted and cited. That is a much smaller set than
+the material itself, and the gap matters: it is the set a researcher chose to
+read, not the set of everything relevant. This is everything else in the archive
+filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a reader&rsquo;s judgement. A work may appear
+on more than one subject page; that is the tags speaking, not an editorial
+decision. The list is a reading list, not a claims list.</p>
 {''.join(sections)}
 """
 
 
 def is_answer_quote(quote: str) -> bool:
-    """Is this passage an ANSWER to a question, or a label on a record?
+    """Is this passage substantial enough to sit under a question heading?
 
-    Filtering by length alone would throw away the corpus's best short lines -
-    "This we call God." and "islam is not peace islam is not war" are complete
-    arguments. What must not be presented as an answer is record metadata: the
-    bylines and co-author lines the research agents quoted when reporting an
-    attribution problem. "By Shaykh Dr. Abdalqadir as-Sufi" is important
-    provenance, but it is not an answer to a question, and hanging it under a
-    question heading misrepresents what it is.
+    The brief was to stop the pages showing oversimplifications, and the earlier
+    version of this filter failed at exactly that. It excluded bylines and quotes
+    under 60 characters, and let through lines like "A two day lecture on the
+    subject of atheism, atheists' beliefs, and common arguments and responses" -
+    a page DESCRIPTION, hung under the heading "arguments against atheism", where
+    it read as the answer. It is not an answer; it is a caption.
+
+    A passage earns a question heading only if it is long enough to carry an
+    argument. Short lines are not discarded - the corpus has real aphorisms in it
+    - but a 35-character sentence cannot answer "why do atheists believe
+    evolution disproves god", and presenting it as though it could is the failure
+    this function exists to prevent. Those passages stay in the material table
+    below, where they are legible and not mistaken for a reply.
     """
     q = quote.strip()
     if re.match(r"^(by |By )[A-Z]", q) and len(q) < 120:
@@ -264,9 +277,29 @@ def is_answer_quote(quote: str) -> bool:
         return False
     if re.match(r"^by\s", q, re.I) and "shaykh" in q.lower():
         return False
-    if len(q) < 60:
+    if len(q) < 200:
         return False
     return True
+
+
+_SOURCE_WORDS: dict[str, int] = {}
+
+
+def source_words(path: str) -> int:
+    """Word count of a source file, cached.
+
+    Used to tell the reader how much of a work a quotation actually is. A
+    passage presented without that number invites the reader to treat the
+    excerpt as the argument; with it, they know they are reading a fragment of
+    something three times longer, and the link to the whole is one click away.
+    """
+    if path not in _SOURCE_WORDS:
+        target = ROOT / path
+        try:
+            _SOURCE_WORDS[path] = len(target.read_text(encoding="utf-8", errors="replace").split())
+        except OSError:
+            _SOURCE_WORDS[path] = 0
+    return _SOURCE_WORDS[path]
 
 
 def main() -> int:
@@ -463,20 +496,28 @@ quoted in an argument as though it were checked.</p>
                 continue
             rendered += 1
             rows_md = []
-            for item, claim in pairs[:4]:
+            for item, claim in pairs[:3]:
                 src = f"{item.get('kind', 'item')}"
                 link = f"{{{{ site.baseurl }}}}{item.get('url', '')}"
                 ref = claim.get("ref", "")
-                # The reference is the provenance - it is the thing that makes
-                # the quotation checkable - so it is kept, but given its own line
-                # and allowed to wrap at its own separators. `word-break:
-                # break-all` split paths mid-token and made the filename
-                # unreadable, which is the opposite of what a citation is for.
+                whole = source_words(item.get("path", ""))
+                shown = len(claim.get("quote", "").split())
+                # Say out loud how big the thing we did not show you is. Without
+                # this the excerpt reads as the argument, which is the one way a
+                # faithful quotation can still mislead.
+                if whole and whole > shown * 3:
+                    size = (
+                        f' &mdash; <span class="cite-size">excerpt of about {shown:,} '
+                        f'words from a {whole:,}-word text. The argument around it is '
+                        f'not on this page.</span>'
+                    )
+                else:
+                    size = ""
                 cite = f'<span class="cite-ref">{esc(ref)}</span>'
                 rows_md.append(
                     f"""> {esc(claim['quote'])}
 >
-> &mdash; <a href="{link}">{esc(item.get('slug', 'source'))}</a> ({esc(src)}), cited at {cite}"""
+> &mdash; <a href="{link}">{esc(item.get('slug', 'source'))}</a> ({esc(src)}), cited at {cite}{size}"""
                 )
                 if item.get("kind") == "transcript":
                     rows_md.append(
@@ -492,17 +533,19 @@ quoted in an argument as though it were checked.</p>
 
         unrendered = [q for q in query_order if q not in by_query]
 
-        # A query with no passage of its own is still a question this material
-        # speaks to - the research derived it from reading the same text. It is
-        # listed plainly rather than given an empty heading, because a page of
-        # 100 bare query headings is keyword stuffing and reads as spam.
+        # A query with no substantial passage is not a gap to paper over. It goes
+        # in the plain list below, where nothing promises it an answer, rather
+        # than under a heading with a caption hung under it.
         unrendered_md = ""
         if unrendered:
             items_li = "\n".join(f"      <li>{esc(q)}</li>" for q in unrendered)
             unrendered_md = f"""
-<h2>Further questions this material speaks to</h2>
-<p>These are drawn from the same reading. Where a single passage does not answer
-one of them on its own, the material that bears on it is in the table above.</p>
+<h2>Questions on this subject with no substantial passage here</h2>
+<p>These are questions people ask that this material bears on, but where the
+archive holds nothing long enough to be worth quoting under the question. They are
+listed rather than answered, because a caption or a one-line summary presented as
+an answer is worse than no answer. The reading list below is where to go
+instead.</p>
 <ul class="query-list">
 {items_li}
 </ul>
@@ -556,7 +599,23 @@ last_modified_at: {TODAY}
 <p class="note">This page preserves and attributes. It is not the archive endorsing a
 position and not a religious authority. Read the links for the full text.</p>
 
-<h2>The questions, and what answers them</h2>
+<h2>How to read this page</h2>
+
+<p><strong>Nothing on this page is the whole argument.</strong> Each passage below
+was selected because it bears on the question above it, and each links to the
+full text, paper or transcript it was taken from &mdash; where the context, the
+qualifiers and the counter-arguments are. Where a passage is a small part of a
+much longer work, this page says so and gives the size of the whole, because a
+faithful quotation can still mislead by being a fragment: the reasoning around a
+sentence is often the part that changes what the sentence means.</p>
+
+<p>You do not have to arrive agreeing with him, or with anyone else, and the page
+does not ask you to. It records what was argued, on what grounds, and where the
+record is thin, contested, or his alone. The places worth pressing hardest are
+usually the ones the archive has marked &mdash; and a disagreement formed from
+something you actually read is worth more than one formed from a summary.</p>
+
+<h2>Where the archive holds a substantial passage</h2>
 
 {chr(10).join(blocks) if blocks else '<p>No quoted passage in this cluster yet.</p>'}
 {unrendered_md}
