@@ -153,7 +153,7 @@ know they read it as though from so showcasing their lack of reading comprehensi
 words because when you when when you have to completely erase the word between there in order to make your
 point it showcases that you know you really don\'t know what you\'re talking about You\' never read anything in your entire life so you know these very
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:216</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 29,793-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:217</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 29,801-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -228,7 +228,7 @@ point it showcases that you know you really don\'t know what you\'re talking abo
 not to give scientific information but a
 general statement like that can be so easily Twisted by these individuals desperate to find a rationalization for
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:229</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 29,793-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:230</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 29,801-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -257,7 +257,7 @@ paternal genitalia
 and taraib is supposed to be rendered as the maternal
 genitalia so the private parts of your mother and father and
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-yUpHMaFHZ6s.md:72</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,218-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-yUpHMaFHZ6s.md:73</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,229-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Collaborative Couple"
+display_title: "The Collaborative Couple"
 slug: "the-collaborative-couple"
 permalink: "/articles/the-collaborative-couple/"
 date: "2013-06-29"

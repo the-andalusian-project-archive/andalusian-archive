@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]"
+display_title: "31 - iKhalifa 2： Forgive Yourself"
 transcript_id: "-BwP55UIg3c"
 recording: "-BwP55UIg3c"
 capture_video_id: "-BwP55UIg3c"

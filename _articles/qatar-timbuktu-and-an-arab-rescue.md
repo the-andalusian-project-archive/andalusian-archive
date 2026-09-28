@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Qatar, Timbuktu, And An Arab Rescue"
+display_title: "Qatar, Timbuktu, And An Arab Rescue"
 slug: "qatar-timbuktu-and-an-arab-rescue"
 permalink: "/articles/qatar-timbuktu-and-an-arab-rescue/"
 date: "2013-03-01"

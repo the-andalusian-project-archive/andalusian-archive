@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]"
+display_title: "38 - iKhalifa 3： Be Healthy"
 transcript_id: "Xw2eGP1LRbk"
 recording: "Xw2eGP1LRbk"
 capture_video_id: "Xw2eGP1LRbk"

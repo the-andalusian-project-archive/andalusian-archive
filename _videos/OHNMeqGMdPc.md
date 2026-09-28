@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 28"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 28"
 video_id: "OHNMeqGMdPc"
 id: "OHNMeqGMdPc"
 permalink: "/videos/OHNMeqGMdPc/"

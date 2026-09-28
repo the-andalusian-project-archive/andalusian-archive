@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "15 - The Masked Arab： A Eulogy [bDshE-aKXIA]"
+display_title: "15 - The Masked Arab： A Eulogy"
 transcript_id: "bDshE-aKXIA"
 recording: "bDshE-aKXIA"
 capture_video_id: "bDshE-aKXIA"

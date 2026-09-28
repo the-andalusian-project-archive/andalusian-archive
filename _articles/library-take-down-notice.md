@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Library Take Down Notice"
+display_title: "Library Take Down Notice"
 slug: "library-take-down-notice"
 permalink: "/articles/library-take-down-notice/"
 date: "2014-03-17"

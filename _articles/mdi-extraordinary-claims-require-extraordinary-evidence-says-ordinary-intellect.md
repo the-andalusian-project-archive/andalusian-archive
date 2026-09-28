@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "\"Extraordinary Claims Require Extraordinary Evidence\", Says Ordinary Intellect"
+display_title: "\"Extraordinary Claims Require Extraordinary Evidence\", Says Ordinary Intellect"
 slug: "mdi-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect"
 permalink: "/articles/mdi/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/"
 status: "mdi_text"

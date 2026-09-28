@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Narrative of HappyMuslims: A Response to Adam Deen"
+display_title: "The Narrative of HappyMuslims: A Response to Adam Deen"
 slug: "the-narrative-of-happymuslims-a-response-to-adam-deen-and-the-honesty-policy"
 permalink: "/articles/the-narrative-of-happymuslims-a-response-to-adam-deen-and-the-honesty-policy/"
 date: "2014-04-30"

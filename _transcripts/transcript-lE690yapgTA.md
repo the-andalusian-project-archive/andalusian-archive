@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 22"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 22"
 transcript_id: "lE690yapgTA"
 recording: "lE690yapgTA"
 capture_video_id: "lE690yapgTA"

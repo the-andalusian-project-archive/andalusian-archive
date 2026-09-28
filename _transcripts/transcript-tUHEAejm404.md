@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]"
+display_title: "34 - Twitter Assists Islamists! - Asadullah Andalusi"
 transcript_id: "tUHEAejm404"
 recording: "tUHEAejm404"
 capture_video_id: "tUHEAejm404"

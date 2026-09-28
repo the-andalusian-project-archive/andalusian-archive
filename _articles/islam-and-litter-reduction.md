@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Islam and Litter Reduction"
+display_title: "Islam and Litter Reduction"
 slug: "islam-and-litter-reduction"
 permalink: "/articles/islam-and-litter-reduction/"
 date: "2017-12-22"

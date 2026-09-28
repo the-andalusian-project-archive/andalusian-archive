@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]"
+display_title: "10 - iJihad： Gryffix and Kraut and Tea"
 transcript_id: "fgsVa-khWp4"
 recording: "fgsVa-khWp4"
 capture_video_id: "fgsVa-khWp4"

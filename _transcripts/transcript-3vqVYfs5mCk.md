@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 29"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 29"
 transcript_id: "3vqVYfs5mCk"
 recording: "3vqVYfs5mCk"
 capture_video_id: "3vqVYfs5mCk"

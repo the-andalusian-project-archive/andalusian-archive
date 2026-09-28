@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7"
+display_title: "Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7"
 permalink: "/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/"
 publication_date: "2020"
 url: "https://archive.org/details/between-a-backbone-and-ribs-asadullah"

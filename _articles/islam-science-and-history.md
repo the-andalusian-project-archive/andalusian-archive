@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Islam, Science and History"
+display_title: "Islam, Science and History"
 slug: "islam-science-and-history"
 permalink: "/articles/islam-science-and-history/"
 date: "2018-05-09"

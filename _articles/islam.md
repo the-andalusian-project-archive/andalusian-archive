@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Islam"
+display_title: "Islam"
 slug: "islam"
 permalink: "/articles/islam/"
 date: "2012-04-30"

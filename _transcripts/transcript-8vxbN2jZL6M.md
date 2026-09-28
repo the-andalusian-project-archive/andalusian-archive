@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]"
+display_title: "35 - Understanding Jihad w⧸ Robert Spencer (Preface)"
 transcript_id: "8vxbN2jZL6M"
 recording: "8vxbN2jZL6M"
 capture_video_id: "8vxbN2jZL6M"

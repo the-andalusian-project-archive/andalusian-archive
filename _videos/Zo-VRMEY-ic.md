@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]"
+display_title: "14 - iJihad Ep. 5： The Masked Arab Returns"
 video_id: "Zo-VRMEY-ic"
 id: "Zo-VRMEY-ic"
 permalink: "/videos/Zo-VRMEY-ic/"

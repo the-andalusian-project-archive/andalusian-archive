@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]"
+display_title: "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5"
 video_id: "PoNiuiP3W4Y"
 id: "PoNiuiP3W4Y"
 permalink: "/videos/PoNiuiP3W4Y/"

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "DEBATE: FREEDOM OF SPEECH VS FREEDOM TO INSULT Michael Nugent vs Abdullah al Andalusi (UCD, Ireland)"
+display_title: "DEBATE: FREEDOM OF SPEECH VS FREEDOM TO INSULT Michael Nugent vs Abdullah al Andalusi (UCD, Ireland)"
 video_id: "En8F38ChvvE"
 id: "En8F38ChvvE"
 permalink: "/videos/En8F38ChvvE/"

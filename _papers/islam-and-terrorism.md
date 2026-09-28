@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Islam and Terrorism"
+display_title: "Islam and Terrorism"
 permalink: "/papers/islam-and-terrorism/"
 date: "2016-04-06"
 publication_date: "2016-04-06"

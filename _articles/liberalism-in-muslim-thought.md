@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Liberalism in Muslim Thought"
+display_title: "Liberalism in Muslim Thought"
 slug: "liberalism-in-muslim-thought"
 permalink: "/articles/liberalism-in-muslim-thought/"
 date: "2017-12-22"

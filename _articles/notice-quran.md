@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Al-Qur’an"
+display_title: "Al-Qur’an"
 slug: "notice-quran"
 permalink: "/articles/notice/quran/"
 date: "2010-09-20"

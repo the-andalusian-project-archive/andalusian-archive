@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]"
+display_title: "01 - Understanding Atheism ｜ Session 1"
 transcript_id: "NyAVl7RsEOs"
 recording: "NyAVl7RsEOs"
 capture_video_id: "NyAVl7RsEOs"

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]"
+display_title: "01 - Understanding Atheism ｜ Session 1"
 video_id: "NyAVl7RsEOs"
 id: "NyAVl7RsEOs"
 permalink: "/videos/NyAVl7RsEOs/"

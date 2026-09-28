@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 28"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 28"
 transcript_id: "OHNMeqGMdPc"
 recording: "OHNMeqGMdPc"
 capture_video_id: "OHNMeqGMdPc"

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Making of Modern Western Civilization: The War on Islam"
+display_title: "The Making of Modern Western Civilization: The War on Islam"
 slug: "the-making-of-modern-western-civilization-the-war-on-islam-guest-contribution"
 permalink: "/articles/the-making-of-modern-western-civilization-the-war-on-islam-guest-contribution/"
 date: "2014-10-21"

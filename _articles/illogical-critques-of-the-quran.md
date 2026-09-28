@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Illogical Critiques of the Quran"
+display_title: "Illogical Critiques of the Quran"
 slug: "illogical-critques-of-the-quran"
 permalink: "/articles/illogical-critques-of-the-quran/"
 date: "2013-09-08"

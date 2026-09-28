@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Atheistic Worldview vs The Quranic Worldview"
+display_title: "The Atheistic Worldview vs The Quranic Worldview"
 slug: "the-atheistic-worldview-vs-the-quranic-worldview"
 permalink: "/articles/the-atheistic-worldview-vs-the-quranic-worldview/"
 date: "2017-12-22"

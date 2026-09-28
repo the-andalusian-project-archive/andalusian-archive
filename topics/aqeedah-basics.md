@@ -64,7 +64,7 @@ His existence, Exalted is He, may be proven by the Fiṭrah (one’s natural inc
 > could give him this but it wasn\'t like extraordinary for him in the least how is that extraordinary this guy is talking to god like you know of course he probably went up
 to heaven it\'s not a big deal you know what i mean that\'s nothing
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:314</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 11,586-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:315</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 11,600-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -76,7 +76,7 @@ to heaven it\'s not a big deal you know what i mean that\'s nothing
 These for me, for me personally, are arguments that help to solidify the belief of the believer.
 They don\'t help with atheists.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:102</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 3,651-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:103</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 3,667-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -95,7 +95,7 @@ They don\'t help with atheists.
 a foundational belief. The Fittra is an inclination, it\'s a state of being, it\'s a state of perceiving.
 It\'s not a belief in and of itself.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:238</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 3,651-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:239</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 3,667-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -115,7 +115,7 @@ was to go against people who I consider to be stubborn because in my personal vi
 there is no such thing as an atheist. In my personal opinion, everyone has a fitrah.
 And if they deny the fitrah, they\'re denying themselves, they\'re just sort of what they\'re doing is
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-CEzMdCn0Ims.md:990</span> &mdash; <span class="cite-size">excerpt of about 63 words from a 15,181-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-CEzMdCn0Ims.md:991</span> &mdash; <span class="cite-size">excerpt of about 63 words from a 15,189-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -126,7 +126,7 @@ And if they deny the fitrah, they\'re denying themselves, they\'re just sort of 
 > We often have negative opinions of atheists, but you have to understand that the fitra is still there for a lot of people. Even if they deny it, there are a lot of people out there who practice an ethical standard because they\'re fitra.
 It\'s still there. It\'s still very much in them. It\'s trying to manifest itself.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:75</span> &mdash; <span class="cite-size">excerpt of about 58 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:76</span> &mdash; <span class="cite-size">excerpt of about 58 words from a 5,566-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*

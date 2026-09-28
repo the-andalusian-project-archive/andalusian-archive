@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "When Facts Become Fiction | iJihad Ep. 1"
+display_title: "When Facts Become Fiction | iJihad Ep. 1"
 slug: "mdi-when-facts-become-fiction-ijihad-ep-1"
 permalink: "/articles/mdi/when-facts-become-fiction-ijihad-ep-1/"
 status: "mdi_text"

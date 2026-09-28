@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Quran, Science: A Forced Marriage"
+display_title: "The Quran, Science: A Forced Marriage"
 slug: "the-quran-science-a-forced-marriage"
 permalink: "/articles/the-quran-science-a-forced-marriage/"
 date: "2018-11-14"

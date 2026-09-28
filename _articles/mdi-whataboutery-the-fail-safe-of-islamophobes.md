@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "'Whataboutery': The Fail-Safe of Islamophobes"
+display_title: "'Whataboutery': The Fail-Safe of Islamophobes"
 slug: "mdi-whataboutery-the-fail-safe-of-islamophobes"
 permalink: "/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/"
 status: "mdi_text"

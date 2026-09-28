@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Gender Equality, Islam, and Law"
+display_title: "Gender Equality, Islam, and Law"
 permalink: "/papers/gender-equality-islam-and-law/"
 url: "https://www.academia.edu/18640397/Gender_Equality_Islam_and_Law"
 original_url: "https://www.academia.edu/18640397/Gender_Equality_Islam_and_Law"

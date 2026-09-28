@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Thoughts on Beauty"
+display_title: "Thoughts on Beauty"
 slug: "thoughts-on-beauty"
 permalink: "/articles/thoughts-on-beauty/"
 date: "2011-12-31"

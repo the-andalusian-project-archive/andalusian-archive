@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Still Colonized: Liberalism in Muslim Thought"
+display_title: "Still Colonized: Liberalism in Muslim Thought"
 slug: "still-colonized-liberalism-in-muslim-thought"
 permalink: "/articles/still-colonized-liberalism-in-muslim-thought/"
 date: "2015-05-12"

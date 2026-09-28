@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "iJihad 1"
+display_title: "iJihad 1"
 slug: "ijihad-1"
 permalink: "/articles/ijihad-1/"
 date: "2020-03-30"

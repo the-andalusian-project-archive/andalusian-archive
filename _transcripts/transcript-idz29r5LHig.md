@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 14"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 14"
 transcript_id: "idz29r5LHig"
 recording: "idz29r5LHig"
 capture_video_id: "idz29r5LHig"

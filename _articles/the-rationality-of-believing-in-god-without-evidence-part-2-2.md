@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Rationality of Believing in God Without Evidence (Part 2)"
+display_title: "The Rationality of Believing in God Without Evidence (Part 2)"
 slug: "the-rationality-of-believing-in-god-without-evidence-part-2-2"
 permalink: "/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/"
 date: "2016-02-07"

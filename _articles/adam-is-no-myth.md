@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Adam is No Myth"
+display_title: "Adam is No Myth"
 slug: "adam-is-no-myth"
 permalink: "/articles/adam-is-no-myth/"
 date: "2020-08-07"

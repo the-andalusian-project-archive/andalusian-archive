@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]"
+display_title: "03 - Understanding Atheism ｜ Session 3"
 video_id: "lZkv38vd7bw"
 id: "lZkv38vd7bw"
 permalink: "/videos/lZkv38vd7bw/"

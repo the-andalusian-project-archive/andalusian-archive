@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Atheism: Doubting Your Doubts"
+display_title: "Atheism: Doubting Your Doubts"
 slug: "atheism-doubting-your-doubts"
 permalink: "/articles/atheism-doubting-your-doubts/"
 date: "2018-06-20"

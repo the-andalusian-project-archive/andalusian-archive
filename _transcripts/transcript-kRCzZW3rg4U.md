@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi  || The Andalusian Project"
+display_title: "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi"
 transcript_id: "kRCzZW3rg4U"
 recording: "kRCzZW3rg4U"
 capture_video_id: "kRCzZW3rg4U"

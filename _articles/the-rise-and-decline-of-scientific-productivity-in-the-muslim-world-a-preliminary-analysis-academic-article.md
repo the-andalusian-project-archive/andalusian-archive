@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Rise and Decline of Scientific Productivity in the Muslim World"
+display_title: "The Rise and Decline of Scientific Productivity in the Muslim World"
 slug: "the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article"
 permalink: "/articles/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article/"
 date: "2015-06-15"

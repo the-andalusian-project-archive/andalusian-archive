@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Prophets vs Pedophiles (Part 1)"
+display_title: "Prophets vs Pedophiles (Part 1)"
 slug: "prophets-vs-pedophiles-part-1"
 permalink: "/articles/prophets-vs-pedophiles-part-1/"
 date: "2013-03-17"

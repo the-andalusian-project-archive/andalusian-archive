@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Doubting your Doubts: Atheism Among Muslim Youth"
+display_title: "Doubting your Doubts: Atheism Among Muslim Youth"
 permalink: "/papers/doubting-your-doubts-atheism-among-muslim-youth/"
 url: "https://yaqeeninstitute.org/watch/lecture/atheism-doubting-your-doubts-asadullah-ali-yaqeen-in-ny"
 original_url: "https://yaqeeninstitute.org/watch/lecture/atheism-doubting-your-doubts-asadullah-ali-yaqeen-in-ny"

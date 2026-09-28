@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]"
+display_title: "08 - Islam and Terrorism"
 transcript_id: "4VcPzhkP9bE"
 recording: "4VcPzhkP9bE"
 capture_video_id: "4VcPzhkP9bE"

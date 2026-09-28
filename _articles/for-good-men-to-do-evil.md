@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "For Good Men to Do Evil"
+display_title: "For Good Men to Do Evil"
 slug: "for-good-men-to-do-evil"
 permalink: "/articles/for-good-men-to-do-evil/"
 date: "2011-12-25"

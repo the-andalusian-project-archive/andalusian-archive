@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "56 - DanielCompassionateImam [gmGnu1RBAoQ]"
+display_title: "56 - DanielCompassionateImam"
 video_id: "gmGnu1RBAoQ"
 id: "gmGnu1RBAoQ"
 permalink: "/videos/gmGnu1RBAoQ/"

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi  || The Andalusian Project"
+display_title: "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi"
 video_id: "kRCzZW3rg4U"
 id: "kRCzZW3rg4U"
 permalink: "/videos/kRCzZW3rg4U/"

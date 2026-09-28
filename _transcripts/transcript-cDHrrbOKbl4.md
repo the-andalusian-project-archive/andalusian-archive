@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "53 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]"
+display_title: "53 - Virgins in Paradise？ ｜ Answered"
 transcript_id: "cDHrrbOKbl4"
 recording: "cDHrrbOKbl4"
 capture_video_id: "cDHrrbOKbl4"

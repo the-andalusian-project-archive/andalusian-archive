@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Of Context and Confusion"
+display_title: "Of Context and Confusion"
 slug: "of-context-and-confusion"
 permalink: "/articles/of-context-and-confusion/"
 date: "2018-03-10"

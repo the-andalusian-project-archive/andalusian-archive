@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]"
+display_title: "35 - Understanding Jihad w⧸ Robert Spencer (Preface)"
 video_id: "8vxbN2jZL6M"
 id: "8vxbN2jZL6M"
 permalink: "/videos/8vxbN2jZL6M/"

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]"
+display_title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi"
 video_id: "Qiay_L4IQ88"
 id: "Qiay_L4IQ88"
 permalink: "/videos/Qiay_L4IQ88/"

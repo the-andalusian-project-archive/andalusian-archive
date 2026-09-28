@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "A Muslim's Guide to Science: Scientism"
+display_title: "A Muslim's Guide to Science: Scientism"
 slug: "a-muslims-guide-to-science-scientism"
 permalink: "/articles/a-muslims-guide-to-science-scientism/"
 date: "2018-03-09"

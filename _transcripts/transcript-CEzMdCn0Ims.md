@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]"
+display_title: "02 - Understanding Atheism ｜ Session 2"
 transcript_id: "CEzMdCn0Ims"
 recording: "CEzMdCn0Ims"
 capture_video_id: "CEzMdCn0Ims"

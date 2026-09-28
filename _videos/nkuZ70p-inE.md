@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]"
+display_title: "40 - 4 Lies Muslims Tell About Ex-Muslims？"
 video_id: "nkuZ70p-inE"
 id: "nkuZ70p-inE"
 permalink: "/videos/nkuZ70p-inE/"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]"
+display_title: "47 - ＂Should We Cancel Scholars？＂"
 transcript_id: "rhufN0me6xg"
 recording: "rhufN0me6xg"
 capture_video_id: "rhufN0me6xg"

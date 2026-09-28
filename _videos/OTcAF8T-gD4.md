@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]"
+display_title: "21 - Coils of the Arab Spring"
 video_id: "OTcAF8T-gD4"
 id: "OTcAF8T-gD4"
 permalink: "/videos/OTcAF8T-gD4/"

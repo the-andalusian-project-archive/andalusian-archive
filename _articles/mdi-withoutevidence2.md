@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Rationality of Believing in God Without Evidence — Part 2"
+display_title: "The Rationality of Believing in God Without Evidence — Part 2"
 slug: "mdi-withoutevidence2"
 permalink: "/articles/mdi/withoutevidence2/"
 status: "mdi_text"

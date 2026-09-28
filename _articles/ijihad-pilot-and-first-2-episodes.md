@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "iJihad (Pilot and First 2 Episodes)"
+display_title: "iJihad (Pilot and First 2 Episodes)"
 slug: "ijihad-pilot-and-first-2-episodes"
 permalink: "/articles/ijihad-pilot-and-first-2-episodes/"
 date: "2017-02-07"

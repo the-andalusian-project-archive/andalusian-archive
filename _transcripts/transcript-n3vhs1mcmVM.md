@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 32"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 32"
 transcript_id: "n3vhs1mcmVM"
 recording: "n3vhs1mcmVM"
 capture_video_id: "n3vhs1mcmVM"

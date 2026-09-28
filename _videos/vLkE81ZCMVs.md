@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "PUBLIC DEBATE: Does Morality Require a God? Copson & Pollock VS Andalusi & Wansbrough"
+display_title: "PUBLIC DEBATE: Does Morality Require a God? Copson & Pollock VS Andalusi & Wansbrough"
 video_id: "vLkE81ZCMVs"
 id: "vLkE81ZCMVs"
 permalink: "/videos/vLkE81ZCMVs/"

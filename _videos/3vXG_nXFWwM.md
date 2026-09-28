@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 18"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 18"
 video_id: "3vXG_nXFWwM"
 id: "3vXG_nXFWwM"
 permalink: "/videos/3vXG_nXFWwM/"

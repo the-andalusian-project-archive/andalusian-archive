@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Fraud of Islamic Mint Nusantara"
+display_title: "The Fraud of Islamic Mint Nusantara"
 slug: "the-fraud-of-islamic-mint-nusantara"
 permalink: "/articles/the-fraud-of-islamic-mint-nusantara/"
 date: "2012-11-01"

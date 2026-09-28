@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "International Conference on Developing Synergies Between Islam and Science and Technology"
+display_title: "International Conference on Developing Synergies Between Islam and Science and Technology"
 permalink: "/papers/international-conference-on-developing-synergies-between-islam-and-science-and-technology/"
 publication_date: "2014-10"
 url: "https://www.researchgate.net/publication/284307823"

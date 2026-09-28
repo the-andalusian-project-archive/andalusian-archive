@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "The Archetype of Beauty in Islam"
+display_title: "The Archetype of Beauty in Islam"
 permalink: "/papers/the-archetype-of-beauty-in-islam/"
 url: "https://www.academia.edu/13215503/The_Archetype_of_Beauty_in_Islam"
 original_url: "https://www.academia.edu/13215503/The_Archetype_of_Beauty_in_Islam"

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "“The Sword of Ibn Nasir”"
+display_title: "“The Sword of Ibn Nasir”"
 slug: "notice-the-sword-of-ibn-nasir"
 permalink: "/articles/notice/the-sword-of-ibn-nasir/"
 date: "2012-11-19"

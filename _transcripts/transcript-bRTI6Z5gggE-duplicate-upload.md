@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc] - transcript of a duplicate upload"
+display_title: "06 - Understanding Atheism ｜ Session 6"
 transcript_id: "bRTI6Z5gggE-duplicate-upload"
 recording: "lS7h9SKKtVc"
 capture_video_id: "bRTI6Z5gggE"

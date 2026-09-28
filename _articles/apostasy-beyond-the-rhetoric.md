@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Apostasy: Beyond the Rhetoric"
+display_title: "Apostasy: Beyond the Rhetoric"
 slug: "apostasy-beyond-the-rhetoric"
 permalink: "/articles/apostasy-beyond-the-rhetoric/"
 date: "2018-05-22"

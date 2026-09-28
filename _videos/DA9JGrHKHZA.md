@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]"
+display_title: "27 - La structure de la productivité scientifique dans la civilisation musulmane"
 video_id: "DA9JGrHKHZA"
 id: "DA9JGrHKHZA"
 permalink: "/videos/DA9JGrHKHZA/"

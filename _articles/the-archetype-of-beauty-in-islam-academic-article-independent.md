@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Archetype of Beauty in Islam"
+display_title: "The Archetype of Beauty in Islam"
 slug: "the-archetype-of-beauty-in-islam-academic-article-independent"
 permalink: "/articles/the-archetype-of-beauty-in-islam-academic-article-independent/"
 date: "2015-06-25"

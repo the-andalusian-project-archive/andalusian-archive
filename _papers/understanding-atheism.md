@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Understanding Atheism"
+display_title: "Understanding Atheism"
 permalink: "/papers/understanding-atheism/"
 url: "https://muslimdebate.org/2015/02/08/understanding-atheism-series"
 original_url: "https://muslimdebate.org/2015/02/08/understanding-atheism-series"

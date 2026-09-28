@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project"
+display_title: "My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project"
 video_id: "G47Stp3pLss"
 id: "G47Stp3pLss"
 permalink: "/videos/G47Stp3pLss/"

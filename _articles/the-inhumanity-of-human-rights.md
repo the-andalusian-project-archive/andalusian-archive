@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Inhumanity of Human Rights"
+display_title: "The Inhumanity of Human Rights"
 slug: "the-inhumanity-of-human-rights"
 permalink: "/articles/the-inhumanity-of-human-rights/"
 date: "2012-02-26"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]"
+display_title: "23 - Islam, Science and History (Reupload from Andalusian Project)"
 transcript_id: "0snGWjeqEeM"
 recording: "0snGWjeqEeM"
 capture_video_id: "0snGWjeqEeM"

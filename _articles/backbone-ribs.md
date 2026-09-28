@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Backbone Ribs"
+display_title: "Backbone Ribs"
 slug: "backbone-ribs"
 permalink: "/articles/backbone-ribs/"
 date: "2020-01-23"

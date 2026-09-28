@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 16"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 16"
 video_id: "MCR3xh8wccQ"
 id: "MCR3xh8wccQ"
 permalink: "/videos/MCR3xh8wccQ/"

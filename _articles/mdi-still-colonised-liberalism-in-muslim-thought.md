@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Still Colonised? Liberalism in Muslim Thought"
+display_title: "Still Colonised? Liberalism in Muslim Thought"
 slug: "mdi-still-colonised-liberalism-in-muslim-thought"
 permalink: "/articles/mdi/still-colonised-liberalism-in-muslim-thought/"
 status: "mdi_text"

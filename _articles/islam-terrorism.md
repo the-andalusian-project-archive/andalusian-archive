@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Islam Terrorism"
+display_title: "Islam Terrorism"
 slug: "islam-terrorism"
 permalink: "/articles/islam-terrorism/"
 date: "2016-05-08"

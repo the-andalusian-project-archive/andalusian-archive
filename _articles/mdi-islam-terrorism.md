@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Lecture: 'Islam & Terrorism' [Asadullah Ali al Andalusi]"
+display_title: "Lecture: 'Islam & Terrorism' [Asadullah Ali al Andalusi]"
 slug: "mdi-islam-terrorism"
 permalink: "/articles/mdi/islam-terrorism/"
 status: "mdi_text"

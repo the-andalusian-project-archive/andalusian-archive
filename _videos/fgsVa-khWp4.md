@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]"
+display_title: "10 - iJihad： Gryffix and Kraut and Tea"
 video_id: "fgsVa-khWp4"
 id: "fgsVa-khWp4"
 permalink: "/videos/fgsVa-khWp4/"

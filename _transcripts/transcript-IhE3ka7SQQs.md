@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]"
+display_title: "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂"
 transcript_id: "IhE3ka7SQQs"
 recording: "IhE3ka7SQQs"
 capture_video_id: "IhE3ka7SQQs"

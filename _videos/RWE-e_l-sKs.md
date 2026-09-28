@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage & Education"
+display_title: "BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage & Education"
 video_id: "RWE-e_l-sKs"
 id: "RWE-e_l-sKs"
 permalink: "/videos/RWE-e_l-sKs/"

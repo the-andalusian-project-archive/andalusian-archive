@@ -41,7 +41,7 @@ said at the foot of the page.</p>
 
 > I debated against the motion that Muslim women need feminism on 6th April 2016 at the International Islamic University Malaysia, during the event “Mars vs. Venus”. Both men and women attended the debate and the audience was overwhelmingly in favour of the arguments I made against my opponent.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">Public Debate: Do Muslim Women Need Feminism?</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:31</span> &mdash; <span class="cite-size">excerpt of about 48 words from a 380-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">Public Debate: Do Muslim Women Need Feminism?</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:32</span> &mdash; <span class="cite-size">excerpt of about 48 words from a 388-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">how old was aisha when she married the prophet</h3>
@@ -146,7 +146,7 @@ said at the foot of the page.</p>
 
 > **The work `do-muslim-women-need-feminism-debate` is catalogued, and this post is not counted again, because it is an announcement for the same piece of work.** That link is INFERRED, NOT PROVEN: the archive holds no local text for the work, so the two texts could not be compared.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">Public Debate: Do Muslim Women Need Feminism?</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:21</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 380-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">Public Debate: Do Muslim Women Need Feminism?</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:22</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 388-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is child marriage legal in malaysia today what does islam say</h3>
@@ -174,7 +174,7 @@ said at the foot of the page.</p>
 
 > That said, after the debate, a small group of radical feminists attempted to disrupt the Q&amp;A session, trying to shout me down. I allowed them to speak and countered them accordingly. Unfortunately, that part of the talk was not recorded.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">Public Debate: Do Muslim Women Need Feminism?</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:33</span> &mdash; <span class="cite-size">excerpt of about 40 words from a 380-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">Public Debate: Do Muslim Women Need Feminism?</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:34</span> &mdash; <span class="cite-size">excerpt of about 40 words from a 388-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">why does the writer oppose the caning but not the framing of the argument</h3>
@@ -192,7 +192,7 @@ said at the foot of the page.</p>
 
 > It is therefore remarkable that our detractors often quote al-Qur’an 65:4[11] – which implies that women could consummate their marriages prior to menstruation – as a means to suggest that Islam allows for sex with premmature girls.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">Religion vs. Paedophilia [Part 3]</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:69</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,248-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">Religion vs. Paedophilia [Part 3]</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:70</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,254-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">how do i answer when someone says the prophet married a nine year old girl</h3>
@@ -212,7 +212,7 @@ said at the foot of the page.</p>
 wrong to steal and it\'s always wrong to
 abuse and to take advantage of children but what does change are the conditions of humanity
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:81</span> &mdash; <span class="cite-size">excerpt of about 39 words from a 993-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:82</span> &mdash; <span class="cite-size">excerpt of about 39 words from a 1,004-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -229,7 +229,7 @@ abuse and to take advantage of children but what does change are the conditions 
 
 > **This essay is also catalogued as a work and is not counted again.** It is the same text as the work `prophets-vs-pedophiles-part-3`, proved by comparison rather than by title: 0.9809 of this post's 5-grams are present in that work's local text.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">Religion vs. Paedophilia [Part 3]</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:21</span> &mdash; <span class="cite-size">excerpt of about 41 words from a 2,248-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">Religion vs. Paedophilia [Part 3]</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:22</span> &mdash; <span class="cite-size">excerpt of about 41 words from a 2,254-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">am i the only one who notices the 17 men in that caning case</h3>
@@ -243,7 +243,7 @@ abuse and to take advantage of children but what does change are the conditions 
 
 > Firstly, it should be noted that this research does not intend to justify contemporary marriages defined as ‘underaged’ and we condemn those practices outright given that current conditions do not allow for justice to be optimally reached for those sort of relationships. As such, we consider such marriages to be unjust.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">Religion vs. Paedophilia [Part 3]</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:35</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 2,248-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">Religion vs. Paedophilia [Part 3]</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:36</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 2,254-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">explain the argument that early marriage in seventh century Arabia was not immoral</h3>

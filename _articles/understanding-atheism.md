@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Understanding Atheism"
+display_title: "Understanding Atheism"
 slug: "understanding-atheism"
 permalink: "/articles/understanding-atheism/"
 date: "2017-12-22"

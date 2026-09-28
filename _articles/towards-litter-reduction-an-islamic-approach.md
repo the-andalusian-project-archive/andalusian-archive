@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Towards Litter Reduction: An Islamic Approach"
+display_title: "Towards Litter Reduction: An Islamic Approach"
 slug: "towards-litter-reduction-an-islamic-approach"
 permalink: "/articles/towards-litter-reduction-an-islamic-approach/"
 date: "2015-10-15"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]"
+display_title: "27 - La structure de la productivité scientifique dans la civilisation musulmane"
 transcript_id: "DA9JGrHKHZA"
 recording: "DA9JGrHKHZA"
 capture_video_id: "DA9JGrHKHZA"

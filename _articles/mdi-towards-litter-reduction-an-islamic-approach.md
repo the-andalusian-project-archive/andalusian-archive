@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Towards Litter Reduction: An Islamic Approach (lecture by Ali Asadullah)"
+display_title: "Towards Litter Reduction: An Islamic Approach (lecture by Ali Asadullah)"
 slug: "mdi-towards-litter-reduction-an-islamic-approach"
 permalink: "/articles/mdi/towards-litter-reduction-an-islamic-approach/"
 status: "mdi_text"

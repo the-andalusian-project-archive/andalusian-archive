@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "iKhilafa (Episode 1)"
+display_title: "iKhilafa (Episode 1)"
 slug: "ikhalifa-ep-1"
 permalink: "/articles/ikhalifa-ep-1/"
 date: "2018-12-06"

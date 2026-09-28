@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "A Quick Response"
+display_title: "A Quick Response"
 slug: "a-quick-response"
 permalink: "/articles/a-quick-response/"
 date: "2014-06-10"

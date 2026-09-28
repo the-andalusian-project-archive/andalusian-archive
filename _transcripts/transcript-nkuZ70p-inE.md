@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]"
+display_title: "40 - 4 Lies Muslims Tell About Ex-Muslims？"
 transcript_id: "nkuZ70p-inE"
 recording: "nkuZ70p-inE"
 capture_video_id: "nkuZ70p-inE"

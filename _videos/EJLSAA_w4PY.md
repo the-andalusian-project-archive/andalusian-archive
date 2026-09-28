@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "Big Atheism-Theism Debate: Dr Arif Ahmed VS Abdullah al Andalusi [Nottingham University, 2017]"
+display_title: "Big Atheism-Theism Debate: Dr Arif Ahmed VS Abdullah al Andalusi [Nottingham University, 2017]"
 video_id: "EJLSAA_w4PY"
 id: "EJLSAA_w4PY"
 permalink: "/videos/EJLSAA_w4PY/"

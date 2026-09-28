@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]"
+display_title: "30 - iKhalifa 1： Appreciate Others"
 video_id: "rtViqNWY1Bk"
 id: "rtViqNWY1Bk"
 permalink: "/videos/rtViqNWY1Bk/"

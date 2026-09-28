@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 32"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 32"
 video_id: "n3vhs1mcmVM"
 id: "n3vhs1mcmVM"
 permalink: "/videos/n3vhs1mcmVM/"

@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "From Science to Scientism"
+display_title: "From Science to Scientism"
 permalink: "/papers/from-science-to-scientism/"
 date: "2017-01-11"
 publication_date: "2017-01-11"

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]"
+display_title: "07 - Towards Litter Reduction： An Islamic Approach"
 video_id: "7Rzu6BjvxjY"
 id: "7Rzu6BjvxjY"
 permalink: "/videos/7Rzu6BjvxjY/"

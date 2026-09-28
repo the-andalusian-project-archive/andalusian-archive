@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "My Views on the Punishment for Apostasy"
+display_title: "My Views on the Punishment for Apostasy"
 slug: "my-views-on-the-punishment-for-apostasy"
 permalink: "/articles/my-views-on-the-punishment-for-apostasy/"
 date: "2020-08-11"

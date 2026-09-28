@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Understanding Aisha's Age: An Interdisciplinary Approach"
+display_title: "Understanding Aisha's Age: An Interdisciplinary Approach"
 permalink: "/papers/understanding-aisha-s-age-an-interdisciplinary-approach/"
 date: "2018-10-02"
 publication_date: "2018-10-02"

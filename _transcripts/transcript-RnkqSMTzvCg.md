@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]"
+display_title: "09 - iJihad Ep. 1： Gryffix"
 transcript_id: "RnkqSMTzvCg"
 recording: "RnkqSMTzvCg"
 capture_video_id: "RnkqSMTzvCg"

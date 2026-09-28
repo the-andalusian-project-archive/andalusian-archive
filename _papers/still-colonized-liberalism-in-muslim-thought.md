@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Still Colonized? Liberalism in Muslim Thought"
+display_title: "Still Colonized? Liberalism in Muslim Thought"
 permalink: "/papers/still-colonized-liberalism-in-muslim-thought/"
 url: "https://asadullahali.wordpress.com/2017/12/22/liberalism-in-muslim-thought/"
 original_url: "https://asadullahali.wordpress.com/2017/12/22/liberalism-in-muslim-thought/"

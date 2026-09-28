@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Boko Haram and the Culture of Coercive Disapproval"
+display_title: "Boko Haram and the Culture of Coercive Disapproval"
 slug: "boko-haram-and-the-culture-of-coercive-disapproval"
 permalink: "/articles/boko-haram-and-the-culture-of-coercive-disapproval/"
 date: "2014-05-29"

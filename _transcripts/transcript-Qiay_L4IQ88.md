@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]"
+display_title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi"
 transcript_id: "Qiay_L4IQ88"
 recording: "Qiay_L4IQ88"
 capture_video_id: "Qiay_L4IQ88"

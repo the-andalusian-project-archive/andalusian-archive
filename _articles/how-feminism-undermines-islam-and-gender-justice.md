@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "How Feminism Undermines Islam and Gender Justice"
+display_title: "How Feminism Undermines Islam and Gender Justice"
 slug: "how-feminism-undermines-islam-and-gender-justice"
 permalink: "/articles/how-feminism-undermines-islam-and-gender-justice/"
 date: "2016-04-30"

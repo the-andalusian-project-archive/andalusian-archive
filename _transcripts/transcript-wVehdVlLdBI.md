@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]"
+display_title: "04 - Understanding Atheism ｜ Session 4"
 transcript_id: "wVehdVlLdBI"
 recording: "wVehdVlLdBI"
 capture_video_id: "wVehdVlLdBI"

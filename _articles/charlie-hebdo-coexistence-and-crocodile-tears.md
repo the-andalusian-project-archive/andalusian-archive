@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Charlie Hebdo, Coexistence and Crocodile Tears"
+display_title: "Charlie Hebdo, Coexistence and Crocodile Tears"
 slug: "charlie-hebdo-coexistence-and-crocodile-tears"
 permalink: "/articles/charlie-hebdo-coexistence-and-crocodile-tears/"
 date: "2015-02-14"

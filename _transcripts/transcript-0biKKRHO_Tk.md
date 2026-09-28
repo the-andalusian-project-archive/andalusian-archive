@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 24"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 24"
 transcript_id: "0biKKRHO_Tk"
 recording: "0biKKRHO_Tk"
 capture_video_id: "0biKKRHO_Tk"

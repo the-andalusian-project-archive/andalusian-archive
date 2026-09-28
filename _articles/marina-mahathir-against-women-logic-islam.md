@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Marina Mahathir Against Women Logic Islam"
+display_title: "Marina Mahathir Against Women Logic Islam"
 slug: "marina-mahathir-against-women-logic-islam"
 permalink: "/articles/marina-mahathir-against-women-logic-islam/"
 date: "2013-06-21"

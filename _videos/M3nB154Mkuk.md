@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "[VIDEO] Episode 93 - The Akh-Right, LGBTQ & Liberalism | Asadullah Ali"
+display_title: "[VIDEO] Episode 93 - The Akh-Right, LGBTQ & Liberalism"
 video_id: "M3nB154Mkuk"
 id: "M3nB154Mkuk"
 permalink: "/videos/M3nB154Mkuk/"

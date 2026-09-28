@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y] - transcript of a duplicate upload"
+display_title: "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5"
 transcript_id: "hURJIIm0tSY-duplicate-upload"
 recording: "PoNiuiP3W4Y"
 capture_video_id: "hURJIIm0tSY"

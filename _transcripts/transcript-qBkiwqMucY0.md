@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]"
+display_title: "29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi"
 transcript_id: "qBkiwqMucY0"
 recording: "qBkiwqMucY0"
 capture_video_id: "qBkiwqMucY0"

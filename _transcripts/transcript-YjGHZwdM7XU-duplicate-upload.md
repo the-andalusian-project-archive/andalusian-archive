@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk] - transcript of a duplicate upload"
+display_title: "46 - ＂Is Allah a Dictator？＂"
 transcript_id: "YjGHZwdM7XU-duplicate-upload"
 recording: "wUapqpCqBUk"
 capture_video_id: "YjGHZwdM7XU"

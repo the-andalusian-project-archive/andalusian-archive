@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]"
+display_title: "54 - Book Recommendations #3 ｜｜ Asadullah Andalusi"
 transcript_id: "NGtNHgTwhXc"
 recording: "NGtNHgTwhXc"
 capture_video_id: "NGtNHgTwhXc"

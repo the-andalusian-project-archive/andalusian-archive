@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Islamic Intuitionism: The Case Against Atheistic Evidentialism"
+display_title: "Islamic Intuitionism: The Case Against Atheistic Evidentialism"
 permalink: "/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/"
 publication_date: "2014-06"
 url: "https://studentrepo.iium.edu.my/bitstreams/0824286e-94ef-42c5-b8a5-2f43d7d4d9b0/download"

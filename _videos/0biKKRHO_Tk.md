@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 24"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 24"
 video_id: "0biKKRHO_Tk"
 id: "0biKKRHO_Tk"
 permalink: "/videos/0biKKRHO_Tk/"

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Nothing"
+display_title: "Nothing"
 slug: "nothing"
 permalink: "/articles/nothing/"
 date: "2012-01-13"

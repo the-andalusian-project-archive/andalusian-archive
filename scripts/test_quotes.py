@@ -946,6 +946,7 @@ def check_palette() -> list[str]:
     failures += check_fetch_damage()
     failures += check_link_labels()
     failures += check_refs_agree_with_gate()
+    failures += check_display_separated_from_record()
     failures += check_generated_pages_in_sync()
     return failures
 
@@ -1137,6 +1138,47 @@ def check_fetch_damage() -> list[str]:
     return failures
 
 
+# The record and the rendering are two different strings
+# ====================================================
+# `title:` in front matter is what the channel called the video, ID and all, and
+# is never edited. `display_title:` is the same string with the identifier and
+# the uploader clause removed, and the layouts render that one.
+#
+# Getting this wrong is invisible in the source and obvious on the page.
+# Restoring the record while the layouts still rendered `page.title` put a bare
+# YouTube ID in the h1 of 120 of 304 collection pages, and `check_display_titles`
+# could not see it because it inspects a Python dict rather than the built HTML.
+# So this gate reads the front matter and asks the question the layout asks.
+def check_display_separated_from_record() -> list[str]:
+    ident = re.compile(r"[\[(][A-Za-z0-9_-]{11}[\])]")
+    fails = []
+    checked = 0
+    for directory in ("_videos", "_transcripts", "_articles", "_papers", "_posts"):
+        for md in sorted((ROOT / directory).glob("*.md")):
+            head = md.read_text(encoding="utf-8", errors="replace")[:4000]
+            title = re.search(
+                r"(?m)^title:\s*[\"']?(.+?)[\"']?\s*$", head)
+            disp = re.search(
+                r"(?m)^display_title:\s*[\"']?(.+?)[\"']?\s*$", head)
+            if not title:
+                continue
+            checked += 1
+            if not ident.search(title.group(1)):
+                continue
+            if not disp:
+                fails.append(
+                    f"{md.relative_to(ROOT).as_posix()}: title carries a bare "
+                    "11-character identifier and there is no display_title:, so "
+                    "the layout will render the identifier in the page heading")
+            elif ident.search(disp.group(1)):
+                fails.append(
+                    f"{md.relative_to(ROOT).as_posix()}: display_title still "
+                    f"carries an identifier: {disp.group(1)[:60]!r}")
+    print(f"record vs rendering  : {checked} title(s) checked, "
+          f"{len(fails)} that would leak an identifier into a heading")
+    return fails
+
+
 # A citation must never point at the fetcher's residue
 # ==================================================
 # This exists because one did. `quran-hermeneutics.json` answered "how do I
@@ -1177,7 +1219,12 @@ def check_no_citation_into_damage() -> list[str]:
                 _h, _, tail = ref.rpartition(":")
                 if not tail.lstrip("L").isdigit():
                     continue
-                n = int(tail.lstrip("L")) - offset
+                # ref lines are 1-based; damaged holds 0-based indexes into
+                # scannable. The first version subtracted only the front-matter
+                # offset, so every comparison was one line out: the gate was
+                # silent for a citation resting exactly ON a damaged line, which
+                # is the case it exists for, and its "0" proved nothing.
+                n = int(tail.lstrip("L")) - 1 - offset
                 if n in damaged:
                     bad.append(
                         f"{spec_path.name} cites {ref}, which is fetch damage "

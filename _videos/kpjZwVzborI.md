@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "Debat Panas Mualaf vs Anti - Islam!"
+display_title: "Debat Panas Mualaf vs Anti - Islam!"
 video_id: "kpjZwVzborI"
 id: "kpjZwVzborI"
 permalink: "/videos/kpjZwVzborI/"

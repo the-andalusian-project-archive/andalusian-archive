@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "53 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]"
+display_title: "53 - Virgins in Paradise？ ｜ Answered"
 video_id: "cDHrrbOKbl4"
 id: "cDHrrbOKbl4"
 permalink: "/videos/cDHrrbOKbl4/"

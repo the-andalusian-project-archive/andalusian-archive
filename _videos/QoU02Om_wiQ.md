@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 12"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 12"
 video_id: "QoU02Om_wiQ"
 id: "QoU02Om_wiQ"
 permalink: "/videos/QoU02Om_wiQ/"

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]"
+display_title: "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam"
 video_id: "1U6VfHosrqw"
 id: "1U6VfHosrqw"
 permalink: "/videos/1U6VfHosrqw/"

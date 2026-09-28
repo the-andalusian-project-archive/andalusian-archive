@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]"
+display_title: "07 - Towards Litter Reduction： An Islamic Approach"
 transcript_id: "7Rzu6BjvxjY"
 recording: "7Rzu6BjvxjY"
 capture_video_id: "7Rzu6BjvxjY"

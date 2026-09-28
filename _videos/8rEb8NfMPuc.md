@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]"
+display_title: "12 - iJihad Ep. 4： The Masked Arab"
 video_id: "8rEb8NfMPuc"
 id: "8rEb8NfMPuc"
 permalink: "/videos/8rEb8NfMPuc/"

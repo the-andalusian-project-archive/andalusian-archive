@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Contra Contemporary Atheism [Lecture]"
+display_title: "Contra Contemporary Atheism [Lecture]"
 slug: "contra-contemporary-atheism-lecture"
 permalink: "/articles/contra-contemporary-atheism-lecture/"
 date: "2014-08-23"

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Do Muslim Women Need Feminism? (Debate)"
+display_title: "Do Muslim Women Need Feminism? (Debate)"
 slug: "do-muslim-women-need-feminism-debate"
 permalink: "/articles/do-muslim-women-need-feminism-debate/"
 date: "2016-04-13"

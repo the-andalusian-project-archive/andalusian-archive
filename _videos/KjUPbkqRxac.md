@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]"
+display_title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi"
 video_id: "KjUPbkqRxac"
 id: "KjUPbkqRxac"
 permalink: "/videos/KjUPbkqRxac/"

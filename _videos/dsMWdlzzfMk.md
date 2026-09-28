@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "Sekularisasi Memusnah Negara Umat Islam!"
+display_title: "Sekularisasi Memusnah Negara Umat Islam!"
 video_id: "dsMWdlzzfMk"
 id: "dsMWdlzzfMk"
 permalink: "/videos/dsMWdlzzfMk/"

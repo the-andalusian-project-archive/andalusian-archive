@@ -42,7 +42,7 @@ What is the orthodox Islamic perspective on Jihad?
 What is the scholarly interpretation of Jihad, the consensus surrounding it?
 And what did the sources actually say?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:67</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 1,995-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:68</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 2,004-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -52,7 +52,7 @@ And what did the sources actually say?
 
 > In this web series called ‘iJihad’ (i.e. Intellectual Jihad), Br. Asadullah Ali Al-Andalusi analyzes and deconstructs popular arguments against Islam and the Muslim world made by critics and Islamophobes alike.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/">When Facts Become Fiction | iJihad Ep. 1</a> (work), cited at <span class="cite-ref">_articles/mdi-when-facts-become-fiction-ijihad-ep-1.md:29</span> &mdash; <span class="cite-size">excerpt of about 30 words from a 307-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/">When Facts Become Fiction | iJihad Ep. 1</a> (work), cited at <span class="cite-ref">_articles/mdi-when-facts-become-fiction-ijihad-ep-1.md:30</span> &mdash; <span class="cite-size">excerpt of about 30 words from a 316-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">islamophobia double standard</h3>
@@ -89,7 +89,7 @@ And what did the sources actually say?
 until the late 18th century because the word terrorism wasn\'t coined until the late 18th century
 by the political party, the French political party, the Jacobins. And why is this important? Well,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:141</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,806-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:142</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,815-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -122,7 +122,7 @@ by the political party, the French political party, the Jacobins. And why is thi
 And what is that? That is basically when somebody intentionally and conveniently dismisses
 or ignores relevant information that undermines their conclusions or the representation of the data.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:115</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,995-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:116</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 2,004-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -131,7 +131,7 @@ or ignores relevant information that undermines their conclusions or the represe
 equivocation, which is essentially using a term in two different ways, volatiously, and he\'s also
 committing the define his fallacy, which is essentially defining something unfairly.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:164</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,806-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:165</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,815-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -152,7 +152,7 @@ committing the define his fallacy, which is essentially defining something unfai
 
 > The organization ‘Beyond the Horizon’ is another malaysian organisation sponsored by the United States Department of States (DOS). The event has been billed to ‘spread awareness of the roots of terrorism and extremism’, all the while offering solutions. Asadullah will aim to debate these claims, and provide a challenging counter-narrative based upon facts and evidence.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">An Antidote For Extremism</a> (work), cited at <span class="cite-ref">_articles/mdi-an-antidote-for-extremism.md:35</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 248-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">An Antidote For Extremism</a> (work), cited at <span class="cite-ref">_articles/mdi-an-antidote-for-extremism.md:36</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 253-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is cartooning the prophet justified or does it justify murder</h3>
@@ -218,7 +218,7 @@ committing the define his fallacy, which is essentially defining something unfai
 defined by how they were used back then. And the word terror is simply to is just extreme fear. That\'s
 all it is. That\'s it. Okay. And that in and of itself is not terrorism.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:237</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,806-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:238</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,815-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*

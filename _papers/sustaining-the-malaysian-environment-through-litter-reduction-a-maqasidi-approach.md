@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach"
+display_title: "Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach"
 permalink: "/papers/sustaining-the-malaysian-environment-through-litter-reduction-a-maqasidi-approach/"
 url: "https://muslimdebate.org/2015/10/15/towards-litter-reduction-an-islamic-approach/"
 original_url: "https://muslimdebate.org/2015/10/15/towards-litter-reduction-an-islamic-approach/"

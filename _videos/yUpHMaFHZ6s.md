@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]"
+display_title: "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi"
 video_id: "yUpHMaFHZ6s"
 id: "yUpHMaFHZ6s"
 permalink: "/videos/yUpHMaFHZ6s/"

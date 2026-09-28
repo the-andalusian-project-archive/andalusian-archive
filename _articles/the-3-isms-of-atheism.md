@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The 3 Isms of Atheism"
+display_title: "The 3 Isms of Atheism"
 slug: "the-3-isms-of-atheism"
 permalink: "/articles/the-3-isms-of-atheism/"
 date: "2015-10-15"

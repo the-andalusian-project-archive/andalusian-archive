@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 22"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 22"
 video_id: "lE690yapgTA"
 id: "lE690yapgTA"
 permalink: "/videos/lE690yapgTA/"

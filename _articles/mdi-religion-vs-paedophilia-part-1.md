@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Religion vs Paedophilia [Part 1]"
+display_title: "Religion vs Paedophilia [Part 1]"
 slug: "mdi-religion-vs-paedophilia-part-1"
 permalink: "/articles/mdi/religion-vs-paedophilia-part-1/"
 status: "mdi_text"

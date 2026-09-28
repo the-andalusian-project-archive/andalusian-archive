@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]"
+display_title: "47 - ＂Should We Cancel Scholars？＂"
 video_id: "rhufN0me6xg"
 id: "rhufN0me6xg"
 permalink: "/videos/rhufN0me6xg/"

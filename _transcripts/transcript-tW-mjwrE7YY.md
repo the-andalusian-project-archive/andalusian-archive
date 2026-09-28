@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]"
+display_title: "13 - Responding to Comments #1 andalusian project (re upload)"
 transcript_id: "tW-mjwrE7YY"
 recording: "tW-mjwrE7YY"
 capture_video_id: "tW-mjwrE7YY"

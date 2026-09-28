@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]"
+display_title: "37 - Understanding Jihad w⧸ Robert Spencer #2"
 video_id: "aTJMDFJdgdg"
 id: "aTJMDFJdgdg"
 permalink: "/videos/aTJMDFJdgdg/"

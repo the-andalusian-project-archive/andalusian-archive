@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Reviewing HaqiqatJou"
+display_title: "Reviewing HaqiqatJou"
 slug: "reviewing-haqiqatjou"
 permalink: "/articles/reviewing-haqiqatjou/"
 date: "2020-08-10"

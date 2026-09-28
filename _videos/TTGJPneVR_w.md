@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "Radio: A Christian and Muslim response to Secularism- James White and Abdullah Al-Andalusi"
+display_title: "Radio: A Christian and Muslim response to Secularism- James White and Abdullah Al-Andalusi"
 video_id: "TTGJPneVR_w"
 id: "TTGJPneVR_w"
 permalink: "/videos/TTGJPneVR_w/"

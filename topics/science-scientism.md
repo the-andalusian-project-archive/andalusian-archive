@@ -45,7 +45,7 @@ said at the foot of the page.</p>
 
 [02:58] science is the only or best way to know anything.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/">A Muslim's Guide to Science: Scientism</a> (work), cited at <span class="cite-ref">_articles/a-muslims-guide-to-science-scientism.md:121</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,041-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/">A Muslim's Guide to Science: Scientism</a> (work), cited at <span class="cite-ref">_articles/a-muslims-guide-to-science-scientism.md:122</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,048-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -61,7 +61,7 @@ said at the foot of the page.</p>
 
 [13:37] for my own research. We'll discuss that more later.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:475</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 12,404-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:476</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 12,411-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -71,7 +71,7 @@ said at the foot of the page.</p>
 
 > [11:20] However, the conception of science that I did try to give off is one that I consider to be the most accurate and the most coherent in the contemporary period is that science is really about constructing theories in the best way possible to interpret the information around us or what we experience.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:155</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 7,095-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:156</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 7,100-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -81,14 +81,14 @@ said at the foot of the page.</p>
 
 > But if by scientists, and we should mean the view that the methods of the social sciences are, to a very considerable extent, the same as those of the natural sciences, then I should be obliged to plead guilty to being adherent of scientists.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:62</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:63</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 5,566-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > Because the very statement itself, the very thing in which they needed to verify things, the statement itself that no statement has meaning, unless it can be empirically verified, could not itself be empirically verified.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:173</span> &mdash; <span class="cite-size">excerpt of about 35 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:174</span> &mdash; <span class="cite-size">excerpt of about 35 words from a 5,566-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -98,7 +98,7 @@ said at the foot of the page.</p>
 
 > [33:15] I remember, as I said before, the Orientalist sort of peddled this idea that religious conservatism was the reason behind the decline, but in fact, it's quite the opposite, because what we find around the 16th and 17th century are many scholars and biographers complaining about the rise of philosophy in the Muslim world.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:441</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 7,095-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:442</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 7,100-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -108,7 +108,7 @@ said at the foot of the page.</p>
 
 > [25:40] And the classical narrative is really is really a projection of the Western history with their own history with religion and the church specifically, which by the way is also kind of exaggerated as well, but that's for a different discussion.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:369</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 7,095-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:370</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 7,100-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -133,7 +133,7 @@ said at the foot of the page.</p>
 
 > [28:31] And then after they, you know, fell out and after they were defeated by the orthodox scholars, then everything just went downhill from there. And of course they blame Al-Ghazali for that. But that doesn't make any sense either because Al-Ghazali came, you know, much longer after, after they were disposed of. So yeah, it's sort of like the grasping for straws.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:395</span> &mdash; <span class="cite-size">excerpt of about 63 words from a 7,095-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:396</span> &mdash; <span class="cite-size">excerpt of about 63 words from a 7,100-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -153,7 +153,7 @@ Et l\'autre, ce serait plutôt le terme de dépendance
 parce qu\'on ne produit pas des idées scientifiques, on est consomme.
 Et donc, on est dans une posture passive.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:179</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 8,225-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:180</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 8,238-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -176,7 +176,7 @@ Et donc, on est dans une posture passive.
 
 [37:11] So what I found was that it seems to me that there was a form of like positivism almost going on. And that's a, that's a contemporary belief that science is somewhat like the measure of all things, you know.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:487</span> &mdash; <span class="cite-size">excerpt of about 137 words from a 7,095-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:488</span> &mdash; <span class="cite-size">excerpt of about 137 words from a 7,100-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -194,7 +194,7 @@ Et donc, on est dans une posture passive.
 
 [37:20] to figure out certain things of all science? That makes no sense.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:1255</span> &mdash; <span class="cite-size">excerpt of about 39 words from a 12,404-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:1256</span> &mdash; <span class="cite-size">excerpt of about 39 words from a 12,411-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -208,7 +208,7 @@ Et donc, on est dans une posture passive.
 
 [02:18] of the physical and natural world, through observation and experiment.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/">A Muslim's Guide to Science: Scientism</a> (work), cited at <span class="cite-ref">_articles/a-muslims-guide-to-science-scientism.md:101</span> &mdash; <span class="cite-size">excerpt of about 33 words from a 4,041-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/">A Muslim's Guide to Science: Scientism</a> (work), cited at <span class="cite-ref">_articles/a-muslims-guide-to-science-scientism.md:102</span> &mdash; <span class="cite-size">excerpt of about 33 words from a 4,048-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -218,7 +218,7 @@ Et donc, on est dans une posture passive.
 
 > Okay, so no, scientificism is believed to have been understood and practiced in some forms since the 17th century by the French and that\'s something you should note is that the French were actually the first ones to come up with with positivism as well.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:41</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:42</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 5,566-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -230,7 +230,7 @@ Et donc, on est dans une posture passive.
 But to preclude any misunderstanding on this point, we shall, wherever we are concerned, not with the general spirit of the centuries of inquiry, but with slavish imitation, the method language of science, speak of scientism or the scientistic prejudice. I\'ll explain all this later, don\'t worry.
 It should be noted that in the sense in which we shall use these terms, they describe, or of course, an attitude which is decidedly unscientific in the true sense of the word, since it involves a mechanical and uncritical application of habits of thoughts to feel different from the word.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:42</span> &mdash; <span class="cite-size">excerpt of about 174 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:43</span> &mdash; <span class="cite-size">excerpt of about 174 words from a 5,566-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -241,7 +241,7 @@ It should be noted that in the sense in which we shall use these terms, they des
 > him He\'s the reason Okay The first is that science operates based on paradigms or holistic culturally inherited theories that help us to make sense of experiences
 So a paradigm is basically a world view like the Islamic world view is a paradigm
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:53</span> &mdash; <span class="cite-size">excerpt of about 43 words from a 5,259-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:54</span> &mdash; <span class="cite-size">excerpt of about 43 words from a 5,275-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -259,7 +259,7 @@ Well, it\'s like, well, okay, but that\'s not answering the question.
 Because you just said that science is the only way to know anything.
 And just because it works, doesn\'t necessitate that you\'ve proven that statement correct.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:174</span> &mdash; <span class="cite-size">excerpt of about 145 words from a 4,619-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:175</span> &mdash; <span class="cite-size">excerpt of about 145 words from a 4,635-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -269,7 +269,7 @@ And just because it works, doesn\'t necessitate that you\'ve proven that stateme
 
 > [25:57] But yeah, basically the whole mythos is that well, because the church was opposed to science, like, you know, when they when they persecuted Galileo, that must mean the same thing existed in Islamic civilization.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:371</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 7,095-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:372</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 7,100-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -287,7 +287,7 @@ And just because it works, doesn\'t necessitate that you\'ve proven that stateme
 
 [38:29] And if we want Islamic science, for instance, the Islamic perception of science, the productivity of science within an Islamic framework to revive, you know, we have to stop borrowing from the dominant civilization.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:505</span> &mdash; <span class="cite-size">excerpt of about 136 words from a 7,095-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">Islam, Science and History</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:506</span> &mdash; <span class="cite-size">excerpt of about 136 words from a 7,100-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -299,7 +299,7 @@ And just because it works, doesn\'t necessitate that you\'ve proven that stateme
 which is why you got the young Turks.
 That\'s right. All the reforms, the Tanzimat reforms were based on French positivism, French society.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:206</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 4,619-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:207</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 4,635-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -344,7 +344,7 @@ That\'s right. All the reforms, the Tanzimat reforms were based on French positi
 
 [12:22] in light of modern science.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:425</span> &mdash; <span class="cite-size">excerpt of about 116 words from a 12,404-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:426</span> &mdash; <span class="cite-size">excerpt of about 116 words from a 12,411-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -366,7 +366,7 @@ That\'s right. All the reforms, the Tanzimat reforms were based on French positi
 
 [13:04] to this mainstream understanding. In fact, this is a very recent development
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:449</span> &mdash; <span class="cite-size">excerpt of about 72 words from a 12,404-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:450</span> &mdash; <span class="cite-size">excerpt of about 72 words from a 12,411-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -382,7 +382,7 @@ That\'s right. All the reforms, the Tanzimat reforms were based on French positi
 
 [15:40] about any of these things in such claims.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:541</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 12,404-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:542</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 12,411-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -413,7 +413,7 @@ The early Muslims did not need science to validate the Qur’an and you are no m
 
 [64:55] than whether there's science in the world.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:2001</span> &mdash; <span class="cite-size">excerpt of about 50 words from a 12,404-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:2002</span> &mdash; <span class="cite-size">excerpt of about 50 words from a 12,411-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -438,7 +438,7 @@ The early Muslims did not need science to validate the Qur’an and you are no m
 
 [44:51] the earth's plates move in this direction like they would care.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:1495</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 12,404-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:1496</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 12,411-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -466,7 +466,7 @@ les traductions, ce sont faites, mais c\'est pas du tout, c\'est construit sur q
 tout à fait pragmatique, c\'est pour que l\'empire marche bien, il fallait qu\'on se développe
 au niveau scientifique. Et donc derrière la science a été recherchée, elle a été traduite,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:365</span> &mdash; <span class="cite-size">excerpt of about 73 words from a 8,225-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:366</span> &mdash; <span class="cite-size">excerpt of about 73 words from a 8,238-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload"
+display_title: "01 - Understanding Atheism ｜ Session 1"
 transcript_id: "2tsI80MDUOI-duplicate-upload"
 recording: "NyAVl7RsEOs"
 capture_video_id: "2tsI80MDUOI"

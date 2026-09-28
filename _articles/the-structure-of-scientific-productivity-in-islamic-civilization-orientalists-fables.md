@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables"
+display_title: "The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables"
 slug: "the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables"
 permalink: "/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/"
 date: "2017-05-07"

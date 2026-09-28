@@ -629,17 +629,50 @@ def reanchor_spec_refs(specs: list[dict], dry_run: bool = False) -> tuple[list[s
             def window_for(q: str) -> int:
                 return max(_MIN_WINDOW, -(-len(q) // _CHARS_PER_LINE) + 4)
 
-            def gate_ok(start: int) -> bool:
-                """Exactly the test test_quotes.py applies at a cited line.
+            # `flat` and `offsets` are the gate's own, character for character.
+            # `norm("\n".join(lines))` and NOT a join of per-line normalisations:
+            # joining ["a","","b"] gives "a  b" while normalising the joined string
+            # gives "a b", so a quote spanning a blank line matches one and not
+            # the other. That disagreement is why this is transcribed rather than
+            # re-derived.
+            flat = _norm("\n".join(lines))
+            offsets: list[int] = []
+            pos = 0
+            for ln in lines:
+                offsets.append(pos)
+                n = _norm(ln)
+                if n:
+                    pos += len(n) + 1
 
-                The collapse must happen on the JOINED RAW lines, not on each
-                line before joining. Joining pre-normalised lines leaves two
-                spaces where a blank line was, and no quote in this corpus
-                contains a double space, so every quote spanning a paragraph
-                break was unmatchable - 476 of 500.
+            def occupied_lines(needle: str) -> set[int]:
+                """1-based lines the quote touches, by the gate's own arithmetic.
+
+                A quotation may legitimately begin partway through a line, so the
+                cited line must be one the quote OCCUPIES, not necessarily its
+                first. Finding the match in the whole normalised file and mapping
+                the character offset back to a line is the gate's method;
+                mapping proportionally is not, because collapsing whitespace
+                changes each line's length by a non-uniform amount.
                 """
+                out: set[int] = set()
+                at = flat.find(needle)
+                while at != -1:
+                    lo, hi = 0, len(offsets) - 1
+                    while lo < hi:
+                        mid = (lo + hi + 1) // 2
+                        if offsets[mid] <= at:
+                            lo = mid
+                        else:
+                            hi = mid - 1
+                    out.add(lo + 1)
+                    at = flat.find(needle, at + 1)
+                return out
+
+            def gate_ok(start: int) -> bool:
+                """The gate's window test at a 1-based line."""
                 w = window_for(raw_quote)
-                return _norm(raw_quote) in _norm(" ".join(lines[start: start + w]))
+                window = _norm(" ".join(lines[start - 1: start - 1 + w]))
+                return _norm(raw_quote) in window
 
             for claim in row.get("key_claims") or []:
                 ref = str(claim.get("ref") or "")
@@ -651,34 +684,24 @@ def reanchor_spec_refs(specs: list[dict], dry_run: bool = False) -> tuple[list[s
                 quote = _norm(raw_quote)
                 if not quote:
                     continue
-                hits = [i for i in range(len(lines)) if gate_ok(i)]
-                # Already correct? Ask the gate, not the re-anchor. This is also
-                # the answer when the quote occurs more than once: the ref is
-                # fine, the text simply repeats, and that is not a failure.
-                if 1 <= old_n <= len(lines) and gate_ok(old_n - 1):
-                    continue
-                if not hits:
+                occupied = occupied_lines(quote)
+                if not occupied:
                     unresolved.append(
-                        f"{ref}: the gate's own test finds no line in {rel} "
-                        "where this quote starts - left for a human")
+                        f"{ref}: the gate finds this quote nowhere in {rel} "
+                        "- left for a human")
                     continue
-                # The gate's window extends FORWARD, so the quote also matches
-                # every window that starts before it and reaches past its end.
-                # For a quote that begins on line S, the matching set is
-                # therefore the contiguous run ending at S, and S is its MAXIMUM.
-                # Taking the first match, or requiring a unique match, is wrong
-                # on both counts: a 92-character quote satisfied the test on 12
-                # different lines, and the re-anchor called that ambiguous.
-                if hits != list(range(hits[0], hits[-1] + 1)):
+                if old_n in occupied:
+                    continue  # the gate would accept it as it stands
+                if len(occupied) == 1:
+                    start = next(iter(occupied))
+                    claim["ref"] = f"{head}:{start}"
+                    changed = True
+                    moved.append(f"{ref} -> {head}:{start}")
+                else:
                     unresolved.append(
-                        f"{ref}: quote matches on {len(hits)} non-contiguous "
-                        f"lines of {rel} ({[h + 1 for h in hits[:4]]}) and the "
-                        "cited line does not satisfy the gate - left for a human")
-                    continue
-                start = hits[-1] + 1
-                claim["ref"] = f"{head}:{start}"
-                changed = True
-                moved.append(f"{ref} -> {head}:{start}")
+                        f"{ref}: quote occupies {len(occupied)} non-adjacent "
+                        f"lines of {rel} {sorted(occupied)[:4]} - left for a "
+                        "human")
         if changed:
             # Written with the file's own newline convention, so a spec authored
             # with CRLF does not silently become LF (or the reverse).

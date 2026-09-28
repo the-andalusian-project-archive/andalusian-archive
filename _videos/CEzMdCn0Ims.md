@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]"
+display_title: "02 - Understanding Atheism ｜ Session 2"
 video_id: "CEzMdCn0Ims"
 id: "CEzMdCn0Ims"
 permalink: "/videos/CEzMdCn0Ims/"

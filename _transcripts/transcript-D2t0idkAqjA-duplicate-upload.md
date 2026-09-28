@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU] - transcript of a duplicate upload"
+display_title: "24 - Asadullah Andalusi - MY STORY"
 transcript_id: "D2t0idkAqjA-duplicate-upload"
 recording: "7KBCENktOOU"
 capture_video_id: "D2t0idkAqjA"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "56 - DanielCompassionateImam [gmGnu1RBAoQ]"
+display_title: "56 - DanielCompassionateImam"
 transcript_id: "gmGnu1RBAoQ"
 recording: "gmGnu1RBAoQ"
 capture_video_id: "gmGnu1RBAoQ"

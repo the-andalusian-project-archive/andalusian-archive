@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "How to know “No-thing”"
+display_title: "How to know “No-thing”"
 slug: "how-to-know-no-thing"
 permalink: "/articles/how-to-know-no-thing/"
 date: "2012-01-19"

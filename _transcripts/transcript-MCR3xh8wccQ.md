@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 16"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 16"
 transcript_id: "MCR3xh8wccQ"
 recording: "MCR3xh8wccQ"
 capture_video_id: "MCR3xh8wccQ"

@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Decoding Contemporary Liberalism: Rise, Development, and Crisis"
+display_title: "Decoding Contemporary Liberalism: Rise, Development, and Crisis"
 permalink: "/papers/decoding-contemporary-liberalism-rise-development-and-crisis/"
 url: "https://hidayah.albalaghacademy.org/decoding-contemporary-liberalism-rise-development-and-crisis/"
 original_url: "https://hidayah.albalaghacademy.org/decoding-contemporary-liberalism-rise-development-and-crisis/"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]"
+display_title: "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project"
 transcript_id: "hKdNF95UqVM"
 recording: "hKdNF95UqVM"
 capture_video_id: "hKdNF95UqVM"

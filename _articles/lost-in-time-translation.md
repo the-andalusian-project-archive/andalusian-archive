@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Lost in Time Translation"
+display_title: "Lost in Time Translation"
 slug: "lost-in-time-translation"
 permalink: "/articles/lost-in-time-translation/"
 date: "2020-03-24"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "Information Literacy Lesson One"
+display_title: "Information Literacy Lesson One"
 transcript_id: "xhnU-1dNi3I"
 recording: "xhnU-1dNi3I"
 capture_video_id: "xhnU-1dNi3I"

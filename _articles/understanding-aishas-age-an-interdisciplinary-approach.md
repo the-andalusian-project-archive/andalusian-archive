@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Understanding Aisha's Age: An Interdisciplinary Approach"
+display_title: "Understanding Aisha's Age: An Interdisciplinary Approach"
 slug: "understanding-aishas-age-an-interdisciplinary-approach"
 permalink: "/articles/understanding-aishas-age-an-interdisciplinary-approach/"
 date: "2018-10-02"

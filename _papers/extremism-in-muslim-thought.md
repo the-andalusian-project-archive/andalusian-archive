@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Extremism in Muslim Thought"
+display_title: "Extremism in Muslim Thought"
 permalink: "/papers/extremism-in-muslim-thought/"
 url: "https://asadullahali.wordpress.com/2017/12/22/extremism-in-muslim-thought/"
 original_url: "https://asadullahali.wordpress.com/2017/12/22/extremism-in-muslim-thought/"

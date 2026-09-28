@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Naked Kings in the Information Age"
+display_title: "Naked Kings in the Information Age"
 slug: "naked-kings-in-the-information-age"
 permalink: "/articles/naked-kings-in-the-information-age/"
 date: "2018-05-24"

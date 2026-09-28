@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "An Alternate Reality"
+display_title: "An Alternate Reality"
 slug: "an-alternate-reality"
 permalink: "/articles/an-alternate-reality/"
 date: "2018-06-29"

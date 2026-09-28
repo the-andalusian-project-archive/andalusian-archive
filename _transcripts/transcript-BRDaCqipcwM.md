@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]"
+display_title: "05 - Understanding Atheism ｜ Session 5"
 transcript_id: "BRDaCqipcwM"
 recording: "BRDaCqipcwM"
 capture_video_id: "BRDaCqipcwM"

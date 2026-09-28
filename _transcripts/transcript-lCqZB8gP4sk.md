@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]"
+display_title: "36 - Understanding Jihad w⧸ Robert Spencer #1"
 transcript_id: "lCqZB8gP4sk"
 recording: "lCqZB8gP4sk"
 capture_video_id: "lCqZB8gP4sk"

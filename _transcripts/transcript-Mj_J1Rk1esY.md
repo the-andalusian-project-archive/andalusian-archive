@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]"
+display_title: "42 - iJihad Ep. 6： Apostate Prophet"
 transcript_id: "Mj_J1Rk1esY"
 recording: "Mj_J1Rk1esY"
 capture_video_id: "Mj_J1Rk1esY"

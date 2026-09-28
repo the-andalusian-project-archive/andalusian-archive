@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Naked Kings in the Information Age"
+display_title: "Naked Kings in the Information Age"
 slug: "mdi-naked-kings-in-the-information-age"
 permalink: "/articles/mdi/naked-kings-in-the-information-age/"
 status: "mdi_text"

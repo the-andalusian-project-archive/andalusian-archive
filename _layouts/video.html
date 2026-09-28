@@ -12,7 +12,15 @@ layout: default
         right-to-left, and `lang` only where the script implies a language.
         A Latin run gets <bdi> with no `lang`: "ltr" is not a language tag.
       {%- endcomment -%}
-      <h1>{% include title.html title=page.title runs=page.title_runs %}</h1>
+      {%- comment -%}
+      page.title is the RECORD: the channel's own string, with the
+      bracketed YouTube ID and the uploader clause, and it must not be edited.
+      display_title is the same string with those removed, written by the
+      builder from scripts/display_titles.py, and it falls back to page.title
+      for the 13 records that predate it. Rendering page.title directly put a
+      bare video ID in the h1 of 120 pages.
+    {%- endcomment -%}
+    <h1>{% include title.html title=page.display_title runs=page.title_runs %}</h1>
 
       {%- comment -%}
         Category badge, joined on video_id: build_collections.py writes the

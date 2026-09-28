@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 20"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 20"
 video_id: "7EqMJJuUKr8"
 id: "7EqMJJuUKr8"
 permalink: "/videos/7EqMJJuUKr8/"

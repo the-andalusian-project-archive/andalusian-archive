@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "God's Mercy Without Eternal Punishment"
+display_title: "God's Mercy Without Eternal Punishment"
 slug: "gods-mercy-without-eternal-punishment"
 permalink: "/articles/gods-mercy-without-eternal-punishment/"
 date: "2018-08-01"

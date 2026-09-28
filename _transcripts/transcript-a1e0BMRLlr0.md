@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]"
+display_title: "50 - Librarianship and Information Literacy"
 transcript_id: "a1e0BMRLlr0"
 recording: "a1e0BMRLlr0"
 capture_video_id: "a1e0BMRLlr0"

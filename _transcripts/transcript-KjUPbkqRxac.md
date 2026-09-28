@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]"
+display_title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi"
 transcript_id: "KjUPbkqRxac"
 recording: "KjUPbkqRxac"
 capture_video_id: "KjUPbkqRxac"

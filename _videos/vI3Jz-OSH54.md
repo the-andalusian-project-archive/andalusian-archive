@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "DEBATE PREVIEW: Sharia law VS Secular law: Atheist ends up endorsing Sharia & desire for Caliphate"
+display_title: "DEBATE PREVIEW: Sharia law VS Secular law: Atheist ends up endorsing Sharia & desire for Caliphate"
 video_id: "vI3Jz-OSH54"
 id: "vI3Jz-OSH54"
 permalink: "/videos/vI3Jz-OSH54/"

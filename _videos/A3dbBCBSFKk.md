@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]"
+display_title: "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD"
 video_id: "A3dbBCBSFKk"
 id: "A3dbBCBSFKk"
 permalink: "/videos/A3dbBCBSFKk/"

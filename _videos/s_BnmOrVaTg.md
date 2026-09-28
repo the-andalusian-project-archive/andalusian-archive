@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "مناظره عبدالله اندلسی با عارف احمد    abdullah andalusi vs arif ahmad"
+display_title: "مناظره عبدالله اندلسی با عارف احمد abdullah andalusi vs arif ahmad"
 video_id: "s_BnmOrVaTg"
 id: "s_BnmOrVaTg"
 permalink: "/videos/s_BnmOrVaTg/"

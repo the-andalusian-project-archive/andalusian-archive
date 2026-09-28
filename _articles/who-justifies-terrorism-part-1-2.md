@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Who Justifies Terrorism? [Part 1]"
+display_title: "Who Justifies Terrorism? [Part 1]"
 slug: "who-justifies-terrorism-part-1-2"
 permalink: "/articles/who-justifies-terrorism-part-1-2/"
 date: "2013-06-13"

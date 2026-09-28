@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Extremism in Muslim Thought"
+display_title: "Extremism in Muslim Thought"
 slug: "extremism-in-muslim-thought"
 permalink: "/articles/extremism-in-muslim-thought/"
 date: "2016-08-05"

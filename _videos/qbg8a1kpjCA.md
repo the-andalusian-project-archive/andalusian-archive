@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "Asadullah Ali Al-Andalusi on Really Hard Questions in Islam (MSA OSU GBM 10/29)"
+display_title: "Asadullah Ali Al-Andalusi on Really Hard Questions in Islam (MSA OSU GBM 10/29)"
 video_id: "qbg8a1kpjCA"
 id: "qbg8a1kpjCA"
 permalink: "/videos/qbg8a1kpjCA/"

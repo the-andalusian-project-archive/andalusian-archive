@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Two Islands"
+display_title: "Two Islands"
 slug: "two-islands1"
 permalink: "/articles/two-islands1/"
 date: "2016-02-27"

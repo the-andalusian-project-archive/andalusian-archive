@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "[Video] Refuting The Masked Arab (2)"
+display_title: "[Video] Refuting The Masked Arab (2)"
 slug: "mdi-refuting-the-masked-arab-2"
 permalink: "/articles/mdi/refuting-the-masked-arab-2/"
 status: "mdi_text"

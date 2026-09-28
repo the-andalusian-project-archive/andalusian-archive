@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]"
+display_title: "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4"
 transcript_id: "tIFhyQtxQXg"
 recording: "tIFhyQtxQXg"
 capture_video_id: "tIFhyQtxQXg"

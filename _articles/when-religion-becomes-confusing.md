@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "When Religion Becomes Confusing"
+display_title: "When Religion Becomes Confusing"
 slug: "when-religion-becomes-confusing"
 permalink: "/articles/when-religion-becomes-confusing/"
 date: "2018-03-10"

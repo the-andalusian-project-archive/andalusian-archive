@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Supporting HappyMuslims: A Letter to Shaykh Abdal Hakim Murad"
+display_title: "Supporting HappyMuslims: A Letter to Shaykh Abdal Hakim Murad"
 slug: "supporting-happymuslims-a-letter-to-shaykh-abdal-hakim-murad"
 permalink: "/articles/supporting-happymuslims-a-letter-to-shaykh-abdal-hakim-murad/"
 date: "2014-05-04"

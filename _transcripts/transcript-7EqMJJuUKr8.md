@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 20"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 20"
 transcript_id: "7EqMJJuUKr8"
 recording: "7EqMJJuUKr8"
 capture_video_id: "7EqMJJuUKr8"

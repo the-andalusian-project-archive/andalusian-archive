@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Understanding Atheism (Lecture Series)"
+display_title: "Understanding Atheism (Lecture Series)"
 slug: "understanding-atheism-lecture-series"
 permalink: "/articles/understanding-atheism-lecture-series/"
 date: "2015-02-09"

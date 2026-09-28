@@ -738,6 +738,11 @@ def build_transcripts():
         front = [
             "layout: transcript",
             "title: %s" % q(d["title"]),
+            # The title a reader is shown. The `title` above is the RECORD and
+            # is never edited; this is the same string with the bracketed
+            # YouTube ID and the uploader clause removed, and the layouts
+            # render this one. See scripts/display_titles.py.
+            "display_title: %s" % q(display_title(d["title"])),
             "transcript_id: %s" % q(tid),
             # `recording` is the catalogued video this page is a transcript
             # of; `capture_video_id` is the upload the capture was taken from.
@@ -891,6 +896,11 @@ def build_papers():
         front = [
             "layout: paper",
             "title: %s" % q(title),
+            # The title a reader is shown. The `title` above is the RECORD and
+            # is never edited; this is the same string with the bracketed
+            # YouTube ID and the uploader clause removed, and the layouts
+            # render this one. See scripts/display_titles.py.
+            "display_title: %s" % q(display_title(title)),
             # Explicit permalink: immune to :name slugify drift; matches
             # search.md `/papers/<slugified-title>/` exactly.
             "permalink: %s" % q("/papers/" + slug + "/"),
@@ -1788,6 +1798,11 @@ def build_videos():
         front = [
             "layout: video",
             "title: %s" % q(title),
+            # The title a reader is shown. The `title` above is the RECORD and
+            # is never edited; this is the same string with the bracketed
+            # YouTube ID and the uploader clause removed, and the layouts
+            # render this one. See scripts/display_titles.py.
+            "display_title: %s" % q(display_title(title)),
             "video_id: %s" % q(vid),
             "id: %s" % q(vid),
             # Explicit permalink preserves the exact-case YouTube id.
@@ -2097,6 +2112,11 @@ def build_articles():
         front = [
             "layout: article",
             "title: %s" % q(title),
+            # The title a reader is shown. The `title` above is the RECORD and
+            # is never edited; this is the same string with the bracketed
+            # YouTube ID and the uploader clause removed, and the layouts
+            # render this one. See scripts/display_titles.py.
+            "display_title: %s" % q(display_title(title)),
             "slug: %s" % q(slug),
             # Explicit permalink: matches search.md `/articles/<slug>/`.
             "permalink: %s" % q("/articles/" + slug + "/"),
@@ -2243,6 +2263,11 @@ def build_mdi_pages():
         front = [
             "layout: article",
             "title: %s" % q(str(row.get("title", slug))),
+            # The title a reader is shown. The `title` above is the RECORD and
+            # is never edited; this is the same string with the bracketed
+            # YouTube ID and the uploader clause removed, and the layouts
+            # render this one. See scripts/display_titles.py.
+            "display_title: %s" % q(display_title(str(row.get("title", slug)))),
             "slug: %s" % q("mdi-" + slug),
             "permalink: %s" % q("/articles/mdi/%s/" % slug),
             "status: %s" % q("mdi_text"),
@@ -2329,6 +2354,11 @@ def build_notice_pages():
         front = [
             "layout: article",
             "title: %s" % q(title),
+            # The title a reader is shown. The `title` above is the RECORD and
+            # is never edited; this is the same string with the bracketed
+            # YouTube ID and the uploader clause removed, and the layouts
+            # render this one. See scripts/display_titles.py.
+            "display_title: %s" % q(display_title(title)),
             "slug: %s" % q("notice-" + slug),
             "permalink: %s" % q("/articles/notice/%s/" % slug),
             "date: %s" % q(str(row.get("date", ""))),

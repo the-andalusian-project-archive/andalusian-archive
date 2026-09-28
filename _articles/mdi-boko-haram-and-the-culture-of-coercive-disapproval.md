@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "\"Boko Haram\" and the Culture of Coercive Disapproval"
+display_title: "\"Boko Haram\" and the Culture of Coercive Disapproval"
 slug: "mdi-boko-haram-and-the-culture-of-coercive-disapproval"
 permalink: "/articles/mdi/boko-haram-and-the-culture-of-coercive-disapproval/"
 status: "mdi_text"

@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 29"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 29"
 video_id: "3vqVYfs5mCk"
 id: "3vqVYfs5mCk"
 permalink: "/videos/3vqVYfs5mCk/"

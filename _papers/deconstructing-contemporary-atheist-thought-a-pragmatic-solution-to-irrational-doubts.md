@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts"
+display_title: "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts"
 permalink: "/papers/deconstructing-contemporary-atheist-thought-a-pragmatic-solution-to-irrational-doubts/"
 publication_date: "2021-09"
 url: "https://www.amjaonline.org/wp-content/uploads/2021/09/Deconstructing-Contemporary-Atheist-Thought-al-Andalusi.pdf"

@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance"
+display_title: "International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance"
 permalink: "/papers/international-conference-on-shari-ah-objectives-maqasid-in-public-policy-and-governance/"
 publication_date: "2015-07"
 url: "https://www.researchgate.net/publication/300371789"

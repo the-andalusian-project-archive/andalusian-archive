@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Public Debate: Do Muslim Women Need Feminism?"
+display_title: "Public Debate: Do Muslim Women Need Feminism?"
 slug: "mdi-do-muslim-women-need-feminism"
 permalink: "/articles/mdi/do-muslim-women-need-feminism/"
 status: "mdi_text"

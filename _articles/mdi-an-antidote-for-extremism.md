@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "An Antidote For Extremism"
+display_title: "An Antidote For Extremism"
 slug: "mdi-an-antidote-for-extremism"
 permalink: "/articles/mdi/an-antidote-for-extremism/"
 status: "mdi_text"

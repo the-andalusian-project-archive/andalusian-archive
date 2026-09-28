@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Hitchslapping the Hitch Out of His Followers"
+display_title: "Hitchslapping the Hitch Out of His Followers"
 slug: "hitchslapping-the-hitch-out-of-his-followers"
 permalink: "/articles/hitchslapping-the-hitch-out-of-his-followers/"
 date: "2011-12-18"

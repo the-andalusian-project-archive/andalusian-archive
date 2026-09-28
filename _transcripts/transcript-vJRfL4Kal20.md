@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]"
+display_title: "55 - Lesson One [Full Lecture]"
 transcript_id: "vJRfL4Kal20"
 recording: "vJRfL4Kal20"
 capture_video_id: "vJRfL4Kal20"

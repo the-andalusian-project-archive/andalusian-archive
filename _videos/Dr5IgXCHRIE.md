@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\"re upload\") [Dr5IgXCHRIE]"
+display_title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism"
 video_id: "Dr5IgXCHRIE"
 id: "Dr5IgXCHRIE"
 permalink: "/videos/Dr5IgXCHRIE/"

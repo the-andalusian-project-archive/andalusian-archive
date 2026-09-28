@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "Architects of Civilisation: Sallahuddin Ayubi"
+display_title: "Architects of Civilisation: Sallahuddin Ayubi"
 permalink: "/papers/architects-of-civilisation-sallahuddin-ayubi/"
 url: "https://www.academia.edu/19782374/Architects_of_Civilisation_Sallahuddin_Ayubi"
 original_url: "https://www.academia.edu/19782374/Architects_of_Civilisation_Sallahuddin_Ayubi"

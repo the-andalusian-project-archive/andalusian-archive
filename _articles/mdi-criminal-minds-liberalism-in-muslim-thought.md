@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Lecture Event: Criminal Minds: Liberalism in Muslim Thought"
+display_title: "Lecture Event: Criminal Minds: Liberalism in Muslim Thought"
 slug: "mdi-criminal-minds-liberalism-in-muslim-thought"
 permalink: "/articles/mdi/criminal-minds-liberalism-in-muslim-thought/"
 status: "mdi_text"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]"
+display_title: "03 - Understanding Atheism ｜ Session 3"
 transcript_id: "lZkv38vd7bw"
 recording: "lZkv38vd7bw"
 capture_video_id: "lZkv38vd7bw"

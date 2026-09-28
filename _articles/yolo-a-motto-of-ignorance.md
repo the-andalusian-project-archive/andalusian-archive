@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "YOLO: A Motto of Ignorance"
+display_title: "YOLO: A Motto of Ignorance"
 slug: "yolo-a-motto-of-ignorance"
 permalink: "/articles/yolo-a-motto-of-ignorance/"
 date: "2018-08-18"

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Extraordinary Claims Require Extraordinary Evidence Says Ordinary Intellect"
+display_title: "Extraordinary Claims Require Extraordinary Evidence Says Ordinary Intellect"
 slug: "extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect"
 permalink: "/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/"
 date: "2015-05-12"

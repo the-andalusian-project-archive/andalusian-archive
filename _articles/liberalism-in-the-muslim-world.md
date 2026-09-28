@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Liberalism in the Muslim World"
+display_title: "Liberalism in the Muslim World"
 slug: "liberalism-in-the-muslim-world"
 permalink: "/articles/liberalism-in-the-muslim-world/"
 date: "2018-11-14"

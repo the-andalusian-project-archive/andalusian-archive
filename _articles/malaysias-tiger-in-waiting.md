@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Malaysia's Tiger in Waiting"
+display_title: "Malaysia's Tiger in Waiting"
 slug: "malaysias-tiger-in-waiting"
 permalink: "/articles/malaysias-tiger-in-waiting/"
 date: "2014-02-16"

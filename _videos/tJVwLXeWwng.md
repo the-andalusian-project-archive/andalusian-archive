@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight"
+display_title: "Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight"
 video_id: "tJVwLXeWwng"
 id: "tJVwLXeWwng"
 permalink: "/videos/tJVwLXeWwng/"

@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]"
+display_title: "22 - Taking Islam Out of Context! (Indeed)"
 transcript_id: "biZFuWyB4lk"
 recording: "biZFuWyB4lk"
 capture_video_id: "biZFuWyB4lk"

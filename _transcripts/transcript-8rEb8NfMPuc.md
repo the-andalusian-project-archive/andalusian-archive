@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]"
+display_title: "12 - iJihad Ep. 4： The Masked Arab"
 transcript_id: "8rEb8NfMPuc"
 recording: "8rEb8NfMPuc"
 capture_video_id: "8rEb8NfMPuc"

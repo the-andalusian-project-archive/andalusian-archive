@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Islam and Terrorism"
+display_title: "Islam and Terrorism"
 slug: "islam-and-terrorism"
 permalink: "/articles/islam-and-terrorism/"
 date: "2017-12-22"

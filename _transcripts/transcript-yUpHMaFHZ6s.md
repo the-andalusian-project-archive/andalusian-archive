@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]"
+display_title: "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi"
 transcript_id: "yUpHMaFHZ6s"
 recording: "yUpHMaFHZ6s"
 capture_video_id: "yUpHMaFHZ6s"

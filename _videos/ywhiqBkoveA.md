@@ -1,6 +1,7 @@
 ---
 layout: video
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 8"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 8"
 video_id: "ywhiqBkoveA"
 id: "ywhiqBkoveA"
 permalink: "/videos/ywhiqBkoveA/"

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Against Atheist Aesthetics"
+display_title: "Against Atheist Aesthetics"
 slug: "against-atheist-aesthetics"
 permalink: "/articles/against-atheist-aesthetics/"
 date: "2012-02-06"

@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Hard Questions: Answering Doubts About Islam"
+display_title: "Hard Questions: Answering Doubts About Islam"
 slug: "hard-questions-answering-doubts-about-islam"
 permalink: "/articles/hard-questions-answering-doubts-about-islam/"
 date: "2018-11-14"

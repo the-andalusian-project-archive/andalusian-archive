@@ -1,6 +1,7 @@
 ---
 layout: paper
 title: "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis"
+display_title: "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis"
 permalink: "/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/"
 publication_date: "2015-04"
 url: "https://icrjournal.org/index.php/icr/article/view/333"

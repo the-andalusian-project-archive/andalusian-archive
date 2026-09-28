@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "More Additions!"
+display_title: "More Additions!"
 slug: "notice-more-additions"
 permalink: "/articles/notice/more-additions/"
 date: "2012-10-14"

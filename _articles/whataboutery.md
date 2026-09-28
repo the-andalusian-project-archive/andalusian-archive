@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "Whataboutery"
+display_title: "Whataboutery"
 slug: "whataboutery"
 permalink: "/articles/whataboutery/"
 date: "2015-07-30"

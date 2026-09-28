@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]"
+display_title: "30 - iKhalifa 1： Appreciate Others"
 transcript_id: "rtViqNWY1Bk"
 recording: "rtViqNWY1Bk"
 capture_video_id: "rtViqNWY1Bk"

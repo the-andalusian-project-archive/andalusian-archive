@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 12"
+display_title: "The Arena | Challenge Islam | Defend your Beliefs - Episode 12"
 transcript_id: "QoU02Om_wiQ"
 recording: "QoU02Om_wiQ"
 capture_video_id: "QoU02Om_wiQ"

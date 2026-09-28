@@ -1,6 +1,7 @@
 ---
 layout: article
 title: "#HappyMuslim = #InferiorityComplex?"
+display_title: "#HappyMuslim = #InferiorityComplex?"
 slug: "happymuslim-inferioritycomplex"
 permalink: "/articles/happymuslim-inferioritycomplex/"
 date: "2014-04-17"

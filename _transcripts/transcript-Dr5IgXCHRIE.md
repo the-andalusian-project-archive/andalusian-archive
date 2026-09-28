@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\"re upload\") [Dr5IgXCHRIE]"
+display_title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism"
 transcript_id: "Dr5IgXCHRIE"
 recording: "Dr5IgXCHRIE"
 capture_video_id: "Dr5IgXCHRIE"

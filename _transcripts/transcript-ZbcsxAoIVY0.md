@@ -1,6 +1,7 @@
 ---
 layout: transcript
 title: "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]"
+display_title: "25 - Atheism： Doubting Your Doubts"
 transcript_id: "ZbcsxAoIVY0"
 recording: "ZbcsxAoIVY0"
 capture_video_id: "ZbcsxAoIVY0"
