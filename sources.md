@@ -13,7 +13,7 @@ been republished.</p>
 
 <p>70 records, all with a source URL, catalogued but <strong>not counted
 as content</strong> &mdash; they are other people's writing, and counting them
-would be counting the archive against itself. 8 of them name an item this
+would be counting the archive against itself. 14 of them name an item this
 archive holds; the rest are records about the author rather than about one work,
 and are listed as such rather than given a subject they do not have.</p>
 
@@ -32,7 +32,7 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://docslib.org/doc/6431414/sallahuddin-ayubi-by-asadullah-ali-al-andalusi" target="_blank" rel="noopener noreferrer">Sallahuddin Ayubi by Asadullah Ali Al-Andalusi (document-sharing mirror)</a></h3>
       <p class="src-meta">DocsLib &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/architects-of-civilisation-sallahuddin-ayubi/">Architects of Civilisation: Sallahuddin Ayubi</a> &mdash; <em>mirror of a paper the archive holds</em></p>
     </li>
     <li class="src">
       <h3><a href="https://asadullahali.wordpress.com/" target="_blank" rel="noopener noreferrer">The Andalusian Project</a></h3>
@@ -62,12 +62,12 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="http://heroes-history.blogspot.com/2018/07/salahuddin-ayoubi.html" target="_blank" rel="noopener noreferrer">History of The Heroes: Salahuddin Ayoubi (reprint of 'Architects of Civilisation')</a></h3>
       <p class="src-meta">heroes-history.blogspot.com &middot; 2018-07-30 &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/architects-of-civilisation-sallahuddin-ayubi/">Architects of Civilisation: Sallahuddin Ayubi</a> &mdash; <em>reprint of a paper the archive holds</em></p>
     </li>
     <li class="src">
       <h3><a href="https://www.linkedin.com/posts/adnan-abd-rahim-588b2a7_catholic-became-atheist-found-orthodox-church-activity-6532611209013923840-0_lm" target="_blank" rel="noopener noreferrer">'I would also learn something very shocking about my heritage...' (LinkedIn post quoting his thesis)</a></h3>
       <p class="src-meta">LinkedIn &middot; 2019-05-10 &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/">Islamic Intuitionism: The Case Against Atheistic Evidentialism</a> &mdash; <em>quotation from a paper the archive holds</em></p>
     </li>
 </ul><h2 id="critique">Critique (2)</h2>
 <p class="note">Arguments written against his. Kept because an archive that only holds the friendly versions is not an archive.</p>
@@ -75,12 +75,12 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="http://repo.uinsatu.ac.id/56054/11/DAFTAR%20PUSTAKA.pdf" target="_blank" rel="noopener noreferrer">DAFTAR RUJUKAN (bachelor thesis reference list citing 'Gender Equality, Islam, and Law')</a></h3>
       <p class="src-meta">UIN Satu Pecutak (student repository) &middot; critique</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">Gender Equality, Islam, and Law</a> &mdash; <em>reference to a paper the archive holds</em></p>
     </li>
     <li class="src">
       <h3><a href="https://digilib.uin-suka.ac.id/id/eprint/50020/1/19205012042_BAB-I_IV-atau-V_DAFTAR-PUSTAKA.pdf" target="_blank" rel="noopener noreferrer">Islam dan evidentialisme ateis (Indonesian thesis citing and criticising his thesis)</a></h3>
       <p class="src-meta">UIN Sunan Kalijaga repository (digilib) &middot; critique</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/">Islamic Intuitionism: The Case Against Atheistic Evidentialism</a> &mdash; <em>critique of a paper the archive holds</em></p>
     </li>
 </ul><h2 id="mention">Mention (33)</h2>
 <p class="note">Pages that refer to him or to a work of his, including third-party pages that carry a video or a talk rather than reproducing it.</p>
@@ -188,7 +188,7 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://studentrepo.iium.edu.my/entities/publication/93d1b082-b160-49d1-82e1-29bfb0f4abda" target="_blank" rel="noopener noreferrer">Islamic intuitionism: the case against atheistic evidentialism (repository record)</a></h3>
       <p class="src-meta">IIUM Student Repository (studentrepo.iium.edu.my) &middot; 2014 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/">Islamic Intuitionism: The Case Against Atheistic Evidentialism</a> &mdash; <em>record of a paper the archive holds</em></p>
     </li>
     <li class="src">
       <h3><a href="https://kezana.ai/Reader/Article/84847FB0F5F5394F38BA1B07D84EB87B" target="_blank" rel="noopener noreferrer">International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance (Kezana.ai reader record)</a></h3>

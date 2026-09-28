@@ -84,6 +84,20 @@
     ],
     "/papers/architects-of-civilisation-sallahuddin-ayubi/": [
       {
+        "how": "reprint of a paper the archive holds",
+        "source": "heroes-history.blogspot.com",
+        "title": "History of The Heroes: Salahuddin Ayoubi (reprint of 'Architects of Civilisation')",
+        "type": "reprint",
+        "url": "http://heroes-history.blogspot.com/2018/07/salahuddin-ayoubi.html"
+      },
+      {
+        "how": "mirror of a paper the archive holds",
+        "source": "DocsLib",
+        "title": "Sallahuddin Ayubi by Asadullah Ali Al-Andalusi (document-sharing mirror)",
+        "type": "reprint",
+        "url": "https://docslib.org/doc/6431414/sallahuddin-ayubi-by-asadullah-ali-al-andalusi"
+      },
+      {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
@@ -111,11 +125,41 @@
     ],
     "/papers/gender-equality-islam-and-law/": [
       {
+        "how": "reference to a paper the archive holds",
+        "source": "UIN Satu Pecutak (student repository)",
+        "title": "DAFTAR RUJUKAN (bachelor thesis reference list citing 'Gender Equality, Islam, and Law')",
+        "type": "critique",
+        "url": "http://repo.uinsatu.ac.id/56054/11/DAFTAR%20PUSTAKA.pdf"
+      },
+      {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
         "type": "mention",
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
+      }
+    ],
+    "/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/": [
+      {
+        "how": "record of a paper the archive holds",
+        "source": "IIUM Student Repository (studentrepo.iium.edu.my)",
+        "title": "Islamic intuitionism: the case against atheistic evidentialism (repository record)",
+        "type": "mention",
+        "url": "https://studentrepo.iium.edu.my/entities/publication/93d1b082-b160-49d1-82e1-29bfb0f4abda"
+      },
+      {
+        "how": "quotation from a paper the archive holds",
+        "source": "LinkedIn",
+        "title": "'I would also learn something very shocking about my heritage...' (LinkedIn post quoting his thesis)",
+        "type": "reprint",
+        "url": "https://www.linkedin.com/posts/adnan-abd-rahim-588b2a7_catholic-became-atheist-found-orthodox-church-activity-6532611209013923840-0_lm"
+      },
+      {
+        "how": "critique of a paper the archive holds",
+        "source": "UIN Sunan Kalijaga repository (digilib)",
+        "title": "Islam dan evidentialisme ateis (Indonesian thesis citing and criticising his thesis)",
+        "type": "critique",
+        "url": "https://digilib.uin-suka.ac.id/id/eprint/50020/1/19205012042_BAB-I_IV-atau-V_DAFTAR-PUSTAKA.pdf"
       }
     ],
     "/papers/sustaining-the-malaysian-environment-through-litter-reduction-a-maqasidi-approach/": [
@@ -245,6 +289,29 @@
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
     ],
+    "paper:19": [
+      {
+        "how": "record of a paper the archive holds",
+        "source": "IIUM Student Repository (studentrepo.iium.edu.my)",
+        "title": "Islamic intuitionism: the case against atheistic evidentialism (repository record)",
+        "type": "mention",
+        "url": "https://studentrepo.iium.edu.my/entities/publication/93d1b082-b160-49d1-82e1-29bfb0f4abda"
+      },
+      {
+        "how": "quotation from a paper the archive holds",
+        "source": "LinkedIn",
+        "title": "'I would also learn something very shocking about my heritage...' (LinkedIn post quoting his thesis)",
+        "type": "reprint",
+        "url": "https://www.linkedin.com/posts/adnan-abd-rahim-588b2a7_catholic-became-atheist-found-orthodox-church-activity-6532611209013923840-0_lm"
+      },
+      {
+        "how": "critique of a paper the archive holds",
+        "source": "UIN Sunan Kalijaga repository (digilib)",
+        "title": "Islam dan evidentialisme ateis (Indonesian thesis citing and criticising his thesis)",
+        "type": "critique",
+        "url": "https://digilib.uin-suka.ac.id/id/eprint/50020/1/19205012042_BAB-I_IV-atau-V_DAFTAR-PUSTAKA.pdf"
+      }
+    ],
     "paper:2": [
       {
         "how": "title match",
@@ -304,6 +371,13 @@
     ],
     "paper:7": [
       {
+        "how": "reference to a paper the archive holds",
+        "source": "UIN Satu Pecutak (student repository)",
+        "title": "DAFTAR RUJUKAN (bachelor thesis reference list citing 'Gender Equality, Islam, and Law')",
+        "type": "critique",
+        "url": "http://repo.uinsatu.ac.id/56054/11/DAFTAR%20PUSTAKA.pdf"
+      },
+      {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
@@ -312,6 +386,20 @@
       }
     ],
     "paper:8": [
+      {
+        "how": "reprint of a paper the archive holds",
+        "source": "heroes-history.blogspot.com",
+        "title": "History of The Heroes: Salahuddin Ayoubi (reprint of 'Architects of Civilisation')",
+        "type": "reprint",
+        "url": "http://heroes-history.blogspot.com/2018/07/salahuddin-ayoubi.html"
+      },
+      {
+        "how": "mirror of a paper the archive holds",
+        "source": "DocsLib",
+        "title": "Sallahuddin Ayubi by Asadullah Ali Al-Andalusi (document-sharing mirror)",
+        "type": "reprint",
+        "url": "https://docslib.org/doc/6431414/sallahuddin-ayubi-by-asadullah-ali-al-andalusi"
+      },
       {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",

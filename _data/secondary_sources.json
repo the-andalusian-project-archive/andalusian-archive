@@ -816,7 +816,16 @@
     "notes": "Institutional record of his MA thesis; the record's author line gives a personal name of his that is withheld here at the site owner's request (see NOTICE.md section 6.1) - the record itself is public at studentrepo.iium.edu.my and is linked above unchanged. 24-page open excerpt downloaded; the full 86-leaf thesis bitstream returns an HTML page, not a PDF (restricted)",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "19",
+        "label": "Islamic Intuitionism: The Case Against Atheistic Evidentialism",
+        "how": "record of a paper the archive holds",
+        "permalink": "/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/"
+      }
+    ]
   },
   {
     "title": "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis (Kezana.ai reader record)",
@@ -942,7 +951,16 @@
     "notes": "Full-text reprint of his IAIS book chapter with no attribution line; recorded as a third-party reprint only (no text captured)",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "8",
+        "label": "Architects of Civilisation: Sallahuddin Ayubi",
+        "how": "reprint of a paper the archive holds",
+        "permalink": "/papers/architects-of-civilisation-sallahuddin-ayubi/"
+      }
+    ]
   },
   {
     "title": "Sallahuddin Ayubi by Asadullah Ali Al-Andalusi (document-sharing mirror)",
@@ -956,7 +974,16 @@
     "notes": "Third-party document-hosting mirror of the IAIS chapter; not treated as an authoritative source and not downloaded (lane has the IAIS print PDF)",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "8",
+        "label": "Architects of Civilisation: Sallahuddin Ayubi",
+        "how": "mirror of a paper the archive holds",
+        "permalink": "/papers/architects-of-civilisation-sallahuddin-ayubi/"
+      }
+    ]
   },
   {
     "title": "'I would also learn something very shocking about my heritage...' (LinkedIn post quoting his thesis)",
@@ -970,7 +997,16 @@
     "notes": "Third-party quotation of a passage from his MA thesis; recorded as a reprint record only",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "19",
+        "label": "Islamic Intuitionism: The Case Against Atheistic Evidentialism",
+        "how": "quotation from a paper the archive holds",
+        "permalink": "/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/"
+      }
+    ]
   },
   {
     "title": "DAFTAR RUJUKAN (bachelor thesis reference list citing 'Gender Equality, Islam, and Law')",
@@ -984,7 +1020,16 @@
     "notes": "Third-party academic work citing his co-authored article; record only, no text captured",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "7",
+        "label": "Gender Equality, Islam, and Law",
+        "how": "reference to a paper the archive holds",
+        "permalink": "/papers/gender-equality-islam-and-law/"
+      }
+    ]
   },
   {
     "title": "Islam dan evidentialisme ateis (Indonesian thesis citing and criticising his thesis)",
@@ -998,7 +1043,16 @@
     "notes": "Third-party academic work engaging critically with his MA thesis; record only, no text captured",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "19",
+        "label": "Islamic Intuitionism: The Case Against Atheistic Evidentialism",
+        "how": "critique of a paper the archive holds",
+        "permalink": "/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/"
+      }
+    ]
   },
   {
     "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",

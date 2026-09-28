@@ -103,6 +103,46 @@ ACADEMIA_FIXED: list[tuple[str, str, str, str]] = [
      "paper", "17", "paper of the same name; the blog work is 'Towards Litter Reduction'"),
 ]
 
+# Relations the title matcher cannot reach, because the third party's headline is
+# its own rather than his. Each one is justified by a fact the record itself
+# already states in its `notes` field, which is what makes these auditable: the
+# relationship is read out of the archive's own record, not inferred.
+#
+# Deliberately NOT pinned here:
+#   * the two "Catholic became atheist ... finally accepted Islam" reprints. They
+#     are reprints of his conversion narrative, but the archive holds no item for
+#     that narrative, so there is nothing to point at. Leaving them unresolved is
+#     the accurate answer, not a gap to be papered over with a near-match.
+#   * the TOTETU Japanese translation record, which cites paper 7 but is an issue
+#     contents page for a 20-page translation the archive does not hold. It is a
+#     venue, not a reprint of a text we have.
+NOTES_PINNED: list[tuple[str, str, str, str, str]] = [
+    ("heroes-history.blogspot.com",
+     "paper", "8",
+     "full-text reprint of the same IAIS book chapter the archive holds",
+     "reprint of a paper the archive holds"),
+    ("docslib.org",
+     "paper", "8",
+     "document-hosting mirror of the same IAIS book chapter",
+     "mirror of a paper the archive holds"),
+    ("studentrepo.iium.edu.my",
+     "paper", "19",
+     "institutional record of his MA thesis, which the archive holds as paper 19",
+     "record of a paper the archive holds"),
+    ("digilib.uin-suka.ac.id",
+     "paper", "19",
+     "third-party thesis engaging critically with his MA thesis",
+     "critique of a paper the archive holds"),
+    ("linkedin.com",
+     "paper", "19",
+     "third-party post quoting a passage from his MA thesis",
+     "quotation from a paper the archive holds"),
+    ("repo.uinsatu.ac.id",
+     "paper", "7",
+     "third-party reference list citing his co-authored article",
+     "reference to a paper the archive holds"),
+]
+
 
 def words(text: str) -> set[str]:
     out = set()
@@ -139,7 +179,7 @@ def main() -> int:
 
     reverse: dict[str, list[dict]] = {}
     by_url: dict[str, list[dict]] = {}
-    stats = {"academia": 0, "title": 0, "mdi": 0, "none": 0}
+    stats = {"academia": 0, "title": 0, "pinned": 0, "mdi": 0, "none": 0}
 
     # Every related item is also keyed by its PERMALINK, because that is what a
     # Jekyll page knows about itself. Keying by `kind:ref` instead meant each
@@ -232,6 +272,21 @@ def main() -> int:
                     best[0], "title match")
                 stats["title"] += 1
 
+        # (c) a relationship stated in the record's own notes, where the third
+        #     party's headline is its own and the title matcher cannot reach.
+        #     Checked before the MDI heuristic because it is the stronger
+        #     evidence: the archive's own record says what the item is.
+        if not found:
+            for marker, kind, ref, why, how in NOTES_PINNED:
+                if marker in url:
+                    table = papers if kind == "paper" else works
+                    label = next(
+                        (x.get("title", "") for x in table
+                         if str(x.get("id") or x.get("slug")) == ref), ref)
+                    add(kind, ref, label, how)
+                    stats["pinned"] += 1
+                    break
+
         # (c) an MDI page carrying one of his works
         if not found and re.search(r"\[Video\]|^Lecture:", title):
             probe = re.sub(r"^\[[^\]]*\]\s*", "", title)
@@ -266,6 +321,7 @@ def main() -> int:
 
     print(f"  related by the captured listing : {stats['academia']} rows")
     print(f"  related by catalogue title       : {stats['title']} rows")
+    print(f"  related by the record's own notes: {stats['pinned']} rows")
     print(f"  related as third-party carrier    : {stats['mdi']} rows")
     print(f"  no established referent           : {stats['none']} rows")
     print(f"  total relations recorded          : {sum(len(v) for v in reverse.values())}")
