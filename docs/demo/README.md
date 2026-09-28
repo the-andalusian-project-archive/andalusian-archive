@@ -6,8 +6,8 @@ frames by `scripts/build_site_tour.py`.
 
 | File | What it is | Size |
 |---|---|---:|
-| [`site-tour.mp4`](site-tour.mp4) | The full tour. 1440x900, 30 fps, 35.07 s. | 5,518,262 B (5.26 MiB) |
-| [`site-tour.gif`](site-tour.gif) | A size-capped preview for inline display. 720x450, 6 fps, 24.00 s. | 6,157,066 B (5.87 MiB) |
+| [`site-tour.mp4`](site-tour.mp4) | The full tour. 1440x900, 30 fps, 35.07 s. | 5,517,745 B (5.26 MiB) |
+| [`site-tour.gif`](site-tour.gif) | A size-capped preview for inline display. 720x450, 6 fps, 24.00 s. | 6,169,014 B (5.88 MiB) |
 
 The repository README embeds the **GIF**, not the MP4: GitHub strips `<video>`
 tags from README markdown, so a `<video>` embed renders as nothing. The GIF is

@@ -190,8 +190,8 @@ and by `docs/demo/README.md`.
 
 | File | What it is | Size | sha256 |
 |---|---|---:|---|
-| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 35.07 s. | 5,518,262 B (5.26 MiB) | `8aed2ee5d24c9d3df7db4b80239ea54e7759e1ba5a7b938b8ef22d93eb1da3f2` |
-| `docs/demo/site-tour.gif` | A size-capped preview for inline display. 720x450, 6 fps, 24.00 s. | 6,157,066 B (5.87 MiB) | `48f224e07d46e2c0da79b24456f6e9eb552db987eddaf1916123104fa921acb0` |
+| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 35.07 s. | 5,517,745 B (5.26 MiB) | `822ba1d6d24c9d3df7db4b80239ea54e7759e1ba5a7b938b8ef22d93eb1da3f2` |
+| `docs/demo/site-tour.gif` | A size-capped preview for inline display. 720x450, 6 fps, 24.00 s. | 6,169,014 B (5.88 MiB) | `8845a3277d46e2c0da79b24456f6e9eb552db987eddaf1916123104fa921acb0` |
 
 Verified on 2026-09-28: the MP4 begins with a valid ISO-BMFF `ftyp` box and the
 GIF with a `GIF89a` header, so both are intact and neither is a Git LFS pointer
