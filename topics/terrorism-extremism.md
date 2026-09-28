@@ -3,7 +3,7 @@ layout: default
 title: "Terrorism, Extremism and Violence: the questions this material answers"
 description: "Where does this violence actually come from - is it really Islam, and who is allowed to say so without getting shouted down? The recovered work of Asadullah Ali Al-Andalusi that addresses it, quoted and linked."
 permalink: /topics/terrorism-extremism/
-last_modified_at: 2026-09-28
+last_modified_at: 2026-09-29
 ---
 
 <p class="crumb"><a href="{{ site.baseurl }}/topics/">What this archive answers</a> &rsaquo; Terrorism, Extremism and Violence</p>
@@ -42,7 +42,7 @@ What is the orthodox Islamic perspective on Jihad?
 What is the scholarly interpretation of Jihad, the consensus surrounding it?
 And what did the sources actually say?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">understanding-jihad-with-robert-spencer-preface</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:67</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 1,994-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:67</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 1,995-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -52,35 +52,35 @@ And what did the sources actually say?
 
 > In this web series called ‘iJihad’ (i.e. Intellectual Jihad), Br. Asadullah Ali Al-Andalusi analyzes and deconstructs popular arguments against Islam and the Muslim world made by critics and Islamophobes alike.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/">ijihad-episode-1-mdi</a> (work), cited at <span class="cite-ref">_articles/mdi-when-facts-become-fiction-ijihad-ep-1.md:29</span> &mdash; <span class="cite-size">excerpt of about 30 words from a 307-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/">When Facts Become Fiction | iJihad Ep. 1</a> (work), cited at <span class="cite-ref">_articles/mdi-when-facts-become-fiction-ijihad-ep-1.md:29</span> &mdash; <span class="cite-size">excerpt of about 30 words from a 307-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">islamophobia double standard</h3>
 
 > For the Muslim world, we are constantly barraged about how “uncivilized” and “barbaric” we are because of a couple of lunatics; yet not a word about our own suffering, which is one hundred times more than any Westerner has to ever experience in their lifetime.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">charlie-hebdo</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:70</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,721-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:66</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,701-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what is state terrorism</h3>
 
 > However, can the same be said for Muslims attempting to defend Islam from accusations of immorality? Perhaps, depending on how the arguments are made in its favor. If a Muslim were, for instance, to downplay terrorism because people are starving in Africa, then I would think this to be a very fallacious and rather insensitive thing to say. However, when a Muslim attempts to point out the exaggerated, overplayed, and abused issue of terrorism and the subsequent ignoring of greater issueswhich cause it(state terrorism), this is in no way a case of ‘whataboutery’, but a case of reversing the fallacy of lacking proportion.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/whataboutery/">whataboutery</a> (work), cited at <span class="cite-ref">_posts/2015-07-30-whataboutery.md:50</span> &mdash; <span class="cite-size">excerpt of about 103 words from a 1,466-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/whataboutery/">‘Whataboutery': The Fail-Safe of Islamophobes</a> (work), cited at <span class="cite-ref">_posts/2015-07-30-whataboutery.md:50</span> &mdash; <span class="cite-size">excerpt of about 103 words from a 1,466-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">boko haram why</h3>
 
 > This fact also exposes another truth that islamophobes and liberalist fascists might find shockingly embarrassing: for the most part, secular principles rule this world. Calls to “police” or otherwise control our own fellow Muslims are calls to vigilantism; the very thing these “vanguards of freedom”
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">boko-haram-and-the-culture-of-coercive-disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:24</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 729-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">“Boko Haram” and the Culture of Coercive Disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:24</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 729-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">does sharia rule any country</h3>
 
 > The fact is, that while there are certainly many acts being perpetuated in the name of Islam, Islam has little to nothing to do with much of anything in this day and age: whether positive or negative. The truth is out there for all to see. The Islamophobes and the critics will continuously point to the “Islamic countries” and their problems, claiming that “Sharia”
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">boko-haram-and-the-culture-of-coercive-disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:22</span> &mdash; <span class="cite-size">excerpt of about 64 words from a 729-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">“Boko Haram” and the Culture of Coercive Disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:22</span> &mdash; <span class="cite-size">excerpt of about 64 words from a 729-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">why did the word terrorism get invented in the 18th century</h3>
@@ -89,7 +89,7 @@ And what did the sources actually say?
 until the late 18th century because the word terrorism wasn\'t coined until the late 18th century
 by the political party, the French political party, the Jacobins. And why is this important? Well,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">understanding-jihad-with-robert-spencer-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:141</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,805-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:141</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,806-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -99,21 +99,21 @@ by the political party, the French political party, the Jacobins. And why is thi
 
 > You see, the informal fallacy of relative privation, also known as ‘The Appeal to Greater Problems’ or ‘Not as Bad as This….Argument’ is a tactic used by many people to shut down discourse by suggesting that there are worse problems in the world than what is being discussed, therefore such matters should not be brought up to begin with.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/whataboutery/">whataboutery</a> (work), cited at <span class="cite-ref">_posts/2015-07-30-whataboutery.md:26</span> &mdash; <span class="cite-size">excerpt of about 59 words from a 1,466-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/whataboutery/">‘Whataboutery': The Fail-Safe of Islamophobes</a> (work), cited at <span class="cite-ref">_posts/2015-07-30-whataboutery.md:26</span> &mdash; <span class="cite-size">excerpt of about 59 words from a 1,466-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">how do i explain the causes of terrorism without being called islamophobic</h3>
 
 > This is especially seen in discussions and debates where people attempt to explainwhyterrorism is committed by individuals subscribing to Islam, contrary to the official narrative that the religion and its practitioners are “inherently barbaric”.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/whataboutery/">whataboutery</a> (work), cited at <span class="cite-ref">_posts/2015-07-30-whataboutery.md:48</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 1,466-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/whataboutery/">‘Whataboutery': The Fail-Safe of Islamophobes</a> (work), cited at <span class="cite-ref">_posts/2015-07-30-whataboutery.md:48</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 1,466-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">how do i bring up western foreign policy without being called a whataboutist</h3>
 
 > However, the most important point in all this is that CaptainDisguise and many like him, while wailing against Islam and Muslims for their ideas — no matter how harmless — are much worse than the people and ideas they constantly attack. They are apologists for liberal fascism. What I mean by this is that they every problem in the world with a breach of contract being punished, but they have absolutely no problem with people being killed by secular societies for simply having different views or wanting to live a different way of life other than secular-materialist-consumerist culture.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/a-quick-response/">a-quick-response</a> (work), cited at <span class="cite-ref">_posts/2014-06-10-a-quick-response.md:29</span> &mdash; <span class="cite-size">excerpt of about 98 words from a 1,409-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/a-quick-response/">A Quick Response</a> (work), cited at <span class="cite-ref">_posts/2014-06-10-a-quick-response.md:29</span> &mdash; <span class="cite-size">excerpt of about 98 words from a 1,409-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is the book The History of Jihad from Muhammad to ISIS reliable</h3>
@@ -122,7 +122,7 @@ by the political party, the French political party, the Jacobins. And why is thi
 And what is that? That is basically when somebody intentionally and conveniently dismisses
 or ignores relevant information that undermines their conclusions or the representation of the data.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">understanding-jihad-with-robert-spencer-preface</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:115</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,994-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:115</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,995-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -131,7 +131,7 @@ or ignores relevant information that undermines their conclusions or the represe
 equivocation, which is essentially using a term in two different ways, volatiously, and he\'s also
 committing the define his fallacy, which is essentially defining something unfairly.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">understanding-jihad-with-robert-spencer-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:164</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,805-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:164</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,806-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -141,75 +141,75 @@ committing the define his fallacy, which is essentially defining something unfai
 
 > That’s about as much I knew or cared to know when I heard the news of some school girls being kidnapped. Not that I’m unsympathetic, but I didn’t much think it had anything to do with me or what I believed — naturally then, my interests would go no further than thinking this a horribly immoral act and hoping justice would be delivered by the proper authorities in the region.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">boko-haram-and-the-culture-of-coercive-disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:18</span> &mdash; <span class="cite-size">excerpt of about 70 words from a 729-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">“Boko Haram” and the Culture of Coercive Disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:18</span> &mdash; <span class="cite-size">excerpt of about 70 words from a 729-word text. The argument around it is not on this page.</span>
 
 > And this is why I refuse to speak out; I should not be held responsible in any way for the actions and beliefs of others simply because we share the same label. By proxy, I refuse to give in to a narrative perpetuated by a culture of coercive disapproval, which threatens to place me in the same camp as extremists simply because they do not happen to hear my voice of opposition every time the media decides to highlight another act of violence in the middle east or elsewhere. Every time I stand up and say “that’s not me”, I am implicitly giving in to the idea that I am never free to define myself; I am never free of guilt. Always having to defend myself is not indicative of a free identity, but of a person on trial, whose jury doesn’t operate on the principle of “innocent until proven otherwise.”
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">boko-haram-and-the-culture-of-coercive-disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:20</span> &mdash; <span class="cite-size">excerpt of about 151 words from a 729-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">“Boko Haram” and the Culture of Coercive Disapproval</a> (work), cited at <span class="cite-ref">_posts/2014-05-29-boko-haram-and-the-culture-of-coercive-disapproval.md:20</span> &mdash; <span class="cite-size">excerpt of about 151 words from a 729-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">who funds counter extremism programmes</h3>
 
 > The organization ‘Beyond the Horizon’ is another malaysian organisation sponsored by the United States Department of States (DOS). The event has been billed to ‘spread awareness of the roots of terrorism and extremism’, all the while offering solutions. Asadullah will aim to debate these claims, and provide a challenging counter-narrative based upon facts and evidence.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">an-antidote-for-extremism</a> (work), cited at <span class="cite-ref">_articles/mdi-an-antidote-for-extremism.md:35</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 248-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">An Antidote For Extremism</a> (work), cited at <span class="cite-ref">_articles/mdi-an-antidote-for-extremism.md:35</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 248-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is cartooning the prophet justified or does it justify murder</h3>
 
 > As someone who cherishes the Prophet Muhammad (sallAllahu alayhi wasallam) and wishes to honor him, I can say with certainty two things: 1) That his depiction does not justify these horrendous attacks, and that 2) These attacks do not justify his depiction.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">charlie-hebdo</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:22</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 2,721-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:18</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 2,701-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is it hypocritical to oppose terrorism and fantasise about it</h3>
 
 > But what can you expect from people who fantasize about their intellectual opponents blowing themselves up in a suicide attack? I mean, look at the smiley face. They hate terrorism and wish its end, but then glorify it when it comes to people they dislike.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/a-quick-response/">a-quick-response</a> (work), cited at <span class="cite-ref">_posts/2014-06-10-a-quick-response.md:31</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 1,409-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/a-quick-response/">A Quick Response</a> (work), cited at <span class="cite-ref">_posts/2014-06-10-a-quick-response.md:31</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 1,409-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is the prophet muhammad a pedophile</h3>
 
 > A common accusation brought against Prophet Muhammad (saws) in our contemporary age is that he had committed an immoral act of sexual and emotional violence against children and has sanctioned the same sort of violence for all those that attempt to follow his teachings.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:21</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 3,705-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">Prophets vs. Pedophiles [Part 1]</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:21</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 3,705-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">do muslims marry off underage girls today</h3>
 
 > A question that is often given to me and other Muslims is if we would marry our young, immature daughters off in the contemporary age: The answer isno, because we are following the example of our Prophet (saws) as well as the dictates of Islamic Law and their ability to incorporate various changing conditions throughout time.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:109</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 3,705-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">Prophets vs. Pedophiles [Part 1]</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:109</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 3,705-word text. The argument around it is not on this page.</span>
 
 > Firstly, it should be noted that this research does not intend to justify contemporary marriages defined as ‘underaged’ and we condemn those practices outright given that current conditions do not allow for justice to be optimally reached for those sort of relationships.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:24</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 2,148-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">Prophets vs. Pedophiles [Part 3]</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:24</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 2,148-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what is moral progressionism</h3>
 
 > Though we touched up on their invalid biases, this portion of the presentation will focus more on the philosophical underpinnings that influenced such misinformed judgments. While this philosophical model does not apply to all critics of the accusations against the Prophet (saws), it does appear to apply to most.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:23</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 1,531-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">Prophets vs. Pedophiles [Part 2]</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:23</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 1,531-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what is normative circumstantial morality</h3>
 
 > The alternative perspective that I believe can both be applied universally while considering the various differences in ideals and social practices — and that I believe is the most correct — is what I like to call ‘Normative Circumstantial Morality’.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:30</span> &mdash; <span class="cite-size">excerpt of about 40 words from a 1,531-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">Prophets vs. Pedophiles [Part 2]</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:30</span> &mdash; <span class="cite-size">excerpt of about 40 words from a 1,531-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">does apostasy carry the death penalty today</h3>
 
 > My position is clear: The punishment forridda(apostasy) is part of the Shariah and should be applied when all the conditions are met. However, such conditions do not exist today because the political element (i.e. religious identity being tied to the state) is no longer present.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:40</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,399-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:36</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,389-word text. The argument around it is not on this page.</span>
 
 > So yes, I do not support the punishment for apostasy today, because the conditions have not been met that would warrant its implementation. Not because I disagree with the Law or believe it’s not part of Islam.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:58</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,399-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,389-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what does the word terror mean in the hadith</h3>
@@ -218,7 +218,7 @@ committing the define his fallacy, which is essentially defining something unfai
 defined by how they were used back then. And the word terror is simply to is just extreme fear. That\'s
 all it is. That\'s it. Okay. And that in and of itself is not terrorism.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">understanding-jihad-with-robert-spencer-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:237</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,805-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:237</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,806-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -228,14 +228,14 @@ all it is. That\'s it. Okay. And that in and of itself is not terrorism.
 
 > How can we hope to counter violence and extremism if we continue to cultivate an environment where it can easily breed? Under oppression and hypocrisy, extremists are bound to rise up out of frustration.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">charlie-hebdo</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:38</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 2,721-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:34</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 2,701-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">are the murderers the only ones responsible</h3>
 
 > This is not to justify what happened in Paris, but it is a necessary point that needs to be made to understand the problems and the required solutions. While this may seem controversial, we cannot just blame the murderers for murdering; we have to understand their rationale and see if their grievances were legitimate. It is one thing to kill unjustly for irrational reasons, like greed or lust, but it’s another thing to unjustly kill for rational reasons, such as fighting against tyranny. While both cases of murder are unjust by definition, the motivations are never always the case – and an unjust killing for a just cause always indicates something very often missed: that the responsibility of injustice is not simply shared by the murderers, but the societies in which they live.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">charlie-hebdo</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:40</span> &mdash; <span class="cite-size">excerpt of about 133 words from a 2,721-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:36</span> &mdash; <span class="cite-size">excerpt of about 133 words from a 2,701-word text. The argument around it is not on this page.</span>
 
 
 
@@ -413,29 +413,29 @@ of these pages.</p>
 <table class="data-table">
 <thead><tr><th>Item</th><th>Kind</th><th>Quoted passages</th><th>Also filed under</th></tr></thead>
 <tbody>
-<tr><td><a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a></td><td>work &middot; <strong>not by the subject</strong></td><td>9</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/islam-terrorism/">islam-terrorism</a></td><td>work</td><td>13</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">understanding-jihad-with-robert-spencer-preface</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">understanding-jihad-with-robert-spencer-1</a></td><td>transcript</td><td>4</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/aTJMDFJdgdg/">understanding-jihad-with-robert-spencer-2</a></td><td>transcript</td><td>4</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/4VcPzhkP9bE/">islam-and-terrorism-iium-talk</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/unmn_tY5r_c/">cleaning-house-roots-of-terrorism</a></td><td>transcript</td><td>2</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/islam-and-terrorism/">islam-and-terrorism</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/papers/islam-and-terrorism/">islam-and-terrorism-iium-talk-paper</a></td><td>paper</td><td>0</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought/">extremism-in-muslim-thought</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought-2017-12-22/">extremism-in-muslim-thought-2017-12-22</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/papers/extremism-in-muslim-thought/">extremism-in-muslim-thought-interview</a></td><td>paper</td><td>0</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">boko-haram-and-the-culture-of-coercive-disapproval</a></td><td>work</td><td>5</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">charlie-hebdo</a></td><td>work</td><td>4</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">ijihad-pilot-and-first-2-episodes</a></td><td>work</td><td>6</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/">ijihad-episode-1-mdi</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">an-antidote-for-extremism</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/whataboutery/">whataboutery</a></td><td>work</td><td>3</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/a-quick-response/">a-quick-response</a></td><td>work</td><td>2</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">Who Justifies Terrorism? [Part 1]</a></td><td>work &middot; <strong>not by the subject</strong></td><td>9</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/islam-terrorism/">Islam Terrorism</a></td><td>work</td><td>13</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a></td><td>transcript</td><td>4</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2</a></td><td>transcript</td><td>4</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/4VcPzhkP9bE/">08 - Islam and Terrorism</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/unmn_tY5r_c/">51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project</a></td><td>transcript</td><td>2</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/islam-and-terrorism/">Islam and Terrorism</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/papers/islam-and-terrorism/">Islam and Terrorism</a></td><td>paper</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought/">Extremism in Muslim Thought</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought-2017-12-22/">Extremism in Muslim Thought (repost)</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/papers/extremism-in-muslim-thought/">Extremism in Muslim Thought</a></td><td>paper</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">“Boko Haram” and the Culture of Coercive Disapproval</a></td><td>work</td><td>5</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a></td><td>work</td><td>4</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">Prophets vs. Pedophiles [Part 1]</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">Prophets vs. Pedophiles [Part 2]</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">Prophets vs. Pedophiles [Part 3]</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">iJihad (Pilot and First 2 Episodes)</a></td><td>work</td><td>6</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/">When Facts Become Fiction | iJihad Ep. 1</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">An Antidote For Extremism</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/whataboutery/">‘Whataboutery': The Fail-Safe of Islamophobes</a></td><td>work</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/a-quick-response/">A Quick Response</a></td><td>work</td><td>2</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 </tbody>
 </table>
 

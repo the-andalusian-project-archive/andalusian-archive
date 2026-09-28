@@ -3,7 +3,7 @@ layout: default
 title: "Other materials: everything not yet filed under a subject"
 description: "Recovered works in this archive that do not fit the eight subject pages, listed so that nothing recovered here becomes unreachable."
 permalink: /topics/miscellany/
-last_modified_at: 2026-09-28
+last_modified_at: 2026-09-29
 ---
 
 <p class="crumb"><a href="{{ site.baseurl }}/topics/">What this archive answers</a> &rsaquo; Other materials</p>

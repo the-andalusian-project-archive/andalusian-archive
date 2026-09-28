@@ -55,6 +55,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from transcribe import vtt_to_article_md  # noqa: E402
+from display_titles import clean_display_title  # noqa: E402
 
 SCRIPT_DIR = pathlib.Path(__file__).parent
 BASE = SCRIPT_DIR.parent  # andalusian-archive/
@@ -503,11 +504,17 @@ def video_display_title(vid, title):
 
     Shared so a transcript page and the video page it belongs to cannot print
     two different titles for the same recording.
+
+    It also runs the display cleaner, so a heading shows
+    "24 - Asadullah Andalusi - MY STORY" rather than that plus a bracketed
+    YouTube ID. The raw title is still what front matter stores; this is only
+    the string a reader is shown. See `display_titles.py` for the rule set and
+    for what it refuses to remove.
     """
     title = str(title or "")
     if vid == DUP52_ID and title.startswith("52 -"):
-        return "53 -" + title[4:]
-    return title
+        title = "53 -" + title[4:]
+    return clean_display_title(title)
 
 
 def transcript_documents():

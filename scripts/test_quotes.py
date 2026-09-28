@@ -944,7 +944,52 @@ def check_palette() -> list[str]:
     failures += check_sources_claims()
     failures += check_theme_default(ROOT / "_layouts" / "default.html")
     failures += check_fetch_damage()
+    failures += check_link_labels()
     return failures
+
+
+# Link labels
+# ===========
+# Every link a reader follows is named by something they can read. The failure
+# this guards against is not ugliness, it is silence: topic pages once rendered
+# 501 citations whose visible text was the literal word "source", because the
+# renderer asked for a key the data never set, and the pages were valid HTML
+# the whole time. A missing title has to stop the build.
+def check_link_labels() -> list[str]:
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import build_topic_pages as btp
+    import display_titles as dt
+
+    btp.LABEL_FALLBACKS.clear()
+    rows = [r for sp in btp.load_specs() for r in (sp.get("material") or [])]
+    vocab = btp.corpus_vocabulary()
+    for row in rows:
+        btp.title_for(row)
+    for item in vocab:
+        btp.title_for(item)
+
+    label_fails = btp.check_link_labels()
+    title_fails = dt.check_display_titles()
+
+    # Every collection title, raw and shown, so a series cannot quietly collapse.
+    title_re = re.compile(r"(?m)^title:\s*[\"']?(.+?)[\"']?\s*$")
+    pairs = []
+    for directory in ("_videos", "_transcripts", "_articles", "_papers"):
+        for md in sorted((ROOT / directory).glob("*.md")):
+            m = title_re.search(md.read_text(encoding="utf-8", errors="replace")[:1500])
+            if m:
+                pairs.append((m.group(1), dt.clean_display_title(m.group(1))))
+    collision_fails = dt.check_no_collisions(pairs)
+
+    print(f"link labels          : {len(rows) + len(vocab)} link(s) named, "
+          f"{len(btp.LABEL_FALLBACKS)} unnamed")
+    print(f"display titles       : {len(pairs)} checked, "
+          f"{len(dt.TITLE_EDITS)} cleaned for display, "
+          f"{len(set(p[1] for p in pairs))} distinct shown")
+    for shown, (raw, _why) in sorted(dt.TITLE_EDITS.items())[:4]:
+        print(f"    shown  {shown!r}")
+        print(f"    stored {raw!r}")
+    return label_fails + title_fails + collision_fails
 
 
 # Fetch damage is the text a FETCHER left behind, as distinct from the author's

@@ -25,7 +25,11 @@ from __future__ import annotations
 import json
 import pathlib
 import re
+import sys
 import urllib.parse
+
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from display_titles import clean_display_title, check_display_titles  # noqa: E402
 from datetime import date
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -232,6 +236,96 @@ def parse_front_matter(head: str) -> dict:
 
 def load(name: str):
     return json.loads((ROOT / name).read_text(encoding="utf-8"))
+
+
+# Why a link's words are a title and not a filename
+# =============================================
+# Every link on a topic page pointed at its target by the target's own storage
+# name. `2017-12-22-the-atheistic-worldview-vs-the-quranic-worldview.md` is a
+# filename, not a title, and a reader cannot tell from it which work they are
+# about to read.
+#
+# The fix is not a lookup table. Both kinds of row that reach the renderer can
+# name their target's own file, and the file's front matter carries the title
+# the author or the channel gave it. So the resolver asks the source document
+# rather than guessing from a slug.
+#
+# The failure mode that matters here is not an ugly label, it is a SILENT one.
+# The original code was `item.get("slug", "source")`, and `corpus_vocabulary()`
+# sets no `slug` key - so it rendered the literal word "source" for all 501
+# citations, every one of them a link whose destination was correct and whose
+# text was interchangeable. No test noticed, because the output was valid HTML
+# and nothing was missing. `LABEL_FALLBACKS` records every row that has to
+# reach a last resort, and `check_link_labels` fails the build on it, so this
+# cannot recur quietly.
+LABEL_FALLBACKS: list[str] = []
+_TITLE_MAP: dict[str, str] | None = None
+
+
+def title_map() -> dict[str, str]:
+    """permalink -> title, from the corpus. Built once, lazily.
+
+    Keyed on the permalink a row carries, so a cluster-spec row that was never
+    in `corpus_vocabulary()` can still be named from the document itself.
+    """
+    global _TITLE_MAP
+    if _TITLE_MAP is None:
+        _TITLE_MAP = {}
+        try:
+            for it in corpus_vocabulary():
+                url, lab = str(it.get("url") or ""), str(it.get("label") or "")
+                if url and lab:
+                    _TITLE_MAP[url] = lab
+        except Exception:
+            pass
+    return _TITLE_MAP
+
+
+def title_for(row: dict, by_url: dict[str, str] | None = None) -> str:
+    """The human title for a link target, or the last resort, recorded."""
+    for key in ("label", "title"):
+        val = str(row.get(key) or "").strip()
+        if val:
+            return clean_display_title(val)
+
+    # The row names the document it came from; that document knows its own
+    # title. Prefer this over any slug-derived guess because it is the title as
+    # published rather than as inferred.
+    path = str(row.get("path") or "").strip()
+    if path:
+        md = ROOT / path
+        if md.is_file():
+            fm = parse_front_matter(md.read_text(encoding="utf-8", errors="replace")[:4000])
+            val = str(fm.get("title") or "").strip()
+            if val:
+                return clean_display_title(val)
+
+    url = str(row.get("url") or "").strip()
+    table = by_url if by_url is not None else title_map()
+    val = table.get(url, "").strip()
+    if val:
+        return clean_display_title(val)
+
+    # A slug is still better than nothing, but it is a filename and the page
+    # should say so rather than pretend. Recording it is what makes the gate
+    # able to fail.
+    slug = str(row.get("slug") or "").strip()
+    who = slug or url or "?"
+    LABEL_FALLBACKS.append(who)
+    return slug or "source"
+
+
+def check_link_labels() -> list[str]:
+    """Every link must be named by something a reader can read."""
+    fails = []
+    for who in sorted(set(LABEL_FALLBACKS)):
+        slugy = "-" in who or "_" in who or "/" in who or who.endswith(".md")
+        fails.append(
+            f"{'slug-like' if slugy else 'unnamed'} link label for {who!r}: "
+            "no title on the row, in its file's front matter, or in the "
+            "corpus title map"
+        )
+    return fails
 
 
 def _term_pattern(term: str) -> re.Pattern:
@@ -719,7 +813,7 @@ nothing recovered here is unreachable.</p>
                 rows_md.append(
                     f"""> {esc(claim['quote'])}
 >
-> &mdash; <a href="{link}">{esc(item.get('slug', 'source'))}</a> ({esc(src)}), cited at {cite}{size}"""
+> &mdash; <a href="{link}">{esc(title_for(item))}</a> ({esc(src)}), cited at {cite}{size}"""
                 )
                 if item.get("kind") == "transcript" or looks_transcribed(item.get("path", "")):
                     rows_md.append(
@@ -775,7 +869,7 @@ rather than papered over; the reading list above is the place to go.</p>
                 name_cell = esc(it.get("kind", ""))
             item_lines.append(
                 f'<tr><td><a href="{{{{ site.baseurl }}}}{it.get("url", "")}">'
-                f'{esc(it.get("slug", "?"))}</a></td>'
+                f'{esc(title_for(it))}</a></td>'
                 f"<td>{name_cell}</td>"
                 f"<td>{len(it.get('key_claims') or [])}</td>"
                 f"<td>{also}</td></tr>"

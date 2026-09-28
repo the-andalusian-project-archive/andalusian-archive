@@ -1,6 +1,6 @@
 {
   "title": "What this archive answers",
-  "built": "2026-09-28",
+  "built": "2026-09-29",
   "built_by": "scripts/build_topic_pages.py from _data/topics/*.json",
   "rule": "A cluster is a body of questions the recovered material already answers. Clusters are not the archive's categories: the four A/B/C/D categories in taxonomy.json are about authorship, and this file is about subject matter. A work may appear in several clusters.",
   "queries_counted": "Query counts are computed from the buckets below at build time. No page may type a number.",
