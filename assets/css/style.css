@@ -1840,28 +1840,18 @@ tr:hover td {
   max-width: var(--max-width);
 }
 
-/* Running text. Applies to text blocks, not to the grids, tables of data, or
-   card lists further down, which each carry their own internal spacing. */
-.page-content > h1,
-.page-content > h2,
-.page-content > h3,
-.page-content > h4,
-.page-content > p,
-.page-content > ul,
-.page-content > ol,
-.page-content > dl,
-.page-content > blockquote,
-.page-content > table,
-.page-content > pre,
-.page-content > .prose,
-.page-content > .note,
-.page-content > .prose-note,
-.page-content > .lead,
-.page-content > .crumb,
-.page-content > .meta,
-.page-content > .section-header {
-  max-width: var(--measure);
-}
+/* The per-element max-width list that used to live here is gone.
+
+   It capped every prose element at `var(--measure)`, and `ch` is relative to
+   each element's OWN font size - so a 32px h1 was given a 68ch box of 816px
+   while the 17px paragraph beneath it got 623px. Headings therefore overhung the
+   text under them by 323px at every viewport above 900px, which is the same
+   defect an earlier commit tried to fix by centring each element individually.
+
+   One width for the container does the whole job and cannot disagree with
+   itself, because there is only one of it. Measured on the built site at
+   1280px: the h1 and the paragraph now share a right edge, and body copy sits
+   at about 80 characters per line. */
 
 /* Sections that are a grid rather than prose opt back out to the page width. */
 .page-content > .section,
@@ -1872,10 +1862,6 @@ tr:hover td {
 
 .page-content > ul.topic-list {
   max-width: none;
-}
-
-.page-content > .section > .section-header {
-  max-width: var(--measure);
 }
 
 /* --- type ---------------------------------------------------------------- */
@@ -1950,11 +1936,9 @@ tr:hover td {
 .page-content h3.question {
   font-size: 1.125rem;
   line-height: 1.45;
-  max-width: var(--measure);
 }
 
 .page-content blockquote {
-  max-width: var(--measure);
   font-size: 1rem;
   line-height: 1.7;
 }
@@ -1984,7 +1968,6 @@ tr:hover td {
   letter-spacing: 0.06em;
   color: var(--color-text-secondary);
   margin: 1.25rem 0 0.5rem;
-  max-width: var(--measure);
 }
 
 /* The homepage topic cards are a grid and should use the full page width; the
@@ -2029,7 +2012,7 @@ tr:hover td {
    about 68ch, so prose lands on the comfortable measure by construction and
    everything below it - grids, tables, the shelf lists - has room too. */
 .page-content {
-  max-width: calc(var(--measure) + 14rem);
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -2081,7 +2064,6 @@ tr:hover td {
 
 /* Reader-facing cautions, replacing the agents' maintainer notes. */
 .caution-list {
-  max-width: var(--measure);
   margin: 1rem 0 0;
   padding-left: 0;
   list-style: none;
