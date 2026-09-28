@@ -34,21 +34,33 @@
   {%- comment -%}
     Applied before first paint, in <head>, with no network round trip.
 
-    Without this the page paints in the system theme and then jumps to the
+    Without this the page paints in the media query's theme and then jumps to the
     chosen one a frame later, which is the classic flash-of-wrong-theme. The
-    attribute is only ever "light" or "dark"; anything else, including a
-    missing or unreadable value, leaves the stylesheet's
-    `prefers-color-scheme` media query in charge, so "follow the system" is the
-    state where no attribute is set at all rather than a third CSS branch.
+    attribute is only ever "light" or "dark", and a present attribute outranks the
+    media query. "Follow the system" is therefore the one state where no
+    attribute is set at all rather than a third CSS branch - and it is not the
+    default: the default is light, so an absent or unreadable stored value writes
+    `data-theme="light"` rather than leaving the query in charge.
   {%- endcomment -%}
   <script>
   (function () {
-    try {
-      var t = localStorage.getItem('tap-theme');
-      if (t === 'light' || t === 'dark') {
-        document.documentElement.setAttribute('data-theme', t);
-      }
-    } catch (e) { /* private mode, or storage disabled: the media query stands */ }
+    // The default is LIGHT, not "whatever the OS asks for". A reader who has
+    // chosen nothing gets the light theme whether their machine is set to dark
+    // or not, so `data-theme="light"` is written when the stored value is absent
+    // or unusable. "System" remains an explicit choice and is the one state that
+    // writes NO attribute, which leaves the prefers-color-scheme query in charge.
+    //
+    // This runs before the stylesheet link so the attribute is in place for the
+    // first paint. Without it the page would paint in whatever the media query
+    // says and then jump.
+    var t = null;
+    try { t = localStorage.getItem('tap-theme'); } catch (e) { t = null; }
+    if (t === 'system') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme',
+        t === 'dark' ? 'dark' : 'light');
+    }
   })();
   </script>
   {% include seo_head.html rendered=content %}
@@ -84,10 +96,10 @@
       {%- endcomment -%}
       <button type="button" class="theme-toggle" id="themeToggle"
               aria-live="polite">
-        <span class="theme-icon" aria-hidden="true" data-theme-icon>&#9681;</span>
-        <span class="theme-label" data-theme-label>System</span>
+        <span class="theme-icon" aria-hidden="true" data-theme-icon>&#9728;</span>
+        <span class="theme-label" data-theme-label>Light</span>
         <span class="visually-hidden"> theme. Switch to</span>
-        <span class="visually-hidden" data-theme-next>dark</span>
+        <span class="visually-hidden" data-theme-next>system</span>
       </button>
       <button class="mobile-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation" onclick="var l=document.getElementById('navLinks');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -233,16 +245,25 @@
   {%- comment -%}
     Theme toggle. Three states, cycling system -> dark -> light -> system.
 
-    "System" is the default and is represented by NO data-theme attribute at
-    all, which leaves the stylesheet's prefers-color-scheme media query in
-    charge. That is one fewer CSS branch and it means a reader who has chosen
-    nothing keeps tracking their OS if it changes at dusk.
+    The DEFAULT is Light. A reader who has chosen nothing sees the light theme
+    whatever their OS is set to. "System" is still a real choice and is still
+    three-state rather than two: it is represented by NO data-theme attribute at
+    all, which leaves the stylesheet's prefers-color-scheme query in charge, so a
+    reader who picks it goes on tracking their machine if it changes at dusk.
 
-    The system media query is read live, so the label tracks the OS when the
-    state is "system" and the page is left open across a theme change.
+    That is why the default cannot be expressed as "no attribute" the way it used
+    to be. Attribute present means an explicit choice and outranks the media
+    query; attribute absent means follow the system. Defaulting to light means
+    writing the attribute, and keeping System means clearing it.
+
+    With JavaScript off there is no toggle to press and no stored value to read,
+    so the media query governs and a dark-OS visitor gets the dark theme. That is
+    the pre-existing no-JS behaviour and is left alone: the alternative would mean
+    removing the media query, which would also make "System" unable to ever show
+    dark.
 
     localStorage can throw - private mode, storage disabled, a file:// origin -
-    so every access is guarded and a failure degrades to the media query rather
+    so every access is guarded and a failure degrades to the light default rather
     than breaking the page.
   {%- endcomment -%}
   <script>
@@ -261,8 +282,8 @@
     function stored() {
       try {
         var v = localStorage.getItem(KEY);
-        return (v === 'light' || v === 'dark') ? v : 'system';
-      } catch (e) { return 'system'; }
+        return (v === 'light' || v === 'dark' || v === 'system') ? v : 'light';
+      } catch (e) { return 'light'; }
     }
 
     function effective(state) {
@@ -291,9 +312,17 @@
     btn.addEventListener('click', function () {
       var state = stored();
       var to = ORDER[(ORDER.indexOf(state) + 1) % ORDER.length];
+      // 'system' is WRITTEN, not expressed by deleting the key. It used to be
+      // delete-the-key, because a missing key used to mean "system" - the key was
+      // only ever written for an explicit light or dark. Now that the default is
+      // light, a missing key means light, so deleting it to mean "system" makes
+      // the two states the same value: the toggle goes Light -> System, reads
+      // the absent key back as Light, and sits there. System becomes impossible
+      // to reach and the button looks dead. Every state is stored explicitly now;
+      // what decides whether the ATTRIBUTE is written is still paint(), which
+      // writes nothing for 'system' and leaves the media query in charge.
       try {
-        if (to === 'system') localStorage.removeItem(KEY);
-        else localStorage.setItem(KEY, to);
+        localStorage.setItem(KEY, to);
       } catch (e) { /* the click still repaints, it just is not remembered */ }
       paint();
     });

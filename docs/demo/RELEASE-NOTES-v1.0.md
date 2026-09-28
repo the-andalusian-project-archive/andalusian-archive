@@ -15,10 +15,10 @@ tagged, uploaded or published.
 ## Read this before you tag
 
 Nothing is blocking v1.0. The site tour that used to be a blocker has been
-re-recorded: `docs/demo/site-tour.mp4` and `docs/demo/site-tour.gif` were
-re-cut on 2026-09-28, after the recount was approved and applied, and again
-after the reading-first redesign, in the design's own dark theme with the
-SEP-red accent. Their captions carry the current figures
+re-recorded three times over: after the recount was approved and applied, after
+the reading-first redesign, and again on 2026-09-28 in the design's own **light**
+theme — which is now also the site's default — with the SEP-red accent and a
+Ken Burns move that actually moves. Their captions carry the current figures
 (207 recovered items, 72 works with 47 in full, 20 papers, 68 transcripts of
 540,995 words) and their screenshots show the `/topics/` layer, which the
 previous cut did not include at all. The assets below can be attached as they
@@ -184,14 +184,14 @@ those, you are arriving from an outdated reference.
 ## Assets to attach
 
 Two files, both already in the repository, both cut from the same 13 captured
-frames of the deployed site. **These are the two to attach** — verified present,
+frames of a local `_site/` build. **These are the two to attach** — verified present,
 of the right type, and referenced by `README.md` (the GIF is the inline embed)
 and by `docs/demo/README.md`.
 
 | File | What it is | Size | sha256 |
 |---|---|---:|---|
-| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 35.07 s. | 3,542,646 B (3.38 MiB) | `ff8ef6c9651fe66577726e3ca69002de6753510c20a5bdd81caeae71f2903c02` |
-| `docs/demo/site-tour.gif` | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 36.26 s. | 1,188,014 B (1.13 MiB) | `c0d33726d7e8076c9c79691ee2a331c6e041a2cc4dda281fb3730be018facf7c` |
+| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 35.07 s. | 5,518,262 B (5.26 MiB) | `8aed2ee5d24c9d3df7db4b80239ea54e7759e1ba5a7b938b8ef22d93eb1da3f2` |
+| `docs/demo/site-tour.gif` | A size-capped preview for inline display. 720x450, 6 fps, 24.00 s. | 6,157,066 B (5.87 MiB) | `48f224e07d46e2c0da79b24456f6e9eb552db987eddaf1916123104fa921acb0` |
 
 Verified on 2026-09-28: the MP4 begins with a valid ISO-BMFF `ftyp` box and the
 GIF with a `GIF89a` header, so both are intact and neither is a Git LFS pointer
@@ -225,6 +225,5 @@ Tag: `v1.0.0` · Title: `The Andalusian Project Archive v1.0.0`
 > **The author has asked not to be contacted.** See `NOTICE.md` §10.
 >
 > Attached: the site tour (`site-tour.mp4`, `site-tour.gif`), recorded
-> 2026-09-27. *(If the re-recording has not happened, add: "recorded before the
-> 2026-09-28 recount, so its captions show superseded counts — see
-> `docs/demo/README.md`.")*
+> 2026-09-28 in the light theme from a local build of the current commit, after
+> the recount. Its captions carry the current figures.

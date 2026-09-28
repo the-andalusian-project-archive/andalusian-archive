@@ -941,6 +941,88 @@ def check_palette() -> list[str]:
           f"{len(dark_sets)} dark declaration(s)")
     failures += check_touch_targets(css)
     failures += check_sources_claims()
+    failures += check_theme_default(ROOT / "_layouts" / "default.html")
+    return failures
+
+
+# The site's default theme is LIGHT, chosen on 2026-09-28. It used to be "System",
+# meaning a reader who had said nothing got whatever their OS asked for, and a
+# dark-OS visitor landed on the dark theme. The three states stayed - following
+# the system is still a real choice - but the no-preference case now writes
+# `data-theme="light"`.
+#
+# This is checked because the default is expressed in two places that have to
+# agree: the pre-paint script in <head>, which is what stops the flash, and
+# stored() in the toggle, which is what the button label and aria-name read. When
+# they disagreed the page would render light and the button would say something
+# else.
+THEME_DEFAULT_EXPECTED = "light"
+
+
+def check_theme_default(layout: pathlib.Path) -> list[str]:
+    """The default theme is light, in both places that decide it."""
+    failures: list[str] = []
+    if not layout.exists():
+        return [f"{layout.name}: missing"]
+    text = layout.read_text(encoding="utf-8", errors="ignore")
+
+    # The pre-paint script must not leave a missing value to the media query.
+    if "t === 'system'" not in text:
+        failures.append(
+            f"{layout.name}: the pre-paint script has no 'system' branch, so it "
+            f"cannot be the state that writes no attribute")
+    if f"t === 'dark' ? 'dark' : '{THEME_DEFAULT_EXPECTED}'" not in text:
+        failures.append(
+            f"{layout.name}: the pre-paint script does not default to "
+            f"{THEME_DEFAULT_EXPECTED} for a missing or unreadable stored value")
+
+    # stored() is what the toggle reads, so it must agree. The check looks for the
+    # default ARM of the ternary rather than for the string "return 'light'":
+    # stored() also has a `catch (e) { return 'light'; }`, so a naive substring
+    # test is satisfied by the wrong line and passes even when the primary return
+    # has been reverted to 'system'. That is not hypothetical - it is what this
+    # gate did the first time round.
+    m = re.search(r"function stored\(\)\s*\{(.*?)\n    \}", text, re.S)
+    if not m:
+        failures.append(f"{layout.name}: no stored() function found")
+    else:
+        body = m.group(1)
+        if f"? v : '{THEME_DEFAULT_EXPECTED}'" not in body:
+            failures.append(
+                f"{layout.name}: stored() does not default to "
+                f"{THEME_DEFAULT_EXPECTED} for a missing or unusable value")
+        if "'system'" not in body:
+            failures.append(
+                f"{layout.name}: stored() does not accept 'system', so following "
+                f"the OS would be unreachable from the toggle")
+
+    # Every state must be STORED EXPLICITLY. "System" used to be encoded as the
+    # absence of the key, which was correct while a missing key meant system. It
+    # stopped being correct the moment the default became light, because then a
+    # missing key means light: choosing System deleted the key, stored() read it
+    # back as Light, and the button silently stopped doing anything. The symptom
+    # was a toggle that cycled Light -> System -> Light and never changed the
+    # page, and a stale label.
+    if "localStorage.removeItem(KEY)" in text:
+        failures.append(
+            f"{layout.name}: the toggle still deletes the stored key to mean "
+            f"'system'; with light as the default that makes system and light "
+            f"the same value and the button stops working. Store 'system'.")
+    if "localStorage.setItem(KEY, to)" not in text:
+        failures.append(
+            f"{layout.name}: the click handler does not store the state it "
+            f"cycles to, so no state survives a reload")
+
+    # The static markup is what a reader sees before the script runs, and what a
+    # screen reader gets if it never runs.
+    if "data-theme-label>Light<" not in text:
+        failures.append(
+            f"{layout.name}: the toggle's static label is not Light, so the "
+            f"pre-script state misreports the default")
+
+    print(f"theme default        : {THEME_DEFAULT_EXPECTED}, in the pre-paint "
+          f"script, stored() and the static label; all three states stored "
+          f"explicitly")
     return failures
 
 

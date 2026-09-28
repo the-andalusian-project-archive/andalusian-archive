@@ -493,8 +493,17 @@ described in **6.1a** was withheld in full. That pass:
 
 ## 10. DO NOT CONTACT THE AUTHOR
 
-The author has asked not to be contacted, and he keeps a private life. This is
-stated here so that nobody has to guess.
+The author has left online dawah and has asked not to be contacted, and he keeps
+a private life. He announced it himself, in his own words, in *Yes, I'm leaving* —
+the last video published under The Andalusian Project:
+<https://youtu.be/kRCzZW3rg4U>. This is stated here so that nobody has to guess.
+
+Two things a reader should know about that citation. The video is not on the
+author's own channel; his channel is gone, and the copy linked above is a
+re-upload on someone else's, so it could disappear. And the archive does not yet
+hold a transcript of it, so the claim above rests on a public video rather than on
+a document preserved here. Recovering it into `_transcripts/` and a copy of the
+file into the archive's own media collection would close both gaps.
 
 This archive exists so his work can be **used** — read it, cite it, teach from
 it, build something good with it. Nothing more is wanted.

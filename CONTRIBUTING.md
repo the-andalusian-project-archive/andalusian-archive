@@ -5,8 +5,10 @@ are corrections to the record, not changes to the recovered material.
 
 ## Do not contact the author
 
-The author has asked not to be contacted, and he keeps a private life. This is
-stated here so that nobody has to guess.
+The author has left online dawah and has asked not to be contacted, and he keeps
+a private life. He announced it himself, in his own words, in *Yes, I'm leaving* —
+the last video published under The Andalusian Project:
+<https://youtu.be/kRCzZW3rg4U>. This is stated here so that nobody has to guess.
 
 Requests to contact him, requests for his personal details, and invitations to
 events will not be answered and should not be sent. The maintainers cannot

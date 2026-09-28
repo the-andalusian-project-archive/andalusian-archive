@@ -1,27 +1,37 @@
 # `docs/demo/` — the site tour
 
-A short screen recording of the live site, so a reader can see the archive working
+A short screen recording of the site, so a reader can see the archive working
 before reading anything about it. Two artefacts, cut from the same 13 captured
-frames of the deployed site.
+frames by `scripts/build_site_tour.py`.
 
 | File | What it is | Size |
 |---|---|---:|
-| [`site-tour.mp4`](site-tour.mp4) | The full tour. 1440x900, 30 fps, 35.07 s. | 3,542,646 B (3.38 MiB) |
-| [`site-tour.gif`](site-tour.gif) | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 36.26 s. | 1,188,014 B (1.13 MiB) |
+| [`site-tour.mp4`](site-tour.mp4) | The full tour. 1440x900, 30 fps, 35.07 s. | 5,518,262 B (5.26 MiB) |
+| [`site-tour.gif`](site-tour.gif) | A size-capped preview for inline display. 720x450, 6 fps, 24.00 s. | 6,157,066 B (5.87 MiB) |
 
 The repository README embeds the **GIF**, not the MP4: GitHub strips `<video>`
 tags from README markdown, so a `<video>` embed renders as nothing. The GIF is
 linked alongside the MP4 and the live site.
 
-**This is a screen recording of the live site, not a rendering of the repository.**
-It was captured on **2026-09-28**, after the reading-first redesign, from
-<https://the-andalusian-project-archive.github.io/andalusian-archive/> at a
+**This is a screen recording of the site, not a rendering of the repository.**
+It was captured on **2026-09-28**, after the reading-first redesign, at a
 1440x900 viewport, using a real browser, with the site's own navigation and CSS
 in place. Every frame is a screenshot of a page a visitor can open.
 
-**The tour is recorded in the site's dark theme.** The earlier cut was light. Dark
-mode is what the archive now defaults to, and a tour that shows a theme a reader
-will not see is a worse advert than a slightly heavier file.
+Captured from a **local build served on `127.0.0.1`**, not from the deployed
+github.io site, by `scripts/capture_site_tour.js`. An earlier version of this
+file said the frames came from the live site; that was not true of the cut it
+described, and the deployed site was several commits behind anyway, so it could
+not have been the source for a "latest version" recording. The frames are the
+same pages and the same CSS, served from `_site/`.
+
+**The tour is recorded in the site's light theme**, which is also the site's
+default as of this recording. Two earlier cuts existed: the first was light, the
+second dark on the reasoning that dark was the default. That reasoning was never
+sound — a tour that shows a theme a reader will not see is a worse advert than a
+slightly heavier file, and a dark-OS reader is not the majority. The theme the
+site hands someone who has chosen nothing is light, so that is what the tour
+shows.
 
 ## It will go stale
 
@@ -31,7 +41,9 @@ picture of one moment, not a live feed. It will disagree with the site as soon a
 a caption, a layout, a count or a page changes — and the captions carry figures,
 so an approved recount will make them wrong. If you find a caption that no longer
 matches the page it sits on, the caption is the thing to fix, and the number to
-re-read from `_data/` first.
+re-read from `_data/` first — which is what `check_captions()` in
+`build_site_tour.py` does, so the build refuses to cut a tour whose captions
+quote a figure no data file produces.
 
 ## What the MP4 shows
 
@@ -110,48 +122,92 @@ No count anywhere in the repository was changed to make a caption work.
 
 ## Re-recording
 
-1. Open the live site in a browser at a 1440x900 viewport **in dark theme** and
-   screenshot each page you want in the tour, naming them `NN-slug.png` /
-   `NN-slug-b.png` in visit order.
-2. Drop them in `_staging/demo-tour/`. That tree is gitignored, so captures never
+1. Build the site and serve `_site/` on `127.0.0.1:8899`:
+   `npm run build`, then `npx live-server _site -p 8899`.
+2. Run `scripts/capture_site_tour.js` — it is a function to hand to a browser
+   tool, not a `node` script, because the repository has no Playwright
+   dependency. It captures all 13 frames in the light theme, waits for
+   `document.fonts.ready` before each shot, and fails loudly if the stored theme
+   is not the one being recorded.
+3. Frames land in `_staging/demo-tour/`, which is gitignored, so captures never
    reach the repository.
-3. Edit `SEGMENTS` in `scripts/build_site_tour.py`: one entry per frame, with its
-   caption and its Ken Burns move. Check every figure in a caption against
-   `_data/` first, and leave the number out where the recount would make it
+4. Edit `SEGMENTS` in `scripts/build_site_tour.py`: one entry per frame, with its
+   caption and its zoom move. Every figure in a caption is checked against
+   `_data/` at build time, so leave the number out where a recount would make it
    contested.
-4. Re-run the build for both cuts and re-encode the GIF.
-5. Update the frame list, the caption table, the recorded date and the file sizes
-   in this file, and the numbers in the repository README's "See it live" block if
-   the length changed.
+5. `python -B scripts/build_site_tour.py` — cuts both files and fails if the GIF
+   is over `GIF_MAX_MB`.
+6. Update the frame list, the caption table, the recorded date, the file sizes and
+   the SHA-256s in this file and in `RELEASE-NOTES-v1.0.md`.
 
 ## Encode settings
 
 Both files are produced by one script, `scripts/build_site_tour.py`, driven by
 ffmpeg. The script is committed, so the cut is reproducible; the captured frames
-are not, because `_staging/` is gitignored — step 2 above is the only manual part
+are not, because `_staging/` is gitignored — step 3 above is the only manual part
 of the process.
 
 **MP4** — `-c:v libx264 -preset slow -crf 23 -profile:v high -level 4.0
 -pix_fmt yuv420p -r 30 -movflags +faststart -an`. Each frame is scaled to
-2880x1800, driven through `zoompan` (slow zoom out from `z=1.28` to `z=1.05`
-with a +-0.02 pan), scaled back to 1440x900, captioned with `drawtext` in
-Segoe UI, then chained with `xfade` (0.55 s dissolves) and encoded. `moov` is
-written before `mdat`, so the file starts playing before it has finished
+2880x1800, driven through `zoompan`, scaled back to 1440x900, captioned with
+`drawtext` in Segoe UI, then chained with `xfade` (0.55 s dissolves) and encoded.
+`moov` is written before `mdat`, so the file starts playing before it has finished
 downloading.
 
-**GIF** — `fps=8, scale=800:-1:flags=area`, then a two-pass palette:
-`palettegen=stats_mode=diff:max_colors=256` and `paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle`.
-`stats_mode=diff` weights the palette towards the colours that actually change
-between frames, which reads better on UI screenshots than a whole-clip
-histogram; `diff_mode=rectangle` stores only the rectangle that changed.
+**The zoom move.** `zoompan` is given `d=1`, an input frame rate of 30, and an
+eased expression that interpolates between the two zoom values in `SEGMENTS`:
+`z = z_in + (z_out - z_in) * smootherstep(on / (frames - 1))`. Smootherstep is
+`6t^5 - 15t^4 + 10t^3`, so the move starts and ends at zero velocity; a linear
+ramp begins and ends at full speed and reads as a nudge at each end of every hold.
 
-**Why the GIF is not the MP4.** The GIF is capped at 8 MB, and this is dense UI
-text: 13 frames at 800x500 and 8 fps costs roughly 1,000 KB per second of
-animation, so a frame-for-frame copy of the MP4 would need about 35 MB. The GIF
-therefore carries **one frame per section** — the eleven picks the build script
-names — so each caption gets real screen time instead of flashing past. At
-800x500 and 8 fps it is 1.13 MiB, well inside the cap, and page headings, card
-titles and the captions are all readable at 1:1.
+`d=1` is load-bearing. `zoompan`'s `d` is *output* frames per *input* frame, so
+the value that was there before, `d=90`, made `on` count `0..89` within each input
+frame's own group of 90 and produced 75 × 90 = 6750 frames for a three-second
+clip. That is what the `-t` on the output truncates. At `d=1` the two are one to
+one and `on` is the clip's real frame index.
+
+An earlier cut used `z='if(eq(on,0),{z_out},{z_in})'`, which is not a zoom but a
+cut: `on` is 0 for exactly one frame and `z_in` for every frame after it, so each
+hold showed one frame at the start value and then sat still. Measured with
+`mpdecimate`, the shipped MP4 kept 145 changed frames out of 1052, all of them in
+the dissolve boundaries, and segment interiors kept 1–2 changed frames out of 30.
+The current cut keeps 966 of 1052, and 30 of 30 in the interiors. This file
+previously described the move as a "slow zoom out from z=1.28 to z=1.05 with a
+±0.02 pan". There has never been a pan in the script, and the direction was
+backwards; both claims are removed rather than implemented.
+
+**The caption plate** is an opaque `--color-surface` band across the bottom 150 px,
+with a `--color-border` hairline along its top edge and a `--color-primary` rule
+along the bottom, and the caption in `--color-text`. The plate is opaque on
+purpose: translucent, the page behind shows through the text, and because those
+pixels change every frame the quantiser re-dithers the whole band continuously,
+which is the single most expensive thing in the GIF. All four colours are read
+out of `assets/css/style.css` at build time rather than restated, because the
+previous cut hardcoded `0x0F1117` — a colour the redesign had already retired.
+
+**GIF** — `fps=6, scale=720:-1:flags=area`, then a two-pass palette:
+`palettegen=stats_mode=full:max_colors=128` and
+`paletteuse=dither=bayer:bayer_scale=3:diff_mode=rectangle`. `stats_mode=full`
+fits the palette to the whole frame rather than to the changed pixels, which
+matters here because the changed pixels are the edges of a slow zoom and a
+palette fitted only to those has to approximate the paper and the body text.
+
+**Why the GIF is not the MP4.** The GIF is capped at 8 MB and this is dense UI
+text. Two things make the difference. Each pick is held for 2.0 s rather than the
+MP4's 3.0 s, and each input is trimmed in the filter graph before the concat.
+Shortening the hold is the cheapest saving available, because the motion is a slow
+zoom and two seconds still shows all of it. The alternative, dropping a frame
+rate or a pick, costs the reader something visible.
+
+This is also why the GIF is 5.87 MiB where the previous dark cut was 1.13 MiB,
+which is not a regression to be tuned away: **the previous GIF contained no
+motion at all.** Every segment was one static frame held for three seconds, so a
+GIF stored roughly one bitmap per segment. Fixing the ramp gave the GIF something
+to compress for the first time — 144 distinct frames instead of about a dozen —
+and a palette-indexed format pays for every one of them. `GIF_WIDTH` is the
+other lever: halving the width quarters the pixel count, and 720 px was chosen
+over 640 px to keep the captions readable, landing at 77% of the cap with real
+headroom rather than sitting on it.
 
 Nothing in `docs/demo/` is referenced by the site build, so a stale or missing
 tour cannot break `jekyll build` or the test suites.

@@ -57,8 +57,10 @@ the other as a recorded alternate, and never adds them together.
 
 ## Do not contact the author
 
-The author has asked not to be contacted, and he keeps a private life. This is
-stated here so that nobody has to guess.
+The author has left online dawah and has asked not to be contacted, and he keeps
+a private life. He announced it himself, in his own words, in *Yes, I'm leaving* —
+the last video published under The Andalusian Project:
+<https://youtu.be/kRCzZW3rg4U>. This is stated here so that nobody has to guess.
 
 This archive exists so his work can be **used** — read it, cite it, teach from
 it, build something good with it. Nothing more is wanted.
