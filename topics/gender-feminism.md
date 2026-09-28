@@ -14,26 +14,24 @@ last_modified_at: 2026-09-28
 
 <p>His 2016 case that Islam already gave women their rights and that feminism is an imported Western ideology, and his three-part historical refutation of the accusation that marrying Aisha at nine was sexual violence - resting on mortality-driven childhood, moral progressionism, and the classical separation of marriage contract from consummation.</p>
 
-<p class="note">This page preserves and attributes. It is not the archive endorsing a
-position and not a religious authority. Read the links for the full text.</p>
+<p class="note">The archive records this work. It does not endorse it, and it is not
+a religious authority.</p>
 
-<h2>How to read this page</h2>
+<h2>Reading the passages below</h2>
 
-<p><strong>Nothing on this page is the whole argument.</strong> Each passage below
-was selected because it bears on the question above it, and each links to the
-full text, paper or transcript it was taken from &mdash; where the context, the
-qualifiers and the counter-arguments are. Where a passage is a small part of a
-much longer work, this page says so and gives the size of the whole, because a
-faithful quotation can still mislead by being a fragment: the reasoning around a
-sentence is often the part that changes what the sentence means.</p>
+<p><strong>None of these is the whole argument.</strong> Each passage is a
+quotation from a longer work, and the link under it takes you to the whole thing
+&mdash; the context, the qualifications and the objections, none of which fit in
+an excerpt. Where a passage is a small part of a long work, the size of the whole
+is given: a few sentences out of several thousand can make a position look
+settled when the writer never settled it. If you intend to disagree with him, or
+to cite him, read the full work first.</p>
 
-<p>You do not have to arrive agreeing with him, or with anyone else, and the page
-does not ask you to. It records what was argued, on what grounds, and where the
-record is thin, contested, or his alone. The places worth pressing hardest are
-usually the ones the archive has marked &mdash; and a disagreement formed from
-something you actually read is worth more than one formed from a summary.</p>
+<p>You do not have to arrive agreeing with him, or with anyone else. Where a
+reading is contested, a position is his alone, or the evidence is thin, that is
+said at the foot of the page.</p>
 
-<h2>Where the archive holds a substantial passage</h2>
+<h2>Where he addresses the question</h2>
 
 <h3 class="question">do muslim women need feminism</h3>
 
@@ -285,12 +283,10 @@ abuse and to take advantage of children but what does change are the conditions 
 
 
 
-<h2>Questions on this subject with no substantial passage here</h2>
-<p>These are questions people ask that this material bears on, but where the
-archive holds nothing long enough to be worth quoting under the question. They are
-listed rather than answered, because a caption or a one-line summary presented as
-an answer is worse than no answer. The reading list below is where to go
-instead.</p>
+<h2>Related questions with nothing to quote here</h2>
+<p>The archive holds material that bears on these, but not a long enough passage
+to be worth putting under a question. They are listed so the gap is visible
+rather than papered over; the reading list above is the place to go.</p>
 <ul class="query-list">
       <li>does islam teach gender equality</li>
       <li>feminist arguments against islam</li>
@@ -336,14 +332,8 @@ instead.</p>
 
 
 <h2>Everything else on this subject</h2>
-<p class="note">The passages above are what the archive can <em>prove</em> bears on the
-question, because each one is quoted and cited. That is a much smaller set than
-the material itself, and the gap matters: it is the set a researcher chose to
-read, not the set of everything relevant. This is everything else in the archive
-filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
-categories and themes rather than on a reader&rsquo;s judgement. A work may appear
-on more than one subject page; that is the tags speaking, not an editorial
-decision. The list is a reading list, not a claims list.</p>
+<p>More from the archive on the same subject. A work can appear on more than one
+of these pages.</p>
 <h3 class="shelf-kind">Recordings (2)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]</a></li>

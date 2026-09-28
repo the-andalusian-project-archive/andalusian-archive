@@ -13,16 +13,14 @@ last_modified_at: 2026-09-28
 <p class="lead">Everything recovered here that does not yet fit one of the eight
 subjects.</p>
 
-<p>This page exists so the other eight do not have to pretend to be complete. A work
-that belongs to no cluster is still a recovered work, and leaving it off the subject
-pages would make those pages quietly lossy. It carries no questions and no quotations
-by design &mdash; it is the remainder, not a subject.</p>
+<p>This page exists so the other eight do not have to pretend to be complete. A
+recovered work that belongs to no subject is still a recovered work, and leaving
+it off the subject pages would mean they quietly did not hold everything they
+claim to.</p>
 
-<p class="note">Some of this is a limitation of the recovered corpus rather than a gap
-in the archive: the original site&rsquo;s own tagging is thin and uneven, and this page
-is a fair picture of how little of it can be sorted automatically. Where a work plainly
-belongs to a subject, it may still appear on that page if a researcher filed it there by
-reading it.</p>
+<p>Some of this is a limit of the original site's own tagging, which is thin and
+uneven, rather than a gap in the recovery. Where a work plainly belongs to a
+subject it may still appear on that page.</p>
 
 <h2>Papers (4)</h2>
 <ul class="shelf-list">

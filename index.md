@@ -78,12 +78,11 @@ last_modified_at: 2026-09-28
     {%- endfor -%}
   </ul>
 
-  <p class="meta">Every quotation on those pages is checked word-for-word against the
-  file it cites by <code>scripts/test_quotes.py</code>, which fails the build
-  otherwise. Nothing there is paraphrased into the archive's summary of it.
-  Recovered items that fit none of these subjects are still listed under
-  <a href="{{ '/topics/miscellany/' | relative_url }}">other materials</a>, so
-  that no work recovered here becomes quietly unreachable.</p>
+  <p class="meta">Nothing is paraphrased on those pages &mdash; the work is quoted and
+  attributed, with the full text linked. Recovered items that fit none of these
+  subjects are still listed under
+  <a href="{{ '/topics/miscellany/' | relative_url }}">other materials</a>, so no
+  work recovered here becomes quietly unreachable.</p>
 </div>
 
 {%- comment -%}

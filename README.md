@@ -40,8 +40,7 @@ different and also-active speaker named Abdullah al-Andalusi are on
 and answers HTTP 200, serving an unrelated slot-gambling operation. Do not use it, and do not
 cite it as his site — this archive does not claim to control or represent it, and records the
 fact only because a reader searching his name will land there. His WordPress mirror at
-`asadullahali.wordpress.com` is still up but its post bodies have been removed: navigable,
-described, empty. His YouTube channel returned "This channel is not available." at the live
+[`asadullahali.wordpress.com`](https://asadullahali.wordpress.com/) is a different matter and is **still live with real post text** — check it before assuming the work is gone. Re-verified 2026-09-28: the 2011–2012 posts 404 (they lived on the .com, not the mirror), but the 2020-era posts carry their full bodies on his own hosting, *Between a Backbone and Ribs* among them at 128,018 characters. Those pages are the only **live first-party** copy of that work, and are cited as a source wherever one exists. His YouTube channel returned "This channel is not available." at the live
 check recorded on 2026-09-27. All of that is set out, query by query, on
 [`/asadullahali-com-what-happened/`](asadullahali-com-what-happened.md) — the page that carries
 the safety warning, because a link to that domain would defeat it.

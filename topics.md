@@ -1,26 +1,19 @@
 ---
 layout: default
-title: What this archive answers
-description: "The questions the recovered work of Asadullah Ali Al-Andalusi already answers, grouped so a reader can find the answer to the question they actually arrived with."
+title: Questions this archive answers
+description: "The questions the recovered work of Asadullah Ali Al-Andalusi addresses, grouped by subject, with the passages that bear on each one and links to the full text."
 permalink: /topics/
 last_modified_at: 2026-09-28
 ---
 
 <h1>What this archive answers</h1>
 
-<p class="lead">Most people arrive here with a question, not a name. These are the
-questions the recovered work already answers.</p>
+<p class="lead">Most people arrive with a question, not a name. These are the
+questions the recovered work addresses.</p>
 
-<p>The archive holds <strong>116</strong> catalogued items and
-<strong>732</strong> mapped questions across
-<strong>8</strong> subjects. Every quoted passage below is
-verified word-for-word against the file it is cited from by
-<code>scripts/test_quotes.py</code>, which fails the build if a quotation cannot be
-found at the line it claims.</p>
-
-<p class="note">These pages preserve and attribute. They are not the archive
-endorsing a position, and they are not a religious authority. Where a reading or
-a position is contested, the page says so.</p>
+<p>Each subject page puts a question in ordinary words, then gives the passages
+that bear on it &mdash; quoted, attributed, and linked to the full text, paper,
+transcript or recording. The archive records this work; it does not endorse it.</p>
 
 <ul class="topic-list">
     <li class="topic-card">
@@ -65,9 +58,9 @@ a position is contested, the page says so.</p>
     </li>
 </ul>
 
-<h2>How to read a topic page</h2>
-<p>Each page opens with the question in ordinary words, then gives the material
-that answers it - quoted, attributed, and linked to the full text, paper,
-transcript or recording. Where the archive holds a question's answer only as a
-machine transcript, the page says so, because a machine transcript should not be
-quoted in an argument as though it were checked.</p>
+<h2>If a question is not here</h2>
+<p>Search covers every item:
+<a href="{{ site.baseurl }}/search/">search the archive</a>. Recovered items
+that fit none of these subjects are still listed under
+<a href="{{ site.baseurl }}/topics/miscellany/">other materials</a>, so
+nothing recovered here is unreachable.</p>

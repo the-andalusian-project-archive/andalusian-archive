@@ -96,6 +96,19 @@ layout: default
             the ability to click through to a hijacked domain is.
           {%- endcomment -%}
           {% include source_link.html url=page.original_url label="View Original" class="btn" %}
+          {% if page.wordpress_url %}
+          {%- comment -%}
+            2026-09-28. The WordPress mirror is the only LIVE first-party copy for
+            the 2020-era works: the post bodies survive on the author's own
+            hosting, not just in a Wayback replay. It is the strongest source on
+            this page and it was being missed entirely, because the only place the
+            mirror appeared in the data was inside raw replay URLs with a port
+            number in them. `wordpress_note` records the verified body size, so a
+            future maintainer can tell a working link from an emptied one without
+            re-fetching it.
+          {%- endcomment -%}
+          <a href="{{ page.wordpress_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Live on his WordPress mirror</a>
+          {% endif %}
           {% if page.wayback_url %}
           <a href="{{ page.wayback_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Wayback Machine</a>
           {% endif %}

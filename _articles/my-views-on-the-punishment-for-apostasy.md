@@ -8,6 +8,8 @@ status: "found"
 wayback_url: "https://web.archive.org/web/20200813203840/https://asadullahali.com/2020/08/11/my-views-on-the-punishment-for-apostasy/"
 local_post: "_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md"
 local_post_url: "/articles/current issues/personal/my-views-on-the-punishment-for-apostasy/"
+wordpress_url: "https://asadullahali.wordpress.com/2020/08/11/my-views-on-the-punishment-for-apostasy/"
+wordpress_note: "Live first-party copy on the author's own WordPress mirror, verified 2026-09-28 with a 15,562-character post body. This is not a Wayback replay; it is the original hosting."
 ---
 
 # My Views on the Punishment for Apostasy

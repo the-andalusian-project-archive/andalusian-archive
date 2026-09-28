@@ -2035,3 +2035,18 @@ tr:hover td {
   font-size: 0.8125rem;
   font-style: italic;
 }
+
+/* Marks a source that is still live and first-party, as against a replay. Small,
+   because it is an annotation on a link rather than a feature. */
+.footer-flag {
+  display: inline-block;
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-success);
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  padding: 0 0.3rem;
+  margin-left: 0.3rem;
+  vertical-align: 1px;
+}
