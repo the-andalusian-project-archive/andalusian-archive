@@ -818,6 +818,28 @@ def check_palette() -> list[str]:
                 f"style.css {theme_name}: --color-primary is {got}, expected "
                 f"{want} (SEP's red)")
 
+    # A palette token re-declared inside a `prefers-color-scheme` query is a
+    # trap. The deleted `prefers-color-scheme: light` layer sat AFTER :root, so
+    # in light mode it won the cascade and made --measure resolve to 68ch and
+    # --color-text-secondary to a cool #545b68 - while this gate, reading the
+    # first declaration in the file, reported a clean palette. That is the same
+    # class of blind spot as the `_site` check in 1c177ba: validating a
+    # declaration instead of the value the cascade resolves to.
+    #
+    # The dark block is exempt - re-declaring every token there is what a second
+    # theme IS. So are width media queries: a token narrowed at 480px cannot
+    # override the desktop palette. A *colour-scheme* query can, at every width.
+    for qm in re.finditer(
+            r"@media[^{]*prefers-color-scheme[^{]*\{(.*?)\n\}", css, re.S):
+        if "dark" in qm.group(0)[:120]:
+            continue  # the dark theme, which is meant to differ
+        for token in sorted(set(re.findall(r"(--[\w-]+):", qm.group(1)))):
+            if token in light:
+                failures.append(
+                    f"style.css: {token} is re-declared inside a "
+                    f"prefers-color-scheme query other than the dark block; it "
+                    f"wins the cascade and can silently override the palette")
+
     # The retired Tailwind values must be gone, not merely unused.
     for dead in ("#2563eb", "#7c3aed"):
         if dead in css.lower():
@@ -854,7 +876,11 @@ def check_measure() -> list[str]:
             f"style.css: --measure is {px}px, outside the "
             f"{MEASURE_MIN_PX}-{MEASURE_MAX_PX}px band the references use")
 
-    # Georgia's average advance is about 0.5em, so 18px gives ~9px per char.
+    # An UPPER BOUND, deliberately. Georgia's average advance is about 0.5em,
+    # so 18px gives ~9px per character, and the rendered text measure is the
+    # token minus the container's horizontal padding - 680px renders as 632px,
+    # about 70 characters. Reporting the larger number keeps the gate strict
+    # rather than optimistic.
     approx_ch = px / 9.0
     if not (MEASURE_MIN_CH <= approx_ch <= MEASURE_MAX_CH):
         failures.append(

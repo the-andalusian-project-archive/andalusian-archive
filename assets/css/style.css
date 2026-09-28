@@ -2040,20 +2040,15 @@ tr:hover td {
    overrides, so it sits last and wins on equal specificity.
    ============================================================================ */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    /* Contrast-corrected greys. Old tertiary #9ca3af was 2.54:1 - a fail. */
-    --color-text-secondary: #545b68;
-    --color-text-tertiary: #6b7280;
-    --color-muted: #6b7280;
-  
-    --text-base: 1.0625rem;   /* 17px, from 16px */
-    --line-height: 1.7;
-  
-    /* The comfortable line length for running text at this type size. */
-    --measure: 68ch;
-  }
-}
+/* The `prefers-color-scheme: light` token layer that stood here was deleted
+   by the reading-first redesign. It sat after :root and so won the cascade,
+   re-declaring --color-text-secondary, --color-text-tertiary, --color-muted,
+   --text-base and --measure with the old dashboard's values. In light mode
+   that meant --measure resolved to 68ch and the secondary ink to a cool
+   #545b68, neither of which is in the new palette. check_palette() now
+   fails on any second declaration of a palette token, so a stale override
+   layer cannot pass the gate again. */
+
 
 /* --- prose gets a measure; page furniture keeps the full width ----------- */
 
@@ -2407,4 +2402,226 @@ tr:hover td {
     white-space: nowrap;
     padding: 0.55rem 0.7rem;
   }
+}
+/* ==========================================================================
+   READING-FIRST SYSTEM
+   --------------------------------------------------------------------------
+   Appended as an override layer rather than an in-place rewrite. The rules above
+   are the old dashboard system; these win by cascade order. The superseded
+   rules are pruned in a later pass, once this layer is verified in a browser -
+   deleting 1,300 lines of CSS and restyling in the same change would make a
+   visual regression impossible to attribute.
+
+   Order of the tasks that produced this section:
+     1  tokens and both themes
+     2  typography and the measure          <- this block
+     3  links, buttons, badges, tags
+     4  cards as list rows, backlink blocks as indents
+     5  tables, nav, footer, hero, timeline, stats
+     6  narrow screens
+   ========================================================================== */
+
+/* --- 2. typography --------------------------------------------------------
+   This is a reading archive: 68 machine transcripts and a body of recovered
+   prose held verbatim. Body text is serif at 18px/1.7, the measure is 680px
+   (the midpoint of Goodreads 625, IEP 700, SEP 707), and headings switch to the
+   sans at weight 300, which is where SEP's headings come from. */
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-content,
+.prose-reading {
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  max-width: var(--measure);
+}
+
+.page-content-wide { max-width: var(--measure-wide); }
+
+.page-content p,
+.page-content li {
+  font-family: var(--font-serif);
+  line-height: var(--line-height);
+}
+
+.page-content p { margin: 0 0 1.15em; }
+
+.page-content .lead,
+.page-content p.lead {
+  font-family: var(--font-serif);
+  font-size: var(--text-lead);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.6em;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  text-wrap: balance;
+  letter-spacing: -0.01em;
+}
+
+h1,
+.page-content h1 {
+  font-size: var(--text-3xl);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  margin: 0 0 0.5em;
+}
+
+h2,
+.page-content h2 {
+  font-size: var(--text-xl);
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 2.2rem 0 0.7rem;
+}
+
+h3,
+.page-content h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 1.8rem 0 0.6rem;
+  letter-spacing: 0;
+}
+
+h4,
+.page-content h4 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 1.4rem 0 0.5rem;
+  letter-spacing: 0;
+}
+
+/* The eyebrow is the small-caps label the references set above a section. */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.page-content .meta,
+.page-content p.crumb {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+.page-content blockquote {
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  background: none;
+  border: 0;
+  border-left: 2px solid var(--color-border-strong);
+  border-radius: 0;
+  padding: 0.15rem 0 0.15rem 1.25rem;
+  margin: 1.6rem 0;
+}
+
+.page-content code,
+.page-content pre,
+.page-content blockquote code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+
+.page-content pre {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-surface-sunken);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.15rem;
+  overflow-x: auto;
+  color: var(--color-text);
+}
+
+.page-content a:not(.btn):not(.quick-link) {
+  color: var(--color-primary);
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+
+.page-content a:not(.btn):not(.quick-link):hover,
+.page-content a:not(.btn):not(.quick-link):focus-visible {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.page-content ul,
+.page-content ol {
+  font-family: var(--font-serif);
+  line-height: var(--line-height);
+}
+
+.page-content li { margin-bottom: 0.4em; }
+/* --- 2b. left-align the reading column -------------------------------------
+   The old hero centred its h1 and subtitle while the body beneath stayed
+   left-aligned inside a centred column, so the page mixed both alignments and
+   read as a landing page. SEP and IEP left-align the whole column, and the
+   asymmetric gutter a centred 680px column leaves on a wide screen is wasted
+   reading space. The column is centred as a block against the page; the text
+   inside it is left. */
+
+.hero,
+.page-header {
+  text-align: left;
+  max-width: var(--measure);
+  margin: 0 auto 2.5rem;
+  padding: 0;
+}
+
+.hero h1,
+.page-header h1 {
+  font-family: var(--font-sans);
+  font-size: var(--text-3xl);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  text-align: left;
+  margin: 0 0 0.45em;
+}
+
+.hero .hero-subtitle,
+.page-header .lead,
+.page-header p {
+  font-family: var(--font-serif);
+  font-size: var(--text-lead);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  text-align: left;
+  max-width: none;
+  margin: 0 0 1.4em;
+}
+
+.page-content,
+.prose-reading,
+.page-content-wide {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
