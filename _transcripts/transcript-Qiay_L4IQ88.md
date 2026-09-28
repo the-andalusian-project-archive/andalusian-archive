@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi"
+title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]"
 transcript_id: "Qiay_L4IQ88"
 recording: "Qiay_L4IQ88"
 capture_video_id: "Qiay_L4IQ88"
@@ -17,7 +17,7 @@ capture_file: "cap-Qiay_L4IQ88.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 52 - Book Recommendations #2 ｜｜ Asadullah Andalusi
+# 52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]
 
 This is the capture taken from the catalogued recording itself.
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "38 - iKhalifa 3： Be Healthy"
+title: "38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]"
 video_id: "Xw2eGP1LRbk"
 id: "Xw2eGP1LRbk"
 permalink: "/videos/Xw2eGP1LRbk/"

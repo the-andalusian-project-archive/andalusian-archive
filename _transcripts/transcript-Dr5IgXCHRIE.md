@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism"
+title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\"re upload\") [Dr5IgXCHRIE]"
 transcript_id: "Dr5IgXCHRIE"
 recording: "Dr5IgXCHRIE"
 capture_video_id: "Dr5IgXCHRIE"
@@ -17,7 +17,7 @@ capture_file: "cap-Dr5IgXCHRIE.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 39 - Ex-Muslims, Pragmatism, and Islamic Futurism
+# 39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative ("re upload") [Dr5IgXCHRIE]
 
 This is the capture taken from the catalogued recording itself.
 

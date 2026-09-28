@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "36 - Understanding Jihad w⧸ Robert Spencer #1"
+title: "36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]"
 transcript_id: "lCqZB8gP4sk"
 recording: "lCqZB8gP4sk"
 capture_video_id: "lCqZB8gP4sk"
@@ -17,7 +17,7 @@ capture_file: "whisper-lCqZB8gP4sk.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 36 - Understanding Jihad w<span class="tall-glyph">⧸</span> Robert Spencer #1
+# 36 - Understanding Jihad w<span class="tall-glyph">⧸</span> Robert Spencer #1 [lCqZB8gP4sk]
 
 This is the capture taken from the catalogued recording itself.
 

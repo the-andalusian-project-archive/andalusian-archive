@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "44 - Finding Roots in Islam： The Struggle of Reverts"
+title: "44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]"
 video_id: "B7NW2AwtZaM"
 id: "B7NW2AwtZaM"
 permalink: "/videos/B7NW2AwtZaM/"

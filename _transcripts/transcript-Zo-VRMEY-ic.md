@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "14 - iJihad Ep. 5： The Masked Arab Returns"
+title: "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]"
 transcript_id: "Zo-VRMEY-ic"
 recording: "Zo-VRMEY-ic"
 capture_video_id: "Zo-VRMEY-ic"
@@ -17,7 +17,7 @@ capture_file: "whisper-Zo-VRMEY-ic.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 14 - iJihad Ep. 5： The Masked Arab Returns
+# 14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]
 
 This is the capture taken from the catalogued recording itself.
 

@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "09 - iJihad Ep. 1： Gryffix"
+title: "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]"
 transcript_id: "RnkqSMTzvCg"
 recording: "RnkqSMTzvCg"
 capture_video_id: "RnkqSMTzvCg"
@@ -17,7 +17,7 @@ capture_file: "whisper-RnkqSMTzvCg.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 09 - iJihad Ep. 1： Gryffix
+# 09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]
 
 This is the capture taken from the catalogued recording itself.
 

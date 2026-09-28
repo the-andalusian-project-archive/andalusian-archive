@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "مناظره عبدالله اندلسی با عارف احمد abdullah andalusi vs arif ahmad"
+title: "مناظره عبدالله اندلسی با عارف احمد    abdullah andalusi vs arif ahmad"
 video_id: "s_BnmOrVaTg"
 id: "s_BnmOrVaTg"
 permalink: "/videos/s_BnmOrVaTg/"
@@ -14,8 +14,8 @@ mirror_urls: []
 kind: "appearance"
 transcripts: 0
 catalogue_source: "انتی شبهات (live re-upload of Asadullah Ali's own appearance; discovered via muslimdebate.org byline: 'Full Persian Translation of the Big Atheism-Theism Debate')"
-title_runs: [{"text": "مناظره عبدالله اندلسی با عارف احمد ", "lang": "ar", "dir": "rtl"}, {"text": "abdullah andalusi vs arif ahmad", "lang": "ltr", "dir": null}]
-title_iso: "⁧مناظره عبدالله اندلسی با عارف احمد ⁩⁦abdullah andalusi vs arif ahmad⁩"
+title_runs: [{"text": "مناظره عبدالله اندلسی با عارف احمد    ", "lang": "ar", "dir": "rtl"}, {"text": "abdullah andalusi vs arif ahmad", "lang": "ltr", "dir": null}]
+title_iso: "⁧مناظره عبدالله اندلسی با عارف احمد    ⁩⁦abdullah andalusi vs arif ahmad⁩"
 ---
 
 # مناظره عبدالله اندلسی با عارف احمد abdullah andalusi vs arif ahmad

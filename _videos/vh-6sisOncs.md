@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2"
+title: "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]"
 video_id: "vh-6sisOncs"
 id: "vh-6sisOncs"
 permalink: "/videos/vh-6sisOncs/"

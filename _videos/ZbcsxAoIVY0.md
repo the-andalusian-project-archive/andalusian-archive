@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "25 - Atheism： Doubting Your Doubts"
+title: "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]"
 video_id: "ZbcsxAoIVY0"
 id: "ZbcsxAoIVY0"
 permalink: "/videos/ZbcsxAoIVY0/"

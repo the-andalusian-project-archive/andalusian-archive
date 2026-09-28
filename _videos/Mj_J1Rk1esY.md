@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "42 - iJihad Ep. 6： Apostate Prophet"
+title: "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]"
 video_id: "Mj_J1Rk1esY"
 id: "Mj_J1Rk1esY"
 permalink: "/videos/Mj_J1Rk1esY/"

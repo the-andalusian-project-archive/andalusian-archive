@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "08 - Islam and Terrorism"
+title: "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]"
 video_id: "4VcPzhkP9bE"
 id: "4VcPzhkP9bE"
 permalink: "/videos/4VcPzhkP9bE/"

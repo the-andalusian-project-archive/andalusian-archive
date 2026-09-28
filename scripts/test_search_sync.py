@@ -148,20 +148,31 @@ def main():
         else:
             print("PASS: data/blog_posts.json has clean slug/excerpt/keyword index")
 
-    if failures:
-        print("test_search_sync: %d FAILURE(S)" % len(failures))
-        return 1
     # The searchable population the /search/ page prints is these three
     # collections. Gating it here means the page's figure cannot be right about
     # the data and wrong about itself.
+    #
+    # search.md computes this as a Liquid count over site.data, so it tracks the
+    # data the page fetches. This constant is the other half of that agreement.
+    # 2026-09-29: 160 -> 173 for the 13 videos catalogued on that date.
     searchable = (EXPECT_COUNTS["canonical_works.json"]
                   + EXPECT_COUNTS["videos.json"]
                   + EXPECT_COUNTS["papers.json"])
-    if searchable != 160:
-        fail("searchable total is %d, not the published 160" % searchable)
+    if searchable != 173:
+        fail("searchable total is %d, not the published 173" % searchable)
     else:
         print("PASS: searchable total = %d (72 works + 81 videos + 20 papers)"
               % searchable)
+
+    # This block used to sit ABOVE the searchable check, which made that check
+    # unreachable as a gate: it ran only when everything else had already
+    # passed, and a failure it recorded was discarded by the `return 0` below.
+    # It was reporting 173 against a stale 160 and printing ALL PASS with exit 0.
+    # A gate that cannot fail is worse than no gate, because it is believed.
+    if failures:
+        print("test_search_sync: %d FAILURE(S)" % len(failures))
+        return 1
+
     print("test_search_sync: ALL PASS")
     return 0
 

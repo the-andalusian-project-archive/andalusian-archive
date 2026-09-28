@@ -71,3 +71,11 @@ You close the video, scoffing at the young man’s ignorance regarding how commu
 
 Fin
 
+## Replies by the author, in the comment thread
+
+The page this was recovered from ended with a comment thread. Readers'
+comments are not held here - they are not the author's work. His own
+replies in that thread are, and they are below, verbatim. They are answers
+he gave to commenters, not part of the argument above.
+
+> Let me know how that would go. Come on, give an argument.

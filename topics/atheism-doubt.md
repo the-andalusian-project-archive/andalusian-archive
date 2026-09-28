@@ -46,7 +46,7 @@ said at the foot of the page.</p>
 Believe it or not, it doesn\'t prove the existence of God, but what it does is it sets up a rational
 standard within the mind of the human being to infer that there is one. It is a default as it were,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:215</span> &mdash; <span class="cite-size">excerpt of about 58 words from a 4,227-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:215</span> &mdash; <span class="cite-size">excerpt of about 58 words from a 4,239-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -56,14 +56,14 @@ standard within the mind of the human being to infer that there is one. It is a 
 
 > Research Fellow Asadullah Ali gives a pragmatic look at atheism, particularly focusing on 3 areas of doubt in today’s world: the problem of evil, the problem of representation, and the problem of belief.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">Atheism: Doubting Your Doubts</a> (work), cited at <span class="cite-ref">_posts/2018-06-20-atheism-doubting-your-doubts.md:21</span> &mdash; <span class="cite-size">excerpt of about 33 words from a 141-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">Atheism: Doubting Your Doubts</a> (work), cited at <span class="cite-ref">_posts/2018-06-20-atheism-doubting-your-doubts.md:21</span> &mdash; <span class="cite-size">excerpt of about 33 words from a 133-word text. The argument around it is not on this page.</span>
 
 > don\'t consider it to be sufficient. And I always thought that was really weird. Why? Why do people still feel that atheism
 is a far more rational position to take than to accept that God is there overseeing everything, despite
 all the horrible things that we see on a daily basis? Because to me, if you adopt atheism, the problem of
 evil does not go away. It doesn\'t suddenly vanish from the face of the earth. You still have evil.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:93</span> &mdash; <span class="cite-size">excerpt of about 80 words from a 4,227-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:93</span> &mdash; <span class="cite-size">excerpt of about 80 words from a 4,239-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -75,7 +75,7 @@ evil does not go away. It doesn\'t suddenly vanish from the face of the earth. Y
 experience anomalies, then we start to feel, okay, now there\'s something to question. Now there\'s
 something wrong here. But normally, we do not act like that. And if we did, we wouldn\'t survive.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:502</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 19,944-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:502</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 19,946-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -109,7 +109,7 @@ It depends, subjective. It\'s subjective. Okay, we\'ll get into that. Theism and
 Okay, therefore theism and religion are irrational.
 It implies that evidence is necessary for every claim.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:577</span> &mdash; <span class="cite-size">excerpt of about 92 words from a 9,221-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:577</span> &mdash; <span class="cite-size">excerpt of about 92 words from a 9,223-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -123,7 +123,7 @@ What about this claim? That\'s it, it\'s done. The argument itself lacks evidenc
 There\'s no evidence for the position. The claim itself, that any claim that lacks evidence is unjustified,
 which is why I disagree with the fact that we always need evidence for self, that\'s why I believe that
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:454</span> &mdash; <span class="cite-size">excerpt of about 138 words from a 19,944-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:454</span> &mdash; <span class="cite-size">excerpt of about 138 words from a 19,946-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -140,7 +140,7 @@ They say, I don\'t know.
 Okay. They say, I don\'t have enough evidence. I don\'t have enough reason to believe that there\'s a God.
 I simply lack the belief. That\'s it. So don\'t blame me for everything. It\'s almost like a defense mechanism.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:364</span> &mdash; <span class="cite-size">excerpt of about 105 words from a 9,221-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:364</span> &mdash; <span class="cite-size">excerpt of about 105 words from a 9,223-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -156,7 +156,7 @@ often this is used in opposition to the concept of faith
 or belief without evidence. So the new atheist, such as this man, Richard Dawkins, giving a speech in 1992, he said faith is the great cop out, the great excuse to evade the need to think and evaluate evidence.
 Faith is belief in spite of even perhaps because of the lack of evidence.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:485</span> &mdash; <span class="cite-size">excerpt of about 134 words from a 9,221-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:485</span> &mdash; <span class="cite-size">excerpt of about 134 words from a 9,223-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -171,7 +171,7 @@ Why is that conception even exist in a world that apparently doesn\'t have him a
 excuses? To me, that doesn\'t make any sense. Much the same as it doesn\'t make any sense to me that
 a fish would think that he\'s anywhere else but a fish tank, and that the fish tank is all that exists.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:243</span> &mdash; <span class="cite-size">excerpt of about 116 words from a 4,227-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:243</span> &mdash; <span class="cite-size">excerpt of about 116 words from a 4,239-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -202,7 +202,7 @@ If this is the only context in which we can explain anything and the concept of 
 Shouldn\'t even pop into our minds
 That\'s my explanation or my argument. It\'s sort of like a reverse ontological argument. I think it\'s very good
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:343</span> &mdash; <span class="cite-size">excerpt of about 155 words from a 5,257-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:343</span> &mdash; <span class="cite-size">excerpt of about 155 words from a 5,259-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -221,7 +221,7 @@ And atheists will talk like this a lot too.
 That\'s why they always ask, can you prove this?
 Can you provide evidence for this? Everything needs evidence, right? Scientific evidence. They always asking for this sort of evidence.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-X36xEj0OSV4.md:327</span> &mdash; <span class="cite-size">excerpt of about 88 words from a 3,534-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-X36xEj0OSV4.md:327</span> &mdash; <span class="cite-size">excerpt of about 88 words from a 3,536-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -241,7 +241,7 @@ You say that I\'m irrational. You say theism is irrational. That\'s a claim. Whe
 That\'s a claim. And you say that all claims require evidence.
 So where\'s your evidence? And they hate it when you do this, actually.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/BRDaCqipcwM/">05 - Understanding Atheism ｜ Session 5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-BRDaCqipcwM.md:230</span> &mdash; <span class="cite-size">excerpt of about 198 words from a 12,536-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/BRDaCqipcwM/">05 - Understanding Atheism ｜ Session 5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-BRDaCqipcwM.md:230</span> &mdash; <span class="cite-size">excerpt of about 198 words from a 12,538-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -256,7 +256,7 @@ So where\'s your evidence? And they hate it when you do this, actually.
 > because it\'s already something that we assume before we even get started. Okay, before knowledge can
 even take place, before evidence can even be asked for, we have to believe that those things exist.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:481</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 19,944-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:481</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 19,946-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -267,7 +267,7 @@ evidence is required to justify a particular belief, isn\'t in and of itself a b
 justified through scientific evidence. A little philosophical conundrum for all of you out there who
 want to think about that. I think it\'s very fascinating. But seeing all these double standards made
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:189</span> &mdash; <span class="cite-size">excerpt of about 81 words from a 4,227-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:189</span> &mdash; <span class="cite-size">excerpt of about 81 words from a 4,239-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -302,7 +302,7 @@ most and bothers me the most is regarding the Prophet Muhammad ﷺ and his marri
 And this is probably the most common thing that\'s brought up by Islam of folks, people
 who hate Islam and they will always accuse the Prophet ﷺ of having in a moral relationship
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:44</span> &mdash; <span class="cite-size">excerpt of about 95 words from a 11,233-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:44</span> &mdash; <span class="cite-size">excerpt of about 95 words from a 11,235-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -317,7 +317,7 @@ and then you erase everything else and then you show it and say this is what the
 it\'s also called quoting out of context okay and what it means by quoting out of context is that
 you do not take in reference other passages and the historical reasons behind etc etc so if we can go
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:518</span> &mdash; <span class="cite-size">excerpt of about 167 words from a 11,233-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:518</span> &mdash; <span class="cite-size">excerpt of about 167 words from a 11,235-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -328,7 +328,7 @@ times, where is Cherry picking? Oh, why did go there? Can we go? Oh, okay, can w
 Thank you, okay, all right, so suppressed evidence, intentionally failing to use information
 suspected of being relevant and significant is committing the fallacy of suppressed evidence,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:541</span> &mdash; <span class="cite-size">excerpt of about 81 words from a 12,463-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:541</span> &mdash; <span class="cite-size">excerpt of about 81 words from a 12,465-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -347,7 +347,7 @@ starting point, so it\'s rational to have that belief, okay, and I even have an 
 I backed it up, I proven the other side wrong, right, but I never claimed that the belief in God is
 true because of that, so it\'s not a fallacy actually, but I\'ve been accused of making it before, so
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:513</span> &mdash; <span class="cite-size">excerpt of about 188 words from a 12,463-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:513</span> &mdash; <span class="cite-size">excerpt of about 188 words from a 12,465-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -371,7 +371,7 @@ the question, do you see the problem? Or even saying the Quran, the Quran is the
 Because Allah said, who said that the Quran was the word of Allah, that\'s begging the question,
 it\'s when you put the conclusion in the argument itself, and many people actually make this argument
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:526</span> &mdash; <span class="cite-size">excerpt of about 252 words from a 12,463-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:526</span> &mdash; <span class="cite-size">excerpt of about 252 words from a 12,465-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -386,7 +386,7 @@ or the categories and things recognize natural science
 from the only proper elements at any philosophical or other inquiry.
 In other words, science is the only way to know anything.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:494</span> &mdash; <span class="cite-size">excerpt of about 81 words from a 9,221-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:494</span> &mdash; <span class="cite-size">excerpt of about 81 words from a 9,223-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -398,7 +398,7 @@ In other words, science is the only way to know anything.
 observable so in the case of abu bakr that\'s actually what he was affirming there is that sort of understanding of
 epistemology or theory of knowledge
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:306</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 11,572-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:306</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 11,586-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -415,7 +415,7 @@ even more extraordinary than this i believe that he is a prophet from
 allah and what\'s fascinating about that response is that it actually tells us a lot about how we\'re supposed to
 understand reality not just religion but reality in general
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:268</span> &mdash; <span class="cite-size">excerpt of about 134 words from a 11,572-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:268</span> &mdash; <span class="cite-size">excerpt of about 134 words from a 11,586-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -428,7 +428,7 @@ to the heavens and stuff it\'s like yeah i do and they laugh at you but the reas
 exists and that the prophet is the prophet then this stuff doesn\'t enter their minds it\'s not it\'s not nonsensical our background beliefs are what make
 something look rational or not rational okay
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:318</span> &mdash; <span class="cite-size">excerpt of about 146 words from a 11,572-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:318</span> &mdash; <span class="cite-size">excerpt of about 146 words from a 11,586-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -446,7 +446,7 @@ I consider them the the metaphysical flat earthers. Okay, like they always ask, 
 My my my I don\'t I don\'t try to provide reasons to them then I don\'t try to provide evidence
 If you know what I first do I question their reasons. I question why
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:300</span> &mdash; <span class="cite-size">excerpt of about 139 words from a 5,257-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:300</span> &mdash; <span class="cite-size">excerpt of about 139 words from a 5,259-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -523,11 +523,11 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/papers/understanding-atheism/">Understanding Atheism</a></li>
 </ul><h3 class="shelf-kind">Transcripts (14)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/2tsI80MDUOI-duplicate-upload/">01 - Understanding Atheism ｜ Session 1 - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/EK5oppX6C2U-duplicate-upload/">01 - Understanding Atheism ｜ Session 1 - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/bRTI6Z5gggE-duplicate-upload/">06 - Understanding Atheism ｜ Session 6 - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/_C5ox2zZl0U/">26 - Atheism： Doubting Your Doubts - Asadullah Ali</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/2tsI80MDUOI-duplicate-upload/">01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/EK5oppX6C2U-duplicate-upload/">01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/bRTI6Z5gggE-duplicate-upload/">06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/_C5ox2zZl0U/">26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/QoU02Om_wiQ/">The Arena | Challenge Islam | Defend your Beliefs - Episode 12</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/idz29r5LHig/">The Arena | Challenge Islam | Defend your Beliefs - Episode 14</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/MCR3xh8wccQ/">The Arena | Challenge Islam | Defend your Beliefs - Episode 16</a></li>
@@ -539,16 +539,16 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/transcripts/n3vhs1mcmVM/">The Arena | Challenge Islam | Defend your Beliefs - Episode 32</a></li>
 </ul><h3 class="shelf-kind">Recordings (26)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1</a></li>
-      <li><a href="{{ site.baseurl }}/videos/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2</a></li>
-      <li><a href="{{ site.baseurl }}/videos/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a></li>
-      <li><a href="{{ site.baseurl }}/videos/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a></li>
-      <li><a href="{{ site.baseurl }}/videos/BRDaCqipcwM/">05 - Understanding Atheism ｜ Session 5</a></li>
-      <li><a href="{{ site.baseurl }}/videos/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6</a></li>
-      <li><a href="{{ site.baseurl }}/videos/ZbcsxAoIVY0/">25 - Atheism： Doubting Your Doubts</a></li>
-      <li><a href="{{ site.baseurl }}/videos/_C5ox2zZl0U/">26 - Atheism： Doubting Your Doubts - Asadullah Ali</a></li>
-      <li><a href="{{ site.baseurl }}/videos/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a></li>
-      <li><a href="{{ site.baseurl }}/videos/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism</a></li>
+      <li><a href="{{ site.baseurl }}/videos/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/BRDaCqipcwM/">05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/ZbcsxAoIVY0/">25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/_C5ox2zZl0U/">26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism | Asadullah Ali</a></li>
       <li><a href="{{ site.baseurl }}/videos/qbg8a1kpjCA/">Asadullah Ali Al-Andalusi on Really Hard Questions in Islam (MSA OSU GBM 10/29)</a></li>
       <li><a href="{{ site.baseurl }}/videos/EJLSAA_w4PY/">Big Atheism-Theism Debate: Dr Arif Ahmed VS Abdullah al Andalusi [Nottingham University, 2017]</a></li>
       <li><a href="{{ site.baseurl }}/videos/RWE-e_l-sKs/">BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage &amp; Education</a></li>

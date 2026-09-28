@@ -65,11 +65,11 @@ said at the foot of the page.</p>
 
 > Let’s say that you had the ability to travel back in time and wanted to visit somewhere in the 7th century. Your purpose? You desire to better the future by explaining the true nature of the world (as understood by your superior 22nd century brain) to people in the past.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a> (work), cited at <span class="cite-ref">_posts/2020-03-24-lost-in-time-translation.md:20</span> &mdash; <span class="cite-size">excerpt of about 50 words from a 976-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a> (work), cited at <span class="cite-ref">_posts/2020-03-24-lost-in-time-translation.md:20</span> &mdash; <span class="cite-size">excerpt of about 50 words from a 913-word text. The argument around it is not on this page.</span>
 
 > Noticing their puzzlement, you realize you’ll need to explain things in far simpler terminology so that they might better comprehend your vast knowledge. You remind yourself that your scientific vernacular would not be developed or comprehended in full for another millennia and a half. As such, you need to explain things to them in a language they can easily understand; relying on their own relative experiences as a reference point.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a> (work), cited at <span class="cite-ref">_posts/2020-03-24-lost-in-time-translation.md:28</span> &mdash; <span class="cite-size">excerpt of about 70 words from a 976-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a> (work), cited at <span class="cite-ref">_posts/2020-03-24-lost-in-time-translation.md:28</span> &mdash; <span class="cite-size">excerpt of about 70 words from a 913-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what does quran 86:5-7 mean between the backbone and the ribs</h3>
@@ -153,7 +153,7 @@ know they read it as though from so showcasing their lack of reading comprehensi
 words because when you when when you have to completely erase the word between there in order to make your
 point it showcases that you know you really don\'t know what you\'re talking about You\' never read anything in your entire life so you know these very
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:216</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 29,781-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:216</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 29,793-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -228,7 +228,7 @@ point it showcases that you know you really don\'t know what you\'re talking abo
 not to give scientific information but a
 general statement like that can be so easily Twisted by these individuals desperate to find a rationalization for
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:229</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 29,781-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:229</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 29,793-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -238,14 +238,7 @@ general statement like that can be so easily Twisted by these individuals desper
 
 > Your friend tries to explain further by pointing out that context in communication doesn’t need to be explicit in every statement for it to be clear. He goes on to say that Anne was an innocent girl who did nothing wrong and Klaus was a bad person.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/of-context-and-confusion/">Of Context and Confusion</a> (work), cited at <span class="cite-ref">_posts/2018-03-10-of-context-and-confusion.md:40</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 537-word text. The argument around it is not on this page.</span>
-
-
-<h3 class="question">how do I answer when someone says scripture could have been clearer</h3>
-
-> - wdqdqwd10 Apr 2020This is a weak argument. An omniscient God would know how to explain future technology in a non-confusing way.Loading...ReplyAsadullah Ali11 Apr 2020Let me know how that would go. Come on, give an argument.Loading...Replywdqdqwd11 Apr 2020Why should I? Are you doubting God’s omniscience?Loading...Saif7 May 2020How do you know that it would work? How do you know that he didn’t already do it? How do you know that a possible world where he does this would be better? I would argue otherwise. It would leave people in more confusion or even wars. The last thing you would want is an ancient warlord with atomic theory. “An omniscient, omnipotent god could do this” is implying you have absolute knowledge of the situation. This is just a non-sequiter.Loading...Reply
->
-> &mdash; <a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a> (work), cited at <span class="cite-ref">_posts/2020-03-24-lost-in-time-translation.md:76</span> &mdash; <span class="cite-size">excerpt of about 127 words from a 976-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/of-context-and-confusion/">Of Context and Confusion</a> (work), cited at <span class="cite-ref">_posts/2018-03-10-of-context-and-confusion.md:40</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 489-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">explain the argument that sulb and tara'ib in 86:7 are euphemisms for the parents</h3>
@@ -264,7 +257,7 @@ paternal genitalia
 and taraib is supposed to be rendered as the maternal
 genitalia so the private parts of your mother and father and
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs'</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-yUpHMaFHZ6s.md:72</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,208-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-yUpHMaFHZ6s.md:72</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,218-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -349,6 +342,7 @@ rather than papered over; the reading list above is the place to go.</p>
       <li>how do I explain to a new Muslim why a verse they were taught is read differently</li>
       <li>how do I answer someone who says the quran could easily have been clearer</li>
       <li>how do I answer when someone says the messenger was scientifically illiterate</li>
+      <li>how do I answer when someone says scripture could have been clearer</li>
       <li>how do I answer someone who says the text is not clear enough</li>
       <li>explain why some Muslims interpret quran 86:5-7 as a scientific miracle</li>
       <li>what is the view of classical tafsir scholars on the meaning of tara'ib</li>
@@ -374,20 +368,20 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/papers/the-qur-an-and-science-a-forced-marriage/">The Qur'an and Science: A Forced Marriage</a></li>
 </ul><h3 class="shelf-kind">Transcripts (1)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
 </ul><h3 class="shelf-kind">Recordings (11)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea</a></li>
+      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
       <li><a href="{{ site.baseurl }}/videos/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a></li>
-      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a></li>
-      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2</a></li>
-      <li><a href="{{ site.baseurl }}/videos/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
 </ul>
 
 <h2>Everything in this cluster</h2>
@@ -397,16 +391,16 @@ of these pages.</p>
 <tbody>
 <tr><td><a href="{{ site.baseurl }}/articles/backbone-ribs/">Between a Backbone and Ribs: How Science Obscures the Beauty of the Qur’an</a></td><td>paper</td><td>26</td><td><a href="{{ site.baseurl }}/topics/science-scientism/">Science, Faith and Scientism</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/illogical-critques-of-the-quran/">[IL]logical Critques of the Qur’an</a></td><td>work</td><td>4</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a></td><td>work</td><td>4</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a></td><td>work</td><td>3</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/of-context-and-confusion/">Of Context and Confusion</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a></td><td>work</td><td>5</td><td><a href="{{ site.baseurl }}/topics/science-scientism/">Science, Faith and Scientism</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs'</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a></td><td>transcript</td><td>3</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 </tbody>
 </table>
 
-<p class="meta">7 items &middot; 32 of 93 mapped questions carry a quoted passage
-&middot; 36 of 47 verified passages shown
+<p class="meta">7 items &middot; 31 of 93 mapped questions carry a quoted passage
+&middot; 35 of 46 verified passages shown
 &middot; 0 bylined to other people and not quoted here.</p>
 
 <h2>What to know before you rely on this page</h2>

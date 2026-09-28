@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "31 - iKhalifa 2： Forgive Yourself"
+title: "31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]"
 transcript_id: "-BwP55UIg3c"
 recording: "-BwP55UIg3c"
 capture_video_id: "-BwP55UIg3c"
@@ -17,7 +17,7 @@ capture_file: "whisper--BwP55UIg3c.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 31 - iKhalifa 2： Forgive Yourself
+# 31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]
 
 This is the capture taken from the catalogued recording itself.
 

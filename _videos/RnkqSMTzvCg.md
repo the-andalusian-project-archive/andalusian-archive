@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "09 - iJihad Ep. 1： Gryffix"
+title: "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]"
 video_id: "RnkqSMTzvCg"
 id: "RnkqSMTzvCg"
 permalink: "/videos/RnkqSMTzvCg/"

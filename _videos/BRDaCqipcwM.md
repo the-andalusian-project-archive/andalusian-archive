@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "05 - Understanding Atheism ｜ Session 5"
+title: "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]"
 video_id: "BRDaCqipcwM"
 id: "BRDaCqipcwM"
 permalink: "/videos/BRDaCqipcwM/"

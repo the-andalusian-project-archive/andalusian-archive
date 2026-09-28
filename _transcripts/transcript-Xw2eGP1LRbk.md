@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "38 - iKhalifa 3： Be Healthy"
+title: "38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]"
 transcript_id: "Xw2eGP1LRbk"
 recording: "Xw2eGP1LRbk"
 capture_video_id: "Xw2eGP1LRbk"
@@ -17,7 +17,7 @@ capture_file: "whisper-Xw2eGP1LRbk.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 38 - iKhalifa 3： Be Healthy
+# 38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]
 
 This is the capture taken from the catalogued recording itself.
 

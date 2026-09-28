@@ -40,7 +40,7 @@ And most individuals say, yes, yes, I do. And I say, okay, why do you believe in
 They pause for a moment. And I say, well, can you provide me a scientific journal,
 peer-reviewed journal that proves the existence of human rights? And they say, no.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:634</span> &mdash; <span class="cite-size">excerpt of about 68 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:634</span> &mdash; <span class="cite-size">excerpt of about 68 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -50,7 +50,7 @@ peer-reviewed journal that proves the existence of human rights? And they say, n
 
 > people to assume that i\'m just rejecting it because i\'m some sort of like reformist liberal or something which is ridiculous all of you know i\'ve been fighting against secular liberalism for like over a decade okay it\'s nonsense that somebody would
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:940</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 13,789-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:940</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 13,791-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -70,7 +70,7 @@ the humans own their own self, even though humans didn\'t make ourselves, even t
 ourselves, we didn\'t create ourselves, we can determine what we were, we don\'t determine when we die,
 the individual argues that we make ourselves. And therefore, when Islam or any kind of religion
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:305</span> &mdash; <span class="cite-size">excerpt of about 67 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:305</span> &mdash; <span class="cite-size">excerpt of about 67 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -80,14 +80,14 @@ the individual argues that we make ourselves. And therefore, when Islam or any k
 
 > This is further evidenced by the fact that these polemicists wouldn’t be popular today had it not been for 9/11 and the War on Terror. No one would care to listen to them had Western culture not been fertile for their message. Ironically, it’s the very bigotry these ex-Muslims claim to fight which has given them a platform (and in many cases, fame and fortune). They are literally nothing without it. Yet, we are asked to be fair in analyzing their arguments? But what arguments have they proposed that haven’t been heard before from the likes of other arm-chair scholars like Bill Warner, Sam Harris, and Robert Spencer – all of whom likewise hold no formal education in any of the subjects they’re discussing?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:68</span> &mdash; <span class="cite-size">excerpt of about 124 words from a 2,480-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:68</span> &mdash; <span class="cite-size">excerpt of about 124 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">why do ex muslims get media platforms that scholars do not</h3>
 
 > But, more disturbing is the fact that neither of these individuals have actually earned the right to be authorities. None of them have been rigorously peer reviewed by those with an actual education in the subject matter. None of them have ever submitted articles to peer reviewed journals. None of them have ever displayed any erudite arguments or profound insights on the world. None of them have actually contributed to knowledge or advanced civilization in the slightest. All they’ve done is served as cheerleaders for those who already agree with them — and earned hefty paychecks in the process. They are literally entertainers and nothing more. Much like radical SJWs, they merely identify as authorities and demand others submit to their lived experiences. Facts need not apply.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:62</span> &mdash; <span class="cite-size">excerpt of about 127 words from a 2,480-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:62</span> &mdash; <span class="cite-size">excerpt of about 127 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">western hegemony and muslim identity</h3>
@@ -96,7 +96,7 @@ the individual argues that we make ourselves. And therefore, when Islam or any k
 to destroy western hegemony to destroy secular liberal ideology that\'s overcoming the muslim world today not just in the west not just among muslim minorities
 right but among every muslim on the planet now it\'s there\'s a hegemony over us that we
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:549</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 13,789-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:549</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 13,791-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -123,7 +123,7 @@ liberalism is a reactionary ideology, it\'s always in opposition to something, b
 from what, liberating from what, and it\'s, one of the central tenets of secular liberal
 is to attack tradition, especially religious tradition, and you have a lot of young Muslims
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:46</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 912-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:46</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 918-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -135,7 +135,7 @@ is to attack tradition, especially religious tradition, and you have a lot of yo
 be dunya wiyah. I know sometimes in the modern Arabic people translate it as al-Maniah globally,
 but I think it\'s best described it from the Quranic term, at least from dunya and dunya wiyah,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:214</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:214</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -202,7 +202,7 @@ concept way. You know, your life is a phasor separate from your beliefs. But it\
 arguing that, you know, a computer\'s operate or the operations a computer does. The programs a
 computer has the apps that it has has no relation to the code in its in its RAM in its hard drive.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:280</span> &mdash; <span class="cite-size">excerpt of about 93 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:280</span> &mdash; <span class="cite-size">excerpt of about 93 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -215,7 +215,7 @@ But now what we are left today is with utilitarianism and
 Full of political idealism which was the basis behind which these two schools of four other basis behind which you have modern
 Liberalism or what is technically called social liberalism the current ideology we have today
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:346</span> &mdash; <span class="cite-size">excerpt of about 64 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:346</span> &mdash; <span class="cite-size">excerpt of about 64 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -227,7 +227,7 @@ Liberalism or what is technically called social liberalism the current ideology 
 Of Akhida in terms of ethical Akhida so utilitarianism and idealism
 By being the two predominant schools of modern day liberalism
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:414</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:414</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -238,7 +238,7 @@ By being the two predominant schools of modern day liberalism
 > That would and we must obviously the determined deduce and formerly a natural law that whose precepts would be true even if God didn\'t exist
 Right here the grudges saying this in the 17th century now what he unleashed wasn\'t the idea that what these are laws on natural morality or whatever arguments you want to use
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:328</span> &mdash; <span class="cite-size">excerpt of about 57 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:328</span> &mdash; <span class="cite-size">excerpt of about 57 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -273,7 +273,7 @@ that, or the main reason that we lose knowledge is because the scholars pass awa
 So we know that the scholars die, we lose their knowledge, but then the question remains,
 is, well, why is there no one to replace them?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:53</span> &mdash; <span class="cite-size">excerpt of about 78 words from a 912-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:53</span> &mdash; <span class="cite-size">excerpt of about 78 words from a 918-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -283,14 +283,14 @@ is, well, why is there no one to replace them?
 
 > Many hail the rise of the Internet and its peripheral services as a form of progress – and indeed it is. However, with all major developments in the world, there are usually negative byproducts. The negative byproduct of the Information Age has been the over-saturation of information to the extent where the majority of people cannot distinguish between credible knowledge and pseudo-knowledge. And this dilemma has been exacerbated by a hyper-individualism promoted through Western hegemony, which regards all people as not only capable of self-study, but also self-expertise (even if it’s not explicitly stated).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:24</span> &mdash; <span class="cite-size">excerpt of about 94 words from a 2,480-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:24</span> &mdash; <span class="cite-size">excerpt of about 94 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">why does he say the standards for doubt today are so low</h3>
 
 > Despite lacking any real credentials, all of these people are being taken seriously in the so-called “Information Age”. But is this what the Age of Enlightenment was supposed to promote? A lack of concern for real academic credentials and research? Is this what the Age of Intellectualism has bred? Polemicists that can only be regarded as relevant because of their identities? Should we really be doubting our religion when the standards for doubt today are so low that we disregard our own educational institutions and prop up pseudo-intellectuals in their stead?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:70</span> &mdash; <span class="cite-size">excerpt of about 91 words from a 2,480-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:70</span> &mdash; <span class="cite-size">excerpt of about 91 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">why does he say you cannot be a part time creation of god</h3>
@@ -299,7 +299,7 @@ is, well, why is there no one to replace them?
 encompass every aspect of our life and our existence. You know, you can\'t be a part-time
 creation of God, can you? You have to be a full-time creation of God, because that\'s what you are.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:232</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:232</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -313,7 +313,7 @@ This is how liberals would behave towards their own religions.
 This is how Christians started to behave the Protestant, how they behave towards the Catholic
 and Orthodox churches. They just started to destroy their own scholars.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:79</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 912-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:79</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 918-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -327,7 +327,7 @@ it only destroys to free people from
 their shackles
 and if we adopt a reactionary approach we\'re only allowing liberalism to come in and take over you cannot destroy your reactionary
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:568</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 13,789-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:568</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 13,791-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -392,7 +392,7 @@ and if we adopt a reactionary approach we\'re only allowing liberalism to come i
 
 > Armin Navabi has declared in the past that “Islam is worse than Nazism”[3]and runs the popular online atheist hive Atheist Republic – a Facebook group that largely functions through memes and cliches of religion and its followers (not exactly MENSA worthy achievements). Armin’s qualifications are in finance, but he is considered by many an authority on the subject of Islam simply because he’s an Iranian ex-Shia Muslim. Recently, he has promoted the burning of Qur’ans in the Islamic Republic of Iran, because apparently this is indicative of an intellectual protest (said no rational person ever).[4]
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:46</span> &mdash; <span class="cite-size">excerpt of about 95 words from a 2,480-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:46</span> &mdash; <span class="cite-size">excerpt of about 95 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is part 2 of the inhumanity of human rights available</h3>
@@ -413,7 +413,7 @@ and if we adopt a reactionary approach we\'re only allowing liberalism to come i
 
 > And the list could really go on – all with similar if not identical profiles; all having no real education or expertise in the subjects they’re discussing while commanding large followings of similarly uneducated individuals (and being opposed by nearly all academics in the field). Yet, those who follow these figures have little concern for academic credentials or actual erudition and have largely conflated the discipline of Islamic Studies with “learning about fairy tales”.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:54</span> &mdash; <span class="cite-size">excerpt of about 74 words from a 2,480-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:54</span> &mdash; <span class="cite-size">excerpt of about 74 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what is the view on colonialism and the spread of secularism</h3>
@@ -421,7 +421,7 @@ and if we adopt a reactionary approach we\'re only allowing liberalism to come i
 > but anyways um you know the re the way to tackle this is first we have to become independent from these ideas we have to become independent in such a way that we don\'t
 need to latch ourselves to the west
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:557</span> &mdash; <span class="cite-size">excerpt of about 41 words from a 13,789-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:557</span> &mdash; <span class="cite-size">excerpt of about 41 words from a 13,791-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -447,7 +447,7 @@ need to latch ourselves to the west
 
 > Needless to say, this article will be controversial for calling out such a culture. Certainly, it will be considered offensive. But the fact is these individuals and their “skepticism” have not gained traction on the basis of merit or any sort of intellectual acumen. Rather, they have all gained a following because of a general lack of concern for real education and research embedded in the bigotry of the masses towards Islam and Muslims.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:66</span> &mdash; <span class="cite-size">excerpt of about 74 words from a 2,480-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> (work), cited at <span class="cite-ref">_posts/2018-05-24-naked-kings-in-the-information-age.md:66</span> &mdash; <span class="cite-size">excerpt of about 74 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">explain the connection this author draws between individualism and religious doubt</h3>
@@ -456,7 +456,7 @@ need to latch ourselves to the west
 western worldview that we have in the west today, and it\'s being sold in the most involved,
 when you\'ve removed God as the owner of all things, as the creator of all things, what you have is
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:302</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:302</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -527,10 +527,10 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a></li>
 </ul><h3 class="shelf-kind">Transcripts (1)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism | Asadullah Ali</a></li>
 </ul><h3 class="shelf-kind">Recordings (2)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism</a></li>
+      <li><a href="{{ site.baseurl }}/videos/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism | Asadullah Ali</a></li>
       <li><a href="{{ site.baseurl }}/videos/G47Stp3pLss/">My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project</a></li>
 </ul>
 
@@ -545,7 +545,7 @@ of these pages.</p>
 <tr><td><a href="{{ site.baseurl }}/papers/decoding-contemporary-liberalism-rise-development-and-crisis/">Decoding Contemporary Liberalism: Rise, Development, and Crisis</a></td><td>paper</td><td>1</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/the-inhumanity-of-human-rights/">The Inhumanity of Human Rights</a></td><td>work</td><td>5</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/the-making-of-modern-western-civilization-the-war-on-islam-guest-contribution/">The Making of Modern Western Civilization: The War on Islam</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a></td><td>transcript</td><td>12</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a></td><td>transcript</td><td>12</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a></td><td>transcript</td><td>5</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a></td><td>transcript</td><td>4</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a></td><td>work</td><td>7</td><td>&mdash;</td></tr>

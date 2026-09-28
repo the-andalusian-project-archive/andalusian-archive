@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "55 - Lesson One [Full Lecture]"
+title: "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]"
 video_id: "vJRfL4Kal20"
 id: "vJRfL4Kal20"
 permalink: "/videos/vJRfL4Kal20/"

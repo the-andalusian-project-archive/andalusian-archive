@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "21 - Coils of the Arab Spring"
+title: "21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]"
 transcript_id: "OTcAF8T-gD4"
 recording: "OTcAF8T-gD4"
 capture_video_id: "OTcAF8T-gD4"
@@ -17,7 +17,7 @@ capture_file: "whisper-OTcAF8T-gD4.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 21 - Coils of the Arab Spring
+# 21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]
 
 This is the capture taken from the catalogued recording itself.
 

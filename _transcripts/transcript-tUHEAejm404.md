@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "34 - Twitter Assists Islamists! - Asadullah Andalusi"
+title: "34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]"
 transcript_id: "tUHEAejm404"
 recording: "tUHEAejm404"
 capture_video_id: "tUHEAejm404"
@@ -17,7 +17,7 @@ capture_file: "cap-tUHEAejm404.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 34 - Twitter Assists Islamists! - Asadullah Andalusi
+# 34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]
 
 This is the capture taken from the catalogued recording itself.
 

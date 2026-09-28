@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "46 - ＂Is Allah a Dictator？＂"
+title: "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]"
 video_id: "wUapqpCqBUk"
 id: "wUapqpCqBUk"
 permalink: "/videos/wUapqpCqBUk/"

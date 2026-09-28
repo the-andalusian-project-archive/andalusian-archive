@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "42 - iJihad Ep. 6： Apostate Prophet"
+title: "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]"
 transcript_id: "Mj_J1Rk1esY"
 recording: "Mj_J1Rk1esY"
 capture_video_id: "Mj_J1Rk1esY"
@@ -17,7 +17,7 @@ capture_file: "whisper-Mj_J1Rk1esY.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 42 - iJihad Ep. 6： Apostate Prophet
+# 42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]
 
 This is the capture taken from the catalogued recording itself.
 

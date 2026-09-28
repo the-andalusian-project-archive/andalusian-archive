@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "15 - The Masked Arab： A Eulogy"
+title: "15 - The Masked Arab： A Eulogy [bDshE-aKXIA]"
 transcript_id: "bDshE-aKXIA"
 recording: "bDshE-aKXIA"
 capture_video_id: "bDshE-aKXIA"
@@ -17,7 +17,7 @@ capture_file: "whisper-bDshE-aKXIA.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 15 - The Masked Arab： A Eulogy
+# 15 - The Masked Arab： A Eulogy [bDshE-aKXIA]
 
 This is the capture taken from the catalogued recording itself.
 

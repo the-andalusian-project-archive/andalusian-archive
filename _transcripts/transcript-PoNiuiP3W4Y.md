@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5"
+title: "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]"
 transcript_id: "PoNiuiP3W4Y"
 recording: "PoNiuiP3W4Y"
 capture_video_id: "PoNiuiP3W4Y"
@@ -17,7 +17,7 @@ capture_file: "whisper-PoNiuiP3W4Y.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5
+# 20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]
 
 This is the capture taken from the catalogued recording itself.
 

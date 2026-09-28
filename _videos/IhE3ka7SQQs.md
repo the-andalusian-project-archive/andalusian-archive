@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂"
+title: "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]"
 video_id: "IhE3ka7SQQs"
 id: "IhE3ka7SQQs"
 permalink: "/videos/IhE3ka7SQQs/"

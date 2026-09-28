@@ -945,7 +945,104 @@ def check_palette() -> list[str]:
     failures += check_theme_default(ROOT / "_layouts" / "default.html")
     failures += check_fetch_damage()
     failures += check_link_labels()
+    failures += check_refs_agree_with_gate()
+    failures += check_generated_pages_in_sync()
     return failures
+
+
+# Two things that both decide "where does this quote live" must not disagree
+# ========================================================================
+# `build_topic_pages.reanchor_spec_refs` moves a ref when the file it points
+# into has changed. `test_quotes.py` is what decides whether the quote is
+# really at that ref. Two implementations of one question is how they came to
+# disagree on 476 of 500 citations: the re-anchor searched one line at a time,
+# so every quote markdown had wrapped was unmatchable, and the caller printed
+# its failures under the heading "refs re-anchored by content: 476".
+#
+# So the re-anchor is run here in dry-run mode and must find nothing to do. If
+# it wants to move anything, the two sides have drifted and the build fails
+# rather than letting the refs and the gate mean different things.
+def check_refs_agree_with_gate() -> list[str]:
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import build_topic_pages as btp
+
+    assert btp._MIN_WINDOW == MIN_WINDOW, (
+        f"re-anchor MIN_WINDOW {btp._MIN_WINDOW} != gate {MIN_WINDOW}")
+    assert btp._CHARS_PER_LINE == CHARS_PER_LINE, (
+        f"re-anchor CHARS_PER_LINE {btp._CHARS_PER_LINE} != gate "
+        f"{CHARS_PER_LINE}")
+
+    moved, unresolved = btp.reanchor_spec_refs(btp.load_specs(), dry_run=True)
+    fails = []
+    for m in moved[:10]:
+        fails.append(f"re-anchor wants to move {m}, but the gate verifies "
+                     f"every ref as it stands - the two disagree")
+    for u in unresolved[:10]:
+        fails.append(f"re-anchor cannot place {u}")
+    print(f"refs vs gate         : {len(moved)} the re-anchor would move, "
+          f"{len(unresolved)} it cannot place (both must be 0 for agreement)")
+    return fails
+
+
+# The generated topic pages must not outlive the specs they were built from
+# ======================================================================
+# `quran-hermeneutics.json` had a claim removed on 2026-09-29 because it cited
+# a WordPress comment and presented a reader's objection as the author's answer.
+# The JSON was fixed. `topics/quran-hermeneutics.md` was not rebuilt, so the
+# served page went on publishing it, and my commit message claimed otherwise.
+#
+# No gate caught that because every quote gate reads `_data/topics/*.json` and
+# nothing ever read the generated pages. This one reads them, and fails if a
+# page prints a quotation the spec no longer contains.
+_BYLINE = re.compile(r"^>\s*&mdash;\s*<a href=")
+
+
+def check_generated_pages_in_sync() -> list[str]:
+    specs = {}
+    for sp in sorted((ROOT / "_data" / "topics").glob("*.json")):
+        d = json.loads(sp.read_text(encoding="utf-8"))
+        for row in d.get("material") or []:
+            for c in row.get("key_claims") or []:
+                # unescaped on BOTH sides: the generated pages are HTML, so
+                # an apostrophe is &rsquo; and a bracket is &gt; there and a real
+                # character here. Comparing the raw forms reports 258 good
+                # quotations as untraceable.
+                specs[norm(unescape(str(c.get("quote", ""))))] = row.get("slug")
+
+    fails = []
+    printed = 0
+    for page in sorted((ROOT / "topics").glob("*.md")):
+        if page.name == "index.md":
+            continue
+        lines = page.read_text(encoding="utf-8", errors="replace").splitlines()
+        for i, line in enumerate(lines):
+            if not _BYLINE.match(line):
+                continue
+            # Every blockquote line above the byline, joined: a long quotation
+            # is wrapped across several of them, and reading only the nearest
+            # one truncates it.
+            parts: list[str] = []
+            j = i - 1
+            while j >= 0:
+                s2 = lines[j].strip()
+                if not s2.startswith(">"):
+                    break
+                b = s2[1:].strip()
+                if b and not b.startswith("&mdash;"):
+                    parts.append(b)
+                j -= 1
+            q = norm(unescape(" ".join(reversed(parts))))
+            if not q:
+                continue
+            printed += 1
+            if q not in specs:
+                fails.append(
+                    f"{page.name}: quotation not traceable to any cluster spec: "
+                    f"{q[:70]!r} - the page is stale, rebuild it with "
+                    f"scripts/build_topic_pages.py")
+    print(f"generated pages      : {printed} quotation(s) printed, "
+          f"{len(fails)} not traceable to a spec")
+    return fails
 
 
 # Link labels

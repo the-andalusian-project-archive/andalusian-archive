@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "25 - Atheism： Doubting Your Doubts"
+title: "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]"
 transcript_id: "ZbcsxAoIVY0"
 recording: "ZbcsxAoIVY0"
 capture_video_id: "ZbcsxAoIVY0"
@@ -17,7 +17,7 @@ capture_file: "whisper-ZbcsxAoIVY0.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 25 - Atheism： Doubting Your Doubts
+# 25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]
 
 This is the capture taken from the catalogued recording itself.
 

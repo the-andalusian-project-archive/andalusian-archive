@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "46 - ＂Is Allah a Dictator？＂"
+title: "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]"
 transcript_id: "wUapqpCqBUk"
 recording: "wUapqpCqBUk"
 capture_video_id: "wUapqpCqBUk"
@@ -17,7 +17,7 @@ capture_file: "whisper-wUapqpCqBUk.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 46 - ＂Is Allah a Dictator？＂
+# 46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]
 
 This is the capture taken from the catalogued recording itself.
 

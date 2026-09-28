@@ -49,7 +49,7 @@ transcript or recording. The archive records this work; it does not endorse it.<
     <li class="topic-card">
       <h3><a href="{{ site.baseurl }}/topics/quran-hermeneutics/">Qur'an Interpretation and Textual Questions</a></h3>
       <p class="topic-q">What does the Qur'an actually say, and how do I know who is reading it correctly?</p>
-      <p class="topic-meta">7 items &middot; 36 passages shown
+      <p class="topic-meta">7 items &middot; 35 passages shown
         &middot; 16 more on the subject &middot; 93 questions</p>
     </li>
     <li class="topic-card">

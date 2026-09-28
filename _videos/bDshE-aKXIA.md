@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "15 - The Masked Arab： A Eulogy"
+title: "15 - The Masked Arab： A Eulogy [bDshE-aKXIA]"
 video_id: "bDshE-aKXIA"
 id: "bDshE-aKXIA"
 permalink: "/videos/bDshE-aKXIA/"

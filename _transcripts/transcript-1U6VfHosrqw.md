@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam"
+title: "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]"
 transcript_id: "1U6VfHosrqw"
 recording: "1U6VfHosrqw"
 capture_video_id: "1U6VfHosrqw"
@@ -17,7 +17,7 @@ capture_file: "cap-1U6VfHosrqw.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam
+# 33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]
 
 This is the capture taken from the catalogued recording itself.
 

@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "01 - Understanding Atheism ｜ Session 1"
+title: "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]"
 transcript_id: "NyAVl7RsEOs"
 recording: "NyAVl7RsEOs"
 capture_video_id: "NyAVl7RsEOs"
@@ -17,7 +17,7 @@ capture_file: "whisper-NyAVl7RsEOs.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 01 - Understanding Atheism ｜ Session 1
+# 01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]
 
 This is the capture taken from the catalogued recording itself.
 

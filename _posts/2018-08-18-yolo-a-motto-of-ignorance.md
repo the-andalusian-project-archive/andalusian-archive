@@ -51,3 +51,11 @@ The greatest moral exemplars of mankind looked to a life beyond their own. That�
 
 And this is why they were good, not because they “lived life to the fullest”. #PleaseReflect
 
+## Replies by the author, in the comment thread
+
+The page this was recovered from ended with a comment thread. Readers'
+comments are not held here - they are not the author's work. His own
+replies in that thread are, and they are below, verbatim. They are answers
+he gave to commenters, not part of the argument above.
+
+> Yes, that was the entire point of my article. Everything written can easily be summed up in your mindless meme. Note the sarcasm.

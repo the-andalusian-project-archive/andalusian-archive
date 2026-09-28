@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "34 - Twitter Assists Islamists! - Asadullah Andalusi"
+title: "34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]"
 video_id: "tUHEAejm404"
 id: "tUHEAejm404"
 permalink: "/videos/tUHEAejm404/"

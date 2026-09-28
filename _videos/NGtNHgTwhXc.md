@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "54 - Book Recommendations #3 ｜｜ Asadullah Andalusi"
+title: "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]"
 video_id: "NGtNHgTwhXc"
 id: "NGtNHgTwhXc"
 permalink: "/videos/NGtNHgTwhXc/"

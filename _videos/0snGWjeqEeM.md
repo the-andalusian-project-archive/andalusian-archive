@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "23 - Islam, Science and History (Reupload from Andalusian Project)"
+title: "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]"
 video_id: "0snGWjeqEeM"
 id: "0snGWjeqEeM"
 permalink: "/videos/0snGWjeqEeM/"

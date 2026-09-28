@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi"
+title: "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi  || The Andalusian Project"
 transcript_id: "kRCzZW3rg4U"
 recording: "kRCzZW3rg4U"
 capture_video_id: "kRCzZW3rg4U"
@@ -17,7 +17,7 @@ capture_file: "cap-kRCzZW3rg4U.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# "Yes, I'm leaving" Last Video of Asadullah Andalusi
+# "Yes, I'm leaving" Last Video of Asadullah Andalusi  || The Andalusian Project
 
 This is the capture taken from the catalogued recording itself.
 

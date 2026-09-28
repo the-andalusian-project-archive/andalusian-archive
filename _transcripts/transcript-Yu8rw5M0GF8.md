@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project"
+title: "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project [Yu8rw5M0GF8]"
 transcript_id: "Yu8rw5M0GF8"
 recording: "Yu8rw5M0GF8"
 capture_video_id: "Yu8rw5M0GF8"
@@ -17,7 +17,7 @@ capture_file: "cap-Yu8rw5M0GF8.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project
+# 48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project [Yu8rw5M0GF8]
 
 This is the capture taken from the catalogued recording itself.
 

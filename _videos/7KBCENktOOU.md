@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "24 - Asadullah Andalusi - MY STORY"
+title: "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]"
 video_id: "7KBCENktOOU"
 id: "7KBCENktOOU"
 permalink: "/videos/7KBCENktOOU/"

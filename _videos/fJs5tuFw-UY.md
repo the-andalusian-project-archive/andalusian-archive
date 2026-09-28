@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "32 - The Qur'an and Science： A Forced Marriage"
+title: "32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]"
 video_id: "fJs5tuFw-UY"
 id: "fJs5tuFw-UY"
 permalink: "/videos/fJs5tuFw-UY/"

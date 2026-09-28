@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "06 - Understanding Atheism ｜ Session 6"
+title: "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]"
 video_id: "lS7h9SKKtVc"
 id: "lS7h9SKKtVc"
 permalink: "/videos/lS7h9SKKtVc/"

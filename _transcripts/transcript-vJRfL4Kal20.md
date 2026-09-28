@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "55 - Lesson One [Full Lecture]"
+title: "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]"
 transcript_id: "vJRfL4Kal20"
 recording: "vJRfL4Kal20"
 capture_video_id: "vJRfL4Kal20"
@@ -17,7 +17,7 @@ capture_file: "whisper-vJRfL4Kal20.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 55 - Lesson One [Full Lecture]
+# 55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]
 
 This is the capture taken from the catalogued recording itself.
 

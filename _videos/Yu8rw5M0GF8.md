@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project"
+title: "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project [Yu8rw5M0GF8]"
 video_id: "Yu8rw5M0GF8"
 id: "Yu8rw5M0GF8"
 permalink: "/videos/Yu8rw5M0GF8/"

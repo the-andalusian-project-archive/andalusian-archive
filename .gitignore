@@ -76,8 +76,19 @@ _papers/pdfs/architects-of-civilisation-sallahuddin-ayubi.pdf
 #
 # Withheld, not edited, for the same reason as category 1: the bytes are
 # evidence that the recording says what it says, so the working tree keeps them
-# and only the git index drops them. The reader-facing text built from them is
-# served under /_transcripts/ and passes through the redaction list.
+# and only the git index drops them.
+#
+# WHAT IS AND IS NOT REDACTED IN THE SERVED TEXT, stated accurately. An earlier
+# version of this comment said the reader-facing text "passes through the
+# redaction list", which overstated it. The redaction list holds exactly one
+# identifier - the author's withheld birth name - and it does not touch these
+# captures. The transcripts derived from the ten files below are published AS
+# SPOKEN, on the owner's explicit decision after being told what they contain,
+# under the existing machine-transcript warning. That decision covers
+# third-party names, including a participant who gives his own name on air, and
+# it is a disclosure choice rather than an oversight. Withholding the raw bytes
+# from git is a separate decision, taken because unlabelled ASR of a live
+# audience is not what a public repository should hand out as source material.
 #
 # The sharpest three, and why each is here rather than merely untidy:
 #   7EqMJJuUKr8  a participant states his legal name on air, on the record,

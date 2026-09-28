@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "10 - iJihad： Gryffix and Kraut and Tea"
+title: "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]"
 transcript_id: "fgsVa-khWp4"
 recording: "fgsVa-khWp4"
 capture_video_id: "fgsVa-khWp4"
@@ -17,7 +17,7 @@ capture_file: "whisper-fgsVa-khWp4.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 10 - iJihad： Gryffix and Kraut and Tea
+# 10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]
 
 This is the capture taken from the catalogued recording itself.
 

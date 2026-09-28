@@ -41,3 +41,11 @@ But really, is this so hard to grasp? Or are atheists just projecting their own 
 
 I’d much rather prefer to believe in an All-Merciful God where the word ‘mercy’ actually means something.
 
+## Replies by the author, in the comment thread
+
+The page this was recovered from ended with a comment thread. Readers'
+comments are not held here - they are not the author's work. His own
+replies in that thread are, and they are below, verbatim. They are answers
+he gave to commenters, not part of the argument above.
+
+> This article (nor any of my other articles) make any claim that the Qur’an is a “scientific book”. So I have no idea why you’re making such an irrelevant point.

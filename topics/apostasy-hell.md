@@ -37,7 +37,7 @@ said at the foot of the page.</p>
 
 > So yes, I do not support the punishment for apostasy today, because the conditions have not been met that would warrant its implementation. Not because I disagree with the Law or believe it’s not part of Islam.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,389-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 > Well, firstly, I\'d like to say just right off the bat that
 I commend you for supporting individuals who are being persecuted,
@@ -47,7 +47,7 @@ I happen to believe that ex-Muslims should not be punished
 for their disagreement with Islam.
 I\'m among many Muslims who believe this, and I have my own theological reasons for this as well.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:52</span> &mdash; <span class="cite-size">excerpt of about 76 words from a 11,906-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:52</span> &mdash; <span class="cite-size">excerpt of about 76 words from a 11,908-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -57,14 +57,14 @@ I\'m among many Muslims who believe this, and I have my own theological reasons 
 
 > If my detractors see this as a deviant position, then I merely ask this: “Why doyourefuse to kill an apostate?” The answers will vary, no doubt. Some will claim that they “lack authority”. Others will say that “the law isn’t in place”. Others will say because they “live in a non-Muslim society”. All of these are legitimate and agreeable.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:56</span> &mdash; <span class="cite-size">excerpt of about 59 words from a 2,389-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:56</span> &mdash; <span class="cite-size">excerpt of about 59 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 > i will read those um counter arguments
 and evidences later regarding my views
 on apostasy punishment but i just wanted to get that sort of thing out earlier because i don\'t want
 people to assume that i\'m just rejecting it because i\'m some sort of like reformist liberal or something which is ridiculous all of you know i\'ve been fighting against secular liberalism for like over a decade okay it\'s nonsense that somebody would
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:937</span> &mdash; <span class="cite-size">excerpt of about 74 words from a 13,789-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:937</span> &mdash; <span class="cite-size">excerpt of about 74 words from a 13,791-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -74,7 +74,7 @@ people to assume that i\'m just rejecting it because i\'m some sort of like refo
 
 > That issue revolves around the fact that there doesn’t appear to be an actual Islamic authority or polity worthy enough of issuing said punishment (i.e. no caliphate or proper Islamically ruled polity is present).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 2,389-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is calling for the death of apostates islamic</h3>
@@ -87,7 +87,7 @@ but apostate prophet was banned for
 stating the facts so there must be a double standard of course there is a significant difference between
 what assam al-hakim was saying and what the apostate prophet was saying and you\'re probably wondering what could
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/tUHEAejm404/">34 - Twitter Assists Islamists! - Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tUHEAejm404.md:178</span> &mdash; <span class="cite-size">excerpt of about 80 words from a 4,626-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/tUHEAejm404/">34 - Twitter Assists Islamists! - Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tUHEAejm404.md:178</span> &mdash; <span class="cite-size">excerpt of about 80 words from a 4,636-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -100,7 +100,7 @@ passed enactments wanting to punish apostasy with death, but the federal constit
 So the federal government knocked it down. And no one can be punished with death for apostasy in Malaysia.
 And no one has been punished with death for apostasy in Malaysia because it\'s not legal to punish anyone for apostasy with death in Malaysia.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:374</span> &mdash; <span class="cite-size">excerpt of about 75 words from a 11,906-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:374</span> &mdash; <span class="cite-size">excerpt of about 75 words from a 11,908-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -112,7 +112,7 @@ And no one has been punished with death for apostasy in Malaysia because it\'s n
 and according to a 1993 statement by the Attorney General, the rulings could not be enforced without a constitutional amendment.
 Amending the penal code is the exclusive prerogative of the federal government.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:371</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 11,906-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:371</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 11,908-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -122,14 +122,14 @@ Amending the penal code is the exclusive prerogative of the federal government.
 
 > Instead, we call to the punishment in social media posts, scaring those who are confused and in search of real answers. We indirectly threaten their lives when they don’t even know why they’re Muslim to begin with.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,389-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">are there well known muslim scholars who believe apostates should be killed</h3>
 
 > islamic knowledge and traditional uh traditional traditional knowledge but they still believe apostates should be killed and all the rest of it all the other things that you maybe you don\'t even agree with they do
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1421</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 37,585-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1421</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 37,587-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -143,7 +143,7 @@ is that apostates, they\'re sort of forced to go to these counseling sessions wh
 an Imam or religious scholar who tries to convince them over the months. And in some states,
 like Nikiti Simbilan, they actually grant people the right to apostate. So you have to fill out
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:396</span> &mdash; <span class="cite-size">excerpt of about 86 words from a 11,906-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:396</span> &mdash; <span class="cite-size">excerpt of about 86 words from a 11,908-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -153,13 +153,13 @@ like Nikiti Simbilan, they actually grant people the right to apostate. So you h
 
 > people don’t go to Hell for eternity because of one single finite criminal act, nor does God force them to remain in Hell arbitrarily. Rather, the punishment is eternal because the offense is eternally committed.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">The Fire of God’s Mercy</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:28</span> &mdash; <span class="cite-size">excerpt of about 35 words from a 3,287-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">The Fire of God’s Mercy</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:28</span> &mdash; <span class="cite-size">excerpt of about 35 words from a 906-word text. The argument around it is not on this page.</span>
 
 > and uh so the whole like thing about well you know they\'re going there because they did one thing it\'s like no well they\'re going there because they continuously refuse
 they\'re in there because they don\'t stop that\'s the problem so it\'s not like it\'s because of one thing they\'ve done and then eternally they\'re punished it\'s because
 they can keep doing it
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1621</span> &mdash; <span class="cite-size">excerpt of about 63 words from a 37,585-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1621</span> &mdash; <span class="cite-size">excerpt of about 63 words from a 37,587-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -169,7 +169,7 @@ they can keep doing it
 
 > allah calls him a certain name or he says something about them every single time he says one thing about them he says they\'re arrogant he also says hell fire is for the arrogance so what does this mean he\'s talking specifically to individuals
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:111</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 11,572-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:111</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 11,586-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -181,14 +181,14 @@ they can keep doing it
 think mercy is just forgiving people regardless of the fact that they\'ve done wrong that\'s the gist of it but there\'s
 more to mercy than that mercy requires repentance
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:159</span> &mdash; <span class="cite-size">excerpt of about 66 words from a 11,572-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:159</span> &mdash; <span class="cite-size">excerpt of about 66 words from a 11,586-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > even the prophet muhammad peace be upon him you know you would say a parent\'s love for their child is one of the highest forms of mercy but he said even if fatima my daughter had stolen something i would have her
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:168</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 11,572-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:168</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 11,586-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -203,7 +203,7 @@ For example, if they\'re not ignorant or, you know, if they have no access to th
 then of course, Alasabana will show mercy to them, right?
 So it\'s not simply based on your identity that a person goes to hellfire.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">46 - ＂Is Allah a Dictator？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:45</span> &mdash; <span class="cite-size">excerpt of about 100 words from a 1,114-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">46 - ＂Is Allah a Dictator？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:45</span> &mdash; <span class="cite-size">excerpt of about 100 words from a 1,120-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -213,7 +213,7 @@ So it\'s not simply based on your identity that a person goes to hellfire.
 
 > there\'s a lovely story that my sheikh told me i don\'t know if it\'s canonical or anything like this but uh i think it\'s derived from hadith but it\'s not it\'s not exactly what it is it may have been just something that was
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:140</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 11,572-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:140</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 11,586-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -225,7 +225,7 @@ So it\'s not simply based on your identity that a person goes to hellfire.
 for it. They deserve to be punished because that is the very foundation of everything that they are
 as a human being.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">46 - ＂Is Allah a Dictator？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:88</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 1,114-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">46 - ＂Is Allah a Dictator？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:88</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 1,120-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -240,7 +240,7 @@ you\'re coming from, your motivation. Alasabana, don\'t tell me, gave you your t
 your morality and you\'re going, and if somebody\'s going to go in the afterlife and say, no,
 I did it myself, that is a profound form of arrogance.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">46 - ＂Is Allah a Dictator？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:75</span> &mdash; <span class="cite-size">excerpt of about 101 words from a 1,114-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">46 - ＂Is Allah a Dictator？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:75</span> &mdash; <span class="cite-size">excerpt of about 101 words from a 1,120-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -254,7 +254,7 @@ any good reason being murdered. For Allah subhanahu wa ta\'ala at the end of tim
 will be rectified. Even if they\'re not rectified now, they will eventually be rectified, and justice
 will be given to all of these individuals, and they\'ll be rewarded for all the pain and suffering
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:512</span> &mdash; <span class="cite-size">excerpt of about 84 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:512</span> &mdash; <span class="cite-size">excerpt of about 84 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -269,7 +269,7 @@ happens to all the innocent men who are slaughtered? Well, for eternity, those w
 For eternity, those children stay starved to death, and for eternity, those men who were slaughtered
 mindlessly without any compassion, mercy, they remain that way. The tragedy remains a tragedy.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:519</span> &mdash; <span class="cite-size">excerpt of about 94 words from a 13,743-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:519</span> &mdash; <span class="cite-size">excerpt of about 94 words from a 13,751-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -282,7 +282,7 @@ Our perception of good and evil is relative to us.
 What Allah subhanahu wa ta\'ala sees is much greater.
 So by His knowledge what He could be allowing is actually quite good.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:764</span> &mdash; <span class="cite-size">excerpt of about 61 words from a 19,944-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:764</span> &mdash; <span class="cite-size">excerpt of about 61 words from a 19,946-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -292,7 +292,7 @@ I would respond and say, are you sure?
 Because if there was more evil than good,
 will we still be here? Is it possible that we could live in a universe where there\'s more evil than good?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:772</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 19,944-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:772</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 19,946-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -304,7 +304,7 @@ will we still be here? Is it possible that we could live in a universe where the
 Well, very simply, if you cannot forgive yourself, if you believe you do not deserve mercy, then how can you accept mercy from Allah?
 How can you believe that Allah will be merciful with you?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">31 - iKhalifa 2： Forgive Yourself</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript--BwP55UIg3c.md:50</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,760-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">31 - iKhalifa 2： Forgive Yourself</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript--BwP55UIg3c.md:50</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,762-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -314,7 +314,7 @@ How can you believe that Allah will be merciful with you?
 
 > have doubts who are watching this and are going to leave islam because of it that\'s what i\'m concerned with okay that\'s what i\'m concerned with because those those are the people we should be worried about not the people
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:583</span> &mdash; <span class="cite-size">excerpt of about 40 words from a 13,789-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:583</span> &mdash; <span class="cite-size">excerpt of about 40 words from a 13,791-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -329,7 +329,7 @@ don\'t so there\'s a condition that\'s been applied there see they\'re insane th
 judgment so it\'s not their fault so we can\'t just like punish them because that would be a lack of
 mercy okay we have to excuse them for being what they are all right so in this way morality
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:478</span> &mdash; <span class="cite-size">excerpt of about 109 words from a 11,233-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:478</span> &mdash; <span class="cite-size">excerpt of about 109 words from a 11,235-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -346,7 +346,7 @@ conditions and how we apply the law changes but the law itself doesn\'t change w
 wrong every day that doesn\'t change but the conditions do right I still say stealing is wrong but
 sometimes we don\'t apply the punishment because the conditions change so any other questions about
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:487</span> &mdash; <span class="cite-size">excerpt of about 150 words from a 11,233-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:487</span> &mdash; <span class="cite-size">excerpt of about 150 words from a 11,235-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -356,7 +356,7 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > Because the past no longer exists, your past mistakes no longer exist. As long as you forgive yourself, you will allow yourself to receive mercy and you accept the mercy of Allah, your past has been erased completely.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">31 - iKhalifa 2： Forgive Yourself</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript--BwP55UIg3c.md:87</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,760-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">31 - iKhalifa 2： Forgive Yourself</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript--BwP55UIg3c.md:87</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,762-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -366,7 +366,7 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > For a concise, but scholarly view on the subject (that may or may not support my view, but is educational nonetheless), please refer to Sh. Hatem al-Haj’s article, “The Punishment for Apostasy – Can It Be Suspended“.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:62</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,389-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:62</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">summarise the argument that apostasy was treason against the caliphate</h3>
@@ -377,7 +377,7 @@ conversation with army naval and others in ali you know the whole thing the whol
 religion was tied to your citizenship and there was a constant state of war around you so if you abandoned that religion it was like as though you were committing
 treason by joining the other side
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1142</span> &mdash; <span class="cite-size">excerpt of about 86 words from a 37,585-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1142</span> &mdash; <span class="cite-size">excerpt of about 86 words from a 37,587-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -481,12 +481,12 @@ rather than papered over; the reading list above is the place to go.</p>
 of these pages.</p>
 <h3 class="shelf-kind">Transcripts (1)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative ("re upload") [Dr5IgXCHRIE]</a></li>
 </ul><h3 class="shelf-kind">Recordings (4)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a></li>
-      <li><a href="{{ site.baseurl }}/videos/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a></li>
+      <li><a href="{{ site.baseurl }}/videos/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative ("re upload") [Dr5IgXCHRIE]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]</a></li>
       <li><a href="{{ site.baseurl }}/videos/tJVwLXeWwng/">Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight</a></li>
 </ul>
 
@@ -502,7 +502,7 @@ of these pages.</p>
 <tr><td><a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD</a></td><td>transcript</td><td>9</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？</a></td><td>transcript</td><td>7</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">46 - ＂Is Allah a Dictator？＂</a></td><td>transcript</td><td>4</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a></td><td>transcript</td><td>4</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a></td><td>transcript</td><td>4</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3</a></td><td>transcript</td><td>2</td><td><a href="{{ site.baseurl }}/topics/atheism-doubt/">Atheism, Doubt and Evidence</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4</a></td><td>transcript</td><td>2</td><td><a href="{{ site.baseurl }}/topics/atheism-doubt/">Atheism, Doubt and Evidence</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a></td><td>transcript</td><td>4</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>

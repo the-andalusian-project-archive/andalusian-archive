@@ -42,7 +42,7 @@ What is the orthodox Islamic perspective on Jihad?
 What is the scholarly interpretation of Jihad, the consensus surrounding it?
 And what did the sources actually say?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:67</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 1,993-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:67</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 1,995-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -59,7 +59,7 @@ And what did the sources actually say?
 
 > For the Muslim world, we are constantly barraged about how “uncivilized” and “barbaric” we are because of a couple of lunatics; yet not a word about our own suffering, which is one hundred times more than any Westerner has to ever experience in their lifetime.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:66</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,701-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:66</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,683-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what is state terrorism</h3>
@@ -89,7 +89,7 @@ And what did the sources actually say?
 until the late 18th century because the word terrorism wasn\'t coined until the late 18th century
 by the political party, the French political party, the Jacobins. And why is this important? Well,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:141</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,804-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:141</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,806-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -122,7 +122,7 @@ by the political party, the French political party, the Jacobins. And why is thi
 And what is that? That is basically when somebody intentionally and conveniently dismisses
 or ignores relevant information that undermines their conclusions or the representation of the data.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:115</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,993-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:115</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,995-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -131,7 +131,7 @@ or ignores relevant information that undermines their conclusions or the represe
 equivocation, which is essentially using a term in two different ways, volatiously, and he\'s also
 committing the define his fallacy, which is essentially defining something unfairly.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:164</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,804-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:164</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,806-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -159,7 +159,7 @@ committing the define his fallacy, which is essentially defining something unfai
 
 > As someone who cherishes the Prophet Muhammad (sallAllahu alayhi wasallam) and wishes to honor him, I can say with certainty two things: 1) That his depiction does not justify these horrendous attacks, and that 2) These attacks do not justify his depiction.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:18</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 2,701-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:18</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 2,683-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">is it hypocritical to oppose terrorism and fantasise about it</h3>
@@ -205,11 +205,11 @@ committing the define his fallacy, which is essentially defining something unfai
 
 > My position is clear: The punishment forridda(apostasy) is part of the Shariah and should be applied when all the conditions are met. However, such conditions do not exist today because the political element (i.e. religious identity being tied to the state) is no longer present.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:36</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,389-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:36</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 > So yes, I do not support the punishment for apostasy today, because the conditions have not been met that would warrant its implementation. Not because I disagree with the Law or believe it’s not part of Islam.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,389-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">My Views On the Punishment For Apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,238-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what does the word terror mean in the hadith</h3>
@@ -218,7 +218,7 @@ committing the define his fallacy, which is essentially defining something unfai
 defined by how they were used back then. And the word terror is simply to is just extreme fear. That\'s
 all it is. That\'s it. Okay. And that in and of itself is not terrorism.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:237</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,804-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:237</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,806-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -228,14 +228,14 @@ all it is. That\'s it. Okay. And that in and of itself is not terrorism.
 
 > How can we hope to counter violence and extremism if we continue to cultivate an environment where it can easily breed? Under oppression and hypocrisy, extremists are bound to rise up out of frustration.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:34</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 2,701-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:34</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 2,683-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">are the murderers the only ones responsible</h3>
 
 > This is not to justify what happened in Paris, but it is a necessary point that needs to be made to understand the problems and the required solutions. While this may seem controversial, we cannot just blame the murderers for murdering; we have to understand their rationale and see if their grievances were legitimate. It is one thing to kill unjustly for irrational reasons, like greed or lust, but it’s another thing to unjustly kill for rational reasons, such as fighting against tyranny. While both cases of murder are unjust by definition, the motivations are never always the case – and an unjust killing for a just cause always indicates something very often missed: that the responsibility of injustice is not simply shared by the murderers, but the societies in which they live.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:36</span> &mdash; <span class="cite-size">excerpt of about 133 words from a 2,701-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">Charlie Hebdo: Coexistence and Crocodile Tears</a> (work), cited at <span class="cite-ref">_posts/2015-02-14-charlie-hebdo.md:36</span> &mdash; <span class="cite-size">excerpt of about 133 words from a 2,683-word text. The argument around it is not on this page.</span>
 
 
 
@@ -387,24 +387,24 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/articles/mdi/islam-terrorism/">Lecture: 'Islam &amp; Terrorism' [Asadullah Ali al Andalusi]</a></li>
 </ul><h3 class="shelf-kind">Transcripts (6)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
 </ul><h3 class="shelf-kind">Recordings (11)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/4VcPzhkP9bE/">08 - Islam and Terrorism</a></li>
-      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea</a></li>
+      <li><a href="{{ site.baseurl }}/videos/4VcPzhkP9bE/">08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
       <li><a href="{{ site.baseurl }}/videos/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a></li>
-      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a></li>
-      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
       <li><a href="{{ site.baseurl }}/videos/tJVwLXeWwng/">Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight</a></li>
 </ul>
 

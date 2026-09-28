@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "53 - Virgins in Paradise？ ｜ Answered"
+title: "53 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]"
 transcript_id: "cDHrrbOKbl4"
 recording: "cDHrrbOKbl4"
 capture_video_id: "cDHrrbOKbl4"
@@ -17,7 +17,7 @@ capture_file: "cap-cDHrrbOKbl4.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 53 - Virgins in Paradise？ ｜ Answered
+# 53 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]
 
 This is the capture taken from the catalogued recording itself.
 

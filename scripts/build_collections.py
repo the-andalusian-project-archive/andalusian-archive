@@ -500,21 +500,29 @@ def capture_paragraphs(cues):
 
 
 def video_display_title(vid, title):
-    """The title build_videos() writes, 52/53 de-duplication included.
+    """The title as the channel wrote it, with the 52/53 de-duplication applied.
 
     Shared so a transcript page and the video page it belongs to cannot print
     two different titles for the same recording.
 
-    It also runs the display cleaner, so a heading shows
-    "24 - Asadullah Andalusi - MY STORY" rather than that plus a bracketed
-    YouTube ID. The raw title is still what front matter stores; this is only
-    the string a reader is shown. See `display_titles.py` for the rule set and
-    for what it refuses to remove.
+    This returns the RECORD, not a display string. The bracketed YouTube ID and
+    the uploader's channel name are stripped only at render time, by
+    `display_titles.clean_display_title`, because front matter is the archive's
+    record of what was published: writing `24 - Asadullah Andalusi - MY STORY`
+    into `title:` instead of the channel's own
+    `24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]`
+    destroys the evidence of the original, in 68 files, silently. That was done
+    on 2026-09-29 and reverted the same day.
     """
     title = str(title or "")
     if vid == DUP52_ID and title.startswith("52 -"):
-        title = "53 -" + title[4:]
-    return clean_display_title(title)
+        return "53 -" + title[4:]
+    return title
+
+
+def display_title(title) -> str:
+    """What a reader is shown. Never written to front matter."""
+    return clean_display_title(video_display_title("", title))
 
 
 def transcript_documents():
@@ -1823,7 +1831,10 @@ def build_videos():
         # title that needs it; the other 67 pages get no new key at all.
         front.extend(front_matter_bidi(title))
 
-        body = [_h1(title), ""]
+        # The heading is the only reader-facing rendering of the title. The front
+        # matter above keeps the channel's own string, because that is the
+        # record of what was published; see video_display_title().
+        body = [_h1(display_title(title)), ""]
         if vid == DUP52_ID:
             body.append(
                 "Numbering note: the source data lists this entry as "

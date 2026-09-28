@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 - transcript of a duplicate upload"
+title: "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4] - transcript of a duplicate upload"
 transcript_id: "fq1WejCHgXs-duplicate-upload"
 recording: "X36xEj0OSV4"
 capture_video_id: "fq1WejCHgXs"
@@ -19,7 +19,7 @@ reparented_at: "2026-09-27"
 superseded_reason: "Duplicate re-upload of X36xEj0OSV4; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-fq1WejCHgXs.en-orig.vtt) is retained; nothing was deleted."
 ---
 
-# 16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 - transcript of a duplicate upload
+# 16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4] - transcript of a duplicate upload
 
 > This is a transcript of the **same recording** as the page for `X36xEj0OSV4`. The upload it was captured from (`fq1WejCHgXs`) left the video catalogue as a duplicate; the transcript text was re-parented onto the surviving entry and kept, not deleted. It is published here, attributed, so that its text is readable.
 

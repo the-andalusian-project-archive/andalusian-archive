@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "24 - Asadullah Andalusi - MY STORY - transcript of a duplicate upload"
+title: "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU] - transcript of a duplicate upload"
 transcript_id: "D2t0idkAqjA-duplicate-upload"
 recording: "7KBCENktOOU"
 capture_video_id: "D2t0idkAqjA"
@@ -20,7 +20,7 @@ superseded_reason: "Duplicate re-upload of 7KBCENktOOU; removed from _data/video
 redaction_note: "One personal identifier was withheld from this transcript at the site owner's request: his birth name, the family name he discusses in this account of his own conversion. It occurs 4 times in the capture and each occurrence is shown here as ‖ birth name withheld ‖. Every other word is the capture's own, unaltered. The raw capture file itself is withheld from this repository rather than edited - it is evidence, and editing evidence would destroy what makes it evidence - so the unredacted text is not published here either. See NOTICE.md, section 6."
 ---
 
-# 24 - Asadullah Andalusi - MY STORY - transcript of a duplicate upload
+# 24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU] - transcript of a duplicate upload
 
 > This is a transcript of the **same recording** as the page for `7KBCENktOOU`. The upload it was captured from (`D2t0idkAqjA`) left the video catalogue as a duplicate; the transcript text was re-parented onto the surviving entry and kept, not deleted. It is published here, attributed, so that its text is readable.
 

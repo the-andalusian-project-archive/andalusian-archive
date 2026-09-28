@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "56 - DanielCompassionateImam"
+title: "56 - DanielCompassionateImam [gmGnu1RBAoQ]"
 transcript_id: "gmGnu1RBAoQ"
 recording: "gmGnu1RBAoQ"
 capture_video_id: "gmGnu1RBAoQ"
@@ -17,7 +17,7 @@ capture_file: "whisper-gmGnu1RBAoQ.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 56 - DanielCompassionateImam
+# 56 - DanielCompassionateImam [gmGnu1RBAoQ]
 
 This is the capture taken from the catalogued recording itself.
 

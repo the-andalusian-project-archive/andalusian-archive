@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "22 - Taking Islam Out of Context! (Indeed)"
+title: "22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]"
 video_id: "biZFuWyB4lk"
 id: "biZFuWyB4lk"
 permalink: "/videos/biZFuWyB4lk/"

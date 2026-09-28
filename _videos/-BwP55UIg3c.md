@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "31 - iKhalifa 2： Forgive Yourself"
+title: "31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]"
 video_id: "-BwP55UIg3c"
 id: "-BwP55UIg3c"
 permalink: "/videos/-BwP55UIg3c/"

@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3"
+title: "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]"
 transcript_id: "WED5mPmO_yU"
 recording: "WED5mPmO_yU"
 capture_video_id: "WED5mPmO_yU"
@@ -17,7 +17,7 @@ capture_file: "whisper-WED5mPmO_yU.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3
+# 18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]
 
 This is the capture taken from the catalogued recording itself.
 

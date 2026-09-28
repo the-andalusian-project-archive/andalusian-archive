@@ -571,7 +571,15 @@ def source_words(path: str) -> int:
     return _SOURCE_WORDS[path]
 
 
-def reanchor_spec_refs(specs: list[dict]) -> list[str]:
+#: The gate's own window constants, so the re-anchor and the gate apply the same
+#: test. `test_quotes.py` defines MIN_WINDOW = 12 and CHARS_PER_LINE = 30; these
+#: are asserted equal to it by `check_refs_agree_with_gate`, so a change on one
+#: side without the other fails the build instead of silently diverging.
+_MIN_WINDOW = 12
+_CHARS_PER_LINE = 30
+
+
+def reanchor_spec_refs(specs: list[dict], dry_run: bool = False) -> tuple[list[str], list[str]]:
     """Re-derive every citation's line number from the cited line's own text.
 
     WHY THIS EXISTS
@@ -593,7 +601,8 @@ def reanchor_spec_refs(specs: list[dict]) -> list[str]:
     as it is and reported. Guessing would move a citation onto a line that merely
     looks similar, which is worse than a visible failure.
     """
-    notes: list[str] = []
+    moved: list[str] = []
+    unresolved: list[str] = []
     for spec_path in sorted((ROOT / "_data" / "topics").glob("*.json")):
         spec = json.loads(spec_path.read_text(encoding="utf-8"))
         changed = False
@@ -603,30 +612,73 @@ def reanchor_spec_refs(specs: list[dict]) -> list[str]:
             if not target or not target.is_file():
                 continue
             lines = target.read_text(encoding="utf-8", errors="replace").splitlines()
+            # The matcher below is the GATE's matcher, character for character:
+            # `scripts/test_quotes.py` checks that a claim's quote appears in the
+            # window of source lines STARTING at the cited line, and this re-anchor
+            # looks for the line that satisfies that same test. Two independent
+            # implementations of "where does this quote live" is how the earlier
+            # version came to disagree with the gate on 476 of 500 citations:
+            # this searched for the quote inside one line at a time, so every
+            # quote that markdown had wrapped was unmatchable, and the caller
+            # then printed its failures under the heading "refs re-anchored".
+            #
+            # `check_refs_agree_with_gate` asserts the two cannot drift again.
+            def _norm(t: str) -> str:
+                return re.sub(r"\s+", " ", t).strip()
+
+            def window_for(q: str) -> int:
+                return max(_MIN_WINDOW, -(-len(q) // _CHARS_PER_LINE) + 4)
+
+            def gate_ok(start: int) -> bool:
+                """Exactly the test test_quotes.py applies at a cited line.
+
+                The collapse must happen on the JOINED RAW lines, not on each
+                line before joining. Joining pre-normalised lines leaves two
+                spaces where a blank line was, and no quote in this corpus
+                contains a double space, so every quote spanning a paragraph
+                break was unmatchable - 476 of 500.
+                """
+                w = window_for(raw_quote)
+                return _norm(raw_quote) in _norm(" ".join(lines[start: start + w]))
+
             for claim in row.get("key_claims") or []:
                 ref = str(claim.get("ref") or "")
                 head, _, tail = ref.rpartition(":")
                 if not head or not tail.lstrip("L").isdigit():
                     continue
                 old_n = int(tail.lstrip("L"))
-                quote = " ".join(str(claim.get("quote") or "").split())
+                raw_quote = str(claim.get("quote") or "")
+                quote = _norm(raw_quote)
                 if not quote:
                     continue
-                flat = [" ".join(l.split()) for l in lines]
-                hits = [i for i, l in enumerate(flat, 1) if l and quote in l]
-                if not hits:
-                    notes.append(f"{ref}: quote no longer found in {rel} - "
-                                 "left for a human")
+                hits = [i for i in range(len(lines)) if gate_ok(i)]
+                # Already correct? Ask the gate, not the re-anchor. This is also
+                # the answer when the quote occurs more than once: the ref is
+                # fine, the text simply repeats, and that is not a failure.
+                if 1 <= old_n <= len(lines) and gate_ok(old_n - 1):
                     continue
-                if old_n in hits:
-                    continue  # already correct
-                if len(hits) == 1:
-                    claim["ref"] = f"{head}:{hits[0]}"
-                    changed = True
-                    notes.append(f"{ref} -> {head}:{hits[0]}")
-                else:
-                    notes.append(f"{ref}: quote now on {len(hits)} lines of "
-                                 f"{rel} {hits[:4]} - left alone")
+                if not hits:
+                    unresolved.append(
+                        f"{ref}: the gate's own test finds no line in {rel} "
+                        "where this quote starts - left for a human")
+                    continue
+                # The gate's window extends FORWARD, so the quote also matches
+                # every window that starts before it and reaches past its end.
+                # For a quote that begins on line S, the matching set is
+                # therefore the contiguous run ending at S, and S is its MAXIMUM.
+                # Taking the first match, or requiring a unique match, is wrong
+                # on both counts: a 92-character quote satisfied the test on 12
+                # different lines, and the re-anchor called that ambiguous.
+                if hits != list(range(hits[0], hits[-1] + 1)):
+                    unresolved.append(
+                        f"{ref}: quote matches on {len(hits)} non-contiguous "
+                        f"lines of {rel} ({[h + 1 for h in hits[:4]]}) and the "
+                        "cited line does not satisfy the gate - left for a human")
+                    continue
+                start = hits[-1] + 1
+                claim["ref"] = f"{head}:{start}"
+                changed = True
+                moved.append(f"{ref} -> {head}:{start}")
         if changed:
             # Written with the file's own newline convention, so a spec authored
             # with CRLF does not silently become LF (or the reverse).
@@ -634,7 +686,7 @@ def reanchor_spec_refs(specs: list[dict]) -> list[str]:
             nl = "\r\n" if b"\r\n" in raw else "\n"
             body = json.dumps(spec, indent=2, ensure_ascii=False) + "\n"
             spec_path.write_bytes(body.replace("\n", nl).encode("utf-8"))
-    return notes
+    return moved, unresolved
 
 
 def main() -> int:
@@ -643,13 +695,18 @@ def main() -> int:
         print("no cluster specs found", flush=True)
         return 1
 
-    moved = reanchor_spec_refs(specs)
-    if moved:
-        print(f"refs re-anchored by content: {len(moved)}")
-        for n in moved[:12]:
-            print(f"    {n}")
-    else:
-        print("refs re-anchored by content: 0 (all already exact)")
+    moved, unresolved = reanchor_spec_refs(specs)
+    # The two counts are reported separately and never merged. An earlier
+    # version returned one list of notes and printed its length as
+    # "refs re-anchored by content: 125" - but those 125 were the claims it
+    # could NOT match, because it searched one line at a time and a quarter of
+    # the quotes wrap. It was reporting its failures as its successes.
+    print(f"refs re-anchored by content: {len(moved)} moved, "
+          f"{len(unresolved)} left for a human")
+    for n in moved[:12]:
+        print(f"    moved       {n}")
+    for n in unresolved[:12]:
+        print(f"    unresolved  {n}")
 
     perma, by_last = permalink_index()
     how_counts: dict[str, int] = {}
