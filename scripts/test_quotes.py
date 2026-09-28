@@ -105,7 +105,98 @@ def check_pages() -> list[str]:
                 f"miscellany lists {len(both)} item(s) that a subject page also "
                 f"claims: {sorted(both)[:3]}"
             )
+
+    # ---- the byline gate must hold on the generated pages -------------------
+    #
+    # Four items in this corpus are bylined to other people - a guest
+    # contributor, the other man also called Al-Andalusi, and a republication of
+    # someone else's paper - while their front matter claims the subject. A
+    # review found eight substantial passages by the other Al-Andalusi published
+    # as the subject's answers, including the sharpest line on the terrorism page.
+    # Nothing else in the pipeline could see it: the quotes are genuine, they are
+    # in the right files, and they verify. So the gate is asserted here.
+    for _spec_path, spec in load_specs():
+        cid = spec.get("id")
+        for item in spec.get("material") or []:
+            why = gate_reason(item.get("path", ""))
+            if not why:
+                continue
+            slug = item.get("slug", "?")
+            page = ROOT / "topics" / f"{cid}.md"
+            if not page.exists():
+                continue
+            html = page.read_text(encoding="utf-8")
+            for claim in item.get("key_claims") or []:
+                quote = re.sub(r"\s+", " ", claim.get("quote", "")).strip()
+                if len(quote) < 60:
+                    continue
+                if quote[:120] in re.sub(r"\s+", " ", html):
+                    problems.append(
+                        f"{cid}/{slug}: a passage by ANOTHER AUTHOR is rendered as "
+                        f"the subject's ({why}). Bylined material must not be "
+                        f"quoted on a subject page."
+                    )
+                    break
+
+    # ---- the material table must actually render ---------------------------
+    #
+    # The rows were markdown pipes inside a raw <table>, which kramdown does not
+    # parse; the browser foster-parented the text out and every subject page
+    # shipped a header-only table with a run-on line of raw markdown above it.
+    # Nothing caught it because the suite read the markdown source, not the
+    # built page.
+    for _p2, spec in load_specs():
+        cid = spec.get("id")
+        page = ROOT / "topics" / f"{cid}.md"
+        if not page.exists():
+            continue
+        html = page.read_text(encoding="utf-8")
+        m = re.search(
+            r"<h2>Everything in this cluster</h2>(.*?)</table>", html, re.S
+        )
+        if not m:
+            problems.append(f"{cid}: no material table found")
+            continue
+        rows = m.group(1).count("<tr>")
+        expected = len(spec.get("material") or []) + 1
+        if rows != expected:
+            problems.append(
+                f"{cid}: material table has {rows} <tr>, expected {expected} "
+                f"(1 header + {len(spec.get('material') or [])} items)"
+            )
     return problems
+
+
+def gate_reason(path: str) -> str:
+    """Why this source is not the subject's own words, or "" if it is.
+
+    Deliberately a re-implementation rather than an import: test_quotes.py must
+    not depend on the generator it is testing, or a bug in the generator's
+    authorship logic would silence the check on itself. It reads the BYLINE in
+    the post body, because three of these posts carry
+    `author: "Asadullah Ali Al-Andalusi"` in front matter while the body says
+    someone else - the archive's own written rule is that a row counts as his on
+    the strength of the byline, never on the strength of a title or a key.
+    """
+    if not path:
+        return ""
+    target = ROOT / path
+    if not target.exists():
+        return ""
+    body = re.sub(r"^---\r?\n.*?\r?\n---\r?\n", "",
+                  target.read_text(encoding="utf-8", errors="replace"),
+                  count=1, flags=re.S)
+    for line in body.splitlines()[:40]:
+        s = line.strip()
+        low = s.lower()
+        if re.match(r"^(by|written by)\s+\S", s, re.I):
+            if "abdullah al-andalusi" in low or "as-sufi" in low or "as sufi" in low:
+                return s
+            if "asadullah" in low:
+                return ""
+        if "this is a response by" in low:
+            return s
+    return ""
 
 
 def check() -> int:

@@ -1,0 +1,75 @@
+{
+  "_about": "Reader-facing cautions for the /topics/ pages, replacing the research agents' raw `notes` field. The notes were handoff memos to a maintainer: they named internal file paths, quoted grep commands, used ALL-CAPS section headings, and in three cases published the reason a file was withheld together with the URL of the repository it was withheld from - which is a pointer to the withheld document, printed in the document that withholds it. The full notes are still in the repository at docs/topic-research-notes.md for maintainers. What is here is the subset a reader actually needs, rewritten.",
+
+  "atheism-doubt": {
+    "caveats": [
+      "This is not a 'faith versus evidence' debate. The essays argue that belief in God is not the kind of thing a demand for evidence can be levelled at, and that treating it that way misdescribes what is being claimed.",
+      "He explicitly says he is not attacking science: \"I am in no way attacking science in this essay.\" A headline claiming these works pit belief against science would misstate them.",
+      "\"Doubt\" does two different jobs here. In the essays it is what makes you look for evidence. In *Doubting Your Doubts* it is diagnosed as psychological, and the stated position is that most people cannot be argued out of doubt by logic. A reader looking for a technique for arguing someone out of doubt will not find one here.",
+      "Three of the works people expect on this page are not readable in it. *The 3 Isms of Atheism* survives only as a Wayback listing; *Islamic Intuitionism* and *Deconstructing Contemporary Atheist Thought* are held as metadata and a PDF respectively."
+    ]
+  },
+
+  "science-scientism": {
+    "caveats": [
+      "Scientism, as he uses the word, is a specific modern doctrine - that natural-science method is the only proper way to ask any question - and he argues it is a choice rather than a method. This is not a claim that science is unreliable.",
+      "The spine of the cluster is a three-part reconstruction: that scientism is a late European doctrine, that the standard story of science declining in the Islamic world after al-Ghazali is a reading of Europe backwards onto Islamic history, and that he prefers to call the 16th-century turn a dependency rather than a decline.",
+      "He also rejects the popular defence of the Qur'an on \"scientific miracles\" grounds, treating that defence as an instance of the error he is diagnosing rather than a solution to it.",
+      "Much of this material is machine transcripts and reads as damaged. Where a written work covers the same ground, prefer it."
+    ]
+  },
+
+  "gender-feminism": {
+    "caveats": [
+      "This is a thin cluster and it is worth knowing why: of the whole corpus, only one recovered work deals substantially with feminism, and it is a long polemic rather than a survey. The rest is a three-part historical refutation of one specific claim about Aisha's age.",
+      "On Aisha, he does not deny the figure of nine. His argument is that \"nine\" is not a meaningful moral category in seventh-century Arabia, argued from mortality-driven childhood in the bioarchaeology literature and the classical separation of marriage contract from consummation.",
+      "The qualifiers are the argument. He twice pre-empts the obvious misreading in his own words, saying that such marriages are unjust and that he would not marry his own young daughters off today. A reader who stops before those sentences has read the polemic without the caveat.",
+      "**The Collaborative Couple** and **Qatar, Timbuktu, And An Arab Rescue** are bylined to Shaykh Dr. Abdalqadir as-Sufi, not to the subject. They are listed below for completeness and are not quoted on this page."
+    ]
+  },
+
+  "terrorism-extremism": {
+    "caveats": [
+      "\"The West\" in this cluster is a rhetorical construction, not a demographic fact, and casualty comparisons read as statistics if quoted without that.",
+      "The analytic core is four items. The rest is shorter and more polemical, and some of it is unsourced. The page does not separate them for you beyond the kind column below.",
+      "His thesis is that Western foreign policy and secular liberalism are primary causes of modern jihadist violence. That is a position with no counter-argument held in this archive, and it should be read as his argument rather than as a finding.",
+      "**Who Justifies Terrorism?** is bylined to Abdullah al-Andalusi, who is a different person from the subject of this archive. It is listed below and not quoted here. A reader wanting it should follow the link, where its own byline is intact."
+    ]
+  },
+
+  "liberalism-orientalism": {
+    "caveats": [
+      "His argument is that liberalism is not a neutral position but an ideology that defines itself through an enemy, and that Muslim doubt is traceable to secularism as a colonial import. That is a thesis, stated once, in the works below.",
+      "\"The West\" is again a rhetorical construction throughout this cluster rather than a demographic aggregate, and the passage about liberalism's self-definition through its enemy is the load-bearing claim, not the surrounding description.",
+      "This cluster is much thinner than its label. Several of the headline liberalism works survive only as availability records, and the argument largely survives in spoken form - the recordings below.",
+      "Some of the material here names living people with allegations that are unverified, in work written in 2014 about Malaysian politics. It is dated polemic, kept because it is part of the record, and should not be read as established fact."
+    ]
+  },
+
+  "apostasy-hell": {
+    "caveats": [
+      "**This is a minority position and the archive must not present it as consensus.** The author says as much himself, describing it as a self-declared minority reading, and notes that scholars at Saudi and Medina universities hold the opposite view.",
+      "His actual position is narrower than the headline: the punishment for apostasy is part of the law as he accepts it, but its conditions - a polity in which religious identity binds to the state - no longer obtain, so he does not support applying it today.",
+      "**This page concerns a practice that is criminalised in a number of jurisdictions, some of them by death, and the material names several of them.** It is a record of a published argument, not legal advice.",
+      "There is no full scholarly treatment of hell or divine justice anywhere in this corpus. The richest material is a lecture transcript, and most of the cluster is transcripts."
+    ]
+  },
+
+  "aqeedah-basics": {
+    "caveats": [
+      "**This is the smallest cluster on the site and it covers only half of what its label implies.** The corpus holds no creed text and no exposition of the pillars of faith; searching for tawhid, aqeedah, the shahada and the fundamentals across every recovered work and transcript returns essentially nothing.",
+      "**There is no worked proof of God's existence anywhere here.** He explicitly declines both the Kalam and the contingency arguments. A reader searching this page for a classical proof will not find one, and should not infer that the archive holds one.",
+      "What the cluster does contain is the \"No-thing\" pair of essays, which argue that absolute non-existence is incoherent and that a \"thing\" is the only candidate for the Absolute. They are short, and they are about language as much as about metaphysics.",
+      "*Adam Is No Myth* is a republication of Dr David Jalajel's response to his own paper, and is not the subject's argument. It is listed below and not quoted here."
+    ]
+  },
+
+  "quran-hermeneutics": {
+    "caveats": [
+      "**Most of this cluster is one paper.** *Between a Backbone and Ribs* is the only substantial work; the rest is short analogy pieces and transcripts. There is no translation theory and no verse-by-verse comparison beyond 86:5-7.",
+      "**The reading is a minority position.** The paper argues that *sulb* and *tara'ib* are themselves euphemisms for parental genitalia, against the anatomical reading. It concedes that no explicit text or hadith supports *either* reading, and leaves the plural of *tara'ib* unexplained.",
+      "It is an unusually careful tafsir-critical study, not a polemic, and it is argued against both the apologists and the polemicists who have used the verse. If you are looking for the \"Qur'an predicted X\" genre, that is explicitly not this paper.",
+      "The paper carries no DOI, no registry record and no recorded citation count. The archive holds it unreferenced and undiscussed, which is not a judgement about its quality."
+    ]
+  }
+}

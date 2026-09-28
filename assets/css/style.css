@@ -1819,17 +1819,19 @@ tr:hover td {
    overrides, so it sits last and wins on equal specificity.
    ============================================================================ */
 
-:root {
-  /* Contrast-corrected greys. Old tertiary #9ca3af was 2.54:1 - a fail. */
-  --color-text-secondary: #545b68;
-  --color-text-tertiary: #6b7280;
-  --color-muted: #6b7280;
-
-  --text-base: 1.0625rem;   /* 17px, from 16px */
-  --line-height: 1.7;
-
-  /* The comfortable line length for running text at this type size. */
-  --measure: 68ch;
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Contrast-corrected greys. Old tertiary #9ca3af was 2.54:1 - a fail. */
+    --color-text-secondary: #545b68;
+    --color-text-tertiary: #6b7280;
+    --color-muted: #6b7280;
+  
+    --text-base: 1.0625rem;   /* 17px, from 16px */
+    --line-height: 1.7;
+  
+    /* The comfortable line length for running text at this type size. */
+    --measure: 68ch;
+  }
 }
 
 /* --- prose gets a measure; page furniture keeps the full width ----------- */
@@ -1865,6 +1867,10 @@ tr:hover td {
 .page-content > .section,
 .page-content > .topics-section,
 .page-content > .intro-section {
+  max-width: none;
+}
+
+.page-content > ul.topic-list {
   max-width: none;
 }
 
@@ -2023,7 +2029,7 @@ tr:hover td {
    about 68ch, so prose lands on the comfortable measure by construction and
    everything below it - grids, tables, the shelf lists - has room too. */
 .page-content {
-  max-width: 860px;
+  max-width: calc(var(--measure) + 14rem);
   margin: 0 auto;
 }
 
@@ -2049,4 +2055,59 @@ tr:hover td {
   padding: 0 0.3rem;
   margin-left: 0.3rem;
   vertical-align: 1px;
+}
+
+/* Focus visibility, missing site-wide (review finding). The UA default outline
+   resolves to near-black on the dark surface, so keyboard focus was invisible
+   in dark mode and below the 3:1 non-text minimum. */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* The file:line reference under a quotation. This is the thing that makes a
+   quotation checkable, so it must not render at the same size and weight as
+   the quotation itself. It was dropped by an earlier commit and is back, with
+   overflow-wrap: break-word rather than nywhere so paths break at
+   separators instead of mid-token. */
+.page-content blockquote .cite-ref {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-tertiary);
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Reader-facing cautions, replacing the agents' maintainer notes. */
+.caution-list {
+  max-width: var(--measure);
+  margin: 1rem 0 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.caution-list li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.caution-list li::before {
+  content: !;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  line-height: 1.1rem;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--color-warning-subtle);
+  color: var(--color-warning);
+  font-size: 0.75rem;
+  font-weight: 700;
 }

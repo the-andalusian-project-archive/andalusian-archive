@@ -33,17 +33,6 @@ said at the foot of the page.</p>
 
 <h2>Where he addresses the question</h2>
 
-<h3 class="question">does islam teach violence</h3>
-
-> Islam, like many beliefs, religions and ideologies, is subject to interpretation and difference of opinion amongst its adherents. However, there are many things that Muslims do not differ on, like the existence of only One God, Muhammed (saaw) being His Final Prophet and Messenger, and that only God can legislate laws for man. Another thing that Muslims do not differ on, is that terrorism is against Islam.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:22</span> &mdash; <span class="cite-size">excerpt of about 67 words from a 2,355-word text. The argument around it is not on this page.</span>
-
-> Many political pundits, politicians and media commentators claim that terrorism is the result of a traditional or fundamentalist interpretation of Islam. However, according to Islamic sources this is plainly false.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:25</span> &mdash; <span class="cite-size">excerpt of about 30 words from a 2,355-word text. The argument around it is not on this page.</span>
-
-
 <h3 class="question">jihad meaning in islam</h3>
 
 > And my intention is to essentially teach about Jihad,
@@ -104,27 +93,6 @@ by the political party, the French political party, the Jacobins. And why is thi
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
-
-
-<h3 class="question">was muhammad a terrorist</h3>
-
-> We can clearly see that the acts of terrorism coming from such individuals, are not the result of a written commandment in Islamic sources to “kill all infidels”, but rather these acts of terrorism are borrowed modern methodologies that go against Islamic teachings; they are the result of Muslims adopting Western methods of war, fighting and revolutionary tactics.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:70</span> &mdash; <span class="cite-size">excerpt of about 58 words from a 2,355-word text. The argument around it is not on this page.</span>
-
-
-<h3 class="question">does eye for an eye justify terrorism</h3>
-
-> “The fact that someone disbelieves does not prevent us from being just to him, and that our dealing with them (in a state of war) should only be restricted to fighting or capturing them if they deserve so.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:45</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 2,355-word text. The argument around it is not on this page.</span>
-
-
-<h3 class="question">why did bin Laden say he was not against freedom</h3>
-
-> In order to get people in the West to end the aggressive foreign policy of their governments (as incredulous as it seems) Osama Bin Laden, rather than trying to demolish Western democracy, is actually trying to encourage Western people to participate in it!
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:66</span> &mdash; <span class="cite-size">excerpt of about 43 words from a 2,355-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">what is the fallacy of relative privation</h3>
@@ -244,27 +212,6 @@ committing the define his fallacy, which is essentially defining something unfai
 > &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:58</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,399-word text. The argument around it is not on this page.</span>
 
 
-<h3 class="question">how do bin Laden's 2001 justifications work</h3>
-
-> It should be noticed from Osama Bin Laden’s statement, that he expresses his willingness to dispense with the Islamic rules when he believes an enemy threatens the lives of Muslim non-combatants. Thus, Osama adds a Western Utilitarian lens to looking at Islamic law, and argues that some evil can be done in the name of a greater good.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:55</span> &mdash; <span class="cite-size">excerpt of about 58 words from a 2,355-word text. The argument around it is not on this page.</span>
-
-
-<h3 class="question">where does modern jihadist violence come from</h3>
-
-> ‘Muslim’ Terrorists are, in reality, merely Modernists who re-interpret the Qur’an and sources of Islamic thought, to justify a post-colonial mode of warfare which they learned from Western military history and experience.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:59</span> &mdash; <span class="cite-size">excerpt of about 32 words from a 2,355-word text. The argument around it is not on this page.</span>
-
-
-<h3 class="question">do liberal philosophers justify targeting civilians</h3>
-
-> In part 2, we investigate the existence of mainstream philosophical and legal justifications for the deliberate targeting of civilians, and the conducting of acts of Terrorism – not from Muslim mutfis or sheikhs, but by famous (and current) Western Liberal Philosophers.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a> (work), cited at <span class="cite-ref">_posts/2013-06-13-who-justifies-terrorism-part-1-2.md:73</span> &mdash; <span class="cite-size">excerpt of about 41 words from a 2,355-word text. The argument around it is not on this page.</span>
-
-
 <h3 class="question">what does the word terror mean in the hadith</h3>
 
 > these words, the word terror particularly cannot be defined in the contemporary sense. They must be
@@ -298,6 +245,7 @@ to be worth putting under a question. They are listed so the gap is visible
 rather than papered over; the reading list above is the place to go.</p>
 <ul class="query-list">
       <li>origins of religious extremism</li>
+      <li>does islam teach violence</li>
       <li>why do people become terrorists</li>
       <li>islam and terrorism</li>
       <li>why do young men join isis</li>
@@ -309,10 +257,13 @@ rather than papered over; the reading list above is the place to go.</p>
       <li>is islam a religion of peace</li>
       <li>is there evidence muslims are more violent</li>
       <li>counterterrorism vs counterextremism</li>
+      <li>was muhammad a terrorist</li>
       <li>does the quran allow killing non combatants</li>
+      <li>does eye for an eye justify terrorism</li>
       <li>why do terrorists misread the quran</li>
       <li>what verses do terrorists actually quote</li>
       <li>ibn kathir on not retaliating in kind</li>
+      <li>why did bin Laden say he was not against freedom</li>
       <li>does the fbi still believe in a linear pipeline from belief to violence</li>
       <li>is the 2006 fbi study the conversion to jihad pathway still used</li>
       <li>why do european muslims say the west wants to destroy islam</li>
@@ -337,8 +288,11 @@ rather than papered over; the reading list above is the place to go.</p>
       <li>are muslim societies more or less violent than western ones</li>
       <li>which ideology fuels modern terrorism</li>
       <li>is fundamentalism the cause of terrorism</li>
+      <li>how do bin Laden's 2001 justifications work</li>
+      <li>where does modern jihadist violence come from</li>
       <li>did he hate western democracy</li>
       <li>do terrorists follow a 7th century command</li>
+      <li>do liberal philosophers justify targeting civilians</li>
       <li>who justifies terrorism part 2</li>
       <li>is the western definition of terrorism neutral</li>
       <li>is the charge that islam is all violence fair</li>
@@ -459,35 +413,45 @@ of these pages.</p>
 <table class="data-table">
 <thead><tr><th>Item</th><th>Kind</th><th>Quoted passages</th><th>Also filed under</th></tr></thead>
 <tbody>
-| [who-justifies-terrorism-part-1-2]({{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/) | work | 9 | /topics/terrorism-extremism/ |
-| [islam-terrorism]({{ site.baseurl }}/articles/islam-terrorism/) | work | 13 | /topics/liberalism-orientalism/, /topics/terrorism-extremism/ |
-| [understanding-jihad-with-robert-spencer-preface]({{ site.baseurl }}/transcripts/8vxbN2jZL6M/) | transcript | 3 | /topics/terrorism-extremism/ |
-| [understanding-jihad-with-robert-spencer-1]({{ site.baseurl }}/transcripts/lCqZB8gP4sk/) | transcript | 4 | /topics/terrorism-extremism/ |
-| [understanding-jihad-with-robert-spencer-2]({{ site.baseurl }}/transcripts/aTJMDFJdgdg/) | transcript | 4 | /topics/terrorism-extremism/ |
-| [islam-and-terrorism-iium-talk]({{ site.baseurl }}/transcripts/4VcPzhkP9bE/) | transcript | 3 | /topics/terrorism-extremism/ |
-| [cleaning-house-roots-of-terrorism]({{ site.baseurl }}/transcripts/unmn_tY5r_c/) | transcript | 2 | /topics/terrorism-extremism/ |
-| [islam-and-terrorism]({{ site.baseurl }}/articles/islam-and-terrorism/) | work | 0 | /topics/terrorism-extremism/ |
-| [islam-and-terrorism-iium-talk-paper]({{ site.baseurl }}/papers/islam-and-terrorism/) | paper | 0 | /topics/terrorism-extremism/ |
-| [extremism-in-muslim-thought]({{ site.baseurl }}/articles/extremism-in-muslim-thought/) | work | 0 | /topics/terrorism-extremism/ |
-| [extremism-in-muslim-thought-2017-12-22]({{ site.baseurl }}/articles/extremism-in-muslim-thought-2017-12-22/) | work | 0 | /topics/terrorism-extremism/ |
-| [extremism-in-muslim-thought-interview]({{ site.baseurl }}/papers/extremism-in-muslim-thought/) | paper | 0 | /topics/terrorism-extremism/ |
-| [boko-haram-and-the-culture-of-coercive-disapproval]({{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/) | work | 5 | /topics/terrorism-extremism/ |
-| [charlie-hebdo]({{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/) | work | 4 | /topics/terrorism-extremism/ |
-| [prophets-vs-pedophiles-part-1]({{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/) | work | 2 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [prophets-vs-pedophiles-part-2]({{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/) | work | 2 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [prophets-vs-pedophiles-part-3]({{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/) | work | 2 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [ijihad-pilot-and-first-2-episodes]({{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/) | work | 6 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [ijihad-episode-1-mdi]({{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/) | work | 1 | /topics/terrorism-extremism/ |
-| [an-antidote-for-extremism]({{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/) | work | 1 | /topics/terrorism-extremism/ |
-| [whataboutery]({{ site.baseurl }}/articles/whataboutery/) | work | 3 | /topics/terrorism-extremism/ |
-| [a-quick-response]({{ site.baseurl }}/articles/a-quick-response/) | work | 2 | /topics/terrorism-extremism/ |
-| [my-views-on-the-punishment-for-apostasy]({{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/) | work | 2 | /topics/apostasy-hell/, /topics/terrorism-extremism/ |
+<tr><td><a href="{{ site.baseurl }}/articles/who-justifies-terrorism-part-1-2/">who-justifies-terrorism-part-1-2</a></td><td>work &middot; <strong>not by the subject</strong></td><td>9</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/islam-terrorism/">islam-terrorism</a></td><td>work</td><td>13</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">understanding-jihad-with-robert-spencer-preface</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">understanding-jihad-with-robert-spencer-1</a></td><td>transcript</td><td>4</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/aTJMDFJdgdg/">understanding-jihad-with-robert-spencer-2</a></td><td>transcript</td><td>4</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/4VcPzhkP9bE/">islam-and-terrorism-iium-talk</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/unmn_tY5r_c/">cleaning-house-roots-of-terrorism</a></td><td>transcript</td><td>2</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/islam-and-terrorism/">islam-and-terrorism</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/papers/islam-and-terrorism/">islam-and-terrorism-iium-talk-paper</a></td><td>paper</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought/">extremism-in-muslim-thought</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought-2017-12-22/">extremism-in-muslim-thought-2017-12-22</a></td><td>work</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/papers/extremism-in-muslim-thought/">extremism-in-muslim-thought-interview</a></td><td>paper</td><td>0</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/boko-haram-and-the-culture-of-coercive-disapproval/">boko-haram-and-the-culture-of-coercive-disapproval</a></td><td>work</td><td>5</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/current issues/philosophy/politics/charlie-hebdo/">charlie-hebdo</a></td><td>work</td><td>4</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">ijihad-pilot-and-first-2-episodes</a></td><td>work</td><td>6</td><td><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/mdi/when-facts-become-fiction-ijihad-ep-1/">ijihad-episode-1-mdi</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">an-antidote-for-extremism</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/whataboutery/">whataboutery</a></td><td>work</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/a-quick-response/">a-quick-response</a></td><td>work</td><td>2</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 </tbody>
 </table>
 
-<p class="meta">23 items &middot; 30 of 151 mapped questions carry a quoted passage.</p>
+<p class="meta">23 items &middot; 23 of 151 mapped questions carry a quoted passage
+&middot; 27 of 68 verified passages shown
+&middot; 1 bylined to other people and not quoted here.</p>
 
-<h2>What the archive should be careful about</h2>
-<div class="prose-note">
-<p>SCOPE AND THINNESS. This cluster is broad in query space but uneven in text. The genuinely analytic, full-text core is FOUR items: 'Who Justifies Terrorism? [Part 1]' (2,279 words, the only prose essay devoted to the attribution question), the 72-minute IIUM talk 'Islam Terrorism' / '08 - Islam and Terrorism' (machine transcript, 9,502 words, the single richest source on origins), the three-part 'Understanding Jihad with Robert Spencer' web series (2016, transcripts, a page-by-page deconstruction of *The History of Jihad: From Muhammad to ISIS*), and iJihad Ep. 1 'Gryffix' (machine transcript, 9,400 words of source-criticism). Everything else is short (600-2,400 words) or is a stub with no local text. The seed titles overstate the cluster: three of them hold no text at all (see DUPLICATION below). A cluster page built from this material will be substantial but must not pretend to nine equal works. </p><p>DUPLICATION, RECORDED HONESTLY. (1) 'Islam Terrorism' (work, 2016-05-08) and 'Islam and Terrorism' (paper, 2016-04-06; work, 2017-12-22) are NOT the same item and NOT near-duplicates of each other in text: all three hold ZERO local prose. The paper (_papers/islam-and-terrorism.md) and the 2017 work (_articles/islam-and-terrorism.md) are link-out records only. The 2016 work _articles/islam-terrorism.md is a stub page whose substance is the EMBEDDED machine transcript of the same 6 April 2016 IIUM talk the paper record names. The archive publishes that same capture twice, in two renderings: embedded in the work page, and as the standalone transcript document _transcripts/transcript-4VcPzhkP9bE.md. Both URLs are listed as material because both are real, reachable archive items, but they are ONE argument and must never be counted or summarised twice. (2) 'Extremism in Muslim Thought' exists as a work (2016-08-05), a paper record (Academia.edu, type: Interview) and a 'repost' work (2017-12-22). All three are link-out/stub records with no local text, so the archive cannot prove the repost is a re-publication of the same interview by text comparison. The Wayback URL recorded for the repost resolves to the SAME underlying path as the 2016 record (asadullahali.com/extremism-in-muslim-thought/), which is what makes 'repost' the right reading, but that is URL evidence, not a text comparison. Treat the pair as one work with a repost until a text comparison is possible. (3) 'Who Justifies Terrorism? [Part 1]' HAS NO PART 2. The work text ends by promising a Part 2 on Western liberal justifications; _data/canonical_works.json records that no Part 2 permalink exists in any capture. Every in-text promise of a part two is therefore a dead end in this archive and the cluster page must say so rather than link to a Part 2 that does not exist. (4) The three 'Prophets vs Pedophiles' parts are three distinct works by the same author, each separately recovered; each also has a second publication on muslimdebate.org under the title 'religion-vs-paedophilia', preserved at /articles/mdi/religion-vs-paedophilia-part-1/ (and -2, -3) and proved to be the same essay by 5-gram comparison. Not double counted here. (5) 'Boko Haram and the Culture of Coercive Disapproval' has a second publication at /articles/mdi/boko-haram-and-the-culture-of-coercive-disapproval/ (0.9810 5-gram containment). 'Whataboutery' likewise at /articles/mdi/whataboutery-the-fail-safe-of-islamophobes/ (0.9461). Neither duplicate is listed as material; both belong on the cluster page as alternate links. </p><p>CORRECTION TO THE BRIEF. The brief says the Boko Haram work 'responds to a named contemporary writer'. It does not. The recovered text names no individual at all; its target is a category, 'islamophobes and liberalist fascists'. The archive must not attribute it to a named writer. (The genuinely named targets live in the neighbouring material: Saajid Lipham in 'My Views on the Punishment for Apostasy'; CaptainDisguise and Klingschor in 'A Quick Response'; Maryam Namazie in 'Whataboutery'; Dutch YouTuber 'Gryffix' and Kraut NT in iJihad Ep. 1; Robert Spencer in the Understanding Jihad series; Osama bin Laden is quoted at length, never engaged as a live opponent.) </p><p>POLEMICAL VERSUS ANALYTIC - A CLUSTER PAGE MUST LABEL THESE. ANALYTIC, with sources and named studies: 'Who Justifies Terrorism? [Part 1]'; the IIUM talk; iJihad Ep. 1; the Understanding Jihad series. POLEMICAL AND RHETORICAL, with little or no citation: 'Charlie Hebdo, Coexistence and Crocodile Tears' (its argument is carried by an appeal to double standards and a long Chomsky quotation); 'A Quick Response' (largely ad hominem, and it names living private individuals); 'Boko Haram and the Culture of Coercive Disapproval' (assertive, unsourced); the transcript of '51 - Cleaning House' at the point quoted here, which is a livestream and speaks loosely. A reader who lands on this cluster and is frightened deserves to be told which is which before they are asked to accept any of it. </p><p>WHAT A READER COULD MISTAKE FOR THE ARCHIVE'S OWN VIEW. The archive attributes; it does not endorse. The strongest items here are one scholar's argument about motive, causation and terminology, and a good deal of it is contestable. Specifically: the claim that Western foreign policy and secular liberalism are the primary causes of jihadist violence is a thesis, not a finding, and the archive has no counter-argument to set against it. The claim that the word 'terror' in the hadith cannot mean modern terrorism is a linguistic argument; it is not a claim that no one has ever committed an act that a court would call terrorism, and it should not be presented as one. The frequent comparison of casualty figures in Muslim-majority countries to Western cities, and the repeated use of 'the West' as a single agent, are the author's rhetorical construction and will read as a factual demographic claim if quoted without that framing. The claim that worshippers of a religion are 'more likely to kill' in proportion to their number is offered in support of his thesis and should be carried with an explicit note that the archive does not endorse the inference. The trial-recognition passages in the IIUM talk are an analogy he uses on stage, not evidence. Any page that reproduces these must keep the attribution on the same line as the claim. </p><p>HARD GAPS A MAINTAINER MUST KNOW. (a) There is no local text for the two works the cluster is named after, 'Islam and Terrorism' and 'Extremism in Muslim Thought'; the archive can only link out to Wayback and to the publisher. Do not build a page whose headline rests on a text nobody here can read. (b) The Understanding Jihad series is Preface + episodes 1 and 2 only; episode 2 ends by promising that episode 3 will cover the battles, and episode 3 does not exist in the archive's catalogue of 68 recordings. (c) 'Understanding Jihad with Robert Spencer' is the only sustained treatment of jihad's actual meaning; there is no full-text essay by him on jihad as such. (d) There is no Part 2 to 'Who Justifies Terrorism'. (e) The three 'Prophets vs Pedophiles' parts answer a sexual-conduct charge against the Prophet, not a charge of terrorism; they belong here as attribution-of-violence material, and the same material will legitimately appear in the apostasy and gender clusters. Cross-cluster duplication of the same quote is expected and fine; double counting the same WORK in two totals is not. (f) 'My Views on the Punishment for Apostasy' is included here on one narrow ground - it is the clearest statement in the corpus on the death penalty for apostasy and on the conditions he says must be met before it applies - but its primary home is the apostasy cluster and the cluster page should say so rather than imply the archive has an extensive terrorism-and-apostasy corpus. (g) No transcript here is a quotable authority: every transcript carries the archive's own machine-transcription disclaimer, and the cluster page must reproduce that disclaimer next to any transcript quote. </p><p>SCOPE NOTE FOR THE CROSS-LINK SCRIPT. The liberalism material his argument leans on ('Still Colonized', 'Decoding Contemporary Liberalism', 'The Inhumanity of Human Rights') is catalogued to the liberalism-orientalism cluster and is deliberately NOT listed here, so the two clusters do not double count the same works. Where this cluster quotes his secular-liberalism argument, the quote is from a terrorism-cluster text, not from those essays. </p><p>NO CONTACT. Firm no-contact policy, as stated in the repository README: the archive exists so the work can be read, cited and taught from, and nothing further is wanted. Nothing in this cluster proposes contacting the author or any person named in it.</p>
-</div>
+<p class="note">This cluster also holds <strong>1</strong> item(s) bylined to
+other people &mdash; a guest contributor, or the other man also called
+Al-Andalusi. Those are listed in the table for completeness and are
+<strong>not quoted on this page</strong>: a quotation in this archive&rsquo;s format
+reads as the subject&rsquo;s words, and for a byline one word away from his own that
+is the most likely misattribution on the site. Follow the link to read them
+with their own byline intact.</p>
+
+<h2>What to know before you rely on this page</h2>
+<ul class="caution-list">
+<li>"The West" in this cluster is a rhetorical construction, not a demographic fact, and casualty comparisons read as statistics if quoted without that.</li><li>The analytic core is four items. The rest is shorter and more polemical, and some of it is unsourced. The page does not separate them for you beyond the kind column below.</li><li>His thesis is that Western foreign policy and secular liberalism are primary causes of modern jihadist violence. That is a position with no counter-argument held in this archive, and it should be read as his argument rather than as a finding.</li><li>**Who Justifies Terrorism?** is bylined to Abdullah al-Andalusi, who is a different person from the subject of this archive. It is listed below and not quoted here. A reader wanting it should follow the link, where its own byline is intact.</li>
+</ul>

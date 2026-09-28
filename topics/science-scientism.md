@@ -47,6 +47,9 @@ said at the foot of the page.</p>
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/">a-muslims-guide-to-science-scientism</a> (work), cited at <span class="cite-ref">_articles/a-muslims-guide-to-science-scientism.md:121</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,041-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">are scientific miracles in the quran real</h3>
 
@@ -60,12 +63,18 @@ said at the foot of the page.</p>
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:475</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 12,404-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">what does he think science actually is</h3>
 
 > [11:20] However, the conception of science that I did try to give off is one that I consider to be the most accurate and the most coherent in the contemporary period is that science is really about constructing theories in the best way possible to interpret the information around us or what we experience.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:155</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 7,095-word text. The argument around it is not on this page.</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 
 <h3 class="question">is logical positivism still used in science</h3>
@@ -91,12 +100,18 @@ said at the foot of the page.</p>
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:441</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 7,095-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">what is the classical narrative in the history of islamic science</h3>
 
 > [25:40] And the classical narrative is really is really a projection of the Western history with their own history with religion and the church specifically, which by the way is also kind of exaggerated as well, but that's for a different discussion.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:369</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 7,095-word text. The argument around it is not on this page.</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > The popular understanding of scientific decline in the Muslim world, known as the ‘classical narrative’ promulgated by orientalists, suggests that only external influences – mainly the synthesis of Persian and Greek elements of civilisation into the Arab imperialist project – were the reasons for the sharp rise of the sciences within Islamic civilisation.
 >
@@ -119,6 +134,9 @@ said at the foot of the page.</p>
 > [28:31] And then after they, you know, fell out and after they were defeated by the orthodox scholars, then everything just went downhill from there. And of course they blame Al-Ghazali for that. But that doesn't make any sense either because Al-Ghazali came, you know, much longer after, after they were disposed of. So yeah, it's sort of like the grasping for straws.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:395</span> &mdash; <span class="cite-size">excerpt of about 63 words from a 7,095-word text. The argument around it is not on this page.</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > Despite this being a clear non-sequitur,[i] especially in light of contemporary science, it is an objection that holds no merit because scientific productivity continued to thrive long well after the publication of al-Ghazālī’s treatise, up until the 16th century.
 >
@@ -160,6 +178,9 @@ Et donc, on est dans une posture passive.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:487</span> &mdash; <span class="cite-size">excerpt of about 137 words from a 7,095-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 > with Muslims adopting a perspective of science as the ultimate universal standard of truth and knowledge – known as positivism –motivated by their utmost degradation at the hands of Western forces for nearly two centuries.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article/">the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article</a> (work), cited at <span class="cite-ref">_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:36</span> &mdash; <span class="cite-size">excerpt of about 35 words from a 1,665-word text. The argument around it is not on this page.</span>
@@ -175,6 +196,9 @@ Et donc, on est dans une posture passive.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:1255</span> &mdash; <span class="cite-size">excerpt of about 39 words from a 12,404-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">how do you define science</h3>
 
@@ -185,6 +209,9 @@ Et donc, on est dans une posture passive.
 [02:18] of the physical and natural world, through observation and experiment.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/">a-muslims-guide-to-science-scientism</a> (work), cited at <span class="cite-ref">_articles/a-muslims-guide-to-science-scientism.md:101</span> &mdash; <span class="cite-size">excerpt of about 33 words from a 4,041-word text. The argument around it is not on this page.</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 
 <h3 class="question">did the french invent scientism</h3>
@@ -244,6 +271,9 @@ And just because it works, doesn\'t necessitate that you\'ve proven that stateme
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:371</span> &mdash; <span class="cite-size">excerpt of about 36 words from a 7,095-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">what has to change for muslim science to come back</h3>
 
@@ -258,6 +288,9 @@ And just because it works, doesn\'t necessitate that you\'ve proven that stateme
 [38:29] And if we want Islamic science, for instance, the Islamic perception of science, the productivity of science within an Islamic framework to revive, you know, we have to stop borrowing from the dominant civilization.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a> (work), cited at <span class="cite-ref">_articles/islam-science-and-history.md:505</span> &mdash; <span class="cite-size">excerpt of about 136 words from a 7,095-word text. The argument around it is not on this page.</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 
 <h3 class="question">how did the ottoman tanzimat reforms import french positivism</h3>
@@ -313,6 +346,9 @@ That\'s right. All the reforms, the Tanzimat reforms were based on French positi
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:425</span> &mdash; <span class="cite-size">excerpt of about 116 words from a 12,404-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">when did the idea of scientific miracles in the quran become popular</h3>
 
@@ -332,6 +368,9 @@ That\'s right. All the reforms, the Tanzimat reforms were based on French positi
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:449</span> &mdash; <span class="cite-size">excerpt of about 72 words from a 12,404-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">did classical scholars ever find science in the quran</h3>
 
@@ -344,6 +383,9 @@ That\'s right. All the reforms, the Tanzimat reforms were based on French positi
 [15:40] about any of these things in such claims.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:541</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 12,404-word text. The argument around it is not on this page.</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 
 <h3 class="question">why should i stop using science to prove the quran</h3>
@@ -373,6 +415,9 @@ The early Muslims did not need science to validate the Qur’an and you are no m
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:2001</span> &mdash; <span class="cite-size">excerpt of about 50 words from a 12,404-word text. The argument around it is not on this page.</span>
 
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
+
 
 <h3 class="question">does the scientific miracles argument flatten the quran</h3>
 
@@ -394,6 +439,9 @@ The early Muslims did not need science to validate the Qur’an and you are no m
 [44:51] the earth's plates move in this direction like they would care.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a> (work), cited at <span class="cite-ref">_articles/the-quran-science-a-forced-marriage.md:1495</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 12,404-word text. The argument around it is not on this page.</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 
 <h3 class="question">does the quran contain scientific errors that need answering</h3>
@@ -538,25 +586,35 @@ of these pages.</p>
 <table class="data-table">
 <thead><tr><th>Item</th><th>Kind</th><th>Quoted passages</th><th>Also filed under</th></tr></thead>
 <tbody>
-| [islam-science-and-history]({{ site.baseurl }}/articles/islam-science-and-history/) | work | 18 | /topics/science-scientism/ |
-| [the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article]({{ site.baseurl }}/articles/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article/) | work | 17 | /topics/science-scientism/ |
-| [a-muslims-guide-to-science-scientism]({{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/) | work | 7 | /topics/science-scientism/ |
-| [a-muslims-guide-to-science-and-scientism-part-2]({{ site.baseurl }}/transcripts/vh-6sisOncs/) | transcript | 7 | /topics/aqeedah-basics/, /topics/science-scientism/ |
-| [a-muslims-guide-to-science-and-scientism-part-3]({{ site.baseurl }}/transcripts/WED5mPmO_yU/) | transcript | 4 | /topics/atheism-doubt/, /topics/science-scientism/ |
-| [a-muslims-guide-to-science-and-scientism-part-4]({{ site.baseurl }}/transcripts/tIFhyQtxQXg/) | transcript | 14 | /topics/science-scientism/ |
-| [a-muslims-guide-to-science-and-scientism-part-5]({{ site.baseurl }}/transcripts/PoNiuiP3W4Y/) | transcript | 5 | /topics/aqeedah-basics/, /topics/science-scientism/ |
-| [the-quran-science-a-forced-marriage]({{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/) | work | 9 | /topics/quran-hermeneutics/, /topics/science-scientism/ |
-| [backbone-ribs]({{ site.baseurl }}/articles/backbone-ribs/) | work | 9 | /topics/quran-hermeneutics/, /topics/science-scientism/ |
-| [the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables]({{ site.baseurl }}/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/) | work | 2 | /topics/liberalism-orientalism/, /topics/science-scientism/ |
-| [extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect]({{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/) | work | 3 | /topics/aqeedah-basics/, /topics/atheism-doubt/, /topics/science-scientism/ |
-| [adam-is-no-myth]({{ site.baseurl }}/articles/adam-is-no-myth/) | work | 3 | /topics/aqeedah-basics/, /topics/science-scientism/ |
-| [la-structure-de-la-productivite-scientifique-dans-la-civilisation-musulmane]({{ site.baseurl }}/transcripts/DA9JGrHKHZA/) | transcript | 2 | /topics/science-scientism/ |
+<tr><td><a href="{{ site.baseurl }}/articles/islam-science-and-history/">islam-science-and-history</a></td><td>work</td><td>18</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article/">the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article</a></td><td>work</td><td>17</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/a-muslims-guide-to-science-scientism/">a-muslims-guide-to-science-scientism</a></td><td>work</td><td>7</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">a-muslims-guide-to-science-and-scientism-part-2</a></td><td>transcript</td><td>7</td><td><a href="{{ site.baseurl }}/topics/aqeedah-basics/">Foundational Questions of Belief</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">a-muslims-guide-to-science-and-scientism-part-3</a></td><td>transcript</td><td>4</td><td><a href="{{ site.baseurl }}/topics/atheism-doubt/">Atheism, Doubt and Evidence</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">a-muslims-guide-to-science-and-scientism-part-4</a></td><td>transcript</td><td>14</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a></td><td>transcript</td><td>5</td><td><a href="{{ site.baseurl }}/topics/aqeedah-basics/">Foundational Questions of Belief</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">the-quran-science-a-forced-marriage</a></td><td>work</td><td>9</td><td><a href="{{ site.baseurl }}/topics/quran-hermeneutics/">Qur'an Interpretation and Textual Questions</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/backbone-ribs/">backbone-ribs</a></td><td>work</td><td>9</td><td><a href="{{ site.baseurl }}/topics/quran-hermeneutics/">Qur'an Interpretation and Textual Questions</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a></td><td>work</td><td>3</td><td><a href="{{ site.baseurl }}/topics/aqeedah-basics/">Foundational Questions of Belief</a> <a href="{{ site.baseurl }}/topics/atheism-doubt/">Atheism, Doubt and Evidence</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/adam-is-no-myth/">adam-is-no-myth</a></td><td>work &middot; <strong>not by the subject</strong></td><td>3</td><td><a href="{{ site.baseurl }}/topics/aqeedah-basics/">Foundational Questions of Belief</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">la-structure-de-la-productivite-scientifique-dans-la-civilisation-musulmane</a></td><td>transcript</td><td>2</td><td>&mdash;</td></tr>
 </tbody>
 </table>
 
-<p class="meta">13 items &middot; 34 of 95 mapped questions carry a quoted passage.</p>
+<p class="meta">13 items &middot; 34 of 95 mapped questions carry a quoted passage
+&middot; 39 of 100 verified passages shown
+&middot; 1 bylined to other people and not quoted here.</p>
 
-<h2>What the archive should be careful about</h2>
-<div class="prose-note">
-<p>THE SPINE. His argument is not 'Islam is pro-science and science proves the Qur'an'. It is a three-part reconstruction. (1) Scientism is a distinct, modern, European doctrine - that the methods and categories of natural science are the only proper elements of any inquiry - and it is in fact 'decidedly unscientific' in Hayek's own sense; he credits Hayek with crystallising the term and quotes Hayek explicitly disavowing any attack on science properly so used. Scientism has three parts in his account: realism, positivism and progressionism. Science as he actually defends it, following Kuhn and the pragmatists (Quine, Popper), is anti-realist, non-progressive and instrumental - theories are models that make the data coherent and are judged on usefulness and coherence, not on truth. (2) The 'classical narrative' (the phrase was coined by its critics, not by orientalists) holds that Muslim science was foreign import plus a conservative religious reaction, with al-Ghazali's Tahafut al-Falasifa as the culprit. He rejects it: scientific productivity kept rising for centuries after al-Ghazali (Ibn al-Nafis on the circulation of the blood, al-Farisi on the rainbow, the critique of Ptolemy); Muslims had flourished precisely because they modified and rejected Aristotle rather than slavishly following him; and the classical narrative is the European Church-and-Galileo story read backwards onto Islamic history. (3) He relabels the 16th-century turn as the 'Age of Dependency' rather than decline, because science was still valued but sourced externally. The cause he advances is precisely the one orientalists deny: a drift into positivism, in which science became 'the measure of all things' and then a standard for reading revelation, so that the Qur'an itself became hostage to whatever science currently said. Revival, in his telling, means stopping borrowing from the dominant civilisation and re-anchoring to one's own values. This is why he attacks the popular 'scientific miracles' defence: it is not a friendly proof of the Qur'an but an instance of the disease he is diagnosing.</p><p>SEED TITLES THAT ARE THIN OR ABSENT - do not pad these. 'From Science to Scientism' (_papers/from-science-to-scientism.md) is a link-out stub with no text; the archive's own front matter says the exact slug was lost and points to the successor paper, The Structure of Scientific Productivity in Islamic Civilization. 'The Qur'an and Science: A Forced Marriage' exists twice: the _papers page is a link-out stub, and the _articles page is a Wayback stub whose only real content is the 67-minute MSA OSU halaqa transcript. 'A Muslim's Guide to Science: Scientism' as a written work is a ~390-word Wayback stub; its substance is the five-part Al-Balagh Academy lecture series, of which only Part 1 is embedded on an article page - Parts 2-5 exist as separate transcript pages and are included here individually. 'The Structure of Scientific Productivity...' as a written work is a ~250-word post carrying only the abstract; the full paper is link-out only. 'Islam, Science and History' as a written work is a ~410-word post that is only an embed notice for the interview - but the interview itself is fully preserved on that same article page and is the single richest source in this cluster, so it is cited from there. 'The Rise and Decline of Scientific Productivity in the Muslim World' is the one case where substantive prose survives: the 2015 blog post reproduces the paper's abstract and pages 239-242 with footnotes. Its _papers page states that the 18pp PDF is 'held in this repository', but no PDF file is present in the working tree, so nothing here is quoted from the PDF itself.</p><p>NO SUBSTANTIVE TEXT: 'International Conference on Developing Synergies Between Islam and Science and Technology' is a 4-page conference notice co-authored with Daud Batchelor; _papers/international-conference-on-developing-synergies-between-islam-and-science-and-technology.md is a link-out stub with no abstract and no text. 'Islamic Intuitionism: The Case Against Atheistic Evidentialism' (his MA thesis) is also link-out only, and the archive has deliberately WITHHELD the held copy because it reproduces personal identifiers. Neither should be cited as answering any query.</p><p>CAVEATS A MAINTAINER MUST CARRY. (a) Almost everything substantive in this cluster is a Whisper machine transcript; the archive's own disclaimer forbids using these in polemics as authoritative. Several quotes contain obvious transcription damage (for example 'Wissenstein' for Wittgenstein, 'totemic' for the geocentric system, 'coron' for Qur'an, 'scientism' for scientism in the Hayek citation, and a stray placeholder token in one French quote). The quotes here are reproduced verbatim including that damage - they prove that the archive holds the passage, not that the wording is his. Prefer the 2015 blog post and the Backbone Ribs paper wherever the same point exists in edited prose, and treat the transcripts as pointers to a video a reader can check rather than as citable text. (b) adam-is-no-myth is a REPUBLICATION of Dr David Jalajel's rebuttal, with only a short framing note by this author; the body is not his argument and must never be presented as his. (c) The French presentation (transcript-DA9JGrHKHZA) is a third party's walkthrough of his paper, in French, machine-transcribed and badly garbled; it is quoted only for the productivity/dependency terminology and the pragmatic-translation point, and should be weighted accordingly. (d) One long_tail query is left in French on purpose (pourquoi lesCBB traduire des textes scientifiques) so the French-language audience has a route into that recording; the CBB token is a transcription artefact, not a word. (e) DO NOT use the Q&amp;A passages in Part 5 or the acknowledgements of the Yaqeen podcast as evidence: they contain his own ill-health remarks and his social-media contact details, which this cluster deliberately excludes under the archive's no-contact policy.</p><p>OVERLAP WITH SIBLING CLUSTERS. backbone-ribs and the-quran-science-a-forced-marriage are primarily Qur'an-exegesis works; they are here only for their sustained attack on the 'scientific miracles' methodology, which is a claim about scientism, not tafsir. extraordinary-claims and the Understanding Atheism lecture series (session 2 in particular, which re-teaches Hayek, Popper and Ayer on the same lines) belong primarily to the atheism/epistemology cluster. The 'Information Literacy' lecture (vJRfL4Kal20) discusses the golden age and the destruction of libraries but is not about scientism; its 'scientism' grep hits are false positives for 'information scientist'.</p><p>CITATION ROUTES. The two ICR/Yaqeen papers are the scholarly record and are the obvious link-out targets for anyone who wants the argued version; George Saliba's Islamic Science and the Making of the European Renaissance is the historical source he leans on throughout and is named repeatedly here as the readers' next step. Thomas Kuhn's The Structure of Scientific Revolutions is recommended by name in the Al-Balagh course as the required reading.</p>
-</div>
+<p class="note">This cluster also holds <strong>1</strong> item(s) bylined to
+other people &mdash; a guest contributor, or the other man also called
+Al-Andalusi. Those are listed in the table for completeness and are
+<strong>not quoted on this page</strong>: a quotation in this archive&rsquo;s format
+reads as the subject&rsquo;s words, and for a byline one word away from his own that
+is the most likely misattribution on the site. Follow the link to read them
+with their own byline intact.</p>
+
+<h2>What to know before you rely on this page</h2>
+<ul class="caution-list">
+<li>Scientism, as he uses the word, is a specific modern doctrine - that natural-science method is the only proper way to ask any question - and he argues it is a choice rather than a method. This is not a claim that science is unreliable.</li><li>The spine of the cluster is a three-part reconstruction: that scientism is a late European doctrine, that the standard story of science declining in the Islamic world after al-Ghazali is a reading of Europe backwards onto Islamic history, and that he prefers to call the 16th-century turn a dependency rather than a decline.</li><li>He also rejects the popular defence of the Qur'an on "scientific miracles" grounds, treating that defence as an instance of the error he is diagnosing rather than a solution to it.</li><li>Much of this material is machine transcripts and reads as damaged. Where a written work covers the same ground, prefer it.</li>
+</ul>

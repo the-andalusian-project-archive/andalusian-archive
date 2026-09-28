@@ -200,6 +200,43 @@ def match_clusters(vocab: list[dict], relations: dict) -> dict[str, list[dict]]:
     return clusters
 
 
+_TIMESTAMP = re.compile(r"\[\d{1,2}:\d{2}\]")
+
+
+def looks_transcribed(path: str) -> bool:
+    """Does this source hold machine-captioned speech, whatever page type it is?
+
+    The disclaimer used to be gated on `kind == "transcript"`, which is a PAGE
+    type and not a CONTENT type. Four items quote embedded Whisper caption text
+    while being typed `work` or `article` - 18 passages site-wide, 16 of them on
+    the science cluster - and were published as clean quotations with no
+    disclaimer, which made llms.txt's claim that transcripts are marked inline
+    false. Two or more timestamp markers in the cited region is the signal.
+    """
+    target = ROOT / path
+    if not target.exists():
+        return False
+    try:
+        head = target.read_text(encoding="utf-8", errors="replace")[:4000]
+    except OSError:
+        return False
+    return len(_TIMESTAMP.findall(head)) >= 2
+
+
+def _labels() -> dict[str, str]:
+    """Cluster id -> reader label, for the "also filed under" column."""
+    out: dict[str, str] = {}
+    for spec_path in sorted((ROOT / "_data" / "topics").glob("*.json")):
+        try:
+            s = json.loads(spec_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        out[s.get("id", spec_path.stem)] = s.get("label", spec_path.stem)
+    return out
+
+
+LABEL_BY_ID = _labels()
+
 KIND_NAMES = {
     "work": "Written works",
     "paper": "Papers",
@@ -245,6 +282,66 @@ def render_shelf(shelf_out: list[dict]) -> str:
 of these pages.</p>
 {''.join(sections)}
 """
+
+
+SUBJECT = "Asadullah Ali Al-Andalusi"
+# The other man. One word away from the subject, which is the whole reason the
+# entity page exists, and the reason a quote from him must never be presented in
+# this archive's quotation format as though the subject had said it.
+CONFUSABLE = "abdullah al-andalusi"
+THIRD_PARTY_MARKERS = (
+    "this is a response by",
+    "guest contributor",
+)
+
+
+def byline_of(path: str) -> str:
+    """The byline a source post records, or "" if none is found.
+
+    Read from the post body rather than the `author:` front-matter key, because
+    three of these posts carry `author: "Asadullah Ali Al-Andalusi"` in front
+    matter while the body byline says someone else entirely. The archive's own
+    written rule is the opposite: a row counts as his on the strength of the
+    BYLINE the publishing site records, never on the strength of a name in a
+    title - and, as those three files show, never on the strength of a front
+    matter key either.
+    """
+    target = ROOT / path
+    if not target.exists():
+        return ""
+    try:
+        head = target.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return ""
+    # front matter is not evidence of authorship, so start looking after it
+    body = re.sub(r"^---\r?\n.*?\r?\n---\r?\n", "", head, count=1, flags=re.S)
+    for line in body.splitlines()[:40]:
+        s = line.strip()
+        low = s.lower()
+        if re.match(r"^(by|written by)\s+\S", s, re.I):
+            return s
+        for marker in THIRD_PARTY_MARKERS:
+            if marker in low:
+                return s
+    return ""
+
+
+def is_subject_authored(path: str) -> tuple[bool, str]:
+    """(may this item be quoted as the subject's words?, why not)"""
+    line = byline_of(path)
+    if not line:
+        return True, ""
+    low = line.lower()
+    if CONFUSABLE in low:
+        return False, f"Not by the subject - the post is bylined '{line}'"
+    if "as-sufi" in low or "as sufi" in low:
+        return False, f"Not by the subject - bylined '{line}'"
+    for marker in THIRD_PARTY_MARKERS:
+        if marker in low:
+            return False, f"Not the subject's own argument - the post says '{line}'"
+    if "asadullah" in low:
+        return True, ""
+    return True, ""
 
 
 def is_answer_quote(quote: str) -> bool:
@@ -328,6 +425,7 @@ def main() -> int:
         "clusters": [],
     }
     material_topics: dict[str, list[str]] = {}
+    label_by_id: dict[str, str] = {}
 
     for spec in specs:
         cid = spec["id"]
@@ -388,6 +486,12 @@ def main() -> int:
     )
     (ROOT / "_data" / "material_topics.json").write_text(
         json.dumps(material_topics, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    for spec in specs:
+        label_by_id[spec["id"]] = spec.get("label", spec["id"])
+    (ROOT / "_data" / "topic_labels.json").write_text(
+        json.dumps(label_by_id, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
     print("  material URL resolution: " + ", ".join(
@@ -455,7 +559,17 @@ nothing recovered here is unreachable.</p>
 
         by_query: dict[str, list[tuple[dict, dict]]] = {}
         demoted = 0
+        gated = 0
         for item in material:
+            # The byline gate runs FIRST and is not satisfied by length. Three
+            # posts in this corpus are bylined to other people while their front
+            # matter claims the subject, and the 200-character floor below would
+            # happily publish any of them at 250 characters.
+            subject_ok, why = is_subject_authored(item.get("path", ""))
+            item["not_by_subject"] = why or None
+            if not subject_ok:
+                gated += 1
+                continue
             for claim in item.get("key_claims") or []:
                 q = claim.get("supports", "").strip()
                 if not q:
@@ -467,6 +581,15 @@ nothing recovered here is unreachable.</p>
                     demoted += 1
                     continue
                 by_query.setdefault(q, []).append((item, claim))
+
+        # Two different numbers, because they are two different things. `n_claims`
+        # is every machine-verified quotation in the cluster; `shown_quotes` is
+        # how many actually appear on the page after the byline gate and the
+        # substance floor. Publishing only the first overstated the evidence on
+        # the index by 1.9x - a reader counting blockquotes got a different
+        # answer from the one the page stated.
+        shown_quotes = sum(len(v) for v in by_query.values())
+        n_claims = sum(len(it.get("key_claims") or []) for it in material)
 
         query_order: list[str] = []
         for bucket, _ in BUCKETS:
@@ -506,7 +629,7 @@ nothing recovered here is unreachable.</p>
 >
 > &mdash; <a href="{link}">{esc(item.get('slug', 'source'))}</a> ({esc(src)}), cited at {cite}{size}"""
                 )
-                if item.get("kind") == "transcript":
+                if item.get("kind") == "transcript" or looks_transcribed(item.get("path", "")):
                     rows_md.append(
                         ">\n> *This is a machine transcript. Accuracy is not "
                         "guaranteed and it should not be used in polemics or debate "
@@ -536,33 +659,63 @@ rather than papered over; the reading list above is the place to go.</p>
 </ul>
 """
 
+        # HTML rows, not markdown pipe rows. Kramdown does not parse markdown
+        # inside a raw HTML block, so the previous pipe rows shipped as literal
+        # text that the browser then foster-parented OUT of the tbody - leaving
+        # a header-only table and a run-on line of raw markdown above it, on all
+        # eight subject pages.
         item_lines = []
         for it in material:
-            also = ", ".join(
-                "/topics/" + t + "/" for t in material_topics.get(it.get("url", ""), [cid])
-            )
-            item_lines.append(
-                "| [{slug}]({base}{url}) | {kind} | {n} | {also} |".format(
-                    slug=esc(it.get("slug", "?")),
-                    base="{{ site.baseurl }}",
-                    url=it.get("url", ""),
-                    kind=esc(it.get("kind", "")),
-                    n=len(it.get("key_claims") or []),
-                    also=also,
+            others = [t for t in material_topics.get(it.get("url", ""), []) if t != cid]
+            also = (
+                " ".join(
+                    f'<a href="{{{{ site.baseurl }}}}/topics/{t}/">'
+                    f"{esc(LABEL_BY_ID.get(t, t))}</a>"
+                    for t in others
                 )
+                if others
+                else "&mdash;"
+            )
+            flag = it.get("not_by_subject")
+            if flag:
+                name_cell = f"{esc(it.get('kind',''))} &middot; <strong>not by the subject</strong>"
+            else:
+                name_cell = esc(it.get("kind", ""))
+            item_lines.append(
+                f'<tr><td><a href="{{{{ site.baseurl }}}}{it.get("url", "")}">'
+                f'{esc(it.get("slug", "?"))}</a></td>'
+                f"<td>{name_cell}</td>"
+                f"<td>{len(it.get('key_claims') or [])}</td>"
+                f"<td>{also}</td></tr>"
             )
         item_rows = "\n".join(item_lines)
+        gated_md = ""
+        if gated:
+            gated_md = f"""
+<p class="note">This cluster also holds <strong>{gated}</strong> item(s) bylined to
+other people &mdash; a guest contributor, or the other man also called
+Al-Andalusi. Those are listed in the table for completeness and are
+<strong>not quoted on this page</strong>: a quotation in this archive&rsquo;s format
+reads as the subject&rsquo;s words, and for a byline one word away from his own that
+is the most likely misattribution on the site. Follow the link to read them
+with their own byline intact.</p>
+"""
 
-        note_text = spec.get("notes", "").strip()
+        # Reader-facing cautions, not the agents' research notes. The notes were
+        # handoff memos to a maintainer - internal file paths, grep commands,
+        # ALL-CAPS headings - and in three clusters they published the reason a
+        # file was withheld together with the repository URL it was withheld
+        # from, which is a pointer to the withheld document printed in the
+        # document that withholds it. The full notes are kept at
+        # docs/topic-research-notes.md. What a reader needs is here.
+        rc = (load("_data/reader_cautions.json") or {}).get(cid) or {}
+        caveat_items = rc.get("caveats") or []
         notes_md = ""
-        if note_text:
-            paras = [p for p in note_text.split("\n\n") if p.strip()]
-            rendered_notes = "".join("<p>" + esc(p) + "</p>" for p in paras)
+        if caveat_items:
+            lis = "".join(f"<li>{esc(c)}</li>" for c in caveat_items)
             notes_md = (
-                "\n<h2>What the archive should be careful about</h2>\n"
-                '<div class="prose-note">\n'
-                + rendered_notes
-                + "\n</div>\n"
+                "\n<h2>What to know before you rely on this page</h2>\n"
+                f'<ul class="caution-list">\n{lis}\n</ul>\n'
             )
 
         page = f"""---
@@ -612,16 +765,20 @@ said at the foot of the page.</p>
 </tbody>
 </table>
 
-<p class="meta">{len(material)} items &middot; {rendered} of {len(query_order)} mapped questions carry a quoted passage.</p>
-{notes_md}"""
+<p class="meta">{len(material)} items &middot; {rendered} of {len(query_order)} mapped questions carry a quoted passage
+&middot; {shown_quotes} of {n_claims} verified passages shown
+&middot; {gated} bylined to other people and not quoted here.</p>
+{gated_md}{notes_md}"""
         (ROOT / "topics").mkdir(exist_ok=True)
         (ROOT / "topics" / f"{cid}.md").write_text(page, encoding="utf-8")
 
+        # (shown_quotes is computed just above, next to the byline gate)
         print(
             f"  {cid:24s} material={len(material):3d} "
             f"questions={len(query_order):4d} rendered={rendered:4d} "
             f"unrendered={len(unrendered):3d} shelf={len(shelf_out):3d} "
-            f"labels-demoted={demoted:2d}"
+            f"quotes={shown_quotes:3d}/{n_claims:3d} demoted={demoted:2d} "
+            f"bylined-elsewhere={gated}"
         )
 
     # ---- /topics/miscellany/ ---------------------------------------------

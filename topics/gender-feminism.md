@@ -44,13 +44,6 @@ said at the foot of the page.</p>
 > &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:31</span> &mdash; <span class="cite-size">excerpt of about 48 words from a 380-word text. The argument around it is not on this page.</span>
 
 
-<h3 class="question">islam and gender equality</h3>
-
-> Do not think for one minute Islam is in this country. It is not here by “shari’ah”, by “tariqa” or “haqiqa”2. If it were, you would not have idol worshippers in this country, you would not have women in the condition they are in, and you would not have usury in downtown Kuala Lumpur.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work), cited at <span class="cite-ref">_posts/2013-06-29-the-collaborative-couple.md:46</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 4,092-word text. The argument around it is not on this page.</span>
-
-
 <h3 class="question">how old was aisha when she married the prophet</h3>
 
 > In recent years, few criticisms of Islam have taken the spotlight as much as condemnations of the Prophet’s marriage to Aisha. Muslims are accused of following the example of a man who had inappropriate relations with a 9-year-old girl. As a result, this has led many to doubt their faith and the moral compass it provides. However, this criticism is based on fallacious reasoning.
@@ -176,10 +169,6 @@ said at the foot of the page.</p>
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:88</span> &mdash; <span class="cite-size">excerpt of about 43 words from a 5,521-word text. The argument around it is not on this page.</span>
 
-> I took the title of “The Collaborative Couple” being moved by where in Qur’an, Allah, telling of people entering into the “garden” says, “They will come singly and in couples”. I felt this contained a great insight for us, if we were to take benefit from it.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work), cited at <span class="cite-ref">_posts/2013-06-29-the-collaborative-couple.md:22</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,092-word text. The argument around it is not on this page.</span>
-
 
 <h3 class="question">feminist claim that islamists are trying to force shariah on everyone</h3>
 
@@ -204,13 +193,6 @@ said at the foot of the page.</p>
 > It is therefore remarkable that our detractors often quote al-Qur’an 65:4[11] – which implies that women could consummate their marriages prior to menstruation – as a means to suggest that Islam allows for sex with premmature girls.
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:69</span> &mdash; <span class="cite-size">excerpt of about 37 words from a 2,248-word text. The argument around it is not on this page.</span>
-
-
-<h3 class="question">burqa niqab mandatory in islam what the writer says</h3>
-
-> The superior collaborative woman will require the social freedom of the multiple wife family in order to carry out her higher spiritual task. The superior collaborative man will require the multiple wife family as a human and open non-Oedipal base for the next generation.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work), cited at <span class="cite-ref">_posts/2013-06-29-the-collaborative-couple.md:50</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 4,092-word text. The argument around it is not on this page.</span>
 
 
 <h3 class="question">how do i answer when someone says the prophet married a nine year old girl</h3>
@@ -288,6 +270,7 @@ abuse and to take advantage of children but what does change are the conditions 
 to be worth putting under a question. They are listed so the gap is visible
 rather than papered over; the reading list above is the place to go.</p>
 <ul class="query-list">
+      <li>islam and gender equality</li>
       <li>does islam teach gender equality</li>
       <li>feminist arguments against islam</li>
       <li>male muslims who speak about women's rights</li>
@@ -312,6 +295,7 @@ rather than papered over; the reading list above is the place to go.</p>
       <li>why are muslims afraid to call out feminists in public</li>
       <li>aisha dolls hadith ibn hajar commentary fath al bari</li>
       <li>life history theory high mortality early reproduction islam</li>
+      <li>burqa niqab mandatory in islam what the writer says</li>
       <li>how do i tell my feminist friends i don't think islam is the problem</li>
       <li>how do i answer when someone claims men have no right to speak about feminism</li>
       <li>how do i explain why he opposed the caning as well</li>
@@ -345,26 +329,36 @@ of these pages.</p>
 <table class="data-table">
 <thead><tr><th>Item</th><th>Kind</th><th>Quoted passages</th><th>Also filed under</th></tr></thead>
 <tbody>
-| [how-feminism-undermines-islam-and-gender-justice]({{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/) | work | 14 | /topics/gender-feminism/ |
-| [prophets-vs-pedophiles-part-1]({{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/) | work | 10 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [prophets-vs-pedophiles-part-2]({{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/) | work | 5 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [prophets-vs-pedophiles-part-3]({{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/) | work | 7 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [understanding-aishas-age-an-interdisciplinary-approach]({{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/) | work | 3 | /topics/gender-feminism/ |
-| [understanding-aisha-s-age-an-interdisciplinary-approach]({{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/) | paper | 3 | /topics/gender-feminism/ |
-| [gender-equality-islam-and-law]({{ site.baseurl }}/papers/gender-equality-islam-and-law/) | paper | 3 | /topics/gender-feminism/ |
-| [marina-mahathir-against-women-logic-islam]({{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/) | work | 5 | /topics/gender-feminism/ |
-| [the-collaborative-couple]({{ site.baseurl }}/articles/the-collaborative-couple/) | work | 5 | /topics/gender-feminism/ |
-| [mdi-do-muslim-women-need-feminism]({{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/) | article | 3 | /topics/gender-feminism/ |
-| [do-muslim-women-need-feminism-debate]({{ site.baseurl }}/articles/do-muslim-women-need-feminism-debate/) | article | 2 | /topics/gender-feminism/ |
-| [mdi-religion-vs-paedophilia-part-3]({{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/) | article | 3 | /topics/gender-feminism/ |
-| [ijihad-pilot-and-first-2-episodes]({{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/) | transcript | 2 | /topics/gender-feminism/, /topics/terrorism-extremism/ |
-| [qBkiwqMucY0]({{ site.baseurl }}/transcripts/qBkiwqMucY0/) | transcript | 5 | /topics/gender-feminism/ |
+<tr><td><a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a></td><td>work</td><td>14</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a></td><td>work</td><td>10</td><td><a href="{{ site.baseurl }}/topics/terrorism-extremism/">Terrorism, Extremism and Violence</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a></td><td>work</td><td>5</td><td><a href="{{ site.baseurl }}/topics/terrorism-extremism/">Terrorism, Extremism and Violence</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a></td><td>work</td><td>7</td><td><a href="{{ site.baseurl }}/topics/terrorism-extremism/">Terrorism, Extremism and Violence</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/">understanding-aishas-age-an-interdisciplinary-approach</a></td><td>work</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">understanding-aisha-s-age-an-interdisciplinary-approach</a></td><td>paper</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">gender-equality-islam-and-law</a></td><td>paper</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a></td><td>work</td><td>5</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a></td><td>work &middot; <strong>not by the subject</strong></td><td>5</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a></td><td>article</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/do-muslim-women-need-feminism-debate/">do-muslim-women-need-feminism-debate</a></td><td>article</td><td>2</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a></td><td>article</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">ijihad-pilot-and-first-2-episodes</a></td><td>transcript</td><td>2</td><td><a href="{{ site.baseurl }}/topics/terrorism-extremism/">Terrorism, Extremism and Violence</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a></td><td>transcript</td><td>5</td><td>&mdash;</td></tr>
 </tbody>
 </table>
 
-<p class="meta">14 items &middot; 32 of 72 mapped questions carry a quoted passage.</p>
+<p class="meta">14 items &middot; 30 of 72 mapped questions carry a quoted passage
+&middot; 34 of 70 verified passages shown
+&middot; 1 bylined to other people and not quoted here.</p>
 
-<h2>What the archive should be careful about</h2>
-<div class="prose-note">
-<p>THIN CLUSTER, HEAVILY SKEWED. The seed titles suggest a broad gender-justice corpus. It is not one. Grepping the whole of _posts/ and _articles/ for feminis|gender|patriarch|misand returns 145 hits in ONE file (_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md) and single digits nearly everywhere else. Of the 68 machine transcripts, only one (qBkiwqMucY0, 4m) is on Aisha, and no transcript exists for the 2016 feminism debate at all. A page built here will be one long polemic plus a three-part historical refutation, not a balanced survey. Frame it that way.</p><p>WHAT HE ACTUALLY ARGUES, IN TWO MOVES. (1) On feminism: three grounds, stated at _posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:28 - Islam already gave women rights, feminism is an invasive Western construct, feminism produces disharmony between the genders. He then attacks feminism's epistemology (that a man may not speak on women's issues) rather than its policy programme, and rejects the patrarchy-as-unfalsifiable thesis. The positive programme is wasatiyyah: respond to injustice regardless of gender, age, status (line 134). (2) On Aisha: not a denial that she was nine - he affirms the age 9 figure repeatedly - but a three-stage argument that 'age nine' is not a meaningful moral category in 7th-century Arabia: (a) bioarchaeology and life-history theory show biological age and social age diverge under high mortality (Part 1); (b) the critics' error is 'Moral Progressionism', and he offers 'Normative Circumstantial Morality' as the alternative (Part 2); (c) classical fiqh already separated contract from consummation, and consummation required physical maturity, so the 'magic number 9' does not do the work it is asked to do (Part 3). He answers the consent question by relocating it to the conditions of the time, not by denying the age.</p><p>THE QUALIFIERS ARE THE WHOLE STORY - DO NOT DROP THEM. He pre-empts the obvious misreading twice, in his own words. Part 3 opens with 'this research does not intend to justify contemporary marriages defined as underaged and we condemn those practices outright ... we consider such marriages to be unjust' (_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:24). Part 1, line 109, is the asked-and-answered question 'would we marry our young, immature daughters off in the contemporary age: The answer is no'. Any snippet engine that shows the Aisha material WITHOUT these two lines is producing a misrepresentation, because they are the difference between a historical argument and a defence of child marriage. Pin them to the cluster, do not let them sit in a footnote.</p><p>ATTRRIBUTION - THREE PLACES THE ARCHIVE CURRENTLY GETS WRONG OR LEAVES OPEN. (a) 'Understanding Aisha's Age' is CO-AUTHORED with Dr. Jonathan Brown, not sole-authored. It is filed as category A in _data/canonical_works.json:877 but as category B, Contributions &amp; Collaborations, in _data/papers.json:56; _data/registries.json:430 states the B filing is correct. Cite it as a collaboration or not at all. (b) 'Gender Equality, Islam, and Law' is CO-AUTHORED with Raihanah Abdullah (_papers/gender-equality-islam-and-law.md:28). (c) 'The Collaborative Couple' IS NOT BY HIM. The file is bylined 'By Shaykh Dr. Abdalqadir as-Sufi' (_posts/2013-06-29-the-collaborative-couple.md:21) and carries the category 'Guest Contributor', yet the front matter says author Asadullah Ali Al-Andalusi and _data/canonical_works.json:191 files it as category A, counted. A keyword search on this cluster WILL surface it. It is included here precisely so the page can label it correctly, but it must never be quoted as his view.</p><p>THE MOST DANGEROUS ITEM IN THE CLUSTER. That same guest essay contains claims a reader can easily mistake for the archive's own: 'Monogamy in its nature is misogynistic' (line 51), an endorsement of the 'multiple wife family' (line 50), and a passage in which an older woman tells a mother 'your job is finished, nothing more to do, let him be' (line 48) as a model of correct child-rearing. These are a dead Sufi teacher's positions on the Oedipal complex, not the archive's, and not this writer's. The archive should label this page prominently, not byline it silently.</p><p>NOT IN THIS CLUSTER, DESPITE THE SEED LIST. The two #HappyMuslims texts were checked line by line and are about halal/haram, music, dancing, the evidentiary basis of fiqh rulings, and public image - not gender. Grep for feminis|gender|women across both returns one incidental hit each: 'the proper attire for men and women, which was not displayed by many individuals in the video' (_posts/2014-04-30-the-narrative-behind-happymuslims.md:56) and a haya/modesty aside applying 'to both men and women' (same file, line 62). Neither is worth a slot. The seed note that the primary target is 'a contemporary Muslim women's publication' is also wrong: the targets are Adam Deen of the Deen Institute and the group The Honesty Policy, both male, over a music video. Do not put this material on a gender page on the strength of the seed description.</p><p>A TRAP IN THE TRANSCRIPTS. _articles/ijihad-pilot-and-first-2-episodes.md:328 contains 'accept the equality between men and women, are they willing to accept our homosexuals?' - this is him QUOTING the Dutch politician Paul Schaffer inside an argument about tolerance, immediately after lines 322-326 attribute the quotation. It is emphatically not his own position on equality between the sexes, and it is the single most quotable-sounding gender sentence in the corpus. Only his own remark about feminists' 'imprecise use of language' (line 514) is cited in this spec. If a snippet layer is ever added, that line needs a blocklist rule or a mandatory context window.</p><p>GAPS A MAINTAINER MUST KNOW. No full text is mirrored for either paper: the Aisha paper is link-out only ('No PDF is mirrored in this repository'), and 'Gender Equality, Islam, and Law' is held as a PDF, not extractable Markdown - so neither yields quotable prose here, only provenance metadata. The Japanese translation of the Gender Equality paper is recorded with public provenance NOT verified (_papers/gender-equality-islam-and-law.md:21). The 2016 debate itself is unrecoverable: the video is Facebook-hosted and login-walled, the archive holds no local text for the work, and the 88-word MDI post is the only prose record. That link is explicitly INFERRED, NOT PROVEN (_articles/mdi-do-muslim-women-need-feminism.md:21). There is no Maria Mahathir or Hanis Meketabin text, no Muslimah conference write-up, and no Women's Islamic Initiative material in this archive - so queries about those names will find a mention, never an answer.</p><p>NO CONTACT. Nothing in this cluster may be routed to the author or to any named person in it - Maryam Lee, Fariza, Marina Mahathir, Zara Faris, Cristina Hoff Summers, Adam Deen, Shaykh Abdalqadir as-Sufi, Jonathan Brown, Raihanah Abdullah. This is a preservation project. Requests for comment are out of scope permanently.</p><p>NEUTRALITY. This cluster is the one most likely to be read as the archive advocating a position. It does not. The archive preserves and attributes. Where a source is hostile to someone, the page must say who is speaking. The 2016 post names private individuals - Fariza by first name, and Maryam Lee repeatedly - and characterises them as acting on a coordinated 'campaign' and 'sycophants'; that is the author's characterisation of people, recorded, not the archive's finding, and a reader should not leave the page thinking the archive has established it.</p>
-</div>
+<p class="note">This cluster also holds <strong>1</strong> item(s) bylined to
+other people &mdash; a guest contributor, or the other man also called
+Al-Andalusi. Those are listed in the table for completeness and are
+<strong>not quoted on this page</strong>: a quotation in this archive&rsquo;s format
+reads as the subject&rsquo;s words, and for a byline one word away from his own that
+is the most likely misattribution on the site. Follow the link to read them
+with their own byline intact.</p>
+
+<h2>What to know before you rely on this page</h2>
+<ul class="caution-list">
+<li>This is a thin cluster and it is worth knowing why: of the whole corpus, only one recovered work deals substantially with feminism, and it is a long polemic rather than a survey. The rest is a three-part historical refutation of one specific claim about Aisha's age.</li><li>On Aisha, he does not deny the figure of nine. His argument is that "nine" is not a meaningful moral category in seventh-century Arabia, argued from mortality-driven childhood in the bioarchaeology literature and the classical separation of marriage contract from consummation.</li><li>The qualifiers are the argument. He twice pre-empts the obvious misreading in his own words, saying that such marriages are unjust and that he would not marry his own young daughters off today. A reader who stops before those sentences has read the polemic without the caveat.</li><li>**The Collaborative Couple** and **Qatar, Timbuktu, And An Arab Rescue** are bylined to Shaykh Dr. Abdalqadir as-Sufi, not to the subject. They are listed below for completeness and are not quoted on this page.</li>
+</ul>

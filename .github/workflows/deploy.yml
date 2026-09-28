@@ -37,14 +37,30 @@ jobs:
       - name: Assert search-data sync
         run: python3 scripts/test_search_sync.py
 
+      # All five suites, not two. A check that only runs locally is a check that
+      # eventually stops running. test_no_junk is the only gate on the RENDERED
+      # pages, test_canonical_57 is the gate on the counts the whole site
+      # publishes, and test_transcripts is the gate on the redaction: it
+      # re-derives all 68 published transcripts from the capture files and fails
+      # if a withheld name is not redacted.
+      - name: Assert counts and collection integrity
+        run: python3 scripts/test_canonical_57.py
+
+      - name: Assert transcripts and redaction
+        run: python3 scripts/test_transcripts.py
+
+      - name: Assert nothing broken or leaking in the rendered pages
+        run: python3 scripts/test_no_junk.py
+
       # The topic layer is eight pages of quotation drawn from the recovered
       # material, and every quotation is attributed to a file and a line. If one
       # of those attributions is wrong, the published page puts words in a living
       # person's mouth, which is the one failure this archive cannot afford - and
       # nothing else in the pipeline would notice. test_quotes.py re-reads each
       # cited file and fails the build if a quote is not there, word for word, at
-      # the line it claims.
-      - name: Assert every topic quotation is real
+      # the line it claims. It also enforces the byline gate: material bylined to
+      # someone else must never be rendered as the subject's words.
+      - name: Assert every topic quotation is real and correctly attributed
         run: python3 scripts/test_quotes.py
 
       - name: Build with Jekyll
