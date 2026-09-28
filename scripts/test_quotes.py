@@ -402,6 +402,30 @@ def check() -> int:
     return 0
 
 
+def _collection_permalinks() -> set[str]:
+    """Every permalink the collections declare, read from front matter.
+
+    Deliberately independent of `_site`. The CI gates run before
+    `jekyll build`, so a check that reads the build output fails on a clean
+    checkout with every page reported missing. Front matter is what generates
+    those permalinks, so it is the authority worth asserting against.
+    """
+    out: set[str] = set()
+    for folder in ("_articles", "_papers", "_videos", "_transcripts"):
+        d = ROOT / folder
+        if not d.is_dir():
+            continue
+        for f in d.glob("*.md"):
+            try:
+                head = f.read_text(encoding="utf-8", errors="ignore")[:1200]
+            except OSError:
+                continue
+            m = re.search(r"^permalink:\s*[\"']?([^\"'\s]+)", head, re.M)
+            if m:
+                out.add(m.group(1).rstrip("/") + "/")
+    return out
+
+
 def check_secondary_sources() -> list[str]:
     """Third-party records: all published, all targets real, index in agreement."""
     failures: list[str] = []
@@ -430,10 +454,14 @@ def check_secondary_sources() -> list[str]:
             )
 
     # 2. Every relates_to target must resolve to a real page. Permalinks are
-    #    checked against the actual generated output rather than reconstructed,
-    #    so a slug that disagrees with papers.json fails here instead of
-    #    shipping as a 404.
-    built = ROOT / "_site"
+    #    checked against the collection files' own front matter, NOT against
+    #    _site. CI runs this gate before `jekyll build`, so anything that reads
+    #    _site fails on a clean checkout with every page reported as missing -
+    #    which is exactly how the first version of this check failed. Front
+    #    matter is the authority that generates those permalinks, so it is also
+    #    the right thing to assert against: a slug that disagrees with the
+    #    collection would ship as a 404.
+    valid = _collection_permalinks()
     for r in rows:
         seen: set[tuple[str, str]] = set()
         for rel in r.get("relates_to") or []:
@@ -452,10 +480,10 @@ def check_secondary_sources() -> list[str]:
                     f"{sig} with no permalink"
                 )
                 continue
-            if not (built / pl.strip("/") / "index.html").is_file():
+            if pl not in valid:
                 failures.append(
                     f"secondary_sources: {r.get('title', '?')[:50]!r} relates to "
-                    f"{sig} -> {pl} which is not a built page"
+                    f"{sig} -> {pl} which is not a collection permalink"
                 )
 
     # 3. The reverse index must be a faithful mirror of the forward relations.
