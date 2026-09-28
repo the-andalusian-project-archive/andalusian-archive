@@ -504,6 +504,20 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>what is said about the age of nine in Islamic law and puberty</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Recordings (2)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/RWE-e_l-sKs/">BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage &amp; Education</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">

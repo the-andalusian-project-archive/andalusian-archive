@@ -623,6 +623,44 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>which contemporary writers and YouTubers does this archive directly answer</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Written works (5)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/articles/mdi/boko-haram-and-the-culture-of-coercive-disapproval/">\</a></li>
+      <li><a href="{{ site.baseurl }}/articles/charlie-hebdo-coexistence-and-crocodile-tears/">Charlie Hebdo, Coexistence and Crocodile Tears</a></li>
+      <li><a href="{{ site.baseurl }}/articles/ijihad-1/">iJihad 1</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/islam-terrorism/">Lecture:</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/">mdi-whataboutery-the-fail-safe-of-islamophobes</a></li>
+</ul><h3 class="shelf-kind">Transcripts (6)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/transcripts/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
+</ul><h3 class="shelf-kind">Recordings (11)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/4VcPzhkP9bE/">08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/tJVwLXeWwng/">Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">

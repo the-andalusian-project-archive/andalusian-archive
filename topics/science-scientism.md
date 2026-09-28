@@ -887,6 +887,43 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>summarise the argument that the Qur’an was never meant to be a science textbook</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Papers (5)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/papers/from-science-to-scientism/">From Science to Scientism</a></li>
+      <li><a href="{{ site.baseurl }}/papers/international-conference-on-developing-synergies-between-islam-and-science-and-technology/">International Conference on Developing Synergies Between Islam and Science and Technology</a></li>
+      <li><a href="{{ site.baseurl }}/papers/the-qur-an-and-science-a-forced-marriage/">The Qur</a></li>
+      <li><a href="{{ site.baseurl }}/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/">The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis</a></li>
+      <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists</a></li>
+</ul><h3 class="shelf-kind">Transcripts (7)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fq1WejCHgXs-duplicate-upload/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/4maSZMzhmuI-duplicate-upload/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/kDH1BOyhhYk-duplicate-upload/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/eQ-frTAlcJc-duplicate-upload/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/hURJIIm0tSY-duplicate-upload/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]</a></li>
+</ul><h3 class="shelf-kind">Recordings (9)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/PoNiuiP3W4Y/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">
@@ -901,9 +938,9 @@ one of them on its own, the material that bears on it is in the table above.</p>
 | [a-muslims-guide-to-science-and-scientism-part-5]({{ site.baseurl }}/transcripts/PoNiuiP3W4Y/) | transcript | 5 | /topics/aqeedah-basics/, /topics/science-scientism/ |
 | [the-quran-science-a-forced-marriage]({{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/) | work | 9 | /topics/quran-hermeneutics/, /topics/science-scientism/ |
 | [backbone-ribs]({{ site.baseurl }}/articles/backbone-ribs/) | work | 9 | /topics/quran-hermeneutics/, /topics/science-scientism/ |
-| [the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables]({{ site.baseurl }}/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/) | work | 2 | /topics/science-scientism/ |
+| [the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables]({{ site.baseurl }}/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/) | work | 2 | /topics/liberalism-orientalism/, /topics/science-scientism/ |
 | [extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect]({{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/) | work | 3 | /topics/aqeedah-basics/, /topics/atheism-doubt/, /topics/science-scientism/ |
-| [adam-is-no-myth]({{ site.baseurl }}/articles/adam-is-no-myth/) | work | 3 | /topics/science-scientism/ |
+| [adam-is-no-myth]({{ site.baseurl }}/articles/adam-is-no-myth/) | work | 3 | /topics/aqeedah-basics/, /topics/science-scientism/ |
 | [la-structure-de-la-productivite-scientifique-dans-la-civilisation-musulmane]({{ site.baseurl }}/transcripts/DA9JGrHKHZA/) | transcript | 2 | /topics/science-scientism/ |
 </tbody>
 </table>

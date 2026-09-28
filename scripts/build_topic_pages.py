@@ -112,6 +112,140 @@ def resolve_url(url: str, perma: set[str], by_last: dict[str, str]) -> tuple[str
     return url, "missing"
 
 
+def corpus_vocabulary() -> list[dict]:
+    """Every addressable item in the corpus, with the text to match clusters against.
+
+    The eight cluster specs are narrow by construction: each research agent read
+    one subject and catalogued what they read. That is the right way to build the
+    evidence on a page and the wrong way to build its shelf. A reader who arrives
+    with a question about atheism wants every argument on atheism, including the
+    ones no agent chose to quote from.
+
+    Walked from the collection markdown rather than the JSON, because the JSON
+    does not carry page URLs: `papers.json` has no `slug` and no permalink, and
+    `videos.json` carries neither. The collection files are where the built route
+    actually lives. Video `topics` and `themes` are joined in from `videos.json`
+    by `video_id`, because that is the only place the corpus's own vocabulary
+    lives and it is the reason this function can match on subject at all.
+    """
+    items: list[dict] = []
+    seen: set[str] = set()
+
+    videos_by_id: dict[str, dict] = {}
+    for v in load("_data/videos.json"):
+        videos_by_id[str(v.get("id", ""))] = v
+
+    collections = (
+        ("_articles", "work"),
+        ("_papers", "paper"),
+        ("_transcripts", "transcript"),
+        ("_videos", "video"),
+    )
+
+    for directory, kind in collections:
+        for md in sorted((ROOT / directory).glob("*.md")):
+            head = md.read_text(encoding="utf-8", errors="replace")[:2000]
+
+            def field(name: str) -> str | None:
+                m = re.search(rf'^{name}:\s*["\']?([^"\'\n]+)', head, re.M)
+                return m.group(1).strip() if m else None
+
+            url = field("permalink")
+            if not url:
+                continue
+            title = field("title") or md.stem
+            extra = [field("slug") or "", url]
+
+            if kind == "video":
+                vid = field("video_id") or md.stem
+                row = videos_by_id.get(vid, {})
+                extra += list(row.get("topics") or []) + list(row.get("themes") or [])
+
+            if url in seen:
+                continue
+            seen.add(url)
+            hay = " ".join([title] + [e for e in extra if e]).lower()
+            items.append({"url": url, "kind": kind, "label": title, "hay": hay})
+
+    return items
+
+
+def load(name: str):
+    return json.loads((ROOT / name).read_text(encoding="utf-8"))
+
+
+def match_clusters(vocab: list[dict], relations: dict) -> dict[str, list[dict]]:
+    """Assign every corpus item to every cluster it matches.
+
+    Substring matching, so 'atheis' catches Atheism / atheism / atheist and
+    'qur'an' catches Qur'an / quran. `/topics/miscellany/` is then whatever no
+    specific cluster claimed, so the nine pages partition the corpus without
+    dropping or double-counting anything.
+    """
+    clusters = {cid: [] for cid in relations["clusters"]}
+    claimed: set[str] = set()
+
+    for cid, spec in relations["clusters"].items():
+        if spec.get("is_fallback"):
+            continue
+        terms = [t.lower() for t in spec.get("terms") or []]
+        for item in vocab:
+            if any(t in item["hay"] for t in terms):
+                clusters[cid].append(item)
+                claimed.add(item["url"])
+
+    clusters["miscellany"] = [
+        item for item in vocab if item["url"] not in claimed
+    ]
+    return clusters
+
+
+KIND_NAMES = {
+    "work": "Written works",
+    "paper": "Papers",
+    "video": "Recordings",
+    "transcript": "Transcripts",
+}
+
+
+def render_shelf(shelf_out: list[dict]) -> str:
+    """The "everything else on this subject" block, grouped by kind.
+
+    A function, not inline code, because it is built once per cluster in the
+    taxonomy loop and once per cluster in the page loop. Inlined it was computed
+    in the first and consumed in the second, so every page got the shelf of
+    whichever cluster happened to run last.
+    """
+    if not shelf_out:
+        return ""
+    by_kind: dict[str, list[dict]] = {}
+    for m in shelf_out:
+        by_kind.setdefault(m["kind"], []).append(m)
+    sections = []
+    for kind, rows in by_kind.items():
+        lis = "\n".join(
+            f'      <li><a href="{{{{ site.baseurl }}}}{r["url"]}">'
+            f'{esc(r["title"])}</a></li>'
+            for r in sorted(rows, key=lambda x: x["title"].lower())
+        )
+        sections.append(
+            f"""<h3 class="shelf-kind">{esc(KIND_NAMES.get(kind, kind))} ({len(rows)})</h3>
+<ul class="shelf-list">
+{lis}
+</ul>"""
+        )
+    return f"""
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+{''.join(sections)}
+"""
+
+
 def main() -> int:
     specs = load_specs()
     if not specs:
@@ -120,6 +254,11 @@ def main() -> int:
 
     perma, by_last = permalink_index()
     how_counts: dict[str, int] = {}
+
+    # Broad, corpus-wide shelf per cluster, matched on the corpus's own metadata.
+    relations = load("_data/topic_relations.json")
+    vocab = corpus_vocabulary()
+    matched = match_clusters(vocab, relations)
 
     # ---- merge + reverse index -------------------------------------------
     merged = {
@@ -147,19 +286,6 @@ def main() -> int:
         n_claims = sum(
             len(item.get("key_claims") or []) for item in spec.get("material") or []
         )
-        merged["clusters"].append(
-            {
-                "id": cid,
-                "label": spec.get("label", cid),
-                "reader_question": spec.get("reader_question", ""),
-                "one_line": spec.get("one_line", ""),
-                "url": f"/topics/{cid}/",
-                "material_count": len(spec.get("material") or []),
-                "quote_count": n_claims,
-                "query_count": n_queries,
-                "bucket_counts": {b: len(buckets.get(b) or []) for b, _ in BUCKETS},
-            }
-        )
         for item in spec.get("material") or []:
             raw_url = item.get("url")
             if not raw_url:
@@ -170,6 +296,38 @@ def main() -> int:
             material_topics.setdefault(url, [])
             if cid not in material_topics[url]:
                 material_topics[url].append(cid)
+
+        # Everything about this subject, from the corpus's own tags, not only
+        # what the research agent happened to quote. Recorded separately so the
+        # page can distinguish evidence it can prove from a shelf it is
+        # asserting, and so the counts cannot be confused with one another.
+        shelf = [m for m in matched.get(cid, []) if m["url"] not in
+                 {i.get("url") for i in spec.get("material") or []}]
+        shelf_out = [
+            {"url": m["url"], "kind": m["kind"], "title": m["label"]} for m in shelf
+        ]
+        for m in shelf:
+            material_topics.setdefault(m["url"], [])
+            if cid not in material_topics[m["url"]]:
+                material_topics[m["url"]].append(cid)
+
+        shelf_md = render_shelf(shelf_out)
+
+        merged["clusters"].append(
+            {
+                "id": cid,
+                "label": spec.get("label", cid),
+                "reader_question": spec.get("reader_question", ""),
+                "one_line": spec.get("one_line", ""),
+                "url": f"/topics/{cid}/",
+                "material_count": len(spec.get("material") or []),
+                "quote_count": n_claims,
+                "query_count": n_queries,
+                "shelf_count": len(shelf_out),
+                "shelf": shelf_out,
+                "bucket_counts": {b: len(buckets.get(b) or []) for b, _ in BUCKETS},
+            }
+        )
 
     # _data/topics.json is named topic_taxonomy.json on purpose. Jekyll keys
     # `site.data` on basename, so a FILE named topics.json and a DIRECTORY named
@@ -239,6 +397,18 @@ quoted in an argument as though it were checked.</p>
         cid = spec["id"]
         buckets = spec.get("queries") or {}
         material = spec.get("material") or []
+
+        # The shelf must be recomputed HERE, in the loop that writes the page.
+        # It is also computed in the loop above, which builds the taxonomy; that
+        # copy is left over from whichever cluster ran last, so reusing the name
+        # across the two loops silently put one subject's shelf on all eight
+        # pages. Same variable, two loops - so it is recomputed, not shared.
+        shelf = [m for m in matched.get(cid, []) if m["url"] not in
+                 {i.get("url") for i in material}]
+        shelf_out = [
+            {"url": m["url"], "kind": m["kind"], "title": m["label"]} for m in shelf
+        ]
+        shelf_md = render_shelf(shelf_out)
 
         by_query: dict[str, list[tuple[dict, dict]]] = {}
         for item in material:
@@ -352,6 +522,7 @@ position and not a religious authority. Read the links for the full text.</p>
 
 {chr(10).join(blocks) if blocks else '<p>No quoted passage in this cluster yet.</p>'}
 {unrendered_md}
+{shelf_md}
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">
@@ -369,8 +540,66 @@ position and not a religious authority. Read the links for the full text.</p>
         print(
             f"  {cid:24s} material={len(material):3d} "
             f"questions={len(query_order):4d} rendered={rendered:4d} "
-            f"unrendered={len(unrendered):3d}"
+            f"unrendered={len(unrendered):3d} shelf={len(shelf_out):3d}"
         )
+
+    # ---- /topics/miscellany/ ---------------------------------------------
+    # The remainder. A page of leftovers is honest; an invisible orphan is not.
+    # A work that fits no cluster still has to be findable, or the eight subject
+    # pages are quietly lossy and the archive is lying about its own coverage.
+    leftovers = matched.get("miscellany", [])
+    kind_names = {
+        "work": "Written works", "paper": "Papers",
+        "video": "Recordings", "transcript": "Transcripts",
+    }
+    by_kind: dict[str, list[dict]] = {}
+    for m in leftovers:
+        by_kind.setdefault(m["kind"], []).append(m)
+
+    sections = []
+    for kind, rows in sorted(by_kind.items()):
+        lis = "\n".join(
+            f'      <li><a href="{{{{ site.baseurl }}}}{r["url"]}">'
+            f'{esc(r["label"])}</a></li>'
+            for r in sorted(rows, key=lambda x: x["label"].lower())
+        )
+        sections.append(
+            f"""<h2>{esc(kind_names.get(kind, kind))} ({len(rows)})</h2>
+<ul class="shelf-list">
+{lis}
+</ul>"""
+        )
+
+    misc = f"""---
+layout: default
+title: "Other materials: everything not yet filed under a subject"
+description: "Recovered works in this archive that do not fit the eight subject pages, listed so that nothing recovered here becomes unreachable."
+permalink: /topics/miscellany/
+last_modified_at: {TODAY}
+---
+
+<p class="crumb"><a href="{{{{ site.baseurl }}}}/topics/">What this archive answers</a> &rsaquo; Other materials</p>
+
+<h1>Other materials</h1>
+
+<p class="lead">Everything recovered here that does not yet fit one of the eight
+subjects.</p>
+
+<p>This page exists so the other eight do not have to pretend to be complete. A work
+that belongs to no cluster is still a recovered work, and leaving it off the subject
+pages would make those pages quietly lossy. It carries no questions and no quotations
+by design &mdash; it is the remainder, not a subject.</p>
+
+<p class="note">Some of this is a limitation of the recovered corpus rather than a gap
+in the archive: the original site&rsquo;s own tagging is thin and uneven, and this page
+is a fair picture of how little of it can be sorted automatically. Where a work plainly
+belongs to a subject, it may still appear on that page if a researcher filed it there by
+reading it.</p>
+
+{''.join(sections) if sections else '<p>Nothing is left over: every recovered item is filed under at least one subject.</p>'}
+"""
+    (ROOT / "topics" / "miscellany.md").write_text(misc, encoding="utf-8")
+    print(f"  {'miscellany':24s} leftover items={len(leftovers)}")
 
     print("\nwrote _data/topic_taxonomy.json, _data/material_topics.json, "
           "topics.md, topics/*.md")

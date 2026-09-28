@@ -1,0 +1,48 @@
+{
+  "title": "How each topic cluster relates to the corpus's own metadata",
+  "built": "2026-09-28",
+  "purpose": "The eight cluster specs under `_data/topics/*.json` were written by research agents who each read the material for ONE subject. That makes their material lists honest but narrow: /topics/atheism-doubt/ held 20 of the archive's 116 items, because an agent only catalogues what they read. The corpus already carries its own vocabulary - 29 post categories, 81 post tags, 28 video topics - and this file maps each cluster onto that vocabulary so a cluster page can also list the material that is ABOUT the subject even where no agent quoted from it.",
+  "why_it_matters": "A reader who arrives with a question about atheism wants every argument on atheism, not only the four passages an agent happened to select. The quote-anchored material answers the question with evidence; the tag-matched material shows the reader they are not missing anything.",
+  "matching": "Case-insensitive substring match of a term against a work's slug, title, post categories, post tags, video topics and video themes. Substring rather than equality because the corpus mixes 'existence of god' / 'existence%20of%20god' / 'Existence of God' across collections.",
+  "clusters": {
+    "atheism-doubt": {
+      "terms": ["atheis", "apologetic", "epistemolog", "fitrah", "existence of god", "existence%20of%20god", "doubt", "evidential", "belief", "atheist", "skeptic", "rebuttal", "counter-argument", "philosophy of religion", "reason", "rationali"],
+      "label": "Atheism, Doubt and Evidence"
+    },
+    "science-scientism": {
+      "terms": ["science", "scientif", "scientis", "kuhn", "positiv", "empiric", "evolution", "methodolog", "historian", "orientalist", "golden age", "decline in science", "naturalism"],
+      "label": "Science, Faith and Scientism"
+    },
+    "gender-feminism": {
+      "terms": ["feminis", "gender", "women", "woman", "female", "aisha", "equality", "equal", "patriarch", "marina mahathir", "collaborative couple", "masculin", "feminine"],
+      "label": "Feminism, Gender Justice and Aisha"
+    },
+    "terrorism-extremism": {
+      "terms": ["terror", "extremis", "jihad", "ijihad", "violence", "islamophob", "islamophobes", "boko haram", "radicalis", "suicide", "soldat", "pedophil", "charlie hebdo", "boko", "prehens", "belliger"],
+      "label": "Terrorism, Extremism and Violence"
+    },
+    "liberalism-orientalism": {
+      "terms": ["liberal", "liberalis", "orientalis", "colonial", "imperial", "human right", "western", "west", "colonialism", "crusade", "frankenstein", "naked kings", "context and confusion", "mint nusantara", "tiger in waiting", "infantil", "fascis"],
+      "label": "Liberalism, Orientalism and Human Rights"
+    },
+    "apostasy-hell": {
+      "terms": ["apostas", "ridda", "hell", "hellfire", "afterlife", "eternal", "punish", "divine justice", "mercy", "heaven", "jannah", "ex-muslim", "ex-muslim", "leaving islam", "repent"],
+      "label": "Apostasy, Hell and Divine Justice"
+    },
+    "aqeedah-basics": {
+      "terms": ["no-thing", "nothing", "proof", "demonstrat", "necessary exist", "tawhid", "creed", "aqeedah", "iman", "shahada", "adam", "myth", "know that", "existence"],
+      "label": "Foundational Questions of Belief"
+    },
+    "quran-hermeneutics": {
+      "terms": ["qur'an", "qur'an", "quran", "tafsir", "exegesis", "translat", "backbone", "ribs", "verse", "surah", "interpret", "inimitab", "i'jaz", "ijaz", "86:5", "4:23", "revelation", "scripture"],
+      "label": "Qur'an Interpretation and Textual Questions"
+    },
+    "miscellany": {
+      "terms": [],
+      "label": "Other Materials",
+      "is_fallback": true,
+      "note": "The catch-all. Anything in the corpus not claimed by a more specific cluster is listed here, so that no recovered work becomes unreachable for want of a better-fitting subject. A page of leftovers is honest; an invisible orphan is not. This cluster carries no queries and no quotes by design - it exists so the other eight are honest about their edges."
+    }
+  },
+  "note_on_overlap": "A work may match more than one cluster, and that is allowed: the person who tagged it `feminism` and `atheism` was not making a category decision the archive should overrule. The 'Other materials' card on every work page lists every cluster it matched. `/topics/miscellany/` is computed as the remainder AFTER all eight specific clusters have claimed what they match, so nothing is double-counted and nothing is dropped."
+}

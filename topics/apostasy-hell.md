@@ -768,6 +768,25 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>what does this archive hold on hell, apostasy and divine justice</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Transcripts (1)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\</a></li>
+</ul><h3 class="shelf-kind">Recordings (4)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\</a></li>
+      <li><a href="{{ site.baseurl }}/videos/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/tJVwLXeWwng/">Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">
@@ -787,7 +806,7 @@ one of them on its own, the material that bears on it is in the table above.</p>
 | [twitter-assists-islamists]({{ site.baseurl }}/transcripts/tUHEAejm404/) | transcript | 1 | /topics/apostasy-hell/ |
 | [ikhallifa-2-forgive-yourself]({{ site.baseurl }}/transcripts/-BwP55UIg3c/) | transcript | 3 | /topics/apostasy-hell/ |
 | [apostasy-beyond-the-rhetoric]({{ site.baseurl }}/articles/apostasy-beyond-the-rhetoric/) | work | 0 | /topics/apostasy-hell/ |
-| [between-a-backbone-and-ribs]({{ site.baseurl }}/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/) | paper | 0 | /topics/apostasy-hell/ |
+| [between-a-backbone-and-ribs]({{ site.baseurl }}/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/) | paper | 0 | /topics/apostasy-hell/, /topics/quran-hermeneutics/ |
 </tbody>
 </table>
 

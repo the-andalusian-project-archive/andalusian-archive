@@ -580,6 +580,31 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>explain how secular humanism and human rights are related in this author's argument</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Written works (6)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/articles/mdi/criminal-minds-liberalism-in-muslim-thought/">Lecture Event: Criminal Minds: Liberalism in Muslim Thought</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a></li>
+      <li><a href="{{ site.baseurl }}/articles/of-context-and-confusion/">Of Context and Confusion</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/still-colonised-liberalism-in-muslim-thought/">Still Colonised? Liberalism in Muslim Thought</a></li>
+      <li><a href="{{ site.baseurl }}/articles/the-fraud-of-islamic-mint-nusantara/">The Fraud of Islamic Mint Nusantara</a></li>
+      <li><a href="{{ site.baseurl }}/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists</a></li>
+</ul><h3 class="shelf-kind">Papers (2)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/papers/still-colonized-liberalism-in-muslim-thought/">Still Colonized? Liberalism in Muslim Thought</a></li>
+      <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists</a></li>
+</ul><h3 class="shelf-kind">Recordings (1)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/G47Stp3pLss/">My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">
@@ -597,7 +622,7 @@ one of them on its own, the material that bears on it is in the table above.</p>
 | [naked-kings-in-the-information-age]({{ site.baseurl }}/articles/naked-kings-in-the-information-age/) | work | 7 | /topics/liberalism-orientalism/ |
 | [the-tale-of-two-islands-part-1]({{ site.baseurl }}/articles/two-islands1/) | work | 4 | /topics/liberalism-orientalism/ |
 | [malaysias-tiger-in-waiting]({{ site.baseurl }}/articles/malaysias-tiger-in-waiting/) | work | 5 | /topics/liberalism-orientalism/ |
-| [whataboutery-the-fail-safe-of-islamophobes]({{ site.baseurl }}/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/) | article | 6 | /topics/liberalism-orientalism/ |
+| [whataboutery-the-fail-safe-of-islamophobes]({{ site.baseurl }}/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/) | article | 6 | /topics/liberalism-orientalism/, /topics/terrorism-extremism/ |
 | [qatar-timbuktu-and-an-arab-rescue]({{ site.baseurl }}/articles/qatar-timbuktu-and-an-arab-rescue/) | work | 3 | /topics/liberalism-orientalism/ |
 | [islam-terrorism-human-rights-passage]({{ site.baseurl }}/articles/islam-terrorism/) | article | 2 | /topics/liberalism-orientalism/, /topics/terrorism-extremism/ |
 </tbody>

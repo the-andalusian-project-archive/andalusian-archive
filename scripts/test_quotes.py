@@ -63,6 +63,51 @@ def load_specs() -> list[tuple[pathlib.Path, dict]]:
     return specs
 
 
+def check_pages() -> list[str]:
+    """Each generated cluster page must carry its own shelf, not another's."""
+    problems: list[str] = []
+    tax_path = ROOT / "_data" / "topic_taxonomy.json"
+    if not tax_path.exists():
+        return ["_data/topic_taxonomy.json missing - run scripts/build_topic_pages.py"]
+
+    tax = json.loads(tax_path.read_text(encoding="utf-8"))
+    href_re = re.compile(r'<a href="\{\{ site\.baseurl \}\}([^"]+)"')
+
+    claimed: set[str] = set()
+    for cluster in tax["clusters"]:
+        page = ROOT / "topics" / f"{cluster['id']}.md"
+        if not page.exists():
+            problems.append(f"{cluster['id']}: topics/{cluster['id']}.md not generated")
+            continue
+        html = page.read_text(encoding="utf-8")
+        start = html.find("<h2>Everything else on this subject</h2>")
+        end = html.find("<h2>Everything in this cluster</h2>")
+        block = html[start:end] if (start >= 0 and end > start) else ""
+        found = set(href_re.findall(block))
+        expected = {s["url"] for s in cluster.get("shelf") or []}
+        if found != expected:
+            problems.append(
+                f"{cluster['id']}: shelf on the page ({len(found)}) does not match "
+                f"the taxonomy ({len(expected)}); "
+                f"unexpected={sorted(found - expected)[:3]} missing={sorted(expected - found)[:3]}"
+            )
+        claimed |= expected
+
+    # The catch-all must be the exact remainder: an item listed on both a subject
+    # page and the miscellany page is counted twice, which is the exact error the
+    # four-category taxonomy exists to prevent.
+    misc_path = ROOT / "topics" / "miscellany.md"
+    if misc_path.exists():
+        misc = set(href_re.findall(misc_path.read_text(encoding="utf-8")))
+        both = misc & claimed
+        if both:
+            problems.append(
+                f"miscellany lists {len(both)} item(s) that a subject page also "
+                f"claims: {sorted(both)[:3]}"
+            )
+    return problems
+
+
 def check() -> int:
     specs = load_specs()
     if not specs:
@@ -155,6 +200,16 @@ def check() -> int:
     print(f"material items   : {total_material}")
     print(f"quotes verified  : {checked}")
     print(f"queries declared : {total_queries}")
+
+    # ---- the generated pages must match the taxonomy they were built from ----
+    #
+    # This exists because of a real bug. The shelf on each page is built from the
+    # cluster's tag matches, and the shelf block was computed in the loop that
+    # writes `_data/topic_taxonomy.json` and consumed in the loop that writes the
+    # page. Same variable name, two loops, so every page rendered the shelf of
+    # whichever cluster happened to run last - and the taxonomy was correct the
+    # whole time, which is exactly what made it hard to see.
+    failures.extend(check_pages())
 
     if failures:
         print()

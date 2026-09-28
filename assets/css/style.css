@@ -1785,3 +1785,230 @@ tr:hover td {
     font-size: 0.9rem;
   }
 }
+
+/* ============================================================================
+   READABILITY PASS - 2026-09-28
+
+   The site owner flagged it as not user-friendly and not readable, with
+   readability named as the priority ahead of a visual refresh. Three measured
+   defects, in order of how much they hurt:
+
+   1. LINE LENGTH. `--max-width: 1200px` at 1rem body type gave roughly 150
+      characters to a line on every prose page. The comfortable range is 60-80
+      and the eye loses the return sweep well before 100. This is the single
+      largest readability problem the site had, and it is invisible in a
+      screenshot - which is why it survived. The fix separates the PAGE width
+      from the PROSE measure: navigation, card grids and the footer keep the
+      full 1200px, and only running text is constrained.
+
+   2. CONTRAST. `--color-text-tertiary: #9ca3af` measured 2.54:1 on white and
+      2.35:1 on the page background. WCAG AA needs 4.5:1 for body text. It is
+      used for the counts under each topic card, the `file:line` citation under
+      every quotation, and assorted meta text - so the least legible colour in
+      the palette was carrying the archive's provenance references.
+      `--color-text-secondary` measured 4.47:1 on the page background, just
+      under AA, so it moves too. Both are darkened below; the third grey was
+      being used as a "faint" tone and is kept distinct, just no longer
+      illegible.
+
+   3. TYPE SCALE. Body 16px -> 17px, prose line-height 1.6 -> 1.7, and heading
+      line-heights relaxed. Headings set at 1.2 wrap badly on long titles like
+      the cluster page <title>s.
+
+   No structural change and no colour identity change. This layer only
+   overrides, so it sits last and wins on equal specificity.
+   ============================================================================ */
+
+:root {
+  /* Contrast-corrected greys. Old tertiary #9ca3af was 2.54:1 - a fail. */
+  --color-text-secondary: #545b68;
+  --color-text-tertiary: #6b7280;
+  --color-muted: #6b7280;
+
+  --text-base: 1.0625rem;   /* 17px, from 16px */
+  --line-height: 1.7;
+
+  /* The comfortable line length for running text at this type size. */
+  --measure: 68ch;
+}
+
+/* --- prose gets a measure; page furniture keeps the full width ----------- */
+
+.page-content {
+  max-width: var(--max-width);
+}
+
+/* Running text. Applies to text blocks, not to the grids, tables of data, or
+   card lists further down, which each carry their own internal spacing. */
+.page-content > h1,
+.page-content > h2,
+.page-content > h3,
+.page-content > h4,
+.page-content > p,
+.page-content > ul,
+.page-content > ol,
+.page-content > dl,
+.page-content > blockquote,
+.page-content > table,
+.page-content > pre,
+.page-content > .prose,
+.page-content > .note,
+.page-content > .prose-note,
+.page-content > .lead,
+.page-content > .crumb,
+.page-content > .meta,
+.page-content > .section-header {
+  max-width: var(--measure);
+}
+
+/* Sections that are a grid rather than prose opt back out to the page width. */
+.page-content > .section,
+.page-content > .topics-section,
+.page-content > .intro-section {
+  max-width: none;
+}
+
+.page-content > .section > .section-header {
+  max-width: var(--measure);
+}
+
+/* --- type ---------------------------------------------------------------- */
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4 {
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.page-content h1 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.page-content h2 {
+  font-size: 1.375rem;
+  margin-top: 2.5rem;
+}
+
+.page-content h3 {
+  font-size: 1.0625rem;
+}
+
+.page-content p,
+.page-content li {
+  text-wrap: pretty;
+}
+
+.page-content p {
+  margin-bottom: 1.1rem;
+}
+
+.page-content ul,
+.page-content ol {
+  padding-left: 1.35rem;
+}
+
+.page-content li {
+  margin-bottom: 0.4rem;
+}
+
+/* Links in prose. The default underline is light enough to skip on a clean
+   background and unreadable when a link sits inside a sentence, so underlined
+   prose links get weight and a thicker offset rule instead of colour alone -
+   which is also the accessible way to mark a link. */
+.page-content a:not(.btn):not(.quick-link) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.page-content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* --- tables of data ------------------------------------------------------- */
+
+.page-content table {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.page-content th,
+.page-content td {
+  padding: 0.7rem 0.85rem;
+}
+
+/* --- the topic pages ------------------------------------------------------ */
+
+.page-content h3.question {
+  font-size: 1.125rem;
+  line-height: 1.45;
+  max-width: var(--measure);
+}
+
+.page-content blockquote {
+  max-width: var(--measure);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.page-content ul.query-list {
+  max-width: none;
+}
+
+.page-content ul.shelf-list {
+  max-width: none;
+  columns: 2;
+  column-gap: 2rem;
+  margin: 0.75rem 0 1.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.page-content ul.shelf-list li {
+  break-inside: avoid;
+  margin-bottom: 0.35rem;
+  font-size: 0.9375rem;
+}
+
+.page-content h3.shelf-kind {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+  margin: 1.25rem 0 0.5rem;
+  max-width: var(--measure);
+}
+
+/* The homepage topic cards are a grid and should use the full page width; the
+   question text inside them is the one place a long sentence is acceptable,
+   because it is a summary rather than running prose. */
+.topic-card p.topic-q {
+  max-width: none;
+}
+
+/* --- citations under quotations ------------------------------------------ */
+
+.page-content blockquote code,
+.page-content code {
+  color: var(--color-text-tertiary);
+  font-size: 0.8125em;
+}
+
+/* --- narrow screens ------------------------------------------------------- */
+
+@media (max-width: 640px) {
+  :root {
+    --text-base: 1rem;
+    --line-height: 1.65;
+  }
+
+  .page-content ul.shelf-list {
+    columns: 1;
+  }
+
+  .page-content h1 {
+    font-size: 1.625rem;
+  }
+}

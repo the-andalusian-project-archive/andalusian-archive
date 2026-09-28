@@ -6,6 +6,7 @@
     "terrorism-extremism"
   ],
   "/articles/adam-is-no-myth/": [
+    "aqeedah-basics",
     "science-scientism"
   ],
   "/articles/against-atheist-aesthetics/": [
@@ -14,11 +15,18 @@
   "/articles/apostasy-beyond-the-rhetoric/": [
     "apostasy-hell"
   ],
+  "/articles/atheism-doubting-your-doubts/": [
+    "atheism-doubt"
+  ],
   "/articles/backbone-ribs/": [
     "quran-hermeneutics",
     "science-scientism"
   ],
   "/articles/boko-haram-and-the-culture-of-coercive-disapproval/": [
+    "terrorism-extremism"
+  ],
+  "/articles/charlie-hebdo-coexistence-and-crocodile-tears/": [
+    "aqeedah-basics",
     "terrorism-extremism"
   ],
   "/articles/contra-contemporary-atheism-lecture/": [
@@ -55,6 +63,9 @@
     "aqeedah-basics",
     "atheism-doubt"
   ],
+  "/articles/ijihad-1/": [
+    "terrorism-extremism"
+  ],
   "/articles/ijihad-pilot-and-first-2-episodes/": [
     "gender-feminism",
     "terrorism-extremism"
@@ -90,21 +101,40 @@
   "/articles/mdi/an-antidote-for-extremism/": [
     "terrorism-extremism"
   ],
+  "/articles/mdi/boko-haram-and-the-culture-of-coercive-disapproval/": [
+    "terrorism-extremism"
+  ],
+  "/articles/mdi/criminal-minds-liberalism-in-muslim-thought/": [
+    "liberalism-orientalism"
+  ],
   "/articles/mdi/do-muslim-women-need-feminism/": [
     "gender-feminism"
   ],
+  "/articles/mdi/islam-terrorism/": [
+    "terrorism-extremism"
+  ],
+  "/articles/mdi/naked-kings-in-the-information-age/": [
+    "liberalism-orientalism"
+  ],
   "/articles/mdi/religion-vs-paedophilia-part-3/": [
     "gender-feminism"
+  ],
+  "/articles/mdi/still-colonised-liberalism-in-muslim-thought/": [
+    "liberalism-orientalism"
   ],
   "/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/": [
     "aqeedah-basics",
     "atheism-doubt"
   ],
   "/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/": [
-    "liberalism-orientalism"
+    "liberalism-orientalism",
+    "terrorism-extremism"
   ],
   "/articles/mdi/when-facts-become-fiction-ijihad-ep-1/": [
     "terrorism-extremism"
+  ],
+  "/articles/mdi/withoutevidence2/": [
+    "atheism-doubt"
   ],
   "/articles/my-views-on-the-punishment-for-apostasy/": [
     "apostasy-hell",
@@ -117,7 +147,11 @@
     "aqeedah-basics",
     "atheism-doubt"
   ],
+  "/articles/notice/quran/": [
+    "quran-hermeneutics"
+  ],
   "/articles/of-context-and-confusion/": [
+    "liberalism-orientalism",
     "quran-hermeneutics"
   ],
   "/articles/prophets-vs-pedophiles-part-1/": [
@@ -138,11 +172,18 @@
   "/articles/still-colonized-liberalism-in-muslim-thought/": [
     "liberalism-orientalism"
   ],
-  "/articles/the-atheistic-worldview-vs-the-quranic-worldview/": [
+  "/articles/the-3-isms-of-atheism/": [
     "atheism-doubt"
+  ],
+  "/articles/the-atheistic-worldview-vs-the-quranic-worldview/": [
+    "atheism-doubt",
+    "quran-hermeneutics"
   ],
   "/articles/the-collaborative-couple/": [
     "gender-feminism"
+  ],
+  "/articles/the-fraud-of-islamic-mint-nusantara/": [
+    "liberalism-orientalism"
   ],
   "/articles/the-inhumanity-of-human-rights/": [
     "liberalism-orientalism"
@@ -150,9 +191,15 @@
   "/articles/the-making-of-modern-western-civilization-the-war-on-islam-guest-contribution/": [
     "liberalism-orientalism"
   ],
+  "/articles/the-narrative-of-happymuslims-a-response-to-adam-deen-and-the-honesty-policy/": [
+    "aqeedah-basics"
+  ],
   "/articles/the-quran-science-a-forced-marriage/": [
     "quran-hermeneutics",
     "science-scientism"
+  ],
+  "/articles/the-rationality-of-believing-in-god-without-evidence-part-1/": [
+    "atheism-doubt"
   ],
   "/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/": [
     "aqeedah-basics",
@@ -162,6 +209,7 @@
     "science-scientism"
   ],
   "/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/": [
+    "liberalism-orientalism",
     "science-scientism"
   ],
   "/articles/two-islands1/": [
@@ -170,6 +218,12 @@
   "/articles/understanding-aishas-age-an-interdisciplinary-approach/": [
     "gender-feminism"
   ],
+  "/articles/understanding-atheism-lecture-series/": [
+    "atheism-doubt"
+  ],
+  "/articles/understanding-atheism/": [
+    "atheism-doubt"
+  ],
   "/articles/whataboutery/": [
     "terrorism-extremism"
   ],
@@ -177,32 +231,79 @@
     "terrorism-extremism"
   ],
   "/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/": [
-    "apostasy-hell"
+    "apostasy-hell",
+    "quran-hermeneutics"
   ],
   "/papers/decoding-contemporary-liberalism-rise-development-and-crisis/": [
     "liberalism-orientalism"
   ],
+  "/papers/deconstructing-contemporary-atheist-thought-a-pragmatic-solution-to-irrational-doubts/": [
+    "atheism-doubt"
+  ],
+  "/papers/doubting-your-doubts-atheism-among-muslim-youth/": [
+    "atheism-doubt"
+  ],
   "/papers/extremism-in-muslim-thought/": [
     "terrorism-extremism"
+  ],
+  "/papers/from-science-to-scientism/": [
+    "science-scientism"
   ],
   "/papers/gender-equality-islam-and-law/": [
     "gender-feminism"
   ],
+  "/papers/international-conference-on-developing-synergies-between-islam-and-science-and-technology/": [
+    "science-scientism"
+  ],
   "/papers/islam-and-terrorism/": [
     "terrorism-extremism"
+  ],
+  "/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/": [
+    "atheism-doubt"
+  ],
+  "/papers/still-colonized-liberalism-in-muslim-thought/": [
+    "liberalism-orientalism"
+  ],
+  "/papers/the-qur-an-and-science-a-forced-marriage/": [
+    "science-scientism"
+  ],
+  "/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/": [
+    "science-scientism"
+  ],
+  "/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/": [
+    "liberalism-orientalism",
+    "science-scientism"
   ],
   "/papers/understanding-aisha-s-age-an-interdisciplinary-approach/": [
     "gender-feminism"
   ],
+  "/papers/understanding-atheism/": [
+    "atheism-doubt"
+  ],
   "/transcripts/-BwP55UIg3c/": [
     "apostasy-hell"
+  ],
+  "/transcripts/0snGWjeqEeM/": [
+    "science-scientism"
+  ],
+  "/transcripts/1962338957360877/": [
+    "terrorism-extremism"
   ],
   "/transcripts/1U6VfHosrqw/": [
     "apostasy-hell",
     "aqeedah-basics",
     "atheism-doubt"
   ],
+  "/transcripts/2tsI80MDUOI-duplicate-upload/": [
+    "atheism-doubt"
+  ],
   "/transcripts/4VcPzhkP9bE/": [
+    "terrorism-extremism"
+  ],
+  "/transcripts/4maSZMzhmuI-duplicate-upload/": [
+    "science-scientism"
+  ],
+  "/transcripts/8rEb8NfMPuc/": [
     "terrorism-extremism"
   ],
   "/transcripts/8vxbN2jZL6M/": [
@@ -215,17 +316,25 @@
     "atheism-doubt"
   ],
   "/transcripts/CEzMdCn0Ims/": [
-    "aqeedah-basics"
+    "aqeedah-basics",
+    "atheism-doubt"
   ],
   "/transcripts/DA9JGrHKHZA/": [
     "science-scientism"
   ],
   "/transcripts/Dr5IgXCHRIE/": [
+    "apostasy-hell",
     "quran-hermeneutics"
+  ],
+  "/transcripts/EK5oppX6C2U-duplicate-upload/": [
+    "atheism-doubt"
   ],
   "/transcripts/IhE3ka7SQQs/": [
     "apostasy-hell",
     "liberalism-orientalism"
+  ],
+  "/transcripts/Mj_J1Rk1esY/": [
+    "terrorism-extremism"
   ],
   "/transcripts/NyAVl7RsEOs/": [
     "atheism-doubt"
@@ -234,18 +343,31 @@
     "aqeedah-basics",
     "science-scientism"
   ],
+  "/transcripts/RnkqSMTzvCg/": [
+    "terrorism-extremism"
+  ],
   "/transcripts/WED5mPmO_yU/": [
     "atheism-doubt",
     "science-scientism"
   ],
   "/transcripts/X36xEj0OSV4/": [
-    "atheism-doubt"
+    "atheism-doubt",
+    "science-scientism"
   ],
   "/transcripts/ZbcsxAoIVY0/": [
     "atheism-doubt"
   ],
+  "/transcripts/Zo-VRMEY-ic/": [
+    "terrorism-extremism"
+  ],
+  "/transcripts/_C5ox2zZl0U/": [
+    "atheism-doubt"
+  ],
   "/transcripts/aTJMDFJdgdg/": [
     "terrorism-extremism"
+  ],
+  "/transcripts/bRTI6Z5gggE-duplicate-upload/": [
+    "atheism-doubt"
   ],
   "/transcripts/by-series/atheism-doubting-your-doubts/": [
     "atheism-doubt"
@@ -253,9 +375,24 @@
   "/transcripts/by-series/understanding-atheism/": [
     "atheism-doubt"
   ],
+  "/transcripts/eQ-frTAlcJc-duplicate-upload/": [
+    "science-scientism"
+  ],
+  "/transcripts/fgsVa-khWp4/": [
+    "terrorism-extremism"
+  ],
+  "/transcripts/fq1WejCHgXs-duplicate-upload/": [
+    "science-scientism"
+  ],
   "/transcripts/hKdNF95UqVM/": [
     "apostasy-hell",
     "liberalism-orientalism"
+  ],
+  "/transcripts/hURJIIm0tSY-duplicate-upload/": [
+    "science-scientism"
+  ],
+  "/transcripts/kDH1BOyhhYk-duplicate-upload/": [
+    "science-scientism"
   ],
   "/transcripts/lCqZB8gP4sk/": [
     "terrorism-extremism"
@@ -298,5 +435,131 @@
   ],
   "/transcripts/yUpHMaFHZ6s/": [
     "quran-hermeneutics"
+  ],
+  "/videos/0snGWjeqEeM/": [
+    "science-scientism"
+  ],
+  "/videos/1962338957360877/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/1U6VfHosrqw/": [
+    "atheism-doubt"
+  ],
+  "/videos/4VcPzhkP9bE/": [
+    "terrorism-extremism"
+  ],
+  "/videos/8rEb8NfMPuc/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/8vxbN2jZL6M/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/A3dbBCBSFKk/": [
+    "apostasy-hell"
+  ],
+  "/videos/BRDaCqipcwM/": [
+    "atheism-doubt"
+  ],
+  "/videos/CEzMdCn0Ims/": [
+    "atheism-doubt"
+  ],
+  "/videos/DA9JGrHKHZA/": [
+    "science-scientism"
+  ],
+  "/videos/Dr5IgXCHRIE/": [
+    "apostasy-hell"
+  ],
+  "/videos/EJLSAA_w4PY/": [
+    "atheism-doubt"
+  ],
+  "/videos/G47Stp3pLss/": [
+    "liberalism-orientalism"
+  ],
+  "/videos/Mj_J1Rk1esY/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/NyAVl7RsEOs/": [
+    "atheism-doubt"
+  ],
+  "/videos/PoNiuiP3W4Y/": [
+    "science-scientism"
+  ],
+  "/videos/RWE-e_l-sKs/": [
+    "atheism-doubt",
+    "gender-feminism"
+  ],
+  "/videos/RnkqSMTzvCg/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/TTGJPneVR_w/": [
+    "atheism-doubt"
+  ],
+  "/videos/WED5mPmO_yU/": [
+    "science-scientism"
+  ],
+  "/videos/X36xEj0OSV4/": [
+    "science-scientism"
+  ],
+  "/videos/ZbcsxAoIVY0/": [
+    "atheism-doubt"
+  ],
+  "/videos/Zo-VRMEY-ic/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/_C5ox2zZl0U/": [
+    "atheism-doubt"
+  ],
+  "/videos/aTJMDFJdgdg/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/fJs5tuFw-UY/": [
+    "science-scientism"
+  ],
+  "/videos/fgsVa-khWp4/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/lCqZB8gP4sk/": [
+    "quran-hermeneutics",
+    "terrorism-extremism"
+  ],
+  "/videos/lS7h9SKKtVc/": [
+    "atheism-doubt"
+  ],
+  "/videos/lZkv38vd7bw/": [
+    "atheism-doubt"
+  ],
+  "/videos/nkuZ70p-inE/": [
+    "apostasy-hell"
+  ],
+  "/videos/qBkiwqMucY0/": [
+    "gender-feminism",
+    "science-scientism"
+  ],
+  "/videos/qbg8a1kpjCA/": [
+    "atheism-doubt"
+  ],
+  "/videos/tIFhyQtxQXg/": [
+    "science-scientism"
+  ],
+  "/videos/tJVwLXeWwng/": [
+    "apostasy-hell",
+    "terrorism-extremism"
+  ],
+  "/videos/vI3Jz-OSH54/": [
+    "atheism-doubt"
+  ],
+  "/videos/vh-6sisOncs/": [
+    "science-scientism"
+  ],
+  "/videos/wVehdVlLdBI/": [
+    "atheism-doubt"
   ]
 }

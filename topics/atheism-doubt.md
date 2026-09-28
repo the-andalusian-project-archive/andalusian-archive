@@ -619,6 +619,53 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>who is Wittgenstein in this argument and what does he contribute?</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Written works (6)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">Atheism: Doubting Your Doubts</a></li>
+      <li><a href="{{ site.baseurl }}/articles/the-3-isms-of-atheism/">The 3 Isms of Atheism</a></li>
+      <li><a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-1/">The Rationality of Believing in God Without Evidence (Part 1)</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/withoutevidence2/">The Rationality of Believing in God Without Evidence — Part 2</a></li>
+      <li><a href="{{ site.baseurl }}/articles/understanding-atheism/">Understanding Atheism</a></li>
+      <li><a href="{{ site.baseurl }}/articles/understanding-atheism-lecture-series/">Understanding Atheism (Lecture Series)</a></li>
+</ul><h3 class="shelf-kind">Papers (4)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/papers/deconstructing-contemporary-atheist-thought-a-pragmatic-solution-to-irrational-doubts/">Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts</a></li>
+      <li><a href="{{ site.baseurl }}/papers/doubting-your-doubts-atheism-among-muslim-youth/">Doubting your Doubts: Atheism Among Muslim Youth</a></li>
+      <li><a href="{{ site.baseurl }}/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/">Islamic Intuitionism: The Case Against Atheistic Evidentialism</a></li>
+      <li><a href="{{ site.baseurl }}/papers/understanding-atheism/">Understanding Atheism</a></li>
+</ul><h3 class="shelf-kind">Transcripts (5)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/transcripts/2tsI80MDUOI-duplicate-upload/">01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/EK5oppX6C2U-duplicate-upload/">01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/bRTI6Z5gggE-duplicate-upload/">06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc] - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/_C5ox2zZl0U/">26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]</a></li>
+</ul><h3 class="shelf-kind">Recordings (14)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/NyAVl7RsEOs/">01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/CEzMdCn0Ims/">02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lZkv38vd7bw/">03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/wVehdVlLdBI/">04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/BRDaCqipcwM/">05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lS7h9SKKtVc/">06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/ZbcsxAoIVY0/">25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/_C5ox2zZl0U/">26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/1U6VfHosrqw/">33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/qbg8a1kpjCA/">Asadullah Ali Al-Andalusi on Really Hard Questions in Islam (MSA OSU GBM 10/29)</a></li>
+      <li><a href="{{ site.baseurl }}/videos/EJLSAA_w4PY/">Big Atheism-Theism Debate: Dr Arif Ahmed VS Abdullah al Andalusi [Nottingham University, 2017]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/RWE-e_l-sKs/">BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage &amp; Education</a></li>
+      <li><a href="{{ site.baseurl }}/videos/vI3Jz-OSH54/">DEBATE PREVIEW: Sharia law VS Secular law: Atheist ends up endorsing Sharia &amp; desire for Caliphate</a></li>
+      <li><a href="{{ site.baseurl }}/videos/TTGJPneVR_w/">Radio: A Christian and Muslim response to Secularism- James White and Abdullah Al-Andalusi</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">
@@ -634,7 +681,7 @@ one of them on its own, the material that bears on it is in the table above.</p>
 | [understanding-atheism]({{ site.baseurl }}/transcripts/by-series/understanding-atheism/) | work | 1 | /topics/atheism-doubt/ |
 | [atheism-doubting-your-doubts]({{ site.baseurl }}/transcripts/by-series/atheism-doubting-your-doubts/) | work | 1 | /topics/atheism-doubt/ |
 | [hard-questions-answering-doubts-about-islam]({{ site.baseurl }}/articles/hard-questions-answering-doubts-about-islam/) | work | 1 | /topics/apostasy-hell/, /topics/atheism-doubt/ |
-| [the-atheistic-worldview-vs-the-quranic-worldview]({{ site.baseurl }}/articles/the-atheistic-worldview-vs-the-quranic-worldview/) | work | 1 | /topics/atheism-doubt/ |
+| [the-atheistic-worldview-vs-the-quranic-worldview]({{ site.baseurl }}/articles/the-atheistic-worldview-vs-the-quranic-worldview/) | work | 1 | /topics/atheism-doubt/, /topics/quran-hermeneutics/ |
 | [understanding-atheism-session-1]({{ site.baseurl }}/transcripts/NyAVl7RsEOs/) | transcript | 5 | /topics/atheism-doubt/ |
 | [understanding-atheism-session-3]({{ site.baseurl }}/transcripts/lZkv38vd7bw/) | transcript | 3 | /topics/apostasy-hell/, /topics/atheism-doubt/ |
 | [understanding-atheism-session-4]({{ site.baseurl }}/transcripts/wVehdVlLdBI/) | transcript | 2 | /topics/apostasy-hell/, /topics/atheism-doubt/ |
@@ -643,7 +690,7 @@ one of them on its own, the material that bears on it is in the table above.</p>
 | [atheism-doubting-your-doubts-yaqeen-in-new-york]({{ site.baseurl }}/transcripts/ZbcsxAoIVY0/) | transcript | 4 | /topics/atheism-doubt/ |
 | [hard-questions-answering-doubts-about-islam-lecture]({{ site.baseurl }}/transcripts/1U6VfHosrqw/) | transcript | 3 | /topics/apostasy-hell/, /topics/aqeedah-basics/, /topics/atheism-doubt/ |
 | [a-muslims-guide-to-science-and-scientism-part-3]({{ site.baseurl }}/transcripts/WED5mPmO_yU/) | transcript | 2 | /topics/atheism-doubt/, /topics/science-scientism/ |
-| [a-muslims-guide-to-science-and-scientism-part-1]({{ site.baseurl }}/transcripts/X36xEj0OSV4/) | transcript | 2 | /topics/atheism-doubt/ |
+| [a-muslims-guide-to-science-and-scientism-part-1]({{ site.baseurl }}/transcripts/X36xEj0OSV4/) | transcript | 2 | /topics/atheism-doubt/, /topics/science-scientism/ |
 </tbody>
 </table>
 

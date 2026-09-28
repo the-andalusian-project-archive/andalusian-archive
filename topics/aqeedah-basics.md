@@ -249,6 +249,21 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>how does this author answer the objection that belief in God is biologically hardwired?</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Written works (3)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/articles/adam-is-no-myth/">Adam is No Myth</a></li>
+      <li><a href="{{ site.baseurl }}/articles/charlie-hebdo-coexistence-and-crocodile-tears/">Charlie Hebdo, Coexistence and Crocodile Tears</a></li>
+      <li><a href="{{ site.baseurl }}/articles/the-narrative-of-happymuslims-a-response-to-adam-deen-and-the-honesty-policy/">The Narrative of HappyMuslims: A Response to Adam Deen</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">
@@ -260,7 +275,7 @@ one of them on its own, the material that bears on it is in the table above.</p>
 | [the-rationality-of-believing-in-god-without-evidence-part-2-2]({{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/) | work | 2 | /topics/aqeedah-basics/, /topics/atheism-doubt/ |
 | [extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect]({{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/) | work | 1 | /topics/aqeedah-basics/, /topics/atheism-doubt/, /topics/science-scientism/ |
 | [a-muslims-guide-to-science-and-scientism-part-5]({{ site.baseurl }}/transcripts/PoNiuiP3W4Y/) | transcript | 4 | /topics/aqeedah-basics/, /topics/science-scientism/ |
-| [understanding-atheism-session-2]({{ site.baseurl }}/transcripts/CEzMdCn0Ims/) | transcript | 2 | /topics/aqeedah-basics/ |
+| [understanding-atheism-session-2]({{ site.baseurl }}/transcripts/CEzMdCn0Ims/) | transcript | 2 | /topics/aqeedah-basics/, /topics/atheism-doubt/ |
 | [a-muslims-guide-to-science-and-scientism-part-2]({{ site.baseurl }}/transcripts/vh-6sisOncs/) | transcript | 1 | /topics/aqeedah-basics/, /topics/science-scientism/ |
 | [hard-questions-answering-doubts-about-islam-lecture]({{ site.baseurl }}/transcripts/1U6VfHosrqw/) | transcript | 2 | /topics/apostasy-hell/, /topics/aqeedah-basics/, /topics/atheism-doubt/ |
 </tbody>

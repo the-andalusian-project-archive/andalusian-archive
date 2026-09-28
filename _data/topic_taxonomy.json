@@ -14,6 +14,34 @@
       "material_count": 15,
       "quote_count": 80,
       "query_count": 110,
+      "shelf_count": 5,
+      "shelf": [
+        {
+          "url": "/transcripts/Dr5IgXCHRIE/",
+          "kind": "transcript",
+          "title": "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\\"
+        },
+        {
+          "url": "/videos/A3dbBCBSFKk/",
+          "kind": "video",
+          "title": "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]"
+        },
+        {
+          "url": "/videos/Dr5IgXCHRIE/",
+          "kind": "video",
+          "title": "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\\"
+        },
+        {
+          "url": "/videos/nkuZ70p-inE/",
+          "kind": "video",
+          "title": "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]"
+        },
+        {
+          "url": "/videos/tJVwLXeWwng/",
+          "kind": "video",
+          "title": "Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 17,
@@ -31,6 +59,24 @@
       "material_count": 9,
       "quote_count": 22,
       "query_count": 59,
+      "shelf_count": 3,
+      "shelf": [
+        {
+          "url": "/articles/adam-is-no-myth/",
+          "kind": "work",
+          "title": "Adam is No Myth"
+        },
+        {
+          "url": "/articles/charlie-hebdo-coexistence-and-crocodile-tears/",
+          "kind": "work",
+          "title": "Charlie Hebdo, Coexistence and Crocodile Tears"
+        },
+        {
+          "url": "/articles/the-narrative-of-happymuslims-a-response-to-adam-deen-and-the-honesty-policy/",
+          "kind": "work",
+          "title": "The Narrative of HappyMuslims: A Response to Adam Deen"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 13,
@@ -48,6 +94,154 @@
       "material_count": 20,
       "quote_count": 56,
       "query_count": 69,
+      "shelf_count": 29,
+      "shelf": [
+        {
+          "url": "/articles/atheism-doubting-your-doubts/",
+          "kind": "work",
+          "title": "Atheism: Doubting Your Doubts"
+        },
+        {
+          "url": "/articles/mdi/withoutevidence2/",
+          "kind": "work",
+          "title": "The Rationality of Believing in God Without Evidence — Part 2"
+        },
+        {
+          "url": "/articles/the-3-isms-of-atheism/",
+          "kind": "work",
+          "title": "The 3 Isms of Atheism"
+        },
+        {
+          "url": "/articles/the-rationality-of-believing-in-god-without-evidence-part-1/",
+          "kind": "work",
+          "title": "The Rationality of Believing in God Without Evidence (Part 1)"
+        },
+        {
+          "url": "/articles/understanding-atheism-lecture-series/",
+          "kind": "work",
+          "title": "Understanding Atheism (Lecture Series)"
+        },
+        {
+          "url": "/articles/understanding-atheism/",
+          "kind": "work",
+          "title": "Understanding Atheism"
+        },
+        {
+          "url": "/papers/deconstructing-contemporary-atheist-thought-a-pragmatic-solution-to-irrational-doubts/",
+          "kind": "paper",
+          "title": "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts"
+        },
+        {
+          "url": "/papers/doubting-your-doubts-atheism-among-muslim-youth/",
+          "kind": "paper",
+          "title": "Doubting your Doubts: Atheism Among Muslim Youth"
+        },
+        {
+          "url": "/papers/islamic-intuitionism-the-case-against-atheistic-evidentialism/",
+          "kind": "paper",
+          "title": "Islamic Intuitionism: The Case Against Atheistic Evidentialism"
+        },
+        {
+          "url": "/papers/understanding-atheism/",
+          "kind": "paper",
+          "title": "Understanding Atheism"
+        },
+        {
+          "url": "/transcripts/2tsI80MDUOI-duplicate-upload/",
+          "kind": "transcript",
+          "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/transcripts/_C5ox2zZl0U/",
+          "kind": "transcript",
+          "title": "26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]"
+        },
+        {
+          "url": "/transcripts/bRTI6Z5gggE-duplicate-upload/",
+          "kind": "transcript",
+          "title": "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/transcripts/CEzMdCn0Ims/",
+          "kind": "transcript",
+          "title": "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]"
+        },
+        {
+          "url": "/transcripts/EK5oppX6C2U-duplicate-upload/",
+          "kind": "transcript",
+          "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/videos/1U6VfHosrqw/",
+          "kind": "video",
+          "title": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]"
+        },
+        {
+          "url": "/videos/BRDaCqipcwM/",
+          "kind": "video",
+          "title": "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]"
+        },
+        {
+          "url": "/videos/CEzMdCn0Ims/",
+          "kind": "video",
+          "title": "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]"
+        },
+        {
+          "url": "/videos/EJLSAA_w4PY/",
+          "kind": "video",
+          "title": "Big Atheism-Theism Debate: Dr Arif Ahmed VS Abdullah al Andalusi [Nottingham University, 2017]"
+        },
+        {
+          "url": "/videos/lS7h9SKKtVc/",
+          "kind": "video",
+          "title": "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]"
+        },
+        {
+          "url": "/videos/lZkv38vd7bw/",
+          "kind": "video",
+          "title": "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]"
+        },
+        {
+          "url": "/videos/NyAVl7RsEOs/",
+          "kind": "video",
+          "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]"
+        },
+        {
+          "url": "/videos/qbg8a1kpjCA/",
+          "kind": "video",
+          "title": "Asadullah Ali Al-Andalusi on Really Hard Questions in Islam (MSA OSU GBM 10/29)"
+        },
+        {
+          "url": "/videos/RWE-e_l-sKs/",
+          "kind": "video",
+          "title": "BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage & Education"
+        },
+        {
+          "url": "/videos/TTGJPneVR_w/",
+          "kind": "video",
+          "title": "Radio: A Christian and Muslim response to Secularism- James White and Abdullah Al-Andalusi"
+        },
+        {
+          "url": "/videos/vI3Jz-OSH54/",
+          "kind": "video",
+          "title": "DEBATE PREVIEW: Sharia law VS Secular law: Atheist ends up endorsing Sharia & desire for Caliphate"
+        },
+        {
+          "url": "/videos/_C5ox2zZl0U/",
+          "kind": "video",
+          "title": "26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]"
+        },
+        {
+          "url": "/videos/wVehdVlLdBI/",
+          "kind": "video",
+          "title": "04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]"
+        },
+        {
+          "url": "/videos/ZbcsxAoIVY0/",
+          "kind": "video",
+          "title": "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 13,
@@ -65,6 +259,19 @@
       "material_count": 14,
       "quote_count": 70,
       "query_count": 72,
+      "shelf_count": 2,
+      "shelf": [
+        {
+          "url": "/videos/qBkiwqMucY0/",
+          "kind": "video",
+          "title": "29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]"
+        },
+        {
+          "url": "/videos/RWE-e_l-sKs/",
+          "kind": "video",
+          "title": "BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage & Education"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 10,
@@ -82,6 +289,54 @@
       "material_count": 15,
       "quote_count": 58,
       "query_count": 82,
+      "shelf_count": 9,
+      "shelf": [
+        {
+          "url": "/articles/mdi/criminal-minds-liberalism-in-muslim-thought/",
+          "kind": "work",
+          "title": "Lecture Event: Criminal Minds: Liberalism in Muslim Thought"
+        },
+        {
+          "url": "/articles/mdi/naked-kings-in-the-information-age/",
+          "kind": "work",
+          "title": "Naked Kings in the Information Age"
+        },
+        {
+          "url": "/articles/mdi/still-colonised-liberalism-in-muslim-thought/",
+          "kind": "work",
+          "title": "Still Colonised? Liberalism in Muslim Thought"
+        },
+        {
+          "url": "/articles/of-context-and-confusion/",
+          "kind": "work",
+          "title": "Of Context and Confusion"
+        },
+        {
+          "url": "/articles/the-fraud-of-islamic-mint-nusantara/",
+          "kind": "work",
+          "title": "The Fraud of Islamic Mint Nusantara"
+        },
+        {
+          "url": "/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/",
+          "kind": "work",
+          "title": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists"
+        },
+        {
+          "url": "/papers/still-colonized-liberalism-in-muslim-thought/",
+          "kind": "paper",
+          "title": "Still Colonized? Liberalism in Muslim Thought"
+        },
+        {
+          "url": "/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/",
+          "kind": "paper",
+          "title": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists"
+        },
+        {
+          "url": "/videos/G47Stp3pLss/",
+          "kind": "video",
+          "title": "My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 12,
@@ -99,6 +354,69 @@
       "material_count": 7,
       "quote_count": 47,
       "query_count": 93,
+      "shelf_count": 12,
+      "shelf": [
+        {
+          "url": "/articles/notice/quran/",
+          "kind": "work",
+          "title": "Al-Qur’an"
+        },
+        {
+          "url": "/articles/the-atheistic-worldview-vs-the-quranic-worldview/",
+          "kind": "work",
+          "title": "The Atheistic Worldview vs The Quranic Worldview"
+        },
+        {
+          "url": "/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/",
+          "kind": "paper",
+          "title": "Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7"
+        },
+        {
+          "url": "/videos/1962338957360877/",
+          "kind": "video",
+          "title": "11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]"
+        },
+        {
+          "url": "/videos/8rEb8NfMPuc/",
+          "kind": "video",
+          "title": "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]"
+        },
+        {
+          "url": "/videos/8vxbN2jZL6M/",
+          "kind": "video",
+          "title": "35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]"
+        },
+        {
+          "url": "/videos/aTJMDFJdgdg/",
+          "kind": "video",
+          "title": "37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]"
+        },
+        {
+          "url": "/videos/fgsVa-khWp4/",
+          "kind": "video",
+          "title": "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]"
+        },
+        {
+          "url": "/videos/lCqZB8gP4sk/",
+          "kind": "video",
+          "title": "36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]"
+        },
+        {
+          "url": "/videos/Mj_J1Rk1esY/",
+          "kind": "video",
+          "title": "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]"
+        },
+        {
+          "url": "/videos/RnkqSMTzvCg/",
+          "kind": "video",
+          "title": "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]"
+        },
+        {
+          "url": "/videos/Zo-VRMEY-ic/",
+          "kind": "video",
+          "title": "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 16,
@@ -116,6 +434,114 @@
       "material_count": 13,
       "quote_count": 100,
       "query_count": 96,
+      "shelf_count": 21,
+      "shelf": [
+        {
+          "url": "/papers/from-science-to-scientism/",
+          "kind": "paper",
+          "title": "From Science to Scientism"
+        },
+        {
+          "url": "/papers/international-conference-on-developing-synergies-between-islam-and-science-and-technology/",
+          "kind": "paper",
+          "title": "International Conference on Developing Synergies Between Islam and Science and Technology"
+        },
+        {
+          "url": "/papers/the-qur-an-and-science-a-forced-marriage/",
+          "kind": "paper",
+          "title": "The Qur"
+        },
+        {
+          "url": "/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/",
+          "kind": "paper",
+          "title": "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis"
+        },
+        {
+          "url": "/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/",
+          "kind": "paper",
+          "title": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists"
+        },
+        {
+          "url": "/transcripts/0snGWjeqEeM/",
+          "kind": "transcript",
+          "title": "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]"
+        },
+        {
+          "url": "/transcripts/4maSZMzhmuI-duplicate-upload/",
+          "kind": "transcript",
+          "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/transcripts/eQ-frTAlcJc-duplicate-upload/",
+          "kind": "transcript",
+          "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/transcripts/fq1WejCHgXs-duplicate-upload/",
+          "kind": "transcript",
+          "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/transcripts/hURJIIm0tSY-duplicate-upload/",
+          "kind": "transcript",
+          "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/transcripts/kDH1BOyhhYk-duplicate-upload/",
+          "kind": "transcript",
+          "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU] - transcript of a duplicate upload"
+        },
+        {
+          "url": "/transcripts/X36xEj0OSV4/",
+          "kind": "transcript",
+          "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]"
+        },
+        {
+          "url": "/videos/0snGWjeqEeM/",
+          "kind": "video",
+          "title": "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]"
+        },
+        {
+          "url": "/videos/DA9JGrHKHZA/",
+          "kind": "video",
+          "title": "27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]"
+        },
+        {
+          "url": "/videos/fJs5tuFw-UY/",
+          "kind": "video",
+          "title": "32 - The Qur"
+        },
+        {
+          "url": "/videos/PoNiuiP3W4Y/",
+          "kind": "video",
+          "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]"
+        },
+        {
+          "url": "/videos/qBkiwqMucY0/",
+          "kind": "video",
+          "title": "29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]"
+        },
+        {
+          "url": "/videos/tIFhyQtxQXg/",
+          "kind": "video",
+          "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]"
+        },
+        {
+          "url": "/videos/vh-6sisOncs/",
+          "kind": "video",
+          "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]"
+        },
+        {
+          "url": "/videos/WED5mPmO_yU/",
+          "kind": "video",
+          "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]"
+        },
+        {
+          "url": "/videos/X36xEj0OSV4/",
+          "kind": "video",
+          "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 12,
@@ -133,6 +559,119 @@
       "material_count": 23,
       "quote_count": 68,
       "query_count": 151,
+      "shelf_count": 22,
+      "shelf": [
+        {
+          "url": "/articles/charlie-hebdo-coexistence-and-crocodile-tears/",
+          "kind": "work",
+          "title": "Charlie Hebdo, Coexistence and Crocodile Tears"
+        },
+        {
+          "url": "/articles/ijihad-1/",
+          "kind": "work",
+          "title": "iJihad 1"
+        },
+        {
+          "url": "/articles/mdi/boko-haram-and-the-culture-of-coercive-disapproval/",
+          "kind": "work",
+          "title": "\\"
+        },
+        {
+          "url": "/articles/mdi/islam-terrorism/",
+          "kind": "work",
+          "title": "Lecture:"
+        },
+        {
+          "url": "/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/",
+          "kind": "work",
+          "title": "mdi-whataboutery-the-fail-safe-of-islamophobes"
+        },
+        {
+          "url": "/transcripts/1962338957360877/",
+          "kind": "transcript",
+          "title": "11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]"
+        },
+        {
+          "url": "/transcripts/8rEb8NfMPuc/",
+          "kind": "transcript",
+          "title": "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]"
+        },
+        {
+          "url": "/transcripts/fgsVa-khWp4/",
+          "kind": "transcript",
+          "title": "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]"
+        },
+        {
+          "url": "/transcripts/Mj_J1Rk1esY/",
+          "kind": "transcript",
+          "title": "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]"
+        },
+        {
+          "url": "/transcripts/RnkqSMTzvCg/",
+          "kind": "transcript",
+          "title": "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]"
+        },
+        {
+          "url": "/transcripts/Zo-VRMEY-ic/",
+          "kind": "transcript",
+          "title": "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]"
+        },
+        {
+          "url": "/videos/1962338957360877/",
+          "kind": "video",
+          "title": "11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]"
+        },
+        {
+          "url": "/videos/4VcPzhkP9bE/",
+          "kind": "video",
+          "title": "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]"
+        },
+        {
+          "url": "/videos/8rEb8NfMPuc/",
+          "kind": "video",
+          "title": "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]"
+        },
+        {
+          "url": "/videos/8vxbN2jZL6M/",
+          "kind": "video",
+          "title": "35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]"
+        },
+        {
+          "url": "/videos/aTJMDFJdgdg/",
+          "kind": "video",
+          "title": "37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]"
+        },
+        {
+          "url": "/videos/fgsVa-khWp4/",
+          "kind": "video",
+          "title": "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]"
+        },
+        {
+          "url": "/videos/lCqZB8gP4sk/",
+          "kind": "video",
+          "title": "36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]"
+        },
+        {
+          "url": "/videos/Mj_J1Rk1esY/",
+          "kind": "video",
+          "title": "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]"
+        },
+        {
+          "url": "/videos/RnkqSMTzvCg/",
+          "kind": "video",
+          "title": "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]"
+        },
+        {
+          "url": "/videos/tJVwLXeWwng/",
+          "kind": "video",
+          "title": "Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight"
+        },
+        {
+          "url": "/videos/Zo-VRMEY-ic/",
+          "kind": "video",
+          "title": "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]"
+        }
+      ],
       "bucket_counts": {
         "head": 3,
         "mid": 16,

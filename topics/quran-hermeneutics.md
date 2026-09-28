@@ -413,6 +413,34 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>why do anti-islam polemicists and muslim apologists disagree about quran 86:7</li>
 </ul>
 
+
+<h2>Everything else on this subject</h2>
+<p class="note">The passages above are what this archive can <em>prove</em> answers the
+question, because each one is quoted and cited. This is everything else in the
+archive filed under the same subject &mdash; matched on the corpus&rsquo;s own tags,
+categories and themes rather than on a researcher&rsquo;s selection. A work may
+appear on more than one subject page; that is the tags speaking, not an editorial
+decision.</p>
+<h3 class="shelf-kind">Written works (2)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/articles/notice/quran/">Al-Qur’an</a></li>
+      <li><a href="{{ site.baseurl }}/articles/the-atheistic-worldview-vs-the-quranic-worldview/">The Atheistic Worldview vs The Quranic Worldview</a></li>
+</ul><h3 class="shelf-kind">Papers (1)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/">Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7</a></li>
+</ul><h3 class="shelf-kind">Recordings (9)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
+</ul>
+
 <h2>Everything in this cluster</h2>
 
 <table class="data-table">
@@ -421,10 +449,10 @@ one of them on its own, the material that bears on it is in the table above.</p>
 | [backbone-ribs]({{ site.baseurl }}/articles/backbone-ribs/) | paper | 26 | /topics/quran-hermeneutics/, /topics/science-scientism/ |
 | [illogical-critiques-of-the-quran]({{ site.baseurl }}/articles/illogical-critques-of-the-quran/) | work | 4 | /topics/quran-hermeneutics/ |
 | [lost-in-time-translation]({{ site.baseurl }}/articles/lost-in-time-translation/) | work | 4 | /topics/quran-hermeneutics/ |
-| [of-context-and-confusion]({{ site.baseurl }}/articles/of-context-and-confusion/) | work | 2 | /topics/quran-hermeneutics/ |
+| [of-context-and-confusion]({{ site.baseurl }}/articles/of-context-and-confusion/) | work | 2 | /topics/liberalism-orientalism/, /topics/quran-hermeneutics/ |
 | [the-quran-science-a-forced-marriage]({{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/) | work | 5 | /topics/quran-hermeneutics/, /topics/science-scientism/ |
 | [yUpHMaFHZ6s]({{ site.baseurl }}/transcripts/yUpHMaFHZ6s/) | transcript | 3 | /topics/quran-hermeneutics/ |
-| [Dr5IgXCHRIE]({{ site.baseurl }}/transcripts/Dr5IgXCHRIE/) | transcript | 3 | /topics/quran-hermeneutics/ |
+| [Dr5IgXCHRIE]({{ site.baseurl }}/transcripts/Dr5IgXCHRIE/) | transcript | 3 | /topics/apostasy-hell/, /topics/quran-hermeneutics/ |
 </tbody>
 </table>
 
