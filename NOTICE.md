@@ -510,3 +510,29 @@ readers; and the first entry in `.github/ISSUE_TEMPLATE/config.yml`, so that
 someone who arrived intending to ask how to reach him is redirected to the
 templates that can actually be acted on. Nothing in this notice quotes him,
 because this notice is the site's statement and not his words.
+
+---
+
+# The correct sitemap lives under the repository subpath, not the account root
+
+Search Console reported "Sitemap could not be read / Discovered pages 0" for
+`https://the-andalusian-project-archive.github.io/sitemap.xml`. That URL is
+correct only for a user/organisation Pages site (the `<account>.github.io` root).
+This site is a PROJECT site, published from a repository, so every deployed path
+is prefixed with the repository name:
+
+    https://the-andalusian-project-archive.github.io/            -> 404, no site here
+    https://the-andalusian-project-archive.github.io/andalusian-archive/  -> 200, the site
+
+Correct sitemap URL (absolute, what Search Console wants):
+
+    https://the-andalusian-project-archive.github.io/andalusian-archive/sitemap.xml
+
+Verified 2026-09-28: HTTP 200, `Content-Type: application/xml`, 56,495 bytes,
+320 `<url>` entries, every `<loc>` absolute under this host and every one
+resolving to a built page.
+
+`robots.txt` already points at that exact URL, so crawlers arriving the ordinary
+way find it without Search Console. The earlier 404 was a wrong URL typed into
+the Search Console form, not a broken sitemap.
+
