@@ -6,15 +6,15 @@ frames of the deployed site.
 
 | File | What it is | Size |
 |---|---|---:|
-| [`site-tour.mp4`](site-tour.mp4) | The full tour. 1440x900, 30 fps, 35.07 s. | 4,095,844 B (3.91 MiB) |
-| [`site-tour.gif`](site-tour.gif) | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 36.26 s. | 1,268,106 B (1.21 MiB) |
+| [`site-tour.mp4`](site-tour.mp4) | The full tour. 1440x900, 30 fps, 35.07 s. | 3,542,646 B (3.38 MiB) |
+| [`site-tour.gif`](site-tour.gif) | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 36.26 s. | 1,188,014 B (1.13 MiB) |
 
 The repository README embeds the **GIF**, not the MP4: GitHub strips `<video>`
 tags from README markdown, so a `<video>` embed renders as nothing. The GIF is
 linked alongside the MP4 and the live site.
 
 **This is a screen recording of the live site, not a rendering of the repository.**
-It was captured on **2026-09-28** from
+It was captured on **2026-09-28**, after the reading-first redesign, from
 <https://the-andalusian-project-archive.github.io/andalusian-archive/> at a
 1440x900 viewport, using a real browser, with the site's own navigation and CSS
 in place. Every frame is a screenshot of a page a visitor can open.
@@ -25,7 +25,8 @@ will not see is a worse advert than a slightly heavier file.
 
 ## It will go stale
 
-**Recorded 2026-09-28. Re-record when the site's pages change.** This is a
+**Recorded 2026-09-28, in the current design. Re-record when the site's
+pages change.** This is a
 picture of one moment, not a live feed. It will disagree with the site as soon as
 a caption, a layout, a count or a page changes — and the captions carry figures,
 so an approved recount will make them wrong. If you find a caption that no longer
@@ -149,7 +150,7 @@ text: 13 frames at 800x500 and 8 fps costs roughly 1,000 KB per second of
 animation, so a frame-for-frame copy of the MP4 would need about 35 MB. The GIF
 therefore carries **one frame per section** — the eleven picks the build script
 names — so each caption gets real screen time instead of flashing past. At
-800x500 and 8 fps it is 1.21 MiB, well inside the cap, and page headings, card
+800x500 and 8 fps it is 1.13 MiB, well inside the cap, and page headings, card
 titles and the captions are all readable at 1:1.
 
 Nothing in `docs/demo/` is referenced by the site build, so a stale or missing

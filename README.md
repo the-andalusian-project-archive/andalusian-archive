@@ -460,7 +460,8 @@ scripts/          build and test tooling: collection builders, taxonomy applier,
 data/             generated search indexes. Never hand-edit; built from _data/
 docs/             recovery-log/ — the committed evidence trail
 docs/demo/        the site tour: a screen recording of the live site, and its
-                  provenance. Recorded 2026-09-27; re-record when the site changes
+                  provenance. Recorded 2026-09-28 in the current dark theme at 1440x900;
+re-record when the site changes
 docs/superpowers/ the plan this recovery was executed against
 .github/          the Pages deploy workflow
 _staging/         raw captures and binaries. Gitignored, deliberately not published

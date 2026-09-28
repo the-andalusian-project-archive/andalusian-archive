@@ -16,8 +16,9 @@ tagged, uploaded or published.
 
 Nothing is blocking v1.0. The site tour that used to be a blocker has been
 re-recorded: `docs/demo/site-tour.mp4` and `docs/demo/site-tour.gif` were
-re-cut on 2026-09-28, after the recount was approved and applied, in the dark
-theme the site now defaults to. Their captions carry the current figures
+re-cut on 2026-09-28, after the recount was approved and applied, and again
+after the reading-first redesign, in the design's own dark theme with the
+SEP-red accent. Their captions carry the current figures
 (207 recovered items, 72 works with 47 in full, 20 papers, 68 transcripts of
 540,995 words) and their screenshots show the `/topics/` layer, which the
 previous cut did not include at all. The assets below can be attached as they
@@ -189,8 +190,8 @@ and by `docs/demo/README.md`.
 
 | File | What it is | Size | sha256 |
 |---|---|---:|---|
-| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 35.07 s. | 4,095,844 B (3.91 MiB) | `0a9464046cf03395324ae847968172da1b35d6d710d7424d2034efb817fa7820` |
-| `docs/demo/site-tour.gif` | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 36.26 s. | 1,268,106 B (1.21 MiB) | `bc276e21e729ec079312eace34dd016aaf96e2207a7ad709993c219efdb33ab4` |
+| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 35.07 s. | 3,542,646 B (3.38 MiB) | `ff8ef6c9651fe66577726e3ca69002de6753510c20a5bdd81caeae71f2903c02` |
+| `docs/demo/site-tour.gif` | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 36.26 s. | 1,188,014 B (1.13 MiB) | `c0d33726d7e8076c9c79691ee2a331c6e041a2cc4dda281fb3730be018facf7c` |
 
 Verified on 2026-09-28: the MP4 begins with a valid ISO-BMFF `ftyp` box and the
 GIF with a `GIF89a` header, so both are intact and neither is a Git LFS pointer
