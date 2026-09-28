@@ -23,40 +23,36 @@ position and not a religious authority. Read the links for the full text.</p>
 
 > We must acknowledge first that our very nature points in the direction of the infinite by being able to perceive the effects of things greater than ourselves and that this being the only nature we possess, there is no other choice, but to accept these intuitive conceptions. When we perceive purpose and design in the whole of reality we are understanding the nature of the product and that something is behind it.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work, cited at <code>_posts/2012-01-19-how-to-know-no-thing.md:22</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work), cited at <span class="cite-ref">_posts/2012-01-19-how-to-know-no-thing.md:22</span>
 
 > The philosophical support behind the intuition is based on the recognition that: (1) there are such things as ‘reality’ and ‘knowledge’, and (2) that human beings can grasp both at a normative level of cognition.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:28</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:28</span>
 
 
 <h3 class="question">foundations of belief</h3>
 
-> This we call God.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work, cited at <code>_posts/2012-01-19-how-to-know-no-thing.md:26</code>)
-
 > Upon establishing the appropriate understanding of the fitrah and its existence as a normative aspect of humanity, we can move on to elucidating how it functions. This is perhaps the most important part of this article in that it sets the stage for establishing the foundational arguments for God’s existence from the Islamic perspective.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:88</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:88</span>
 
 
 <h3 class="question">is god a thing</h3>
 
 > While there is some connection, to imply that “thing” can be applied to Allah is blasphemy at its finest, for the Absolute is not a “thing” in any sense of the term.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work, cited at <code>_posts/2012-01-13-nothing.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work), cited at <span class="cite-ref">_posts/2012-01-13-nothing.md:21</span>
 
 
 <h3 class="question">what does nothing mean in islam</h3>
 
 > We must understand Allah as Nothing: the very transcendence beyond our perception.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work, cited at <code>_posts/2012-01-13-nothing.md:22</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work), cited at <span class="cite-ref">_posts/2012-01-13-nothing.md:22</span>
 
 > All that is, was once Nothing. From Allah we came…and to Him shall we return.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work, cited at <code>_posts/2012-01-13-nothing.md:23</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work), cited at <span class="cite-ref">_posts/2012-01-13-nothing.md:23</span>
 
 
 <h3 class="question">what are the four ways god existence is proven in islam</h3>
@@ -64,14 +60,14 @@ position and not a religious authority. Read the links for the full text.</p>
 > Here, Allah states that the signs which point to Truth can be found “in the horizons” (external) “and within us” (internal). As such, the principle arguments for God’s existence may also be divided under these two categories. This dichotomy results in various methods by which such arguments may be validated. For instance, Shaykh Abu ‘Abd Allah Muhammad ibn Saalih ibn Muhammad ibn al-Uthaymeen at-Tamimi categorizes these methods into four in his Commentary on the Three Fundamental Principles of Islam:
 His existence, Exalted is He, may be proven by the Fiṭrah (one’s natural inclination), the intellect [Aql], the legislation [Shari’ah], and the senses [Hawass].[4]
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:28</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:28</span>
 
 
 <h3 class="question">can physical science prove god exists</h3>
 
 > I don\'t believe physical observation of the world can directly infer God.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript, cited at <code>_transcripts/transcript-PoNiuiP3W4Y.md:76</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:76</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -81,12 +77,12 @@ His existence, Exalted is He, may be proven by the Fiṭrah (one’s natural inc
 
 > For believers in the Divine, God’s existence is in fact quite an ordinary aspect of reality; something easily grasped by the mind and deduced from basic internal and external observations.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work, cited at <code>_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:18</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work), cited at <span class="cite-ref">_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:18</span>
 
 > could give him this but it wasn\'t like extraordinary for him in the least how is that extraordinary this guy is talking to god like you know of course he probably went up
 to heaven it\'s not a big deal you know what i mean that\'s nothing
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:314</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:314</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -98,7 +94,7 @@ to heaven it\'s not a big deal you know what i mean that\'s nothing
 These for me, for me personally, are arguments that help to solidify the belief of the believer.
 They don\'t help with atheists.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript, cited at <code>_transcripts/transcript-PoNiuiP3W4Y.md:102</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:102</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -110,7 +106,7 @@ They don\'t help with atheists.
 Other than the fitra, I don\'t like those arguments.
 I don\'t like many other arguments other than that, to be honest.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript, cited at <code>_transcripts/transcript-PoNiuiP3W4Y.md:88</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:88</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -120,7 +116,7 @@ I don\'t like many other arguments other than that, to be honest.
 
 > The concept of God is not some innate belief, but is inferred from the mind’s own inner workings, which are not bound by the constraints of natural laws – that is why we are able to ‘see’ beyond direct observations and conceive of abstract notions (theories) which make them coherent.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:130</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:130</span>
 
 
 <h3 class="question">is the fitrah a belief or a disposition</h3>
@@ -129,7 +125,7 @@ I don\'t like many other arguments other than that, to be honest.
 a foundational belief. The Fittra is an inclination, it\'s a state of being, it\'s a state of perceiving.
 It\'s not a belief in and of itself.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript, cited at <code>_transcripts/transcript-PoNiuiP3W4Y.md:238</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/PoNiuiP3W4Y/">a-muslims-guide-to-science-and-scientism-part-5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-PoNiuiP3W4Y.md:238</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -139,21 +135,21 @@ It\'s not a belief in and of itself.
 
 > The word fitrah is derived from the Arabic root fatara, which means ‘to create’, thus the former might be translated as “a way of being created”.[9]
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:42</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:42</span>
 
 
 <h3 class="question">is our belief in god just built into us</h3>
 
 > So, to begin, we are intuitively aware of that which is greater than us and it is an essential aspect of our humanity.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work, cited at <code>_posts/2012-01-19-how-to-know-no-thing.md:24</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work), cited at <span class="cite-ref">_posts/2012-01-19-how-to-know-no-thing.md:24</span>
 
 
 <h3 class="question">what do we mean when we say god exists</h3>
 
 > We understand then that there is an absolute existence beyond our finite existence and from there we reason, even though limited, that this Absolute is beyond “intelligence” “reason” “power” etc. and that it is the greatest.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work, cited at <code>_posts/2012-01-19-how-to-know-no-thing.md:25</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work), cited at <span class="cite-ref">_posts/2012-01-19-how-to-know-no-thing.md:25</span>
 
 
 <h3 class="question">is there really such a thing as an atheist</h3>
@@ -163,7 +159,7 @@ was to go against people who I consider to be stubborn because in my personal vi
 there is no such thing as an atheist. In my personal opinion, everyone has a fitrah.
 And if they deny the fitrah, they\'re denying themselves, they\'re just sort of what they\'re doing is
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">understanding-atheism-session-2</a> (transcript, cited at <code>_transcripts/transcript-CEzMdCn0Ims.md:990</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">understanding-atheism-session-2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-CEzMdCn0Ims.md:990</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -174,7 +170,7 @@ And if they deny the fitrah, they\'re denying themselves, they\'re just sort of 
 > We often have negative opinions of atheists, but you have to understand that the fitra is still there for a lot of people. Even if they deny it, there are a lot of people out there who practice an ethical standard because they\'re fitra.
 It\'s still there. It\'s still very much in them. It\'s trying to manifest itself.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">a-muslims-guide-to-science-and-scientism-part-2</a> (transcript, cited at <code>_transcripts/transcript-vh-6sisOncs.md:75</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">a-muslims-guide-to-science-and-scientism-part-2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:75</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -184,7 +180,7 @@ It\'s still there. It\'s still very much in them. It\'s trying to manifest itsel
 
 > believe that and I believe everyone already believes that. My purpose for sharing this argument was
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">understanding-atheism-session-2</a> (transcript, cited at <code>_transcripts/transcript-CEzMdCn0Ims.md:1002</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/CEzMdCn0Ims/">understanding-atheism-session-2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-CEzMdCn0Ims.md:1002</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -195,7 +191,7 @@ It\'s still there. It\'s still very much in them. It\'s trying to manifest itsel
 > exists and that the prophet is the prophet then this stuff doesn\'t enter their minds it\'s not it\'s not nonsensical our background beliefs are what make
 something look rational or not rational okay
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:320</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:320</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*

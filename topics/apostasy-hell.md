@@ -23,21 +23,21 @@ position and not a religious authority. Read the links for the full text.</p>
 
 > In summary, there can be no mercy without justice — and no justice without punishment.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:42</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:42</span>
 
 
 <h3 class="question">apostasy law</h3>
 
 > I responded that I “don’t support apostasy laws” because they “should no longer be operative because conditions have changed”.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:32</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:32</span>
 
 
 <h3 class="question">does islam allow killing apostates</h3>
 
 > So yes, I do not support the punishment for apostasy today, because the conditions have not been met that would warrant its implementation. Not because I disagree with the Law or believe it’s not part of Islam.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:58</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:58</span>
 
 > Well, firstly, I\'d like to say just right off the bat that
 I commend you for supporting individuals who are being persecuted,
@@ -47,7 +47,7 @@ I happen to believe that ex-Muslims should not be punished
 for their disagreement with Islam.
 I\'m among many Muslims who believe this, and I have my own theological reasons for this as well.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript, cited at <code>_transcripts/transcript-nkuZ70p-inE.md:52</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:52</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -57,22 +57,22 @@ I\'m among many Muslims who believe this, and I have my own theological reasons 
 
 > This article is a brief overview of my position on the punishment for apostasy within Islam.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:24</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:24</span>
 
 
 <h3 class="question">is this settled or is it one scholar's opinion</h3>
 
 > I do wish to concede that I may be wrong on this matter and am perfectly okay with being corrected.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:36</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:36</span>
 
 > If my detractors see this as a deviant position, then I merely ask this: “Why doyourefuse to kill an apostate?” The answers will vary, no doubt. Some will claim that they “lack authority”. Others will say that “the law isn’t in place”. Others will say because they “live in a non-Muslim society”. All of these are legitimate and agreeable.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:60</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:60</span>
 
 > so these discussions going back and forth some people a lot of people disagree with me there are some even muslims that i\'ve
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1155</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1155</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -82,7 +82,7 @@ and evidences later regarding my views
 on apostasy punishment but i just wanted to get that sort of thing out earlier because i don\'t want
 people to assume that i\'m just rejecting it because i\'m some sort of like reformist liberal or something which is ridiculous all of you know i\'ve been fighting against secular liberalism for like over a decade okay it\'s nonsense that somebody would
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">the-cancer-in-contemporary-dawah</a> (transcript, cited at <code>_transcripts/transcript-hKdNF95UqVM.md:937</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">the-cancer-in-contemporary-dawah</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:937</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -90,49 +90,54 @@ people to assume that i\'m just rejecting it because i\'m some sort of like refo
 
 <h3 class="question">is apostasy punishable by death in islam today</h3>
 
-> My position is clear: The punishment for
->
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:40</code>)
-
 > However, such conditions do not exist today because the political element (i.e. religious identity being tied to the state) is no longer present.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:40</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:40</span>
 
 > It was not like the nation state of today where citizenship is based on nationality and all polities have a default status of neutrality/peace.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</span>
 
 > As such, the conditions are no longer present to properly apply the punishment, because an apostate no longer serves as an actual existential threat to the Muslim ummah.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</span>
+
+> so how do we determine apostasy in in
+in a state that is no longer not only imperialistic but that doesn\'t define its citizenship
+based on its religious values
+>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1152</span>
+
+>
+> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 
 <h3 class="question">why is apostasy a capital offence in islam</h3>
 
 > However, little else is discussed beyond that. Although the Prophet (ﷺ) is referenced as justification for applying the punishment, the reason behind it is largely absent from most explanations.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:42</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:42</span>
 
 
 <h3 class="question">is the death penalty for apostasy still enforceable</h3>
 
 > That issue revolves around the fact that there doesn’t appear to be an actual Islamic authority or polity worthy enough of issuing said punishment (i.e. no caliphate or proper Islamically ruled polity is present).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:50</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:50</span>
 
 
 <h3 class="question">why did classical scholars treat apostasy as treason</h3>
 
 > As history has shown us, the caliphate came into existence during the Age of Empires, where each polity was in a default state of war and your religion was your citizenship.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</span>
 
 
 <h3 class="question">did the prophet ever let an apostate go unharmed</h3>
 
 > um and even then that law was not always implemented back then either the prophet saws sometimes let people go if he didn\'t think he didn\'t see them as a threat
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1147</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1147</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -142,7 +147,7 @@ people to assume that i\'m just rejecting it because i\'m some sort of like refo
 
 > However, I said no such thing. The Law of Allah makes perfect sense, but the application of a punishment without the necessary conditions (i.e. effective cause –‘illah/manât) does not.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:34</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:34</span>
 
 
 <h3 class="question">is calling for the death of apostates islamic</h3>
@@ -155,7 +160,7 @@ but apostate prophet was banned for
 stating the facts so there must be a double standard of course there is a significant difference between
 what assam al-hakim was saying and what the apostate prophet was saying and you\'re probably wondering what could
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/tUHEAejm404/">twitter-assists-islamists</a> (transcript, cited at <code>_transcripts/transcript-tUHEAejm404.md:178</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/tUHEAejm404/">twitter-assists-islamists</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tUHEAejm404.md:178</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -165,18 +170,7 @@ what assam al-hakim was saying and what the apostate prophet was saying and you\
 
 > within sharia law that an atheist gets executed because him believing
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1126</code>)
-
->
-> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
-
-
-<h3 class="question">why do muslims call for apostates to be killed</h3>
-
-> we should not be proud of punishing
-people what is this
->
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">the-cancer-in-contemporary-dawah</a> (transcript, cited at <code>_transcripts/transcript-hKdNF95UqVM.md:592</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1126</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -186,11 +180,11 @@ people what is this
 
 > In fact, I can even say with a great deal of certainty that some of these young people were never Muslim to begin with
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:52</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:52</span>
 
 > So, would such a person, neither raised Muslim nor living under an authentic Islamic authority, constitute as an apostate according to our Law?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:52</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:52</span>
 
 
 <h3 class="question">does malaysia punish apostasy with death</h3>
@@ -200,7 +194,7 @@ passed enactments wanting to punish apostasy with death, but the federal constit
 So the federal government knocked it down. And no one can be punished with death for apostasy in Malaysia.
 And no one has been punished with death for apostasy in Malaysia because it\'s not legal to punish anyone for apostasy with death in Malaysia.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript, cited at <code>_transcripts/transcript-nkuZ70p-inE.md:374</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:374</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -210,7 +204,7 @@ And no one has been punished with death for apostasy in Malaysia because it\'s n
 
 > 13 countries are publishing apostates doesn\'t make it so. Look at your source material. It\'s probably
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript, cited at <code>_transcripts/transcript-nkuZ70p-inE.md:415</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:415</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -222,7 +216,7 @@ And no one has been punished with death for apostasy in Malaysia because it\'s n
 and according to a 1993 statement by the Attorney General, the rulings could not be enforced without a constitutional amendment.
 Amending the penal code is the exclusive prerogative of the federal government.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript, cited at <code>_transcripts/transcript-nkuZ70p-inE.md:371</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:371</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -232,18 +226,18 @@ Amending the penal code is the exclusive prerogative of the federal government.
 
 > Are we so quick to execute people before ensuring they’re Muslim to begin with?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:54</span>
 
 > Instead, we call to the punishment in social media posts, scaring those who are confused and in search of real answers. We indirectly threaten their lives when they don’t even know why they’re Muslim to begin with.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:58</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:58</span>
 
 
 <h3 class="question">are there well known muslim scholars who believe apostates should be killed</h3>
 
 > islamic knowledge and traditional uh traditional traditional knowledge but they still believe apostates should be killed and all the rest of it all the other things that you maybe you don\'t even agree with they do
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1421</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1421</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -253,11 +247,11 @@ Amending the penal code is the exclusive prerogative of the federal government.
 
 > In the event that such an element is brought back into existence (i.e. a legitimate caliphate), then the punishment should become operative again.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:40</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:40</span>
 
 > it may have some use well it would depend if the conditions returned
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1178</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1178</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -271,7 +265,7 @@ is that apostates, they\'re sort of forced to go to these counseling sessions wh
 an Imam or religious scholar who tries to convince them over the months. And in some states,
 like Nikiti Simbilan, they actually grant people the right to apostate. So you have to fill out
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript, cited at <code>_transcripts/transcript-nkuZ70p-inE.md:396</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:396</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -281,21 +275,13 @@ like Nikiti Simbilan, they actually grant people the right to apostate. So you h
 
 > people don’t go to Hell for eternity because of one single finite criminal act, nor does God force them to remain in Hell arbitrarily. Rather, the punishment is eternal because the offense is eternally committed.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:32</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:32</span>
 
 > sins yep okay well what if i told you that in islam that you\'re in hellfire
 forever is because your sin is forever is committed continuously over and over
 and over and over again
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:84</code>)
-
->
-> *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
-
-> so their sin is eternal not in quality
-but also in quantity
->
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:119</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:84</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -304,7 +290,7 @@ but also in quantity
 they\'re in there because they don\'t stop that\'s the problem so it\'s not like it\'s because of one thing they\'ve done and then eternally they\'re punished it\'s because
 they can keep doing it
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1621</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1621</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -314,11 +300,11 @@ they can keep doing it
 
 > It shouldn’t be surprising then that the Qur’an repeatedly emphasizes that Hell is for the “arrogant” (4:36-37, 4:137, 40:76, 7:36, 34:31-33, etc.).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:36</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:36</span>
 
 > allah calls him a certain name or he says something about them every single time he says one thing about them he says they\'re arrogant he also says hell fire is for the arrogance so what does this mean he\'s talking specifically to individuals
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:111</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:111</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -328,53 +314,49 @@ they can keep doing it
 
 > Here, Allah states clearly that those who are being punished in Hell will never get a chance to leave, because He Knows they’re insincere in their remorse and desire to reform.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:36</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:36</span>
 
 
 <h3 class="question">why doesnt god just not create people who go to hell</h3>
 
 > No doubt the following argument will be given:“Why doesn’t god just not create people he knows will go to hell? Or why not just make these people cease to exist?”
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:40</code>)
-
-> Remember, mercy requires the potential for reciprocity.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:42</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:40</span>
 
 
 <h3 class="question">is eternal hell compatible with gods mercy</h3>
 
 > Atheists often advance the argument that God’s Mercy is canceled out by virtue of eternal Hellfire.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:24</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:24</span>
 
 > Thus, because these people refuse to accept God’s Mercy, it cannot be argued that God lacks mercy. It would be fallacious to state otherwise.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:38</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:38</span>
 
 
 <h3 class="question">what is the difference between mercy and forgiveness in islam</h3>
 
 > But this isn’t mercy. To forgive a criminal who refuses to repent for their crimes is not forgiveness, but stupidity.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:30</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:30</span>
 
 > Without the reciprocity of remorse and guarantee of reform, such “mercy” ultimately becomes a means of supporting criminal behavior and completely invalidates every ideal of justice ever conceived.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:30</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:30</span>
 
 > um the story always kind of affected me quite a bit um and it shows that you know allah\'s mercy is for everyone but when we\'re talking about mercy people don\'t really understand what mercy is they
 think mercy is just forgiving people regardless of the fact that they\'ve done wrong that\'s the gist of it but there\'s
 more to mercy than that mercy requires repentance
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:159</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:159</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > even the prophet muhammad peace be upon him you know you would say a parent\'s love for their child is one of the highest forms of mercy but he said even if fatima my daughter had stolen something i would have her
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:168</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:168</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -384,7 +366,7 @@ more to mercy than that mercy requires repentance
 
 > if you\'re a judge and somebody comes up to you they murdered somebody and they admitted to murdering somebody and you say you know how do you feel do you regret
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:164</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:164</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -396,7 +378,7 @@ more to mercy than that mercy requires repentance
 who know what allah wants who know that they shouldn\'t be doing certain things but regardless of that
 they refuse to submit
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:112</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:112</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -408,7 +390,7 @@ For example, if they\'re not ignorant or, you know, if they have no access to th
 then of course, Alasabana will show mercy to them, right?
 So it\'s not simply based on your identity that a person goes to hellfire.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript, cited at <code>_transcripts/transcript-wUapqpCqBUk.md:45</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:45</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -418,7 +400,7 @@ So it\'s not simply based on your identity that a person goes to hellfire.
 
 > there\'s a lovely story that my sheikh told me i don\'t know if it\'s canonical or anything like this but uh i think it\'s derived from hadith but it\'s not it\'s not exactly what it is it may have been just something that was
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:140</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:140</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -429,7 +411,7 @@ So it\'s not simply based on your identity that a person goes to hellfire.
 > So just because we are told that we should fear Alasabana, we should fear being punished.
 This doesn\'t necessitate that Alasabana is a dictator, it doesn\'t necessitate that at all.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript, cited at <code>_transcripts/transcript-wUapqpCqBUk.md:65</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:65</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -438,7 +420,7 @@ This doesn\'t necessitate that Alasabana is a dictator, it doesn\'t necessitate 
 for it. They deserve to be punished because that is the very foundation of everything that they are
 as a human being.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript, cited at <code>_transcripts/transcript-wUapqpCqBUk.md:88</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:88</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -453,7 +435,7 @@ you\'re coming from, your motivation. Alasabana, don\'t tell me, gave you your t
 your morality and you\'re going, and if somebody\'s going to go in the afterlife and say, no,
 I did it myself, that is a profound form of arrogance.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript, cited at <code>_transcripts/transcript-wUapqpCqBUk.md:75</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wUapqpCqBUk/">is-allah-a-dictator</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wUapqpCqBUk.md:75</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -467,7 +449,7 @@ any good reason being murdered. For Allah subhanahu wa ta\'ala at the end of tim
 will be rectified. Even if they\'re not rectified now, they will eventually be rectified, and justice
 will be given to all of these individuals, and they\'ll be rewarded for all the pain and suffering
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript, cited at <code>_transcripts/transcript-IhE3ka7SQQs.md:512</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:512</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -482,7 +464,7 @@ happens to all the innocent men who are slaughtered? Well, for eternity, those w
 For eternity, those children stay starved to death, and for eternity, those men who were slaughtered
 mindlessly without any compassion, mercy, they remain that way. The tragedy remains a tragedy.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript, cited at <code>_transcripts/transcript-IhE3ka7SQQs.md:519</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:519</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -493,7 +475,7 @@ mindlessly without any compassion, mercy, they remain that way. The tragedy rema
 > Well, in the Islamic tradition, from art, theology, Allah subhanahu wa ta\'ala has created evil for
 a purpose. Evil is not simply there. It\'s not arbitrary. It\'s not a mistake. It\'s not a flaw.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript, cited at <code>_transcripts/transcript-IhE3ka7SQQs.md:493</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:493</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -503,7 +485,7 @@ Our perception of good and evil is relative to us.
 What Allah subhanahu wa ta\'ala sees is much greater.
 So by His knowledge what He could be allowing is actually quite good.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript, cited at <code>_transcripts/transcript-lZkv38vd7bw.md:764</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:764</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -513,7 +495,7 @@ I would respond and say, are you sure?
 Because if there was more evil than good,
 will we still be here? Is it possible that we could live in a universe where there\'s more evil than good?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript, cited at <code>_transcripts/transcript-lZkv38vd7bw.md:772</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:772</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -525,7 +507,7 @@ will we still be here? Is it possible that we could live in a universe where the
 Well, very simply, if you cannot forgive yourself, if you believe you do not deserve mercy, then how can you accept mercy from Allah?
 How can you believe that Allah will be merciful with you?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">ikhallifa-2-forgive-yourself</a> (transcript, cited at <code>_transcripts/transcript--BwP55UIg3c.md:50</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">ikhallifa-2-forgive-yourself</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript--BwP55UIg3c.md:50</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -535,7 +517,7 @@ How can you believe that Allah will be merciful with you?
 
 > He stated, Do not lose hope in the mercy of Allah for those who lose hope in the mercy of Allah are those that have no faith.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">ikhallifa-2-forgive-yourself</a> (transcript, cited at <code>_transcripts/transcript--BwP55UIg3c.md:46</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">ikhallifa-2-forgive-yourself</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript--BwP55UIg3c.md:46</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -546,7 +528,7 @@ How can you believe that Allah will be merciful with you?
 > that anyone would ask me why this person deserves to be in hellfire for eternity when they\'ve made
 that decision themselves
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:199</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-osu-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:199</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -556,7 +538,7 @@ that decision themselves
 
 > have doubts who are watching this and are going to leave islam because of it that\'s what i\'m concerned with okay that\'s what i\'m concerned with because those those are the people we should be worried about not the people
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">the-cancer-in-contemporary-dawah</a> (transcript, cited at <code>_transcripts/transcript-hKdNF95UqVM.md:583</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">the-cancer-in-contemporary-dawah</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:583</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -566,7 +548,7 @@ that decision themselves
 
 > will be fueled for the hell fire okay whatever i\'m talking about the people whose hearts can still be softened i\'m talking about the people who still have an open
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">the-cancer-in-contemporary-dawah</a> (transcript, cited at <code>_transcripts/transcript-hKdNF95UqVM.md:588</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">the-cancer-in-contemporary-dawah</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:588</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -581,7 +563,7 @@ don\'t so there\'s a condition that\'s been applied there see they\'re insane th
 judgment so it\'s not their fault so we can\'t just like punish them because that would be a lack of
 mercy okay we have to excuse them for being what they are all right so in this way morality
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript, cited at <code>_transcripts/transcript-wVehdVlLdBI.md:478</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:478</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -591,7 +573,7 @@ mercy okay we have to excuse them for being what they are all right so in this w
 
 > We live in a time like no other – the caliphate no longer exists and our new circumstances warrant evaluating how the Law operates in a just manner.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:60</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:60</span>
 
 > nothing wrong with that because a law system or a system of a divine law that\'s supposed to be for
 all time should be able to do this correct because the law doesn\'t change but people do societies do
@@ -602,7 +584,7 @@ conditions and how we apply the law changes but the law itself doesn\'t change w
 wrong every day that doesn\'t change but the conditions do right I still say stealing is wrong but
 sometimes we don\'t apply the punishment because the conditions change so any other questions about
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript, cited at <code>_transcripts/transcript-wVehdVlLdBI.md:487</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:487</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -612,7 +594,7 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > Because it seems a far worse evil to deny all these people justice because of what we perceive
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript, cited at <code>_transcripts/transcript-IhE3ka7SQQs.md:529</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">fortifying-the-muslim-mind-i3-canada</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:529</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -622,7 +604,7 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > although I don\'t know of any cases where they sent people to jail recently in the past like 10 years
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript, cited at <code>_transcripts/transcript-nkuZ70p-inE.md:403</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:403</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -632,7 +614,7 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > Because the past no longer exists, your past mistakes no longer exist. As long as you forgive yourself, you will allow yourself to receive mercy and you accept the mercy of Allah, your past has been erased completely.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">ikhallifa-2-forgive-yourself</a> (transcript, cited at <code>_transcripts/transcript--BwP55UIg3c.md:87</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">ikhallifa-2-forgive-yourself</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript--BwP55UIg3c.md:87</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -642,14 +624,14 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > I’d much rather prefer to believe in an All-Merciful God where the word ‘mercy’ actually means something.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work, cited at <code>_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:46</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/gods-mercy-without-eternal-punishment/">gods-mercy-without-eternal-punishment</a> (work), cited at <span class="cite-ref">_posts/2018-08-01-gods-mercy-without-eternal-punishment.md:46</span>
 
 
 <h3 class="question">what is the view on the punishment for apostasy in islam</h3>
 
 > That said, that\'s not the point of this video, so I\'m not going to go in depth as to why that\'s the case.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript, cited at <code>_transcripts/transcript-nkuZ70p-inE.md:59</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/nkuZ70p-inE/">four-lies-muslims-tell-about-ex-muslims</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-nkuZ70p-inE.md:59</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -659,26 +641,26 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > Having read scholarly works on the issue, it is the consensus that a Muslim who commits
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:42</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:42</span>
 
 > For a concise, but scholarly view on the subject (that may or may not support my view, but is educational nonetheless), please refer to Sh. Hatem al-Haj’s article, “The Punishment for Apostasy – Can It Be Suspended“.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:66</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:66</span>
 
 
 <h3 class="question">what arguments exist against the death penalty for apostasy</h3>
 
 > However, I don’t see this position as sound for a number of reasons. Firstly, because I see no compelling evidence for this view in the Islamic tradition.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:48</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:48</span>
 
 > What I mean to say is, that if apostates must be killed because they’re spreading doubts, then why not just kill every single Muslim who has a deviant opinion?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:48</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:48</span>
 
 > but do you agree with that statement he made no i don\'t agree with that statement
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1131</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1131</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -688,7 +670,7 @@ sometimes we don\'t apply the punishment because the conditions change so any ot
 
 > The middle part of this statement appears to imply that it was expected of the apostate to declare war on the Muslim community, thereby suggesting that the act of
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work, cited at <code>_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/my-views-on-the-punishment-for-apostasy/">my-views-on-the-punishment-for-apostasy</a> (work), cited at <span class="cite-ref">_posts/2020-08-11-my-views-on-the-punishment-for-apostasy.md:46</span>
 
 > islamically what\'s the position on that oh it depends on whether or not you\'re
 an imperial society i brought this up in a former
@@ -696,7 +678,7 @@ conversation with army naval and others in ali you know the whole thing the whol
 religion was tied to your citizenship and there was a constant state of war around you so if you abandoned that religion it was like as though you were committing
 treason by joining the other side
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript, cited at <code>_transcripts/transcript-A3dbBCBSFKk.md:1142</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/A3dbBCBSFKk/">muslim-vs-ex-muslim-respectful-dialogue</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-A3dbBCBSFKk.md:1142</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -725,6 +707,7 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>what are the conditions for the punishment of apostasy</li>
       <li>does the apostasy punishment need a caliphate to apply</li>
       <li>ibn rushd on the punishment for apostasy</li>
+      <li>why do muslims call for apostates to be killed</li>
       <li>were most young muslims ever actually raised muslim</li>
       <li>which countries punish apostasy with death</li>
       <li>how do i explain apostasy law to someone who is frightened</li>
@@ -810,7 +793,7 @@ decision.</p>
 </tbody>
 </table>
 
-<p class="meta">15 items &middot; 51 of 110 mapped questions carry a quoted passage.</p>
+<p class="meta">15 items &middot; 50 of 110 mapped questions carry a quoted passage.</p>
 
 <h2>What the archive should be careful about</h2>
 <div class="prose-note">

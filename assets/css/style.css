@@ -2012,3 +2012,42 @@ tr:hover td {
     font-size: 1.625rem;
   }
 }
+
+/* The measure leaves a wide void to its right on a 1200px page. Centring the
+   prose column turns that into deliberate whitespace instead of a page that
+   looks broken on one side. Wide elements below - card grids, the topic list,
+   the shelf lists, the data tables - stay full width, so the page still uses
+   its width where it has something to show. */
+.page-content > h1,
+.page-content > h2,
+.page-content > h3,
+.page-content > h4,
+.page-content > p,
+.page-content > ul:not(.query-list):not(.shelf-list),
+.page-content > ol,
+.page-content > dl,
+.page-content > blockquote,
+.page-content > table,
+.page-content > pre,
+.page-content > .prose,
+.page-content > .note,
+.page-content > .prose-note,
+.page-content > .lead,
+.page-content > .crumb,
+.page-content > .meta,
+.page-content > .section-header {
+  margin-inline: auto;
+}
+
+/* The citation under a quotation. It is the thing that makes the quote
+   checkable, so it gets its own line and breaks only at its own separators.
+   word-break: break-all split filenames mid-token and made them unreadable. */
+.page-content blockquote .cite-ref {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  overflow-wrap: anywhere;
+  word-break: normal;
+  display: inline-block;
+  max-width: 100%;
+}

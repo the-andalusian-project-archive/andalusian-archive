@@ -246,6 +246,29 @@ decision.</p>
 """
 
 
+def is_answer_quote(quote: str) -> bool:
+    """Is this passage an ANSWER to a question, or a label on a record?
+
+    Filtering by length alone would throw away the corpus's best short lines -
+    "This we call God." and "islam is not peace islam is not war" are complete
+    arguments. What must not be presented as an answer is record metadata: the
+    bylines and co-author lines the research agents quoted when reporting an
+    attribution problem. "By Shaykh Dr. Abdalqadir as-Sufi" is important
+    provenance, but it is not an answer to a question, and hanging it under a
+    question heading misrepresents what it is.
+    """
+    q = quote.strip()
+    if re.match(r"^(by |By )[A-Z]", q) and len(q) < 120:
+        return False
+    if re.match(r"^co-authors?\s*:", q, re.I):
+        return False
+    if re.match(r"^by\s", q, re.I) and "shaykh" in q.lower():
+        return False
+    if len(q) < 60:
+        return False
+    return True
+
+
 def main() -> int:
     specs = load_specs()
     if not specs:
@@ -411,11 +434,19 @@ quoted in an argument as though it were checked.</p>
         shelf_md = render_shelf(shelf_out)
 
         by_query: dict[str, list[tuple[dict, dict]]] = {}
+        demoted = 0
         for item in material:
             for claim in item.get("key_claims") or []:
                 q = claim.get("supports", "").strip()
-                if q:
-                    by_query.setdefault(q, []).append((item, claim))
+                if not q:
+                    continue
+                if not is_answer_quote(claim.get("quote", "")):
+                    # Kept in the cluster and still machine-verified - it is
+                    # provenance, not an answer - but not presented as a reply
+                    # to a question. See is_answer_quote().
+                    demoted += 1
+                    continue
+                by_query.setdefault(q, []).append((item, claim))
 
         query_order: list[str] = []
         for bucket, _ in BUCKETS:
@@ -435,10 +466,17 @@ quoted in an argument as though it were checked.</p>
             for item, claim in pairs[:4]:
                 src = f"{item.get('kind', 'item')}"
                 link = f"{{{{ site.baseurl }}}}{item.get('url', '')}"
+                ref = claim.get("ref", "")
+                # The reference is the provenance - it is the thing that makes
+                # the quotation checkable - so it is kept, but given its own line
+                # and allowed to wrap at its own separators. `word-break:
+                # break-all` split paths mid-token and made the filename
+                # unreadable, which is the opposite of what a citation is for.
+                cite = f'<span class="cite-ref">{esc(ref)}</span>'
                 rows_md.append(
                     f"""> {esc(claim['quote'])}
 >
-> &mdash; <a href="{link}">{esc(item.get('slug', 'source'))}</a> ({esc(src)}, cited at <code>{esc(claim.get('ref', ''))}</code>)"""
+> &mdash; <a href="{link}">{esc(item.get('slug', 'source'))}</a> ({esc(src)}), cited at {cite}"""
                 )
                 if item.get("kind") == "transcript":
                     rows_md.append(
@@ -540,7 +578,8 @@ position and not a religious authority. Read the links for the full text.</p>
         print(
             f"  {cid:24s} material={len(material):3d} "
             f"questions={len(query_order):4d} rendered={rendered:4d} "
-            f"unrendered={len(unrendered):3d} shelf={len(shelf_out):3d}"
+            f"unrendered={len(unrendered):3d} shelf={len(shelf_out):3d} "
+            f"labels-demoted={demoted:2d}"
         )
 
     # ---- /topics/miscellany/ ---------------------------------------------

@@ -23,63 +23,55 @@ position and not a religious authority. Read the links for the full text.</p>
 
 > declaring that Muslim women did not need feminism due to three reasons: (1) Islam already gives women rights, (2) feminism is an invasive Western construct, and (3) feminism leads to disharmony between the genders.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:28</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:28</span>
 
 > I debated against the motion that Muslim women need feminism on 6th April 2016 at the International Islamic University Malaysia, during the event “Mars vs. Venus”. Both men and women attended the debate and the audience was overwhelmingly in favour of the arguments I made against my opponent.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a> (article, cited at <code>_articles/mdi-do-muslim-women-need-feminism.md:31</code>)
-
-> Wayback-only — no full text in this repository.
->
-> &mdash; <a href="{{ site.baseurl }}/articles/do-muslim-women-need-feminism-debate/">do-muslim-women-need-feminism-debate</a> (article, cited at <code>_articles/do-muslim-women-need-feminism-debate.md:17</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:31</span>
 
 > MDI event report + debate video embed (states debate viewable in full; embed is Facebook-hosted, availability subject to login)
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/do-muslim-women-need-feminism-debate/">do-muslim-women-need-feminism-debate</a> (article, cited at <code>_articles/do-muslim-women-need-feminism-debate.md:10</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/do-muslim-women-need-feminism-debate/">do-muslim-women-need-feminism-debate</a> (article), cited at <span class="cite-ref">_articles/do-muslim-women-need-feminism-debate.md:10</span>
 
 
 <h3 class="question">islam and gender equality</h3>
 
-> Co-authors: Raihanah Abdullah
->
-> &mdash; <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">gender-equality-islam-and-law</a> (paper, cited at <code>_papers/gender-equality-islam-and-law.md:28</code>)
-
 > - [gender-equality-islam-and-law.pdf]({{ "/papers/gender-equality-islam-and-law.pdf" | relative_url }}) - 17 pp.
 >
-> &mdash; <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">gender-equality-islam-and-law</a> (paper, cited at <code>_papers/gender-equality-islam-and-law.md:37</code>)
+> &mdash; <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">gender-equality-islam-and-law</a> (paper), cited at <span class="cite-ref">_papers/gender-equality-islam-and-law.md:37</span>
 
 > Licence / provenance: The Journal of Oriental Studies 25 (2015), pp. 20-36, open copy at TOTETU (totetu.org). Open access.
 >
-> &mdash; <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">gender-equality-islam-and-law</a> (paper, cited at <code>_papers/gender-equality-islam-and-law.md:40</code>)
+> &mdash; <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">gender-equality-islam-and-law</a> (paper), cited at <span class="cite-ref">_papers/gender-equality-islam-and-law.md:40</span>
 
 > Do not think for one minute Islam is in this country. It is not here by “shari’ah”, by “tariqa” or “haqiqa”2. If it were, you would not have idol worshippers in this country, you would not have women in the condition they are in, and you would not have usury in downtown Kuala Lumpur.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work, cited at <code>_posts/2013-06-29-the-collaborative-couple.md:46</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work), cited at <span class="cite-ref">_posts/2013-06-29-the-collaborative-couple.md:46</span>
 
 
 <h3 class="question">how old was aisha when she married the prophet</h3>
 
 > In recent years, few criticisms of Islam have taken the spotlight as much as condemnations of the Prophet’s marriage to Aisha. Muslims are accused of following the example of a man who had inappropriate relations with a 9-year-old girl. As a result, this has led many to doubt their faith and the moral compass it provides. However, this criticism is based on fallacious reasoning.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/">understanding-aishas-age-an-interdisciplinary-approach</a> (work, cited at <code>_posts/2018-10-02-understanding-aishas-age-an-interdisciplinary-approach.md:25</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/">understanding-aishas-age-an-interdisciplinary-approach</a> (work), cited at <span class="cite-ref">_posts/2018-10-02-understanding-aishas-age-an-interdisciplinary-approach.md:25</span>
 
 
 <h3 class="question">does islam teach gender equality</h3>
 
 > The dialectic of adultery, guilt and growing apart, of misogynistic monogamy will end. Monogamy in its nature is misogynistic.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work, cited at <code>_posts/2013-06-29-the-collaborative-couple.md:51</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work), cited at <span class="cite-ref">_posts/2013-06-29-the-collaborative-couple.md:51</span>
 
 
 <h3 class="question">feminist arguments against islam</h3>
 
 > Below are 5 of the main tactics that feminists use and why they are irrational:
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:72</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:72</span>
 
 > particularly feminist, for their imprecise use of language to demonise their opposition.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">ijihad-pilot-and-first-2-episodes</a> (transcript, cited at <code>_articles/ijihad-pilot-and-first-2-episodes.md:514</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">ijihad-pilot-and-first-2-episodes</a> (transcript), cited at <span class="cite-ref">_articles/ijihad-pilot-and-first-2-episodes.md:514</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -89,222 +81,215 @@ position and not a religious authority. Read the links for the full text.</p>
 
 > Writing inThe Star, she complains about the recent ruling, but for reasons entirely absent from Islamic thought and even the rhetoric of the more rational elements of the feminist movement.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work, cited at <code>_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:10</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work), cited at <span class="cite-ref">_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:10</span>
 
 
 <h3 class="question">why do muslims say islam gave women rights before europe gave women the vote</h3>
 
 > The very obvious answer to this is that women already have their rights from Islam. All that men and women need to do is to reclaim them from the liberal ideologies and politics which continue to bring them down.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:134</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:134</span>
 
 
 <h3 class="question">mansplaining and islam</h3>
 
 > the number one tactic used by feminists to undermine gender equality is to claim that all criticisms of their views are misogynistic attempts to silence them. In other words, simply disagreeing with the idea that there is a ‘patriarchy’ makes you an oppressor of women.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:76</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:76</span>
 
 
 <h3 class="question">lived experience argument against men speaking about feminism</h3>
 
 > It is also awkward that feminists complain about men speaking about feminism, since feminists talk about menall the timewithout concern for whether or not a man is actually present at the discussion.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:96</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:96</span>
 
 
 <h3 class="question">why does aisha's age matter so much in arguments against islam</h3>
 
 > By marrying a young girl of 9 years of age, he has been accused, by the unbelieving community, of being a pedophile or a child molester.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:21</span>
 
 
 <h3 class="question">hadith that says at nine a girl is a woman</h3>
 
 > Narrated Aisha: When the girl reaches nine years of age, she is a woman. [11]
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:63</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:63</span>
 
 
 <h3 class="question">would a muslim marry his own nine year old daughter today</h3>
 
 > A question that is often given to me and other Muslims is if we would marry our young, immature daughters off in the contemporary age: The answer isno, because we are following the example of our Prophet (saws) as well as the dictates of Islamic Law and their ability to incorporate various changing conditions throughout time.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:109</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:109</span>
 
 
 <h3 class="question">does the prophet count as a pedophile</h3>
 
 > Would it be moral to say that the Prophet Muhammad (saws) was a pedophile or a child molester (astaghfir’Allah), or to force on to these societies that men and women be married and consummate their marriages at the age of 18 or above?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work, cited at <code>_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:34</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:34</span>
 
 
 <h3 class="question">response to klingschor on aisha's age</h3>
 
 > Below is the refutation of a YT persona by the name of “Klingschor”, who has gotten a lot of popularity among the anti-Islam community. He, like many others, claim that the Prophet Muhammad (saws) was a pedophile or child molester given his marriage with young Aisha (ra).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:17</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:17</span>
 
 
 <h3 class="question">istihan and masalih mursalah early marriage changing conditions</h3>
 
 > This flexibility, however, is not arbitrary and comes from a principle within Islamic Law itself, called the principle of istihan or al-masalih al-mursullah (public interests)[2]
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work, cited at <code>_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:26</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:26</span>
 
 
 <h3 class="question">normative circumstantial morality</h3>
 
 > The alternative perspective that I believe can both be applied universally while considering the various differences in ideals and social practices — and that I believe is the most correct — is what I like to call ‘Normative Circumstantial Morality’.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work, cited at <code>_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:30</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:30</span>
 
 
 <h3 class="question">moral progressionism and judging the past</h3>
 
 > This model is a form of Enlightenment influenced morality called ‘Moral Progressionism’, or the idea that somehow societies have or are capable of becoming more moral than those before them.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work, cited at <code>_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:23</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:23</span>
 
 > But she calls herself a ‘moderate’, so this must mean that she believes that this was a punishment prescribedback thenwhen people were more primitive (read, ‘less moral’ than herself and others) so it doesn’t apply to now in our more advanced,secularsocieties.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work, cited at <code>_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:50</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work), cited at <span class="cite-ref">_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:50</span>
 
 
 <h3 class="question">how to explain wasatiyyah to someone who thinks islam is patriarchal</h3>
 
 > everyMuslim needs to respond to all injustices equally – fostering a holistic implementation of justice and morality for all. We as Muslims need to react and cater to the cries of the oppressed, regardless of gender, age, and social status. This is why Islam iswasatiyyah, and why feminism is not.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:134</code>)
-
-
-<h3 class="question">male advocacy why are men told they cannot speak about women's rights</h3>
-
-> By Shaykh Dr. Abdalqadir as-Sufi
->
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work, cited at <code>_posts/2013-06-29-the-collaborative-couple.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:134</span>
 
 
 <h3 class="question">stockholm syndrome accusation against women who reject feminism</h3>
 
 > Apparently, if a woman disagrees with feminism she must be “brainwashed by the patriarchy” and is suffering from “Stockholm Syndrome” (a most telling accusation, comparing men to an enemy military force).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:100</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:100</span>
 
 
 <h3 class="question">patriarchy hurts men too argument</h3>
 
 > It’s simply unfair to claim men have so much “privilege” when it is women who we often work, fight, and die for. To suggests men’s genuine sacrifices for female privilege are “oppressive” is not only appalling, but clear proof of misandry.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:120</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:120</span>
 
 
 <h3 class="question">why aisha is not counted as a child bioarchaeology social age</h3>
 
 > The problem of using biological age to determine the social age of a child is becoming more widely acknowledged in the literature (Baxter 2005a, p. 98; Lewis 2007). [3]
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:29</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:29</span>
 
 
 <h3 class="question">intersectional feminism and the patriarchy</h3>
 
 > However, according to intersectional feminism, all of these “other reasons” are still less important and still fall under the problem of ‘patriarchy’. So nothing has really changed except that now there are more things for feminists to blame men for.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:130</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:130</span>
 
 
 <h3 class="question">aung san suu kyi misogyny left wing feminism critique</h3>
 
 > Mainstream feminist’s organizations have continuously lobbied in support of military intervention in the Middle East to “free” women from the oppression of not being able to wear bikinis, not being educated in places with no schools, and not being employed in places with no jobs.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:104</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:104</span>
 
 
 <h3 class="question">marina mahathir caning women but seventeen men were also caned</h3>
 
 > While it certainly is okay to fight for the rights of women and to inform people of women’s suffering, it becomes nothing more than a shallow commitment if you are not showing the same passion when similar injustices happen to men. A feminists is only as good as their appreciation for all human beings and their disgusts for all forms of suffering.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work, cited at <code>_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:14</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work), cited at <span class="cite-ref">_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:14</span>
 
 
 <h3 class="question">maryam lee muslim debate initiative 2016 debate mars vs venus</h3>
 
 > **The work `do-muslim-women-need-feminism-debate` is catalogued, and this post is not counted again, because it is an announcement for the same piece of work.** That link is INFERRED, NOT PROVEN: the archive holds no local text for the work, so the two texts could not be compared.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a> (article, cited at <code>_articles/mdi-do-muslim-women-need-feminism.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:21</span>
 
 
 <h3 class="question">is child marriage legal in malaysia today what does islam say</h3>
 
 > Firstly, it should be noted that this research does not intend to justify contemporary marriages defined as ‘underaged’ and we condemn those practices outright given that current conditions do not allow for justice to be optimally reached for those sort of relationships. As such, we consider such marriages to be unjust. If our detractors attempt to read this as a justification of said marriages in the contemporary period, let them end those doubts here and allow for the research to speak for itself.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work, cited at <code>_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:24</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:24</span>
 
 
 <h3 class="question">classical islamic law age of maturity marriage consummation</h3>
 
 > Narrated Aisha: I had seen my parents following Islam since I attained the age of puberty.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:103</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:103</span>
 
 > The majority position of all classical schools of law held that minors could be contracted in marriage by their guardians, although consummation was not permitted until the minor was physically ready to enter a sexual relationship.[9]
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work, cited at <code>_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:38</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:38</span>
 
 
 <h3 class="question">why early marriage made sense in seventh century arabia</h3>
 
 > The bottom line is that people simply did not live as long or as healthy in the past.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:51</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:51</span>
 
 
 <h3 class="question">male life expectancy and gender justice in islam</h3>
 
 > Trying to “equalize women” under these conditions would be absurd without fixing the injustices happening to the men as well.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:84</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:84</span>
 
 
 <h3 class="question">why can only muslim men debate whether muslim women need feminism</h3>
 
 > Men should have a right to speak about things which pertain to them. If you’re going to claim that feminism is about gender equality, then a man saying “Hey, most of us are not monsters” should not be an offense to your sensibilities.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:88</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:88</span>
 
 > I took the title of “The Collaborative Couple” being moved by where in Qur’an, Allah, telling of people entering into the “garden” says, “They will come singly and in couples”. I felt this contained a great insight for us, if we were to take benefit from it.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work, cited at <code>_posts/2013-06-29-the-collaborative-couple.md:22</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work), cited at <span class="cite-ref">_posts/2013-06-29-the-collaborative-couple.md:22</span>
 
 
 <h3 class="question">feminist claim that islamists are trying to force shariah on everyone</h3>
 
 > That said, after the debate, a small group of radical feminists attempted to disrupt the Q&amp;A session, trying to shout me down. I allowed them to speak and countered them accordingly. Unfortunately, that part of the talk was not recorded.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a> (article, cited at <code>_articles/mdi-do-muslim-women-need-feminism.md:33</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/do-muslim-women-need-feminism/">mdi-do-muslim-women-need-feminism</a> (article), cited at <span class="cite-ref">_articles/mdi-do-muslim-women-need-feminism.md:33</span>
 
 
 <h3 class="question">why does the writer oppose the caning but not the framing of the argument</h3>
 
 > While I and many others are opposed to the canings on grounds that they are not considered part of the Sharia — when the punishment isn’t even equivalent to said standard, nor the questionable means by which the punished were prosecuted are being transparently laid out — and that since a caliphate has yet to be established that would allow for said punishments to be inflicted, in the very least these objections are in compliance with the Islamic way of life.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work, cited at <code>_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:52</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work), cited at <span class="cite-ref">_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:52</span>
 
 
 <h3 class="question">male privilege not as privileged as you think islam</h3>
 
 > But to claim that this isthe normand that the majority of men are somehow programmed from birth to make women suffer? This is pure misandry. Neither gender has the monopoly on moral virtue or vice.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:76</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:76</span>
 
 
 <h3 class="question">why are muslims afraid to call out feminists in public</h3>
 
 > lot of students who don't necessarily like what's going on at the moment. The word racist or sexist
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">ijihad-pilot-and-first-2-episodes</a> (transcript, cited at <code>_articles/ijihad-pilot-and-first-2-episodes.md:520</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">ijihad-pilot-and-first-2-episodes</a> (transcript), cited at <span class="cite-ref">_articles/ijihad-pilot-and-first-2-episodes.md:520</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -314,36 +299,36 @@ position and not a religious authority. Read the links for the full text.</p>
 
 > Even in the commentary itself, Ibn Hajar notes that Aisha, at the time of her having played with these dolls, was around the age of 14.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:99</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:99</span>
 
 
 <h3 class="question">what is said about the age of nine in islamic law and puberty</h3>
 
 > What is more, is that while the age of 9 in Islamic Law is considered the minimum for when such physical/mental maturation can take place, it is never mentioned as one of the conditions by which to judge pubertyor physical maturation.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work, cited at <code>_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:43</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:43</span>
 
 > It is therefore remarkable that our detractors often quote al-Qur’an 65:4[11] – which implies that women could consummate their marriages prior to menstruation – as a means to suggest that Islam allows for sex with premmature girls.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a> (article, cited at <code>_articles/mdi-religion-vs-paedophilia-part-3.md:69</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:69</span>
 
 
 <h3 class="question">burqa niqab mandatory in islam what the writer says</h3>
 
 > The superior collaborative woman will require the social freedom of the multiple wife family in order to carry out her higher spiritual task. The superior collaborative man will require the multiple wife family as a human and open non-Oedipal base for the next generation.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work, cited at <code>_posts/2013-06-29-the-collaborative-couple.md:50</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-collaborative-couple/">the-collaborative-couple</a> (work), cited at <span class="cite-ref">_posts/2013-06-29-the-collaborative-couple.md:50</span>
 
 
 <h3 class="question">how do i answer when someone says the prophet married a nine year old girl</h3>
 
 > Therefore, we conclude that on the basis of scientific research and the true nature of Islamic Law, that our detractors are not only mistaken in their accusations of pedophilia against Prophet Muhammad (saws), but they are also mistaken in assuming that his example is burdensome or allows for the exploitation and harm of minors in the contemporary period.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work, cited at <code>_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:44</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:44</span>
 
 > probably the number one criticism that you hear against islam in the contemporary period and i feel like it hasn\'t been adequately addressed now
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript, cited at <code>_transcripts/transcript-qBkiwqMucY0.md:56</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:56</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -353,13 +338,13 @@ position and not a religious authority. Read the links for the full text.</p>
 
 > To summarize, to make similar the contemporary realities of child and adult development with that of 1400 years ago, when neither reflect similar social, economic, technological or resource conditions, which would have also influenced the level of biological and cognitive development of said populations, is not only unfair, but completely and utterly fallacious.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:107</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:107</span>
 
 > those decisions that they did morality doesn\'t change it\'s always wrong to murder it\'s always
 wrong to steal and it\'s always wrong to
 abuse and to take advantage of children but what does change are the conditions of humanity
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript, cited at <code>_transcripts/transcript-qBkiwqMucY0.md:81</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:81</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -369,12 +354,12 @@ abuse and to take advantage of children but what does change are the conditions 
 
 > The real question that should be asked, towards our detractors is if they would marry off their young daughters in early antiquity, knowing full well the moral consequences of not doing so, having now understood the historical and biological concerns related to that time period and its various geographical and cultural differences prior to the contemporary phenomenon of globalization.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work, cited at <code>_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:109</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:109</span>
 
 > where childhood can be extended for as
 long as we want even until our 20s where we don\'t have to worry so much
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript, cited at <code>_transcripts/transcript-qBkiwqMucY0.md:76</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:76</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -384,22 +369,22 @@ long as we want even until our 20s where we don\'t have to worry so much
 
 > This archive links to the original publisher page. No PDF is mirrored in this repository.
 >
-> &mdash; <a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">understanding-aisha-s-age-an-interdisciplinary-approach</a> (paper, cited at <code>_papers/understanding-aisha-s-age-an-interdisciplinary-approach.md:55</code>)
+> &mdash; <a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">understanding-aisha-s-age-an-interdisciplinary-approach</a> (paper), cited at <span class="cite-ref">_papers/understanding-aisha-s-age-an-interdisciplinary-approach.md:55</span>
 
 > **This essay is also catalogued as a work and is not counted again.** It is the same text as the work `prophets-vs-pedophiles-part-3`, proved by comparison rather than by title: 0.9809 of this post's 5-grams are present in that work's local text.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a> (article, cited at <code>_articles/mdi-religion-vs-paedophilia-part-3.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:21</span>
 
 > Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript, cited at <code>_transcripts/transcript-qBkiwqMucY0.md:17</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:17</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > convert to islam so i mean this is one one of the things that i actually saw one of the first things i saw when i came to islam
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript, cited at <code>_transcripts/transcript-qBkiwqMucY0.md:58</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">qBkiwqMucY0</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:58</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -409,71 +394,67 @@ long as we want even until our 20s where we don\'t have to worry so much
 
 > More faulty is the logic behind punishing women for incest. As in statutory rape, incest is equally a problem of power dynamics, where one party, usually the woman, is unable to refuse sexual overtures from someone who has more power than her. In this case, the person is her father, uncle or brother.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work, cited at <code>_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:18</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/marina-mahathir-against-women-logic-islam/">marina-mahathir-against-women-logic-islam</a> (work), cited at <span class="cite-ref">_posts/2013-06-21-marina-mahathir-against-women-logic-islam.md:18</span>
 
 
 <h3 class="question">how do i explain that a contract and a consummation are legally different things</h3>
 
 > Also, the ability to “endure intercourse” was normatively based on the common judgment of the community – not pedophiles.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work, cited at <code>_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:41</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:41</span>
 
 
 <h3 class="question">how do i answer if someone asks whether child marriage is allowed today</h3>
 
 > Firstly, it should be noted that this research does not intend to justify contemporary marriages defined as ‘underaged’ and we condemn those practices outright given that current conditions do not allow for justice to be optimally reached for those sort of relationships. As such, we consider such marriages to be unjust.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a> (article, cited at <code>_articles/mdi-religion-vs-paedophilia-part-3.md:35</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">mdi-religion-vs-paedophilia-part-3</a> (article), cited at <span class="cite-ref">_articles/mdi-religion-vs-paedophilia-part-3.md:35</span>
 
 
 <h3 class="question">what is the view in this archive on Aisha's age at marriage</h3>
 
 > This paper elucidates the flawed nature of accusations of the Prophet’s alleged immorality as well as how Islam teaches us to adapt the message of the Qur’an to changing circumstances.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/">understanding-aishas-age-an-interdisciplinary-approach</a> (work, cited at <code>_posts/2018-10-02-understanding-aishas-age-an-interdisciplinary-approach.md:25</code>)
-
-> Co-authors: Dr. Jonathan Brown
->
-> &mdash; <a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">understanding-aisha-s-age-an-interdisciplinary-approach</a> (paper, cited at <code>_papers/understanding-aisha-s-age-an-interdisciplinary-approach.md:45</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/">understanding-aishas-age-an-interdisciplinary-approach</a> (work), cited at <span class="cite-ref">_posts/2018-10-02-understanding-aishas-age-an-interdisciplinary-approach.md:25</span>
 
 
 <h3 class="question">explain the argument that early marriage in seventh century Arabia was not immoral</h3>
 
 > So here’s a hypothetical. Say you had a time machine and could go back to 7th century Arabia. Based on the overarching universal Normative of ‘happiness’ and the different conditions present, would you pronounce a negative judgement on said societies for attempting to optimally reach the Normative with what options they had available?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work, cited at <code>_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:34</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:34</span>
 
 > When reviewing the available evidence, we not only find that early marriage was normal in many early societies, it also made moral sense given their circumstances. Throughout human history, populations had to adapt to their physical and social environments while optimizing their ethical judgments accordingly—much as we do today.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/">understanding-aishas-age-an-interdisciplinary-approach</a> (work, cited at <code>_posts/2018-10-02-understanding-aishas-age-an-interdisciplinary-approach.md:25</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/understanding-aishas-age-an-interdisciplinary-approach/">understanding-aishas-age-an-interdisciplinary-approach</a> (work), cited at <span class="cite-ref">_posts/2018-10-02-understanding-aishas-age-an-interdisciplinary-approach.md:25</span>
 
 
 <h3 class="question">explain the difference between a contracted marriage and a consummated marriage in classical Islamic law</h3>
 
 > A marriage could be contracted before either party was ready for sexual intercourse, but a marriage could not be consummated until both bride and groom were physically mature. Such maturity was not equated with puberty (the marker of legal majority), but rather could be reached before its onset.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work, cited at <code>_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:40</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-3/">prophets-vs-pedophiles-part-3</a> (work), cited at <span class="cite-ref">_posts/2013-06-09-prophets-vs-pedophiles-part-3.md:40</span>
 
 
 <h3 class="question">summarize the bioarchaeological and life history theory evidence cited about childhood in the past</h3>
 
 > Originally published by Yaqeen Institute for Islamic Research. Attribution preserved; this page links out and does not reproduce the full text.
 >
-> &mdash; <a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">understanding-aisha-s-age-an-interdisciplinary-approach</a> (paper, cited at <code>_papers/understanding-aisha-s-age-an-interdisciplinary-approach.md:47</code>)
+> &mdash; <a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">understanding-aisha-s-age-an-interdisciplinary-approach</a> (paper), cited at <span class="cite-ref">_papers/understanding-aisha-s-age-an-interdisciplinary-approach.md:47</span>
 
 
 <h3 class="question">what does this author say happens to Islamic law when conditions change over time</h3>
 
 > In a way, its a form of Moral Realism with far more flexible applicability, while still guarding essential standards of various ideologies – of course, those not opposed to this one.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work, cited at <code>_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:30</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-2/">prophets-vs-pedophiles-part-2</a> (work), cited at <span class="cite-ref">_posts/2013-03-20-prophets-vs-pedophiles-part-2.md:30</span>
 
 
 <h3 class="question">what reasons does this writer give for why feminism would not be needed by Muslim women</h3>
 
 > nowhere did I argueagainstwomen’s rights or try to justify injustices committed against women. I clearly argue the exact opposite, suggesting that feminism only exacerbates these problems.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work, cited at <code>_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:28</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-feminism-undermines-islam-and-gender-justice/">how-feminism-undermines-islam-and-gender-justice</a> (work), cited at <span class="cite-ref">_posts/2016-04-30-how-feminism-undermines-islam-and-gender-justice.md:28</span>
 
 
 
@@ -486,6 +467,7 @@ one of them on its own, the material that bears on it is in the table above.</p>
       <li>child marriage in islam today is it allowed</li>
       <li>aisha age 9 pedophile accusation</li>
       <li>how do i answer when someone says the prophet married a nine year old</li>
+      <li>male advocacy why are men told they cannot speak about women's rights</li>
       <li>feminism and the taliban what is the counterargument</li>
       <li>women only organizing committee male speaker muslimah conference</li>
       <li>islam and homosexuality equality between men and women tolerance</li>
@@ -540,7 +522,7 @@ decision.</p>
 </tbody>
 </table>
 
-<p class="meta">14 items &middot; 51 of 72 mapped questions carry a quoted passage.</p>
+<p class="meta">14 items &middot; 50 of 72 mapped questions carry a quoted passage.</p>
 
 <h2>What the archive should be careful about</h2>
 <div class="prose-note">

@@ -23,45 +23,45 @@ position and not a religious authority. Read the links for the full text.</p>
 
 > A two day lecture on the subject of atheism, atheists’ beliefs, and common arguments and responses.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/by-series/understanding-atheism/">understanding-atheism</a> (work, cited at <code>_posts/2017-12-22-understanding-atheism.md:25</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/by-series/understanding-atheism/">understanding-atheism</a> (work), cited at <span class="cite-ref">_posts/2017-12-22-understanding-atheism.md:25</span>
 
 > A discussion I had on Reviving Faith Radio (August 27, 2017).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-atheistic-worldview-vs-the-quranic-worldview/">the-atheistic-worldview-vs-the-quranic-worldview</a> (work, cited at <code>_posts/2017-12-22-the-atheistic-worldview-vs-the-quranic-worldview.md:25</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-atheistic-worldview-vs-the-quranic-worldview/">the-atheistic-worldview-vs-the-quranic-worldview</a> (work), cited at <span class="cite-ref">_posts/2017-12-22-the-atheistic-worldview-vs-the-quranic-worldview.md:25</span>
 
 
 <h3 class="question">religious doubt</h3>
 
 > I gave a lecture on the on some “controversial” hadith and beliefs within Islam.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/hard-questions-answering-doubts-about-islam/">hard-questions-answering-doubts-about-islam</a> (work, cited at <code>_posts/2018-11-14-hard-questions-answering-doubts-about-islam.md:25</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/hard-questions-answering-doubts-about-islam/">hard-questions-answering-doubts-about-islam</a> (work), cited at <span class="cite-ref">_posts/2018-11-14-hard-questions-answering-doubts-about-islam.md:25</span>
 
 
 <h3 class="question">how do you prove god exists without evidence</h3>
 
 > Muslims should be more focused on challenging this narrow method of validation by attempting to undermine atheistic epistemology, or theory of knowledge, rather than meet them head to head in their unrealistic and irrational demands.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:37</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:37</span>
 
 
 <h3 class="question">extraordinary claims require extraordinary evidence rebuttal</h3>
 
 > a common weapon used to engage with believers in the Divine is the assertion that “extraordinary claims require extraordinary evidence”.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work, cited at <code>_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:14</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work), cited at <span class="cite-ref">_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:14</span>
 
 
 <h3 class="question">what is the fitrah</h3>
 
 > [E]very child is born in a state of fiṭrah and evil is an external agent of misguidance.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:74</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:74</span>
 
 > goal. We see ourselves in the same manner. And this, this Pitra doesn\'t prove God\'s existence.
 Believe it or not, it doesn\'t prove the existence of God, but what it does is it sets up a rational
 standard within the mind of the human being to infer that there is one. It is a default as it were,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript, cited at <code>_transcripts/transcript-ZbcsxAoIVY0.md:215</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:215</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -71,21 +71,21 @@ standard within the mind of the human being to infer that there is one. It is a 
 
 > showcasing the major figures and ideas surrounding the movement and how we as Muslims can counter this recent intellectual trend through a philosophical and Islamic perspective.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/contra-contemporary-atheism-lecture/">contra-contemporary-atheism-lecture</a> (work, cited at <code>_posts/2014-08-23-contra-contemporary-atheism-lecture.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/contra-contemporary-atheism-lecture/">contra-contemporary-atheism-lecture</a> (work), cited at <span class="cite-ref">_posts/2014-08-23-contra-contemporary-atheism-lecture.md:21</span>
 
 
 <h3 class="question">problem of evil argument against atheism</h3>
 
 > Research Fellow Asadullah Ali gives a pragmatic look at atheism, particularly focusing on 3 areas of doubt in today’s world: the problem of evil, the problem of representation, and the problem of belief.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/by-series/atheism-doubting-your-doubts/">atheism-doubting-your-doubts</a> (work, cited at <code>_posts/2018-06-20-atheism-doubting-your-doubts.md:25</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/by-series/atheism-doubting-your-doubts/">atheism-doubting-your-doubts</a> (work), cited at <span class="cite-ref">_posts/2018-06-20-atheism-doubting-your-doubts.md:25</span>
 
 > don\'t consider it to be sufficient. And I always thought that was really weird. Why? Why do people still feel that atheism
 is a far more rational position to take than to accept that God is there overseeing everything, despite
 all the horrible things that we see on a daily basis? Because to me, if you adopt atheism, the problem of
 evil does not go away. It doesn\'t suddenly vanish from the face of the earth. You still have evil.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript, cited at <code>_transcripts/transcript-ZbcsxAoIVY0.md:93</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:93</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -95,24 +95,24 @@ evil does not go away. It doesn\'t suddenly vanish from the face of the earth. Y
 
 > no doubt the most important influence behind the phenomenon of atheism today – especially among Muslims – are the considerable lack of valid reasons for believing in God or religion.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:24</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:24</span>
 
 > Why is this the case? Why exactly is atheism becoming an attractive option for our Muslim youth and what can be done to stop its spread?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/contra-contemporary-atheism-lecture/">contra-contemporary-atheism-lecture</a> (work, cited at <code>_posts/2014-08-23-contra-contemporary-atheism-lecture.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/contra-contemporary-atheism-lecture/">contra-contemporary-atheism-lecture</a> (work), cited at <span class="cite-ref">_posts/2014-08-23-contra-contemporary-atheism-lecture.md:21</span>
 
 
 <h3 class="question">difference between doubt and skepticism</h3>
 
 > The “doubt without an end” mentioned by the famous philosopher of mind, Ludwig Wittgenstein, refers to that which is distinguished from normal doubt: the ideology of Skepticism.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:67</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:67</span>
 
 > We only doubt what we have reason to. When we experience an anomaly, better, better set. When we
 experience anomalies, then we start to feel, okay, now there\'s something to question. Now there\'s
 something wrong here. But normally, we do not act like that. And if we did, we wouldn\'t survive.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript, cited at <code>_transcripts/transcript-lZkv38vd7bw.md:502</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:502</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -122,11 +122,11 @@ something wrong here. But normally, we do not act like that. And if we did, we w
 
 > We should instead focus more on an oft neglected approach which actually serves to legitimize all the aforementioned; what might be called the ‘internal’ arguments for God’s existence, otherwise known as the fitrah.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:37</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:37</span>
 
 > In other words, evidence is ultimately a response to data that challenges what we think we know; it is not the way we know.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:75</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:75</span>
 
 
 <h3 class="question">is it irrational to believe in god without proof</h3>
@@ -139,7 +139,7 @@ something wrong here. But normally, we do not act like that. And if we did, we w
 
 C) Therefore, the impression ‘God’ is rational and evidence is not necessary for its validation.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:136</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:136</span>
 
 > Expose? Primary things are arguments number two. The argument for the irrationality of theism and religion, theism being the belief in God.
 P1, any claim that lacks evidence is unjustified.
@@ -150,7 +150,7 @@ It depends, subjective. It\'s subjective. Okay, we\'ll get into that. Theism and
 Okay, therefore theism and religion are irrational.
 It implies that evidence is necessary for every claim.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript, cited at <code>_transcripts/transcript-NyAVl7RsEOs.md:577</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:577</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -164,7 +164,7 @@ What about this claim? That\'s it, it\'s done. The argument itself lacks evidenc
 There\'s no evidence for the position. The claim itself, that any claim that lacks evidence is unjustified,
 which is why I disagree with the fact that we always need evidence for self, that\'s why I believe that
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript, cited at <code>_transcripts/transcript-lZkv38vd7bw.md:454</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:454</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -175,7 +175,7 @@ which is why I disagree with the fact that we always need evidence for self, tha
 > So, atheism in the dictionary, today the Oxford dictionary says,
 states that the disbelief or lack of belief in God are God\'s.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript, cited at <code>_transcripts/transcript-NyAVl7RsEOs.md:302</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:302</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -189,7 +189,7 @@ They say, I don\'t know.
 Okay. They say, I don\'t have enough evidence. I don\'t have enough reason to believe that there\'s a God.
 I simply lack the belief. That\'s it. So don\'t blame me for everything. It\'s almost like a defense mechanism.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript, cited at <code>_transcripts/transcript-NyAVl7RsEOs.md:364</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:364</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -205,7 +205,7 @@ often this is used in opposition to the concept of faith
 or belief without evidence. So the new atheist, such as this man, Richard Dawkins, giving a speech in 1992, he said faith is the great cop out, the great excuse to evade the need to think and evaluate evidence.
 Faith is belief in spite of even perhaps because of the lack of evidence.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript, cited at <code>_transcripts/transcript-NyAVl7RsEOs.md:485</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:485</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -215,18 +215,18 @@ Faith is belief in spite of even perhaps because of the lack of evidence.
 
 > So to say that these perceptions are a matter of projection is to say that all perceptions are a matter of projection.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work, cited at <code>_posts/2012-01-19-how-to-know-no-thing.md:22</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work), cited at <span class="cite-ref">_posts/2012-01-19-how-to-know-no-thing.md:22</span>
 
 > this is merely a fallacy of composition (taking the parts as the sum of the whole).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work, cited at <code>_posts/2012-01-19-how-to-know-no-thing.md:23</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work), cited at <span class="cite-ref">_posts/2012-01-19-how-to-know-no-thing.md:23</span>
 
 
 <h3 class="question">how do i know my belief in god is not just brainwashing</h3>
 
 > So to invalidate them on the basis that they are projections (an unqualified claim from the very subjectivity of our other perceptions) is to invalidate all knowledge.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work, cited at <code>_posts/2012-01-19-how-to-know-no-thing.md:22</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a> (work), cited at <span class="cite-ref">_posts/2012-01-19-how-to-know-no-thing.md:22</span>
 
 
 <h3 class="question">why do i feel god exists but cant prove it</h3>
@@ -238,7 +238,7 @@ Why is that conception even exist in a world that apparently doesn\'t have him a
 excuses? To me, that doesn\'t make any sense. Much the same as it doesn\'t make any sense to me that
 a fish would think that he\'s anywhere else but a fish tank, and that the fish tank is all that exists.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript, cited at <code>_transcripts/transcript-ZbcsxAoIVY0.md:243</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:243</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -252,7 +252,7 @@ a fish would think that he\'s anywhere else but a fish tank, and that the fish t
 
 C) Therefore, the impression ‘No God’ is irrational.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:148</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:148</span>
 
 
 <h3 class="question">george smith naturalism is the only context for explanation</h3>
@@ -269,7 +269,7 @@ If this is the only context in which we can explain anything and the concept of 
 Shouldn\'t even pop into our minds
 That\'s my explanation or my argument. It\'s sort of like a reverse ontological argument. I think it\'s very good
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">a-muslims-guide-to-science-and-scientism-part-3</a> (transcript, cited at <code>_transcripts/transcript-WED5mPmO_yU.md:343</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">a-muslims-guide-to-science-and-scientism-part-3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:343</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -288,7 +288,7 @@ And atheists will talk like this a lot too.
 That\'s why they always ask, can you prove this?
 Can you provide evidence for this? Everything needs evidence, right? Scientific evidence. They always asking for this sort of evidence.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">a-muslims-guide-to-science-and-scientism-part-1</a> (transcript, cited at <code>_transcripts/transcript-X36xEj0OSV4.md:327</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">a-muslims-guide-to-science-and-scientism-part-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-X36xEj0OSV4.md:327</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -298,14 +298,14 @@ Can you provide evidence for this? Everything needs evidence, right? Scientific 
 
 > For believers in the Divine, God’s existence is in fact quite an ordinary aspect of reality; something easily grasped by the mind and deduced from basic internal and external observations.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work, cited at <code>_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:18</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work), cited at <span class="cite-ref">_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:18</span>
 
 
 <h3 class="question">burden of proof when someone demands evidence of god</h3>
 
 > The atheist may respond that the above requirement is a “switching of the burden of proof” and a ludicrous standard – never mind theirs are double.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work, cited at <code>_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:20</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect</a> (work), cited at <span class="cite-ref">_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:20</span>
 
 > Don\'t you need a table? Yeah, let\'s turn the tables. They don\'t like that. Because they say that it\'s called switching the burden of proof, which is usually a fallacy.
 It\'s usually a bad thing to do. You should never switch the burden of proof on somebody.
@@ -319,7 +319,7 @@ You say that I\'m irrational. You say theism is irrational. That\'s a claim. Whe
 That\'s a claim. And you say that all claims require evidence.
 So where\'s your evidence? And they hate it when you do this, actually.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/BRDaCqipcwM/">understanding-atheism-session-5</a> (transcript, cited at <code>_transcripts/transcript-BRDaCqipcwM.md:230</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/BRDaCqipcwM/">understanding-atheism-session-5</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-BRDaCqipcwM.md:230</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -329,12 +329,12 @@ So where\'s your evidence? And they hate it when you do this, actually.
 
 > Most atheists who believe that everything requires evidence are blissfully unaware that their own criteria cannot be validated – there is no evidence for the claim that “everything requires evidence”, much less that scientific evidence is superior to all others.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:79</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:79</span>
 
 > because it\'s already something that we assume before we even get started. Okay, before knowledge can
 even take place, before evidence can even be asked for, we have to believe that those things exist.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript, cited at <code>_transcripts/transcript-lZkv38vd7bw.md:481</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lZkv38vd7bw/">understanding-atheism-session-3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lZkv38vd7bw.md:481</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -345,7 +345,7 @@ evidence is required to justify a particular belief, isn\'t in and of itself a b
 justified through scientific evidence. A little philosophical conundrum for all of you out there who
 want to think about that. I think it\'s very fascinating. But seeing all these double standards made
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript, cited at <code>_transcripts/transcript-ZbcsxAoIVY0.md:189</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/ZbcsxAoIVY0/">atheism-doubting-your-doubts-yaqeen-in-new-york</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-ZbcsxAoIVY0.md:189</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -355,15 +355,15 @@ want to think about that. I think it\'s very fascinating. But seeing all these d
 
 > In other words, much like the famous German philosopher Immanuel Kant, Ibn ‘Abd al-Barr believed that the mind begins its existence as a tabula rasa (blank slate).
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:45</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:45</span>
 
 > As such, I believe that the fitrah works in such a way that it can never invalidate itself and essentially acts as a commentary (tafsir) on the experiences of the mind and the external world.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work, cited at <code>_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:98</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/">the-rationality-of-believing-in-god-without-evidence-part-1</a> (work), cited at <span class="cite-ref">_posts/2015-08-16-the-rationality-of-believing-in-god-without-evidence-part-1.md:98</span>
 
 > To suggests that being tricked by an illusion demonstrates the unreliability of intuition is self-refuting – how can something so “unreliable” be able to correct itself?
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:40</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:40</span>
 
 
 <h3 class="question">is naturalism self defeating</h3>
@@ -376,18 +376,18 @@ want to think about that. I think it\'s very fascinating. But seeing all these d
 
 C) Therefore, Naturalism is false.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:108</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:108</span>
 
 > We must understand that to imply there is such a thing as a “total lack of existence” is incoherent and nonsensical because there is only existence.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work, cited at <code>_posts/2012-01-13-nothing.md:22</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/nothing/">nothing</a> (work), cited at <span class="cite-ref">_posts/2012-01-13-nothing.md:22</span>
 
 
 <h3 class="question">signs and pointers cannot prove what they point to</h3>
 
 > And although this may be a tempting argument to accept, it suffers from one glaring flaw: signs are no indication that something exists, rather their existence is predicated on the very thing they’re pointing to.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:93</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:93</span>
 
 
 <h3 class="question">atheist cherry picks quran verses</h3>
@@ -399,7 +399,7 @@ most and bothers me the most is regarding the Prophet Muhammad ﷺ and his marri
 And this is probably the most common thing that\'s brought up by Islam of folks, people
 who hate Islam and they will always accuse the Prophet ﷺ of having in a moral relationship
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript, cited at <code>_transcripts/transcript-wVehdVlLdBI.md:44</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:44</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -414,7 +414,7 @@ and then you erase everything else and then you show it and say this is what the
 it\'s also called quoting out of context okay and what it means by quoting out of context is that
 you do not take in reference other passages and the historical reasons behind etc etc so if we can go
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript, cited at <code>_transcripts/transcript-wVehdVlLdBI.md:518</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/wVehdVlLdBI/">understanding-atheism-session-4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-wVehdVlLdBI.md:518</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -425,7 +425,7 @@ times, where is Cherry picking? Oh, why did go there? Can we go? Oh, okay, can w
 Thank you, okay, all right, so suppressed evidence, intentionally failing to use information
 suspected of being relevant and significant is committing the fallacy of suppressed evidence,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">understanding-atheism-session-6</a> (transcript, cited at <code>_transcripts/transcript-lS7h9SKKtVc.md:541</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">understanding-atheism-session-6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:541</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -444,7 +444,7 @@ starting point, so it\'s rational to have that belief, okay, and I even have an 
 I backed it up, I proven the other side wrong, right, but I never claimed that the belief in God is
 true because of that, so it\'s not a fallacy actually, but I\'ve been accused of making it before, so
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">understanding-atheism-session-6</a> (transcript, cited at <code>_transcripts/transcript-lS7h9SKKtVc.md:513</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">understanding-atheism-session-6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:513</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -468,7 +468,7 @@ the question, do you see the problem? Or even saying the Quran, the Quran is the
 Because Allah said, who said that the Quran was the word of Allah, that\'s begging the question,
 it\'s when you put the conclusion in the argument itself, and many people actually make this argument
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">understanding-atheism-session-6</a> (transcript, cited at <code>_transcripts/transcript-lS7h9SKKtVc.md:526</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lS7h9SKKtVc/">understanding-atheism-session-6</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lS7h9SKKtVc.md:526</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -478,14 +478,14 @@ it\'s when you put the conclusion in the argument itself, and many people actual
 
 > The things that we can’t imagine are just as real as those we can.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:101</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:101</span>
 
 
 <h3 class="question">is science the only way we can know anything</h3>
 
 > I am in no way attacking science in this essay, rather I am simply explaining how it works and its limitations.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work, cited at <code>_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:162</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/">the-rationality-of-believing-in-god-without-evidence-part-2-2</a> (work), cited at <span class="cite-ref">_posts/2016-02-07-the-rationality-of-believing-in-god-without-evidence-part-2-2.md:162</span>
 
 > Or lack thereof, excuse me. Number three, scientism. We will get into this term more actually in the near future.
 This is actually a word. Many atheists will deny this term. However, it\'s been around since the 1800s. Maybe even earlier than that.
@@ -494,14 +494,14 @@ or the categories and things recognize natural science
 from the only proper elements at any philosophical or other inquiry.
 In other words, science is the only way to know anything.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript, cited at <code>_transcripts/transcript-NyAVl7RsEOs.md:494</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-NyAVl7RsEOs.md:494</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > Next, positivism. This is really the heart of scientism here, so I need you guys to remember this specifically. We\'re going to be talking about positivism a lot more later.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">a-muslims-guide-to-science-and-scientism-part-1</a> (transcript, cited at <code>_transcripts/transcript-X36xEj0OSV4.md:303</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">a-muslims-guide-to-science-and-scientism-part-1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-X36xEj0OSV4.md:303</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -513,7 +513,7 @@ In other words, science is the only way to know anything.
 observable so in the case of abu bakr that\'s actually what he was affirming there is that sort of understanding of
 epistemology or theory of knowledge
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:306</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:306</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -523,11 +523,11 @@ epistemology or theory of knowledge
 
 > The following is an argument that shows how most contemporary atheists views of knowledge cannot adequately account for the experience of beauty and art.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/against-atheist-aesthetics/">against-atheist-aesthetics</a> (work, cited at <code>_posts/2012-02-06-against-atheist-aesthetics.md:21</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/against-atheist-aesthetics/">against-atheist-aesthetics</a> (work), cited at <span class="cite-ref">_posts/2012-02-06-against-atheist-aesthetics.md:21</span>
 
 > As the Idealists school, the Rationalists place beauty and our understanding of the concept outside the reach of genuine human experience, thus rendering it incoherent.
 >
-> &mdash; <a href="{{ site.baseurl }}/articles/against-atheist-aesthetics/">against-atheist-aesthetics</a> (work, cited at <code>_posts/2012-02-06-against-atheist-aesthetics.md:43</code>)
+> &mdash; <a href="{{ site.baseurl }}/articles/against-atheist-aesthetics/">against-atheist-aesthetics</a> (work), cited at <span class="cite-ref">_posts/2012-02-06-against-atheist-aesthetics.md:43</span>
 
 
 <h3 class="question">how do i explain faith to someone who needs data</h3>
@@ -541,7 +541,7 @@ even more extraordinary than this i believe that he is a prophet from
 allah and what\'s fascinating about that response is that it actually tells us a lot about how we\'re supposed to
 understand reality not just religion but reality in general
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:268</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:268</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -554,7 +554,7 @@ to the heavens and stuff it\'s like yeah i do and they laugh at you but the reas
 exists and that the prophet is the prophet then this stuff doesn\'t enter their minds it\'s not it\'s not nonsensical our background beliefs are what make
 something look rational or not rational okay
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript, cited at <code>_transcripts/transcript-1U6VfHosrqw.md:318</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/1U6VfHosrqw/">hard-questions-answering-doubts-about-islam-lecture</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-1U6VfHosrqw.md:318</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -572,7 +572,7 @@ I consider them the the metaphysical flat earthers. Okay, like they always ask, 
 My my my I don\'t I don\'t try to provide reasons to them then I don\'t try to provide evidence
 If you know what I first do I question their reasons. I question why
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">a-muslims-guide-to-science-and-scientism-part-3</a> (transcript, cited at <code>_transcripts/transcript-WED5mPmO_yU.md:300</code>)
+> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">a-muslims-guide-to-science-and-scientism-part-3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:300</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
