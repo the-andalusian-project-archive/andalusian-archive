@@ -13,7 +13,7 @@ been republished.</p>
 
 <p>70 records, all with a source URL, catalogued but <strong>not counted
 as content</strong> &mdash; they are other people's writing, and counting them
-would be counting the archive against itself. 14 of them name an item this
+would be counting the archive against itself. 20 of them name an item this
 archive holds; the rest are records about the author rather than about one work,
 and are listed as such rather than given a subject they do not have.</p>
 
@@ -42,7 +42,7 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://www.totetu.org/assets/media/paper/j025_020.pdf" target="_blank" rel="noopener noreferrer">Gender Equality, Islam, and Law (Journal of Oriental Studies 25, pp. 20-36)</a></h3>
       <p class="src-meta">TOTETU / Institute for Oriental Philosophy &middot; 2015 &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">Gender Equality, Islam, and Law</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://www.totetu.org/publication/jos-jp/gakujutukenkyu-175.html" target="_blank" rel="noopener noreferrer">「東洋学術研究」通巻175号（第54巻第2号）issue contents (Japanese translation of Gender Equality, Islam, and Law)</a></h3>
@@ -118,7 +118,7 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/from-science-to-scientism-behind-the-scenes" target="_blank" rel="noopener noreferrer">From Science to Scientism</a></h3>
       <p class="src-meta">Yaqeen Institute &middot; mention</p>
-      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/from-science-to-scientism/">From Science to Scientism</a> &mdash; <em>title match</em></p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/from-science-to-scientism/">From Science to Scientism</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/islam-and-science-orientalists-fables-behind-the-scenes" target="_blank" rel="noopener noreferrer">Islam and Science: Orientalists' Fables</a></h3>
@@ -203,47 +203,47 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://www.islamicdiscourseinitiative.com/apologetics/apostasy-beyond-the-rhetoric/" target="_blank" rel="noopener noreferrer">Apostasy: Beyond the Rhetoric (Islamic Discourse Initiative)</a></h3>
       <p class="src-meta">Islamic Discourse Initiative &middot; 2018-05-22 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/apostasy-beyond-the-rhetoric/">Apostasy: Beyond the Rhetoric</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli" target="_blank" rel="noopener noreferrer">Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)</a></h3>
       <p class="src-meta">Academia.edu via Internet Archive &middot; 2019-12-07 &middot; mention</p>
-      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">Understanding Aisha's Age: An Interdisciplinary Approach</a>; <a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a>; <a href="{{ site.baseurl }}/papers/architects-of-civilisation-sallahuddin-ayubi/">Architects of Civilisation: Sallahuddin Ayubi</a>; <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">Gender Equality, Islam, and Law</a>; <a href="{{ site.baseurl }}/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/">The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis</a>; <a href="{{ site.baseurl }}/papers/the-archetype-of-beauty-in-islam/">The Archetype of Beauty in Islam</a>; <a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a>; <a href="{{ site.baseurl }}/papers/doubting-your-doubts-atheism-among-muslim-youth/">Doubting your Doubts: Atheism Among Muslim Youth</a>; <a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought/">Extremism in Muslim Thought</a>; <a href="{{ site.baseurl }}/articles/islam-terrorism/">Islam Terrorism</a>; <a href="{{ site.baseurl }}/articles/understanding-atheism-lecture-series/">Understanding Atheism (Lecture Series)</a>; <a href="{{ site.baseurl }}/papers/sustaining-the-malaysian-environment-through-litter-reduction-a-maqasidi-approach/">Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach</a>; <a href="{{ site.baseurl }}/articles/still-colonized-liberalism-in-muslim-thought/">Still Colonized: Liberalism in Muslim Thought</a>; <a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">Atheism: Doubting Your Doubts</a> &mdash; <em>named on the captured listing</em></p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/understanding-aisha-s-age-an-interdisciplinary-approach/">Understanding Aisha's Age: An Interdisciplinary Approach</a>; <a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a>; <a href="{{ site.baseurl }}/papers/architects-of-civilisation-sallahuddin-ayubi/">Architects of Civilisation: Sallahuddin Ayubi</a>; <a href="{{ site.baseurl }}/papers/gender-equality-islam-and-law/">Gender Equality, Islam, and Law</a>; <a href="{{ site.baseurl }}/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/">The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis</a>; <a href="{{ site.baseurl }}/papers/the-archetype-of-beauty-in-islam/">The Archetype of Beauty in Islam</a>; <a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a>; <a href="{{ site.baseurl }}/papers/doubting-your-doubts-atheism-among-muslim-youth/">Doubting your Doubts: Atheism Among Muslim Youth</a>; <a href="{{ site.baseurl }}/articles/extremism-in-muslim-thought/">Extremism in Muslim Thought</a>; <a href="{{ site.baseurl }}/articles/islam-terrorism/">Islam Terrorism</a>; <a href="{{ site.baseurl }}/articles/understanding-atheism-lecture-series/">Understanding Atheism (Lecture Series)</a>; <a href="{{ site.baseurl }}/papers/sustaining-the-malaysian-environment-through-litter-reduction-a-maqasidi-approach/">Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach</a>; <a href="{{ site.baseurl }}/articles/still-colonized-liberalism-in-muslim-thought/">Still Colonized: Liberalism in Muslim Thought</a>; <a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">Atheism: Doubting Your Doubts</a> &mdash; <em>named on the captured listing</em></p>
     </li>
     <li class="src">
       <h3><a href="https://archive.org/details/between-a-backbone-and-ribs-asadullah" target="_blank" rel="noopener noreferrer">Between a Backbone and Ribs - Asadullah (Internet Archive item)</a></h3>
       <p class="src-meta">Internet Archive &middot; 2020 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/backbone-ribs/">Backbone Ribs</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://www.amjaonline.org/conference/the-challenge-of-atheism-among-muslim-youth" target="_blank" rel="noopener noreferrer">Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts (conference programme entry)</a></h3>
       <p class="src-meta">American Muslim Journal of Apologetics (amjaonline.org) &middot; 2021-09 (upload path) &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/papers/deconstructing-contemporary-atheist-thought-a-pragmatic-solution-to-irrational-doubts/">Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://muslimdebate.org/2016/04/18/an-antidote-for-extremism/" target="_blank" rel="noopener noreferrer">An Antidote For Extremism</a></h3>
       <p class="src-meta">Muslim Debate Initiative &middot; April 18, 2016 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/mdi/an-antidote-for-extremism/">An Antidote For Extremism</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://muslimdebate.org/2017/02/05/when-facts-become-fiction-ijihad-ep-1/" target="_blank" rel="noopener noreferrer">When Facts Become Fiction \| iJihad Ep. 1</a></h3>
       <p class="src-meta">Muslim Debate Initiative &middot; February 5, 2017 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">iJihad (Pilot and First 2 Episodes)</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://muslimdebate.org/2016/05/10/islam-terrorism/" target="_blank" rel="noopener noreferrer">Lecture: ‘Islam &amp; Terrorism’ [Asadullah Ali al Andalusi]</a></h3>
       <p class="src-meta">Muslim Debate Initiative &middot; May 10, 2016 &middot; mention</p>
-      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/mdi/islam-terrorism/">Lecture: 'Islam &amp; Terrorism' [Asadullah Ali al Andalusi]</a> &mdash; <em>third-party page carrying this work</em></p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/islam-terrorism/">Islam Terrorism</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://muslimdebate.org/2018/05/28/naked-kings-in-the-information-age/" target="_blank" rel="noopener noreferrer">Naked Kings in the Information Age</a></h3>
       <p class="src-meta">Muslim Debate Initiative &middot; May 28, 2018 &middot; mention</p>
-      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> &mdash; <em>title match</em></p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/mdi/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://muslimdebate.org/2018/05/28/refuting-the-masked-arab-2/" target="_blank" rel="noopener noreferrer">[Video] Refuting The Masked Arab (2)</a></h3>
       <p class="src-meta">Muslim Debate Initiative &middot; May 28, 2018 &middot; mention</p>
-      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/mdi/refuting-the-masked-arab-2/">[Video] Refuting The Masked Arab (2)</a> &mdash; <em>third-party page carrying this work</em></p>
+      <p class="rel">Concerns <a href="{{ site.baseurl }}/articles/mdi/refuting-the-masked-arab-2/">[Video] Refuting The Masked Arab (2)</a> &mdash; <em>the URL this archive recorded as a source for this item</em></p>
     </li>
     <li class="src">
       <h3><a href="https://traversingtradition.com/2020/11/19/science-history-and-athiesm-qa-with-asadullah-ali/" target="_blank" rel="noopener noreferrer">Science, History, and Atheism: Q&amp;A with Asadullah Ali</a></h3>

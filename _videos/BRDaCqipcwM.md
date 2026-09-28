@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=b8nIa9VsEWE"]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/05%20-%20Understanding%20Atheism%20%EF%BD%9C%20Session%205%20%5BBRDaCqipcwM%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

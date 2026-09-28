@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/47%20-%20%EF%BC%82Should%20We%20Cancel%20Scholars%EF%BC%9F%EF%BC%82%20%EF%BD%9C%20Answered%20%5BrhufN0me6xg%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

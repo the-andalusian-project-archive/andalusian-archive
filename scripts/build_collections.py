@@ -48,6 +48,7 @@ Jekyll notes:
 """
 
 import json
+from urllib.parse import quote
 import pathlib
 import re
 import sys
@@ -658,6 +659,25 @@ RENDERING_NOTES = {
         "reproduced as Whisper wrote them, with no correction of any kind; a "
         "paragraph starts where the speaker pauses for more than two seconds.",
 }
+
+
+def archive_link(v: dict) -> str:
+    """The preserved-file URL, safe to put in an href.
+
+    The Internet Archive filenames carry spaces, a fullwidth colon and a
+    fullwidth vertical bar. Emitted raw they are not requestable URLs: the href
+    404s for anything that fetches it as written. A browser re-encodes on click,
+    which is why 56 video pages shipped this way unnoticed. Only the path is
+    escaped - the scheme and slashes have to survive.
+    """
+    url = (v.get("archive_url") or "").strip()
+    if not url:
+        return ""
+    head, sep, tail = url.partition("://")
+    if not sep:
+        return url
+    return head + sep + quote(tail, safe="/@:+$&~!*'()=,%")
+
 
 
 def build_transcripts():
@@ -1750,7 +1770,7 @@ def build_videos():
                 "The link below goes to YouTube."
             )
             body.append("")
-            body.append("- [Watch on YouTube](%s)" % v.get("archive_url", ""))
+            body.append("- [Watch on YouTube](%s)" % archive_link(v))
             body.append("")
         else:
             body.append(
@@ -1759,7 +1779,7 @@ def build_videos():
             )
             body.append("")
             body.append(
-                "- [Download from Archive.org](%s)" % v.get("archive_url", "")
+                "- [Download from Archive.org](%s)" % archive_link(v)
             )
             body.append("")
             body.append(

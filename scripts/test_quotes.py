@@ -387,6 +387,36 @@ def check() -> int:
     # reverse index must agree with the forward one, because _includes/
     # secondary_links.html reads only the reverse index, so a disagreement shows
     # up as a silently missing back-reference rather than as an error.
+    # ---- recordings of an item --------------------------------------------
+    #
+    # A reader who opened a work or paper was shown one route to the material
+    # and it led to a private YouTube embed, while the archive held a verified
+    # preserved copy and mentioned it nowhere on that page. Every recording in
+    # _data/videos.json has such a copy, so every link emitted here must have
+    # one: a link to a video page whose own download is dead would move the
+    # problem rather than fix it.
+    rec = json.loads((ROOT / "_data" / "recording_links.json").read_text(encoding="utf-8"))
+    vids = {v.get("id"): v for v in json.loads(
+        (ROOT / "_data" / "videos.json").read_text(encoding="utf-8"))}
+    by_url = rec.get("by_url", {})
+    for perm, links in by_url.items():
+        for l in links:
+            vid = l.get("video_id")
+            if vid not in vids:
+                failures.append(
+                    f"recording_links.json: {perm} points at video {vid!r} which "
+                    f"is not in videos.json")
+                continue
+            if not l.get("archive_url"):
+                failures.append(
+                    f"recording_links.json: {perm} -> {vid} has no preserved copy, "
+                    f"so the block would offer no watchable route")
+            if perm not in _collection_permalinks():
+                failures.append(
+                    f"recording_links.json: {perm} is not a collection permalink")
+    print(f"recordings linked: {len(by_url)} items, "
+          f"{sum(len(v) for v in by_url.values())} recordings")
+
     failures.extend(check_secondary_sources())
 
     if failures:
@@ -402,6 +432,9 @@ def check() -> int:
     return 0
 
 
+_PERMALINK_CACHE: set[str] | None = None
+
+
 def _collection_permalinks() -> set[str]:
     """Every permalink the collections declare, read from front matter.
 
@@ -409,7 +442,23 @@ def _collection_permalinks() -> set[str]:
     `jekyll build`, so a check that reads the build output fails on a clean
     checkout with every page reported missing. Front matter is what generates
     those permalinks, so it is the authority worth asserting against.
+
+    Three ways a naive regex here goes wrong, all of which would let a
+    fabricated relation target pass, so the front matter is located by its
+    delimiters and only that span is searched:
+
+      * `^permalink:` matches a BODY line, so a page whose front matter is
+        short or absent injects whatever `permalink:` string appears in its
+        text into the valid set.
+      * `[^"'\\s]+` truncates a quoted permalink that contains a space, so the
+        real value is lost and the truncated one is admitted.
+      * A fixed-size head window silently loses the permalink of any file with
+        a long front matter block.
     """
+    global _PERMALINK_CACHE
+    if _PERMALINK_CACHE is not None:
+        return _PERMALINK_CACHE
+
     out: set[str] = set()
     for folder in ("_articles", "_papers", "_videos", "_transcripts"):
         d = ROOT / folder
@@ -417,13 +466,58 @@ def _collection_permalinks() -> set[str]:
             continue
         for f in d.glob("*.md"):
             try:
-                head = f.read_text(encoding="utf-8", errors="ignore")[:1200]
+                text = f.read_text(encoding="utf-8", errors="ignore")
             except OSError:
                 continue
-            m = re.search(r"^permalink:\s*[\"']?([^\"'\s]+)", head, re.M)
-            if m:
-                out.add(m.group(1).rstrip("/") + "/")
+            if not text.startswith("---"):
+                continue
+            end = text.find("\n---", 3)
+            if end == -1:
+                continue
+            head = text[:end]
+            for m in re.finditer(r"^permalink:[ \t]*(\S.*?)[ \t]*$", head, re.M):
+                val = m.group(1).strip().strip("\"'")
+                val = val.rstrip("/") + "/"
+                # A permalink is a path. Anything containing whitespace, a
+                # scheme or a quote is a body line that slipped through.
+                if re.fullmatch(r"/[A-Za-z0-9/._~%()\-]*", val):
+                    out.add(val)
+    _PERMALINK_CACHE = out
     return out
+
+
+def _front_matter_urls() -> dict[str, str]:
+    """Every external URL in collection front matter, mapped to its permalink.
+
+    Used by the check that a third-party record may not be published as
+    "related to no archive item" when its own URL is the source the archive
+    recorded for an item it holds. Without this the archive states something
+    false about its own holdings, which is the one class of error this project
+    exists not to make.
+    """
+    found: dict[str, str] = {}
+    for folder in ("_articles", "_papers", "_videos", "_transcripts"):
+        d = ROOT / folder
+        if not d.is_dir():
+            continue
+        for f in d.glob("*.md"):
+            try:
+                text = f.read_text(encoding="utf-8", errors="ignore")
+            except OSError:
+                continue
+            if not text.startswith("---"):
+                continue
+            end = text.find("\n---", 3)
+            if end == -1:
+                continue
+            head = text[:end]
+            pm = re.search(r"^permalink:[ \t]*(\S+)", head, re.M)
+            if not pm:
+                continue
+            perm = pm.group(1).strip().strip("\"'").rstrip("/") + "/"
+            for u in re.findall(r"https?://[^\s\"'<>]+", head):
+                found.setdefault(u.rstrip("/").lower(), perm)
+    return found
 
 
 def check_secondary_sources() -> list[str]:
@@ -507,6 +601,25 @@ def check_secondary_sources() -> list[str]:
             failures.append(
                 f"secondary_links.json: by_url has {pl} but no record relates "
                 f"to it - the index is stale"
+            )
+
+    # 4. THE ONE THAT MATTERS MOST. A record must never be published as having
+    #    no established referent when its own URL is the source this archive
+    #    recorded for an item it holds. That sentence is an affirmative claim
+    #    about the archive's own holdings, and the TOTETU row made it false in
+    #    public: the archive holds that exact PDF as paper 7's full text, with
+    #    a recorded sha256 proof of byte identity, while /sources/ said no item
+    #    was established. Both review agents found this independently.
+    fm_urls = _front_matter_urls()
+    for r in rows:
+        if r.get("relates_to"):
+            continue
+        url = (r.get("url") or "").rstrip("/").lower()
+        if url and url in fm_urls:
+            failures.append(
+                f"secondary_sources: {r.get('title', '?')[:56]!r} publishes as "
+                f"'no single archive item established', but its URL is recorded "
+                f"in front matter for {fm_urls[url]}"
             )
 
     print(f"third-party records: {len(rows)} "

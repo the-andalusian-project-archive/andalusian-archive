@@ -1,6 +1,15 @@
 {
   "built": "2026-09-28",
   "by_url": {
+    "/articles/apostasy-beyond-the-rhetoric/": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Islamic Discourse Initiative",
+        "title": "Apostasy: Beyond the Rhetoric (Islamic Discourse Initiative)",
+        "type": "mention",
+        "url": "https://www.islamicdiscourseinitiative.com/apologetics/apostasy-beyond-the-rhetoric/"
+      }
+    ],
     "/articles/atheism-doubting-your-doubts/": [
       {
         "how": "same argument, listed under the paper's title",
@@ -8,6 +17,15 @@
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
         "type": "mention",
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
+      }
+    ],
+    "/articles/backbone-ribs/": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Internet Archive",
+        "title": "Between a Backbone and Ribs - Asadullah (Internet Archive item)",
+        "type": "mention",
+        "url": "https://archive.org/details/between-a-backbone-and-ribs-asadullah"
       }
     ],
     "/articles/extremism-in-muslim-thought/": [
@@ -19,7 +37,23 @@
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
     ],
+    "/articles/ijihad-pilot-and-first-2-episodes/": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Muslim Debate Initiative",
+        "title": "When Facts Become Fiction \\| iJihad Ep. 1",
+        "type": "mention",
+        "url": "https://muslimdebate.org/2017/02/05/when-facts-become-fiction-ijihad-ep-1/"
+      }
+    ],
     "/articles/islam-terrorism/": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Muslim Debate Initiative",
+        "title": "Lecture: ‘Islam & Terrorism’ [Asadullah Ali al Andalusi]",
+        "type": "mention",
+        "url": "https://muslimdebate.org/2016/05/10/islam-terrorism/"
+      },
       {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",
@@ -28,43 +62,34 @@
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
     ],
-    "/articles/mdi/islam-terrorism/": [
+    "/articles/mdi/an-antidote-for-extremism/": [
       {
-        "how": "third-party page carrying this work",
+        "how": "the URL this archive recorded as a source for this item",
         "source": "Muslim Debate Initiative",
-        "title": "Lecture: ‘Islam & Terrorism’ [Asadullah Ali al Andalusi]",
+        "title": "An Antidote For Extremism",
         "type": "mention",
-        "url": "https://muslimdebate.org/2016/05/10/islam-terrorism/"
+        "url": "https://muslimdebate.org/2016/04/18/an-antidote-for-extremism/"
       }
     ],
-    "/articles/mdi/refuting-the-masked-arab-2/": [
+    "/articles/mdi/naked-kings-in-the-information-age/": [
       {
-        "how": "third-party page carrying this work",
-        "source": "Muslim Debate Initiative",
-        "title": "[Video] Refuting The Masked Arab (2)",
-        "type": "mention",
-        "url": "https://muslimdebate.org/2018/05/28/refuting-the-masked-arab-2/"
-      }
-    ],
-    "/articles/naked-kings-in-the-information-age/": [
-      {
-        "how": "title match",
+        "how": "the URL this archive recorded as a source for this item",
         "source": "Muslim Debate Initiative",
         "title": "Naked Kings in the Information Age",
         "type": "mention",
         "url": "https://muslimdebate.org/2018/05/28/naked-kings-in-the-information-age/"
       }
     ],
-    "/articles/still-colonized-liberalism-in-muslim-thought/": [
+    "/articles/mdi/refuting-the-masked-arab-2/": [
       {
-        "how": "named on the captured listing",
-        "source": "Academia.edu via Internet Archive",
-        "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Muslim Debate Initiative",
+        "title": "[Video] Refuting The Masked Arab (2)",
         "type": "mention",
-        "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
+        "url": "https://muslimdebate.org/2018/05/28/refuting-the-masked-arab-2/"
       }
     ],
-    "/articles/the-quran-science-a-forced-marriage/": [
+    "/articles/still-colonized-liberalism-in-muslim-thought/": [
       {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",
@@ -105,6 +130,15 @@
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
     ],
+    "/papers/deconstructing-contemporary-atheist-thought-a-pragmatic-solution-to-irrational-doubts/": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "American Muslim Journal of Apologetics (amjaonline.org)",
+        "title": "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts (conference programme entry)",
+        "type": "mention",
+        "url": "https://www.amjaonline.org/conference/the-challenge-of-atheism-among-muslim-youth"
+      }
+    ],
     "/papers/doubting-your-doubts-atheism-among-muslim-youth/": [
       {
         "how": "named on the captured listing",
@@ -116,7 +150,7 @@
     ],
     "/papers/from-science-to-scientism/": [
       {
-        "how": "title match",
+        "how": "the URL this archive recorded as a source for this item",
         "source": "Yaqeen Institute",
         "title": "From Science to Scientism",
         "type": "mention",
@@ -124,6 +158,13 @@
       }
     ],
     "/papers/gender-equality-islam-and-law/": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "TOTETU / Institute for Oriental Philosophy",
+        "title": "Gender Equality, Islam, and Law (Journal of Oriental Studies 25, pp. 20-36)",
+        "type": "reprint",
+        "url": "https://www.totetu.org/assets/media/paper/j025_020.pdf"
+      },
       {
         "how": "reference to a paper the archive holds",
         "source": "UIN Satu Pecutak (student repository)",
@@ -165,13 +206,6 @@
     "/papers/sustaining-the-malaysian-environment-through-litter-reduction-a-maqasidi-approach/": [
       {
         "how": "named on the captured listing",
-        "source": "Academia.edu via Internet Archive",
-        "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
-        "type": "mention",
-        "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
-      },
-      {
-        "how": "paper of the same name; the blog work is 'Towards Litter Reduction'",
         "source": "Academia.edu via Internet Archive",
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
         "type": "mention",
@@ -234,21 +268,39 @@
         "type": "mention",
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
+    ],
+    "/videos/fJs5tuFw-UY/": [
+      {
+        "how": "named on the captured listing",
+        "source": "Academia.edu via Internet Archive",
+        "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
+        "type": "mention",
+        "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
+      }
     ]
   },
   "links": {
-    "mdi:islam-terrorism": [
+    "mdi:an-antidote-for-extremism": [
       {
-        "how": "third-party page carrying this work",
+        "how": "the URL this archive recorded as a source for this item",
         "source": "Muslim Debate Initiative",
-        "title": "Lecture: ‘Islam & Terrorism’ [Asadullah Ali al Andalusi]",
+        "title": "An Antidote For Extremism",
         "type": "mention",
-        "url": "https://muslimdebate.org/2016/05/10/islam-terrorism/"
+        "url": "https://muslimdebate.org/2016/04/18/an-antidote-for-extremism/"
+      }
+    ],
+    "mdi:naked-kings-in-the-information-age": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Muslim Debate Initiative",
+        "title": "Naked Kings in the Information Age",
+        "type": "mention",
+        "url": "https://muslimdebate.org/2018/05/28/naked-kings-in-the-information-age/"
       }
     ],
     "mdi:refuting-the-masked-arab-2": [
       {
-        "how": "third-party page carrying this work",
+        "how": "the URL this archive recorded as a source for this item",
         "source": "Muslim Debate Initiative",
         "title": "[Video] Refuting The Masked Arab (2)",
         "type": "mention",
@@ -276,13 +328,6 @@
     "paper:17": [
       {
         "how": "named on the captured listing",
-        "source": "Academia.edu via Internet Archive",
-        "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
-        "type": "mention",
-        "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
-      },
-      {
-        "how": "paper of the same name; the blog work is 'Towards Litter Reduction'",
         "source": "Academia.edu via Internet Archive",
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
         "type": "mention",
@@ -328,6 +373,15 @@
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
     ],
+    "paper:20": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "American Muslim Journal of Apologetics (amjaonline.org)",
+        "title": "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts (conference programme entry)",
+        "type": "mention",
+        "url": "https://www.amjaonline.org/conference/the-challenge-of-atheism-among-muslim-youth"
+      }
+    ],
     "paper:3": [
       {
         "how": "title match",
@@ -353,7 +407,7 @@
     ],
     "paper:5": [
       {
-        "how": "title match",
+        "how": "the URL this archive recorded as a source for this item",
         "source": "Yaqeen Institute",
         "title": "From Science to Scientism",
         "type": "mention",
@@ -370,6 +424,13 @@
       }
     ],
     "paper:7": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "TOTETU / Institute for Oriental Philosophy",
+        "title": "Gender Equality, Islam, and Law (Journal of Oriental Studies 25, pp. 20-36)",
+        "type": "reprint",
+        "url": "https://www.totetu.org/assets/media/paper/j025_020.pdf"
+      },
       {
         "how": "reference to a paper the archive holds",
         "source": "UIN Satu Pecutak (student repository)",
@@ -408,6 +469,24 @@
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
     ],
+    "video:fJs5tuFw-UY": [
+      {
+        "how": "named on the captured listing",
+        "source": "Academia.edu via Internet Archive",
+        "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
+        "type": "mention",
+        "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
+      }
+    ],
+    "work:apostasy-beyond-the-rhetoric": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Islamic Discourse Initiative",
+        "title": "Apostasy: Beyond the Rhetoric (Islamic Discourse Initiative)",
+        "type": "mention",
+        "url": "https://www.islamicdiscourseinitiative.com/apologetics/apostasy-beyond-the-rhetoric/"
+      }
+    ],
     "work:atheism-doubting-your-doubts": [
       {
         "how": "same argument, listed under the paper's title",
@@ -415,6 +494,15 @@
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
         "type": "mention",
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
+      }
+    ],
+    "work:backbone-ribs": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Internet Archive",
+        "title": "Between a Backbone and Ribs - Asadullah (Internet Archive item)",
+        "type": "mention",
+        "url": "https://archive.org/details/between-a-backbone-and-ribs-asadullah"
       }
     ],
     "work:extremism-in-muslim-thought": [
@@ -426,34 +514,32 @@
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
       }
     ],
+    "work:ijihad-pilot-and-first-2-episodes": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Muslim Debate Initiative",
+        "title": "When Facts Become Fiction \\| iJihad Ep. 1",
+        "type": "mention",
+        "url": "https://muslimdebate.org/2017/02/05/when-facts-become-fiction-ijihad-ep-1/"
+      }
+    ],
     "work:islam-terrorism": [
+      {
+        "how": "the URL this archive recorded as a source for this item",
+        "source": "Muslim Debate Initiative",
+        "title": "Lecture: ‘Islam & Terrorism’ [Asadullah Ali al Andalusi]",
+        "type": "mention",
+        "url": "https://muslimdebate.org/2016/05/10/islam-terrorism/"
+      },
       {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",
         "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
         "type": "mention",
         "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
-      }
-    ],
-    "work:naked-kings-in-the-information-age": [
-      {
-        "how": "title match",
-        "source": "Muslim Debate Initiative",
-        "title": "Naked Kings in the Information Age",
-        "type": "mention",
-        "url": "https://muslimdebate.org/2018/05/28/naked-kings-in-the-information-age/"
       }
     ],
     "work:still-colonized-liberalism-in-muslim-thought": [
-      {
-        "how": "named on the captured listing",
-        "source": "Academia.edu via Internet Archive",
-        "title": "Asadullah Ali - Academia.edu profile (Internet Archive capture of the listing)",
-        "type": "mention",
-        "url": "https://web.archive.org/web/20191207110813/https://independent.academia.edu/AsadullahAli"
-      }
-    ],
-    "work:the-quran-science-a-forced-marriage": [
       {
         "how": "named on the captured listing",
         "source": "Academia.edu via Internet Archive",

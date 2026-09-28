@@ -316,7 +316,7 @@
   "duration": {{ dur_iso | jsonify }},
   {%- endif %}
   {%- if page.archive_url and page.archive_url != "" and page.source != "youtube_not_archived" %}
-  "contentUrl": {{ page.archive_url | jsonify }},
+  "contentUrl": {{ page.archive_url | uri_escape | jsonify }},
   {%- endif %}
   {%- if page.format %}
   "encodingFormat": {{ page.format | jsonify }},

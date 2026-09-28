@@ -91,9 +91,9 @@ last_modified_at: 2026-09-28
         {% assign is_youtube = true %}
       {% endif %}
       {% if is_youtube %}
-        <a href="{{ video.archive_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">YouTube{% if video.kind %} ({{ video.kind }}, not archived){% endif %}</a>
+        <a href="{{ video.archive_url | uri_escape }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">YouTube{% if video.kind %} ({{ video.kind }}, not archived){% endif %}</a>
       {% else %}
-        <a href="{{ video.archive_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Archive.org</a>
+        <a href="{{ video.archive_url | uri_escape }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Archive.org</a>
       {% endif %}
       {% if video.youtube_url %}
         <a href="{{ video.youtube_url }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">YouTube</a>

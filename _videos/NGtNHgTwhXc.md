@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/54%20-%20Book%20Recommendations%20%233%20%20%EF%BD%9C%EF%BD%9C%20Asadullah%20Andalusi%20%20%EF%BD%9C%EF%BD%9C%20The%20Andalusian%20Project%20%5BNGtNHgTwhXc%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

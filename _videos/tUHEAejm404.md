@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/34%20-%20Twitter%20Assists%20Islamists!%20-%20Asadullah%20Andalusi%20%EF%BD%9C%EF%BD%9C%20The%20Andalusian%20Project%20%5BtUHEAejm404%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

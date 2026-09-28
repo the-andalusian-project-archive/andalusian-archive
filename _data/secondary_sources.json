@@ -17,7 +17,7 @@
         "kind": "mdi",
         "ref": "refuting-the-masked-arab-2",
         "label": "[Video] Refuting The Masked Arab (2)",
-        "how": "third-party page carrying this work",
+        "how": "the URL this archive recorded as a source for this item",
         "permalink": "/articles/mdi/refuting-the-masked-arab-2/"
       }
     ]
@@ -37,11 +37,11 @@
     "counted_as_content": false,
     "relates_to": [
       {
-        "kind": "work",
+        "kind": "mdi",
         "ref": "naked-kings-in-the-information-age",
         "label": "Naked Kings in the Information Age",
-        "how": "title match",
-        "permalink": "/articles/naked-kings-in-the-information-age/"
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/articles/mdi/naked-kings-in-the-information-age/"
       }
     ]
   },
@@ -57,7 +57,16 @@
     "notes": "Muslim Debate Initiative host page for his own talk/article; MDI is not him, the byline is",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "work",
+        "ref": "ijihad-pilot-and-first-2-episodes",
+        "label": "iJihad (Pilot and First 2 Episodes)",
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/articles/ijihad-pilot-and-first-2-episodes/"
+      }
+    ]
   },
   {
     "title": "Lecture: ‘Islam & Terrorism’ [Asadullah Ali al Andalusi]",
@@ -74,11 +83,11 @@
     "counted_as_content": false,
     "relates_to": [
       {
-        "kind": "mdi",
+        "kind": "work",
         "ref": "islam-terrorism",
-        "label": "Lecture: 'Islam & Terrorism' [Asadullah Ali al Andalusi]",
-        "how": "third-party page carrying this work",
-        "permalink": "/articles/mdi/islam-terrorism/"
+        "label": "Islam Terrorism",
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/articles/islam-terrorism/"
       }
     ]
   },
@@ -94,7 +103,16 @@
     "notes": "Muslim Debate Initiative host page for his own talk/article; MDI is not him, the byline is",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "mdi",
+        "ref": "an-antidote-for-extremism",
+        "label": "An Antidote For Extremism",
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/articles/mdi/an-antidote-for-extremism/"
+      }
+    ]
   },
   {
     "title": "Understanding Aisha’s Age: An Interdisciplinary Approach",
@@ -253,7 +271,7 @@
         "kind": "paper",
         "ref": "5",
         "label": "From Science to Scientism",
-        "how": "title match",
+        "how": "the URL this archive recorded as a source for this item",
         "permalink": "/papers/from-science-to-scientism/"
       }
     ]
@@ -802,7 +820,16 @@
     "notes": "Conference programme listing his paper and linking the openly downloadable 31-page PDF; PDF obtained as deconstructing-contemporary-atheist-thought.pdf",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "20",
+        "label": "Deconstructing Contemporary Atheist Thought: A Pragmatic Solution to Irrational Doubts",
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/papers/deconstructing-contemporary-atheist-thought-a-pragmatic-solution-to-irrational-doubts/"
+      }
+    ]
   },
   {
     "title": "Islamic intuitionism: the case against atheistic evidentialism (repository record)",
@@ -881,7 +908,16 @@
     "notes": "Public archive copy of his 63-page paper; PDF downloaded and verified",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "work",
+        "ref": "backbone-ribs",
+        "label": "Backbone Ribs",
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/articles/backbone-ribs/"
+      }
+    ]
   },
   {
     "title": "Gender Equality, Islam, and Law (Journal of Oriental Studies 25, pp. 20-36)",
@@ -895,7 +931,16 @@
     "notes": "Open journal PDF; byte-identical (sha256) to the lane copy, which confirms provenance",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "7",
+        "label": "Gender Equality, Islam, and Law",
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/papers/gender-equality-islam-and-law/"
+      }
+    ]
   },
   {
     "title": "「東洋学術研究」通巻175号（第54巻第2号）issue contents (Japanese translation of Gender Equality, Islam, and Law)",
@@ -1111,11 +1156,11 @@
         "permalink": "/papers/the-archetype-of-beauty-in-islam/"
       },
       {
-        "kind": "work",
-        "ref": "the-quran-science-a-forced-marriage",
-        "label": "The Quran, Science: A Forced Marriage",
+        "kind": "video",
+        "ref": "fJs5tuFw-UY",
+        "label": "32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]",
         "how": "named on the captured listing",
-        "permalink": "/articles/the-quran-science-a-forced-marriage/"
+        "permalink": "/videos/fJs5tuFw-UY/"
       },
       {
         "kind": "paper",
@@ -1180,7 +1225,16 @@
     "notes": "HIS OWN authored article (byline 'Guest'; author bio names him). Full text captured separately as idi_apostasy.txt / idi_apostasy.json - see papers.csv, not counted here as a third-party source",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "work",
+        "ref": "apostasy-beyond-the-rhetoric",
+        "label": "Apostasy: Beyond the Rhetoric",
+        "how": "the URL this archive recorded as a source for this item",
+        "permalink": "/articles/apostasy-beyond-the-rhetoric/"
+      }
+    ]
   },
   {
     "title": "Asadullah Ali Al-Andalusi - ResearchGate scientific contributions profile",

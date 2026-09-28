@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=hURJIIm0tSY", "https://www.youtub
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/20%20-%20A%20Muslims%20Guide%20to%20Science%20and%20Scientism%20%EF%BD%9C%20Al-Balagh%20Academy%20%EF%BD%9C%20Part%205%20%5BPoNiuiP3W4Y%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

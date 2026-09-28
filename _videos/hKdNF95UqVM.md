@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/45%20-%20(Reupload%20-%20Read%20Description)%20%EF%BC%82The%20Cancer%20in%20Contemporary%20Dawah%EF%BC%82%20by%20Andalusian%20Project%20%5BhKdNF95UqVM%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project [Yu8rw5M0GF8].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/48%20-%20(Reupload%20-%20Read%20Description)%20%EF%BC%82How%20NOT%20to%20be%20a%20Critic%EF%BC%82%20by%20Andalusian%20Project%20%5BYu8rw5M0GF8%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

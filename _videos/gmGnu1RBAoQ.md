@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/56 - DanielCompassionateImam [gmGnu1RBAoQ].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/56%20-%20DanielCompassionateImam%20%5BgmGnu1RBAoQ%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

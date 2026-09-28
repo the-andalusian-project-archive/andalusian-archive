@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=qDBQFb4gc4o"]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/15 - The Masked Arab： A Eulogy [bDshE-aKXIA].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/15%20-%20The%20Masked%20Arab%EF%BC%9A%20A%20Eulogy%20%5BbDshE-aKXIA%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

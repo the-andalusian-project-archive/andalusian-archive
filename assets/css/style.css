@@ -1770,6 +1770,82 @@ tr:hover td {
 
 /* --- third-party back-references, and the /sources/ index ----------------- */
 
+/* --- recordings of an item, and the /sources/ index ----------------------- */
+
+/* Same visual family as .topic-backlinks and .secondary-backlinks, and grouped
+   with them in the narrow-screen rule below so all three read as one kind of
+   "elsewhere this item appears" block. */
+.recording-links {
+  margin: 2rem 0;
+  padding: 1rem 1.2rem;
+  background: var(--color-accent-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.recording-links h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.recording-links p.meta {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.recording-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recording-links li {
+  margin: 0 0 0.6rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.recording-links li:last-child {
+  margin-bottom: 0;
+}
+
+.recording-links li a {
+  font-weight: 600;
+}
+
+.recording-links .rel-how {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/* The preserved copy. This is the link that is actually watchable, so it is
+   styled as an action rather than as a second mention of the same title. */
+.recording-links .rec-direct {
+  display: inline-block;
+  margin-top: 0.15rem;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background: var(--color-bg);
+}
+
+.recording-links .rec-direct:hover,
+.recording-links .rec-direct:focus {
+  background: var(--color-accent-subtle);
+}
+
+.recording-links .rec-dl {
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+
 .secondary-backlinks {
   margin: 2rem 0;
   padding: 1rem 1.2rem;
@@ -2234,6 +2310,7 @@ tr:hover td {
   .page-content > .prose-note,
   .page-content blockquote,
   .page-content .topic-backlinks,
+  .page-content .recording-links,
   .page-content .secondary-backlinks {
     --inset: 1.1rem;
     padding-left: var(--inset);

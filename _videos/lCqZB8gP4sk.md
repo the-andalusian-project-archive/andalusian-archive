@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=AHkp5CJpKPo"]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/36%20-%20Understanding%20Jihad%20w%E2%A7%B8%20Robert%20Spencer%20%231%20%5BlCqZB8gP4sk%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

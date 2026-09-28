@@ -20,7 +20,7 @@ Numbering note: the source data lists this entry as "52 - Virgins in Paradise？
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/52 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/52%20-%20Virgins%20in%20Paradise%EF%BC%9F%20%EF%BD%9C%20Answered%20%EF%BD%9C%20andalusian%20project%20(re%20upload)%20%5BcDHrrbOKbl4%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

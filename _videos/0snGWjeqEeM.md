@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=-19Fq0e4y8M"]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/23%20-%20Islam,%20Science%20and%20History%20(Reupload%20from%20Andalusian%20Project)%20%5B0snGWjeqEeM%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

@@ -1,0 +1,53 @@
+{%- comment -%}
+  Recordings of this item, 2026-09-28.
+
+  WHY THIS BLOCK IS HERE. It was added after a reader reported that
+  /papers/the-qur-an-and-science-a-forced-marriage/ offered exactly one route to
+  the material - "View Original", to the WordPress post - and that post's YouTube
+  embed is private. So the reader arrived and found a dead video, while this
+  archive was holding a 620 MB preserved copy of the same talk and mentioning it
+  nowhere on that page. Every recording in _data/videos.json has such a copy,
+  verified live on the Internet Archive.
+
+  The ORDER of the two links is the point. The recording page is the archive's
+  own record; the preserved MP4 is the file that is actually watchable today. The
+  author's own uploads are not offered as the primary route because so many of
+  them are now private, and a button that leads to a private embed is worse than
+  no button - it looks like the work is available and is not.
+
+  `_data/recording_links.json` is written by scripts/relate_recordings.py and is
+  keyed by permalink. A title is only allowed to match a recording with 2+ real
+  words at 75% overlap or better, because a one-word title matches almost
+  anything: the work titled "Islam" scored a perfect 1.00 against "23 - Islam,
+  Science and History", which is how the floor got set where it is.
+{%- endcomment -%}
+{%- assign rl = site.data.recording_links -%}
+{%- assign hits = nil -%}
+{%- if rl and rl.by_url and rl.by_url[page.url] -%}
+  {%- assign hits = rl.by_url[page.url] -%}
+{%- endif -%}
+{%- if hits and hits.size > 0 -%}
+<nav class="recording-links" aria-label="Recordings of this item">
+  <h2>{% if hits.size == 1 %}This is also on video{% else %}This is also on video ({{ hits.size }} recordings){% endif %}</h2>
+  <p class="meta">This archive holds its own copy of {% if hits.size == 1 %}the recording{% else %}each recording{% endif %}, so you can watch it here without depending on the author&rsquo;s own uploads &mdash; many of which are now private.</p>
+  <ul>
+    {%- for r in hits -%}
+    <li>
+      <a href="{{ r.url | relative_url }}">{{ r.title }}</a>
+      <span class="rel-how">{% if r.duration %} &middot; {{ r.duration | divided_by: 60 | floor }} min{% endif %}</span>
+      {%- if r.archive_url %}
+      {%- comment -%}
+        uri_escape, not the raw string. The archive.org filenames carry spaces,
+        a fullwidth colon and a fullwidth vertical bar, and emitted raw they 404:
+        `https://archive.org/download/.../32 - The Qur'an ... ｜ ... .mp4` is not
+        a requestable URL. A browser happens to encode it on click, which is why
+        this went unnoticed, but anything that fetches the href as written gets
+        a 404. uri_escape keeps the scheme and slashes and encodes the rest.
+      {%- endcomment -%}
+      <a class="rec-direct" href="{{ r.archive_url | uri_escape }}">Watch the preserved copy<span class="rec-dl">&nbsp;(MP4)</span></a>
+      {%- endif %}
+    </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+{%- endif -%}

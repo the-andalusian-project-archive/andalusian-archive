@@ -55,11 +55,11 @@ layout: default
       {% if page.source == 'youtube_not_archived' %}
       <div class="notice notice-youtube"><strong>Source: YouTube (not archived)</strong> — no Internet Archive copy in the source data.</div>
       <div class="sources">
-        <a href="{{ page.youtube_url | default: page.archive_url }}" target="_blank" rel="noopener noreferrer" class="btn">Watch on YouTube (not archived)</a>
+        <a href="{{ page.youtube_url | default: page.archive_url | uri_escape }}" target="_blank" rel="noopener noreferrer" class="btn">Watch on YouTube (not archived)</a>
       </div>
       {% elsif page.archive_url %}
       <div class="sources">
-        <a href="{{ page.archive_url }}" target="_blank" rel="noopener noreferrer" class="btn">Download from Archive.org</a>
+        <a href="{{ page.archive_url | uri_escape }}" target="_blank" rel="noopener noreferrer" class="btn">Download from Archive.org</a>
       </div>
       {% endif %}
 

@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=2oXB5J6XWHo"]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/22%20-%20Taking%20Islam%20Out%20of%20Context!%20(Indeed)%20%5BbiZFuWyB4lk%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

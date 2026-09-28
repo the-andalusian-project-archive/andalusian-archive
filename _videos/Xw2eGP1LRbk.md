@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/38%20-%20iKhalifa%203%EF%BC%9A%20Be%20Healthy%20%5BXw2eGP1LRbk%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

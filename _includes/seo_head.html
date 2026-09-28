@@ -596,7 +596,7 @@
 {%- if seo_kind == "video" %}
 <meta property="og:type" content="video.other">
 {%- if page.archive_url and page.archive_url != "" %}
-<meta property="og:video" content="{{ page.archive_url | escape_once }}">
+<meta property="og:video" content="{{ page.archive_url | uri_escape | escape_once }}">
 <meta property="og:video:type" content="text/html">
 {%- endif %}
 {%- if page.youtube_url and page.youtube_url != "" %}

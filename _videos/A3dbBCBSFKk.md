@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/28%20-%20Muslim%20vs.%20Ex-Muslim%EF%BC%9A%20A%20Respectful%20Dialogue%20(Asadullah%20Ali%20and%20Veedu%20Vidz)%20-%20REUPLOAD%20%5BA3dbBCBSFKk%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

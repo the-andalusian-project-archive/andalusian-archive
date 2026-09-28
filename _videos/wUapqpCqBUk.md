@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=YjGHZwdM7XU"]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/46%20-%20%EF%BC%82Is%20Allah%20a%20Dictator%EF%BC%9F%EF%BC%82%20%EF%BD%9C%20Answer%20%5BwUapqpCqBUk%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

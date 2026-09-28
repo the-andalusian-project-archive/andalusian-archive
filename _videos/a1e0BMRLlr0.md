@@ -18,7 +18,7 @@ mirror_urls: []
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/50%20-%20Librarianship%20and%20Information%20Literacy%20%EF%BD%9C%20Interview%20with%20Justin%20Parrott%20%5Ba1e0BMRLlr0%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 

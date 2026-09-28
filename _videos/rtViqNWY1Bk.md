@@ -18,7 +18,7 @@ mirror_urls: ["https://www.youtube.com/watch?v=io8IxaGJx68"]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
-- [Download from Archive.org](https://archive.org/download/andalusian-project/30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk].mp4)
+- [Download from Archive.org](https://archive.org/download/andalusian-project/30%20-%20iKhalifa%201%EF%BC%9A%20Appreciate%20Others%20%5BrtViqNWY1Bk%5D.mp4)
 
 Theme descriptions use neutral academic language for research purposes.
 
