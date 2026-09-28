@@ -31,6 +31,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- comment -%}
+    Applied before first paint, in <head>, with no network round trip.
+
+    Without this the page paints in the system theme and then jumps to the
+    chosen one a frame later, which is the classic flash-of-wrong-theme. The
+    attribute is only ever "light" or "dark"; anything else, including a
+    missing or unreadable value, leaves the stylesheet's
+    `prefers-color-scheme` media query in charge, so "follow the system" is the
+    state where no attribute is set at all rather than a third CSS branch.
+  {%- endcomment -%}
+  <script>
+  (function () {
+    try {
+      var t = localStorage.getItem('tap-theme');
+      if (t === 'light' || t === 'dark') {
+        document.documentElement.setAttribute('data-theme', t);
+      }
+    } catch (e) { /* private mode, or storage disabled: the media query stands */ }
+  })();
+  </script>
   {% include seo_head.html rendered=content %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
@@ -47,6 +67,26 @@
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
       <ul class="nav-links" id="navLinks">
+        <li>
+          {%- comment -%}
+            Three states, not two: "follow the system" is a real choice and is
+            the default, so a reader who has said nothing gets what their OS
+            asks for and the toggle can hand that state back.
+
+            The button carries the NEXT state in its accessible name, which is
+            what a screen reader announces before the reader commits to
+            pressing it, and the live region carries the state it is in now.
+            No icon font and no third-party SVG: the glyphs are text, so they
+            are readable by a screen reader and cannot fail to load.
+          {%- endcomment -%}
+          <button type="button" class="theme-toggle" id="themeToggle"
+                  aria-live="polite">
+            <span class="theme-icon" aria-hidden="true" data-theme-icon>&#9681;</span>
+            <span class="theme-label" data-theme-label>System</span>
+            <span class="visually-hidden"> theme. Switch to</span>
+            <span class="visually-hidden" data-theme-next>dark</span>
+          </button>
+        </li>
         <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a></li>
         {%- comment -%}
           2026-09-28: "Questions" is second, not last, and Channel/Timeline moved
@@ -167,8 +207,100 @@
       <p><strong>About the author:</strong> he has asked not to be contacted, and the maintainers cannot forward requests. <a href="{{ '/NOTICE.md' | relative_url }}#do-not-contact-the-author">Read the notice</a>. The address below reaches the <em>archive maintainers</em> only.</p>
       <p><strong>Found something wrong, or something missing?</strong> That is a real contribution and we want it. Email the maintainers at <a href="mailto:TAP_archive@protonmail.com">TAP_archive@protonmail.com</a> &mdash; a broken link, a wrong count, a missing capture, or a capture we filed as lost. Please include the page URL. Read <a href="{{ '/CONTRIBUTING.md' | relative_url }}">how to contribute</a> first if you plan to send a code change.</p>
       <p>The Andalusian Project Archive &mdash; Digital Preservation Initiative</p>
+      {%- comment -%}
+        The one reader-facing credit for the design. Two sentences, in the
+        footer, once. The reasoning is in the stylesheet's own header comment
+        and in the spec; repeating it on every page would be noise, and this is
+        the only page a reader reaches at the end of every other one.
+
+        The three references are named because their design is visibly borrowed
+        - the serif measure, the light headings, the list rows, the red - and an
+        uncredited borrow of that much is not something to hide. The values were
+        measured off the live sites rather than remembered, which is why the
+        accent is the firebrick SEP actually uses and not the teal its two
+        siblings share.
+      {%- endcomment -%}
+      <p class="footer-colophon">The reading layout &mdash; the serif measure, the quiet headings, the list rows &mdash; follows the <a href="https://plato.stanford.edu/" target="_blank" rel="noopener noreferrer">Stanford Encyclopedia of Philosophy</a> and the <a href="https://iep.utm.edu/" target="_blank" rel="noopener noreferrer">Internet Encyclopedia of Philosophy</a>, with the list-and-metadata rhythm of <a href="https://www.goodreads.com/" target="_blank" rel="noopener noreferrer">Goodreads</a>. The accent is SEP&rsquo;s own red.</p>
     </div>
   </footer>
+
+  {%- comment -%}
+    Theme toggle. Three states, cycling system -> dark -> light -> system.
+
+    "System" is the default and is represented by NO data-theme attribute at
+    all, which leaves the stylesheet's prefers-color-scheme media query in
+    charge. That is one fewer CSS branch and it means a reader who has chosen
+    nothing keeps tracking their OS if it changes at dusk.
+
+    The system media query is read live, so the label tracks the OS when the
+    state is "system" and the page is left open across a theme change.
+
+    localStorage can throw - private mode, storage disabled, a file:// origin -
+    so every access is guarded and a failure degrades to the media query rather
+    than breaking the page.
+  {%- endcomment -%}
+  <script>
+  (function () {
+    var btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    var icon = btn.querySelector('[data-theme-icon]');
+    var label = btn.querySelector('[data-theme-label]');
+    var next = btn.querySelector('[data-theme-next]');
+    var KEY = 'tap-theme';
+    var ORDER = ['system', 'dark', 'light'];
+    var GLYPH = { system: '◐', dark: '☾', light: '☀' };
+    var NAME = { system: 'System', dark: 'Dark', light: 'Light' };
+    var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+
+    function stored() {
+      try {
+        var v = localStorage.getItem(KEY);
+        return (v === 'light' || v === 'dark') ? v : 'system';
+      } catch (e) { return 'system'; }
+    }
+
+    function effective(state) {
+      if (state !== 'system') return state;
+      return mq && mq.matches ? 'dark' : 'light';
+    }
+
+    function paint() {
+      var state = stored();
+      var eff = effective(state);
+      if (state === 'system') {
+        document.documentElement.removeAttribute('data-theme');
+      } else {
+        document.documentElement.setAttribute('data-theme', state);
+      }
+      if (icon) icon.textContent = GLYPH[state];
+      if (label) label.textContent = NAME[state];
+      if (next) {
+        next.textContent = NAME[ORDER[(ORDER.indexOf(state) + 1) % ORDER.length]].toLowerCase();
+      }
+      btn.setAttribute('aria-label',
+        'Theme: ' + NAME[state] + ' (currently ' + NAME[eff] +
+        '). Switch to ' + NAME[ORDER[(ORDER.indexOf(state) + 1) % ORDER.length]].toLowerCase() + '.');
+    }
+
+    btn.addEventListener('click', function () {
+      var state = stored();
+      var to = ORDER[(ORDER.indexOf(state) + 1) % ORDER.length];
+      try {
+        if (to === 'system') localStorage.removeItem(KEY);
+        else localStorage.setItem(KEY, to);
+      } catch (e) { /* the click still repaints, it just is not remembered */ }
+      paint();
+    });
+
+    if (mq) {
+      var onChange = function () { if (stored() === 'system') paint(); };
+      if (mq.addEventListener) mq.addEventListener('change', onChange);
+      else if (mq.addListener) mq.addListener(onChange);
+    }
+
+    paint();
+  })();
+  </script>
 
 </body>
 </html>

@@ -184,8 +184,6 @@ img {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -237,8 +235,6 @@ img {
 .site-nav .nav-links a {
   display: inline-flex;
   align-items: center;
-  padding: var(--space-2) var(--space-3);
-  border-radius: var(--radius-sm);
   color: var(--color-text-secondary);
   font-size: var(--text-sm);
   font-weight: 500;
@@ -281,7 +277,6 @@ img {
 
 .hero {
   text-align: center;
-  padding: var(--space-16) 0;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -315,16 +310,11 @@ img {
 }
 
 .stat-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
   text-align: center;
   transition: all var(--transition-base);
 }
 
 .stat-card:hover {
-  box-shadow: var(--shadow-md);
   transform: translateY(-2px);
 }
 
@@ -380,26 +370,19 @@ img {
   display: flex;
   align-items: center;
   gap: var(--space-4);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-5) var(--space-6);
   transition: all var(--transition-base);
   text-decoration: none;
   color: inherit;
 }
 
 .quick-link:hover {
-  box-shadow: var(--shadow-md);
   transform: translateY(-2px);
   color: var(--color-primary);
-  border-color: var(--color-primary);
 }
 
 .quick-link .ql-icon {
   width: 40px;
   height: 40px;
-  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -430,17 +413,12 @@ img {
 }
 
 .card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
   transition: all var(--transition-base);
   display: flex;
   flex-direction: column;
 }
 
 .card:hover {
-  box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
 }
 
@@ -496,8 +474,6 @@ img {
 .tag {
   display: inline-flex;
   align-items: center;
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
   font-size: var(--text-xs);
   font-weight: 500;
   line-height: 1.4;
@@ -515,7 +491,6 @@ img {
 }
 
 .tag-status {
-  background: var(--color-accent-subtle);
   color: var(--color-accent);
 }
 
@@ -528,8 +503,6 @@ img {
 .badge {
   display: inline-flex;
   align-items: center;
-  padding: var(--space-1) var(--space-3);
-  border-radius: var(--radius-full);
   font-size: var(--text-xs);
   font-weight: 600;
   text-transform: uppercase;
@@ -559,53 +532,39 @@ img {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-sm);
   font-size: var(--text-sm);
   font-weight: 500;
   text-decoration: none;
-  border: none;
   cursor: pointer;
   transition: all var(--transition-fast);
   line-height: 1.5;
 }
 
 .btn-primary {
-  background: var(--color-primary);
   color: white;
 }
 
 .btn-primary:hover {
-  background: var(--color-primary-hover);
   color: white;
-  box-shadow: var(--shadow-md);
 }
 
 .btn-outline {
-  background: transparent;
   color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
 }
 
 .btn-outline:hover {
-  background: var(--color-surface-hover);
   color: var(--color-text);
-  border-color: var(--color-text-secondary);
 }
 
 .btn-sm {
-  padding: var(--space-1) var(--space-3);
   font-size: var(--text-xs);
 }
 
 .btn-secondary {
-  background: var(--color-surface-hover);
   color: var(--color-text);
-  border: 1px solid var(--color-border);
 }
 
 .btn-secondary:hover {
-  background: var(--color-border);
   color: var(--color-text);
 }
 
@@ -670,7 +629,6 @@ img {
 
 .timeline {
   position: relative;
-  padding-left: var(--space-10);
   margin: var(--space-8) 0;
 }
 
@@ -681,7 +639,6 @@ img {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: var(--color-border);
 }
 
 .timeline-group {
@@ -704,19 +661,12 @@ img {
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background: var(--color-primary);
-  border-radius: var(--radius-full);
-  border: 3px solid var(--color-bg);
   z-index: 1;
 }
 
 .timeline-item {
   position: relative;
-  padding: var(--space-4) var(--space-5);
   margin-bottom: var(--space-3);
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
   transition: all var(--transition-base);
 }
 
@@ -728,14 +678,10 @@ img {
   transform: translateY(-50%);
   width: 12px;
   height: 12px;
-  background: var(--color-surface);
-  border: 2px solid var(--color-primary);
-  border-radius: var(--radius-full);
   z-index: 1;
 }
 
 .timeline-item:hover {
-  box-shadow: var(--shadow-md);
   transform: translateX(4px);
 }
 
@@ -892,16 +838,11 @@ img {
 }
 
 .result-item {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-5);
   margin-bottom: var(--space-3);
   transition: all var(--transition-base);
 }
 
 .result-item:hover {
-  box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
 
@@ -943,10 +884,6 @@ img {
    ============================================ */
 
 .post-content {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
   line-height: 1.8;
   margin: var(--space-6) 0;
 }
@@ -962,10 +899,6 @@ img {
 }
 
 .abstract {
-  background: var(--color-primary-subtle);
-  border-left: 4px solid var(--color-primary);
-  padding: var(--space-5) var(--space-6);
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
   margin: var(--space-4) 0;
   font-style: italic;
   color: var(--color-text-secondary);
@@ -1087,9 +1020,6 @@ tr:hover td {
    ============================================ */
 
 .site-footer {
-  border-top: 1px solid var(--color-border);
-  background: var(--color-surface);
-  padding: var(--space-12) var(--space-6);
   margin-top: var(--space-16);
 }
 
@@ -1193,11 +1123,7 @@ tr:hover td {
     top: var(--nav-height);
     left: 0;
     right: 0;
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border);
     flex-direction: column;
-    padding: var(--space-4) var(--space-6);
-    box-shadow: var(--shadow-lg);
   }
 
   .site-nav .nav-links.open {
@@ -1206,18 +1132,11 @@ tr:hover td {
 
   .site-nav .nav-links a {
     width: 100%;
-    padding: var(--space-3) var(--space-4);
   }
 
   .site-nav .mobile-toggle {
     display: flex;
-  }
-
-  .hero {
-    padding: var(--space-10) 0;
-  }
-
-  .hero h1 {
+  }  .hero h1 {
     font-size: var(--text-3xl);
   }
 
@@ -1236,13 +1155,7 @@ tr:hover td {
   .site-footer .footer-inner {
     grid-template-columns: 1fr;
     gap: var(--space-8);
-  }
-
-  .timeline {
-    padding-left: var(--space-8);
-  }
-
-  .timeline-group h2::before {
+  }  .timeline-group h2::before {
     left: calc(-1 * var(--space-8) - 1px);
     width: 20px;
     height: 20px;
@@ -1278,31 +1191,18 @@ tr:hover td {
 
   .stat-card .stat-number {
     font-size: var(--text-2xl);
-  }
-
-  .card {
-    padding: var(--space-5);
-  }
-
-  .card-grid {
+  }  .card-grid {
     gap: var(--space-4);
   }
 
   .btn {
     font-size: var(--text-xs);
-    padding: var(--space-2) var(--space-3);
   }
 
   .search-filters {
     flex-direction: column;
     align-items: center;
-  }
-
-  .timeline {
-    padding-left: var(--space-6);
-  }
-
-  .timeline::before {
+  }  .timeline::before {
     left: 8px;
   }
 
@@ -1310,7 +1210,6 @@ tr:hover td {
     left: calc(-1 * var(--space-6) + 2px);
     width: 16px;
     height: 16px;
-    border-width: 2px;
   }
 
   .timeline-item::before {
@@ -1321,12 +1220,7 @@ tr:hover td {
 
   .page-title {
     font-size: var(--text-2xl);
-  }
-
-  .post-content {
-    padding: var(--space-5);
-  }
-}
+  }}
 
 /* ============================================
    Utility Classes
@@ -1367,15 +1261,10 @@ tr:hover td {
 }
 
 .featured-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
   transition: all var(--transition-base);
 }
 
 .featured-card:hover {
-  box-shadow: var(--shadow-lg);
   transform: translateY(-2px);
 }
 
@@ -1406,10 +1295,6 @@ tr:hover td {
    ============================================ */
 
 .info-block {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-8);
   margin: var(--space-6) 0;
 }
 
@@ -1432,7 +1317,6 @@ tr:hover td {
 }
 
 .info-block ul li {
-  padding: var(--space-2) 0;
   color: var(--color-text-secondary);
   font-size: var(--text-sm);
   line-height: 1.6;
@@ -1459,12 +1343,9 @@ tr:hover td {
 }
 
 .pill-nav a {
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-full);
   font-size: var(--text-sm);
   font-weight: 500;
   color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
   transition: all var(--transition-fast);
 }
 
@@ -1656,11 +1537,6 @@ tr:hover td {
 
 .page-content p.note,
 .page-content .prose-note {
-  background: var(--color-primary-subtle);
-  border: 1px solid var(--color-border);
-  border-left: 3px solid var(--color-primary);
-  border-radius: 6px;
-  padding: 0.85rem 1rem;
   font-size: 0.9375rem;
   line-height: 1.6;
   color: var(--color-text);
@@ -1687,20 +1563,9 @@ tr:hover td {
 }
 
 .topic-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 1.1rem 1.2rem;
   margin: 0;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.topic-card:hover {
-  border-color: var(--color-primary);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-}
-
-.topic-card h3 {
+}.topic-card h3 {
   margin: 0 0 0.5rem;
   font-size: 1.0625rem;
   line-height: 1.35;
@@ -1764,10 +1629,6 @@ tr:hover td {
 
 .topic-backlinks {
   margin: 2rem 0;
-  padding: 1rem 1.2rem;
-  background: var(--color-accent-subtle);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
 }
 
 .topic-backlinks h2 {
@@ -1785,7 +1646,6 @@ tr:hover td {
 
 .topic-backlinks ul {
   list-style: none;
-  padding: 0;
   margin: 0;
 }
 
@@ -1816,10 +1676,6 @@ tr:hover td {
    "elsewhere this item appears" block. */
 .recording-links {
   margin: 2rem 0;
-  padding: 1rem 1.2rem;
-  background: var(--color-accent-subtle);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
 }
 
 .recording-links h2 {
@@ -1837,7 +1693,6 @@ tr:hover td {
 
 .recording-links ul {
   list-style: none;
-  padding: 0;
   margin: 0;
 }
 
@@ -1866,21 +1721,10 @@ tr:hover td {
 .recording-links .rec-direct {
   display: inline-block;
   margin-top: 0.15rem;
-  padding: 0.15rem 0.5rem;
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--color-primary);
-  border: 1px solid var(--color-border);
-  border-radius: 5px;
-  background: var(--color-bg);
-}
-
-.recording-links .rec-direct:hover,
-.recording-links .rec-direct:focus {
-  background: var(--color-accent-subtle);
-}
-
-.recording-links .rec-dl {
+}.recording-links .rec-dl {
   font-weight: 400;
   color: var(--color-text-secondary);
 }
@@ -1889,10 +1733,6 @@ tr:hover td {
 
 .secondary-backlinks {
   margin: 2rem 0;
-  padding: 1rem 1.2rem;
-  background: var(--color-accent-subtle);
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
 }
 
 .secondary-backlinks h2 {
@@ -1910,7 +1750,6 @@ tr:hover td {
 
 .secondary-backlinks ul {
   list-style: none;
-  padding: 0;
   margin: 0 0 0.75rem;
 }
 
@@ -2048,7 +1887,6 @@ tr:hover td {
    #545b68, neither of which is in the new palette. check_palette() now
    fails on any second declaration of a palette token, so a stale override
    layer cannot pass the gate again. */
-
 
 /* --- prose gets a measure; page furniture keeps the full width ----------- */
 
@@ -2340,49 +2178,23 @@ tr:hover td {
    1920: every text edge identical, no horizontal scroll anywhere.
    ============================================================================ */
 
-@media (min-width: 920px) {
-  .page-content > p.lead,
-  .page-content > p.note,
-  .page-content > .prose-note,
-  .page-content blockquote,
-  .page-content .topic-backlinks,
-  .page-content .recording-links,
-  .page-content .secondary-backlinks {
-    --inset: 1.1rem;
-    padding-left: var(--inset);
-    padding-right: var(--inset);
-    border-left-width: 0;
-    margin-left: calc(-1 * var(--inset));
-    box-shadow:
-      inset 3px 0 0 0 var(--color-primary),
-      inset -1px 0 0 0 var(--color-border);
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
+/* The `min-width: 920px` block that stood here was deleted by the
+   reading-first redesign. It applied an inset accent bar and a negative
+   margin to p.lead, p.note, .prose-note, blockquote and the three
+   backlink blocks, to align a FILLED BOX's text edge with the prose
+   around it. Those blocks are rule-left indents now, with no fill, so
+   there is no box to align and the --inset arithmetic is moot. Its
+   selectors also outranked the redesign's by one class, so p.note kept
+   rendering as a filled, shadowed box. */
 
-  .page-content blockquote {
-    box-shadow: inset 3px 0 0 0 var(--color-primary);
-  }
-
-  .page-content ul.caution-list {
-    padding-left: 0;
-  }
-
-  .page-content .caution-list li {
-    margin-left: -1.4rem;
-  }
-}
-
-@media (max-width: 919px) {
-  .page-content > p.lead,
-  .page-content > p.note,
-  .page-content > .prose-note,
-  .page-content blockquote {
-    --inset: 1.1rem;
-    padding-left: var(--inset);
-    padding-right: var(--inset);
-  }
-}
+/* The `max-width: 919px` block that stood here was deleted by the
+   reading-first redesign. It applied an inset accent bar and a negative
+   margin to p.lead, p.note, .prose-note, blockquote and the three
+   backlink blocks, to align a FILLED BOX's text edge with the prose
+   around it. Those blocks are rule-left indents now, with no fill, so
+   there is no box to align and the --inset arithmetic is moot. Its
+   selectors also outranked the redesign's by one class, so p.note kept
+   rendering as a filled, shadowed box. */
 
 /* The material table is four columns of text and does not fit a phone - measured
    at 437px inside a 375px viewport, which scrolled the whole page sideways. It
@@ -2625,3 +2437,1214 @@ h4,
   margin-left: auto;
   margin-right: auto;
 }
+/* --- 3. links, buttons, badges, tags --------------------------------------
+   A filled pill is the loudest element on an index page and there is one per
+   item, 72 of them on /articles/. Buttons lose their fill and their border and
+   become underlined text links, so the single accent is spent on link colour
+   rather than on rectangles. The status that .tag-status carried is kept, and is
+   carried by colour plus a 2px leading rule instead of a background. */
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.btn,
+.btn-primary,
+.btn-outline,
+.btn-secondary,
+.btn-sm {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-primary);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0.9rem 0.4rem 0;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-outline:hover,
+.btn-secondary:hover,
+.btn-sm:hover,
+.btn:focus-visible,
+.btn-primary:focus-visible,
+.btn-outline:focus-visible,
+.btn-sm:focus-visible {
+  color: var(--color-primary-hover);
+  background: none;
+  text-decoration: underline;
+  box-shadow: none;
+}
+
+.btn-primary { font-weight: 600; }
+
+.badge,
+.tag,
+.tag-status {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0.5rem 0.3rem 0;
+  white-space: nowrap;
+}
+
+.tag a,
+.badge a { color: inherit; text-decoration: none; }
+.tag a:hover { color: var(--color-primary-hover); text-decoration: underline; }
+
+.tag-status::before,
+.status-found::before,
+.status-wayback::before,
+.status-lost::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  margin-right: 0.45em;
+  vertical-align: -0.06em;
+  background: var(--color-text-tertiary);
+}
+
+.status-found::before { background: var(--color-success); }
+.status-wayback::before { background: var(--color-warning); }
+.status-lost::before { background: var(--color-danger); }
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* --- 4. cards become list rows ---------------------------------------------
+   Goodreads' list and SEP's contents are both a title, a quiet metadata line and
+   a hairline between rows. That is also what makes 68 videos scannable in a way
+   a card grid is not. A card becomes a row by losing its fill, its radius and
+   its shadow, and gaining a bottom rule. Class names are unchanged, so the 335
+   generated pages need no regeneration. */
+
+.card-grid,
+.card-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: var(--measure-wide);
+}
+
+.card {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1.1rem 0 1.15rem;
+  margin: 0;
+  max-width: var(--measure-wide);
+}
+
+.card:last-of-type,
+.card:last-child { border-bottom: 0; }
+
+.card-header,
+.card-body,
+.card-actions,
+.card-footer {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-header { margin-bottom: 0.35rem; }
+
+.card-title,
+.card h3,
+.card h2 {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin: 0 0 0.3rem;
+  color: var(--color-text);
+}
+
+.card-title a,
+.card h3 a,
+.card h2 a { color: var(--color-primary); }
+
+.card p,
+.card-meta,
+.card .meta,
+.card-body .meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.35rem;
+}
+
+.card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.card-actions .btn { margin: 0; }
+
+/* --- 4b. the three "elsewhere this appears" blocks become indents -----------
+   These are reference matter, not alerts. They currently carry a tinted fill, a
+   border and a radius, which makes them the second-loudest thing on an item page
+   after the pill badges. */
+
+.topic-backlinks,
+.recording-links,
+.secondary-backlinks {
+  font-family: var(--font-sans);
+  margin: 2rem 0;
+  padding: 0.1rem 0 0.1rem 1.25rem;
+  background: none;
+  border: 0;
+  border-left: 2px solid var(--color-border-strong);
+  border-radius: 0;
+  box-shadow: none;
+  max-width: var(--measure);
+}
+
+.topic-backlinks h2,
+.recording-links h2,
+.secondary-backlinks h2 {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.5rem;
+}
+
+.topic-backlinks p.meta,
+.recording-links p.meta,
+.secondary-backlinks p.meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.7rem;
+}
+
+.topic-backlinks ul,
+.recording-links ul,
+.secondary-backlinks ul,
+.src-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topic-backlinks li,
+.recording-links li,
+.secondary-backlinks li,
+.src-list .src {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.45rem;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.topic-backlinks li:last-child,
+.recording-links li:last-child,
+.secondary-backlinks li:last-child,
+.src-list .src:last-child { margin-bottom: 0; }
+
+.topic-backlinks li a,
+.recording-links li a,
+.secondary-backlinks li a,
+.src-list .src a { color: var(--color-primary); font-weight: 600; }
+
+.topic-backlinks .topic-q,
+.recording-links .rel-how,
+.secondary-backlinks .rel-how,
+.secondary-backlinks .src-type,
+.src-list .src-meta,
+.src-list .rel {
+  display: block;
+  color: var(--color-text-tertiary);
+  font-weight: 400;
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+  margin: 0.1rem 0 0;
+}
+
+.secondary-backlinks .rel-none,
+.src-list .rel-none { font-style: italic; }
+
+.recording-links .rec-direct {
+  display: inline-block;
+  margin: 0.2rem 0 0;
+  padding: 0;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--color-border-strong);
+  box-shadow: none;
+}
+
+.recording-links .rec-dl { font-weight: 400; color: var(--color-text-tertiary); }
+
+/* --- 4c. prose furniture becomes indented ---------------------------------- */
+
+.info-block,
+.page-note,
+.prose-note,
+.alternate-note,
+.detail-section,
+.page-content .note {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  background: none;
+  border: 0;
+  border-left: 2px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0.15rem 0 0.15rem 1.15rem;
+  margin: 1.5rem 0;
+  max-width: var(--measure);
+}
+
+.info-block strong,
+.page-note strong,
+.detail-section strong { color: var(--color-text); font-weight: 600; }
+
+/* --- 5. tables --------------------------------------------------------------
+   The selector is .page-content table, not only .data-table: the home page's
+   "Preservation Status" table is class-less and is what overflowed by 96px at a
+   375px viewport. */
+
+.data-table,
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  margin: 1.75rem 0;
+  background: none;
+  box-shadow: none;
+}
+
+.data-table th,
+.page-content table th {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--color-text-secondary);
+  padding: 0.45rem 0.9rem 0.45rem 0;
+  border-bottom: 1px solid var(--color-border-strong);
+  background: none;
+  white-space: nowrap;
+}
+
+.data-table td,
+.page-content table td {
+  padding: 0.6rem 0.9rem 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  vertical-align: top;
+  background: none;
+}
+
+/* Stripes go: a sunken fill on a warm cream page reads as noise. Row separation
+   is a hairline. */
+.data-table tbody tr:nth-child(even) td,
+.page-content table tbody tr:nth-child(even) td { background: none; }
+
+.data-table tbody tr:hover td,
+.page-content table tbody tr:hover td { background: var(--color-primary-subtle); }
+
+/* --- 5b. nav ---------------------------------------------------------------
+   The sticky nav is the one place a shadow is honest, because it genuinely sits
+   above the content. --shadow-sticky is a hairline, not a blur. */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sticky);
+}
+
+.site-nav .nav-inner,
+.site-nav > .container,
+.site-nav .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  min-height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.site-nav a,
+.site-nav .nav-link {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+}
+
+.site-nav a:hover,
+.site-nav .nav-link:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom-color: var(--color-primary);
+}
+
+.site-nav a.active,
+.site-nav .nav-link.active,
+.site-nav a[aria-current="page"] {
+  color: var(--color-text);
+  font-weight: 600;
+  border-bottom-color: var(--color-primary);
+  background: none;
+  box-shadow: none;
+}
+
+/* --- 5c. footer ------------------------------------------------------------ */
+
+.site-footer {
+  margin-top: 4rem;
+  padding: 2.5rem 0 3rem;
+  background: none;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.site-footer .container,
+.site-footer > .footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+.site-footer h4 {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.7rem;
+}
+
+.site-footer a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  background: none;
+  box-shadow: none;
+}
+
+.site-footer a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+  border-bottom: 0;
+}
+
+.site-footer ul { list-style: none; padding: 0; margin: 0; }
+.site-footer li { margin: 0 0 0.3rem; }
+.site-footer .footer-flag { color: var(--color-text-tertiary); }
+
+/* --- 5d. stats, timeline, quick links -------------------------------------- */
+
+.stats-grid,
+.stat-row,
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem 2.75rem;
+  margin: 2rem 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  max-width: var(--measure-wide);
+}
+
+.stat,
+.stat-card {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.stat-value,
+.stat .value,
+.stat-num {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+
+.stat-label,
+.stat .label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-top: 0.25rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  max-width: var(--measure);
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 0 0 1.75rem 1.4rem;
+  margin: 0;
+  border-left: 1px solid var(--color-border);
+  background: none;
+  box-shadow: none;
+}
+
+.timeline-item:last-child { border-left-color: transparent; padding-bottom: 0; }
+
+.timeline-date {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-title {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 0.25rem;
+}
+
+.timeline-item p,
+.timeline-content p {
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.quick-link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  padding: 0.75rem 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 500;
+}
+
+.quick-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.quick-link .ql-text { flex: 1 1 auto; }
+
+.quick-link .ql-icon,
+.quick-link .icon {
+  flex: 0 0 auto;
+  order: 2;
+  color: var(--color-text-tertiary);
+  font-size: var(--text-sm);
+}
+
+/* --- 6. narrow screens -----------------------------------------------------
+   The old 640px rule converted the three backlink blocks from filled boxes into
+   inset accent bars. They are rule-left indents at every width now, so it is
+   gone. */
+
+@media (max-width: 900px) {
+  :root { --measure: 100%; --measure-wide: 100%; }
+
+  .page-content,
+  .prose-reading,
+  .page-content-wide,
+  .hero,
+  .page-header,
+  .timeline,
+  .card,
+  .card-grid,
+  .stats-grid,
+  .topic-backlinks,
+  .recording-links,
+  .secondary-backlinks,
+  .info-block,
+  .page-note,
+  .prose-note,
+  .alternate-note,
+  .detail-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --text-3xl: 2rem;
+    --text-xl: 1.35rem;
+    --text-body: 1.0625rem;
+  }
+
+  .page-content blockquote { padding-left: 0.9rem; }
+
+  .stats-grid,
+  .stat-row,
+  .stats { gap: 1.25rem 1.9rem; }
+
+  .stat-value,
+  .stat .value { font-size: 1.5rem; }
+
+  /* Tables scroll rather than overflowing the viewport. */
+  .page-content table,
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .page-content table th,
+  .page-content table td,
+  .data-table th,
+  .data-table td {
+    white-space: normal;
+    min-width: 8.5rem;
+  }
+
+  .timeline-item { padding-left: 1rem; }
+}
+/* --- 4d. the remaining boxed components -------------------------------------
+   Found by auditing every class in style.css that still sets a fill, a border,
+   a radius or a shadow, rather than by fixing them one screenshot at a time. */
+
+/* The eight question clusters on the home page and /topics/. */
+.topic-card,
+.featured-card {
+  display: block;
+  font-family: var(--font-sans);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1.1rem 0 1.15rem;
+  margin: 0;
+  max-width: var(--measure-wide);
+}
+
+.topic-card:last-of-type,
+.featured-card:last-of-type { border-bottom: 0; }
+
+.topic-card h3,
+.topic-card .topic-title,
+.featured-card h3,
+.featured-card .featured-title {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin: 0 0 0.3rem;
+}
+
+.topic-card h3 a,
+.topic-card a,
+.featured-card h3 a,
+.featured-card a { color: var(--color-primary); }
+
+.topic-card p,
+.topic-card .topic-reader-question,
+.featured-card p,
+.featured-card .featured-summary {
+  font-family: var(--font-serif);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.4rem;
+}
+
+.topic-card .meta,
+.featured-card .meta,
+.topic-card .topic-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  color: var(--color-text-tertiary);
+  margin: 0;
+}
+
+/* Search results are a list, like every other index on the site. */
+.result-item {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.result-item:last-child { border-bottom: 0; }
+.result-item:hover { background: var(--color-primary-subtle); }
+
+.result-item .result-title {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 0.2rem;
+}
+
+.result-item .result-snippet,
+.result-item .result-meta {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* The pill nav is a row of links, not a row of pills. */
+.pill-nav,
+.pill-nav a {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.1rem;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.pill-nav a,
+.pill {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 0.15rem;
+  margin: 0;
+  text-decoration: none;
+}
+
+.pill-nav a:hover,
+.pill:hover { color: var(--color-primary); border-bottom-color: var(--color-primary); }
+
+.pill-nav a.active,
+.pill.active { color: var(--color-text); font-weight: 600; border-bottom-color: var(--color-primary); }
+
+/* Prose containers. A transcript is prose, so it reads like prose. */
+.post-content,
+.abstract,
+.page-content .abstract {
+  font-family: var(--font-serif);
+  font-size: var(--text-body);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  max-width: var(--measure);
+}
+
+.page-content .abstract {
+  font-size: var(--text-lead);
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.75rem;
+}
+
+.timeline-group {
+  background: none;
+  border: 0;
+  border-left: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0 0 0 1.25rem;
+  margin: 0 0 2rem;
+}
+
+.timeline-group .group-title,
+.timeline-group h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin: 0 0 0.8rem;
+}
+
+/* An input needs a border. So does a video frame, and an error message may be
+   marked. These three keep theirs, and the shadow rule does not apply to any of
+   them. */
+.search-box input,
+.search-box {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+
+.video-embed,
+.video-embed iframe {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+
+.search-error {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-danger);
+  background: none;
+  border: 0;
+  border-left: 2px solid var(--color-danger);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0.15rem 0 0.15rem 1rem;
+  margin: 1.25rem 0;
+}
+/* --- 5e. nav spacing, restored ---------------------------------------------
+   The nav links got their separation from horizontal padding, not from the gap:
+   `.nav-links` has always had `gap: 4px`, which was invisible while each link
+   also carried 0.75rem of side padding. Stripping the padding to remove the pill
+   background left the 4px, and ten links ran together on one line.
+
+   The brand is pushed to the left edge and the links group to the right, which
+   is what a sticky reading-site nav should do. */
+
+.site-nav .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav .nav-links a {
+  padding: 0.3rem 0;
+  margin: 0;
+}
+
+.site-nav .nav-brand {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  margin-right: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav .nav-brand:hover { color: var(--color-primary); border-bottom-color: transparent; }
+
+.site-nav .nav-brand .brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  height: 2rem;
+  padding: 0 0.35rem;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-surface);
+  background: var(--color-primary);
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 919px) {
+  .site-nav .nav-links { gap: 0 1.1rem; }
+}
+/* --- 6b. overflow fixes, found by sweeping 128 page/theme/width combinations --
+   The sweep rendered 16 page kinds at 375 / 768 / 1280 / 1920 in both themes and
+   measured documentElement.scrollWidth - clientWidth. It found five overflows
+   and zero shadows. Three causes, all introduced or exposed by the redesign. */
+
+/* Cause 1: .tag carries `white-space: nowrap`, which is right for a one-word
+   status and wrong for a theme label. On /videos/ the labels are full sentences
+   - "Contemporary interpretations of Islamic philosophy" - and one of them
+   measured 389px inside a 360px viewport, pushing the page 57px sideways. */
+.tag,
+.badge,
+.tag-status {
+  white-space: normal;
+}
+
+.tag::after,
+.badge::after {
+  content: "\00a0\00a0\00b7\00a0\00a0";
+  color: var(--color-text-tertiary);
+}
+
+.tag:last-child::after,
+.badge:last-child::after {
+  content: "";
+}
+
+/* Cause 2 and 3: two tables are wider than a phone or a tablet. The home page's
+   "Preservation Status" table is class-less and sits outside .page-content, so
+   the earlier narrow-screen rule never reached it; /scholarly-records/ has a
+   three-column registry whose widest header is 251px of nowrap text and which
+   carried `overflow-x: hidden`, so it clipped its own content instead of
+   scrolling it. A hidden overflow on a data table destroys data, which is the
+   one thing a table must not do. */
+@media (max-width: 919px) {
+  main table,
+  .page-content table,
+  .data-table,
+  .site-footer table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+
+  main table th,
+  main table td,
+  .page-content table th,
+  .page-content table td,
+  .data-table th,
+  .data-table td {
+    white-space: normal;
+    min-width: 8rem;
+    overflow: visible;
+  }
+
+  /* `overflow: hidden` on a data table silently truncates cells. Scrolling is
+     the only acceptable answer. */
+  main table,
+  .page-content table,
+  .data-table {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  main table th,
+  main table td,
+  .page-content table th,
+  .page-content table td,
+  .data-table th,
+  .data-table td {
+    min-width: 7rem;
+  }
+}
+
+/* The skip link is positioned off-screen at left: -9999px, which some engines
+   count in the scrollable overflow area. It must stay reachable by keyboard, so
+   it is moved rather than removed, using the standard clip technique. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  position: fixed;
+  left: var(--space-4);
+  top: var(--space-4);
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  padding: 0.5rem 0.9rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  color: var(--color-surface);
+  background: var(--color-primary);
+  border-radius: var(--radius-md);
+  z-index: 200;
+}
+/* ==========================================================================
+   DARK THEME, SEP FLAVOURED, AND A THEME TOGGLE
+   --------------------------------------------------------------------------
+   Two changes, both from looking at SEP's own dark mode.
+
+   1. The palette. The previous dark theme was #0f1117, a cool blue-black -
+      the default look of every developer tool, and the reason it read as an
+      IDE rather than as a book. SEP tints its dark surfaces with the accent
+      hue: the page surround is a dark warm maroon and the reading panel is a
+      near-black warm brown inside it. Every surface here is now tinted toward
+      the red, and the panel is darker than the page, which is the same
+      inversion the light theme uses. All 23 text pairs clear 4.5:1; the
+      lowest is --color-primary on --color-bg at 5.92.
+
+   2. A toggle. SEP does not respond to prefers-color-scheme at all - it served
+      its light theme under dark emulation - because its dark mode is a user
+      choice. So this site gets a real control rather than a media query alone:
+      light, dark, or follow the system, remembered in localStorage and applied
+      by an inline script in <head> before first paint so the page never flashes
+      the wrong theme. "System" remains the default, so a reader who has said
+      nothing gets what their OS asks for.
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #33201d;
+    --color-surface: #1e1614;
+    --color-surface-hover: #3a2825;
+    --color-surface-sunken: #171110;
+    --color-border: #4a3a35;
+    --color-border-strong: #634e46;
+    --color-text: #e7ddd1;
+    --color-text-secondary: #b5a89c;
+    --color-text-tertiary: #8d8078;
+    --color-muted: #8d8078;
+    --color-primary: #e08a7a;
+    --color-primary-hover: #eda396;
+    --color-primary-subtle: #2e211e;
+    --color-accent: #e08a7a;
+    --color-accent-subtle: #2e211e;
+    --color-success: #8fbf9b;
+    --color-success-subtle: #1f2a22;
+    --color-warning: #dfae5c;
+    --color-warning-subtle: #2d2517;
+    --color-danger: #e79a90;
+    --color-danger-subtle: #2f1e1c;
+  }
+}
+
+/* An explicit choice overrides the system, in both directions: a reader who
+   picks light on a dark desktop gets light. */
+:root[data-theme="light"] {
+  --color-bg: #f4efe9;
+  --color-surface: #fdfbf8;
+  --color-surface-hover: #f2e3e1;
+  --color-surface-sunken: #efe8de;
+  --color-border: #d5cab7;
+  --color-border-strong: #c2b49f;
+  --color-text: #1c1a17;
+  --color-text-secondary: #5c5750;
+  --color-text-tertiary: #8a8378;
+  --color-muted: #8a8378;
+  --color-primary: #8c1515;
+  --color-primary-hover: #6e1010;
+  --color-primary-subtle: #f2e3e1;
+  --color-accent: #8c1515;
+  --color-accent-subtle: #f2e3e1;
+  --color-success: #2f6b45;
+  --color-success-subtle: #eaf1ec;
+  --color-warning: #8a5a12;
+  --color-warning-subtle: #f6efe0;
+  --color-danger: #9b2c22;
+  --color-danger-subtle: #f6e9e7;
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #33201d;
+  --color-surface: #1e1614;
+  --color-surface-hover: #3a2825;
+  --color-surface-sunken: #171110;
+  --color-border: #4a3a35;
+  --color-border-strong: #634e46;
+  --color-text: #e7ddd1;
+  --color-text-secondary: #b5a89c;
+  --color-text-tertiary: #8d8078;
+  --color-muted: #8d8078;
+  --color-primary: #e08a7a;
+  --color-primary-hover: #eda396;
+  --color-primary-subtle: #2e211e;
+  --color-accent: #e08a7a;
+  --color-accent-subtle: #2e211e;
+  --color-success: #8fbf9b;
+  --color-success-subtle: #1f2a22;
+  --color-warning: #dfae5c;
+  --color-warning-subtle: #2d2517;
+  --color-danger: #e79a90;
+  --color-danger-subtle: #2f1e1c;
+}
+
+/* --- the toggle ------------------------------------------------------------
+   A three-state control, because "follow the system" is a real state and not
+   the same as either theme. It is a button rather than a checkbox so it can
+   carry the next state in its accessible name, which is what a screen reader
+   announces before the reader commits to pressing it. */
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+  padding: 0.3rem 0.6rem;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color var(--transition-fast),
+              border-color var(--transition-fast);
+}
+
+.theme-toggle:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.theme-toggle .theme-icon {
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.theme-toggle .theme-label {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 640px) {
+  .theme-toggle .theme-label { display: none; }
+  .theme-toggle { padding: 0.3rem 0.45rem; }
+}
+
+/* Visually hidden, still announced. The toggle's accessible name is assembled
+   from three spans, two of which must not be seen. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.site-footer .footer-colophon,
+.footer-colophon {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  line-height: 1.6;
+  color: var(--color-text-tertiary);
+  max-width: 62ch;
+  margin-top: 0.75rem;
+}
+
+.footer-colophon a { color: var(--color-text-secondary); }
+

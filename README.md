@@ -408,6 +408,32 @@ This repository is the source of that site. Jekyll builds it and GitHub Actions 
 generated `data/*.json` search indexes are produced from `_data/` by
 `scripts/sync_search_data.py` on every build and must never be hand-edited.
 
+### Where the design came from
+
+The site was a Tailwind dashboard — the stock palette, cards, pill badges, an
+860px measure — which is the wrong shape for 68 machine transcripts and a body of
+prose held verbatim. It is now built as a reading page, and the model for that is
+borrowed from three places:
+
+- the **Stanford Encyclopedia of Philosophy** — serif body at a ~700px measure,
+  large light-weight headings, and the red, `rgb(140, 21, 21)` = `#8c1515`, which
+  is what its section headings and sidebar links use;
+- the **Internet Encyclopedia of Philosophy** — Georgia at 18px/1.6 and the same
+  narrow measure;
+- **Goodreads** — the list-and-metadata rhythm that makes 68 videos scannable,
+  and the pairing of a screen-serif with a humanist sans for chrome.
+
+Those values were **measured off the live sites** with `getComputedStyle` rather
+than recalled, which changed two decisions: Goodreads' accent is `#00635d` deep
+teal and not the orange its old logo suggests, and two of the three references
+converge on that teal — so the accent is SEP's red instead. The full reasoning,
+including the trade-offs and the known limitations, is in
+[`docs/superpowers/specs/2026-09-28-reading-first-redesign-design.md`](docs/superpowers/specs/2026-09-28-reading-first-redesign-design.md).
+
+Two gates hold the design in place and will fail a build that drifts from it:
+`check_palette()` computes the WCAG contrast of 23 text pairs and 2 rule pairs in
+both themes, and `check_measure()` holds the prose column inside 620–720px.
+
 ---
 
 ## Contents and structure
