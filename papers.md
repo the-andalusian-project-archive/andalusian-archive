@@ -113,7 +113,7 @@ none, which is a fact about what registries index and not a judgement on the wor
     {%- if doc.title == paper.title -%}{%- assign paper_page = doc -%}{%- endif -%}
   {%- endfor -%}
   <div class="card">
-    <h3>{% if paper_page %}<a href="{{ paper_page.url | relative_url }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
+    <h3>{% if paper_page %}<a href="{{ paper_page.url | relative_url }}">{% include title.html title=paper.title %}</a>{% else %}{% include title.html title=paper.title %}{% endif %}</h3>
     <div class="card-meta">
       {{ paper.publisher_journal }}
       {% if paper.publication_date %} &middot; {{ paper.publication_date }}{% endif %}
@@ -158,7 +158,7 @@ none, which is a fact about what registries index and not a judgement on the wor
     {%- if doc.title == paper.title -%}{%- assign paper_page = doc -%}{%- endif -%}
   {%- endfor -%}
   <div class="card">
-    <h3>{% if paper_page %}<a href="{{ paper_page.url | relative_url }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</h3>
+    <h3>{% if paper_page %}<a href="{{ paper_page.url | relative_url }}">{% include title.html title=paper.title %}</a>{% else %}{% include title.html title=paper.title %}{% endif %}</h3>
     <div class="card-meta">
       {{ paper.publisher_journal }}
       {% if paper.publication_date %} &middot; {{ paper.publication_date }}{% endif %}

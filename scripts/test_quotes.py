@@ -458,6 +458,65 @@ def check() -> int:
 
     # And the rendered output, when a build is present, for the shapes a static
     # check cannot see.
+    # ---- a title must be able to render a glyph that overflows its line -----
+    #
+    # U+29F8 BIG SOLIDUS is a slash defined to span a full em, so at text size it
+    # inks 2.67x the cap height and breaks the vertical rhythm of any heading it
+    # is in. It is in 9 titles here. Two things have to hold, and the second is
+    # the one that bit: the layout headings are routed through
+    # `_includes/title.html`, AND the generated collection pages must not carry
+    # their own markdown `# Title` in the body, because that copy is rendered
+    # raw and silently undoes the fix. The 1280px view of an item page looked
+    # correct while the body copy of the same title was still wrong.
+    #
+    # This cannot be a computed ink check - that needs a browser, and the gates
+    # run without one. So it asserts the two structural facts that produce the
+    # correct render, and the rendered-output check below catches the rest when
+    # a build is present.
+    TALL = "⧸"
+    for tmpl in sorted(list((ROOT / "_layouts").glob("*.html"))
+                       + list((ROOT / "_includes").glob("*.html"))
+                       + [p for p in ROOT.glob("*.md") if p.is_file()]):
+        try:
+            text = tmpl.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        rel = tmpl.relative_to(ROOT).as_posix()
+        for m in re.finditer(r"<h[1-6][^>]*>(.*?)</h[1-6]>", text, re.S):
+            if re.search(r"\{\{\s*[\w.]+\.title\s*\}\}", m.group(1)):
+                failures.append(
+                    f"{rel}: a heading prints a title raw; route it through "
+                    f"{{% include title.html %}} so a tall glyph is sized")
+
+    for folder in ("_videos", "_transcripts", "_articles", "_papers"):
+        d = ROOT / folder
+        if not d.is_dir():
+            continue
+        for f in d.glob("*.md"):
+            try:
+                text = f.read_text(encoding="utf-8", errors="ignore")
+            except OSError:
+                continue
+            if not text.startswith("---"):
+                continue
+            end = text.find("\n---", 3)
+            if end == -1:
+                continue
+            for line in text[end:].split("\n"):
+                # A heading that already wraps the glyph in .tall-glyph is the
+                # fixed form. scripts/build_collections.py writes it that way via
+                # _h1(), and the six affected pages carry it in the repository
+                # because regenerating the collections would destroy hand-added
+                # content elsewhere - so this accepts both the generated form and
+                # the committed one. This scans the BODY only, past the closing
+                # front-matter delimiter, so a wrapped heading cannot reach YAML.
+                if line.startswith("# ") and TALL in line and "tall-glyph" not in line:
+                    failures.append(
+                        f"{f.relative_to(ROOT).as_posix()}: the body carries a "
+                        f"markdown H1 containing {TALL} rendered raw, so it "
+                        f"overflows its line; wrap it in .tall-glyph")
+    print(f"tall-glyph titles render through the include : checked")
+
     built = ROOT / "_site"
     if built.is_dir():
         attr = re.compile(r'(href|content)="([^"]*)"')

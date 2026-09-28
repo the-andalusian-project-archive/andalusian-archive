@@ -20,7 +20,7 @@ layout: default
         {%- endif -%}
       {%- endfor -%}
 
-      <h1>{{ page.title }}</h1>
+      <h1>{% include title.html title=page.title runs=page.title_runs %}</h1>
 
       {%- comment -%}
         Namespace note, 2026-09-27 (on-page SEO pass).

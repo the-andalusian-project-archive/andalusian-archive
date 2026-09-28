@@ -87,7 +87,7 @@ last_modified_at: 2026-09-28
 {%- endfor -%}
 {%- if own and own.recording_url != "" -%}
   <div class="card">
-    <h3><a href="{{ own.recording_url | relative_url }}">{{ own.title }}</a></h3>
+    <h3><a href="{{ own.recording_url | relative_url }}">{% include title.html title=own.title %}</a></h3>
     <div class="card-meta">
       upload <code>{{ own.capture_video_id }}</code> &middot; {{ own.source }} &middot; {{ own.lang }} &middot; {{ own.words }} words
     </div>

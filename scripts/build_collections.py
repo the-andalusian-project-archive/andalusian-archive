@@ -752,7 +752,7 @@ def build_transcripts():
             front.append("redaction_note: %s" % q(d["redaction_note"]))
             n_redacted.append("transcript-%s.md" % tid)
 
-        body = ["# %s" % d["title"], ""]
+        body = [_h1(d["title"]), ""]
         if d["role"] == "duplicate-upload":
             body += [
                 "> This is a transcript of the **same recording** as the page "
@@ -942,7 +942,7 @@ def build_papers():
         is_yaqeen = "yaqeen" in str(p.get("publisher_journal", "")).lower()
         is_cc = (p.get("id") == CC_PAPER_ID)
 
-        body = ["# %s" % title, ""]
+        body = [_h1(title), ""]
         meta_bits = []
         if p.get("publisher_journal"):
             meta_bits.append(str(p["publisher_journal"]))
@@ -1543,6 +1543,55 @@ _HREF_BREAK = re.compile(r'["<>`]')
 # pages are byte-identical to what they were before this. Nothing is guessed:
 # the script ranges below are checked, not inferred, and an unrecognised
 # non-Latin run still gets isolated, just without a language tag.
+# Characters that are typographically CORRECT in the recorded title but paint
+# far outside the line box, so they have to be rendered at a different size than
+# the text around them.
+#
+# U+29F8 BIG SOLIDUS is the one that occurs. The author used it as an ordinary
+# slash ("w⧸" for "with"), which is what the Unicode Consortium's own definition
+# covers: it is a "big" slash, a slash intended to span a full em, and that is
+# exactly why it is wrong at text size. Measured with canvas
+# `actualBoundingBoxAscent/Descent` at the 41.6px h1:
+#
+#     U+29F8 in Lato / Source Sans Pro / Segoe UI / Georgia / Merriweather /
+#            Noto Sans Symbols 2 / Apple Symbols / sans-serif / serif
+#            -> ascent 52, descent 28, total 80px, against a 30px cap height
+#               and a 47.84px line box. It inks 2.67x the cap and overflows its
+#               own line by 32px, which is the reported visual break.
+#     the same glyph in 'Segoe UI Symbol' -> 40px total, which fits.
+#
+# The other fullwidth characters were measured in the same pass and are FINE, so
+# they are deliberately not listed here: U+FF5C ｜ (207 titles) inks 1.53x cap,
+# U+FF1A ： (52) 0.83x, U+FF02 ＂ (34) 0.37x, U+FF1F ？ (15) 1.13x, U+300C 「 1.37x,
+# U+FF08 （ 1.33x, and Arabic ALEF 1.03x. Only the big solidus breaks the line.
+_TALL_GLYPHS = {
+    "⧸": 0.55,   # U+29F8 BIG SOLIDUS
+    "⧵": 0.55,   # U+29F5 REVERSE SOLIDUS OPERATOR
+    "⫽": 0.55,   # U+2AFD DOUBLE SOLIDUS OPERATION
+}
+
+
+def _h1(title) -> str:
+    """A generated body heading, with any oversized glyph wrapped for rendering.
+
+    The heading itself must NOT be deleted. Every one of these folders is read by
+    line number - the 501 verified topic quotations cite `_posts`,
+    `_transcripts`, `_articles` and `_papers` at a specific line - and removing
+    the leading heading shifts every citation below it by one. Measured: removing
+    it broke 60 transcript citations and 7 paper citations outright. A cited line
+    is recorded provenance, and rewriting 501 of them to suit a heading is
+    exactly the silent alteration this archive does not make.
+
+    What can be fixed is the rendering. Wrapping the glyph here is inline HTML
+    on the SAME line, so no citation moves, and lets `.tall-glyph` size it. The
+    character in the data is unchanged; only the markup around it is.
+    """
+    text = str(title or "")
+    for ch in _TALL_GLYPHS:
+        text = text.replace(ch, '<span class="tall-glyph">%s</span>' % ch)
+    return "# %s" % text
+
+
 _BIDI_RANGES = (
     ("ar", 0x0600, 0x06FF, "rtl"),   # Arabic
     ("he", 0x0590, 0x05FF, "rtl"),   # Hebrew
@@ -1767,7 +1816,7 @@ def build_videos():
         # title that needs it; the other 67 pages get no new key at all.
         front.extend(front_matter_bidi(title))
 
-        body = ["# %s" % title, ""]
+        body = [_h1(title), ""]
         if vid == DUP52_ID:
             body.append(
                 "Numbering note: the source data lists this entry as "
@@ -2061,7 +2110,7 @@ def build_articles():
                 "local_post_url: %s" % q(post_url_for(fname, pslug, cats))
             )
 
-        body = ["# %s" % title, "", "*%s — status: %s*" % (date, status), ""]
+        body = [_h1(title), "", "*%s — status: %s*" % (date, status), ""]
         # I3 (review-phase2): the "Wayback Machine" label and the hardcoded
         # "Original site: asadullahali.com" line are both wrong for a work whose
         # text came from some other live site. Both are now data-driven.
@@ -2215,7 +2264,7 @@ def build_mdi_pages():
                 "compared. The text below is the only preserved copy of this "
                 "announcement." % dup)
         body = [
-            "# %s" % str(row.get("title", slug)),
+            _h1(str(row.get("title", slug))),
             "",
             "*Muslim Debate Initiative - %s*" % str(row.get("date", "")),
             "",

@@ -3620,4 +3620,43 @@ a:focus-visible {
 }
 
 .footer-colophon a { color: var(--color-text-secondary); }
+/* --- tall glyphs ------------------------------------------------------------
+   U+29F8 BIG SOLIDUS, which the author used as an ordinary slash ("w⧸" for
+   "with"), is by definition a slash meant to span a full em. That is why it is
+   wrong at text size: measured with canvas `actualBoundingBoxAscent/Descent` at
+   this h1's 41.6px, it inks 80px tall against a 30px cap height and a 47.84px
+   line box - 2.67x the cap, overflowing its own line by 32px, and breaking the
+   vertical rhythm of every title it appears in.
 
+   Two levers, because one is not enough on its own:
+
+   1. Prefer a symbol face. 'Segoe UI Symbol' carries U+29F8 with text metrics -
+      40px total, which fits the line. Without it, every font in the stack
+      (Lato, Source Sans Pro, Segoe UI, Georgia, Merriweather, Noto Sans
+      Symbols 2, Apple Symbols, and the generic families) falls back to a face
+      that paints it at 80px.
+
+   2. Size it down regardless, so the guarantee does not depend on which fonts a
+      reader happens to have. 0.55 x 80 = 44px, inside the 47.84px line, and
+      0.55 x 40 = 22px where the symbol face is present. `em` rather than `rem`
+      so the ratio holds at every heading size; `1em` would leave the fullwidth
+      advance of the fallback font and read as a gap.
+
+   The character in the data is untouched: it is provenance, and it stays byte
+   for byte what the catalogue holds. Only its rendering changes, and the run is
+   tagged in `title_runs` by scripts/build_collections.py.
+
+   The other fullwidth characters in the corpus were measured in the same pass
+   and need none of this: U+FF5C ｜ (207 titles) 1.53x cap, U+FF1A ： (52) 0.83x,
+   U+FF02 ＂ (34) 0.37x, U+FF1F ？ (15) 1.13x, U+300C 「 1.37x, U+FF08 （ 1.33x,
+   Arabic ALEF 1.03x. Only the big solidus breaks the line. */
+.tall-glyph,
+span.tall-glyph {
+  font-family: 'Segoe UI Symbol', 'Segoe UI Historic', 'Noto Sans Symbols 2',
+    'Apple Symbols', sans-serif;
+  font-size: 0.55em;
+  line-height: 0;
+  vertical-align: baseline;
+  /* No letter-spacing: at 0.55em a 0.01em tracking becomes a visible gap. */
+  letter-spacing: 0;
+}

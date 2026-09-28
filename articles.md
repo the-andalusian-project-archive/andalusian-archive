@@ -67,7 +67,7 @@ last_modified_at: 2026-09-28
 {% for work in site.data.canonical_works %}
 {% if work.status != "lost" %}
   <div class="card">
-    <h3>{{ work.title }}</h3>
+    <h3>{% include title.html title=work.title %}</h3>
     <div class="card-meta">
       {{ work.date }} &mdash; {{ work.slug }}
     </div>
@@ -104,7 +104,7 @@ last_modified_at: 2026-09-28
 {% for work in site.data.canonical_works %}
 {% if work.status == "lost" %}
   <div class="card">
-    <h3>{{ work.title }}</h3>
+    <h3>{% include title.html title=work.title %}</h3>
     <div class="card-meta">
       {{ work.date }} &mdash; {{ work.slug }}
     </div>
@@ -132,7 +132,7 @@ last_modified_at: 2026-09-28
 <div class="card-grid">
 {% for m in site.data.mdi_articles %}
   <div class="card">
-    <h3>{{ m.title }}</h3>
+    <h3>{% include title.html title=m.title %}</h3>
     <div class="card-meta">
       {{ m.date }} &mdash; {{ m.author }}
     </div>
@@ -154,7 +154,7 @@ last_modified_at: 2026-09-28
 <div class="card-grid">
 {% for n in site.data.notices %}
   <div class="card">
-    <h3>{{ n.title }}</h3>
+    <h3>{% include title.html title=n.title %}</h3>
     <div class="card-meta">
       {{ n.date }} &mdash; {{ n.slug }}
     </div>
@@ -235,7 +235,7 @@ last_modified_at: 2026-09-28
     {%- if w.slug == pp.slug -%}{%- assign catwork = w -%}{%- endif -%}
   {%- endfor -%}
   <div class="card">
-    <h3>{{ pp.title }}</h3>
+    <h3>{% include title.html title=pp.title %}</h3>
     <div class="card-meta">
       {{ pp.date | date: "%B %d, %Y" }}{% if pp.word_count %} &middot; {{ pp.word_count }} words recovered{% endif %}{% if pp.provenance %} &middot; capture {{ pp.provenance }}{% endif %}
     </div>

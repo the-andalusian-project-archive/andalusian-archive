@@ -14,7 +14,7 @@ topics: ["islamic law", "jurisprudence", "history"]
 mirror_urls: ["https://www.youtube.com/watch?v=F4yLQUVfSWk"]
 ---
 
-# 35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]
+# 35 - Understanding Jihad w<span class="tall-glyph">⧸</span> Robert Spencer (Preface) [8vxbN2jZL6M]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

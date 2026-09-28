@@ -12,7 +12,7 @@ layout: default
         right-to-left, and `lang` only where the script implies a language.
         A Latin run gets <bdi> with no `lang`: "ltr" is not a language tag.
       {%- endcomment -%}
-      <h1>{%- if page.title_runs and page.title_runs.size > 0 -%}{% for r in page.title_runs %}{% if r.lang and r.lang != 'ltr' %}<bdi lang="{{ r.lang }}"{% if r.dir %} dir="{{ r.dir }}"{% endif %}>{{ r.text }}</bdi>{% else %}<bdi>{{ r.text }}</bdi>{% endif %}{% endfor %}{%- else -%}{{ page.title }}{%- endif -%}</h1>
+      <h1>{% include title.html title=page.title runs=page.title_runs %}</h1>
 
       {%- comment -%}
         Category badge, joined on video_id: build_collections.py writes the

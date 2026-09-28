@@ -14,7 +14,7 @@ layout: default
 {%- endcomment -%}
 {%- assign sibs = site.data.transcript_index.by_recording[page.recording] -%}
 <article class="transcript">
-  <h1>{{ page.title }}</h1>
+  <h1>{% include title.html title=page.title runs=page.title_runs %}</h1>
 
   <p class="transcript-disclaimer"><em>{{ page.disclaimer }}</em></p>
 

@@ -17,7 +17,7 @@ capture_file: "whisper-lCqZB8gP4sk.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]
+# 36 - Understanding Jihad w<span class="tall-glyph">⧸</span> Robert Spencer #1 [lCqZB8gP4sk]
 
 This is the capture taken from the catalogued recording itself.
 

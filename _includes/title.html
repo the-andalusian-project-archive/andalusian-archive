@@ -1,0 +1,29 @@
+{%- comment -%}
+  A title, rendered so that a glyph which overflows its line is sized to fit.
+
+  U+29F8 BIG SOLIDUS is a slash defined to span a full em, so at text size it
+  inks 2.67x the cap height and breaks the vertical rhythm of any heading it
+  appears in - it is in 9 titles in this corpus. scripts/build_collections.py
+  tags those runs in `title_runs` for the pages that carry it, and this include
+  renders them through `.tall-glyph`. For everything else - the index pages,
+  which print a plain title from `_data/` with no runs - the same three glyphs
+  are wrapped here, so one place decides how a title is marked up.
+
+  Parameters:
+    title  - the plain title string. Required.
+    runs   - an optional title_runs array; when present and non-empty it wins,
+             because it already carries the script boundaries a mixed-direction
+             title needs.
+
+  The character in the DATA is never altered. It is provenance and stays byte
+  for byte what the catalogue holds; only the markup around it changes.
+{%- endcomment -%}
+{%- assign t = include.title | default: "" -%}
+{%- if include.runs and include.runs.size > 0 -%}
+{%- for r in include.runs -%}{% if r.lang == 'tall' %}<span class="tall-glyph">{{ r.text }}</span>{% elsif r.lang and r.lang != 'ltr' %}<bdi lang="{{ r.lang }}"{% if r.dir %} dir="{{ r.dir }}"{% endif %}>{{ r.text }}</bdi>{% else %}<bdi>{{ r.text }}</bdi>{% endif %}{% endfor -%}
+{%- else -%}
+{%- assign t = t | replace: "⧸", '<span class="tall-glyph">⧸</span>' -%}
+{%- assign t = t | replace: "⧵", '<span class="tall-glyph">⧵</span>' -%}
+{%- assign t = t | replace: "⫽", '<span class="tall-glyph">⫽</span>' -%}
+{{ t }}
+{%- endif -%}

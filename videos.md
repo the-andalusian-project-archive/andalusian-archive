@@ -49,7 +49,7 @@ last_modified_at: 2026-09-28
 {% for video in site.data.videos %}
 {%- assign cov = site.data.transcript_coverage | where: "video_id", video.id | first -%}
   <div class="card">
-    <h3>{{ video.title }}</h3>
+    <h3>{% include title.html title=video.title %}</h3>
     <div class="card-meta">
       {% if video.format %}{{ video.format }}{% endif %}
       {% if video.size_bytes %} &middot; {{ video.size_bytes | divided_by: 1048576.0 | round: 1 }} MB{% endif %}
