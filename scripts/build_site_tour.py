@@ -80,6 +80,22 @@ def run(cmd: list[str]) -> None:
         raise SystemExit(f"ffmpeg failed: {' '.join(cmd[:4])}...")
 
 
+def esc(text: str) -> str:
+    """Escape a string for use as an ffmpeg filter option value.
+
+    `drawtext` parses its own options, and its text field is full of characters
+    with meaning at the filter-graph level. A single unescaped colon is enough
+    to kill the encode: the caption "A subject page: the passages..." parsed as
+    an option named `page` and ffmpeg exited with "No option name near...". Order
+    matters - the backslash first, so the escapes added afterwards are not
+    themselves escaped.
+    """
+    out = text.replace("\\", "\\\\")
+    for ch in (":", "'", "%", "[", "]", ",", ";"):
+        out = out.replace(ch, "\\" + ch)
+    return out
+
+
 def have(binary: str) -> bool:
     return shutil.which(binary) is not None
 
@@ -88,9 +104,9 @@ def title_card(text: str, sub: str, out: pathlib.Path) -> None:
     """A title or end card, drawn on the site's own dark surface."""
     vf = (
         f"drawbox=x=0:y=0:w=iw:h=ih:color=0x0F1117:t=fill,"
-        f"drawtext=fontfile={FONT_BOLD}:text='{text}':fontcolor={FG}"
+        f"drawtext=fontfile={FONT_BOLD}:text='{esc(text)}':fontcolor={FG}"
         f":fontsize=64:x=(w-text_w)/2:y=(h-text_h)/2-40,"
-        f"drawtext=fontfile={FONT}:text='{sub}':fontcolor={DIM}"
+        f"drawtext=fontfile={FONT}:text='{esc(sub)}':fontcolor={DIM}"
         f":fontsize=30:x=(w-text_w)/2:y=(h-text_h)/2+50"
     )
     run([
@@ -112,14 +128,38 @@ def frame_clip(src: pathlib.Path, caption: str, z_out: float, z_in: float,
         f":d={frames}:s=1440x900:fps={FPS},"
         f"drawbox=x=0:y=h-150:w=iw:h=150:color=0x0F1117@0.92:t=fill,"
         f"drawbox=x=0:y=h-6:w=iw:h=6:color={ACCENT}:t=fill,"
-        f"drawtext=fontfile={FONT}:text='{re.sub(chr(39), '', caption)}'"
+        f"drawtext=fontfile={FONT}:text='{esc(caption)}'"
         f":fontcolor={FG}:fontsize=34:x=70:y=h-98"
     )
+    # `-t` goes on the OUTPUT, not the input. zoompan's `d` is "output frames per
+    # input frame", so with `-loop 1` the input never ends and `d=90` is applied
+    # to every one of the 75 input frames - 6750 frames, 225 seconds, for a clip
+    # that was supposed to be three. Putting `-t` on the output truncates to the
+    # real length whatever zoompan emits. The first cut of this had it on the
+    # input and every segment ran 75x long.
     run([
-        "ffmpeg", "-y", "-loop", "1", "-t", f"{dur}", "-i", str(src),
-        "-vf", vf, "-r", str(FPS), "-an", "-c:v", "libx264",
+        "ffmpeg", "-y", "-loop", "1", "-i", str(src),
+        "-vf", vf, "-t", f"{dur}", "-r", str(FPS), "-an", "-c:v", "libx264",
         "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", str(out),
     ])
+
+
+def probe_duration(path: pathlib.Path) -> float:
+    """Duration in seconds, so the build reports a real number.
+
+    An encode can exit 0 and write a file with no content in it, which is
+    exactly what the first xfade chain did. Reporting the duration turns that
+    silent failure into a visible one.
+    """
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+         "-of", "csv=p=0", str(path)],
+        capture_output=True, text=True,
+    )
+    try:
+        return float(out.stdout.strip())
+    except ValueError:
+        return 0.0
 
 
 def main() -> int:
@@ -139,8 +179,8 @@ def main() -> int:
     WORK.mkdir(parents=True, exist_ok=True)
     clips: list[pathlib.Path] = []
 
+    head = WORK / "00-title.mp4"
     if not args.gif_only:
-        head = WORK / "00-title.mp4"
         title_card("The Andalusian Project Archive",
                    "a screen tour of the live site", head)
         clips.append(head)
@@ -160,14 +200,19 @@ def main() -> int:
 
     # ---- chain with dissolves -------------------------------------------
     if not args.mp4_only:
-        inputs: list[str] = []
+        inputs = []
         for c in clips:
             inputs += ["-i", str(c)]
         chains = []
         prev = "[0:v]"
         for i in range(1, len(clips)):
             label = f"[v{i}]"
-            offset = HOLD - XFADE * i
+            # The i-th dissolve starts at (i-1) * (HOLD - XFADE). Writing this
+            # as `HOLD - XFADE * i` - which is what the first version did -
+            # counts DOWN from 2.45s and produces an output the encoder accepts
+            # and writes 20 kB of, so the failure is silent: ffmpeg exits 0 and
+            # the file is empty of content. Cumulative, not decreasing.
+            offset = (i - 1) * (HOLD - XFADE)
             chains.append(
                 f"{prev}[{i}:v]xfade=transition=fade:duration={XFADE}"
                 f":offset={offset:.3f}{label}"
@@ -181,28 +226,39 @@ def main() -> int:
             "-profile:v", "high", "-level", "4.0", "-pix_fmt", "yuv420p",
             "-r", str(FPS), "-movflags", "+faststart", "-an", str(mp4),
         ])
-        print(f"\nMP4  {mp4.name}  {mp4.stat().st_size / 1e6:.2f} MB")
+        dur = probe_duration(mp4)
+        print(f"\nMP4  {mp4.name}  {mp4.stat().st_size / 1e6:.2f} MB  {dur:.1f}s")
 
     # ---- GIF: one frame per section, two-pass palette, under the cap ------
-    gif_src = WORK / "gif.mp4"
+    # The 8 MB cap cannot hold thirteen Ken Burns clips, so the GIF carries one
+    # still per section - which is also what the previous tour did, and why each
+    # caption gets real screen time instead of flashing past. The picks are
+    # taken by NAME from SEGMENTS rather than by clip index: the earlier version
+    # hardcoded filter indices like [3:v] and [11:v], which is one segment
+    # inserted or removed away from silently feeding the GIF the wrong frames.
+    picks = ["01-home", "02-topics", "03-subject", "04-articles", "05-work",
+             "06-papers", "07-paper", "08-transcripts", "09-transcript",
+             "10-channel", "11-search"]
+    by_name = {n: c for n, *_ in SEGMENTS}
+    gif_head = WORK / "gif-title.mp4"
+    if not gif_head.exists():
+        title_card("The Andalusian Project Archive", "a screen tour", gif_head)
+    gif_clips = [gif_head]
+    for name in picks:
+        gif_clips.append(WORK / f"{name}.mp4")
+
+    gif_src = WORK / "gif-concat.mp4"
+    inputs: list[str] = []
+    for c in gif_clips:
+        inputs += ["-i", str(c)]
+    streams = "".join(f"[{i}:v]" for i in range(len(gif_clips)))
     run([
-        "ffmpeg", "-y", *sum([["-i", str(c)] for c in clips], []),
-        "-filter_complex",
-        "[0:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[a];"
-        "[3:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[b];"
-        "[5:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[c];"
-        "[6:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[d];"
-        "[7:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[e];"
-        "[9:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[f];"
-        "[11:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[g];"
-        "[12:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[h];"
-        "[13:v]trim=start=1.2:end=1.2+0.6,setpts=PTS-STARTPTS[i];"
-        "[14:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[j];"
-        "[15:v]trim=start=1.2:end=1.8,setpts=PTS-STARTPTS[k];"
-        "[a][b][c][d][e][f][g][h][i][j][k]concat=n=11:v=1:a=0[out]",
+        "ffmpeg", "-y", *inputs,
+        "-filter_complex", f"{streams}concat=n={len(gif_clips)}:v=1:a=0[out]",
         "-map", "[out]", "-an", "-c:v", "libx264", "-preset", "slow", "-crf", "20",
         "-pix_fmt", "yuv420p", str(gif_src),
     ])
+
     gif = OUT / "site-tour.gif"
     run([
         "ffmpeg", "-y", "-i", str(gif_src),
@@ -214,7 +270,7 @@ def main() -> int:
     mb = gif.stat().st_size / 1e6
     print(f"GIF  {gif.name}  {mb:.2f} MB  (cap {GIF_MAX_MB})")
     if mb > GIF_MAX_MB:
-        print("  OVER CAP - lower GIF_FPS or drop a segment", file=sys.stderr)
+        print("  OVER CAP - lower GIF_FPS or drop a pick", file=sys.stderr)
         return 1
     return 0
 
