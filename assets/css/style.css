@@ -30,8 +30,8 @@
   /* --- ink --------------------------------------------------------------- */
   --color-text: #1c1a17;
   --color-text-secondary: #5c5750;
-  --color-text-tertiary: #8a8378;
-  --color-muted: #8a8378;
+  --color-text-tertiary: #6f685d;
+  --color-muted: #6f685d;
 
   /* --- one accent: SEP's red --------------------------------------------- */
   --color-primary: #8c1515;
@@ -103,41 +103,14 @@
   --transition-slow: 180ms ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Warm, not blue-black. The old dark theme was #0f1117, which read as a
-       developer tool; this is the same warm family as the light theme, one
-       value per token, designed as a pair rather than as an afterthought. */
-    --color-bg: #1a1917;
-    --color-surface: #232120;
-    --color-surface-hover: #2a1d1d;
-    --color-surface-sunken: #141312;
-    --color-border: #3b3833;
-    --color-border-strong: #4d4941;
+/* The first `prefers-color-scheme: dark` token block stood here and
+   was deleted. The SEP-flavoured one at the end of this file replaced
+   it, and the cascade takes the last declaration, so no browser had
+   applied this one since the redesign - yet check_palette() was
+   reading the FIRST match, so a dead block was the thing reporting
+   the dark palette as sound. The gate now validates every dark
+   declaration: the media query and [data-theme="dark"]. */
 
-    --color-text: #e9e5de;
-    --color-text-secondary: #a8a29a;
-    --color-text-tertiary: #7d766c;
-    --color-muted: #7d766c;
-
-    /* SEP's red, lightened for a dark ground. */
-    --color-primary: #e08a8a;
-    --color-primary-hover: #eda3a3;
-    --color-primary-subtle: #2a1d1d;
-    --color-accent: #e08a8a;
-    --color-accent-subtle: #2a1d1d;
-
-    --color-success: #7fbf95;
-    --color-success-subtle: #1c2a20;
-    --color-warning: #d9a441;
-    --color-warning-subtle: #2a2318;
-    --color-danger: #e08b80;
-    --color-danger-subtle: #2b1c1a;
-
-    --shadow-xl: 0 8px 32px rgba(0, 0, 0, 0.5);
-    --shadow-overlay: 0 8px 32px rgba(0, 0, 0, 0.5);
-  }
-}
 
 /* Reset */
 *, *::before, *::after {
@@ -3506,12 +3479,12 @@ a:focus-visible {
     --color-surface: #1e1614;
     --color-surface-hover: #3a2825;
     --color-surface-sunken: #171110;
-    --color-border: #4a3a35;
-    --color-border-strong: #634e46;
-    --color-text: #e7ddd1;
-    --color-text-secondary: #b5a89c;
-    --color-text-tertiary: #8d8078;
-    --color-muted: #8d8078;
+    --color-border: #54423c;
+    --color-border-strong: #6e574e;
+    --color-text: #ece4da;
+    --color-text-secondary: #bdb2a8;
+    --color-text-tertiary: #9a8e85;
+    --color-muted: #9a8e85;
     --color-primary: #e08a7a;
     --color-primary-hover: #eda396;
     --color-primary-subtle: #2e211e;
@@ -3537,8 +3510,8 @@ a:focus-visible {
   --color-border-strong: #c2b49f;
   --color-text: #1c1a17;
   --color-text-secondary: #5c5750;
-  --color-text-tertiary: #8a8378;
-  --color-muted: #8a8378;
+  --color-text-tertiary: #6f685d;
+  --color-muted: #6f685d;
   --color-primary: #8c1515;
   --color-primary-hover: #6e1010;
   --color-primary-subtle: #f2e3e1;
@@ -3557,12 +3530,12 @@ a:focus-visible {
   --color-surface: #1e1614;
   --color-surface-hover: #3a2825;
   --color-surface-sunken: #171110;
-  --color-border: #4a3a35;
-  --color-border-strong: #634e46;
-  --color-text: #e7ddd1;
-  --color-text-secondary: #b5a89c;
-  --color-text-tertiary: #8d8078;
-  --color-muted: #8d8078;
+  --color-border: #54423c;
+  --color-border-strong: #6e574e;
+  --color-text: #ece4da;
+  --color-text-secondary: #bdb2a8;
+  --color-text-tertiary: #9a8e85;
+  --color-muted: #9a8e85;
   --color-primary: #e08a7a;
   --color-primary-hover: #eda396;
   --color-primary-subtle: #2e211e;

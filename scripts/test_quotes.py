@@ -719,6 +719,16 @@ PALETTE_TEXT_PAIRS = [
     ("--color-text-secondary", "--color-surface"),
     ("--color-text-secondary", "--color-surface-sunken"),
     ("--color-text-secondary", "--color-primary-subtle"),
+    # Tertiary and muted carry the small metadata lines - timestamps, theme
+    # labels, "no referent" notes - so they are text and owe the same 4.5:1 as
+    # anything else. They were missing from this list, which is how the dark
+    # tertiary ink sat at 4.02:1, under the floor, while the gate reported the
+    # palette as sound.
+    ("--color-text-tertiary", "--color-bg"),
+    ("--color-text-tertiary", "--color-surface"),
+    ("--color-text-tertiary", "--color-surface-sunken"),
+    ("--color-muted", "--color-bg"),
+    ("--color-muted", "--color-surface"),
     ("--color-primary", "--color-bg"),
     ("--color-primary", "--color-surface"),
     ("--color-primary", "--color-surface-sunken"),
@@ -748,7 +758,7 @@ RULE_MIN = 1.4
 # The accent is SEP's red, measured rgb(140, 21, 21). Pinned explicitly because
 # the first measurement to surface was the teal that IEP and Goodreads share,
 # and a later edit back to it should be a deliberate decision, not a slip.
-ACCENT_EXPECTED = {"light": "#8c1515", "dark": "#e08a8a"}
+ACCENT_EXPECTED = {"light": "#8c1515", "dark": "#e08a7a"}
 
 
 def _srgb_lum(hex_colour: str) -> float:
@@ -773,20 +783,38 @@ def _read_vars(block: str) -> dict[str, str]:
 
 
 def check_palette() -> list[str]:
-    """Every declared token pair clears its floor, in BOTH themes."""
+    """Every declared token pair clears its floor, in BOTH themes.
+
+    "Both themes" means EVERY dark declaration, not the first one. There are two
+    ways to be dark here - the `prefers-color-scheme` media query for a reader who
+    has chosen nothing, and `[data-theme="dark"]` for one who has chosen dark -
+    and the theme toggle means both are live at once. An earlier version of this
+    gate took the first media block it found, which after the toggle was a block
+    no browser ever applied: it reported a clean palette while the dark theme
+    actually on screen had a different set of values. That is the third instance
+    of the same trap in this repository, after the `_site` check in 1c177ba and
+    the stale `prefers-color-scheme: light` layer in d2aa2d7 - so all three now
+    assert on the value the cascade actually resolves to.
+    """
     css = (ROOT / "assets" / "css" / "style.css").read_text(encoding="utf-8")
     failures: list[str] = []
 
     start = css.index(":root {")
     light = _read_vars(css[start:css.index("}", start) + 1])
 
-    dm = re.search(r"@media \(prefers-color-scheme: dark\) \{\s*:root \{(.*?)\n  \}",
-                   css, re.S)
-    if not dm:
-        return ["style.css: no prefers-color-scheme dark :root block found"]
-    dark = _read_vars(dm.group(1))
-    for k, v in light.items():
-        dark.setdefault(k, v)
+    # Every dark-context declaration, by name, so the report says which one.
+    dark_sets: dict[str, dict[str, str]] = {}
+    for m in re.finditer(
+            r"@media \(prefers-color-scheme: dark\)\s*\{\s*:root\s*\{(.*?)\n  \}",
+            css, re.S):
+        line = css[:m.start()].count("\n") + 1
+        dark_sets[f"dark media query (line {line})"] = _read_vars(m.group(1))
+    for m in re.finditer(r':root\[data-theme="dark"\]\s*\{(.*?)\n\}', css, re.S):
+        line = css[:m.start()].count("\n") + 1
+        dark_sets[f'data-theme="dark" (line {line})'] = _read_vars(m.group(1))
+
+    if not dark_sets:
+        return ["style.css: no dark theme declaration found"]
 
     needed = ({n for n, _ in PALETTE_TEXT_PAIRS}
               | {n for n, _ in PALETTE_RULE_PAIRS})
@@ -794,41 +822,43 @@ def check_palette() -> list[str]:
     if missing:
         failures.append(f"style.css: tokens not declared in :root: {missing}")
 
-    for theme_name, T in (("light", light), ("dark", dark)):
+    for theme_name, T in [("light", light)] + sorted(dark_sets.items()):
+        # A dark declaration only overrides what it names; the rest is light's.
+        eff = dict(light)
+        eff.update(T)
         for fg, bgn in PALETTE_TEXT_PAIRS:
-            if fg not in T or bgn not in T:
+            if fg not in eff or bgn not in eff:
                 continue
-            r = _contrast(T[fg], T[bgn])
+            r = _contrast(eff[fg], eff[bgn])
             if r < TEXT_MIN:
                 failures.append(
                     f"contrast {theme_name}: {fg} on {bgn} = {r:.2f} "
                     f"(< {TEXT_MIN})")
         for fg, bgn in PALETTE_RULE_PAIRS:
-            if fg not in T or bgn not in T:
+            if fg not in eff or bgn not in eff:
                 continue
-            r = _contrast(T[fg], T[bgn])
+            r = _contrast(eff[fg], eff[bgn])
             if r < RULE_MIN:
                 failures.append(
                     f"contrast {theme_name}: {fg} on {bgn} = {r:.2f} "
                     f"(< {RULE_MIN})")
-        want = ACCENT_EXPECTED[theme_name]
-        got = (T.get("--color-primary") or "").lower()
+
+    # The accent must be SEP's red wherever it is declared, so a later edit back
+    # to the teal the measurement surfaced first is caught in every one.
+    for theme_name, T in [("light", light)] + sorted(dark_sets.items()):
+        eff = dict(light)
+        eff.update(T)
+        want = ACCENT_EXPECTED["light" if theme_name == "light" else "dark"]
+        got = (eff.get("--color-primary") or "").lower()
         if got and got != want:
             failures.append(
                 f"style.css {theme_name}: --color-primary is {got}, expected "
                 f"{want} (SEP's red)")
 
-    # A palette token re-declared inside a `prefers-color-scheme` query is a
-    # trap. The deleted `prefers-color-scheme: light` layer sat AFTER :root, so
-    # in light mode it won the cascade and made --measure resolve to 68ch and
-    # --color-text-secondary to a cool #545b68 - while this gate, reading the
-    # first declaration in the file, reported a clean palette. That is the same
-    # class of blind spot as the `_site` check in 1c177ba: validating a
-    # declaration instead of the value the cascade resolves to.
-    #
-    # The dark block is exempt - re-declaring every token there is what a second
-    # theme IS. So are width media queries: a token narrowed at 480px cannot
-    # override the desktop palette. A *colour-scheme* query can, at every width.
+    # A palette token re-declared inside a `prefers-color-scheme` query other
+    # than the dark theme is a trap: it wins the cascade at every width. Width
+    # media queries are exempt, because a token narrowed at 480px cannot
+    # override the desktop palette.
     for qm in re.finditer(
             r"@media[^{]*prefers-color-scheme[^{]*\{(.*?)\n\}", css, re.S):
         if "dark" in qm.group(0)[:120]:
@@ -837,7 +867,7 @@ def check_palette() -> list[str]:
             if token in light:
                 failures.append(
                     f"style.css: {token} is re-declared inside a "
-                    f"prefers-color-scheme query other than the dark block; it "
+                    f"prefers-color-scheme query other than the dark theme; it "
                     f"wins the cascade and can silently override the palette")
 
     # The retired Tailwind values must be gone, not merely unused.
@@ -848,7 +878,8 @@ def check_palette() -> list[str]:
                 f"was replaced, not aliased")
 
     print(f"palette pairs checked : {len(PALETTE_TEXT_PAIRS)} text, "
-          f"{len(PALETTE_RULE_PAIRS)} rule, in 2 themes")
+          f"{len(PALETTE_RULE_PAIRS)} rule, in light and in all "
+          f"{len(dark_sets)} dark declaration(s)")
     return failures
 
 
