@@ -556,10 +556,10 @@ of these pages.</p>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/papers/from-science-to-scientism/">From Science to Scientism</a></li>
       <li><a href="{{ site.baseurl }}/papers/international-conference-on-developing-synergies-between-islam-and-science-and-technology/">International Conference on Developing Synergies Between Islam and Science and Technology</a></li>
-      <li><a href="{{ site.baseurl }}/papers/the-qur-an-and-science-a-forced-marriage/">The Qur</a></li>
+      <li><a href="{{ site.baseurl }}/papers/the-qur-an-and-science-a-forced-marriage/">The Qur'an and Science: A Forced Marriage</a></li>
       <li><a href="{{ site.baseurl }}/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/">The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis</a></li>
-      <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists</a></li>
-</ul><h3 class="shelf-kind">Transcripts (7)</h3>
+      <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a></li>
+</ul><h3 class="shelf-kind">Transcripts (8)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/fq1WejCHgXs-duplicate-upload/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4] - transcript of a duplicate upload</a></li>
@@ -568,6 +568,7 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/transcripts/eQ-frTAlcJc-duplicate-upload/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg] - transcript of a duplicate upload</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/hURJIIm0tSY-duplicate-upload/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y] - transcript of a duplicate upload</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
 </ul><h3 class="shelf-kind">Recordings (9)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/videos/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]</a></li>
@@ -578,7 +579,7 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/videos/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]</a></li>
       <li><a href="{{ site.baseurl }}/videos/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]</a></li>
       <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
 </ul>
 
 <h2>Everything in this cluster</h2>

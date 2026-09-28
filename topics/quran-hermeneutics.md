@@ -368,19 +368,25 @@ of these pages.</p>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/articles/notice/quran/">Al-Qur’an</a></li>
       <li><a href="{{ site.baseurl }}/articles/the-atheistic-worldview-vs-the-quranic-worldview/">The Atheistic Worldview vs The Quranic Worldview</a></li>
-</ul><h3 class="shelf-kind">Papers (1)</h3>
+</ul><h3 class="shelf-kind">Papers (2)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/">Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7</a></li>
-</ul><h3 class="shelf-kind">Recordings (9)</h3>
+      <li><a href="{{ site.baseurl }}/papers/the-qur-an-and-science-a-forced-marriage/">The Qur'an and Science: A Forced Marriage</a></li>
+</ul><h3 class="shelf-kind">Transcripts (1)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
+</ul><h3 class="shelf-kind">Recordings (11)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
       <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
       <li><a href="{{ site.baseurl }}/videos/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
       <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
       <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
       <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]</a></li>
       <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]</a></li>
       <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]</a></li>
       <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
 </ul>
 

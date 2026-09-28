@@ -193,10 +193,9 @@ rather than papered over; the reading list above is the place to go.</p>
 <h2>Everything else on this subject</h2>
 <p>More from the archive on the same subject. A work can appear on more than one
 of these pages.</p>
-<h3 class="shelf-kind">Written works (3)</h3>
+<h3 class="shelf-kind">Written works (2)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/articles/adam-is-no-myth/">Adam is No Myth</a></li>
-      <li><a href="{{ site.baseurl }}/articles/charlie-hebdo-coexistence-and-crocodile-tears/">Charlie Hebdo, Coexistence and Crocodile Tears</a></li>
       <li><a href="{{ site.baseurl }}/articles/the-narrative-of-happymuslims-a-response-to-adam-deen-and-the-honesty-policy/">The Narrative of HappyMuslims: A Response to Adam Deen</a></li>
 </ul>
 

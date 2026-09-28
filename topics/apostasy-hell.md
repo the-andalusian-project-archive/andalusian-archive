@@ -481,11 +481,11 @@ rather than papered over; the reading list above is the place to go.</p>
 of these pages.</p>
 <h3 class="shelf-kind">Transcripts (1)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative ("re upload") [Dr5IgXCHRIE]</a></li>
 </ul><h3 class="shelf-kind">Recordings (4)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/videos/A3dbBCBSFKk/">28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative ("re upload") [Dr5IgXCHRIE]</a></li>
       <li><a href="{{ site.baseurl }}/videos/nkuZ70p-inE/">40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]</a></li>
       <li><a href="{{ site.baseurl }}/videos/tJVwLXeWwng/">Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight</a></li>
 </ul>

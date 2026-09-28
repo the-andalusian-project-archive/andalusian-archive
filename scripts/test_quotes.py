@@ -270,7 +270,8 @@ def check() -> int:
                     )
                     continue
 
-                window = norm(" ".join(lines[ref_line - 1 : ref_line - 1 + window_for(quote)]))
+                window_lines = window_for(quote)
+                window = norm(" ".join(lines[ref_line - 1 : ref_line - 1 + window_lines]))
                 needle = norm(quote)
 
                 if not needle:
@@ -280,6 +281,60 @@ def check() -> int:
                         f"{cluster}/{slug}: QUOTE NOT FOUND at {ref} -> "
                         f"{needle[:70]!r}"
                     )
+                else:
+                    # The window extends FORWARD, so `in` is satisfied by a match
+                    # anywhere inside it, not necessarily at the cited line. That
+                    # looseness is invisible in the common case and a review
+                    # measured it at zero - but the docstring claims the quote
+                    # begins at the cited line, so it is now enforced.
+                    #
+                    # The whole file is normalised LINE BY LINE, recording where
+                    # each line begins in the normalised string, so a match index
+                    # maps back to an exact line. Mapping proportionally instead
+                    # - start/len(flat)*len(raw) - is wrong, because collapsing
+                    # whitespace changes the length of a line by an amount that
+                    # is not uniform across the file.
+                    #
+                    # A quotation may legitimately begin partway through a line, so
+                    # the cited line must be one of the lines the quote occupies,
+                    # not necessarily its first.
+                    #
+                    # `flat` is built the same way the window is built - one
+                    # normalised string for the whole file - and the offsets are
+                    # derived from it by walking the lines in order. An earlier
+                    # version joined the per-line normalisations and searched
+                    # that, which disagreed with the window on every file
+                    # containing a blank line: joining ["a","","b"] gives "a  b"
+                    # while normalising the joined string gives "a b", so a quote
+                    # spanning the blank line matched the window and not this.
+                    flat = norm("\n".join(lines))
+                    offsets: list[int] = []
+                    pos = 0
+                    for ln in lines:
+                        offsets.append(pos)
+                        n = norm(ln)
+                        if n:
+                            pos += len(n) + 1
+
+                    occupied: set[int] = set()
+                    start = flat.find(needle)
+                    while start != -1:
+                        lo, hi = 0, len(offsets) - 1
+                        while lo < hi:
+                            mid = (lo + hi + 1) // 2
+                            if offsets[mid] <= start:
+                                lo = mid
+                            else:
+                                hi = mid - 1
+                        occupied.add(lo + 1)
+                        start = flat.find(needle, start + 1)
+
+                    if ref_line not in occupied:
+                        where = sorted(occupied)[:4] or ["nowhere in the file"]
+                        failures.append(
+                            f"{cluster}/{slug}: quote cited at line {ref_line} "
+                            f"actually occurs on line(s) {where}"
+                        )
 
                 if supports and norm(supports) not in queries:
                     failures.append(

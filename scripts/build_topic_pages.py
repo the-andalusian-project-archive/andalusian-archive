@@ -73,10 +73,10 @@ def permalink_index() -> tuple[set[str], dict[str, str]]:
     that is actually built.
     """
     perma: set[str] = set()
-    by_last: dict[str, str] = {}
+    by_last: dict[str, list[str]] = {}
     for pattern in ("*.md", "*/*.md", "_articles/*.md", "_papers/*.md",
                     "_transcripts/*.md", "_videos/*.md", "series/*.md"):
-        for md in ROOT.glob(pattern):
+        for md in sorted(ROOT.glob(pattern)):
             if "topics" in md.parts:
                 continue
             try:
@@ -90,12 +90,28 @@ def permalink_index() -> tuple[set[str], dict[str, str]]:
             if not p.startswith("/"):
                 continue
             perma.add(p)
-            last = p.strip("/").split("/")[-1]
-            by_last.setdefault(last, p)
+            # A LIST, not a single winner. Seventy last-segments collide -
+            # `understanding-atheism` is an article, a paper and a series page -
+            # and the previous version kept whichever the filesystem returned
+            # first, so the same spec row could resolve to a different page on a
+            # different machine. resolve_url() picks from the list, by kind.
+            by_last.setdefault(p.strip("/").split("/")[-1], []).append(p)
     return perma, by_last
 
 
-def resolve_url(url: str, perma: set[str], by_last: dict[str, str]) -> tuple[str, str]:
+# Which collection a resolved permalink should come from, given what the
+# research agent said the item was. A `paper` must not land on the blog page of
+# the same name.
+KIND_PREFIX = {
+    "work": ("/articles/",),
+    "paper": ("/papers/",),
+    "transcript": ("/transcripts/",),
+    "video": ("/videos/",),
+}
+
+
+def resolve_url(url: str, perma: set[str], by_last: dict[str, list[str]],
+                kind: str = "") -> tuple[str, str]:
     """Map a researched material URL onto a real permalink.
 
     Returns (permalink, how). `how` is exact | decoded | slug | missing, so the
@@ -107,8 +123,15 @@ def resolve_url(url: str, perma: set[str], by_last: dict[str, str]) -> tuple[str
     if decoded in perma:
         return decoded, "decoded"
     last = url.rstrip("/").split("/")[-1]
-    if last in by_last:
-        return by_last[last], "slug"
+    options = by_last.get(last)
+    if options:
+        wanted = KIND_PREFIX.get(kind, ())
+        for prefix in wanted:
+            for opt in options:
+                if opt.startswith(prefix):
+                    return opt, "slug"
+        # Deterministic: sorted, so the same input always yields the same page.
+        return sorted(options)[0], "slug"
     return url, "missing"
 
 
@@ -144,43 +167,102 @@ def corpus_vocabulary() -> list[dict]:
 
     for directory, kind in collections:
         for md in sorted((ROOT / directory).glob("*.md")):
-            head = md.read_text(encoding="utf-8", errors="replace")[:2000]
+            head = md.read_text(encoding="utf-8", errors="replace")[:4000]
+            fm = parse_front_matter(head)
 
-            def field(name: str) -> str | None:
-                m = re.search(rf'^{name}:\s*["\']?([^"\'\n]+)', head, re.M)
-                return m.group(1).strip() if m else None
-
-            url = field("permalink")
+            url = str(fm.get("permalink") or "").strip()
             if not url:
                 continue
-            title = field("title") or md.stem
-            extra = [field("slug") or "", url]
+            title = str(fm.get("title") or md.stem)
+            extra = [str(fm.get("slug") or "")]
 
             if kind == "video":
-                vid = field("video_id") or md.stem
+                vid = str(fm.get("video_id") or md.stem)
                 row = videos_by_id.get(vid, {})
                 extra += list(row.get("topics") or []) + list(row.get("themes") or [])
 
             if url in seen:
                 continue
             seen.add(url)
+            # The URL is deliberately NOT part of the haystack. It is a
+            # path-encoded slug of the original WordPress hierarchy, so matching
+            # terms against it produced false positives that no human would
+            # predict: "west" matched a video whose URL contained "northwest".
             hay = " ".join([title] + [e for e in extra if e]).lower()
             items.append({"url": url, "kind": kind, "label": title, "hay": hay})
 
     return items
 
 
+def parse_front_matter(head: str) -> dict:
+    """Front matter as a dict, via PyYAML where possible.
+
+    The previous implementation was a regex - `title:\\s*["']?([^"'\\n]+)` - and
+    it broke on any title containing an escaped quote. Three titles in this
+    corpus do, and the result was worse than a mangled string: one of them
+    yielded a single backslash, so a shelf link rendered with the text `\\` where
+    a work's title should be. `yaml.safe_load` handles the escaping because it
+    is a YAML parser. The regex stays as a fallback so the generator still runs
+    without PyYAML installed.
+    """
+    m = re.match(r"^---\r?\n(.*?)\r?\n---", head, re.S)
+    if not m:
+        return {}
+    block = m.group(1)
+    try:
+        import yaml
+
+        data = yaml.safe_load(block)
+        if isinstance(data, dict):
+            return data
+    except Exception:
+        pass
+    out: dict = {}
+    for line in block.splitlines():
+        fm = re.match(r'^([A-Za-z_][\w-]*):\s*(.*)$', line)
+        if not fm:
+            continue
+        key, val = fm.group(1), fm.group(2).strip()
+        if val.startswith("[") and val.endswith("]"):
+            out[key] = [v.strip().strip("\"'") for v in val[1:-1].split(",") if v.strip()]
+        else:
+            out[key] = val.strip("\"'")
+    return out
+
+
 def load(name: str):
     return json.loads((ROOT / name).read_text(encoding="utf-8"))
+
+
+def _term_pattern(term: str) -> re.Pattern:
+    """Match a term from a word start, as a prefix.
+
+    Plain substring matching put "Charlie Hebdo, Coexistence and Crocodile Tears"
+    on the Foundational Questions page, because `existence` occurs inside
+    `coexistence`. Adding a lookahead as well as a lookbehind fixed that and
+    broke the corpus: the term `atheis` is a deliberate stem, and a trailing
+    boundary means it no longer matches "Atheism" - 70 plainly relevant items,
+    including the whole Understanding Atheism series, fell out of their subject
+    pages and into miscellany.
+
+    A lookbehind alone is the right rule. It refuses to start mid-word, so
+    `existence` cannot match `coexistence` and `west` cannot match `northwest`,
+    while `atheis` still matches `Atheism`, `atheist` and `atheistic` because
+    nothing constrains where it stops. Suffix `!` demands a full-word match.
+    """
+    full = term.endswith("!")
+    core = term.rstrip("!").rstrip("*")
+    left = r"(?<![a-z0-9])"
+    right = r"(?![a-z0-9])" if full else ""
+    return re.compile(left + re.escape(core) + right, re.I)
 
 
 def match_clusters(vocab: list[dict], relations: dict) -> dict[str, list[dict]]:
     """Assign every corpus item to every cluster it matches.
 
-    Substring matching, so 'atheis' catches Atheism / atheism / atheist and
-    'qur'an' catches Qur'an / quran. `/topics/miscellany/` is then whatever no
-    specific cluster claimed, so the nine pages partition the corpus without
-    dropping or double-counting anything.
+    `/topics/miscellany/` is then whatever no specific cluster claimed, so the
+    nine pages partition the corpus without dropping or double-counting
+    anything.
     """
     clusters = {cid: [] for cid in relations["clusters"]}
     claimed: set[str] = set()
@@ -188,9 +270,11 @@ def match_clusters(vocab: list[dict], relations: dict) -> dict[str, list[dict]]:
     for cid, spec in relations["clusters"].items():
         if spec.get("is_fallback"):
             continue
-        terms = [t.lower() for t in spec.get("terms") or []]
+        patterns = [_term_pattern(t) for t in (spec.get("terms") or []) if t]
+        if not patterns:
+            continue
         for item in vocab:
-            if any(t in item["hay"] for t in terms):
+            if any(p.search(item["hay"]) for p in patterns):
                 clusters[cid].append(item)
                 claimed.add(item["url"])
 
@@ -438,7 +522,7 @@ def main() -> int:
             raw_url = item.get("url")
             if not raw_url:
                 continue
-            url, how = resolve_url(raw_url, perma, by_last)
+            url, how = resolve_url(raw_url, perma, by_last, item.get("kind", ""))
             how_counts[how] = how_counts.get(how, 0) + 1
             item["url"] = url
             material_topics.setdefault(url, [])

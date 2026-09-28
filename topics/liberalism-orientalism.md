@@ -520,11 +520,11 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/articles/of-context-and-confusion/">Of Context and Confusion</a></li>
       <li><a href="{{ site.baseurl }}/articles/mdi/still-colonised-liberalism-in-muslim-thought/">Still Colonised? Liberalism in Muslim Thought</a></li>
       <li><a href="{{ site.baseurl }}/articles/the-fraud-of-islamic-mint-nusantara/">The Fraud of Islamic Mint Nusantara</a></li>
-      <li><a href="{{ site.baseurl }}/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists</a></li>
+      <li><a href="{{ site.baseurl }}/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a></li>
 </ul><h3 class="shelf-kind">Papers (2)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/papers/still-colonized-liberalism-in-muslim-thought/">Still Colonized? Liberalism in Muslim Thought</a></li>
-      <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists</a></li>
+      <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a></li>
 </ul><h3 class="shelf-kind">Recordings (1)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/videos/G47Stp3pLss/">My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project</a></li>

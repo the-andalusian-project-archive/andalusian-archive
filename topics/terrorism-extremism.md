@@ -380,11 +380,11 @@ rather than papered over; the reading list above is the place to go.</p>
 of these pages.</p>
 <h3 class="shelf-kind">Written works (5)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/articles/mdi/boko-haram-and-the-culture-of-coercive-disapproval/">\</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/boko-haram-and-the-culture-of-coercive-disapproval/">"Boko Haram" and the Culture of Coercive Disapproval</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/">'Whataboutery': The Fail-Safe of Islamophobes</a></li>
       <li><a href="{{ site.baseurl }}/articles/charlie-hebdo-coexistence-and-crocodile-tears/">Charlie Hebdo, Coexistence and Crocodile Tears</a></li>
       <li><a href="{{ site.baseurl }}/articles/ijihad-1/">iJihad 1</a></li>
-      <li><a href="{{ site.baseurl }}/articles/mdi/islam-terrorism/">Lecture:</a></li>
-      <li><a href="{{ site.baseurl }}/articles/mdi/whataboutery-the-fail-safe-of-islamophobes/">mdi-whataboutery-the-fail-safe-of-islamophobes</a></li>
+      <li><a href="{{ site.baseurl }}/articles/mdi/islam-terrorism/">Lecture: 'Islam &amp; Terrorism' [Asadullah Ali al Andalusi]</a></li>
 </ul><h3 class="shelf-kind">Transcripts (6)</h3>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/transcripts/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>

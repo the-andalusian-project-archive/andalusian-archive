@@ -26,7 +26,6 @@
     "terrorism-extremism"
   ],
   "/articles/charlie-hebdo-coexistence-and-crocodile-tears/": [
-    "aqeedah-basics",
     "terrorism-extremism"
   ],
   "/articles/contra-contemporary-atheism-lecture/": [
@@ -265,6 +264,7 @@
     "liberalism-orientalism"
   ],
   "/papers/the-qur-an-and-science-a-forced-marriage/": [
+    "quran-hermeneutics",
     "science-scientism"
   ],
   "/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/": [
@@ -369,13 +369,11 @@
   "/transcripts/bRTI6Z5gggE-duplicate-upload/": [
     "atheism-doubt"
   ],
-  "/transcripts/by-series/atheism-doubting-your-doubts/": [
-    "atheism-doubt"
-  ],
-  "/transcripts/by-series/understanding-atheism/": [
-    "atheism-doubt"
-  ],
   "/transcripts/eQ-frTAlcJc-duplicate-upload/": [
+    "science-scientism"
+  ],
+  "/transcripts/fJs5tuFw-UY/": [
+    "quran-hermeneutics",
     "science-scientism"
   ],
   "/transcripts/fgsVa-khWp4/": [
@@ -520,6 +518,7 @@
     "terrorism-extremism"
   ],
   "/videos/fJs5tuFw-UY/": [
+    "quran-hermeneutics",
     "science-scientism"
   ],
   "/videos/fgsVa-khWp4/": [
@@ -561,5 +560,8 @@
   ],
   "/videos/wVehdVlLdBI/": [
     "atheism-doubt"
+  ],
+  "/videos/yUpHMaFHZ6s/": [
+    "quran-hermeneutics"
   ]
 }

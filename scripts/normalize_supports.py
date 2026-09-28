@@ -24,24 +24,39 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 TOPIC_DIR = ROOT / "_data" / "topics"
 BUCKETS = ("head", "mid", "long_tail", "question_forms", "ai_phrased")
 FLOOR = 0.72
+# A best match this close to the runner-up is a guess, not a match.
+MIN_MARGIN = 0.05
 
 
 def norm(t: str) -> str:
     return re.sub(r"\s+", " ", t).strip().lower()
 
 
-def best_match(part: str, declared: dict[str, str]) -> tuple[str | None, float]:
+def best_match(part: str, declared: dict[str, str]) -> tuple[str | None, float, float]:
+    """Nearest declared query for one label fragment.
+
+    Returns (query, score, margin) where margin is the gap to the runner-up.
+
+    The margin matters more than the score. A previous version returned the
+    first declared key sharing a prefix, with a hardcoded 0.95 that was a
+    constant rather than a measurement: given the label 'why is islam' it
+    happily returned 'why is islam called the religion of terror'. Without a
+    margin check there is nothing that distinguishes a confident match from a
+    coin flip, so near-ties are now reported instead of guessed.
+    """
     n = norm(part)
     if n in declared:
-        return declared[n], 1.0
-    for key, original in declared.items():
-        if key.startswith(n) or n.startswith(key):
-            return original, 0.95
-    matches = difflib.get_close_matches(n, list(declared), n=1, cutoff=FLOOR)
-    if matches:
-        best = matches[0]
-        return declared[best], difflib.SequenceMatcher(None, n, best).ratio()
-    return None, 0.0
+        return declared[n], 1.0, 1.0
+
+    scored = sorted(
+        ((difflib.SequenceMatcher(None, n, k).ratio(), k) for k in declared),
+        reverse=True,
+    )
+    if not scored or scored[0][0] < FLOOR:
+        return None, (scored[0][0] if scored else 0.0), 0.0
+    best_score, best_key = scored[0]
+    runner_up = scored[1][0] if len(scored) > 1 else 0.0
+    return declared[best_key], best_score, best_score - runner_up
 
 
 def main() -> int:
@@ -66,7 +81,11 @@ def main() -> int:
                     continue
                 parts = [p.strip() for p in raw.split(";") if p.strip()]
                 if len(parts) == 1:
-                    hit, score = best_match(parts[0], declared)
+                    hit, score, margin = best_match(parts[0], declared)
+                    if hit is not None and margin < MIN_MARGIN:
+                        unresolved += 1
+                        print(f"  AMBIGUOUS {path.stem}: {parts[0][:60]!r} best={score:.2f} margin={margin:.2f}")
+                        continue
                     if hit is None:
                         unresolved += 1
                         print(f"  UNRESOLVED {path.stem}: {parts[0][:70]!r}")
@@ -79,7 +98,7 @@ def main() -> int:
                 # and a single declared query is a valid foreign key.
                 resolved = None
                 for part in parts:
-                    hit, _ = best_match(part, declared)
+                    hit, _score, _margin = best_match(part, declared)
                     if hit:
                         resolved = hit
                         break

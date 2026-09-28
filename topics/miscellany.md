@@ -25,10 +25,10 @@ subject it may still appear on that page.</p>
 <h2>Papers (4)</h2>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/papers/architects-of-civilisation-sallahuddin-ayubi/">Architects of Civilisation: Sallahuddin Ayubi</a></li>
-      <li><a href="{{ site.baseurl }}/papers/international-conference-on-shari-ah-objectives-maqasid-in-public-policy-and-governance/">International Conference on Shari</a></li>
+      <li><a href="{{ site.baseurl }}/papers/international-conference-on-shari-ah-objectives-maqasid-in-public-policy-and-governance/">International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance</a></li>
       <li><a href="{{ site.baseurl }}/papers/sustaining-the-malaysian-environment-through-litter-reduction-a-maqasidi-approach/">Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach</a></li>
       <li><a href="{{ site.baseurl }}/papers/the-archetype-of-beauty-in-islam/">The Archetype of Beauty in Islam</a></li>
-</ul><h2>Transcripts (30)</h2>
+</ul><h2>Transcripts (28)</h2>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/transcripts/7Rzu6BjvxjY/">07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/tW-mjwrE7YY/">13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]</a></li>
@@ -39,10 +39,8 @@ subject it may still appear on that page.</p>
       <li><a href="{{ site.baseurl }}/transcripts/D2t0idkAqjA-duplicate-upload/">24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU] - transcript of a duplicate upload</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/rtViqNWY1Bk/">30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/-BwP55UIg3c/">31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/tUHEAejm404/">34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/Xw2eGP1LRbk/">38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 -</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/B7NW2AwtZaM/">44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]</a></li>
@@ -60,7 +58,7 @@ subject it may still appear on that page.</p>
       <li><a href="{{ site.baseurl }}/transcripts/gmGnu1RBAoQ/">56 - DanielCompassionateImam [gmGnu1RBAoQ]</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/xhnU-1dNi3I/">Information Literacy Lesson One</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/G47Stp3pLss/">My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project</a></li>
-</ul><h2>Recordings (30)</h2>
+</ul><h2>Recordings (29)</h2>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/videos/7Rzu6BjvxjY/">07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]</a></li>
       <li><a href="{{ site.baseurl }}/videos/tW-mjwrE7YY/">13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]</a></li>
@@ -72,7 +70,6 @@ subject it may still appear on that page.</p>
       <li><a href="{{ site.baseurl }}/videos/-BwP55UIg3c/">31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]</a></li>
       <li><a href="{{ site.baseurl }}/videos/tUHEAejm404/">34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]</a></li>
       <li><a href="{{ site.baseurl }}/videos/Xw2eGP1LRbk/">38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/yUpHMaFHZ6s/">41 -</a></li>
       <li><a href="{{ site.baseurl }}/videos/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]</a></li>
       <li><a href="{{ site.baseurl }}/videos/B7NW2AwtZaM/">44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]</a></li>
       <li><a href="{{ site.baseurl }}/videos/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]</a></li>
@@ -92,11 +89,11 @@ subject it may still appear on that page.</p>
       <li><a href="{{ site.baseurl }}/videos/vLkE81ZCMVs/">PUBLIC DEBATE: Does Morality Require a God? Copson &amp; Pollock VS Andalusi &amp; Wansbrough</a></li>
       <li><a href="{{ site.baseurl }}/videos/dsMWdlzzfMk/">Sekularisasi Memusnah Negara Umat Islam!</a></li>
       <li><a href="{{ site.baseurl }}/videos/s_BnmOrVaTg/">مناظره عبدالله اندلسی با عارف احمد    abdullah andalusi vs arif ahmad</a></li>
-</ul><h2>Written works (30)</h2>
+</ul><h2>Written works (29)</h2>
 <ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/articles/mdi/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">"Extraordinary Claims Require Extraordinary Evidence", Says Ordinary Intellect</a></li>
       <li><a href="{{ site.baseurl }}/articles/happymuslim-inferioritycomplex/">#HappyMuslim = #InferiorityComplex?</a></li>
       <li><a href="{{ site.baseurl }}/articles/mdi/refuting-the-masked-arab-2/">[Video] Refuting The Masked Arab (2)</a></li>
-      <li><a href="{{ site.baseurl }}/articles/mdi/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">\</a></li>
       <li><a href="{{ site.baseurl }}/articles/a-quick-response/">A Quick Response</a></li>
       <li><a href="{{ site.baseurl }}/articles/an-alternate-reality/">An Alternate Reality</a></li>
       <li><a href="{{ site.baseurl }}/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/">Extraordinary Claims Require Extraordinary Evidence Says Ordinary Intellect</a></li>
@@ -107,7 +104,6 @@ subject it may still appear on that page.</p>
       <li><a href="{{ site.baseurl }}/articles/islam/">Islam</a></li>
       <li><a href="{{ site.baseurl }}/articles/islam-and-litter-reduction/">Islam and Litter Reduction</a></li>
       <li><a href="{{ site.baseurl }}/articles/library-take-down-notice/">Library Take Down Notice</a></li>
-      <li><a href="{{ site.baseurl }}/articles/malaysias-tiger-in-waiting/">Malaysia</a></li>
       <li><a href="{{ site.baseurl }}/articles/notice/more-additions/">More Additions!</a></li>
       <li><a href="{{ site.baseurl }}/articles/qatar-timbuktu-and-an-arab-rescue/">Qatar, Timbuktu, And An Arab Rescue</a></li>
       <li><a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-1/">Religion vs Paedophilia [Part 1]</a></li>

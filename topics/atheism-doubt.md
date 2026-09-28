@@ -56,7 +56,7 @@ standard within the mind of the human being to infer that there is one. It is a 
 
 > Research Fellow Asadullah Ali gives a pragmatic look at atheism, particularly focusing on 3 areas of doubt in today’s world: the problem of evil, the problem of representation, and the problem of belief.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/by-series/atheism-doubting-your-doubts/">atheism-doubting-your-doubts</a> (work), cited at <span class="cite-ref">_posts/2018-06-20-atheism-doubting-your-doubts.md:25</span> &mdash; <span class="cite-size">excerpt of about 33 words from a 240-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">atheism-doubting-your-doubts</a> (work), cited at <span class="cite-ref">_posts/2018-06-20-atheism-doubting-your-doubts.md:25</span> &mdash; <span class="cite-size">excerpt of about 33 words from a 240-word text. The argument around it is not on this page.</span>
 
 > don\'t consider it to be sufficient. And I always thought that was really weird. Why? Why do people still feel that atheism
 is a far more rational position to take than to accept that God is there overseeing everything, despite
@@ -509,13 +509,11 @@ rather than papered over; the reading list above is the place to go.</p>
 <h2>Everything else on this subject</h2>
 <p>More from the archive on the same subject. A work can appear on more than one
 of these pages.</p>
-<h3 class="shelf-kind">Written works (6)</h3>
+<h3 class="shelf-kind">Written works (4)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">Atheism: Doubting Your Doubts</a></li>
       <li><a href="{{ site.baseurl }}/articles/the-3-isms-of-atheism/">The 3 Isms of Atheism</a></li>
       <li><a href="{{ site.baseurl }}/articles/the-rationality-of-believing-in-god-without-evidence-part-1/">The Rationality of Believing in God Without Evidence (Part 1)</a></li>
       <li><a href="{{ site.baseurl }}/articles/mdi/withoutevidence2/">The Rationality of Believing in God Without Evidence — Part 2</a></li>
-      <li><a href="{{ site.baseurl }}/articles/understanding-atheism/">Understanding Atheism</a></li>
       <li><a href="{{ site.baseurl }}/articles/understanding-atheism-lecture-series/">Understanding Atheism (Lecture Series)</a></li>
 </ul><h3 class="shelf-kind">Papers (4)</h3>
 <ul class="shelf-list">
@@ -560,8 +558,8 @@ of these pages.</p>
 <tr><td><a href="{{ site.baseurl }}/articles/against-atheist-aesthetics/">against-atheist-aesthetics</a></td><td>work</td><td>2</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/how-to-know-no-thing/">how-to-know-no-thing</a></td><td>work</td><td>3</td><td><a href="{{ site.baseurl }}/topics/aqeedah-basics/">Foundational Questions of Belief</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/nothing/">nothing</a></td><td>work</td><td>1</td><td><a href="{{ site.baseurl }}/topics/aqeedah-basics/">Foundational Questions of Belief</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/by-series/understanding-atheism/">understanding-atheism</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/by-series/atheism-doubting-your-doubts/">atheism-doubting-your-doubts</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/understanding-atheism/">understanding-atheism</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/articles/atheism-doubting-your-doubts/">atheism-doubting-your-doubts</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/hard-questions-answering-doubts-about-islam/">hard-questions-answering-doubts-about-islam</a></td><td>work</td><td>1</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/the-atheistic-worldview-vs-the-quranic-worldview/">the-atheistic-worldview-vs-the-quranic-worldview</a></td><td>work</td><td>1</td><td><a href="{{ site.baseurl }}/topics/quran-hermeneutics/">Qur'an Interpretation and Textual Questions</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/NyAVl7RsEOs/">understanding-atheism-session-1</a></td><td>transcript</td><td>5</td><td>&mdash;</td></tr>
