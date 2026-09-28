@@ -33,7 +33,7 @@
 # Do NOT use the "domain property" option on this host: it requires a DNS TXT
 # record at the registrable domain, which `*.github.io` does not allow. A custom
 # domain would change that - see the site owner notes in the ledger.
-google_site_verification: ""
+google_site_verification: "PXREqUsFV9OikVKOgIk4aSOyqBlxoYMTEiNUUY4sB9E"
 
 # ---------------------------------------------------------------------------------
 # BING WEBMASTER TOOLS (IndexNow is the faster, account-free route - see below)
