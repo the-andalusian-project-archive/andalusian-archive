@@ -546,6 +546,42 @@
 <title>{{ seo_title_esc }}</title>
 <meta name="description" content="{{ seo_desc_esc }}">
 <link rel="canonical" href="{{ seo_abs }}">
+{%- comment -%}
+  Search-engine verification slots (2026-09-28).
+
+  Read from `_data/verification.yml`; a tag is emitted ONLY when the value is a
+  NON-EMPTY string, so this block asserts nothing while the tokens are absent.
+
+  THE EMPTY-STRING TRAP, which bit the first version of this block. Written as
+
+      {% raw %}{% if site.data.verification.google_site_verification %}{% endraw %}
+
+  Liquid evaluates that TRUE for the empty string, and the site then published
+  `content=""` on all 322 pages - a verification tag that claims nothing and
+  verifies nothing. A length check on an assigned variable is used instead,
+  which is the same class of Liquid trap documented in section 3 of this file
+  (a filter applied straight to an `if` operand does not behave). The gate is
+  therefore: assign, measure as a string, compare the variable.
+
+  Why these two methods and not DNS: a `github.io` subpath cannot be verified by
+  DNS TXT, because the zone is not ours. URL-prefix (Google) and the HTML tag
+  (Bing) are the only routes on this host, and both need the tag on every page -
+  which is what this include is.
+{%- endcomment -%}
+{%- if site.data.verification and site.data.verification.google_site_verification %}
+  {%- assign _gsc = site.data.verification.google_site_verification | append: "" -%}
+  {%- assign _gsc_len = _gsc | size -%}
+  {%- if _gsc_len > 0 %}
+<meta name="google-site-verification" content="{{ _gsc | escape_once }}">
+  {%- endif %}
+{%- endif %}
+{%- if site.data.verification and site.data.verification.bing_site_verification %}
+  {%- assign _msv = site.data.verification.bing_site_verification | append: "" -%}
+  {%- assign _msv_len = _msv | size -%}
+  {%- if _msv_len > 0 %}
+<meta name="msvalidate.01" content="{{ _msv | escape_once }}">
+  {%- endif %}
+{%- endif %}
 {%- if seo_author %}
 <meta name="author" content="{{ seo_author | escape_once }}">
 {%- endif %}

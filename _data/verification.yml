@@ -1,0 +1,53 @@
+﻿# Search-engine verification tokens
+#
+# Read by `_includes/seo_head.html`, which emits the corresponding <meta> tag on
+# every page ONLY when the value below is non-empty. Leaving a value as an empty
+# string means no tag is emitted and the site asserts nothing it cannot prove.
+#
+# Why these live in a data file: a site-verification token is per-property,
+# public and account-bound, not a secret. It does not belong in an environment
+# variable, and it must never be committed as a "credential".
+#
+# ---------------------------------------------------------------------------------
+# GOOGLE SEARCH CONSOLE
+# ---------------------------------------------------------------------------------
+# Property type: URL-prefix, because a `github.io` subpath cannot be verified by
+# DNS TXT (we do not control the github.io zone, so no domain property is
+# possible on this host). URL-prefix covers the whole subpath:
+#
+#     https://the-andalusian-project-archive.github.io/andalusian-archive/
+#
+# To fill this in:
+#   1. Sign in to https://search.google.com/search-console with a Google account
+#      (a Google account is required - a Proton address cannot sign in; a Proton
+#      address can be used to REGISTER one).
+#   2. Add property -> URL prefix -> paste the URL above -> Continue.
+#   3. Choose the "HTML tag" verification method. Google shows a
+#      `google-site-verification` content value; copy ONLY that token.
+#   4. Put it below and redeploy. The tag then appears in the <head> of every
+#      page, which is exactly what this method requires.
+#   5. Back in Search Console, press Verify. It should pass within a minute.
+#   6. Then submit the sitemap at
+#      https://the-andalusian-project-archive.github.io/andalusian-archive/sitemap.xml
+#
+# Do NOT use the "domain property" option on this host: it requires a DNS TXT
+# record at the registrable domain, which `*.github.io` does not allow. A custom
+# domain would change that - see the site owner notes in the ledger.
+google_site_verification: ""
+
+# ---------------------------------------------------------------------------------
+# BING WEBMASTER TOOLS (IndexNow is the faster, account-free route - see below)
+# ---------------------------------------------------------------------------------
+# Same method, same steps, at https://www.bing.com/webmasters/.
+bing_site_verification: ""
+
+# ---------------------------------------------------------------------------------
+# INDEXNOW - NO ACCOUNT REQUIRED
+# ---------------------------------------------------------------------------------
+# Already working, and it needs nothing from this file. The key is generated and
+# committed as `indexnow-0ad4c47361ff29d8d4d3af0ec53fb592.txt` at the repository
+# root, which Jekyll copies to the site root, which is what the protocol requires
+# to prove ownership. `scripts/ping_indexnow.py` POSTs the changed URLs to
+# Bing, Yandex and the other participating engines whenever the site is
+# redeployed. This is the only submission route on this host that works without
+# an account of any kind, and it is already in place.

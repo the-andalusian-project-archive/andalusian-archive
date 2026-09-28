@@ -82,3 +82,18 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # IndexNow (https://www.indexnow.org): tell participating engines that these
+      # URLs changed, so they re-crawl on this deploy instead of on their next
+      # scheduled visit. Ownership is proved by the key file at the site root, not
+      # by an account - which matters here because the site is on a `github.io`
+      # subpath, where Search Console and Bing Webmaster Tools are the only other
+      # routes and both require an account the site owner does not have.
+      #
+      # Deliberately NOT fatal: a failed ping must never fail or roll back a
+      # successful deployment. The URLs come from the freshly built _site/sitemap.xml.
+      - name: Ping IndexNow
+        continue-on-error: true
+        run: |
+          git checkout main -- scripts/ping_indexnow.py 2>/dev/null || true
+          python3 scripts/ping_indexnow.py || echo "::warning::IndexNow ping failed; the site is still deployed"
