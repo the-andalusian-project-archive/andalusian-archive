@@ -63,7 +63,7 @@ def load_specs() -> list[tuple[pathlib.Path, dict]]:
     return specs
 
 
-def check_pages() -> list[str]:
+def check_pages(total_queries: int = 0) -> list[str]:
     """Each generated cluster page must carry its own shelf, not another's."""
     problems: list[str] = []
     tax_path = ROOT / "_data" / "topic_taxonomy.json"
@@ -164,6 +164,24 @@ def check_pages() -> list[str]:
                 f"{cid}: material table has {rows} <tr>, expected {expected} "
                 f"(1 header + {len(spec.get('material') or [])} items)"
             )
+    # ---- llms.txt must not drift from the data ---------------------------
+    #
+    # llms.txt is hand-maintained and states "731 questions". Every other count
+    # on the site is computed at build time, so this one number was the only
+    # figure on the site that could silently go stale - and it is the figure an
+    # AI summariser is most likely to quote back.
+    llms = ROOT / "llms.txt"
+    if llms.exists():
+        text = llms.read_text(encoding="utf-8")
+        stated = re.search(r"(\d+)\s+questions", text)
+        if stated is None:
+            problems.append("llms.txt: no question count found to check")
+        elif int(stated.group(1)) != total_queries:
+            problems.append(
+                f"llms.txt states {stated.group(1)} questions; the cluster specs "
+                f"declare {total_queries}. Update the number or the specs."
+            )
+
     return problems
 
 
@@ -355,7 +373,7 @@ def check() -> int:
     # page. Same variable name, two loops, so every page rendered the shelf of
     # whichever cluster happened to run last - and the taxonomy was correct the
     # whole time, which is exactly what made it hard to see.
-    failures.extend(check_pages())
+    failures.extend(check_pages(total_queries))
 
     if failures:
         print()
