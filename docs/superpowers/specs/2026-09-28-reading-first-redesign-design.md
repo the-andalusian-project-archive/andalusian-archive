@@ -44,10 +44,12 @@ Not from memory. Values below were read off the live sites with
 
 Three findings that shaped the design:
 
-1. **Two of the three chose the same accent.** Goodreads' is not the orange its
-   old logo suggests; its nav, links and genre tags are all `rgb(0,99,93)` =
-   `#00635d`, the same deep teal family as IEP's `#0a5167`. A single teal accent
-   is what these sites converge on, so the design uses one.
+1. **The accent is SEP's red.** IEP and Goodreads both use a deep teal —
+   measured `#0a5167` and `#00635d`, and Goodreads' is not the orange its old
+   logo suggests. The chosen reference is SEP, whose accent measured
+   `rgb(140, 21, 21)` = `#8c1515`, a deep firebrick used for its section
+   headings and its sidebar links. That is the accent this site uses, in both
+   themes. The teal is recorded only because the measurement surfaced it first.
 2. **SEP inverts the surface relationship.** The page is warm cream and content
    sits directly on it. This site does the opposite: grey page, white cards.
 3. **All three are quiet.** No drop shadows on non-raised things, no pill badges,
@@ -112,9 +114,9 @@ Applied to `.page-content` and to the article/paper/transcript prose column.
 | `--text-tertiary` | `#8a8378` | `#7d766c` | Goodreads `#aaa` |
 | `--rule` | `#ded5c7` | `#3b3833` | hairline dividers; 1.40:1 on light bg, see §7 |
 | `--rule-strong` | `#cfc5b6` | `#4d4941` | table headers, input borders |
-| `--accent` | `#0a5167` | `#7fb3c8` | **IEP** |
-| `--accent-hover` | `#00635d` | `#9cc9d8` | **Goodreads** |
-| `--accent-subtle` | `#e8eef1` | `#1e2a2f` | link underline tint, hover fills |
+| `--accent` | `#8c1515` | `#e08a8a` | **SEP**, measured `rgb(140,21,21)` |
+| `--accent-hover` | `#6e1010` | `#eda3a3` | SEP red, one step darker |
+| `--accent-subtle` | `#f2e3e1` | `#2a1d1d` | link underline tint, hover fills |
 | `--success` | `#2f6b45` | `#7fbf95` | Goodreads green `#409d69`, darkened for AA |
 | `--warning` | `#8a5a12` | `#d9a441` | |
 | `--danger` | `#9b2c22` | `#e08b80` | Goodreads red `#e1534e`, darkened |

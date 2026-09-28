@@ -375,6 +375,8 @@ def check() -> int:
     # whichever cluster happened to run last - and the taxonomy was correct the
     # whole time, which is exactly what made it hard to see.
     failures.extend(check_pages(total_queries))
+    failures.extend(check_palette())
+    failures.extend(check_measure())
 
     # ---- third-party source relationships -----------------------------------
     #
@@ -698,6 +700,169 @@ def check_secondary_sources() -> list[str]:
           f"({sum(1 for r in rows if r.get('relates_to'))} with a referent, "
           f"{sum(1 for r in rows if not r.get('relates_to'))} without)")
     print(f"reverse index      : {len(index.get('by_url', {}))} items")
+    return failures
+
+
+# The token pairs the redesign declares. Kept as literal data in the gate rather
+# than parsed out of the stylesheet, so a careless token edit fails the build
+# instead of quietly lowering the contrast floor with it.
+#
+# Token names are the file's existing `--color-*` names. All 2,400-odd lines of
+# style.css reference them, so renaming would be a find/replace with no upside;
+# changing the values restyles the site and leaves every untouched rule valid.
+PALETTE_TEXT_PAIRS = [
+    ("--color-text", "--color-bg"),
+    ("--color-text", "--color-surface"),
+    ("--color-text", "--color-surface-sunken"),
+    ("--color-text", "--color-primary-subtle"),
+    ("--color-text-secondary", "--color-bg"),
+    ("--color-text-secondary", "--color-surface"),
+    ("--color-text-secondary", "--color-surface-sunken"),
+    ("--color-text-secondary", "--color-primary-subtle"),
+    ("--color-primary", "--color-bg"),
+    ("--color-primary", "--color-surface"),
+    ("--color-primary", "--color-surface-sunken"),
+    ("--color-primary", "--color-primary-subtle"),
+    ("--color-primary-hover", "--color-bg"),
+    ("--color-primary-hover", "--color-surface"),
+    ("--color-success", "--color-bg"),
+    ("--color-success", "--color-surface"),
+    ("--color-success", "--color-surface-sunken"),
+    ("--color-warning", "--color-bg"),
+    ("--color-warning", "--color-surface"),
+    ("--color-warning", "--color-surface-sunken"),
+    ("--color-danger", "--color-bg"),
+    ("--color-danger", "--color-surface"),
+    ("--color-danger", "--color-surface-sunken"),
+]
+# Hairline rules are decorative dividers, so they take a visibility floor rather
+# than the 3:1 of WCAG 1.4.11. 3:1 would force a divider to be visually heavy,
+# which is the opposite of the design the three references use.
+PALETTE_RULE_PAIRS = [
+    ("--color-border", "--color-bg"),
+    ("--color-border-strong", "--color-bg"),
+]
+TEXT_MIN = 4.5
+RULE_MIN = 1.4
+
+# The accent is SEP's red, measured rgb(140, 21, 21). Pinned explicitly because
+# the first measurement to surface was the teal that IEP and Goodreads share,
+# and a later edit back to it should be a deliberate decision, not a slip.
+ACCENT_EXPECTED = {"light": "#8c1515", "dark": "#e08a8a"}
+
+
+def _srgb_lum(hex_colour: str) -> float:
+    h = hex_colour.lstrip("#")
+    ch = []
+    for i in (0, 2, 4):
+        c = int(h[i:i + 2], 16) / 255
+        ch.append(c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4)
+    return 0.2126 * ch[0] + 0.7152 * ch[1] + 0.0722 * ch[2]
+
+
+def _contrast(a: str, b: str) -> float:
+    la, lb = _srgb_lum(a), _srgb_lum(b)
+    return (max(la, lb) + 0.05) / (min(la, lb) + 0.05)
+
+
+def _read_vars(block: str) -> dict[str, str]:
+    out: dict[str, str] = {}
+    for m in re.finditer(r"(--[\w-]+):\s*(#[0-9a-fA-F]{3,8})\s*;", block):
+        out[m.group(1)] = m.group(2)
+    return out
+
+
+def check_palette() -> list[str]:
+    """Every declared token pair clears its floor, in BOTH themes."""
+    css = (ROOT / "assets" / "css" / "style.css").read_text(encoding="utf-8")
+    failures: list[str] = []
+
+    start = css.index(":root {")
+    light = _read_vars(css[start:css.index("}", start) + 1])
+
+    dm = re.search(r"@media \(prefers-color-scheme: dark\) \{\s*:root \{(.*?)\n  \}",
+                   css, re.S)
+    if not dm:
+        return ["style.css: no prefers-color-scheme dark :root block found"]
+    dark = _read_vars(dm.group(1))
+    for k, v in light.items():
+        dark.setdefault(k, v)
+
+    needed = ({n for n, _ in PALETTE_TEXT_PAIRS}
+              | {n for n, _ in PALETTE_RULE_PAIRS})
+    missing = sorted(needed - set(light))
+    if missing:
+        failures.append(f"style.css: tokens not declared in :root: {missing}")
+
+    for theme_name, T in (("light", light), ("dark", dark)):
+        for fg, bgn in PALETTE_TEXT_PAIRS:
+            if fg not in T or bgn not in T:
+                continue
+            r = _contrast(T[fg], T[bgn])
+            if r < TEXT_MIN:
+                failures.append(
+                    f"contrast {theme_name}: {fg} on {bgn} = {r:.2f} "
+                    f"(< {TEXT_MIN})")
+        for fg, bgn in PALETTE_RULE_PAIRS:
+            if fg not in T or bgn not in T:
+                continue
+            r = _contrast(T[fg], T[bgn])
+            if r < RULE_MIN:
+                failures.append(
+                    f"contrast {theme_name}: {fg} on {bgn} = {r:.2f} "
+                    f"(< {RULE_MIN})")
+        want = ACCENT_EXPECTED[theme_name]
+        got = (T.get("--color-primary") or "").lower()
+        if got and got != want:
+            failures.append(
+                f"style.css {theme_name}: --color-primary is {got}, expected "
+                f"{want} (SEP's red)")
+
+    # The retired Tailwind values must be gone, not merely unused.
+    for dead in ("#2563eb", "#7c3aed"):
+        if dead in css.lower():
+            failures.append(
+                f"style.css: {dead} is still present; the old Tailwind palette "
+                f"was replaced, not aliased")
+
+    print(f"palette pairs checked : {len(PALETTE_TEXT_PAIRS)} text, "
+          f"{len(PALETTE_RULE_PAIRS)} rule, in 2 themes")
+    return failures
+
+
+# 680px at an 18px serif lands near 66 characters, the midpoint of the three
+# references (Goodreads 625, IEP 700, SEP 707). Assert a band rather than the
+# pixel value so a later --max-width edit cannot quietly re-widen every
+# paragraph, which is what an 860px measure did before this redesign.
+MEASURE_MIN_CH = 60
+MEASURE_MAX_CH = 80
+MEASURE_MIN_PX = 620
+MEASURE_MAX_PX = 720
+
+
+def check_measure() -> list[str]:
+    """The prose column must stay at a readable line length."""
+    failures: list[str] = []
+    css = (ROOT / "assets" / "css" / "style.css").read_text(encoding="utf-8")
+
+    m = re.search(r"--measure:\s*(\d+)px", css)
+    if not m:
+        return ["style.css: --measure is not declared"]
+    px = int(m.group(1))
+    if not (MEASURE_MIN_PX <= px <= MEASURE_MAX_PX):
+        failures.append(
+            f"style.css: --measure is {px}px, outside the "
+            f"{MEASURE_MIN_PX}-{MEASURE_MAX_PX}px band the references use")
+
+    # Georgia's average advance is about 0.5em, so 18px gives ~9px per char.
+    approx_ch = px / 9.0
+    if not (MEASURE_MIN_CH <= approx_ch <= MEASURE_MAX_CH):
+        failures.append(
+            f"measure: {px}px at 18px serif is about {approx_ch:.0f}ch, outside "
+            f"{MEASURE_MIN_CH}-{MEASURE_MAX_CH}ch")
+
+    print(f"measure               : {px}px, about {approx_ch:.0f}ch "
+          f"(target {MEASURE_MIN_CH}-{MEASURE_MAX_CH}ch)")
     return failures
 
 

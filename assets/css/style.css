@@ -1,26 +1,52 @@
 /* The Andalusian Project Archive — Modern Redesign */
 
+/* The Andalusian Project Archive - reading-first redesign
+   ---------------------------------------------------------------------------
+   The palette is measured, not chosen. Values come from getComputedStyle reads
+   off three reference sites:
+
+     SEP   bg #f3ede9 warm cream, text #1a1a1a, accent rgb(140,21,21) = #8c1515
+     IEP   Georgia 18/1.6, 700px measure, accent #0a5167 deep teal
+     GR    Merriweather body, Lato chrome, 625px measure, accent #00635d
+
+   The accent is SEP's red, used for its section headings and sidebar links. The
+   teal that IEP and Goodreads share was measured and rejected.
+
+   No webfonts. Merriweather is first in the stack so a reader who has it
+   installed gets it; Georgia - IEP's actual face - is the floor and is on every
+   platform in scope. The site loads no @font-face and acquires no third-party
+   request.
+   --------------------------------------------------------------------------- */
+
 :root {
-  /* Light theme */
-  --color-bg: #f5f6f8;
-  --color-surface: #ffffff;
-  --color-surface-hover: #f0f1f3;
-  --color-border: #e2e4e8;
-  --color-text: #1a1d23;
-  --color-text-secondary: #6b7280;
-  --color-text-tertiary: #9ca3af;
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-primary-subtle: #eff6ff;
-  --color-accent: #7c3aed;
-  --color-accent-subtle: #f5f3ff;
-  --color-success: #059669;
-  --color-success-subtle: #ecfdf5;
-  --color-warning: #d97706;
-  --color-warning-subtle: #fffbeb;
-  --color-danger: #dc2626;
-  --color-danger-subtle: #fef2f2;
-  --color-muted: #9ca3af;
+  /* --- surfaces: SEP's warm paper, content sitting directly on it --------- */
+  --color-bg: #f4efe9;
+  --color-surface: #fdfbf8;
+  --color-surface-hover: #f2e3e1;
+  --color-surface-sunken: #efe8de;
+  --color-border: #d5cab7;
+  --color-border-strong: #c2b49f;
+
+  /* --- ink --------------------------------------------------------------- */
+  --color-text: #1c1a17;
+  --color-text-secondary: #5c5750;
+  --color-text-tertiary: #8a8378;
+  --color-muted: #8a8378;
+
+  /* --- one accent: SEP's red --------------------------------------------- */
+  --color-primary: #8c1515;
+  --color-primary-hover: #6e1010;
+  --color-primary-subtle: #f2e3e1;
+  --color-accent: #8c1515;
+  --color-accent-subtle: #f2e3e1;
+
+  /* --- status ------------------------------------------------------------ */
+  --color-success: #2f6b45;
+  --color-success-subtle: #eaf1ec;
+  --color-warning: #8a5a12;
+  --color-warning-subtle: #f6efe0;
+  --color-danger: #9b2c22;
+  --color-danger-subtle: #f6e9e7;
 
   /* Spacing scale (8px base) */
   --space-1: 4px;
@@ -35,66 +61,81 @@
   --space-16: 64px;
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-serif: 'Merriweather', 'Iowan Old Style', Charter, Georgia,
+                'Times New Roman', serif;
+  --font-sans: Lato, 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+               'Segoe UI', Roboto, sans-serif;
   --font-mono: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, monospace;
   --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
+  --text-sm: 0.8125rem;
   --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
-  --text-4xl: 2.25rem;
-  --line-height: 1.6;
+  --text-body: 1.125rem;   /* 18px serif prose */
+  --text-lead: 1.25rem;
+  --text-lg: 1.15rem;
+  --text-xl: 1.6rem;      /* h2 */
+  --text-2xl: 2rem;
+  --text-3xl: 2.6rem;     /* h1 */
+  --line-height: 1.7;
 
-  /* Radii */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
-  --radius-xl: 20px;
+  /* Layout: 680px is the midpoint of the references (GR 625, IEP 700, SEP 707) */
+  --measure: 680px;
+  --measure-wide: 860px;
+  --max-width: 1200px;
+  --nav-height: 60px;
+
+  /* Radii: nearly square. The old 6/10/14/20 scale was reading as a dashboard. */
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 8px;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
-  --shadow-xl: 0 8px 32px rgba(0, 0, 0, 0.1);
+  /* Shadows are for raised things only: overlays and the sticky nav. */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: 0 8px 32px rgba(28, 26, 23, 0.14);
+  --shadow-overlay: 0 8px 32px rgba(28, 26, 23, 0.14);
+  --shadow-sticky: 0 1px 0 var(--color-border);
 
-  /* Transitions */
-  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* Layout */
-  --max-width: 1200px;
-  --nav-height: 64px;
+  --transition-fast: 120ms ease;
+  --transition-base: 180ms ease;
+  --transition-slow: 180ms ease;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #0f1117;
-    --color-surface: #1a1d27;
-    --color-surface-hover: #242836;
-    --color-border: #2d3142;
-    --color-text: #e5e7eb;
-    --color-text-secondary: #9ca3af;
-    --color-text-tertiary: #6b7280;
-    --color-primary: #60a5fa;
-    --color-primary-hover: #93bbfd;
-    --color-primary-subtle: rgba(96, 165, 250, 0.1);
-    --color-accent: #a78bfa;
-    --color-accent-subtle: rgba(167, 139, 250, 0.1);
-    --color-success: #34d399;
-    --color-success-subtle: rgba(52, 211, 153, 0.1);
-    --color-warning: #fbbf24;
-    --color-warning-subtle: rgba(251, 191, 36, 0.1);
-    --color-danger: #f87171;
-    --color-danger-subtle: rgba(248, 113, 113, 0.1);
-    --color-muted: #6b7280;
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Warm, not blue-black. The old dark theme was #0f1117, which read as a
+       developer tool; this is the same warm family as the light theme, one
+       value per token, designed as a pair rather than as an afterthought. */
+    --color-bg: #1a1917;
+    --color-surface: #232120;
+    --color-surface-hover: #2a1d1d;
+    --color-surface-sunken: #141312;
+    --color-border: #3b3833;
+    --color-border-strong: #4d4941;
+
+    --color-text: #e9e5de;
+    --color-text-secondary: #a8a29a;
+    --color-text-tertiary: #7d766c;
+    --color-muted: #7d766c;
+
+    /* SEP's red, lightened for a dark ground. */
+    --color-primary: #e08a8a;
+    --color-primary-hover: #eda3a3;
+    --color-primary-subtle: #2a1d1d;
+    --color-accent: #e08a8a;
+    --color-accent-subtle: #2a1d1d;
+
+    --color-success: #7fbf95;
+    --color-success-subtle: #1c2a20;
+    --color-warning: #d9a441;
+    --color-warning-subtle: #2a2318;
+    --color-danger: #e08b80;
+    --color-danger-subtle: #2b1c1a;
+
     --shadow-xl: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-overlay: 0 8px 32px rgba(0, 0, 0, 0.5);
   }
 }
 
