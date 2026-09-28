@@ -90,10 +90,44 @@ jobs:
       # subpath, where Search Console and Bing Webmaster Tools are the only other
       # routes and both require an account the site owner does not have.
       #
+      # Two things this step needs, and the first version of it had neither:
+      #   * a checkout. The `deploy` job gets only the Pages artifact, so the
+      #     script was not in the workspace and python3 exited 127. The earlier
+      #     `git checkout main -- scripts/...` that papered over this was itself
+      #     failing silently, so the ping looked like it ran when it never did.
+      #   * the built sitemap, which the script reads for its URL list. The
+      #     `build` job's `_site/` is gone by now, so the list is downloaded from
+      #     the deployed sitemap instead - which is also the more correct source,
+      #     being the URLs that are actually live.
+      #
       # Deliberately NOT fatal: a failed ping must never fail or roll back a
-      # successful deployment. The URLs come from the freshly built _site/sitemap.xml.
+      # successful deployment.
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
       - name: Ping IndexNow
         continue-on-error: true
         run: |
-          git checkout main -- scripts/ping_indexnow.py 2>/dev/null || true
-          python3 scripts/ping_indexnow.py || echo "::warning::IndexNow ping failed; the site is still deployed"
+          set -euo pipefail
+          curl -fsSL -o sitemap.xml "https://the-andalusian-project-archive.github.io/andalusian-archive/sitemap.xml"
+          key_file=$(ls indexnow-*.txt)
+          python3 - "$key_file" <<'PY'
+          import json, os, re, sys, urllib.request
+          key = open(sys.argv[1], encoding='utf-8').read().strip()
+          base = 'https://the-andalusian-project-archive.github.io/andalusian-archive'
+          urls = re.findall(r'<loc>([^<]+)</loc>', open('sitemap.xml', encoding='utf-8').read())
+          print(f'urls: {len(urls)}')
+          if not urls:
+              raise SystemExit('no URLs in the deployed sitemap; nothing to ping')
+          body = json.dumps({
+              'host': 'the-andalusian-project-archive.github.io',
+              'key': key,
+              'keyLocation': f'{base}/{os.path.basename(sys.argv[1])}',
+              'urlList': urls,
+          }).encode('utf-8')
+          req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body, method='POST',
+                                       headers={'Content-Type': 'application/json; charset=utf-8',
+                                                'User-Agent': 'andalusian-archive/1.0 (IndexNow protocol)'})
+          with urllib.request.urlopen(req, timeout=60) as r:
+              print(f'sent {len(urls)} URL(s): HTTP {r.status}')
+          PY
