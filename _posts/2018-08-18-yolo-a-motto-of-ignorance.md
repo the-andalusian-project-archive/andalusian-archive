@@ -51,9 +51,3 @@ The greatest moral exemplars of mankind looked to a life beyond their own. That�
 
 And this is why they were good, not because they “lived life to the fullest”. #PleaseReflect
 
-Category:Articles,Current Issues,Philosophy,purpose,Refutation
-
-### 3 Comments on “#YOLO: A Motto of Ignorance”
-
-- Casper David Friedrich21 Aug 2018No one has ever posted the question that you just stated. If you blindly accept religion then it makes logical sense to follow it’s rules in order to gain paradise, but if you don’t find any reason to believe in the afterlife then there is no point following religion at all.Reply
-- Sree Hari20 Sep 2018So substitute earthly greed for heavenly greed? Got it! How do you come up with such great ideas?ReplyAsadullah Ali24 Sep 2018Yes, that was the entire point of my article. Everything written can easily be summed up in your mindless meme.Note the sarcasm.Reply

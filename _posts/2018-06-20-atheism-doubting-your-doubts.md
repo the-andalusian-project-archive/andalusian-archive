@@ -24,5 +24,3 @@ Visithttp://www.yaqeeninstitute.orgfor more videos and full access to all resear
 
 Join the conversation on Twitter, Facebook, and Instagram @yaqeeninstitute!
 
-### 3 Comments on “Atheism: Doubting Your Doubts”
-

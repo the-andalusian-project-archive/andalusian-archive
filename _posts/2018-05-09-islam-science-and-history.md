@@ -20,4 +20,3 @@ needs_review: true
 
 The Mad Mamluks were gracious enough to interview me in November 2017 about my first paper for  Yaqeen Institute, “The Structure of Scientific Productivity in Islamic Civilization: Orientalis’ Fables”
 
-- Shameem10 May 2018when will your paper will be published?Reply

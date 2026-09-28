@@ -71,6 +71,3 @@ You close the video, scoffing at the young man’s ignorance regarding how commu
 
 Fin
 
-### 4 Comments on “Lost in Time-Translation”
-
-- wdqdqwd10 Apr 2020This is a weak argument. An omniscient God would know how to explain future technology in a non-confusing way.Loading...ReplyAsadullah Ali11 Apr 2020Let me know how that would go. Come on, give an argument.Loading...Replywdqdqwd11 Apr 2020Why should I? Are you doubting God’s omniscience?Loading...Saif7 May 2020How do you know that it would work? How do you know that he didn’t already do it? How do you know that a possible world where he does this would be better? I would argue otherwise. It would leave people in more confusion or even wars. The last thing you would want is an ancient warlord with atomic theory. “An omniscient, omnipotent god could do this” is implying you have absolute knowledge of the situation. This is just a non-sequiter.Loading...Reply

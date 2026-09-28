@@ -81,4 +81,3 @@ ______________________________________
 
 [4]http://www.alternet.org/media/noam-chomsky-slams-wests-charlie-hebdo-outrage-many-journalists-were-killed-israel-gaza-too
 
-- isa sulaiman19 Feb 2015Salaam! Well written… A positive read on a very current subject. Keep it coming…Reply

@@ -20,8 +20,3 @@ needs_review: true
 
 A two day lecture on the subject of atheism, atheists’ beliefs, and common arguments and responses.
 
-### 4 Comments on “Understanding Atheism”
-
-- jim-24 Dec 2017Maybe a little blurb and one video a day would be a better format. That’s a lot to look at but I like the idea.Reply
-- Thu Ya7 Jan 2018Could you give me the courseware slides? I can’t see some words on slide even I download 1080p HD video.Reply
-- Tor30 Mar 20181 in 10 Swedish men has had sex with an animal? Really? Where do you have that number from?Reply

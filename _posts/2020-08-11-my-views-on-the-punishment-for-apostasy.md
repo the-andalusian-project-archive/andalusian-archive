@@ -65,6 +65,3 @@ For a concise, but scholarly view on the subject (that may or may not support my
 
 - “of, relating to, or characteristic of the Middle Ages,”https://www.merriam-webster.com/dictionary/medieval
 
-### 2 Comments on “My Views On the Punishment For Apostasy”
-
-- Rayyan Islam - Worship Allah - The One Sustainer of the Universe11 Aug 2020Fascinating article. Was just thinking about this issue today. When I first started practicing Islam and still had remnants of a liberal mindset – the hadd for riddah was quite triggering when I found out about it. We must have emotional intelligence when discussing these matters because as you said, many ‘Muslims’ haven’t even experienced the ‘sweetness of faith.’ Having a cut-throat approach is appealing if you’ve escaped the liberal mindset – but we must empathise with the everyday liberal Muslim – though it is very hard. Jzk for educating us.Loading...ReplyR. Ahmed12 Aug 2020The punishment for ridda is justifiable under liberal values also akhi. John Lock, the Founding father of Modern Liberalism agreed to this stance. Check Out Br. Mohammad Hijabs lecture on Liberalism. Take care.Loading...Reply

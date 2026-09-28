@@ -1036,7 +1036,63 @@ def check_fetch_damage() -> list[str]:
           + ", ".join(f"{c}={n}" for c, n in sorted(by_class.items())
                       if c not in fd.AUTOMATIC)
           + " (triage only, not gated)")
+    failures += check_no_citation_into_damage()
     return failures
+
+
+# A citation must never point at the fetcher's residue
+# ==================================================
+# This exists because one did. `quran-hermeneutics.json` answered "how do I
+# answer when someone says scripture could have been clearer" with a quote from
+# a WordPress commenter - `- wdqdqwd10 Apr 2020This is a weak argument...` - set
+# to support an argument the author never made, and ending in a `Loading...`
+# JavaScript string. It was a real research agent's real reading of a real
+# capture; the capture simply had a comment thread in it and nothing marked
+# where his prose stopped.
+#
+# A citation into a damaged line is a class, not a one-off, and it is cheap to
+# catch: the residue rules already know which lines are not his.
+def check_no_citation_into_damage() -> list[str]:
+    import fetch_damage as fd
+
+    specs = sorted((ROOT / "_data" / "topics").glob("*.json"))
+    bad: list[str] = []
+    for spec_path in specs:
+        spec = json.loads(spec_path.read_text(encoding="utf-8"))
+        for row in spec.get("material") or []:
+            rel = str(row.get("path") or "")
+            target = ROOT / rel if rel else None
+            if not target or not target.is_file():
+                continue
+            text = target.read_text(encoding="utf-8", errors="replace")
+            start = fd._front_matter_end(text)
+            scannable = fd._strip_fenced_code(
+                fd.strip_deliberate(text[start:])).split("\n")
+            offset = text[:start].count("\n")
+            damaged = (fd._script_run_lines(scannable)
+                       | fd._comment_thread_lines(scannable)
+                       | fd._config_run_lines(scannable)
+                       | fd._terminator_lines(scannable))
+            if not damaged:
+                continue
+            for claim in row.get("key_claims") or []:
+                ref = str(claim.get("ref") or "")
+                _h, _, tail = ref.rpartition(":")
+                if not tail.lstrip("L").isdigit():
+                    continue
+                n = int(tail.lstrip("L")) - offset
+                if n in damaged:
+                    bad.append(
+                        f"{spec_path.name} cites {ref}, which is fetch damage "
+                        f"and not the author's prose: "
+                        f"{(claim.get('quote') or '')[:60]!r}")
+    if bad:
+        print(f"citations into damage: {len(bad)} - a quote is not the author's")
+        for b in bad[:6]:
+            print(f"    {b}")
+    else:
+        print("citations into damage: 0 (no quote rests on a damaged line)")
+    return bad
 
 
 # The site's default theme is LIGHT, chosen on 2026-09-28. It used to be "System",

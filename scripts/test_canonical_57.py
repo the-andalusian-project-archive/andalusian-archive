@@ -75,9 +75,45 @@ THIN_ALLOWED = {
         "embedded Farizmi player, so the prose is the caption. Genuine complete "
         "post, not a truncation - the whole capture is 52 KB and the article "
         "container holds nothing else.",
+    "the-structure-of-scientific-productivity-in-islamic-civilization-"
+    "orientalists-fables":
+        "195 recovered words; the post is an announcement of an article he "
+        "published at Yaqeen Institute, and it closes with a link to the PDF. "
+        "The paper itself is held separately, so the thin post is the complete "
+        "post, not a truncated one. 2026-09-29: this entry exists because the "
+        "post was clearing the 200-word floor on the strength of an injected "
+        "wpmrec2x stylesheet and JavaScript block that the fetcher had left in "
+        "the body. Removing the damage dropped the real prose to 195 words, "
+        "which is what the capture has always held - the raw mirror capture of "
+        "this post is 10 lines and 201 words with no wpmrec2x in it at all. The "
+        "word_count in front matter (201) is the site's own figure and is left "
+        "as it is, because front matter is the catalogue's, not the repair's.",
+    "ikhalifa-ep-2":
+        "46 recovered words, and the capture says 13. The post is one sentence "
+        "- 'In this episode of iKhalifa I discuss the importance of forgiving "
+        "yourself' - plus a link to the episode, which is catalogued in full "
+        "with a transcript (video -BwP55UIg3c). Same situation as the entry "
+        "above: an announcement whose substance is the linked recording. "
+        "2026-09-29: the front matter claims word_count 220 and the post was "
+        "clearing the 200-word floor on a single spam comment "
+        "('- CleanPaycle8 May 2019This Cleaning specialized company is giving "
+        "attention skill...') left in the body by the fetcher. Removing it "
+        "exposed the real 13 words, which is what the raw capture has always "
+        "held.",
 }
 _by_fm = posts_by_front_matter_slug()
 _pointers = articles_local_post_pointers()
+_videos_by_id = {
+    str(r.get("id")): r
+    for r in json.loads((base / "_data/videos.json").read_text(encoding="utf-8"))
+}
+# Works allowlisted as thin because their substance is a linked recording rather
+# than prose. The value is the video id, and the id is checked, not trusted: see
+# the assertion in the loop below. Added 2026-09-29 for ikhalifa-ep-2, whose real
+# prose is 13 words and whose episode is held in full at /transcripts/-BwP55UIg3c/.
+THIN_LINKED_RECORDING = {
+    "ikhalifa-ep-2": "-BwP55UIg3c",
+}
 thin_seen = set()
 for w in canon:
     if w["status"] != "found":
@@ -93,8 +129,28 @@ for w in canon:
     if words < 200:
         assert w["slug"] in THIN_ALLOWED, \
             f"found work thin ({words}w): {w['slug']}"
-        assert words >= 100, \
-            f"allowlisted thin work is under 100w: {w['slug']} ({words}w)"
+        if w["slug"] in THIN_LINKED_RECORDING:
+            # A post that is one sentence and a link is thin for a reason the
+            # 100-word floor cannot see: the words are not missing, they are in
+            # the recording. The floor exists to catch an allowlist entry that
+            # has been emptied by a bad edit, so it is replaced here by a
+            # positive check - the named video must be catalogued AND carry a
+            # published transcript. That is harder to pass by accident than a
+            # word count, and it is the thing that actually matters to a reader.
+            vid = THIN_LINKED_RECORDING[w["slug"]]
+            row = _videos_by_id.get(vid)
+            assert row is not None, (
+                f"{w['slug']} is allowlisted thin because its substance is "
+                f"video {vid}, but that video is not in videos.json")
+            assert row.get("transcripts") != 0, (
+                f"{w['slug']} is allowlisted thin because its substance is "
+                f"video {vid}, but that video has no attached transcript")
+            assert f"watch?v={vid}" in body or vid in body, (
+                f"{w['slug']} claims its substance is video {vid} but does not "
+                f"link to it")
+        else:
+            assert words >= 100, \
+                f"allowlisted thin work is under 100w: {w['slug']} ({words}w)"
         thin_seen.add(w["slug"])
 # An exception that is no longer needed must be removed, not left to rot.
 assert thin_seen == set(THIN_ALLOWED), (

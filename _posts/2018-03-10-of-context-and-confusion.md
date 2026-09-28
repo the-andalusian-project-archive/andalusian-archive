@@ -45,8 +45,3 @@ Your friend stares at you incredulously and shrugs his shoulders. He then procee
 
 FIN
 
-### 3 Comments on “Of Context and Confusion”
-
-- fajrimuhammadin10 Mar 2018Awesome take on the topic !Reply
-- Marooq810 Mar 2018Amazing lolReply
-- Mokavi10 Mar 2018Great piece, I really look forward to more of your content. May the Almighty keep you and your family in good health, inshallah..Reply

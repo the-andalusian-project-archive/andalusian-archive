@@ -93,10 +93,3 @@ ________________________________________________________________________________
 
 [7]The whole idea that ‘Islamophobia’ is just a term used to stifle free speech and criticism of Islam is yet another myth that backs this. Neither of these individuals have ever bothered to provide evidence of this conspiracy theory, yet it’s swallowed up so easily by their gullible followers.
 
-### 11 Comments on “Naked Kings in the Information Age”
-
-- Amanda24 May 2018Islam oppressing girls and women is probably a pretty solid reason for leaving the religion.ReplyShahzeb25 May 2018Oh no Asadullah, we got another one.ReplyAdam7AE27 May 2018If I had any doubts as to the truthfulness of this article’s claims, you’ve certainly quelled them.Thank you.ReplyAmanda27 May 2018No need to thank me for your own ignorance.Shahzeb28 May 2018No, seriously Amanda. Thank you so much for enlightening the world with your insight. I can’t talk for everybody, but you’ve certainly opened my eyes. I hope you continue your study of Islam through “popular” YouTubers and Internet sensationalists, who are, in the modern world, appropriate replacements for academics and scholars.
-- Shahzeb25 May 2018Everything said in this article is true. It’s not long now until this online fad of anti-Islam dies like it’s predecessors, it’s like the arguments are getting worse by the day. Keep writing that fire Asadullah. May Allah bless you.Reply
-- Naved9 Jun 2018You are really touching on an important phenomenon and applying it well! This talk between Sh Hamza Yusuf and Dr. Robert George also talks about this, calling today the “Age of Feeling”:https://www.youtube.com/watch?v=Lu8ZkauTlrwReplySh9 Jun 2018Great video.Reply
-- Ars23 Jun 2018well intellectually presented.thanksReply
-- Abdullah mehroon3 Jul 2018Do you ever reply to comments?Maybe genital mutilation prevelant in Islam has people leaving it. Why would anyone in their right mind accept forceful genital mutilation at an age they cannot give consent to.Reply

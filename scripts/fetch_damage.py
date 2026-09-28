@@ -150,6 +150,154 @@ def _terminator_lines(lines: list[str]) -> set[int]:
     writes emits one, and a code block is blanked before this runs."""
     return {i for i, ln in enumerate(lines) if _JS_TERMINATOR.match(ln)}
 
+
+# --------------------------------------------------------------------------
+# A rule that cannot see the damage it exists to find
+# ========================================================================
+# The 2026-09-29 repair pass removed the `});` terminators from the Orientalists
+# Fables post. `ad-payload-block` qualified a config line partly by its
+# proximity to a terminator, so the repair deleted the evidence the rule keys on
+# and the nine surviving lines of the injected `wpmrec2x` stylesheet became
+# permanently invisible. The gate reported 0 on a file that still carried a
+# stylesheet and a truncated script.
+#
+# The lesson generalises: a detector must not depend on a token that the repair
+# is going to delete. So these two classifiers key on the CONTENT of a line
+# instead, and neither mentions a terminator.
+#
+# The block they catch, for the record, is not a `key: value` config run at all.
+# It is CSS (`div.wpmrec2x{max-width:610px;}`) and JavaScript
+# (`p.style.setProperty('display', 'none', 'important');`), which is why
+# _AD_CONFIG_LINE never matched any of it.
+
+#: A whole-line CSS rule: a selector, a brace, declarations, a closing brace.
+_CSS_RULE_LINE = re.compile(
+    r"^[ \t]*[.#]?[A-Za-z][\w.#\s,>+~*\[\]=\"'-]*\{[^{}]*:[^{}]*;?[ \t]*\}[ \t]*$")
+#: A whole-line JavaScript statement. Anchored at the start so that a sentence
+#: containing the word "return" mid-line is not a match.
+_JS_STATEMENT_LINE = re.compile(
+    r"^[ \t]*(?:var|let|const|if|else|for|while|return|function|window|document)\b"
+    r".*[;{][ \t]*$")
+#: A method call that only ever appears in script: `x.setProperty(...)`, `y.f(...)`.
+_JS_CALL_LINE = re.compile(r"^[ \t]*[\w.]+\.[A-Za-z_$][\w$]*\([^()]*\)[ \t]*;?[ \t]*$")
+#: A bare JS block opener left over from a truncated paste: `} else {`, `}) {`.
+_JS_BLOCK_OPENER = re.compile(r"^[ \t]*\}[ \t]*(?:else[ \t]*)?\{[ \t]*$")
+
+#: Two script-shaped lines close together are an injected script. One on its own
+#: is not enough to act on: a single `var x = 1;` line could be someone's
+#: example. Prose is never shaped like this either way, but the run requirement
+#: is what makes the rule safe to make automatic.
+_SCRIPT_RUN_MIN = 2
+_SCRIPT_RUN_GAP = 12
+
+
+def _script_run_lines(lines: list[str]) -> set[int]:
+    """0-based indexes of an injected CSS/JavaScript block."""
+    def shaped(ln: str) -> bool:
+        return bool(
+            _CSS_RULE_LINE.match(ln)
+            or _JS_STATEMENT_LINE.match(ln)
+            or _JS_CALL_LINE.match(ln)
+            or _JS_BLOCK_OPENER.match(ln)
+        )
+
+    shaped_idx = [i for i, ln in enumerate(lines) if shaped(ln)]
+    if not shaped_idx:
+        return set()
+    out: set[int] = set()
+    # Any cluster of >=2 shaped lines within _SCRIPT_RUN_GAP is one injected
+    # block; absorb the un-shaped lines that sit between them so the whole
+    # fragment goes rather than leaving `var p = o.parentNode;` behind.
+    cluster: list[int] = [shaped_idx[0]]
+    for i in shaped_idx[1:]:
+        if i - cluster[-1] <= _SCRIPT_RUN_GAP:
+            cluster.append(i)
+        else:
+            if len(cluster) >= _SCRIPT_RUN_MIN:
+                out.update(range(cluster[0], cluster[-1] + 1))
+            cluster = [i]
+    if len(cluster) >= _SCRIPT_RUN_MIN:
+        out.update(range(cluster[0], cluster[-1] + 1))
+    return {i for i in out if i < len(lines) and lines[i].strip()}
+
+
+# --------------------------------------------------------------------------
+# Comment threads: third-party blog commentary inside his essay
+# --------------------------------------------------------------------------
+# The 2026-09-29 pass removed the `1 Comment` count and the
+# `### One Comment on "..."` heading. It did not remove the comment BODIES,
+# because no rule matched them, and the recovery log then said the threads had
+# been "removed in full". They had not. 77 hits of somebody else's commentary
+# were still sitting inside eleven posts.
+#
+# A WordPress comment list arrives flattened: the name, the date and the text
+# are run together with no markup between them, so a comment reads
+#   - GameBotX12 Aug 2018Great article, you explained it in a clear way.Reply...
+# The date-run and the glued `Reply` are what make that distinguishable from a
+# list item the author wrote, and requiring BOTH the bullet and a date-run
+# keeps the rule off ordinary prose lists.
+
+_MONTHS = ("Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February"
+           "|March|April|June|July|August|September|October|November|December")
+#: `<name><day><month><year>` - the name is not matched, only the date glued to
+#: text on both sides, which is what a flattened comment list looks like.
+_COMMENT_DATE_RUN = re.compile(rf"\d{{1,2}}\s+(?:{_MONTHS})\s+20\d\d")
+#: The heading WordPress puts above the thread.
+_COMMENT_HEADING = re.compile(
+    r"^[ \t]{0,3}#{2,6}[ \t]*(?:(?:\d+|One|No|Be the first)[ \t]+)?"
+    r"Comments?(?:[ \t]+on\b|[ \t]*$)",
+    re.IGNORECASE)
+
+
+def _is_comment_body(ln: str) -> bool:
+    """A flattened WordPress comment: a bullet with a name-date-text run."""
+    return bool(
+        re.match(r"^[ \t]*[-*+][ \t]+", ln) and _COMMENT_DATE_RUN.search(ln)
+    )
+
+
+def _comment_thread_lines(lines: list[str]) -> set[int]:
+    """0-based indexes of a comment heading and the flattened comment bodies.
+
+    Two entry points, because the 2026-09-29 pass removed the `1 Comment` count
+    and the `### One Comment on "..."` heading from some posts and left the
+    bodies behind: four comment lists are now orphaned, with no heading above
+    them, and a heading-led scan misses all four.
+
+    Heading-led scanning still stops at the first non-blank line that is neither
+    a bullet nor continued comment text, so a heading followed by ordinary prose
+    is left alone and only a real thread is taken. The standalone case is the
+    date-run bullet on its own, which is specific enough to act on: a list item
+    the author wrote does not have a person's name welded to `10 Mar 2012` and
+    continue straight into a sentence.
+    """
+    out: set[int] = set()
+    for i, ln in enumerate(lines):
+        if not _COMMENT_HEADING.match(ln):
+            continue
+        out.add(i)
+        j = i + 1
+        blanks = 0
+        while j < len(lines):
+            body = lines[j]
+            if not body.strip():
+                blanks += 1
+                if blanks > 1:
+                    break
+                j += 1
+                continue
+            if _COMMENT_HEADING.match(body) or _is_comment_body(body):
+                out.add(j)
+                j += 1
+                continue
+            break
+    # Orphaned bodies: the heading was removed by an earlier pass.
+    for i, ln in enumerate(lines):
+        if i not in out and _is_comment_body(ln):
+            out.add(i)
+    return out
+
+
 RESIDUE_RULES = (
     Rule(
         name="ad-payload-block",
@@ -164,6 +312,20 @@ RESIDUE_RULES = (
         cls="residue",
         pattern=re.compile(r"(?!)"),
         note="orphaned JavaScript terminators",
+    ),
+    Rule(
+        name="injected-script-run",
+        cls="residue",
+        pattern=re.compile(r"(?!)"),
+        note="injected CSS/JavaScript: an ad widget's stylesheet and script, "
+             "which is not `key: value` config and was invisible to "
+             "ad-payload-block",
+    ),
+    Rule(
+        name="comment-thread",
+        cls="residue",
+        pattern=re.compile(r"(?!)"),
+        note="a WordPress comment thread: third-party commentary, not his essay",
     ),
     Rule(
         name="html-comment",
@@ -216,7 +378,13 @@ CHROME_RULES = (
         # line is `Category:Atheism,Current Issues,existence of god,fitrah,...`
         # and an earlier version that allowed one word per category stopped at the
         # space in "Current Issues" and left the whole block in place.
-        pattern=re.compile(r"(?m)^[ \t]*Category:[^\n]*Tags:[^\n]*$\n?"),
+        #
+        # `Tags:` is optional because a post with exactly one category and no
+        # tags prints `Category:iKhalifa` on its own, which is the same block
+        # with less in it. Requiring both left that one in a post body, and the
+        # line is furniture either way.
+        pattern=re.compile(
+            r"(?m)^[ \t]*Category:[^\n]*?(?:Tags:[^\n]*)?$\n?"),
         allow=re.compile(r"^\s*(?:I|We)\s", re.I),
         note="taxonomy block in the body",
     ),
@@ -382,6 +550,12 @@ def scan_text(text: str, *, judgement: bool = True) -> list[Hit]:
             elif rule.name == "js-terminator-run":
                 indexes = sorted(_terminator_lines(lines))
                 snippet_of = lambda i: lines[i].strip()
+            elif rule.name == "injected-script-run":
+                indexes = sorted(_script_run_lines(lines))
+                snippet_of = lambda i: lines[i].strip()
+            elif rule.name == "comment-thread":
+                indexes = sorted(_comment_thread_lines(lines))
+                snippet_of = lambda i: lines[i].strip()
             else:  # pragma: no cover - guards a new classifier-less rule
                 indexes, snippet_of = [], (lambda i: "")
             for i in indexes:
@@ -473,6 +647,8 @@ def summary(paths_and_hits) -> tuple[dict[str, int], dict[str, int]]:
 REPAIR_MODE = {
     "ad-payload-block": "lines",
     "js-terminator-run": "lines",
+    "injected-script-run": "lines",
+    "comment-thread": "lines",
     "markup-tag": "inline",
     "html-comment": "inline",
     "posted-on-byline": "line",
@@ -523,6 +699,12 @@ def repair_text(text: str, *, encoding: bool = False) -> tuple[str, list[tuple[s
                                      reverse=True)
                 elif name == "js-terminator-run":
                     targets = sorted(_terminator_lines(scannable.split("\n")),
+                                     reverse=True)
+                elif name == "injected-script-run":
+                    targets = sorted(_script_run_lines(scannable.split("\n")),
+                                     reverse=True)
+                elif name == "comment-thread":
+                    targets = sorted(_comment_thread_lines(scannable.split("\n")),
                                      reverse=True)
                 else:  # pragma: no cover
                     targets = []

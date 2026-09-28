@@ -47,7 +47,3 @@ However, the mission was not accomplished. More and more mosques are bombed. Peo
 
 The world as we know it.
 
-### 2 Comments on “An Alternate Reality”
-
-- Siphahi13 Jul 2018Wow. That was amazingly written well done.Reply
-- Ziad21 Jul 2018Mashallah. I love you for the sake of Allah.By the second paragraph, i realized where this was going.Very well written ofcourse and very thought provoking.Reply
