@@ -22,12 +22,22 @@ GUARDS, because the obvious implementation gets this wrong:
     words appear in the candidate, so a one-word title scores 1.00 against
     anything containing that word. The work titled "Islam" matched the recording
     "23 - Islam, Science and History" at 1.00 - a false positive at the perfect
-    score. A needle needs 3 significant words, or exact normalised title
-    equality, before it is allowed to match at all.
-  * A 0.75 floor. Aisha's paper scores 0.60 against "29 - Understanding the Age
-    of Aisha" because the paper carries a long subtitle; that one is right, and
-    the subtitle words are the reason it is not 1.00. Anything below 0.75 is not
-    evidence of a relationship and is left unresolved.
+    score. A needle needs 2 significant words before it is allowed to match at
+    all. Four titles are skipped by that floor, not three: "Islam", "Nothing",
+    "Whataboutery" and "iJihad 1" (`words()` drops the `1`).
+  * A 0.75 floor for the overlap branch, and a separate, deliberately narrower
+    branch for the case the floor is wrong about. Aisha's paper scores 0.60
+    against "29 - Understanding the Age of Aisha" because the paper carries a
+    subtitle the recording does not, which is not evidence against a
+    relationship. So a recording is also accepted when its stripped core title
+    is a SUBSET of the item's words with at least two words in it. Both branches
+    are unioned; the subset one cannot reopen the one-word hole because no
+    two-word core is a subset of a one-word title.
+
+Deliberately NOT matched: `/articles/islam-and-litter-reduction/`. Its sibling
+work "Towards Litter Reduction: An Islamic Approach" is linked, and the core
+title of that recording is not a subset of the shorter title's words, so the
+pair is left unresolved rather than joined on the strength of one shared word.
 
 Output: `_data/recording_links.json`, keyed by the item's permalink.
 """
@@ -77,6 +87,20 @@ def norm(text: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()
 
 
+def core_title(text: str) -> str:
+    """A recording title stripped of its numbering, branding and id suffix.
+
+    Recording titles carry three kinds of decoration that say nothing about what
+    the recording is of: a leading catalogue number ("32 - "), the uploader's own
+    branding ("｜｜ Asadullah Andalusi ｜｜ The Andalusian Project", "MSA OSU",
+    "Yaqeen in NY", "Al-Balagh Academy", "IAIS"), and a trailing "[video_id]".
+    Removing them is what lets a contained-title match work at all.
+    """
+    t = re.sub(r"^\s*\d+\s*[-–—]\s*", "", text or "")
+    t = re.sub(r"\[[^\]]*\]\s*$", "", t)
+    return re.split(r"[｜|]", t)[0]
+
+
 def main() -> int:
     works = load("canonical_works.json")
     papers = load("papers.json")
@@ -99,7 +123,10 @@ def main() -> int:
             title = it.get("title", "") or ""
             if kind == "work":
                 ref = it.get("slug", "")
-                perm = it.get("local_post_url") or (f"/articles/{ref}/" if ref else "")
+                # canonical_works.json carries no local_post_url field on any
+                # of its rows, so the permalink is derived. Do not reintroduce
+                # a lookup for it.
+                perm = f"/articles/{ref}/" if ref else ""
             else:
                 ref = str(it.get("id") or "")
                 perm = f"/papers/{slugify(title)}/"
@@ -115,26 +142,62 @@ def main() -> int:
                 key=lambda x: x[0],
                 reverse=True,
             )
-            best = [(s, v) for s, v in scored if s >= MIN_SCORE]
-            # A title can legitimately map to more than one recording - a lecture
-            # series is several videos - so keep every candidate at the top
-            # score, not just the first.
-            if not best:
+            top = [(s, v) for s, v in scored if s >= MIN_SCORE]
+            accepted: dict[str, dict] = {}
+
+            # Branch 1: word overlap at or above the floor. A title can
+            # legitimately map to several recordings - a lecture series is
+            # several videos - so every candidate at the top score is kept, not
+            # just the first.
+            if top:
+                best = top[0][0]
+                for s, v in top:
+                    if s < best:
+                        break
+                    accepted[v["id"]] = {
+                        "video_id": v.get("id"),
+                        "title": v.get("title", ""),
+                        "url": vid_permalink(v),
+                        "archive_url": v.get("archive_url", ""),
+                        "duration": v.get("duration"),
+                        "score": round(s, 3),
+                        "how": ("every significant word of this title appears in "
+                                "the recording's title" if s >= 0.999
+                                else f"title overlap {s:.0%}"),
+                    }
+
+            # Branch 2: the recording's core title is CONTAINED in this item's
+            # title. The 0.75 floor punishes long item titles for carrying a
+            # subtitle - the paper "Understanding Aisha's Age: An Interdisciplinary
+            # Approach" scores 0.60 against "29 - Understanding the Age of Aisha"
+            # because the subtitle words are absent from the recording, even
+            # though the recording is plainly of that paper. Requiring the
+            # recording's stripped core (no "29 - " prefix, no "｜｜ Asadullah
+            # Andalusi ｜｜" branding, no "[id]" suffix) to be a SUBSET of the
+            # item's words, with at least two words in it, keeps this narrow
+            # enough not to reopen the one-word hole: no two-word core is a
+            # subset of a one-word title.
+            item_words = words(title)
+            for v in vids:
+                if v["id"] in accepted:
+                    continue
+                c = words(core_title(v.get("title", "")))
+                if len(c) >= 2 and c and c <= item_words:
+                    accepted[v["id"]] = {
+                        "video_id": v.get("id"),
+                        "title": v.get("title", ""),
+                        "url": vid_permalink(v),
+                        "archive_url": v.get("archive_url", ""),
+                        "duration": v.get("duration"),
+                        "score": round(score(title, v.get("title", "") or ""), 3),
+                        "how": "the recording's title, without its numbering or "
+                               "branding, is contained in this item's title",
+                    }
+
+            if not accepted:
                 continue
-            top = best[0][0]
-            for s, v in best:
-                if s < top:
-                    break
-                by_url.setdefault(perm, []).append({
-                    "video_id": v.get("id"),
-                    "title": v.get("title", ""),
-                    "url": vid_permalink(v),
-                    "archive_url": v.get("archive_url", ""),
-                    "duration": v.get("duration"),
-                    "score": round(s, 3),
-                    "how": ("same title as the recording" if s >= 0.999
-                            else f"title overlap {s:.0%}"),
-                })
+            for rec in accepted.values():
+                by_url.setdefault(perm, []).append(rec)
 
     total = sum(len(v) for v in by_url.values())
     print(f"  recordings held              : {len(vids)}")

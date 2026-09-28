@@ -29,7 +29,7 @@
 {%- if hits and hits.size > 0 -%}
 <nav class="recording-links" aria-label="Recordings of this item">
   <h2>{% if hits.size == 1 %}This is also on video{% else %}This is also on video ({{ hits.size }} recordings){% endif %}</h2>
-  <p class="meta">This archive holds its own copy of {% if hits.size == 1 %}the recording{% else %}each recording{% endif %}, so you can watch it here without depending on the author&rsquo;s own uploads &mdash; many of which are now private.</p>
+  <p class="meta">This archive holds its own copy of {% if hits.size == 1 %}the recording{% else %}each recording{% endif %} on the Internet Archive, so you can get the file from here. The author&rsquo;s own channel now returns &ldquo;This channel is not available&rdquo; (<a href="{{ '/channel/' | relative_url }}">what happened to it</a>), so the original uploads cannot be relied on.</p>
   <ul>
     {%- for r in hits -%}
     <li>
@@ -37,14 +37,15 @@
       <span class="rel-how">{% if r.duration %} &middot; {{ r.duration | divided_by: 60 | floor }} min{% endif %}</span>
       {%- if r.archive_url %}
       {%- comment -%}
-        uri_escape, not the raw string. The archive.org filenames carry spaces,
-        a fullwidth colon and a fullwidth vertical bar, and emitted raw they 404:
-        `https://archive.org/download/.../32 - The Qur'an ... ｜ ... .mp4` is not
-        a requestable URL. A browser happens to encode it on click, which is why
-        this went unnoticed, but anything that fetches the href as written gets
-        a 404. uri_escape keeps the scheme and slashes and encodes the rest.
+        uri_escape alone is not enough, and the `replace` is load-bearing.
+        Jekyll's `uri_escape` is `Addressable::URI.normalize_component`, which
+        percent-encodes spaces and non-ASCII but leaves `#` alone. Six Internet
+        Archive filenames contain a literal `#` ("Book Recommendations #1"), and
+        a fragment is never transmitted to the server - so a raw `#` 404s the
+        file while `%23` returns it. Verified by HEAD: `#1` 404, `%231` 200 with
+        Content-Length 243561958.
       {%- endcomment -%}
-      <a class="rec-direct" href="{{ r.archive_url | uri_escape }}">Watch the preserved copy<span class="rec-dl">&nbsp;(MP4)</span></a>
+      <a class="rec-direct" href="{{ r.archive_url | uri_escape | replace: '#', '%23' }}">Watch the preserved copy<span class="rec-dl">&nbsp;(MP4)</span></a>
       {%- endif %}
     </li>
     {%- endfor -%}

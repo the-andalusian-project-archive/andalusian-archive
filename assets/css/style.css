@@ -1768,9 +1768,7 @@ tr:hover td {
   font-size: 0.875rem;
 }
 
-/* --- third-party back-references, and the /sources/ index ----------------- */
-
-/* --- recordings of an item, and the /sources/ index ----------------------- */
+/* --- recordings of an item ------------------------------------------------- */
 
 /* Same visual family as .topic-backlinks and .secondary-backlinks, and grouped
    with them in the narrow-screen rule below so all three read as one kind of
@@ -1845,6 +1843,8 @@ tr:hover td {
   font-weight: 400;
   color: var(--color-text-secondary);
 }
+
+/* --- third-party back-references, and the /sources/ index ----------------- */
 
 .secondary-backlinks {
   margin: 2rem 0;

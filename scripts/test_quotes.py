@@ -417,6 +417,74 @@ def check() -> int:
     print(f"recordings linked: {len(by_url)} items, "
           f"{sum(len(v) for v in by_url.values())} recordings")
 
+    # ---- every archive_url emission site must escape the fragment ------------
+    #
+    # A STATIC check, and the one that matters, because the CI gates run before
+    # `jekyll build`: a check that reads the built output is skipped in CI
+    # entirely. Two attempts at a build-output check were both useless — the
+    # first was never exercised in CI, and the second passed *vacuously* when a
+    # deliberately broken template made the build fail and leave the previous
+    # good `_site` in place. Neither would have caught the regression.
+    #
+    # The defect is a missing `replace: '#', '%23'` in a template, so assert on
+    # the templates. Jekyll's `uri_escape` is
+    # `Addressable::URI.normalize_component`: it percent-encodes spaces and
+    # non-ASCII but leaves `#` alone, and a fragment is never transmitted to the
+    # server. Six Internet Archive filenames contain a literal `#` ("Book
+    # Recommendations #1"), so a missing replace is six live pages with a dead
+    # Download button.
+    for tmpl in sorted(list((ROOT / "_layouts").glob("*.html"))
+                       + list((ROOT / "_includes").glob("*.html"))
+                       + [p for p in ROOT.glob("*.md") if p.is_file()]):
+        try:
+            text = tmpl.read_text(encoding="utf-8", errors="ignore")
+        except OSError:
+            continue
+        for m in re.finditer(r"\{\{([^}]*archive_url[^}]*)\}\}", text):
+            expr = m.group(1)
+            if "replace: '#', '%23'" in expr:
+                continue
+            # jsonify/escape_once are attribute-safety filters, not encoders.
+            if "archive_url | uri_escape" in expr:
+                rel = tmpl.relative_to(ROOT).as_posix()
+                failures.append(
+                    f"{rel}: an archive_url is emitted with uri_escape but no "
+                    f"'#' replacement, so filenames containing '#' 404: "
+                    f"{{{{{expr}}}}}"
+                )
+    print("archive_url emission sites checked : all templates")
+
+    # And the rendered output, when a build is present, for the shapes a static
+    # check cannot see.
+    built = ROOT / "_site"
+    if built.is_dir():
+        attr = re.compile(r'(href|content)="([^"]*)"')
+        bad_syntax = 0
+        checked = 0
+        for f in built.rglob("*.html"):
+            t = f.read_text(encoding="utf-8", errors="ignore")
+            for m in attr.finditer(t):
+                u = unescape(m.group(2))
+                if "archive.org/download" not in u:
+                    continue
+                checked += 1
+                # An entity-encoded apostrophe is legitimate HTML; a literal
+                # space or `#` in a filename is not a requestable URL.
+                for ch, why in ((" ", "raw space"), ("#", "raw # (a fragment is "
+                                                          "never sent to the "
+                                                          "server)")):
+                    if ch in u:
+                        bad_syntax += 1
+                        rel = f.relative_to(built).as_posix()
+                        failures.append(
+                            f"rendered href: {rel} emits a {why}: "
+                            f"...{u[-64:]}")
+                        if bad_syntax > 8:
+                            break
+        print(f"download hrefs checked : {checked}")
+    else:
+        print("download hrefs checked : 0 (no _site; run jekyll build first)")
+
     failures.extend(check_secondary_sources())
 
     if failures:
@@ -511,7 +579,11 @@ def _front_matter_urls() -> dict[str, str]:
             if end == -1:
                 continue
             head = text[:end]
-            pm = re.search(r"^permalink:[ \t]*(\S+)", head, re.M)
+            # Reuse the hardened parser rather than a second, looser regex.
+            # The two disagreed on quoted or spaced permalinks, which is how a
+            # helper ends up quietly checking something other than what the
+            # other helper checks.
+            pm = re.search(r"^permalink:[ \t]*(\S.*?)[ \t]*$", head, re.M)
             if not pm:
                 continue
             perm = pm.group(1).strip().strip("\"'").rstrip("/") + "/"

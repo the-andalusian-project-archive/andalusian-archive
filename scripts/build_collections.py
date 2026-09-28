@@ -669,6 +669,20 @@ def archive_link(v: dict) -> str:
     404s for anything that fetches it as written. A browser re-encodes on click,
     which is why 56 video pages shipped this way unnoticed. Only the path is
     escaped - the scheme and slashes have to survive.
+
+    Two characters decide whether this is right or merely differently broken:
+
+    `?` IS in SAFE, because twelve rows are `youtube_not_archived` and their
+    `archive_url` *is* the YouTube watch URL. Escaping it turns
+    `watch?v=TTGJPneVR_w` into `watch%3Fv=TTGJPneVR_w`, which is a 404 - the
+    defect only appears when the collections are regenerated, so the suites stay
+    green while twelve live links quietly break.
+
+    `#` is deliberately NOT in SAFE. Six Internet Archive filenames contain a
+    literal `#` ("Book Recommendations #1"). A fragment is never transmitted to
+    the server, so a raw `#` 404s the file while `%23` returns it.
+
+    `%` is in SAFE, so this is idempotent on already-encoded input.
     """
     url = (v.get("archive_url") or "").strip()
     if not url:
@@ -676,7 +690,7 @@ def archive_link(v: dict) -> str:
     head, sep, tail = url.partition("://")
     if not sep:
         return url
-    return head + sep + quote(tail, safe="/@:+$&~!*'()=,%")
+    return head + sep + quote(tail, safe="/@:+$&~!*'()=%,;?")
 
 
 
