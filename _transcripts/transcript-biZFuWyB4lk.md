@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]"
+title: "22 - Taking Islam Out of Context! (Indeed)"
 transcript_id: "biZFuWyB4lk"
 recording: "biZFuWyB4lk"
 capture_video_id: "biZFuWyB4lk"
@@ -17,7 +17,7 @@ capture_file: "whisper-biZFuWyB4lk.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]
+# 22 - Taking Islam Out of Context! (Indeed)
 
 This is the capture taken from the catalogued recording itself.
 

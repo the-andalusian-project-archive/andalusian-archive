@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]"
+title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi"
 video_id: "KjUPbkqRxac"
 id: "KjUPbkqRxac"
 permalink: "/videos/KjUPbkqRxac/"
@@ -14,7 +14,7 @@ topics: ["literature", "education", "resources"]
 mirror_urls: []
 ---
 
-# 49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]
+# 49 - Book Recommendations #1｜｜ Asadullah Andalusi
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

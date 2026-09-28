@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T03:25:42.914907",
+  "last_updated": "2026-09-29T02:28:35.583407",
   "project_name": "The Andalusian Project Archive",
   "author": "Asadullah Ali Al-Andalusi",
   "description": "Digital preservation of Asadullah Ali Al-Andalusi's work for academic research and education",
@@ -7,13 +7,13 @@
     "total_blog_works": 72,
     "total_blog_captures": 87,
     "total_notices": 3,
-    "total_videos": 68,
+    "total_videos": 81,
     "total_papers": 20,
-    "total_content": 207,
-    "total_content_formula": "72 works + 68 videos + 20 papers + 4 MDI items (of 17 rows; 13 are a second publication of a work already counted, so they are not added again) + 9 Yaqeen link-outs (row count; no page body was downloaded, so no size is stored) + 33 Al Balagh link-outs (row count) + 1 interview = 207 (excludes the derived secondary_sources and the 3 uncounted announcements; the blog term is the works list, not the 87 CDX captures)",
+    "total_content": 220,
+    "total_content_formula": "72 works + 81 videos + 20 papers + 4 MDI items (of 17 rows; 13 are a second publication of a work already counted, so they are not added again) + 9 Yaqeen link-outs (row count; no page body was downloaded, so no size is stored) + 33 Al Balagh link-outs (row count) + 1 interview = 220 (excludes the derived secondary_sources and the 3 uncounted announcements; the blog term is the works list, not the 87 CDX captures)",
     "total_content_terms": {
       "works": 72,
-      "videos": 68,
+      "videos": 81,
       "papers": 20,
       "mdi_counted": 4,
       "yaqeen_linkouts": 9,
@@ -44,7 +44,7 @@
     },
     "videos": {
       "description": "Video lectures and discussions from The Andalusian Project YouTube channel and mirrors",
-      "count": 68,
+      "count": 81,
       "storage": "IN REPO (Archive.org + YouTube mirrors)",
       "risk_level": "MEDIUM - YouTube channel deleted, mirrors exist"
     },
@@ -128,7 +128,7 @@
   "preservation_notes": {
     "blog_posts": "72 works (47 full-text in repo, 24 Wayback-only, 1 lost); 87 CDX captures preserved as metadata. Recovered 2026-09-07 via canonical Wayback fetch, junk-purged 2026-09-08; WordPress-mirror, IDI and best-capture recoveries integrated 2026-09-27 (see recovery_log.json and bibliography.json).",
     "notices": "3 announcements (book lists, library updates, link posts) catalogued in notices.json with counted_as_work=false. They carry the recovered text but are excluded from every total.",
-    "videos": "68 videos catalogued in videos.json; mirrors attach as mirror_urls and are never counted separately.",
+    "videos": "81 videos catalogued in videos.json; mirrors attach as mirror_urls and are never counted separately.",
     "papers": "Academic papers are hosted by Yaqeen Institute and other institutions; links are provided for access, and the texts legitimately obtained are held under _papers/pdfs/. See bibliography.json for the full oa/restricted/dead ledger.",
     "mdi_articles": "17 rows from the muslimdebate.org author archive, of which 13 are a second publication of a work already counted (decided by 5-gram text comparison, not title similarity) and 4 are a distinct item. Full text recovered 2026-09-27 and stored in this repository; 7 of the 17 are <100-word captions for an embedded video and are kept as published.",
     "yaqeen_papers": "9 papers/blog posts from Asadullah Ali's Yaqeen Institute profile. Titles and URLs preserved; full content hosted by Yaqeen Institute.",

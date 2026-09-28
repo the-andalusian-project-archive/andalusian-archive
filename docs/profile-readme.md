@@ -13,10 +13,10 @@ Andalusian Project** — openly available, preserved with provenance.
   verbatim, with per-item provenance.
 - **72 recovered works** — 47 with full text in the repository, 24 catalogued Wayback-only, 1
   unrecovered. Dated 2011-12-18 to 2020-08-11.
-- **68 video records** — 56 preserved as files in the Internet Archive's `andalusian-project`
+- **81 video records** — 56 preserved as files in the Internet Archive's `andalusian-project`
   collection, 12 catalogued as live re-uploads, with the channel's capture-dated history and
   the claims this archive refuses to make recorded alongside it.
-- **68 published machine transcripts, 540,995 words** — one document per capture, each with its
+- **79 published machine transcripts, 937,738 words** — one document per capture, each with its
   capture file, cue count, language and producing model. Every page carries the
   machine-transcript disclaimer.
 - **20 papers** — 5 PDF files held locally across 4 of the paper records, with a 24-row access

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]"
+title: "30 - iKhalifa 1： Appreciate Others"
 video_id: "rtViqNWY1Bk"
 id: "rtViqNWY1Bk"
 permalink: "/videos/rtViqNWY1Bk/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: ["https://www.youtube.com/watch?v=io8IxaGJx68"]
 ---
 
-# 30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]
+# 30 - iKhalifa 1： Appreciate Others
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

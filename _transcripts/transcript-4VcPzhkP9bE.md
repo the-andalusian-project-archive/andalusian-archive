@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]"
+title: "08 - Islam and Terrorism"
 transcript_id: "4VcPzhkP9bE"
 recording: "4VcPzhkP9bE"
 capture_video_id: "4VcPzhkP9bE"
@@ -17,7 +17,7 @@ capture_file: "cap-4VcPzhkP9bE.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]
+# 08 - Islam and Terrorism
 
 This is the capture taken from the catalogued recording itself.
 

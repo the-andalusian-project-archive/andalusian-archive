@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]"
+title: "24 - Asadullah Andalusi - MY STORY"
 transcript_id: "7KBCENktOOU"
 recording: "7KBCENktOOU"
 capture_video_id: "7KBCENktOOU"
@@ -18,7 +18,7 @@ disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't b
 redaction_note: "One personal identifier was withheld from this transcript at the site owner's request: his birth name, the family name he discusses in this account of his own conversion. It occurs 4 times in the capture and each occurrence is shown here as ‖ birth name withheld ‖. Every other word is the capture's own, unaltered. The raw capture file itself is withheld from this repository rather than edited - it is evidence, and editing evidence would destroy what makes it evidence - so the unredacted text is not published here either. See NOTICE.md, section 6."
 ---
 
-# 24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]
+# 24 - Asadullah Andalusi - MY STORY
 
 This is the capture taken from the catalogued recording itself.
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]"
+title: "01 - Understanding Atheism ｜ Session 1"
 video_id: "NyAVl7RsEOs"
 id: "NyAVl7RsEOs"
 permalink: "/videos/NyAVl7RsEOs/"
@@ -14,7 +14,7 @@ topics: ["philosophy", "atheism", "epistemology"]
 mirror_urls: ["https://www.youtube.com/watch?v=EK5oppX6C2U", "https://www.youtube.com/watch?v=2tsI80MDUOI"]
 ---
 
-# 01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]
+# 01 - Understanding Atheism ｜ Session 1
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

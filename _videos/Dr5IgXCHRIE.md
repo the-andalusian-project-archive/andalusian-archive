@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\"re upload\") [Dr5IgXCHRIE]"
+title: "39 - Ex-Muslims, Pragmatism, and Islamic Futurism"
 video_id: "Dr5IgXCHRIE"
 id: "Dr5IgXCHRIE"
 permalink: "/videos/Dr5IgXCHRIE/"
@@ -14,7 +14,7 @@ topics: ["islam", "theology", "comparative religion"]
 mirror_urls: []
 ---
 
-# 39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative ("re upload") [Dr5IgXCHRIE]
+# 39 - Ex-Muslims, Pragmatism, and Islamic Futurism
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

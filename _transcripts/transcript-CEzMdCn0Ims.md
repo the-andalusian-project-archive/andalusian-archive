@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]"
+title: "02 - Understanding Atheism ｜ Session 2"
 transcript_id: "CEzMdCn0Ims"
 recording: "CEzMdCn0Ims"
 capture_video_id: "CEzMdCn0Ims"
@@ -17,7 +17,7 @@ capture_file: "whisper-CEzMdCn0Ims.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]
+# 02 - Understanding Atheism ｜ Session 2
 
 This is the capture taken from the catalogued recording itself.
 

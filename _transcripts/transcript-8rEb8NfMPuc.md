@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]"
+title: "12 - iJihad Ep. 4： The Masked Arab"
 transcript_id: "8rEb8NfMPuc"
 recording: "8rEb8NfMPuc"
 capture_video_id: "8rEb8NfMPuc"
@@ -17,7 +17,7 @@ capture_file: "whisper-8rEb8NfMPuc.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]
+# 12 - iJihad Ep. 4： The Masked Arab
 
 This is the capture taken from the catalogued recording itself.
 

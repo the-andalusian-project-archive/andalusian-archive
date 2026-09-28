@@ -19,8 +19,8 @@ re-recorded three times over: after the recount was approved and applied, after
 the reading-first redesign, and again on 2026-09-28 in the design's own **light**
 theme — which is now also the site's default — with the SEP-red accent and a
 Ken Burns move that actually moves. Their captions carry the current figures
-(207 recovered items, 72 works with 47 in full, 20 papers, 68 transcripts of
-540,995 words) and their screenshots show the `/topics/` layer, which the
+(220 recovered items, 72 works with 47 in full, 20 papers, 79 transcripts of
+937,738 words) and their screenshots show the `/topics/` layer, which the
 previous cut did not include at all. The assets below can be attached as they
 stand.
 
@@ -40,8 +40,8 @@ Every figure below is counted from `_data/` at build time or read out of a
 | | Count | What is actually held |
 |---|---:|---|
 | Written works | **72** | 47 with full text in the repository, 24 catalogued Wayback-only with no text held, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. |
-| Video records | **68** | 56 preserved as files in the Internet Archive's `andalusian-project` collection; 12 catalogued as live re-uploads. 36 mirror URLs attached to the 30 entries they duplicate; 12 superseded duplicates preserved in full in a ledger rather than deleted. |
-| Machine transcripts | **68 documents** | 540,995 words, 37,388 paragraphs, one document per capture. 57 attached to a video record, 11 preserved but deliberately not attached. 58 distinct recordings behind the 68 documents. |
+| Video records | **68** | 56 preserved as files in the Internet Archive's `andalusian-project` collection; 25 catalogued as live re-uploads. 36 mirror URLs attached to the 30 entries they duplicate; 12 superseded duplicates preserved in full in a ledger rather than deleted. |
+| Machine transcripts | **79 documents** | 937,738 words, 67,720 paragraphs, one document per capture. 57 attached to a video record, 11 preserved but deliberately not attached. 58 distinct recordings behind the 68 documents. |
 | Academic papers | **20** | **5 PDF files across 4 of the 20 paper records**; one of the five is a Japanese translation of a paper already counted. 2 further PDFs withheld in full. A 24-row access ledger records 8 open-access, 15 restricted and 1 dead item, so the gap is visible rather than implied. |
 | MDI author-archive pages | **17 rows / 4 items** | All 17 held verbatim, 24,081 words. The 13 that republish an already-counted work are decided by 5-gram text comparison, not title similarity. |
 | Announcements | **3** | Catalogued and held with their text, never counted as works. |
@@ -50,11 +50,11 @@ Every figure below is counted from `_data/` at build time or read out of a
 | Wayback capture records | **87** | One record per CDX capture, preserved as metadata. |
 | Recovery-log rows | **74** | Per-work verdicts with the method and word count for each. |
 
-**Total counted content: 207**, and it is a sum rather than a figure anyone
+**Total counted content: 220**, and it is a sum rather than a figure anyone
 typed. The site prints the arithmetic it performed:
 
 ```
-Total 207 = 72 works + 68 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview
+Total 220 = 72 works + 81 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview
 ```
 
 Every count on every page — the homepage, the works index, the papers index,
@@ -209,7 +209,7 @@ Tag: `v1.0.0` · Title: `The Andalusian Project Archive v1.0.0`
 > The first tagged release of the archive of the published work of Asadullah Ali
 > Al-Andalusi. 72 catalogued written works, 68 video records, 68 published
 > machine transcripts, 20 academic papers, 3 announcements, 10 link-outs and 70
-> third-party source records; 207 counted items, counted from `_data/` at build
+> third-party source records; 220 counted items, counted from `_data/` at build
 > time rather than typed into any page.
 >
 > The original sites are gone — one domain has been taken over by an unrelated

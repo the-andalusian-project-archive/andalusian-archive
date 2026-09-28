@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]"
+title: "06 - Understanding Atheism ｜ Session 6"
 video_id: "lS7h9SKKtVc"
 id: "lS7h9SKKtVc"
 permalink: "/videos/lS7h9SKKtVc/"
@@ -14,7 +14,7 @@ topics: ["philosophy", "atheism", "epistemology"]
 mirror_urls: ["https://www.youtube.com/watch?v=bRTI6Z5gggE"]
 ---
 
-# 06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]
+# 06 - Understanding Atheism ｜ Session 6
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]"
+title: "23 - Islam, Science and History (Reupload from Andalusian Project)"
 video_id: "0snGWjeqEeM"
 id: "0snGWjeqEeM"
 permalink: "/videos/0snGWjeqEeM/"
@@ -14,7 +14,7 @@ topics: ["islam", "theology", "comparative religion"]
 mirror_urls: ["https://www.youtube.com/watch?v=-19Fq0e4y8M"]
 ---
 
-# 23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]
+# 23 - Islam, Science and History (Reupload from Andalusian Project)
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

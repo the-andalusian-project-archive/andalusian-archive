@@ -190,11 +190,21 @@ for w in canon:
 drift = collection_drift()
 assert not drift, "collection/data drift:\n  " + "\n  ".join(drift)
 
-# The published total, computed here from the same files the builder reads, and
-# checked against the string the site prints. The site says
-#   Total 207 = 72 + 68 + 20 + 4 + 9 + 33 + 1
-# so this assert fails if any term moves OR if content_index.json's stored total
-# and its own stored formula stop agreeing with the data they summarise.
+  # The published total, computed here from the same files the builder reads, and
+  # checked against the string the site prints. The site said
+  #   Total 207 = 72 + 68 + 20 + 4 + 9 + 33 + 1
+  # and, from 2026-09-29, after thirteen verified-missing videos were catalogued,
+  #   Total 220 = 72 + 81 + 20 + 4 + 9 + 33 + 1
+  # The video term is the only one that moved. The thirteen were confirmed absent
+  # by video id before being added: none was in videos.json (68 rows) and none
+  # had a capture on disk. Eleven arrived with a YouTube caption track and are
+  # published as transcripts; two (Arena episodes 8 and 18) have no caption
+  # track at all - only a live-chat replay, which is a chat log and not speech -
+  # and are catalogued as records without text, the same way 24 wayback_only
+  # works and 42 link-outs are counted with no held body.
+  #
+  # so this assert fails if any term moves OR if content_index.json's stored total
+  # and its own stored formula stop agreeing with the data they summarise.
 videos = json.loads((base / "_data/videos.json").read_text(encoding="utf-8"))
 papers = json.loads((base / "_data/papers.json").read_text(encoding="utf-8"))
 yaqeen = json.loads((base / "_data/yaqeen_papers.json").read_text(encoding="utf-8"))
@@ -211,8 +221,8 @@ terms = {
     "interviews": len(interviews),
 }
 expected_total = sum(terms.values())
-assert expected_total == 207, (
-    "total_content computed from _data/ is %d, not the approved 207: %r"
+assert expected_total == 220, (
+    "total_content computed from _data/ is %d, not the approved 220: %r"
     % (expected_total, terms))
 ci = json.loads((base / "_data/content_index.json").read_text(encoding="utf-8"))
 ci_stats = ci["statistics"]

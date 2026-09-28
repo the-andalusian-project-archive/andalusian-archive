@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc] - transcript of a duplicate upload"
+title: "06 - Understanding Atheism ｜ Session 6 - transcript of a duplicate upload"
 transcript_id: "bRTI6Z5gggE-duplicate-upload"
 recording: "lS7h9SKKtVc"
 capture_video_id: "bRTI6Z5gggE"
@@ -19,7 +19,7 @@ reparented_at: "2026-09-27"
 superseded_reason: "Duplicate re-upload of lS7h9SKKtVc; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-bRTI6Z5gggE.en-orig.vtt) is retained; nothing was deleted."
 ---
 
-# 06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc] - transcript of a duplicate upload
+# 06 - Understanding Atheism ｜ Session 6 - transcript of a duplicate upload
 
 > This is a transcript of the **same recording** as the page for `lS7h9SKKtVc`. The upload it was captured from (`bRTI6Z5gggE`) left the video catalogue as a duplicate; the transcript text was re-parented onto the surviving entry and kept, not deleted. It is published here, attributed, so that its text is readable.
 

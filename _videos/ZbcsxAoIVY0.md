@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]"
+title: "25 - Atheism： Doubting Your Doubts"
 video_id: "ZbcsxAoIVY0"
 id: "ZbcsxAoIVY0"
 permalink: "/videos/ZbcsxAoIVY0/"
@@ -14,7 +14,7 @@ topics: ["philosophy", "atheism", "epistemology"]
 mirror_urls: ["https://www.youtube.com/watch?v=nZ1SeL3Umn8"]
 ---
 
-# 25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]
+# 25 - Atheism： Doubting Your Doubts
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

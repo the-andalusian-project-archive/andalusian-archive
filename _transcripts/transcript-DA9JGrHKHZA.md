@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]"
+title: "27 - La structure de la productivité scientifique dans la civilisation musulmane"
 transcript_id: "DA9JGrHKHZA"
 recording: "DA9JGrHKHZA"
 capture_video_id: "DA9JGrHKHZA"
@@ -17,7 +17,7 @@ capture_file: "whisper-DA9JGrHKHZA.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]
+# 27 - La structure de la productivité scientifique dans la civilisation musulmane
 
 This is the capture taken from the catalogued recording itself.
 

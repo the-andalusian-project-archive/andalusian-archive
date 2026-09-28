@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]"
+title: "03 - Understanding Atheism ｜ Session 3"
 transcript_id: "lZkv38vd7bw"
 recording: "lZkv38vd7bw"
 capture_video_id: "lZkv38vd7bw"
@@ -17,7 +17,7 @@ capture_file: "whisper-lZkv38vd7bw.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]
+# 03 - Understanding Atheism ｜ Session 3
 
 This is the capture taken from the catalogued recording itself.
 

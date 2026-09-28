@@ -571,11 +571,85 @@ def source_words(path: str) -> int:
     return _SOURCE_WORDS[path]
 
 
+def reanchor_spec_refs(specs: list[dict]) -> list[str]:
+    """Re-derive every citation's line number from the cited line's own text.
+
+    WHY THIS EXISTS
+    ===============
+    Each `ref` in a cluster spec is `_posts/<file>.md:<line>`, and all 501 of
+    them pin a line. The collections those lines point into are GENERATED:
+    `build_papers()` calls `clear_md(_papers/)` and rewrites every paper page
+    from `_data/papers.json`, erasing hand-authored front matter on the way. One
+    such re-run shortened the Aisha paper page from 55 lines to 33 and left three
+    citations pointing past the end of their file. Nothing complained at the time,
+    because nothing compared the specs against the files they name.
+
+    So the specs are corrected here, in the one place that holds both sides. No
+    line number is computed and no offset is applied: the cited LINE's text is
+    located in the current file and its present line number is used, so an anchor
+    tracks its content rather than its position.
+
+    A ref whose line text is absent, or present more than once, is left exactly
+    as it is and reported. Guessing would move a citation onto a line that merely
+    looks similar, which is worse than a visible failure.
+    """
+    notes: list[str] = []
+    for spec_path in sorted((ROOT / "_data" / "topics").glob("*.json")):
+        spec = json.loads(spec_path.read_text(encoding="utf-8"))
+        changed = False
+        for row in spec.get("material") or []:
+            rel = str(row.get("path") or "")
+            target = ROOT / rel if rel else None
+            if not target or not target.is_file():
+                continue
+            lines = target.read_text(encoding="utf-8", errors="replace").splitlines()
+            for claim in row.get("key_claims") or []:
+                ref = str(claim.get("ref") or "")
+                head, _, tail = ref.rpartition(":")
+                if not head or not tail.lstrip("L").isdigit():
+                    continue
+                old_n = int(tail.lstrip("L"))
+                quote = " ".join(str(claim.get("quote") or "").split())
+                if not quote:
+                    continue
+                flat = [" ".join(l.split()) for l in lines]
+                hits = [i for i, l in enumerate(flat, 1) if l and quote in l]
+                if not hits:
+                    notes.append(f"{ref}: quote no longer found in {rel} - "
+                                 "left for a human")
+                    continue
+                if old_n in hits:
+                    continue  # already correct
+                if len(hits) == 1:
+                    claim["ref"] = f"{head}:{hits[0]}"
+                    changed = True
+                    notes.append(f"{ref} -> {head}:{hits[0]}")
+                else:
+                    notes.append(f"{ref}: quote now on {len(hits)} lines of "
+                                 f"{rel} {hits[:4]} - left alone")
+        if changed:
+            # Written with the file's own newline convention, so a spec authored
+            # with CRLF does not silently become LF (or the reverse).
+            raw = spec_path.read_bytes()
+            nl = "\r\n" if b"\r\n" in raw else "\n"
+            body = json.dumps(spec, indent=2, ensure_ascii=False) + "\n"
+            spec_path.write_bytes(body.replace("\n", nl).encode("utf-8"))
+    return notes
+
+
 def main() -> int:
     specs = load_specs()
     if not specs:
         print("no cluster specs found", flush=True)
         return 1
+
+    moved = reanchor_spec_refs(specs)
+    if moved:
+        print(f"refs re-anchored by content: {len(moved)}")
+        for n in moved[:12]:
+            print(f"    {n}")
+    else:
+        print("refs re-anchored by content: 0 (all already exact)")
 
     perma, by_last = permalink_index()
     how_counts: dict[str, int] = {}

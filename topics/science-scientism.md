@@ -81,14 +81,14 @@ said at the foot of the page.</p>
 
 > But if by scientists, and we should mean the view that the methods of the social sciences are, to a very considerable extent, the same as those of the natural sciences, then I should be obliged to plead guilty to being adherent of scientists.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:62</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:62</span> &mdash; <span class="cite-size">excerpt of about 44 words from a 5,548-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
 
 > Because the very statement itself, the very thing in which they needed to verify things, the statement itself that no statement has meaning, unless it can be empirically verified, could not itself be empirically verified.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:173</span> &mdash; <span class="cite-size">excerpt of about 35 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:173</span> &mdash; <span class="cite-size">excerpt of about 35 words from a 5,548-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -153,7 +153,7 @@ Et l\'autre, ce serait plutôt le terme de dépendance
 parce qu\'on ne produit pas des idées scientifiques, on est consomme.
 Et donc, on est dans une posture passive.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:179</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 8,225-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:179</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 8,223-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -218,7 +218,7 @@ Et donc, on est dans une posture passive.
 
 > Okay, so no, scientificism is believed to have been understood and practiced in some forms since the 17th century by the French and that\'s something you should note is that the French were actually the first ones to come up with with positivism as well.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:41</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:41</span> &mdash; <span class="cite-size">excerpt of about 45 words from a 5,548-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -230,7 +230,7 @@ Et donc, on est dans une posture passive.
 But to preclude any misunderstanding on this point, we shall, wherever we are concerned, not with the general spirit of the centuries of inquiry, but with slavish imitation, the method language of science, speak of scientism or the scientistic prejudice. I\'ll explain all this later, don\'t worry.
 It should be noted that in the sense in which we shall use these terms, they describe, or of course, an attitude which is decidedly unscientific in the true sense of the word, since it involves a mechanical and uncritical application of habits of thoughts to feel different from the word.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:42</span> &mdash; <span class="cite-size">excerpt of about 174 words from a 5,550-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-vh-6sisOncs.md:42</span> &mdash; <span class="cite-size">excerpt of about 174 words from a 5,548-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -241,7 +241,7 @@ It should be noted that in the sense in which we shall use these terms, they des
 > him He\'s the reason Okay The first is that science operates based on paradigms or holistic culturally inherited theories that help us to make sense of experiences
 So a paradigm is basically a world view like the Islamic world view is a paradigm
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:53</span> &mdash; <span class="cite-size">excerpt of about 43 words from a 5,259-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-WED5mPmO_yU.md:53</span> &mdash; <span class="cite-size">excerpt of about 43 words from a 5,257-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -259,7 +259,7 @@ Well, it\'s like, well, okay, but that\'s not answering the question.
 Because you just said that science is the only way to know anything.
 And just because it works, doesn\'t necessitate that you\'ve proven that statement correct.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:174</span> &mdash; <span class="cite-size">excerpt of about 145 words from a 4,619-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:174</span> &mdash; <span class="cite-size">excerpt of about 145 words from a 4,617-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -299,7 +299,7 @@ And just because it works, doesn\'t necessitate that you\'ve proven that stateme
 which is why you got the young Turks.
 That\'s right. All the reforms, the Tanzimat reforms were based on French positivism, French society.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:206</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 4,619-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-tIFhyQtxQXg.md:206</span> &mdash; <span class="cite-size">excerpt of about 34 words from a 4,617-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -466,7 +466,7 @@ les traductions, ce sont faites, mais c\'est pas du tout, c\'est construit sur q
 tout à fait pragmatique, c\'est pour que l\'empire marche bien, il fallait qu\'on se développe
 au niveau scientifique. Et donc derrière la science a été recherchée, elle a été traduite,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:365</span> &mdash; <span class="cite-size">excerpt of about 73 words from a 8,225-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-DA9JGrHKHZA.md:365</span> &mdash; <span class="cite-size">excerpt of about 73 words from a 8,223-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -561,25 +561,25 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a></li>
 </ul><h3 class="shelf-kind">Transcripts (8)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/fq1WejCHgXs-duplicate-upload/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4] - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/4maSZMzhmuI-duplicate-upload/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs] - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/kDH1BOyhhYk-duplicate-upload/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU] - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/eQ-frTAlcJc-duplicate-upload/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg] - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/hURJIIm0tSY-duplicate-upload/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y] - transcript of a duplicate upload</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fq1WejCHgXs-duplicate-upload/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/4maSZMzhmuI-duplicate-upload/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/kDH1BOyhhYk-duplicate-upload/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/eQ-frTAlcJc-duplicate-upload/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/hURJIIm0tSY-duplicate-upload/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 - transcript of a duplicate upload</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project)</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage</a></li>
 </ul><h3 class="shelf-kind">Recordings (9)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/PoNiuiP3W4Y/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/X36xEj0OSV4/">16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1</a></li>
+      <li><a href="{{ site.baseurl }}/videos/vh-6sisOncs/">17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2</a></li>
+      <li><a href="{{ site.baseurl }}/videos/WED5mPmO_yU/">18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3</a></li>
+      <li><a href="{{ site.baseurl }}/videos/tIFhyQtxQXg/">19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4</a></li>
+      <li><a href="{{ site.baseurl }}/videos/PoNiuiP3W4Y/">20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5</a></li>
+      <li><a href="{{ site.baseurl }}/videos/0snGWjeqEeM/">23 - Islam, Science and History (Reupload from Andalusian Project)</a></li>
+      <li><a href="{{ site.baseurl }}/videos/DA9JGrHKHZA/">27 - La structure de la productivité scientifique dans la civilisation musulmane</a></li>
+      <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage</a></li>
 </ul>
 
 <h2>Everything in this cluster</h2>

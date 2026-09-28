@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]"
+title: "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1"
 transcript_id: "X36xEj0OSV4"
 recording: "X36xEj0OSV4"
 capture_video_id: "X36xEj0OSV4"
@@ -17,7 +17,7 @@ capture_file: "whisper-X36xEj0OSV4.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]
+# 16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1
 
 This is the capture taken from the catalogued recording itself.
 

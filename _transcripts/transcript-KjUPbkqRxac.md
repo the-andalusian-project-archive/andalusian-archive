@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]"
+title: "49 - Book Recommendations #1｜｜ Asadullah Andalusi"
 transcript_id: "KjUPbkqRxac"
 recording: "KjUPbkqRxac"
 capture_video_id: "KjUPbkqRxac"
@@ -17,7 +17,7 @@ capture_file: "cap-KjUPbkqRxac.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]
+# 49 - Book Recommendations #1｜｜ Asadullah Andalusi
 
 This is the capture taken from the catalogued recording itself.
 

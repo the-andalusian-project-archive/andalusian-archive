@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]"
+title: "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD"
 video_id: "A3dbBCBSFKk"
 id: "A3dbBCBSFKk"
 permalink: "/videos/A3dbBCBSFKk/"
@@ -14,7 +14,7 @@ topics: ["debate", "philosophy", "critical thinking"]
 mirror_urls: []
 ---
 
-# 28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]
+# 28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

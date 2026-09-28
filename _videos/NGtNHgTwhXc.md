@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]"
+title: "54 - Book Recommendations #3 ｜｜ Asadullah Andalusi"
 video_id: "NGtNHgTwhXc"
 id: "NGtNHgTwhXc"
 permalink: "/videos/NGtNHgTwhXc/"
@@ -14,7 +14,7 @@ topics: ["literature", "education", "resources"]
 mirror_urls: []
 ---
 
-# 54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]
+# 54 - Book Recommendations #3 ｜｜ Asadullah Andalusi
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

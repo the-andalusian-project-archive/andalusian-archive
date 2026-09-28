@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]"
+title: "42 - iJihad Ep. 6： Apostate Prophet"
 video_id: "Mj_J1Rk1esY"
 id: "Mj_J1Rk1esY"
 permalink: "/videos/Mj_J1Rk1esY/"
@@ -14,7 +14,7 @@ topics: ["islamic law", "jurisprudence", "history"]
 mirror_urls: ["https://www.youtube.com/watch?v=TnVPNAlCYy4"]
 ---
 
-# 42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]
+# 42 - iJihad Ep. 6： Apostate Prophet
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

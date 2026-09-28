@@ -153,7 +153,7 @@ know they read it as though from so showcasing their lack of reading comprehensi
 words because when you when when you have to completely erase the word between there in order to make your
 point it showcases that you know you really don\'t know what you\'re talking about You\' never read anything in your entire life so you know these very
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:216</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 29,793-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:216</span> &mdash; <span class="cite-size">excerpt of about 71 words from a 29,781-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -228,7 +228,7 @@ point it showcases that you know you really don\'t know what you\'re talking abo
 not to give scientific information but a
 general statement like that can be so easily Twisted by these individuals desperate to find a rationalization for
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:229</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 29,793-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-Dr5IgXCHRIE.md:229</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 29,781-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -264,7 +264,7 @@ paternal genitalia
 and taraib is supposed to be rendered as the maternal
 genitalia so the private parts of your mother and father and
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-yUpHMaFHZ6s.md:72</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,218-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs'</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-yUpHMaFHZ6s.md:72</span> &mdash; <span class="cite-size">excerpt of about 38 words from a 1,208-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -374,20 +374,20 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/papers/the-qur-an-and-science-a-forced-marriage/">The Qur'an and Science: A Forced Marriage</a></li>
 </ul><h3 class="shelf-kind">Transcripts (1)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage</a></li>
 </ul><h3 class="shelf-kind">Recordings (11)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea</a></li>
       <li><a href="{{ site.baseurl }}/videos/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fJs5tuFw-UY/">32 - The Qur'an and Science： A Forced Marriage</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a></li>
+      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2</a></li>
+      <li><a href="{{ site.baseurl }}/videos/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet</a></li>
 </ul>
 
 <h2>Everything in this cluster</h2>
@@ -400,7 +400,7 @@ of these pages.</p>
 <tr><td><a href="{{ site.baseurl }}/articles/lost-in-time-translation/">Lost in Time-Translation</a></td><td>work</td><td>4</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/of-context-and-confusion/">Of Context and Confusion</a></td><td>work</td><td>2</td><td><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/the-quran-science-a-forced-marriage/">The Quran, Science: A Forced Marriage</a></td><td>work</td><td>5</td><td><a href="{{ site.baseurl }}/topics/science-scientism/">Science, Faith and Scientism</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/yUpHMaFHZ6s/">41 - 'Between a Backbone and Ribs'</a></td><td>transcript</td><td>3</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/Dr5IgXCHRIE/">39 - Ex-Muslims, Pragmatism, and Islamic Futurism</a></td><td>transcript</td><td>3</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 </tbody>
 </table>

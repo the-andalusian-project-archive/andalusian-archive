@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]"
+title: "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi"
 video_id: "Qiay_L4IQ88"
 id: "Qiay_L4IQ88"
 permalink: "/videos/Qiay_L4IQ88/"
@@ -14,7 +14,7 @@ topics: ["literature", "education", "resources"]
 mirror_urls: []
 ---
 
-# 52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]
+# 52 - Book Recommendations #2 ｜｜ Asadullah Andalusi
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

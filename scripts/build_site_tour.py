@@ -49,7 +49,7 @@ WORK = ROOT / "_staging" / "demo-tour-work"
 # rather than the code growing a drift nobody asked for.
 SEGMENTS = [
     # (frame, caption, zoom-in-out, pan)
-    ("01-home",       "The archive - 207 recovered items, counted from the data", 1.05, 1.28),
+    ("01-home",       "The archive - 220 recovered items, counted from the data", 1.05, 1.28),
     ("01-home-b",     "Start with a question, not a name", 1.28, 1.05),
     ("02-topics",     "The questions the recovered work answers", 1.06, 1.26),
     ("03-subject",    "A subject page: the passages, quoted and cited to a line", 1.24, 1.06),
@@ -58,7 +58,7 @@ SEGMENTS = [
     ("05-work",       "One work, with its provenance and recovery verdict", 1.06, 1.24),
     ("06-papers",     "Papers - 20 records, with the PDFs this archive may hold", 1.24, 1.06),
     ("07-paper",      "The full text of a paper, on the page, with its licence", 1.06, 1.24),
-    ("08-transcripts","Transcripts - 68 machine transcripts, 540,995 words", 1.24, 1.06),
+    ("08-transcripts","Transcripts - 79 machine transcripts, 937,738 words", 1.24, 1.06),
     ("09-transcript", "One transcript, with the machine-transcription warning", 1.06, 1.24),
     ("10-channel",    "What happened to the channel, and what survives", 1.24, 1.06),
     ("11-search",     "Search every item, in the browser", 1.06, 1.24),
@@ -160,7 +160,7 @@ def check_captions() -> list[str]:
     captions quote out of _data/ and then requires that every number appearing in
     every caption is one of them - so a caption cannot drift when the catalogue
     changes, and cannot carry a figure nothing derives. Thousands separators are
-    stripped, so "540,995" is compared as 540995.
+    stripped, so "937,738" is compared as 937738.
     """
     facts = caption_numbers()
     allowed = set(facts.values())

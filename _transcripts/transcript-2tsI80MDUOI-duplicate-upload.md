@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload"
+title: "01 - Understanding Atheism ｜ Session 1 - transcript of a duplicate upload"
 transcript_id: "2tsI80MDUOI-duplicate-upload"
 recording: "NyAVl7RsEOs"
 capture_video_id: "2tsI80MDUOI"
@@ -19,7 +19,7 @@ reparented_at: "2026-09-27"
 superseded_reason: "Duplicate re-upload of NyAVl7RsEOs; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-2tsI80MDUOI.en-orig.vtt) is retained; nothing was deleted."
 ---
 
-# 01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload
+# 01 - Understanding Atheism ｜ Session 1 - transcript of a duplicate upload
 
 > This is a transcript of the **same recording** as the page for `NyAVl7RsEOs`. The upload it was captured from (`2tsI80MDUOI`) left the video catalogue as a duplicate; the transcript text was re-parented onto the surviving entry and kept, not deleted. It is published here, attributed, so that its text is readable.
 

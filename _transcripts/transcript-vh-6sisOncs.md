@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]"
+title: "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2"
 transcript_id: "vh-6sisOncs"
 recording: "vh-6sisOncs"
 capture_video_id: "vh-6sisOncs"
@@ -17,7 +17,7 @@ capture_file: "whisper-vh-6sisOncs.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]
+# 17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2
 
 This is the capture taken from the catalogued recording itself.
 

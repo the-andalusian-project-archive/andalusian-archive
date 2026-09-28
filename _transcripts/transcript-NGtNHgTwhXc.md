@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]"
+title: "54 - Book Recommendations #3 ｜｜ Asadullah Andalusi"
 transcript_id: "NGtNHgTwhXc"
 recording: "NGtNHgTwhXc"
 capture_video_id: "NGtNHgTwhXc"
@@ -17,7 +17,7 @@ capture_file: "cap-NGtNHgTwhXc.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]
+# 54 - Book Recommendations #3 ｜｜ Asadullah Andalusi
 
 This is the capture taken from the catalogued recording itself.
 

@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]"
+title: "30 - iKhalifa 1： Appreciate Others"
 transcript_id: "rtViqNWY1Bk"
 recording: "rtViqNWY1Bk"
 capture_video_id: "rtViqNWY1Bk"
@@ -17,7 +17,7 @@ capture_file: "whisper-rtViqNWY1Bk.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]
+# 30 - iKhalifa 1： Appreciate Others
 
 This is the capture taken from the catalogued recording itself.
 

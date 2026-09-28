@@ -212,7 +212,7 @@ said at the foot of the page.</p>
 wrong to steal and it\'s always wrong to
 abuse and to take advantage of children but what does change are the conditions of humanity
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:81</span> &mdash; <span class="cite-size">excerpt of about 39 words from a 993-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">29 - Understanding the Age of Aisha</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-qBkiwqMucY0.md:81</span> &mdash; <span class="cite-size">excerpt of about 39 words from a 983-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -320,7 +320,7 @@ rather than papered over; the reading list above is the place to go.</p>
 of these pages.</p>
 <h3 class="shelf-kind">Recordings (2)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/qBkiwqMucY0/">29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi</a></li>
       <li><a href="{{ site.baseurl }}/videos/RWE-e_l-sKs/">BIG DEBATE: Atheism VS Islam on Women, Animal Rights, Gay Marriage &amp; Education</a></li>
 </ul>
 
@@ -342,7 +342,7 @@ of these pages.</p>
 <tr><td><a href="{{ site.baseurl }}/articles/do-muslim-women-need-feminism-debate/">Do Muslim Women Need Feminism? (Debate)</a></td><td>article</td><td>2</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/mdi/religion-vs-paedophilia-part-3/">Religion vs. Paedophilia [Part 3]</a></td><td>article</td><td>3</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/ijihad-pilot-and-first-2-episodes/">iJihad (Pilot and First 2 Episodes)</a></td><td>transcript</td><td>2</td><td><a href="{{ site.baseurl }}/topics/terrorism-extremism/">Terrorism, Extremism and Violence</a></td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi</a></td><td>transcript</td><td>5</td><td>&mdash;</td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/qBkiwqMucY0/">29 - Understanding the Age of Aisha</a></td><td>transcript</td><td>5</td><td>&mdash;</td></tr>
 </tbody>
 </table>
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]"
+title: "21 - Coils of the Arab Spring"
 video_id: "OTcAF8T-gD4"
 id: "OTcAF8T-gD4"
 permalink: "/videos/OTcAF8T-gD4/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: ["https://www.youtube.com/watch?v=k2F9hgIxreE"]
 ---
 
-# 21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]
+# 21 - Coils of the Arab Spring
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

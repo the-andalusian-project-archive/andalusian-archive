@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]"
+title: "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂"
 video_id: "IhE3ka7SQQs"
 id: "IhE3ka7SQQs"
 permalink: "/videos/IhE3ka7SQQs/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]
+# 43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]"
+title: "47 - ＂Should We Cancel Scholars？＂"
 video_id: "rhufN0me6xg"
 id: "rhufN0me6xg"
 permalink: "/videos/rhufN0me6xg/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]
+# 47 - ＂Should We Cancel Scholars？＂
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

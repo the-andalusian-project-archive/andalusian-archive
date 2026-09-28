@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]"
+title: "14 - iJihad Ep. 5： The Masked Arab Returns"
 video_id: "Zo-VRMEY-ic"
 id: "Zo-VRMEY-ic"
 permalink: "/videos/Zo-VRMEY-ic/"
@@ -14,7 +14,7 @@ topics: ["islamic law", "jurisprudence", "history"]
 mirror_urls: ["https://www.youtube.com/watch?v=LDxLbvG7sVo"]
 ---
 
-# 14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]
+# 14 - iJihad Ep. 5： The Masked Arab Returns
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

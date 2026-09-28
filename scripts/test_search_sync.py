@@ -21,9 +21,13 @@ BASE = pathlib.Path(__file__).parent.parent
 #   videos  68 -> 67 (I2: 12 superseded mirrors removed, 11 new entries added)
 #              -> 68 (amendment A: G47Stp3pLss restored as a counted work by
 #                      user decision, not as a mirror of 7KBCENktOOU)
+#              -> 81 (2026-09-29: thirteen videos verified absent by id and
+#                      catalogued; eleven carried a YouTube caption track and are
+#                      published as transcripts, two have no caption track at all
+#                      and are catalogued as records without text)
 #   captures 87     (CDX capture records; metadata, never counted as works)
 EXPECT_COUNTS = {
-    "videos.json": 68,
+    "videos.json": 81,
     "papers.json": 20,
     "canonical_works.json": 72,
     "blog_posts.json": 87,
@@ -156,7 +160,7 @@ def main():
     if searchable != 160:
         fail("searchable total is %d, not the published 160" % searchable)
     else:
-        print("PASS: searchable total = %d (72 works + 68 videos + 20 papers)"
+        print("PASS: searchable total = %d (72 works + 81 videos + 20 papers)"
               % searchable)
     print("test_search_sync: ALL PASS")
     return 0

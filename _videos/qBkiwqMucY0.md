@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]"
+title: "29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi"
 video_id: "qBkiwqMucY0"
 id: "qBkiwqMucY0"
 permalink: "/videos/qBkiwqMucY0/"
@@ -14,7 +14,7 @@ topics: ["history", "methodology", "biography"]
 mirror_urls: ["https://www.youtube.com/watch?v=6BpJxBdJtY4"]
 ---
 
-# 29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]
+# 29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

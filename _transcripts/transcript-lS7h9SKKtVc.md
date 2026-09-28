@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]"
+title: "06 - Understanding Atheism ｜ Session 6"
 transcript_id: "lS7h9SKKtVc"
 recording: "lS7h9SKKtVc"
 capture_video_id: "lS7h9SKKtVc"
@@ -17,7 +17,7 @@ capture_file: "whisper-lS7h9SKKtVc.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]
+# 06 - Understanding Atheism ｜ Session 6
 
 This is the capture taken from the catalogued recording itself.
 

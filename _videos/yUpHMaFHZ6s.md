@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]"
+title: "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi"
 video_id: "yUpHMaFHZ6s"
 id: "yUpHMaFHZ6s"
 permalink: "/videos/yUpHMaFHZ6s/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]
+# 41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

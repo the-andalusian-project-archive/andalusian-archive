@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]"
+title: "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam"
 video_id: "1U6VfHosrqw"
 id: "1U6VfHosrqw"
 permalink: "/videos/1U6VfHosrqw/"
@@ -14,7 +14,7 @@ topics: ["islam", "theology", "comparative religion"]
 mirror_urls: []
 ---
 
-# 33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]
+# 33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

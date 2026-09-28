@@ -10,8 +10,6 @@ alternate_urls: ["https://web.archive.org/web/20210729023419/http://asadullahali
 alternate_note: "A Wayback sweep of every capture of this URL (F4, 2026-09-27) selected 20210729023419 as the longest capture (46900 w); the timestamp recorded in wayback_url is an earlier capture of the same page. Fuller versions were diffed and adopted, never summed - see the post's provenance front matter."
 local_post: "_posts/2020-08-10-reviewing-haqiqatjou.md"
 local_post_url: "/articles/current issues/daniel haqiqatjou/refutation/sharia/reviewing-haqiqatjou/"
-wordpress_url: "https://asadullahali.wordpress.com/2020/08/10/reviewing-haqiqatjou/"
-wordpress_note: "Live first-party copy on the author's own WordPress mirror, verified 2026-09-28 with a 438,398-character post body. This is not a Wayback replay; it is the original hosting."
 ---
 
 # Reviewing HaqiqatJou

@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]"
+title: "04 - Understanding Atheism ｜ Session 4"
 transcript_id: "wVehdVlLdBI"
 recording: "wVehdVlLdBI"
 capture_video_id: "wVehdVlLdBI"
@@ -17,7 +17,7 @@ capture_file: "whisper-wVehdVlLdBI.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]
+# 04 - Understanding Atheism ｜ Session 4
 
 This is the capture taken from the catalogued recording itself.
 

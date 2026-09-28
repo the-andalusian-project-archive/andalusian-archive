@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]"
+title: "24 - Asadullah Andalusi - MY STORY"
 video_id: "7KBCENktOOU"
 id: "7KBCENktOOU"
 permalink: "/videos/7KBCENktOOU/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: ["https://www.youtube.com/watch?v=D2t0idkAqjA", "https://www.youtube.com/watch?v=DctcuGidoUI"]
 ---
 
-# 24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]
+# 24 - Asadullah Andalusi - MY STORY
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]"
+title: "09 - iJihad Ep. 1： Gryffix"
 video_id: "RnkqSMTzvCg"
 id: "RnkqSMTzvCg"
 permalink: "/videos/RnkqSMTzvCg/"
@@ -14,7 +14,7 @@ topics: ["islamic law", "jurisprudence", "history"]
 mirror_urls: ["https://www.youtube.com/watch?v=D8dvAgZ7vTU"]
 ---
 
-# 09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]
+# 09 - iJihad Ep. 1： Gryffix
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]"
+title: "26 - Atheism： Doubting Your Doubts - Asadullah Ali"
 transcript_id: "_C5ox2zZl0U"
 recording: "_C5ox2zZl0U"
 capture_video_id: "_C5ox2zZl0U"
@@ -17,7 +17,7 @@ capture_file: "cap-_C5ox2zZl0U.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]
+# 26 - Atheism： Doubting Your Doubts - Asadullah Ali
 
 This is the capture taken from the catalogued recording itself.
 

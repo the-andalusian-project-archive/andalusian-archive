@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]"
+title: "46 - ＂Is Allah a Dictator？＂"
 video_id: "wUapqpCqBUk"
 id: "wUapqpCqBUk"
 permalink: "/videos/wUapqpCqBUk/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: ["https://www.youtube.com/watch?v=YjGHZwdM7XU"]
 ---
 
-# 46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]
+# 46 - ＂Is Allah a Dictator？＂
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

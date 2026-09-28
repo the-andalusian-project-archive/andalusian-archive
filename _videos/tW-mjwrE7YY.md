@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]"
+title: "13 - Responding to Comments #1 andalusian project (re upload)"
 video_id: "tW-mjwrE7YY"
 id: "tW-mjwrE7YY"
 permalink: "/videos/tW-mjwrE7YY/"
@@ -14,7 +14,7 @@ topics: ["community", "dialogue", "engagement"]
 mirror_urls: []
 ---
 
-# 13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]
+# 13 - Responding to Comments #1 andalusian project (re upload)
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

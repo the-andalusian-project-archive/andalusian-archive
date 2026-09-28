@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "56 - DanielCompassionateImam [gmGnu1RBAoQ]"
+title: "56 - DanielCompassionateImam"
 video_id: "gmGnu1RBAoQ"
 id: "gmGnu1RBAoQ"
 permalink: "/videos/gmGnu1RBAoQ/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 56 - DanielCompassionateImam [gmGnu1RBAoQ]
+# 56 - DanielCompassionateImam
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

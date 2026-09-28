@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project [unmn_tY5r_c]"
+title: "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project"
 video_id: "unmn_tY5r_c"
 id: "unmn_tY5r_c"
 permalink: "/videos/unmn_tY5r_c/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project [unmn_tY5r_c]
+# 51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

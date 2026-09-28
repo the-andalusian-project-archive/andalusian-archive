@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]"
+title: "12 - iJihad Ep. 4： The Masked Arab"
 video_id: "8rEb8NfMPuc"
 id: "8rEb8NfMPuc"
 permalink: "/videos/8rEb8NfMPuc/"
@@ -14,7 +14,7 @@ topics: ["islamic law", "jurisprudence", "history"]
 mirror_urls: ["https://www.youtube.com/watch?v=P-TMWOR_YYA"]
 ---
 
-# 12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]
+# 12 - iJihad Ep. 4： The Masked Arab
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

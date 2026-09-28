@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]"
+title: "38 - iKhalifa 3： Be Healthy"
 video_id: "Xw2eGP1LRbk"
 id: "Xw2eGP1LRbk"
 permalink: "/videos/Xw2eGP1LRbk/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]
+# 38 - iKhalifa 3： Be Healthy
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

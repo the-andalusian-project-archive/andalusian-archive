@@ -69,16 +69,27 @@ BASE = pathlib.Path(__file__).parent.parent
 # 56 -> 57 and 12 -> 11 on 2026-09-27 (ledger ruling R25, task 8d): G47Stp3pLss's
 # preserved capture is attached to the entry the user restored as a counted
 # work, so it left the catalogue-only set. No other row moved.
-EXPECT_TRANSCRIBED = 57
-EXPECT_VIDEOS = 68
-EXPECT_CATALOGUE_ONLY = 11
+# 68 -> 81, 57 -> 68 and 11 -> 13 on 2026-09-29: thirteen videos verified absent
+# by id were catalogued. Eleven carried a YouTube caption track and are published
+# as transcripts, so the transcribed set rises by eleven and the total by
+# thirteen. The remaining two, Arena episodes 8 and 18, have no caption track at
+# all - `subtitles` offers only live_chat and `automatic_captions` is empty, so
+# they enter the catalogue-only set, which is what `transcripts: 0` means and
+# which 24 wayback_only works and 42 link-outs already do. No existing row moved.
+EXPECT_TRANSCRIBED = 68
+EXPECT_VIDEOS = 81
+EXPECT_CATALOGUE_ONLY = 13
 # The published corpus size, frozen by the approved recount of 2026-09-28 and
 # printed by /transcripts/, by README.md and by llms.txt. 540,995 is the figure
 # the data holds AND the figure the 68 published pages sum to; the check below
 # proves both, so the two cannot drift apart.
-EXPECT_DOCUMENTS = 68
-EXPECT_WORDS = 540995
-EXPECT_PARAGRAPHS = 37388
+#
+# 2026-09-29: eleven new transcripts add 396,743 words, taking the corpus from
+# 540,995 to 937,738 across 79 documents. The figure is re-derived from the same
+# files in the same check, so it cannot be asserted from a stale number.
+EXPECT_DOCUMENTS = 79
+EXPECT_WORDS = 937738
+EXPECT_PARAGRAPHS = 67720
 # Restored as counted works by user decision (2026-09-27); their rows stay in
 # superseded_videos.json as the audit trail but they are no longer superseded.
 RESTORED_AS_WORKS = {"G47Stp3pLss"}

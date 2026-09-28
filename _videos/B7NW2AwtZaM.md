@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]"
+title: "44 - Finding Roots in Islam： The Struggle of Reverts"
 video_id: "B7NW2AwtZaM"
 id: "B7NW2AwtZaM"
 permalink: "/videos/B7NW2AwtZaM/"
@@ -14,7 +14,7 @@ topics: ["islam", "theology", "comparative religion"]
 mirror_urls: []
 ---
 
-# 44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]
+# 44 - Finding Roots in Islam： The Struggle of Reverts
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

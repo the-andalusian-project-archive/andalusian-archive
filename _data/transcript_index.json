@@ -3,14 +3,14 @@
   "generated_on": "2026-09-27",
   "reads": "_data/transcript_coverage.json and the capture files it names under .firecrawl/transcripts/ (read-only)",
   "disclaimer": "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source.",
-  "documents": 68,
-  "words": 540995,
-  "paragraphs": 37388,
+  "documents": 79,
+  "words": 937738,
+  "paragraphs": 67720,
   "alternate_captures": 10,
-  "recordings": 58,
-  "catalogued_videos": 68,
-  "videos_attached": 57,
-  "videos_catalogue_only": 11,
+  "recordings": 69,
+  "catalogued_videos": 81,
+  "videos_attached": 68,
+  "videos_catalogue_only": 13,
   "role_notes": {
     "own-capture": "This is the capture taken from the catalogued recording itself.",
     "duplicate-upload": "This is an additional transcript of the same recording, taken from a duplicate upload that left the video catalogue under the count-once rule. It is not a separate recording, and it is not counted again.",
@@ -21,7 +21,7 @@
     "-BwP55UIg3c": [
       {
         "transcript_id": "-BwP55UIg3c",
-        "title": "31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]",
+        "title": "31 - iKhalifa 2： Forgive Yourself",
         "role": "own-capture",
         "url": "/transcripts/-BwP55UIg3c/",
         "capture_video_id": "-BwP55UIg3c",
@@ -37,7 +37,7 @@
     "0snGWjeqEeM": [
       {
         "transcript_id": "0snGWjeqEeM",
-        "title": "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]",
+        "title": "23 - Islam, Science and History (Reupload from Andalusian Project)",
         "role": "own-capture",
         "url": "/transcripts/0snGWjeqEeM/",
         "capture_video_id": "0snGWjeqEeM",
@@ -69,7 +69,7 @@
     "1U6VfHosrqw": [
       {
         "transcript_id": "1U6VfHosrqw",
-        "title": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam ｜ MSA OSU by Andalusian Project [1U6VfHosrqw]",
+        "title": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam",
         "role": "own-capture",
         "url": "/transcripts/1U6VfHosrqw/",
         "capture_video_id": "1U6VfHosrqw",
@@ -85,7 +85,7 @@
     "4VcPzhkP9bE": [
       {
         "transcript_id": "4VcPzhkP9bE",
-        "title": "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]",
+        "title": "08 - Islam and Terrorism",
         "role": "own-capture",
         "url": "/transcripts/4VcPzhkP9bE/",
         "capture_video_id": "4VcPzhkP9bE",
@@ -101,7 +101,7 @@
     "7KBCENktOOU": [
       {
         "transcript_id": "7KBCENktOOU",
-        "title": "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU]",
+        "title": "24 - Asadullah Andalusi - MY STORY",
         "role": "own-capture",
         "url": "/transcripts/7KBCENktOOU/",
         "capture_video_id": "7KBCENktOOU",
@@ -115,7 +115,7 @@
       },
       {
         "transcript_id": "D2t0idkAqjA-duplicate-upload",
-        "title": "24 - Asadullah Andalusi - MY STORY ｜｜ The Andalusian Project [7KBCENktOOU] - transcript of a duplicate upload",
+        "title": "24 - Asadullah Andalusi - MY STORY - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/D2t0idkAqjA-duplicate-upload/",
         "capture_video_id": "D2t0idkAqjA",
@@ -131,7 +131,7 @@
     "7Rzu6BjvxjY": [
       {
         "transcript_id": "7Rzu6BjvxjY",
-        "title": "07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]",
+        "title": "07 - Towards Litter Reduction： An Islamic Approach",
         "role": "own-capture",
         "url": "/transcripts/7Rzu6BjvxjY/",
         "capture_video_id": "7Rzu6BjvxjY",
@@ -147,7 +147,7 @@
     "8rEb8NfMPuc": [
       {
         "transcript_id": "8rEb8NfMPuc",
-        "title": "12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]",
+        "title": "12 - iJihad Ep. 4： The Masked Arab",
         "role": "own-capture",
         "url": "/transcripts/8rEb8NfMPuc/",
         "capture_video_id": "8rEb8NfMPuc",
@@ -163,7 +163,7 @@
     "8vxbN2jZL6M": [
       {
         "transcript_id": "8vxbN2jZL6M",
-        "title": "35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]",
+        "title": "35 - Understanding Jihad w⧸ Robert Spencer (Preface)",
         "role": "own-capture",
         "url": "/transcripts/8vxbN2jZL6M/",
         "capture_video_id": "8vxbN2jZL6M",
@@ -179,7 +179,7 @@
     "A3dbBCBSFKk": [
       {
         "transcript_id": "A3dbBCBSFKk",
-        "title": "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD [A3dbBCBSFKk]",
+        "title": "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD",
         "role": "own-capture",
         "url": "/transcripts/A3dbBCBSFKk/",
         "capture_video_id": "A3dbBCBSFKk",
@@ -195,7 +195,7 @@
     "B7NW2AwtZaM": [
       {
         "transcript_id": "B7NW2AwtZaM",
-        "title": "44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]",
+        "title": "44 - Finding Roots in Islam： The Struggle of Reverts",
         "role": "own-capture",
         "url": "/transcripts/B7NW2AwtZaM/",
         "capture_video_id": "B7NW2AwtZaM",
@@ -211,7 +211,7 @@
     "BRDaCqipcwM": [
       {
         "transcript_id": "BRDaCqipcwM",
-        "title": "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]",
+        "title": "05 - Understanding Atheism ｜ Session 5",
         "role": "own-capture",
         "url": "/transcripts/BRDaCqipcwM/",
         "capture_video_id": "BRDaCqipcwM",
@@ -227,7 +227,7 @@
     "CEzMdCn0Ims": [
       {
         "transcript_id": "CEzMdCn0Ims",
-        "title": "02 - Understanding Atheism ｜ Session 2 [CEzMdCn0Ims]",
+        "title": "02 - Understanding Atheism ｜ Session 2",
         "role": "own-capture",
         "url": "/transcripts/CEzMdCn0Ims/",
         "capture_video_id": "CEzMdCn0Ims",
@@ -243,7 +243,7 @@
     "DA9JGrHKHZA": [
       {
         "transcript_id": "DA9JGrHKHZA",
-        "title": "27 - La structure de la productivité scientifique dans la civilisation musulmane [DA9JGrHKHZA]",
+        "title": "27 - La structure de la productivité scientifique dans la civilisation musulmane",
         "role": "own-capture",
         "url": "/transcripts/DA9JGrHKHZA/",
         "capture_video_id": "DA9JGrHKHZA",
@@ -259,7 +259,7 @@
     "Dr5IgXCHRIE": [
       {
         "transcript_id": "Dr5IgXCHRIE",
-        "title": "39 - Ex-Muslims, Pragmatism, and Islamic Futurism ｜ Al-Fursan Initiative (\"re upload\") [Dr5IgXCHRIE]",
+        "title": "39 - Ex-Muslims, Pragmatism, and Islamic Futurism",
         "role": "own-capture",
         "url": "/transcripts/Dr5IgXCHRIE/",
         "capture_video_id": "Dr5IgXCHRIE",
@@ -291,7 +291,7 @@
     "IhE3ka7SQQs": [
       {
         "transcript_id": "IhE3ka7SQQs",
-        "title": "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂ ｜ i3 Canada [IhE3ka7SQQs]",
+        "title": "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂",
         "role": "own-capture",
         "url": "/transcripts/IhE3ka7SQQs/",
         "capture_video_id": "IhE3ka7SQQs",
@@ -307,7 +307,7 @@
     "KjUPbkqRxac": [
       {
         "transcript_id": "KjUPbkqRxac",
-        "title": "49 - Book Recommendations #1｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [KjUPbkqRxac]",
+        "title": "49 - Book Recommendations #1｜｜ Asadullah Andalusi",
         "role": "own-capture",
         "url": "/transcripts/KjUPbkqRxac/",
         "capture_video_id": "KjUPbkqRxac",
@@ -323,7 +323,7 @@
     "Mj_J1Rk1esY": [
       {
         "transcript_id": "Mj_J1Rk1esY",
-        "title": "42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]",
+        "title": "42 - iJihad Ep. 6： Apostate Prophet",
         "role": "own-capture",
         "url": "/transcripts/Mj_J1Rk1esY/",
         "capture_video_id": "Mj_J1Rk1esY",
@@ -339,7 +339,7 @@
     "NGtNHgTwhXc": [
       {
         "transcript_id": "NGtNHgTwhXc",
-        "title": "54 - Book Recommendations #3  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [NGtNHgTwhXc]",
+        "title": "54 - Book Recommendations #3 ｜｜ Asadullah Andalusi",
         "role": "own-capture",
         "url": "/transcripts/NGtNHgTwhXc/",
         "capture_video_id": "NGtNHgTwhXc",
@@ -355,7 +355,7 @@
     "NyAVl7RsEOs": [
       {
         "transcript_id": "NyAVl7RsEOs",
-        "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs]",
+        "title": "01 - Understanding Atheism ｜ Session 1",
         "role": "own-capture",
         "url": "/transcripts/NyAVl7RsEOs/",
         "capture_video_id": "NyAVl7RsEOs",
@@ -369,7 +369,7 @@
       },
       {
         "transcript_id": "2tsI80MDUOI-duplicate-upload",
-        "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload",
+        "title": "01 - Understanding Atheism ｜ Session 1 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/2tsI80MDUOI-duplicate-upload/",
         "capture_video_id": "2tsI80MDUOI",
@@ -383,7 +383,7 @@
       },
       {
         "transcript_id": "EK5oppX6C2U-duplicate-upload",
-        "title": "01 - Understanding Atheism ｜ Session 1 [NyAVl7RsEOs] - transcript of a duplicate upload",
+        "title": "01 - Understanding Atheism ｜ Session 1 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/EK5oppX6C2U-duplicate-upload/",
         "capture_video_id": "EK5oppX6C2U",
@@ -399,7 +399,7 @@
     "OTcAF8T-gD4": [
       {
         "transcript_id": "OTcAF8T-gD4",
-        "title": "21 - Coils of the Arab Spring ｜ Interviewing Dr. Sean Foley [OTcAF8T-gD4]",
+        "title": "21 - Coils of the Arab Spring",
         "role": "own-capture",
         "url": "/transcripts/OTcAF8T-gD4/",
         "capture_video_id": "OTcAF8T-gD4",
@@ -415,7 +415,7 @@
     "PoNiuiP3W4Y": [
       {
         "transcript_id": "PoNiuiP3W4Y",
-        "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y]",
+        "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5",
         "role": "own-capture",
         "url": "/transcripts/PoNiuiP3W4Y/",
         "capture_video_id": "PoNiuiP3W4Y",
@@ -429,7 +429,7 @@
       },
       {
         "transcript_id": "hURJIIm0tSY-duplicate-upload",
-        "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 [PoNiuiP3W4Y] - transcript of a duplicate upload",
+        "title": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/hURJIIm0tSY-duplicate-upload/",
         "capture_video_id": "hURJIIm0tSY",
@@ -445,7 +445,7 @@
     "Qiay_L4IQ88": [
       {
         "transcript_id": "Qiay_L4IQ88",
-        "title": "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [Qiay_L4IQ88]",
+        "title": "52 - Book Recommendations #2 ｜｜ Asadullah Andalusi",
         "role": "own-capture",
         "url": "/transcripts/Qiay_L4IQ88/",
         "capture_video_id": "Qiay_L4IQ88",
@@ -461,7 +461,7 @@
     "RnkqSMTzvCg": [
       {
         "transcript_id": "RnkqSMTzvCg",
-        "title": "09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]",
+        "title": "09 - iJihad Ep. 1： Gryffix",
         "role": "own-capture",
         "url": "/transcripts/RnkqSMTzvCg/",
         "capture_video_id": "RnkqSMTzvCg",
@@ -477,7 +477,7 @@
     "WED5mPmO_yU": [
       {
         "transcript_id": "WED5mPmO_yU",
-        "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]",
+        "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3",
         "role": "own-capture",
         "url": "/transcripts/WED5mPmO_yU/",
         "capture_video_id": "WED5mPmO_yU",
@@ -491,7 +491,7 @@
       },
       {
         "transcript_id": "kDH1BOyhhYk-duplicate-upload",
-        "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU] - transcript of a duplicate upload",
+        "title": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/kDH1BOyhhYk-duplicate-upload/",
         "capture_video_id": "kDH1BOyhhYk",
@@ -507,7 +507,7 @@
     "X36xEj0OSV4": [
       {
         "transcript_id": "X36xEj0OSV4",
-        "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4]",
+        "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1",
         "role": "own-capture",
         "url": "/transcripts/X36xEj0OSV4/",
         "capture_video_id": "X36xEj0OSV4",
@@ -521,7 +521,7 @@
       },
       {
         "transcript_id": "fq1WejCHgXs-duplicate-upload",
-        "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 [X36xEj0OSV4] - transcript of a duplicate upload",
+        "title": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/fq1WejCHgXs-duplicate-upload/",
         "capture_video_id": "fq1WejCHgXs",
@@ -537,7 +537,7 @@
     "Xw2eGP1LRbk": [
       {
         "transcript_id": "Xw2eGP1LRbk",
-        "title": "38 - iKhalifa 3： Be Healthy [Xw2eGP1LRbk]",
+        "title": "38 - iKhalifa 3： Be Healthy",
         "role": "own-capture",
         "url": "/transcripts/Xw2eGP1LRbk/",
         "capture_video_id": "Xw2eGP1LRbk",
@@ -553,7 +553,7 @@
     "Yu8rw5M0GF8": [
       {
         "transcript_id": "Yu8rw5M0GF8",
-        "title": "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project [Yu8rw5M0GF8]",
+        "title": "48 - (Reupload - Read Description) ＂How NOT to be a Critic＂ by Andalusian Project",
         "role": "own-capture",
         "url": "/transcripts/Yu8rw5M0GF8/",
         "capture_video_id": "Yu8rw5M0GF8",
@@ -569,7 +569,7 @@
     "ZbcsxAoIVY0": [
       {
         "transcript_id": "ZbcsxAoIVY0",
-        "title": "25 - Atheism：  Doubting Your Doubts ｜ Yaqeen in New York [ZbcsxAoIVY0]",
+        "title": "25 - Atheism： Doubting Your Doubts",
         "role": "own-capture",
         "url": "/transcripts/ZbcsxAoIVY0/",
         "capture_video_id": "ZbcsxAoIVY0",
@@ -585,7 +585,7 @@
     "Zo-VRMEY-ic": [
       {
         "transcript_id": "Zo-VRMEY-ic",
-        "title": "14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]",
+        "title": "14 - iJihad Ep. 5： The Masked Arab Returns",
         "role": "own-capture",
         "url": "/transcripts/Zo-VRMEY-ic/",
         "capture_video_id": "Zo-VRMEY-ic",
@@ -601,7 +601,7 @@
     "_C5ox2zZl0U": [
       {
         "transcript_id": "_C5ox2zZl0U",
-        "title": "26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]",
+        "title": "26 - Atheism： Doubting Your Doubts - Asadullah Ali",
         "role": "own-capture",
         "url": "/transcripts/_C5ox2zZl0U/",
         "capture_video_id": "_C5ox2zZl0U",
@@ -617,7 +617,7 @@
     "a1e0BMRLlr0": [
       {
         "transcript_id": "a1e0BMRLlr0",
-        "title": "50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]",
+        "title": "50 - Librarianship and Information Literacy",
         "role": "own-capture",
         "url": "/transcripts/a1e0BMRLlr0/",
         "capture_video_id": "a1e0BMRLlr0",
@@ -633,7 +633,7 @@
     "aTJMDFJdgdg": [
       {
         "transcript_id": "aTJMDFJdgdg",
-        "title": "37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]",
+        "title": "37 - Understanding Jihad w⧸ Robert Spencer #2",
         "role": "own-capture",
         "url": "/transcripts/aTJMDFJdgdg/",
         "capture_video_id": "aTJMDFJdgdg",
@@ -649,7 +649,7 @@
     "bDshE-aKXIA": [
       {
         "transcript_id": "bDshE-aKXIA",
-        "title": "15 - The Masked Arab： A Eulogy [bDshE-aKXIA]",
+        "title": "15 - The Masked Arab： A Eulogy",
         "role": "own-capture",
         "url": "/transcripts/bDshE-aKXIA/",
         "capture_video_id": "bDshE-aKXIA",
@@ -665,7 +665,7 @@
     "biZFuWyB4lk": [
       {
         "transcript_id": "biZFuWyB4lk",
-        "title": "22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]",
+        "title": "22 - Taking Islam Out of Context! (Indeed)",
         "role": "own-capture",
         "url": "/transcripts/biZFuWyB4lk/",
         "capture_video_id": "biZFuWyB4lk",
@@ -681,7 +681,7 @@
     "cDHrrbOKbl4": [
       {
         "transcript_id": "cDHrrbOKbl4",
-        "title": "53 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]",
+        "title": "53 - Virgins in Paradise？ ｜ Answered",
         "role": "own-capture",
         "url": "/transcripts/cDHrrbOKbl4/",
         "capture_video_id": "cDHrrbOKbl4",
@@ -697,7 +697,7 @@
     "fJs5tuFw-UY": [
       {
         "transcript_id": "fJs5tuFw-UY",
-        "title": "32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]",
+        "title": "32 - The Qur'an and Science： A Forced Marriage",
         "role": "own-capture",
         "url": "/transcripts/fJs5tuFw-UY/",
         "capture_video_id": "fJs5tuFw-UY",
@@ -713,7 +713,7 @@
     "fgsVa-khWp4": [
       {
         "transcript_id": "fgsVa-khWp4",
-        "title": "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]",
+        "title": "10 - iJihad： Gryffix and Kraut and Tea",
         "role": "own-capture",
         "url": "/transcripts/fgsVa-khWp4/",
         "capture_video_id": "fgsVa-khWp4",
@@ -729,7 +729,7 @@
     "gmGnu1RBAoQ": [
       {
         "transcript_id": "gmGnu1RBAoQ",
-        "title": "56 - DanielCompassionateImam [gmGnu1RBAoQ]",
+        "title": "56 - DanielCompassionateImam",
         "role": "own-capture",
         "url": "/transcripts/gmGnu1RBAoQ/",
         "capture_video_id": "gmGnu1RBAoQ",
@@ -745,7 +745,7 @@
     "hKdNF95UqVM": [
       {
         "transcript_id": "hKdNF95UqVM",
-        "title": "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]",
+        "title": "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project",
         "role": "own-capture",
         "url": "/transcripts/hKdNF95UqVM/",
         "capture_video_id": "hKdNF95UqVM",
@@ -761,7 +761,7 @@
     "lCqZB8gP4sk": [
       {
         "transcript_id": "lCqZB8gP4sk",
-        "title": "36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]",
+        "title": "36 - Understanding Jihad w⧸ Robert Spencer #1",
         "role": "own-capture",
         "url": "/transcripts/lCqZB8gP4sk/",
         "capture_video_id": "lCqZB8gP4sk",
@@ -777,7 +777,7 @@
     "lS7h9SKKtVc": [
       {
         "transcript_id": "lS7h9SKKtVc",
-        "title": "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc]",
+        "title": "06 - Understanding Atheism ｜ Session 6",
         "role": "own-capture",
         "url": "/transcripts/lS7h9SKKtVc/",
         "capture_video_id": "lS7h9SKKtVc",
@@ -791,7 +791,7 @@
       },
       {
         "transcript_id": "bRTI6Z5gggE-duplicate-upload",
-        "title": "06 - Understanding Atheism ｜ Session 6 [lS7h9SKKtVc] - transcript of a duplicate upload",
+        "title": "06 - Understanding Atheism ｜ Session 6 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/bRTI6Z5gggE-duplicate-upload/",
         "capture_video_id": "bRTI6Z5gggE",
@@ -807,7 +807,7 @@
     "lZkv38vd7bw": [
       {
         "transcript_id": "lZkv38vd7bw",
-        "title": "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]",
+        "title": "03 - Understanding Atheism ｜ Session 3",
         "role": "own-capture",
         "url": "/transcripts/lZkv38vd7bw/",
         "capture_video_id": "lZkv38vd7bw",
@@ -823,7 +823,7 @@
     "nkuZ70p-inE": [
       {
         "transcript_id": "nkuZ70p-inE",
-        "title": "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]",
+        "title": "40 - 4 Lies Muslims Tell About Ex-Muslims？",
         "role": "own-capture",
         "url": "/transcripts/nkuZ70p-inE/",
         "capture_video_id": "nkuZ70p-inE",
@@ -839,7 +839,7 @@
     "qBkiwqMucY0": [
       {
         "transcript_id": "qBkiwqMucY0",
-        "title": "29 - Understanding the Age of Aisha  ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [qBkiwqMucY0]",
+        "title": "29 - Understanding the Age of Aisha ｜｜ Asadullah Andalusi",
         "role": "own-capture",
         "url": "/transcripts/qBkiwqMucY0/",
         "capture_video_id": "qBkiwqMucY0",
@@ -855,7 +855,7 @@
     "rhufN0me6xg": [
       {
         "transcript_id": "rhufN0me6xg",
-        "title": "47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]",
+        "title": "47 - ＂Should We Cancel Scholars？＂",
         "role": "own-capture",
         "url": "/transcripts/rhufN0me6xg/",
         "capture_video_id": "rhufN0me6xg",
@@ -871,7 +871,7 @@
     "rtViqNWY1Bk": [
       {
         "transcript_id": "rtViqNWY1Bk",
-        "title": "30 - iKhalifa 1： Appreciate Others [rtViqNWY1Bk]",
+        "title": "30 - iKhalifa 1： Appreciate Others",
         "role": "own-capture",
         "url": "/transcripts/rtViqNWY1Bk/",
         "capture_video_id": "rtViqNWY1Bk",
@@ -887,7 +887,7 @@
     "tIFhyQtxQXg": [
       {
         "transcript_id": "tIFhyQtxQXg",
-        "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg]",
+        "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4",
         "role": "own-capture",
         "url": "/transcripts/tIFhyQtxQXg/",
         "capture_video_id": "tIFhyQtxQXg",
@@ -901,7 +901,7 @@
       },
       {
         "transcript_id": "eQ-frTAlcJc-duplicate-upload",
-        "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 [tIFhyQtxQXg] - transcript of a duplicate upload",
+        "title": "19 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 4 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/eQ-frTAlcJc-duplicate-upload/",
         "capture_video_id": "eQ-frTAlcJc",
@@ -917,7 +917,7 @@
     "tUHEAejm404": [
       {
         "transcript_id": "tUHEAejm404",
-        "title": "34 - Twitter Assists Islamists! - Asadullah Andalusi ｜｜ The Andalusian Project [tUHEAejm404]",
+        "title": "34 - Twitter Assists Islamists! - Asadullah Andalusi",
         "role": "own-capture",
         "url": "/transcripts/tUHEAejm404/",
         "capture_video_id": "tUHEAejm404",
@@ -933,7 +933,7 @@
     "tW-mjwrE7YY": [
       {
         "transcript_id": "tW-mjwrE7YY",
-        "title": "13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]",
+        "title": "13 - Responding to Comments #1 andalusian project (re upload)",
         "role": "own-capture",
         "url": "/transcripts/tW-mjwrE7YY/",
         "capture_video_id": "tW-mjwrE7YY",
@@ -949,7 +949,7 @@
     "unmn_tY5r_c": [
       {
         "transcript_id": "unmn_tY5r_c",
-        "title": "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project [unmn_tY5r_c]",
+        "title": "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project",
         "role": "own-capture",
         "url": "/transcripts/unmn_tY5r_c/",
         "capture_video_id": "unmn_tY5r_c",
@@ -965,7 +965,7 @@
     "vJRfL4Kal20": [
       {
         "transcript_id": "vJRfL4Kal20",
-        "title": "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]",
+        "title": "55 - Lesson One [Full Lecture]",
         "role": "own-capture",
         "url": "/transcripts/vJRfL4Kal20/",
         "capture_video_id": "vJRfL4Kal20",
@@ -981,7 +981,7 @@
     "vh-6sisOncs": [
       {
         "transcript_id": "vh-6sisOncs",
-        "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]",
+        "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2",
         "role": "own-capture",
         "url": "/transcripts/vh-6sisOncs/",
         "capture_video_id": "vh-6sisOncs",
@@ -995,7 +995,7 @@
       },
       {
         "transcript_id": "4maSZMzhmuI-duplicate-upload",
-        "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs] - transcript of a duplicate upload",
+        "title": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/4maSZMzhmuI-duplicate-upload/",
         "capture_video_id": "4maSZMzhmuI",
@@ -1011,7 +1011,7 @@
     "wUapqpCqBUk": [
       {
         "transcript_id": "wUapqpCqBUk",
-        "title": "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk]",
+        "title": "46 - ＂Is Allah a Dictator？＂",
         "role": "own-capture",
         "url": "/transcripts/wUapqpCqBUk/",
         "capture_video_id": "wUapqpCqBUk",
@@ -1025,7 +1025,7 @@
       },
       {
         "transcript_id": "YjGHZwdM7XU-duplicate-upload",
-        "title": "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk] - transcript of a duplicate upload",
+        "title": "46 - ＂Is Allah a Dictator？＂ - transcript of a duplicate upload",
         "role": "duplicate-upload",
         "url": "/transcripts/YjGHZwdM7XU-duplicate-upload/",
         "capture_video_id": "YjGHZwdM7XU",
@@ -1041,7 +1041,7 @@
     "wVehdVlLdBI": [
       {
         "transcript_id": "wVehdVlLdBI",
-        "title": "04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]",
+        "title": "04 - Understanding Atheism ｜ Session 4",
         "role": "own-capture",
         "url": "/transcripts/wVehdVlLdBI/",
         "capture_video_id": "wVehdVlLdBI",
@@ -1073,7 +1073,7 @@
     "yUpHMaFHZ6s": [
       {
         "transcript_id": "yUpHMaFHZ6s",
-        "title": "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi  ｜｜ The Andalusian Project [yUpHMaFHZ6s]",
+        "title": "41 - 'Between a Backbone and Ribs' ｜｜ Asadullah Andalusi",
         "role": "own-capture",
         "url": "/transcripts/yUpHMaFHZ6s/",
         "capture_video_id": "yUpHMaFHZ6s",
@@ -1084,6 +1084,182 @@
         "words": 964,
         "paragraphs": 73,
         "file": "cap-yUpHMaFHZ6s.en-orig.vtt"
+      }
+    ],
+    "kRCzZW3rg4U": [
+      {
+        "transcript_id": "kRCzZW3rg4U",
+        "title": "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi",
+        "role": "own-capture",
+        "url": "/transcripts/kRCzZW3rg4U/",
+        "capture_video_id": "kRCzZW3rg4U",
+        "recording_url": "/videos/kRCzZW3rg4U/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 3777,
+        "words": 2220,
+        "paragraphs": 218,
+        "file": "cap-kRCzZW3rg4U.en-orig.vtt"
+      }
+    ],
+    "QoU02Om_wiQ": [
+      {
+        "transcript_id": "QoU02Om_wiQ",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 12",
+        "role": "own-capture",
+        "url": "/transcripts/QoU02Om_wiQ/",
+        "capture_video_id": "QoU02Om_wiQ",
+        "recording_url": "/videos/QoU02Om_wiQ/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 68945,
+        "words": 49801,
+        "paragraphs": 3340,
+        "file": "cap-QoU02Om_wiQ.en-orig.vtt"
+      }
+    ],
+    "idz29r5LHig": [
+      {
+        "transcript_id": "idz29r5LHig",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 14",
+        "role": "own-capture",
+        "url": "/transcripts/idz29r5LHig/",
+        "capture_video_id": "idz29r5LHig",
+        "recording_url": "/videos/idz29r5LHig/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 50369,
+        "words": 35960,
+        "paragraphs": 2556,
+        "file": "cap-idz29r5LHig.en-orig.vtt"
+      }
+    ],
+    "MCR3xh8wccQ": [
+      {
+        "transcript_id": "MCR3xh8wccQ",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 16",
+        "role": "own-capture",
+        "url": "/transcripts/MCR3xh8wccQ/",
+        "capture_video_id": "MCR3xh8wccQ",
+        "recording_url": "/videos/MCR3xh8wccQ/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 43761,
+        "words": 31313,
+        "paragraphs": 2092,
+        "file": "cap-MCR3xh8wccQ.en-orig.vtt"
+      }
+    ],
+    "7EqMJJuUKr8": [
+      {
+        "transcript_id": "7EqMJJuUKr8",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 20",
+        "role": "own-capture",
+        "url": "/transcripts/7EqMJJuUKr8/",
+        "capture_video_id": "7EqMJJuUKr8",
+        "recording_url": "/videos/7EqMJJuUKr8/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 49297,
+        "words": 36030,
+        "paragraphs": 2639,
+        "file": "cap-7EqMJJuUKr8.en-orig.vtt"
+      }
+    ],
+    "lE690yapgTA": [
+      {
+        "transcript_id": "lE690yapgTA",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 22",
+        "role": "own-capture",
+        "url": "/transcripts/lE690yapgTA/",
+        "capture_video_id": "lE690yapgTA",
+        "recording_url": "/videos/lE690yapgTA/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 60993,
+        "words": 44198,
+        "paragraphs": 3542,
+        "file": "cap-lE690yapgTA.en-orig.vtt"
+      }
+    ],
+    "0biKKRHO_Tk": [
+      {
+        "transcript_id": "0biKKRHO_Tk",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 24",
+        "role": "own-capture",
+        "url": "/transcripts/0biKKRHO_Tk/",
+        "capture_video_id": "0biKKRHO_Tk",
+        "recording_url": "/videos/0biKKRHO_Tk/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 42145,
+        "words": 30844,
+        "paragraphs": 2364,
+        "file": "cap-0biKKRHO_Tk.en-orig.vtt"
+      }
+    ],
+    "OHNMeqGMdPc": [
+      {
+        "transcript_id": "OHNMeqGMdPc",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 28",
+        "role": "own-capture",
+        "url": "/transcripts/OHNMeqGMdPc/",
+        "capture_video_id": "OHNMeqGMdPc",
+        "recording_url": "/videos/OHNMeqGMdPc/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 56249,
+        "words": 48671,
+        "paragraphs": 4615,
+        "file": "cap-OHNMeqGMdPc.en-orig.vtt"
+      }
+    ],
+    "3vqVYfs5mCk": [
+      {
+        "transcript_id": "3vqVYfs5mCk",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 29",
+        "role": "own-capture",
+        "url": "/transcripts/3vqVYfs5mCk/",
+        "capture_video_id": "3vqVYfs5mCk",
+        "recording_url": "/videos/3vqVYfs5mCk/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 70657,
+        "words": 48581,
+        "paragraphs": 3833,
+        "file": "cap-3vqVYfs5mCk.en-orig.vtt"
+      }
+    ],
+    "n3vhs1mcmVM": [
+      {
+        "transcript_id": "n3vhs1mcmVM",
+        "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 32",
+        "role": "own-capture",
+        "url": "/transcripts/n3vhs1mcmVM/",
+        "capture_video_id": "n3vhs1mcmVM",
+        "recording_url": "/videos/n3vhs1mcmVM/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 60993,
+        "words": 43776,
+        "paragraphs": 3606,
+        "file": "cap-n3vhs1mcmVM.en-orig.vtt"
+      }
+    ],
+    "M3nB154Mkuk": [
+      {
+        "transcript_id": "M3nB154Mkuk",
+        "title": "[VIDEO] Episode 93 - The Akh-Right, LGBTQ & Liberalism",
+        "role": "own-capture",
+        "url": "/transcripts/M3nB154Mkuk/",
+        "capture_video_id": "M3nB154Mkuk",
+        "recording_url": "/videos/M3nB154Mkuk/",
+        "source": "youtube-auto-captions",
+        "lang": "en",
+        "lines": 34425,
+        "words": 25349,
+        "paragraphs": 1527,
+        "file": "cap-M3nB154Mkuk.en-orig.vtt"
       }
     ]
   }

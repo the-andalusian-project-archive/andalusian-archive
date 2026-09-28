@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]"
+title: "07 - Towards Litter Reduction： An Islamic Approach"
 video_id: "7Rzu6BjvxjY"
 id: "7Rzu6BjvxjY"
 permalink: "/videos/7Rzu6BjvxjY/"
@@ -14,7 +14,7 @@ topics: ["islam", "theology", "comparative religion"]
 mirror_urls: []
 ---
 
-# 07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]
+# 07 - Towards Litter Reduction： An Islamic Approach
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

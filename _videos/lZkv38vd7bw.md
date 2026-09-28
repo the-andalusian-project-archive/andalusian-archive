@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]"
+title: "03 - Understanding Atheism ｜ Session 3"
 video_id: "lZkv38vd7bw"
 id: "lZkv38vd7bw"
 permalink: "/videos/lZkv38vd7bw/"
@@ -14,7 +14,7 @@ topics: ["philosophy", "atheism", "epistemology"]
 mirror_urls: ["https://www.youtube.com/watch?v=rRUZSjKBYnY"]
 ---
 
-# 03 - Understanding Atheism ｜ Session 3 [lZkv38vd7bw]
+# 03 - Understanding Atheism ｜ Session 3
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

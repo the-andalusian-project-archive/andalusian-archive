@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]"
+title: "50 - Librarianship and Information Literacy"
 transcript_id: "a1e0BMRLlr0"
 recording: "a1e0BMRLlr0"
 capture_video_id: "a1e0BMRLlr0"
@@ -17,7 +17,7 @@ capture_file: "whisper-a1e0BMRLlr0.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]
+# 50 - Librarianship and Information Literacy
 
 This is the capture taken from the catalogued recording itself.
 

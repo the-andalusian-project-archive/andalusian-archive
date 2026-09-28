@@ -42,7 +42,7 @@ What is the orthodox Islamic perspective on Jihad?
 What is the scholarly interpretation of Jihad, the consensus surrounding it?
 And what did the sources actually say?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:67</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 1,995-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:67</span> &mdash; <span class="cite-size">excerpt of about 53 words from a 1,993-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -89,7 +89,7 @@ And what did the sources actually say?
 until the late 18th century because the word terrorism wasn\'t coined until the late 18th century
 by the political party, the French political party, the Jacobins. And why is this important? Well,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:141</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,806-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:141</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 4,804-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -122,7 +122,7 @@ by the political party, the French political party, the Jacobins. And why is thi
 And what is that? That is basically when somebody intentionally and conveniently dismisses
 or ignores relevant information that undermines their conclusions or the representation of the data.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:115</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,995-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-8vxbN2jZL6M.md:115</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 1,993-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -131,7 +131,7 @@ or ignores relevant information that undermines their conclusions or the represe
 equivocation, which is essentially using a term in two different ways, volatiously, and he\'s also
 committing the define his fallacy, which is essentially defining something unfairly.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:164</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,806-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:164</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 4,804-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -218,7 +218,7 @@ committing the define his fallacy, which is essentially defining something unfai
 defined by how they were used back then. And the word terror is simply to is just extreme fear. That\'s
 all it is. That\'s it. Okay. And that in and of itself is not terrorism.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:237</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,806-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-lCqZB8gP4sk.md:237</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 4,804-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -387,24 +387,24 @@ of these pages.</p>
       <li><a href="{{ site.baseurl }}/articles/mdi/islam-terrorism/">Lecture: 'Islam &amp; Terrorism' [Asadullah Ali al Andalusi]</a></li>
 </ul><h3 class="shelf-kind">Transcripts (6)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/transcripts/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea</a></li>
       <li><a href="{{ site.baseurl }}/transcripts/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
-      <li><a href="{{ site.baseurl }}/transcripts/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns</a></li>
+      <li><a href="{{ site.baseurl }}/transcripts/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet</a></li>
 </ul><h3 class="shelf-kind">Recordings (11)</h3>
 <ul class="shelf-list">
-      <li><a href="{{ site.baseurl }}/videos/4VcPzhkP9bE/">08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix [RnkqSMTzvCg]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/4VcPzhkP9bE/">08 - Islam and Terrorism</a></li>
+      <li><a href="{{ site.baseurl }}/videos/RnkqSMTzvCg/">09 - iJihad Ep. 1： Gryffix</a></li>
+      <li><a href="{{ site.baseurl }}/videos/fgsVa-khWp4/">10 - iJihad： Gryffix and Kraut and Tea</a></li>
       <li><a href="{{ site.baseurl }}/videos/1962338957360877/">11 - iJihad Ep. 3： Sargonic Suicide [1962338957360877]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab [8rEb8NfMPuc]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns [Zo-VRMEY-ic]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface) [8vxbN2jZL6M]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1 [lCqZB8gP4sk]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2 [aTJMDFJdgdg]</a></li>
-      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet [Mj_J1Rk1esY]</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8rEb8NfMPuc/">12 - iJihad Ep. 4： The Masked Arab</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Zo-VRMEY-ic/">14 - iJihad Ep. 5： The Masked Arab Returns</a></li>
+      <li><a href="{{ site.baseurl }}/videos/8vxbN2jZL6M/">35 - Understanding Jihad w⧸ Robert Spencer (Preface)</a></li>
+      <li><a href="{{ site.baseurl }}/videos/lCqZB8gP4sk/">36 - Understanding Jihad w⧸ Robert Spencer #1</a></li>
+      <li><a href="{{ site.baseurl }}/videos/aTJMDFJdgdg/">37 - Understanding Jihad w⧸ Robert Spencer #2</a></li>
+      <li><a href="{{ site.baseurl }}/videos/Mj_J1Rk1esY/">42 - iJihad Ep. 6： Apostate Prophet</a></li>
       <li><a href="{{ site.baseurl }}/videos/tJVwLXeWwng/">Asadullah dragging ex-Muslims/Islamophobes for 8 minutes straight</a></li>
 </ul>
 

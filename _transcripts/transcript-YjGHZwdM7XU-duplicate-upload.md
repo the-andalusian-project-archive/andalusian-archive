@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk] - transcript of a duplicate upload"
+title: "46 - ＂Is Allah a Dictator？＂ - transcript of a duplicate upload"
 transcript_id: "YjGHZwdM7XU-duplicate-upload"
 recording: "wUapqpCqBUk"
 capture_video_id: "YjGHZwdM7XU"
@@ -19,7 +19,7 @@ reparented_at: "2026-09-27"
 superseded_reason: "Duplicate re-upload of wUapqpCqBUk; removed from _data/videos.json under counting-constraint 5. The transcript TEXT is preserved here and the capture file (cap-YjGHZwdM7XU.en-orig.vtt) is retained; nothing was deleted."
 ---
 
-# 46 - ＂Is Allah a Dictator？＂ ｜ Answer [wUapqpCqBUk] - transcript of a duplicate upload
+# 46 - ＂Is Allah a Dictator？＂ - transcript of a duplicate upload
 
 > This is a transcript of the **same recording** as the page for `wUapqpCqBUk`. The upload it was captured from (`YjGHZwdM7XU`) left the video catalogue as a duplicate; the transcript text was re-parented onto the surviving entry and kept, not deleted. It is published here, attributed, so that its text is readable.
 

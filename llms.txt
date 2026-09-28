@@ -31,12 +31,12 @@ Figures as of 2026-09-28, counted from `_data/`. The corpus is **partial**; the 
 
 - **72 catalogued written works** - 47 with full text here, 24 catalogued Wayback-only with no text held, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. Recovered prose is verbatim: never summarised, paraphrased, reworded or silently merged. 3 further announcements are catalogued and never counted.
 - **20 academic papers** - 5 PDF files held here across 4 of the paper records (one of the five is a translation of a paper already counted), 2 further PDFs withheld in full, the rest link-outs. A 24-row access ledger records what is open, restricted or dead, including one DOI whose publisher domain no longer resolves.
-- **68 video records** - 56 preserved as files in the Internet Archive, 12 catalogued as live re-uploads, with 36 mirror URLs attached to the 30 entries they duplicate. A further 12 superseded duplicates are preserved in full and counted nowhere.
-- **68 machine transcripts, 540,995 words** - one document per capture, each with its capture file, cue count, language and producing model. These are speech-recognition output and are a finding aid, not an authorised edition. The 28 recordings that are parts of a numbered series are also grouped by series, each series on its own page.
+- **81 video records** - 56 preserved as files in the Internet Archive, 25 catalogued as live re-uploads, with 36 mirror URLs attached to the 30 entries they duplicate. A further 12 superseded duplicates are preserved in full and counted nowhere.
+- **79 machine transcripts, 937,738 words** - one document per capture, each with its capture file, cue count, language and producing model. These are speech-recognition output and are a finding aid, not an authorised edition. The 28 recordings that are parts of a numbered series are also grouped by series, each series on its own page.
 - **87 Wayback capture records**, 334 recovered images, 3 announcements, 10 link-outs, 70 third-party source records.
 
-**Total counted content: 207**, and it is a sum, not a figure anyone typed. The published formula is
-`72 works + 68 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview = 207`.
+**Total counted content: 220**, and it is a sum, not a figure anyone typed. The published formula is
+`72 works + 81 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview = 220`.
 Every term is counted from `_data/` at build time and printed in the order it is added. Three things
 are deliberately **outside** that sum and are catalogued rather than dropped: the 13 of 17 MDI rows
 that republish a work already counted, the 70 third-party source records (which are derived from

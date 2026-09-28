@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]"
+title: "23 - Islam, Science and History (Reupload from Andalusian Project)"
 transcript_id: "0snGWjeqEeM"
 recording: "0snGWjeqEeM"
 capture_video_id: "0snGWjeqEeM"
@@ -17,7 +17,7 @@ capture_file: "whisper-0snGWjeqEeM.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 23 - Islam, Science and History (Reupload from Andalusian Project) [0snGWjeqEeM]
+# 23 - Islam, Science and History (Reupload from Andalusian Project)
 
 This is the capture taken from the catalogued recording itself.
 

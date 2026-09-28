@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "15 - The Masked Arab： A Eulogy [bDshE-aKXIA]"
+title: "15 - The Masked Arab： A Eulogy"
 video_id: "bDshE-aKXIA"
 id: "bDshE-aKXIA"
 permalink: "/videos/bDshE-aKXIA/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: ["https://www.youtube.com/watch?v=qDBQFb4gc4o"]
 ---
 
-# 15 - The Masked Arab： A Eulogy [bDshE-aKXIA]
+# 15 - The Masked Arab： A Eulogy
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

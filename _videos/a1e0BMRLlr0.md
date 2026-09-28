@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]"
+title: "50 - Librarianship and Information Literacy"
 video_id: "a1e0BMRLlr0"
 id: "a1e0BMRLlr0"
 permalink: "/videos/a1e0BMRLlr0/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 50 - Librarianship and Information Literacy ｜ Interview with Justin Parrott [a1e0BMRLlr0]
+# 50 - Librarianship and Information Literacy
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

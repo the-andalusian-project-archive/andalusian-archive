@@ -169,9 +169,9 @@ the number of rows in it.
 | Collection | Count | What is actually held |
 |---|---:|---|
 | **Recovered works** | **72** | 47 with full text in the repository, 24 catalogued Wayback-only, 1 unrecovered. Dated 2011-12-18 to 2020-08-11. |
-| **Video records** | **68** | 56 preserved as files in the Internet Archive's `andalusian-project` collection; 12 catalogued as live re-uploads. 36 mirror URLs attached to the 30 entries they duplicate. |
+| **Video records** | **81** | 56 preserved as files in the Internet Archive's `andalusian-project` collection; 25 catalogued as live re-uploads. 36 mirror URLs attached to the 30 entries they duplicate. |
 | **Papers** | **20** | 5 PDF files held locally across 4 of the paper records (one of the five is a Japanese translation of a paper already counted). 2 carry a DOI on the paper record. |
-| **Machine transcripts** | **68** | 540,995 words and 37,388 paragraphs, published one document per capture. 57 attached to a video record, 11 preserved but deliberately not attached. Three documents carry a redaction applied at publication time, which is why the word total is 48 higher than the raw captures' own count (see [`NOTICE.md`](NOTICE.md) §6.2). |
+| **Machine transcripts** | **79** | 937,738 words and 67,720 paragraphs, published one document per capture. 57 attached to a video record, 11 preserved but deliberately not attached. Three documents carry a redaction applied at publication time, which is why the word total is 48 higher than the raw captures' own count (see [`NOTICE.md`](NOTICE.md) §6.2). |
 | **MDI articles** | **17 rows / 4 items** | Full text of all 17 held verbatim, 24,081 words. 13 of the 17 are a second publication of a work already counted, decided by 5-gram text comparison rather than title similarity. |
 | **Notices** | **3** | Announcements that are not works (a book list, a library update, a link post). Catalogued, never counted. |
 | **Link-outs** | **10** | The conversion-story reprint (held as metadata only; its body was never fetched) and 9 Yaqeen pages (link-outs by policy; their text is never downloaded). |
@@ -206,10 +206,10 @@ integration log, both committed under `docs/recovery-log/`.
 | **"Reviewing HaqiqatJou" was held at 54,296 words — an earlier, shorter capture of a work that runs to nearly 69,000 words.** | **68,903 words**, +14,607, adopted from the WordPress mirror's own copy (last modified 2021-07-14). Diffed against the `asadullahali.com` capture and adopted as the single best text, never summed. This was the largest single gain in the recovery. |
 | **8 other works whose fullest Wayback capture beat the copy the archive held.** | 8 fuller versions adopted, each diffed and each recorded as one text rather than a sum, gaining between **50 and 366** words each. |
 | **17 Muslim Debate Initiative articles existed only as live pages.** | Full text recovered verbatim on 2026-09-27, 24,081 words, all 17 held three ways (extracted prose, JSON cross-check, raw source) with the cross-check matching exactly. |
-| **A channel that now returns "This channel is not available."** | 68 catalogued videos with their IDs, durations, byte sizes and archive URLs. 56 preserved as files in the Internet Archive's `andalusian-project` collection; 12 catalogued as live re-uploads with a named uploader; 36 mirror URLs attached to the 30 entries they duplicate; 12 removed duplicates preserved in full in a superseded-video ledger rather than deleted. |
+| **A channel that now returns "This channel is not available."** | 81 catalogued videos with their IDs, durations, byte sizes and archive URLs. 56 preserved as files in the Internet Archive's `andalusian-project` collection; 25 catalogued as live re-uploads with a named uploader; 36 mirror URLs attached to the 30 entries they duplicate; 12 removed duplicates preserved in full in a superseded-video ledger rather than deleted. |
 | **The channel's own history — which was being described incorrectly.** | A 26-row capture-dated timeline, an 18-point subscriber series read from the channel's own header (190 in 2015 rising to 15.7K in 2022), the channel-id continuity argument, and **three claims this archive refuses to make, each recorded with the evidence that rejects it.** |
 | **20 papers, most with no local copy.** | 5 PDF files held locally across 4 of the paper records, and served from the site; a 24-row access ledger recording 8 open-access, 15 restricted and 1 dead item, so the gap is visible rather than implied; 5 DOIs recorded, including one that is dead and is recorded as dead. Two of the held PDFs carry an explicit byte-identity proof: one sha256 against the publisher's own file as captured by the Internet Archive, and one against the archive's own earlier copy of the same file; the third proof on record, a sha256 against the university repository bitstream, belongs to the MA thesis excerpt, which is withheld rather than served (see [`NOTICE.md`](NOTICE.md) §6.1a). |
-| **Nothing at all — no text of any of the lectures.** | **68 published machine transcripts, 540,995 words**, one document per capture, each with its capture file, cue count, language and producing model. |
+| **Nothing at all — no text of any of the lectures.** | **79 published machine transcripts, 937,738 words**, one document per capture, each with its capture file, cue count, language and producing model. |
 | **334 images referenced by the mirror, none recovered.** | 334 retrieved and inventoried. The mirror delivered 335 staged files totalling 70,818,428 bytes, which deduplicate to 286 unique files at 64,283,508 bytes. See [Note on the recovered images](#note-on-the-recovered-images) for their publication status. |
 
 The theme running through all of it: **this material was not lost, it was scattered and
@@ -256,7 +256,7 @@ Worked examples from the data, both of which have a dead or restricted primary s
   archive does not mirror it.
 
 **A transcript.** Always carry the disclaimer with it. The sentence is reproduced verbatim from
-`_data/transcript_index.json` and is printed on all 68 transcript pages:
+`_data/transcript_index.json` and is printed on all 79 transcript pages:
 
 > Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source.
 
@@ -413,7 +413,7 @@ generated `data/*.json` search indexes are produced from `_data/` by
 ### Where the design came from
 
 The site was a Tailwind dashboard — the stock palette, cards, pill badges, an
-860px measure — which is the wrong shape for 68 machine transcripts and a body of
+860px measure — which is the wrong shape for 79 machine transcripts and a body of
 prose held verbatim. It is now built as a reading page, and the model for that is
 borrowed from three places:
 
@@ -422,7 +422,7 @@ borrowed from three places:
   is what its section headings and sidebar links use;
 - the **Internet Encyclopedia of Philosophy** — Georgia at 18px/1.6 and the same
   narrow measure;
-- **Goodreads** — the list-and-metadata rhythm that makes 68 videos scannable,
+- **Goodreads** — the list-and-metadata rhythm that makes 81 videos scannable,
   and the pairing of a screen-serif with a humanist sans for chrome.
 
 Those values were **measured off the live sites** with `getComputedStyle` rather
@@ -451,8 +451,8 @@ _data/            canonical source of truth. Every collection, every count, ever
 _posts/           54 dated post files, the older of the two prose collections
 _articles/        92 pages: the remaining works, the 17 MDI articles, and the 3 notices
 _papers/          20 paper pages, with 5 PDFs in _papers/pdfs/
-_videos/          68 video records
-_transcripts/     68 published machine transcripts
+_videos/          81 video records
+_transcripts/     79 published machine transcripts
 _layouts/         6 Jekyll layouts
 _includes/        shared partials
 assets/           stylesheet
@@ -491,7 +491,7 @@ reads its facts and counts out of `_data/` at build time.
 |---|---|---|
 | Who this is | `/asadullah-ali-al-andalusi/` | Every attested form of his name and where each is attested; the distinction from the different, active speaker also called Abdullah al-Andalusi, with the byline gate that keeps their work apart; his four recorded roles with the corpus's own tense preserved; a linked index into the collections; the loss record; and what this archive is and is not. Emits `Person` + `BreadcrumbList` JSON-LD. |
 | What happened to the website | `/asadullahali-com-what-happened/` | `asadullahali.com`, the WordPress mirror, the YouTube channel and the dead publisher domain. Carries the safety warning that the domain is now an unrelated gambling site — printed as plain text, never as a link — and answers the seven queries the archive is the only page answering. Emits `Article` + `FAQPage` + `BreadcrumbList` JSON-LD. |
-| Transcripts by series | `/transcripts/by-series/` and 7 series pages | The 68 transcripts were one flat list, so a reader wanting session three of a series had nothing to land on. Grouped into the series the channel itself numbered, with each part's transcript linked directly. |
+| Transcripts by series | `/transcripts/by-series/` and 7 series pages | The 79 transcripts were one flat list, so a reader wanting session three of a series had nothing to land on. Grouped into the series the channel itself numbered, with each part's transcript linked directly. |
 
 The grouping signal is the channel's own `NN - <series name>` title shape, **not** the
 `themes`/`topics`/`tone` fields on the video rows: those are produced by a first-match-wins
@@ -519,15 +519,15 @@ values, and that the two would not match until the site owner approved the recou
 longer the state of the project.
 
 On 2026-09-28 the approval was given and the recount was applied in one pass, so this file and the
-site publish one set of numbers: 72 works (47 full-text, 24 Wayback-only, 1 lost), 68 videos, 20
+site publish one set of numbers: 72 works (47 full-text, 24 Wayback-only, 1 lost), 81 videos, 20
 papers, 17 MDI rows of which 4 are counted, 3 announcements never counted, 70 third-party source
-records never counted, and a total of 207 that is a sum rather than a figure anyone typed.
+records never counted, and a total of 220 that is a sum rather than a figure anyone typed.
 
 **The published total is now computed, not typed.** The site's headline panel reads its seven terms
 out of `_data/` in a Liquid loop and prints the arithmetic it performed:
 
 ```
-Total 207 = 72 + 68 + 20 + 4 + 9 + 33 + 1
+Total 220 = 72 + 81 + 20 + 4 + 9 + 33 + 1
 ```
 
 Every page that shows a count — the homepage, the works index, the papers index, the search page

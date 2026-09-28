@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]"
+title: "26 - Atheism： Doubting Your Doubts - Asadullah Ali"
 video_id: "_C5ox2zZl0U"
 id: "_C5ox2zZl0U"
 permalink: "/videos/_C5ox2zZl0U/"
@@ -14,7 +14,7 @@ topics: ["philosophy", "atheism", "epistemology"]
 mirror_urls: []
 ---
 
-# 26 - Atheism： Doubting Your Doubts - Asadullah Ali ｜ Yaqeen in NY [_C5ox2zZl0U]
+# 26 - Atheism： Doubting Your Doubts - Asadullah Ali
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

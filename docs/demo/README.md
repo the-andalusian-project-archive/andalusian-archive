@@ -55,7 +55,7 @@ video. Each frame is held for 3.0 s.
 | # | Frame | Page | Caption burned in |
 |---:|---|---|---|
 | — | *(generated)* | title card | The Andalusian Project Archive / a screen tour of the live site |
-| 1 | `01-home` | `/` | The archive - 207 recovered items, counted from the data |
+| 1 | `01-home` | `/` | The archive - 220 recovered items, counted from the data |
 | 2 | `01-home-b` | `/` scrolled | Start with a question, not a name |
 | 3 | `02-topics` | `/topics/` | The questions the recovered work answers |
 | 4 | `03-subject` | one topic page | A subject page: the passages, quoted and cited to a line |
@@ -64,7 +64,7 @@ video. Each frame is held for 3.0 s.
 | 7 | `05-work` | one work | One work, with its provenance and recovery verdict |
 | 8 | `06-papers` | `/papers/` | Papers - 20 records, with the PDFs this archive may hold |
 | 9 | `07-paper` | one paper | The full text of a paper, on the page, with its licence |
-| 10 | `08-transcripts` | `/transcripts/` | Transcripts - 68 machine transcripts, 540,995 words |
+| 10 | `08-transcripts` | `/transcripts/` | Transcripts - 79 machine transcripts, 937,738 words |
 | 11 | `09-transcript` | one transcript | One transcript, with the machine-transcription warning |
 | 12 | `10-channel` | `/channel/` | What happened to the channel, and what survives |
 | 13 | `11-search` | `/search/` | Search every item, in the browser |
@@ -86,14 +86,14 @@ and **no end card**.
 | # | Frame | Caption burned in |
 |---:|---|---|
 | — | title card | The Andalusian Project Archive / a screen tour of the live site |
-| 1 | `01-home` | The archive - 207 recovered items, counted from the data |
+| 1 | `01-home` | The archive - 220 recovered items, counted from the data |
 | 2 | `02-topics` | The questions the recovered work answers |
 | 3 | `03-subject` | A subject page: the passages, quoted and cited to a line |
 | 4 | `04-articles` | Works - 72 catalogued, 47 with full text held |
 | 5 | `05-work` | One work, with its provenance and recovery verdict |
 | 6 | `06-papers` | Papers - 20 records, with the PDFs this archive may hold |
 | 7 | `07-paper` | The full text of a paper, on the page, with its licence |
-| 8 | `08-transcripts` | Transcripts - 68 machine transcripts, 540,995 words |
+| 8 | `08-transcripts` | Transcripts - 79 machine transcripts, 937,738 words |
 | 9 | `09-transcript` | One transcript, with the machine-transcription warning |
 | 10 | `10-channel` | What happened to the channel, and what survives |
 | 11 | `11-search` | Search every item, in the browser |
@@ -106,8 +106,8 @@ segment away from silently feeding the GIF the wrong frames with no error.
 
 Every number in a caption was read out of `_data/`, not typed from memory:
 
-* **207 recovered items** is the site's own computed `total_content` — 72 works
-  plus 68 videos plus 20 papers — and is asserted by `scripts/test_canonical_57.py`.
+* **220 recovered items** is the site's own computed `total_content` — 72 works
+  plus 81 videos plus 20 papers — and is asserted by `scripts/test_canonical_57.py`.
 * **72 catalogued, 47 with full text held** is the works row, matching
   `/articles/` as rendered.
 * **20 papers** is the counted paper total. The caption does not claim a PDF
@@ -115,7 +115,7 @@ Every number in a caption was read out of `_data/`, not typed from memory:
   one: 5 PDF files across 4 of the 20 records, with the IIUM MA thesis excerpt
   withheld in full (`NOTICE.md` §6.1a). A caption asserting a PDF count would
   need re-cutting every time that decision changed.
-* **68 transcripts, 540,995 words** matches `_data/transcript_index.json` and what
+* **79 transcripts, 937,738 words** matches `_data/transcript_index.json` and what
   `/transcripts/` renders.
 
 No count anywhere in the repository was changed to make a caption work.

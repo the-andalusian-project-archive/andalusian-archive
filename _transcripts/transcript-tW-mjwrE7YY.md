@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]"
+title: "13 - Responding to Comments #1 andalusian project (re upload)"
 transcript_id: "tW-mjwrE7YY"
 recording: "tW-mjwrE7YY"
 capture_video_id: "tW-mjwrE7YY"
@@ -17,7 +17,7 @@ capture_file: "cap-tW-mjwrE7YY.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 13 - Responding to Comments #1 andalusian project (re upload) [tW-mjwrE7YY]
+# 13 - Responding to Comments #1 andalusian project (re upload)
 
 This is the capture taken from the catalogued recording itself.
 

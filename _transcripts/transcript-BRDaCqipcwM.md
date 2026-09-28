@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]"
+title: "05 - Understanding Atheism ｜ Session 5"
 transcript_id: "BRDaCqipcwM"
 recording: "BRDaCqipcwM"
 capture_video_id: "BRDaCqipcwM"
@@ -17,7 +17,7 @@ capture_file: "whisper-BRDaCqipcwM.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]
+# 05 - Understanding Atheism ｜ Session 5
 
 This is the capture taken from the catalogued recording itself.
 

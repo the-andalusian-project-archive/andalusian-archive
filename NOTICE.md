@@ -25,13 +25,13 @@ It currently holds, as of 2026-09-28:
 |---|---|
 | Written works | **72** catalogued — 47 with full text recovered in this repository, 24 held only as Wayback captures, 1 lost entirely |
 | Capture records | **87** Wayback/CDX capture records preserved as metadata |
-| Videos | **68** catalogued, with **68** machine-transcript documents; 57 catalogued entries carry a transcript attached and 11 declare none, by design |
+| Videos | **81** catalogued, with **79** machine-transcript documents; 68 catalogued entries carry a transcript attached and 11 declare none, by design |
 | Academic papers | **20** catalogued, of which **5** PDFs are held in this repository (5 files across 4 of the paper records; one of the five is a translation of a paper already counted) |
 | MDI author-archive pages | **17** rows catalogued, of which **4** are distinct items of content; the other 13 republish a work already counted above and are not counted again |
 | Announcements | **3** catalogued, held with their text, and never counted as works |
 | Link-outs | **10** catalogued, never fetched, and never counted |
 | Third-party source records | **70** rows, catalogued and never counted |
-| **Total counted content** | **207** — 72 works + 68 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview. Every term is counted from `_data/` at build time; the secondary-source records, the 13 republished MDI rows, the 3 announcements and the 10 link-outs are catalogued and deliberately outside the sum. |
+| **Total counted content** | **220** — 72 works + 81 videos + 20 papers + 4 MDI items + 9 Yaqeen link-outs + 33 Al Balagh link-outs + 1 interview. Every term is counted from `_data/` at build time; the secondary-source records, the 13 republished MDI rows, the 3 announcements and the 10 link-outs are catalogued and deliberately outside the sum. |
 
 Where a work was recovered, the reproduction is **verbatim**. This archive does
 not edit his prose, does not summarise it in place of it, and does not correct
@@ -273,7 +273,7 @@ these captures and carrying the machine-transcript disclaimer of section 5.
 > `cap-D2t0idkAqjA.en-orig.vtt` is named by that row's `alternates`;
 > `cap-G47Stp3pLss.en-orig.vtt` is the sole capture named for video
 > `G47Stp3pLss` (15,048 lines). All three are read by
-> `scripts/test_transcripts.py`, which re-derives all 68 published transcripts
+> `scripts/test_transcripts.py`, which re-derives all 79 published transcripts
 > from the files the coverage data names. Removing one from disk breaks the
 > suite and orphans a served page; only the *index* copy is dropped.
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]"
+title: "10 - iJihad： Gryffix and Kraut and Tea"
 video_id: "fgsVa-khWp4"
 id: "fgsVa-khWp4"
 permalink: "/videos/fgsVa-khWp4/"
@@ -14,7 +14,7 @@ topics: ["islamic law", "jurisprudence", "history"]
 mirror_urls: ["https://www.youtube.com/watch?v=NZsJH9IBBVg"]
 ---
 
-# 10 - iJihad： Gryffix and Kraut and Tea [fgsVa-khWp4]
+# 10 - iJihad： Gryffix and Kraut and Tea
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

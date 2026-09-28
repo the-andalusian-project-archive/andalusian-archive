@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]"
+title: "55 - Lesson One [Full Lecture]"
 video_id: "vJRfL4Kal20"
 id: "vJRfL4Kal20"
 permalink: "/videos/vJRfL4Kal20/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: ["https://www.youtube.com/watch?v=o0laFCGufrw", "https://www.youtube.com/watch?v=xhnU-1dNi3I"]
 ---
 
-# 55 - Lesson One [Full Lecture] ｜ Information Literacy [vJRfL4Kal20]
+# 55 - Lesson One [Full Lecture]
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

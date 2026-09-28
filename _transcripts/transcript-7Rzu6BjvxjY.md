@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]"
+title: "07 - Towards Litter Reduction： An Islamic Approach"
 transcript_id: "7Rzu6BjvxjY"
 recording: "7Rzu6BjvxjY"
 capture_video_id: "7Rzu6BjvxjY"
@@ -17,7 +17,7 @@ capture_file: "whisper-7Rzu6BjvxjY.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 07 - Towards Litter Reduction： An Islamic Approach ｜ IAIS [7Rzu6BjvxjY]
+# 07 - Towards Litter Reduction： An Islamic Approach
 
 This is the capture taken from the catalogued recording itself.
 

@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]"
+title: "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3"
 video_id: "WED5mPmO_yU"
 id: "WED5mPmO_yU"
 permalink: "/videos/WED5mPmO_yU/"
@@ -14,7 +14,7 @@ topics: ["science", "history", "islamic civilization"]
 mirror_urls: ["https://www.youtube.com/watch?v=kDH1BOyhhYk", "https://www.youtube.com/watch?v=lamd6yYf8uU"]
 ---
 
-# 18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3 [WED5mPmO_yU]
+# 18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

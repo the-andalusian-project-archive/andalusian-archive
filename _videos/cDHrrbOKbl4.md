@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "53 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]"
+title: "53 - Virgins in Paradise？ ｜ Answered"
 video_id: "cDHrrbOKbl4"
 id: "cDHrrbOKbl4"
 permalink: "/videos/cDHrrbOKbl4/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 53 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]
+# 53 - Virgins in Paradise？ ｜ Answered
 
 Numbering note: the source data lists this entry as "52 - Virgins in Paradise？ ｜ Answered ｜ andalusian project (re upload) [cDHrrbOKbl4]"; it is renumbered here to 53 to resolve the duplicate "52" numbering (the other 52 is Book Recommendations #2). Both videos are kept.
 

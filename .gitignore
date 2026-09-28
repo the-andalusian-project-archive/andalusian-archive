@@ -68,3 +68,42 @@ _staging/
 #    served tree and from its _data row; this rule only stops it being re-added.
 _papers/pdfs/architects-of-civilisation-sallahuddin-ayubi.pdf
 
+# --- Publication redaction (2026-09-29, caption lane) ------------------------
+# Ten of the eleven caption captures taken for the thirteen verified-missing
+# videos. These are UNLABELLED automatic speech recognition of live audience
+# questions, so they carry whatever a member of the public said when handed the
+# microphone - and some of them said their own names.
+#
+# Withheld, not edited, for the same reason as category 1: the bytes are
+# evidence that the recording says what it says, so the working tree keeps them
+# and only the git index drops them. The reader-facing text built from them is
+# served under /_transcripts/ and passes through the redaction list.
+#
+# The sharpest three, and why each is here rather than merely untidy:
+#   7EqMJJuUKr8  a participant states his legal name on air, on the record,
+#                after giving a religious name
+#   0biKKRHO_Tk  a full personal name, plus employer sector and country
+#   kRCzZW3rg4U  he criticises a named community member and thanks a named
+#                moderator. These are people he names, not his own family, and
+#                publishing the criticism verbatim attaches it to them.
+#
+# cap-MCR3xh8wccQ is deliberately NOT in this section: it is the one capture of
+# the eleven that screened clean, and it is tracked like the other 26.
+#
+# Do NOT blanket-ignore .firecrawl/ - see the warning above; captures named by
+# _data/transcript_coverage.json are load-bearing for scripts/test_transcripts.py,
+# which re-derives every published transcript from the file its coverage row
+# names. All eleven below are REQUIRED ON DISK. `git rm --cached` is correct;
+# deleting any of them from disk is not.
+.firecrawl/transcripts/cap-QoU02Om_wiQ.en-orig.vtt
+.firecrawl/transcripts/cap-n3vhs1mcmVM.en-orig.vtt
+.firecrawl/transcripts/cap-OHNMeqGMdPc.en-orig.vtt
+.firecrawl/transcripts/cap-lE690yapgTA.en-orig.vtt
+.firecrawl/transcripts/cap-idz29r5LHig.en-orig.vtt
+.firecrawl/transcripts/cap-7EqMJJuUKr8.en-orig.vtt
+.firecrawl/transcripts/cap-0biKKRHO_Tk.en-orig.vtt
+.firecrawl/transcripts/cap-3vqVYfs5mCk.en-orig.vtt
+.firecrawl/transcripts/cap-kRCzZW3rg4U.en-orig.vtt
+.firecrawl/transcripts/cap-M3nB154Mkuk.en-orig.vtt
+
+

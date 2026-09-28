@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project [unmn_tY5r_c]"
+title: "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project"
 transcript_id: "unmn_tY5r_c"
 recording: "unmn_tY5r_c"
 capture_video_id: "unmn_tY5r_c"
@@ -17,7 +17,7 @@ capture_file: "cap-unmn_tY5r_c.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project [unmn_tY5r_c]
+# 51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project
 
 This is the capture taken from the catalogued recording itself.
 

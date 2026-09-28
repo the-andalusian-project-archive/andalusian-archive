@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]"
+title: "44 - Finding Roots in Islam： The Struggle of Reverts"
 transcript_id: "B7NW2AwtZaM"
 recording: "B7NW2AwtZaM"
 capture_video_id: "B7NW2AwtZaM"
@@ -17,7 +17,7 @@ capture_file: "whisper-B7NW2AwtZaM.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 44 - Finding Roots in Islam： The Struggle of Reverts ｜ i3 Canada [B7NW2AwtZaM]
+# 44 - Finding Roots in Islam： The Struggle of Reverts
 
 This is the capture taken from the catalogued recording itself.
 

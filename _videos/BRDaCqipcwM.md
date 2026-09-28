@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]"
+title: "05 - Understanding Atheism ｜ Session 5"
 video_id: "BRDaCqipcwM"
 id: "BRDaCqipcwM"
 permalink: "/videos/BRDaCqipcwM/"
@@ -14,7 +14,7 @@ topics: ["philosophy", "atheism", "epistemology"]
 mirror_urls: ["https://www.youtube.com/watch?v=b8nIa9VsEWE"]
 ---
 
-# 05 - Understanding Atheism ｜ Session 5 [BRDaCqipcwM]
+# 05 - Understanding Atheism ｜ Session 5
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

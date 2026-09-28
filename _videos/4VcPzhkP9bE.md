@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]"
+title: "08 - Islam and Terrorism"
 video_id: "4VcPzhkP9bE"
 id: "4VcPzhkP9bE"
 permalink: "/videos/4VcPzhkP9bE/"
@@ -14,7 +14,7 @@ topics: ["islam", "theology", "comparative religion"]
 mirror_urls: []
 ---
 
-# 08 - Islam and Terrorism ： Andalusian Project [4VcPzhkP9bE]
+# 08 - Islam and Terrorism
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

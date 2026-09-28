@@ -32,7 +32,7 @@ transcript or recording. The archive records this work; it does not endorse it.<
       <h3><a href="{{ site.baseurl }}/topics/atheism-doubt/">Atheism, Doubt and Evidence</a></h3>
       <p class="topic-q">I believe in God but I can't prove it with science - how is that still rational, and what do I actually say when an atheist demands evidence?</p>
       <p class="topic-meta">20 items &middot; 31 passages shown
-        &middot; 27 more on the subject &middot; 69 questions</p>
+        &middot; 48 more on the subject &middot; 69 questions</p>
     </li>
     <li class="topic-card">
       <h3><a href="{{ site.baseurl }}/topics/gender-feminism/">Feminism, Gender Justice and Aisha</a></h3>
@@ -44,7 +44,7 @@ transcript or recording. The archive records this work; it does not endorse it.<
       <h3><a href="{{ site.baseurl }}/topics/liberalism-orientalism/">Liberalism, Orientalism and Human Rights</a></h3>
       <p class="topic-q">Why do Muslim thinkers argue that liberalism and human rights are a Western import that Muslim societies never actually left behind, and how do I answer someone who disagrees?</p>
       <p class="topic-meta">15 items &middot; 45 passages shown
-        &middot; 9 more on the subject &middot; 82 questions</p>
+        &middot; 11 more on the subject &middot; 82 questions</p>
     </li>
     <li class="topic-card">
       <h3><a href="{{ site.baseurl }}/topics/quran-hermeneutics/">Qur'an Interpretation and Textual Questions</a></h3>

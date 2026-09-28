@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]"
+title: "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2"
 video_id: "vh-6sisOncs"
 id: "vh-6sisOncs"
 permalink: "/videos/vh-6sisOncs/"
@@ -14,7 +14,7 @@ topics: ["science", "history", "islamic civilization"]
 mirror_urls: ["https://www.youtube.com/watch?v=4maSZMzhmuI"]
 ---
 
-# 17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2 [vh-6sisOncs]
+# 17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

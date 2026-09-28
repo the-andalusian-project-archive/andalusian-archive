@@ -40,7 +40,7 @@ And most individuals say, yes, yes, I do. And I say, okay, why do you believe in
 They pause for a moment. And I say, well, can you provide me a scientific journal,
 peer-reviewed journal that proves the existence of human rights? And they say, no.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:634</span> &mdash; <span class="cite-size">excerpt of about 68 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:634</span> &mdash; <span class="cite-size">excerpt of about 68 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -50,7 +50,7 @@ peer-reviewed journal that proves the existence of human rights? And they say, n
 
 > people to assume that i\'m just rejecting it because i\'m some sort of like reformist liberal or something which is ridiculous all of you know i\'ve been fighting against secular liberalism for like over a decade okay it\'s nonsense that somebody would
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:940</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 13,791-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:940</span> &mdash; <span class="cite-size">excerpt of about 42 words from a 13,789-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -70,7 +70,7 @@ the humans own their own self, even though humans didn\'t make ourselves, even t
 ourselves, we didn\'t create ourselves, we can determine what we were, we don\'t determine when we die,
 the individual argues that we make ourselves. And therefore, when Islam or any kind of religion
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:305</span> &mdash; <span class="cite-size">excerpt of about 67 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:305</span> &mdash; <span class="cite-size">excerpt of about 67 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -96,7 +96,7 @@ the individual argues that we make ourselves. And therefore, when Islam or any k
 to destroy western hegemony to destroy secular liberal ideology that\'s overcoming the muslim world today not just in the west not just among muslim minorities
 right but among every muslim on the planet now it\'s there\'s a hegemony over us that we
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:549</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 13,791-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:549</span> &mdash; <span class="cite-size">excerpt of about 49 words from a 13,789-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -123,7 +123,7 @@ liberalism is a reactionary ideology, it\'s always in opposition to something, b
 from what, liberating from what, and it\'s, one of the central tenets of secular liberal
 is to attack tradition, especially religious tradition, and you have a lot of young Muslims
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:46</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 918-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:46</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 912-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -135,7 +135,7 @@ is to attack tradition, especially religious tradition, and you have a lot of yo
 be dunya wiyah. I know sometimes in the modern Arabic people translate it as al-Maniah globally,
 but I think it\'s best described it from the Quranic term, at least from dunya and dunya wiyah,
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:214</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:214</span> &mdash; <span class="cite-size">excerpt of about 51 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -202,7 +202,7 @@ concept way. You know, your life is a phasor separate from your beliefs. But it\
 arguing that, you know, a computer\'s operate or the operations a computer does. The programs a
 computer has the apps that it has has no relation to the code in its in its RAM in its hard drive.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:280</span> &mdash; <span class="cite-size">excerpt of about 93 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:280</span> &mdash; <span class="cite-size">excerpt of about 93 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -215,7 +215,7 @@ But now what we are left today is with utilitarianism and
 Full of political idealism which was the basis behind which these two schools of four other basis behind which you have modern
 Liberalism or what is technically called social liberalism the current ideology we have today
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:346</span> &mdash; <span class="cite-size">excerpt of about 64 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:346</span> &mdash; <span class="cite-size">excerpt of about 64 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -227,7 +227,7 @@ Liberalism or what is technically called social liberalism the current ideology 
 Of Akhida in terms of ethical Akhida so utilitarianism and idealism
 By being the two predominant schools of modern day liberalism
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:414</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:414</span> &mdash; <span class="cite-size">excerpt of about 46 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -238,7 +238,7 @@ By being the two predominant schools of modern day liberalism
 > That would and we must obviously the determined deduce and formerly a natural law that whose precepts would be true even if God didn\'t exist
 Right here the grudges saying this in the 17th century now what he unleashed wasn\'t the idea that what these are laws on natural morality or whatever arguments you want to use
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:328</span> &mdash; <span class="cite-size">excerpt of about 57 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:328</span> &mdash; <span class="cite-size">excerpt of about 57 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -273,7 +273,7 @@ that, or the main reason that we lose knowledge is because the scholars pass awa
 So we know that the scholars die, we lose their knowledge, but then the question remains,
 is, well, why is there no one to replace them?
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:53</span> &mdash; <span class="cite-size">excerpt of about 78 words from a 918-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:53</span> &mdash; <span class="cite-size">excerpt of about 78 words from a 912-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -299,7 +299,7 @@ is, well, why is there no one to replace them?
 encompass every aspect of our life and our existence. You know, you can\'t be a part-time
 creation of God, can you? You have to be a full-time creation of God, because that\'s what you are.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:232</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:232</span> &mdash; <span class="cite-size">excerpt of about 55 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -313,7 +313,7 @@ This is how liberals would behave towards their own religions.
 This is how Christians started to behave the Protestant, how they behave towards the Catholic
 and Orthodox churches. They just started to destroy their own scholars.
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:79</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 918-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-rhufN0me6xg.md:79</span> &mdash; <span class="cite-size">excerpt of about 56 words from a 912-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -327,7 +327,7 @@ it only destroys to free people from
 their shackles
 and if we adopt a reactionary approach we\'re only allowing liberalism to come in and take over you cannot destroy your reactionary
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:568</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 13,791-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:568</span> &mdash; <span class="cite-size">excerpt of about 52 words from a 13,789-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -421,7 +421,7 @@ and if we adopt a reactionary approach we\'re only allowing liberalism to come i
 > but anyways um you know the re the way to tackle this is first we have to become independent from these ideas we have to become independent in such a way that we don\'t
 need to latch ourselves to the west
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:557</span> &mdash; <span class="cite-size">excerpt of about 41 words from a 13,791-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-hKdNF95UqVM.md:557</span> &mdash; <span class="cite-size">excerpt of about 41 words from a 13,789-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -456,7 +456,7 @@ need to latch ourselves to the west
 western worldview that we have in the west today, and it\'s being sold in the most involved,
 when you\'ve removed God as the owner of all things, as the creator of all things, what you have is
 >
-> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:302</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 13,751-word text. The argument around it is not on this page.</span>
+> &mdash; <a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a> (transcript), cited at <span class="cite-ref">_transcripts/transcript-IhE3ka7SQQs.md:302</span> &mdash; <span class="cite-size">excerpt of about 54 words from a 13,743-word text. The argument around it is not on this page.</span>
 
 >
 > *This is a machine transcript. Accuracy is not guaranteed and it should not be used in polemics or debate material as an authoritative source.*
@@ -525,8 +525,12 @@ of these pages.</p>
 <ul class="shelf-list">
       <li><a href="{{ site.baseurl }}/papers/still-colonized-liberalism-in-muslim-thought/">Still Colonized? Liberalism in Muslim Thought</a></li>
       <li><a href="{{ site.baseurl }}/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/">The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables</a></li>
-</ul><h3 class="shelf-kind">Recordings (1)</h3>
+</ul><h3 class="shelf-kind">Transcripts (1)</h3>
 <ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/transcripts/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism</a></li>
+</ul><h3 class="shelf-kind">Recordings (2)</h3>
+<ul class="shelf-list">
+      <li><a href="{{ site.baseurl }}/videos/M3nB154Mkuk/">[VIDEO] Episode 93 - The Akh-Right, LGBTQ &amp; Liberalism</a></li>
       <li><a href="{{ site.baseurl }}/videos/G47Stp3pLss/">My Conversion Story [reupload of Asadullah Ali Al-Andalusi (Abu Isabel)] Andalusian Project</a></li>
 </ul>
 
@@ -541,7 +545,7 @@ of these pages.</p>
 <tr><td><a href="{{ site.baseurl }}/papers/decoding-contemporary-liberalism-rise-development-and-crisis/">Decoding Contemporary Liberalism: Rise, Development, and Crisis</a></td><td>paper</td><td>1</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/the-inhumanity-of-human-rights/">The Inhumanity of Human Rights</a></td><td>work</td><td>5</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/the-making-of-modern-western-civilization-the-war-on-islam-guest-contribution/">The Making of Modern Western Civilization: The War on Islam</a></td><td>work</td><td>1</td><td>&mdash;</td></tr>
-<tr><td><a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂</a></td><td>transcript</td><td>12</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
+<tr><td><a href="{{ site.baseurl }}/transcripts/IhE3ka7SQQs/">43 - Two Andalusians, One Conference</a></td><td>transcript</td><td>12</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/rhufN0me6xg/">47 - ＂Should We Cancel Scholars？＂</a></td><td>transcript</td><td>5</td><td>&mdash;</td></tr>
 <tr><td><a href="{{ site.baseurl }}/transcripts/hKdNF95UqVM/">45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project</a></td><td>transcript</td><td>4</td><td><a href="{{ site.baseurl }}/topics/apostasy-hell/">Apostasy, Hell and Divine Justice</a></td></tr>
 <tr><td><a href="{{ site.baseurl }}/articles/naked-kings-in-the-information-age/">Naked Kings in the Information Age</a></td><td>work</td><td>7</td><td>&mdash;</td></tr>

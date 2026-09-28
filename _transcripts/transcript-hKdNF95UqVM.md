@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]"
+title: "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project"
 transcript_id: "hKdNF95UqVM"
 recording: "hKdNF95UqVM"
 capture_video_id: "hKdNF95UqVM"
@@ -17,7 +17,7 @@ capture_file: "cap-hKdNF95UqVM.en-orig.vtt"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]
+# 45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project
 
 This is the capture taken from the catalogued recording itself.
 

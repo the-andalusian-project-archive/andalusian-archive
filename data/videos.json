@@ -1722,5 +1722,343 @@
     "format": "MPEG4",
     "preserved_in_repo": true,
     "mirror_urls": []
+  },
+  {
+    "id": "kRCzZW3rg4U",
+    "title": "\"Yes, I'm leaving\" Last Video of Asadullah Andalusi  || The Andalusian Project",
+    "duration": "1098",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=kRCzZW3rg4U",
+    "archive_org_id": null,
+    "source": "Deen e Haq [Portal] (live re-upload of Asadullah Ali's own announcement; discovered via a prior no-contact notice that already cited this URL)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "announcement",
+    "tone": "personal narrative",
+    "topics": [
+      "community",
+      "personal"
+    ],
+    "themes": [
+      "A public statement about leaving online dawah"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "QoU02Om_wiQ",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 12",
+    "duration": "18475",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=QoU02Om_wiQ",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "idz29r5LHig",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 14",
+    "duration": "13673",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=idz29r5LHig",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "MCR3xh8wccQ",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 16",
+    "duration": "11384",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=MCR3xh8wccQ",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "3vXG_nXFWwM",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 18",
+    "duration": "15605",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=3vXG_nXFWwM",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": [],
+    "transcripts": 0,
+    "note": "No caption track exists on YouTube for this upload: `subtitles` offers only live_chat and `automatic_captions` is empty, confirmed with yt-dlp --list-subs on two extractor clients. A live-chat replay is a chat log, not speech. Transcribing it would require downloading the media, which YouTube's Terms of Service forbid, so this record is catalogued without a transcript."
+  },
+  {
+    "id": "7EqMJJuUKr8",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 20",
+    "duration": "13458",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=7EqMJJuUKr8",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "lE690yapgTA",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 22",
+    "duration": "16693",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=lE690yapgTA",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "0biKKRHO_Tk",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 24",
+    "duration": "11250",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=0biKKRHO_Tk",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "OHNMeqGMdPc",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 28",
+    "duration": "17590",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=OHNMeqGMdPc",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "3vqVYfs5mCk",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 29",
+    "duration": "20445",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=3vqVYfs5mCk",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "n3vhs1mcmVM",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 32",
+    "duration": "17679",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=n3vhs1mcmVM",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
+  },
+  {
+    "id": "ywhiqBkoveA",
+    "title": "The Arena | Challenge Islam | Defend your Beliefs - Episode 8",
+    "duration": "18152",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=ywhiqBkoveA",
+    "archive_org_id": null,
+    "source": "Hamza's Den (live re-upload of Asadullah Ali's own Arena appearance; discovered via a playlist sweep, and confirmed absent from the archive by video id)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": [],
+    "transcripts": 0,
+    "note": "No caption track exists on YouTube for this upload: `subtitles` offers only live_chat and `automatic_captions` is empty, confirmed with yt-dlp --list-subs on two extractor clients. A live-chat replay is a chat log, not speech. Transcribing it would require downloading the media, which YouTube's Terms of Service forbid, so this record is catalogued without a transcript."
+  },
+  {
+    "id": "M3nB154Mkuk",
+    "title": "[VIDEO] Episode 93 - The Akh-Right, LGBTQ & Liberalism | Asadullah Ali",
+    "duration": "8289",
+    "duration_source": "YouTube watch-page via yt-dlp --dump-single-json duration",
+    "archive_url": "https://www.youtube.com/watch?v=M3nB154Mkuk",
+    "archive_org_id": null,
+    "source": "Boys In The Cave (live re-upload of Asadullah Ali's own appearance; discovered via a playlist sweep of Imam Murrah The Time Traveller)",
+    "category": "C",
+    "counted": true,
+    "preserved_in_repo": false,
+    "kind": "appearance",
+    "tone": "conversational",
+    "topics": [
+      "comparative religion",
+      "debate",
+      "dialogue",
+      "education",
+      "engagement"
+    ],
+    "themes": [
+      "Comparative religious argument in a live audience setting",
+      "Audience questions and counter-argument"
+    ],
+    "mirror_urls": []
   }
 ]

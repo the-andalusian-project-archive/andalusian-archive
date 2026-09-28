@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]"
+title: "31 - iKhalifa 2： Forgive Yourself"
 video_id: "-BwP55UIg3c"
 id: "-BwP55UIg3c"
 permalink: "/videos/-BwP55UIg3c/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 31 - iKhalifa 2： Forgive Yourself [-BwP55UIg3c]
+# 31 - iKhalifa 2： Forgive Yourself
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

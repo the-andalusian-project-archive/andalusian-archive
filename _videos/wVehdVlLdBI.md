@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]"
+title: "04 - Understanding Atheism ｜ Session 4"
 video_id: "wVehdVlLdBI"
 id: "wVehdVlLdBI"
 permalink: "/videos/wVehdVlLdBI/"
@@ -14,7 +14,7 @@ topics: ["philosophy", "atheism", "epistemology"]
 mirror_urls: []
 ---
 
-# 04 - Understanding Atheism ｜ Session 4 [wVehdVlLdBI]
+# 04 - Understanding Atheism ｜ Session 4
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

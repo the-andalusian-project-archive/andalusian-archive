@@ -283,6 +283,9 @@
   "/transcripts/-BwP55UIg3c/": [
     "apostasy-hell"
   ],
+  "/transcripts/0biKKRHO_Tk/": [
+    "atheism-doubt"
+  ],
   "/transcripts/0snGWjeqEeM/": [
     "science-scientism"
   ],
@@ -297,11 +300,17 @@
   "/transcripts/2tsI80MDUOI-duplicate-upload/": [
     "atheism-doubt"
   ],
+  "/transcripts/3vqVYfs5mCk/": [
+    "atheism-doubt"
+  ],
   "/transcripts/4VcPzhkP9bE/": [
     "terrorism-extremism"
   ],
   "/transcripts/4maSZMzhmuI-duplicate-upload/": [
     "science-scientism"
+  ],
+  "/transcripts/7EqMJJuUKr8/": [
+    "atheism-doubt"
   ],
   "/transcripts/8rEb8NfMPuc/": [
     "terrorism-extremism"
@@ -333,15 +342,27 @@
     "apostasy-hell",
     "liberalism-orientalism"
   ],
+  "/transcripts/M3nB154Mkuk/": [
+    "liberalism-orientalism"
+  ],
+  "/transcripts/MCR3xh8wccQ/": [
+    "atheism-doubt"
+  ],
   "/transcripts/Mj_J1Rk1esY/": [
     "terrorism-extremism"
   ],
   "/transcripts/NyAVl7RsEOs/": [
     "atheism-doubt"
   ],
+  "/transcripts/OHNMeqGMdPc/": [
+    "atheism-doubt"
+  ],
   "/transcripts/PoNiuiP3W4Y/": [
     "aqeedah-basics",
     "science-scientism"
+  ],
+  "/transcripts/QoU02Om_wiQ/": [
+    "atheism-doubt"
   ],
   "/transcripts/RnkqSMTzvCg/": [
     "terrorism-extremism"
@@ -389,17 +410,26 @@
   "/transcripts/hURJIIm0tSY-duplicate-upload/": [
     "science-scientism"
   ],
+  "/transcripts/idz29r5LHig/": [
+    "atheism-doubt"
+  ],
   "/transcripts/kDH1BOyhhYk-duplicate-upload/": [
     "science-scientism"
   ],
   "/transcripts/lCqZB8gP4sk/": [
     "terrorism-extremism"
   ],
+  "/transcripts/lE690yapgTA/": [
+    "atheism-doubt"
+  ],
   "/transcripts/lS7h9SKKtVc/": [
     "atheism-doubt"
   ],
   "/transcripts/lZkv38vd7bw/": [
     "apostasy-hell",
+    "atheism-doubt"
+  ],
+  "/transcripts/n3vhs1mcmVM/": [
     "atheism-doubt"
   ],
   "/transcripts/nkuZ70p-inE/": [
@@ -434,6 +464,9 @@
   "/transcripts/yUpHMaFHZ6s/": [
     "quran-hermeneutics"
   ],
+  "/videos/0biKKRHO_Tk/": [
+    "atheism-doubt"
+  ],
   "/videos/0snGWjeqEeM/": [
     "science-scientism"
   ],
@@ -444,8 +477,17 @@
   "/videos/1U6VfHosrqw/": [
     "atheism-doubt"
   ],
+  "/videos/3vXG_nXFWwM/": [
+    "atheism-doubt"
+  ],
+  "/videos/3vqVYfs5mCk/": [
+    "atheism-doubt"
+  ],
   "/videos/4VcPzhkP9bE/": [
     "terrorism-extremism"
+  ],
+  "/videos/7EqMJJuUKr8/": [
+    "atheism-doubt"
   ],
   "/videos/8rEb8NfMPuc/": [
     "quran-hermeneutics",
@@ -476,6 +518,13 @@
   "/videos/G47Stp3pLss/": [
     "liberalism-orientalism"
   ],
+  "/videos/M3nB154Mkuk/": [
+    "atheism-doubt",
+    "liberalism-orientalism"
+  ],
+  "/videos/MCR3xh8wccQ/": [
+    "atheism-doubt"
+  ],
   "/videos/Mj_J1Rk1esY/": [
     "quran-hermeneutics",
     "terrorism-extremism"
@@ -483,8 +532,14 @@
   "/videos/NyAVl7RsEOs/": [
     "atheism-doubt"
   ],
+  "/videos/OHNMeqGMdPc/": [
+    "atheism-doubt"
+  ],
   "/videos/PoNiuiP3W4Y/": [
     "science-scientism"
+  ],
+  "/videos/QoU02Om_wiQ/": [
+    "atheism-doubt"
   ],
   "/videos/RWE-e_l-sKs/": [
     "atheism-doubt",
@@ -525,14 +580,23 @@
     "quran-hermeneutics",
     "terrorism-extremism"
   ],
+  "/videos/idz29r5LHig/": [
+    "atheism-doubt"
+  ],
   "/videos/lCqZB8gP4sk/": [
     "quran-hermeneutics",
     "terrorism-extremism"
+  ],
+  "/videos/lE690yapgTA/": [
+    "atheism-doubt"
   ],
   "/videos/lS7h9SKKtVc/": [
     "atheism-doubt"
   ],
   "/videos/lZkv38vd7bw/": [
+    "atheism-doubt"
+  ],
+  "/videos/n3vhs1mcmVM/": [
     "atheism-doubt"
   ],
   "/videos/nkuZ70p-inE/": [
@@ -563,5 +627,8 @@
   ],
   "/videos/yUpHMaFHZ6s/": [
     "quran-hermeneutics"
+  ],
+  "/videos/ywhiqBkoveA/": [
+    "atheism-doubt"
   ]
 }

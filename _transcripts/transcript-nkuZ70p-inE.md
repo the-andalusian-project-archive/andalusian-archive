@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]"
+title: "40 - 4 Lies Muslims Tell About Ex-Muslims？"
 transcript_id: "nkuZ70p-inE"
 recording: "nkuZ70p-inE"
 capture_video_id: "nkuZ70p-inE"
@@ -17,7 +17,7 @@ capture_file: "whisper-nkuZ70p-inE.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]
+# 40 - 4 Lies Muslims Tell About Ex-Muslims？
 
 This is the capture taken from the catalogued recording itself.
 

@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]"
+title: "47 - ＂Should We Cancel Scholars？＂"
 transcript_id: "rhufN0me6xg"
 recording: "rhufN0me6xg"
 capture_video_id: "rhufN0me6xg"
@@ -17,7 +17,7 @@ capture_file: "whisper-rhufN0me6xg.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 47 - ＂Should We Cancel Scholars？＂ ｜ Answered [rhufN0me6xg]
+# 47 - ＂Should We Cancel Scholars？＂
 
 This is the capture taken from the catalogued recording itself.
 

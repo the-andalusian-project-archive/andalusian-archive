@@ -1,6 +1,6 @@
 ---
 layout: transcript
-title: "32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]"
+title: "32 - The Qur'an and Science： A Forced Marriage"
 transcript_id: "fJs5tuFw-UY"
 recording: "fJs5tuFw-UY"
 capture_video_id: "fJs5tuFw-UY"
@@ -17,7 +17,7 @@ capture_file: "whisper-fJs5tuFw-UY.json"
 disclaimer: "Transcript by machine — accuracy isn't perfect, so it shouldn't be used in polemics or debate material as an authoritative source."
 ---
 
-# 32 - The Qur'an and Science： A Forced Marriage ｜ MSA OSU [fJs5tuFw-UY]
+# 32 - The Qur'an and Science： A Forced Marriage
 
 This is the capture taken from the catalogued recording itself.
 

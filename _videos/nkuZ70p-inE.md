@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]"
+title: "40 - 4 Lies Muslims Tell About Ex-Muslims？"
 video_id: "nkuZ70p-inE"
 id: "nkuZ70p-inE"
 permalink: "/videos/nkuZ70p-inE/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: ["https://www.youtube.com/watch?v=K-JZoCVnSpk"]
 ---
 
-# 40 - 4 Lies Muslims Tell About Ex-Muslims？ [nkuZ70p-inE]
+# 40 - 4 Lies Muslims Tell About Ex-Muslims？
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

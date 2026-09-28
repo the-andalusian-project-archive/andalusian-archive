@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]"
+title: "22 - Taking Islam Out of Context! (Indeed)"
 video_id: "biZFuWyB4lk"
 id: "biZFuWyB4lk"
 permalink: "/videos/biZFuWyB4lk/"
@@ -14,7 +14,7 @@ topics: ["islam", "theology", "comparative religion"]
 mirror_urls: ["https://www.youtube.com/watch?v=2oXB5J6XWHo"]
 ---
 
-# 22 - Taking Islam Out of Context! (Indeed) [biZFuWyB4lk]
+# 22 - Taking Islam Out of Context! (Indeed)
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 

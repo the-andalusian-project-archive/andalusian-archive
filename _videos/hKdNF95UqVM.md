@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]"
+title: "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project"
 video_id: "hKdNF95UqVM"
 id: "hKdNF95UqVM"
 permalink: "/videos/hKdNF95UqVM/"
@@ -14,7 +14,7 @@ topics: ["islamic studies", "intellectual discourse"]
 mirror_urls: []
 ---
 
-# 45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project [hKdNF95UqVM]
+# 45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project
 
 Preserved on the Internet Archive as part of the andalusian-project collection.
 
