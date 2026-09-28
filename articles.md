@@ -2,6 +2,7 @@
 layout: default
 title: Blog Posts
 description: "Every work this archive holds or has located, by status: full text preserved in this repository, Wayback-only, and lost. Plus the MDI pages, the announcements and the link-outs."
+last_modified_at: 2026-09-28
 ---
 {%- comment -%}
   2026-09-27 (task 8f, Phase-3 review C1): the four PUBLISHED figures on this

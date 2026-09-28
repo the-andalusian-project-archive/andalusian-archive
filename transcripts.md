@@ -3,6 +3,7 @@ layout: default
 title: Transcripts
 permalink: /transcripts/
 description: Every machine transcript this archive holds, one page per capture, each naming the recording it transcribes, the capture file it came from and its word count.
+last_modified_at: 2026-09-28
 ---
 {%- comment -%}
   The transcript index (task 8d).

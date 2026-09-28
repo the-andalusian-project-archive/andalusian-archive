@@ -2,6 +2,7 @@
 layout: default
 title: The YouTube Channel Record
 description: What the captures of The Andalusian Project's YouTube channel show, what they cannot show, and what this archive preserves instead.
+last_modified_at: 2026-09-28
 ---
 
 {% assign f = site.data.channel_facts %}

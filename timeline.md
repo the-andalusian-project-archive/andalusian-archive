@@ -2,6 +2,7 @@
 layout: default
 title: Timeline
 description: How The Andalusian Project archive was recovered, in dated order from the first honest count to the final totals, followed by the recovered works in the order they were published.
+last_modified_at: 2026-09-28
 ---
 
 {%- comment -%}

@@ -2,6 +2,7 @@
 layout: default
 title: Academic Papers
 description: The archive's academic papers by venue and date, with the full text where the archive holds it, a link-out where it does not, and a page per paper.
+last_modified_at: 2026-09-28
 ---
 {%- comment -%}
   Every figure on this page is computed from `_data/papers.json` at build time,

@@ -2,6 +2,7 @@
 layout: default
 title: Video Archive
 description: Every recording of the Andalusian Project that this archive has catalogued, with the archived file where one exists, the source it survives at where one does not, and its themes and topics.
+last_modified_at: 2026-09-28
 ---
 {%- comment -%}
   Counts are computed from _data/videos.json and _data/transcript_coverage.json
