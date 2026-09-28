@@ -2105,17 +2105,23 @@ tr:hover td {
    it starts on the margin.
 
    The fix is not to remove the accents - they are how the eye finds the lead,
-   the caveat and the disclaimer. It is to hang the accent BAR in the gutter
-   instead of pushing the text out of it. A negative left margin equal to
-   border + padding puts the bar where it was and returns the text to the
-   content edge exactly, because the two cancel:
+   the caveat and the machine-transcript disclaimer. It is to hang the accent BAR
+   in the gutter instead of pushing the text out of it.
 
-       text_left = (content_edge - inset - rule) + rule + inset = content_edge
+   The bar is drawn with `box-shadow: inset`, not `border-left`, and that detail
+   is the whole fix. A border is a layout box: `getComputedStyle` on this page
+   reports `border-left-width` as 2.28571px for a declared 3px, so any negative
+   margin computed from the border width is wrong by a fraction nobody can see
+   and everybody can see. An inset shadow contributes nothing to layout, so the
+   only thing left to cancel is the padding, and the arithmetic is exact:
+
+       text_left = (edge - inset) + 0 + inset = edge
 
    Above 920px only. The container is 860px, so below that it fills the viewport
-   and a negative margin would push the accent bar off-screen and scroll the
-   page sideways. Verified: overhang and all four insets at 0 with no horizontal
-   overflow at 375 / 768 / 1280 / 1920.
+   and a negative margin would push the bar off-screen and scroll the page
+   sideways; under the breakpoint the text sits inside the bar, which is the only
+   option when there is no gutter to hang it in. Verified at 375 / 768 / 1280 /
+   1920: every text edge identical, no horizontal scroll anywhere.
    ============================================================================ */
 
 @media (min-width: 920px) {
@@ -2124,23 +2130,31 @@ tr:hover td {
   .page-content > .prose-note,
   .page-content blockquote,
   .page-content .topic-backlinks {
-    --rule: 3px;
     --inset: 1.1rem;
-    margin-left: calc(-1 * (var(--inset) + var(--rule)));
+    padding-left: var(--inset);
     padding-right: var(--inset);
+    border-left-width: 0;
+    margin-left: calc(-1 * var(--inset));
+    box-shadow:
+      inset 3px 0 0 0 var(--color-primary),
+      inset -1px 0 0 0 var(--color-border);
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  /* The caution list puts a badge in its padding; the same cancellation puts
-     the badge in the gutter and the text back on the edge. */
+  .page-content blockquote {
+    box-shadow: inset 3px 0 0 0 var(--color-primary);
+  }
+
+  .page-content ul.caution-list {
+    padding-left: 0;
+  }
+
   .page-content .caution-list li {
     margin-left: -1.4rem;
   }
 }
 
-/* Below the breakpoint the bar stays on the margin and the text is allowed to
-   sit inside it, which is the only option when there is no gutter to hang it in. */
 @media (max-width: 919px) {
   .page-content > p.lead,
   .page-content > p.note,
@@ -2149,5 +2163,25 @@ tr:hover td {
     --inset: 1.1rem;
     padding-left: var(--inset);
     padding-right: var(--inset);
+  }
+}
+
+/* The material table is four columns of text and does not fit a phone - measured
+   at 437px inside a 375px viewport, which scrolled the whole page sideways. It
+   scrolls inside its own box instead. Dropping the columns was the other option
+   and it is the wrong one: "also filed under" is that column's only job, and it
+   is the cross-navigation between subject pages. */
+@media (max-width: 700px) {
+  .page-content table.data-table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .page-content table.data-table th,
+  .page-content table.data-table td {
+    white-space: nowrap;
+    padding: 0.55rem 0.7rem;
   }
 }
