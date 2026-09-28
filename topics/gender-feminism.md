@@ -81,7 +81,7 @@ said at the foot of the page.</p>
 
 <h3 class="question">response to klingschor on aisha's age</h3>
 
-> Below is the refutation of a YT persona by the name of “Klingschor”, who has gotten a lot of popularity among the anti-Islam community. He, like many others, claim that the Prophet Muhammad (saws) was a pedophile or child molester given his marriage with young Aisha (ra).
+> Below is the refutation of a YT persona by the name of “Klingschor”, who has gotten a lot of popularity among the anti-Islam community. He, like many others, claim that the Prophet Muhammad (saws) was a pedophile or child molester given his marriage with young Aisha (R.A.).
 >
 > &mdash; <a href="{{ site.baseurl }}/articles/prophets-vs-pedophiles-part-1/">prophets-vs-pedophiles-part-1</a> (work), cited at <span class="cite-ref">_posts/2013-03-17-prophets-vs-pedophiles-part-1.md:17</span> &mdash; <span class="cite-size">excerpt of about 47 words from a 3,705-word text. The argument around it is not on this page.</span>
 

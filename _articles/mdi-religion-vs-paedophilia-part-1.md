@@ -26,7 +26,7 @@ Full text recovered from the Muslim Debate Initiative author archive on 2026-09-
 
 ## Text
 
-[Below is the refutation of a YT persona by the name of “Klingschor”, who has gotten a lot of popularity among the anti-Islam community. He, like many others, claim that the Prophet Muhammad (saws) was a pedophile or child molester given his marriage with young Aisha (ra). I have detailed all his errors in full as well as provided valid objections to his fallacious arguments. Enjoy.]
+[Below is the refutation of a YT persona by the name of “Klingschor”, who has gotten a lot of popularity among the anti-Islam community. He, like many others, claim that the Prophet Muhammad (saws) was a pedophile or child molester given his marriage with young Aisha (R.A.). I have detailed all his errors in full as well as provided valid objections to his fallacious arguments. Enjoy.]
 
 The Magic #9
 
@@ -34,7 +34,7 @@ A common accusation brought against Prophet Muhammad (saws) in our contemporary 
 
 My first objection will revolve around how Klingschor and others view the historical man and our evolutionary pattern throughout time. In Klingschor’s initial analysis of this issue, he gives some contemporary definitions of puberty and historical evidences pertaining to the average time at which most females reached puberty in antiquity [2].
 
-Note that he also quotes sources pertaining to the legal standards of certain societies in regards to when adulthood was reached. The implication he draws from these sources is that puberty automatically coincided with antiquities perception of adulthood (though most likely opposed to his own), and since Aisha (ra) appeared to be below this age limit prescribed by said societies, this means she was in fact an immature person incapable of sexual intercourse, understanding marriage, and social responsibility. Therefore, according to his understanding, she was victimized by the Prophet Muhammad (saws).
+Note that he also quotes sources pertaining to the legal standards of certain societies in regards to when adulthood was reached. The implication he draws from these sources is that puberty automatically coincided with antiquities perception of adulthood (though most likely opposed to his own), and since Aisha (R.A.) appeared to be below this age limit prescribed by said societies, this means she was in fact an immature person incapable of sexual intercourse, understanding marriage, and social responsibility. Therefore, according to his understanding, she was victimized by the Prophet Muhammad (saws).
 
 Here, Klingschor effectively commits the fallacy of suppressed evidence by not mentioning some important factors that run contrary to his conclusions. The first is that he fails to mention contemporary research in the field of child-studies of the past, which have noted the problem of correlating biological age with social fitness:
 

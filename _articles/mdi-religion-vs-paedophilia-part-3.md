@@ -28,7 +28,7 @@ Full text recovered from the Muslim Debate Initiative author archive on 2026-09-
 
 The Nature of Islamic Law
 
-In Part 1 we covered the scientific anomalies apparent in our detractors understanding of childhood throughout human history, and in Part 2 we attempted to examine the underlying moral philosophy they adopt that colors it. In this final portion, we will attempt to conclude our analysis by showing the true nature of Islamic Law and how it applies to the case of Prophet Muhammad (saws) and his relationship with Aisha (ra), along with how it functions today.
+In Part 1 we covered the scientific anomalies apparent in our detractors understanding of childhood throughout human history, and in Part 2 we attempted to examine the underlying moral philosophy they adopt that colors it. In this final portion, we will attempt to conclude our analysis by showing the true nature of Islamic Law and how it applies to the case of Prophet Muhammad (saws) and his relationship with Aisha (R.A.), along with how it functions today.
 
 Our detractors may also introduce a number of misconceptions while analyzing this refutation, so we will try to get those out of the way immediately before moving on.
 
