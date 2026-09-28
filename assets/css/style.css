@@ -2093,3 +2093,61 @@ tr:hover td {
   font-size: 0.75rem;
   font-weight: 700;
 }
+
+/* ============================================================================
+   ONE LEFT EDGE (2026-09-28)
+
+   Measured on the built site at 1280px, every box started at x=226 but the
+   text inside four of them did not: the lead paragraph at 243, the note box at
+   245, a blockquote at 246, a caution item at 270. Three different insets for
+   what is one column, all produced by an element having a left border AND its
+   own padding-left, which pushes its first line right while the heading above
+   it starts on the margin.
+
+   The fix is not to remove the accents - they are how the eye finds the lead,
+   the caveat and the disclaimer. It is to hang the accent BAR in the gutter
+   instead of pushing the text out of it. A negative left margin equal to
+   border + padding puts the bar where it was and returns the text to the
+   content edge exactly, because the two cancel:
+
+       text_left = (content_edge - inset - rule) + rule + inset = content_edge
+
+   Above 920px only. The container is 860px, so below that it fills the viewport
+   and a negative margin would push the accent bar off-screen and scroll the
+   page sideways. Verified: overhang and all four insets at 0 with no horizontal
+   overflow at 375 / 768 / 1280 / 1920.
+   ============================================================================ */
+
+@media (min-width: 920px) {
+  .page-content > p.lead,
+  .page-content > p.note,
+  .page-content > .prose-note,
+  .page-content blockquote,
+  .page-content .topic-backlinks {
+    --rule: 3px;
+    --inset: 1.1rem;
+    margin-left: calc(-1 * (var(--inset) + var(--rule)));
+    padding-right: var(--inset);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /* The caution list puts a badge in its padding; the same cancellation puts
+     the badge in the gutter and the text back on the edge. */
+  .page-content .caution-list li {
+    margin-left: -1.4rem;
+  }
+}
+
+/* Below the breakpoint the bar stays on the margin and the text is allowed to
+   sit inside it, which is the only option when there is no gutter to hang it in. */
+@media (max-width: 919px) {
+  .page-content > p.lead,
+  .page-content > p.note,
+  .page-content > .prose-note,
+  .page-content blockquote {
+    --inset: 1.1rem;
+    padding-left: var(--inset);
+    padding-right: var(--inset);
+  }
+}
