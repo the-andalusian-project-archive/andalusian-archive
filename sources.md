@@ -37,7 +37,7 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://asadullahali.wordpress.com/" target="_blank" rel="noopener noreferrer">The Andalusian Project</a></h3>
       <p class="src-meta">WordPress.com &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.totetu.org/assets/media/paper/j025_020.pdf" target="_blank" rel="noopener noreferrer">Gender Equality, Islam, and Law (Journal of Oriental Studies 25, pp. 20-36)</a></h3>
@@ -47,17 +47,17 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://www.totetu.org/publication/jos-jp/gakujutukenkyu-175.html" target="_blank" rel="noopener noreferrer">「東洋学術研究」通巻175号（第54巻第2号）issue contents (Japanese translation of Gender Equality, Islam, and Law)</a></h3>
       <p class="src-meta">TOTETU / Institute for Oriental Philosophy &middot; 2015 &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://forevermuslim.in/catholic-became-atheist-found-orthodox-church-finally-accepted-islam/" target="_blank" rel="noopener noreferrer">Catholic became atheist, found Orthodox Church, finally accepted Islam (reprint)</a></h3>
       <p class="src-meta">Forever Muslim &middot; 2016-05-31 &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.myultimatedecision.info/2018/06/journey-of-catholic-from-atheist-to.html" target="_blank" rel="noopener noreferrer">Journey of a Catholic from an Atheist to Orthodox Church and finally Islam (excerpt reprint)</a></h3>
       <p class="src-meta">My Ultimate Decision (reprinting Muslim Stories) &middot; 2018-06-11 &middot; reprint</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="http://heroes-history.blogspot.com/2018/07/salahuddin-ayoubi.html" target="_blank" rel="noopener noreferrer">History of The Heroes: Salahuddin Ayoubi (reprint of 'Architects of Civilisation')</a></h3>
@@ -88,32 +88,32 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://www.researchgate.net/scientific-contributions/Asadullah-Ali-Al-Andalusi-2106004803" target="_blank" rel="noopener noreferrer">Asadullah Ali Al-Andalusi - ResearchGate scientific contributions profile</a></h3>
       <p class="src-meta">ResearchGate &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/atheism-and-islam-level-1/" target="_blank" rel="noopener noreferrer">Atheism and Islam – Level 1</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/atheism-doubting-your-doubts-asadullah-ali-yaqeen-in-ny" target="_blank" rel="noopener noreferrer">Atheism: Doubting Your Doubts - Asadullah Ali \| Yaqeen in NY</a></h3>
       <p class="src-meta">Yaqeen Institute &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/clinical-applications?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Clinical Applications of Islāmic Counselling &amp; Psychotherapy</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/islamophobia/" target="_blank" rel="noopener noreferrer">Confronting Islamophobia: A Critical Analysis</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/decoding-liberalism-feminism/" target="_blank" rel="noopener noreferrer">Decoding Liberalism, Feminism &amp; Secularism</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/from-science-to-scientism-behind-the-scenes" target="_blank" rel="noopener noreferrer">From Science to Scientism</a></h3>
@@ -123,37 +123,37 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/islam-and-science-orientalists-fables-behind-the-scenes" target="_blank" rel="noopener noreferrer">Islam and Science: Orientalists' Fables</a></h3>
       <p class="src-meta">Yaqeen Institute &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/overcoming-addictions-and-compulsive-sins?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Islamic Counselling for Addictions and Compulsive Sins</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/muslim-youth-navigating-doubts-desires-and-modern-challenges?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Muslim Youth: Navigating Doubts, Desires &amp; Modern Challenges</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/specialization-in-atheism-science-and-islamic-thought-level-1?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Specialization in Atheism Science and Islamic Thought – Level 1 (Online Diploma)</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/struktur-produktiviti-saintifik-dalam-tamadun-islam-dongengan-orientalis" target="_blank" rel="noopener noreferrer">Struktur Produktiviti Saintifik dalam Tamadun Islam: Dongengan Orientalis</a></h3>
       <p class="src-meta">Yaqeen Institute &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/surah-al-kahf?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Tafsir of Surah al-Kahf</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/the-muslim-youth-development-programme?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">The Muslim Youth Development Programme</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables" target="_blank" rel="noopener noreferrer">The Structure of Scientific Productivity in Islamic Civilization: Orientalists’ Fables</a></h3>
@@ -173,17 +173,17 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/islam-medeniyetinde-ilmi-uretimin-yapisi-oryantalistlerin-efs-nesi" target="_blank" rel="noopener noreferrer">İSLAM MEDENİYETİNDE İLMÎ ÜRETİMİN YAPISI: ORYANTALİSTLERİN EFS NESİ</a></h3>
       <p class="src-meta">Yaqeen Institute &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://yaqeeninstitute.org/read/blog/%d8%a8%d9%86%d8%a7%d8%a1-%d8%a7%d9%84%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-%d8%a7%d9%84%d8%b9%d9%84%d9%85%d9%8a-%d9%81%d9%8a-%d8%a7%d9%84%d8%ad%d8%b6%d8%a7%d8%b1%d8%a9-%d8%a7%d9%84%d8%a5%d8%b3%d9%84%d8%a7" target="_blank" rel="noopener noreferrer">بناء الإنتاج العلمي في الحضارة الإسلامية: أسطورة المستشرقين</a></h3>
       <p class="src-meta">Yaqeen Institute &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://kezana.ai/Reader/Article/F63F7E5425580F4D6526C301FFDC0A65" target="_blank" rel="noopener noreferrer">International Conference on Developing Synergies between Islam and Science and Technology for Mankind's Benefit (Kezana.ai reader record)</a></h3>
       <p class="src-meta">Kezana.ai / IAIS Malaysia &middot; 2014 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://studentrepo.iium.edu.my/entities/publication/93d1b082-b160-49d1-82e1-29bfb0f4abda" target="_blank" rel="noopener noreferrer">Islamic intuitionism: the case against atheistic evidentialism (repository record)</a></h3>
@@ -193,12 +193,12 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://kezana.ai/Reader/Article/84847FB0F5F5394F38BA1B07D84EB87B" target="_blank" rel="noopener noreferrer">International Conference on Shari'ah Objectives (Maqasid) in Public Policy and Governance (Kezana.ai reader record)</a></h3>
       <p class="src-meta">Kezana.ai / IAIS Malaysia &middot; 2015 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://kezana.ai/Reader/Article/69F08D432E9145F5FDD8ECE5ECAC7726" target="_blank" rel="noopener noreferrer">The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis (Kezana.ai reader record)</a></h3>
       <p class="src-meta">Kezana.ai / IAIS Malaysia &middot; 2015 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.islamicdiscourseinitiative.com/apologetics/apostasy-beyond-the-rhetoric/" target="_blank" rel="noopener noreferrer">Apostasy: Beyond the Rhetoric (Islamic Discourse Initiative)</a></h3>
@@ -248,7 +248,7 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://traversingtradition.com/2020/11/19/science-history-and-athiesm-qa-with-asadullah-ali/" target="_blank" rel="noopener noreferrer">Science, History, and Atheism: Q&amp;A with Asadullah Ali</a></h3>
       <p class="src-meta">Traversing Tradition &middot; November 19, 2020 &middot; mention</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
 </ul><h2 id="bio">Bio (27)</h2>
 <p class="note">Biographies, profiles and CVs written by other people. They are kept because they are evidence of how he was described, and they are the rows most likely to have gone out of date.</p>
@@ -256,136 +256,136 @@ are derived by <code>scripts/relate_secondary_sources.py</code> and checked by
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/al-balagh-online-alimiyyah-programmes?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Al Balāgh Online ʿĀlimiyyah Programme</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/child-psychology?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Child Psychology: Western Insights and Islamic Perspectives</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/intro-to-unani-medicine-level-1?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Introduction To Unani Medicine – Level 1</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/introduction-to-the-muslim-youth-development-programme?utm_source=Website&amp;utm_medium=Footer&amp;utm_campaign=footer_menu" target="_blank" rel="noopener noreferrer">Introduction to the Muslim Youth Development Programme</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/islamic-psychology-and-counselling-level-2/?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Islamic Counselling And Psychology – Level 2</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/islamic-psychology-and-counselling-level-2?utm_source=Website&amp;utm_medium=Footer&amp;utm_campaign=footer_menu" target="_blank" rel="noopener noreferrer">Islamic Counselling And Psychology – Level 2</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/islamic-life-coaching?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Islamic Life Coaching: Integrating Modern Psychology and Tazkiyah</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/islamic-marriage-counselling-online-course?utm_source=Website&amp;utm_medium=Footer&amp;utm_campaign=footer_menu" target="_blank" rel="noopener noreferrer">Islamic Marriage Counselling</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/islamic-psychology-and-counselling?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Islamic Psychology And Counselling – Level 1</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/diploma-in-islamic-studies-programme?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Islamic Studies Programme</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/mastering-arabic-level-1-online-course/?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Mastering Arabic Level 1</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/mastering-arabic-level-1-online-course?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Mastering Arabic – Level 1</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/mastering-modern-arabic?utm_source=Website&amp;utm_medium=Footer&amp;utm_campaign=footer_menu" target="_blank" rel="noopener noreferrer">Mastering Modern Arabic</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/mental-health-jinn-possession?utm_source=Website&amp;utm_medium=Footer&amp;utm_campaign=footer_menu" target="_blank" rel="noopener noreferrer">Mental Health, Jinn Possession and Islamic Psychology</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/mental-health-jinn-possession-and-islamic-psychology?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Mental Health,Jinn Possession and Islamic Psychology</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/organ-donation-and-transplantation-masterclass?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Organ Donation and Transplantation: Islamic, Medical &amp; Ethical Perspectives</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/professional-specialization-in-islamic-psychology-and-counselling?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Professional Specialisation in Islamic Psychology and Counselling</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/purification-of-the-heart?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Purification of the Heart: A Spiritual and Psychological Awakening</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/specialization-in-al-seerah-al-nabawiyyah?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Specialization in Al Seerah Al Nabawiyyah Level 1 – Online Diploma</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/specialization-in-al-seerah-al-nabawiyyah-lv2?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">Specialization in Al Seerah Al Nabawiyyah Level 2 – Online Diploma</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/the-ahadith-of-medicine?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">The Ahadith of Medicine</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/ahadith-of-psychology-and-counselling?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">The Ahadith of Psychology and Counselling</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/fiqh-of-medicine-level1?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">The Fiqh of Medicine – Level 1</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/the-fiqh-of-psychology-psychiatry-and-counselling/?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">The Fiqh of Psychology, Psychiatry, and Counselling</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/the-fiqh-of-psychology-psychiatry-and-counselling?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">The Fiqh of Psychology, Psychiatry, and Counselling</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/the-fiqh-of-psychology?utm_source=Website&amp;utm_medium=Footer&amp;utm_campaign=footer_menu" target="_blank" rel="noopener noreferrer">The Fiqh of Psychology, Psychiatry, and Counselling</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
     <li class="src">
       <h3><a href="https://www.albalaghacademy.org/course/fiqh-of-halal-and-haram-medication?utm_source=Website&amp;utm_medium=mega&amp;utm_campaign=mega_menu" target="_blank" rel="noopener noreferrer">The Fiqh of Ḥalāl and Ḥarām Medication, Prescribing and Pharmacy</a></h3>
       <p class="src-meta">Al Balagh Academy &middot; bio</p>
-      <p class="rel rel-none">No single archive item established as its subject &mdash; it is a record about the author, not about one work.</p>
+      <p class="rel rel-none">No archive item linked to this record yet &mdash; it is catalogued, and its subject has not been established.</p>
     </li>
 </ul>

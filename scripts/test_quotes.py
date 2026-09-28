@@ -939,7 +939,397 @@ def check_palette() -> list[str]:
     print(f"palette pairs checked : {len(PALETTE_TEXT_PAIRS)} text, "
           f"{len(PALETTE_RULE_PAIRS)} rule, in light and in all "
           f"{len(dark_sets)} dark declaration(s)")
+    failures += check_touch_targets(css)
+    failures += check_sources_claims()
     return failures
+
+
+# A thumb is about 45px across. Anything smaller is a miss rather than a matter of
+# taste, and the audit that motivated this gate measured the real numbers on a
+# 360px viewport: .theme-toggle at 26x23, .mobile-toggle at 40x40, .nav-brand 43px
+# tall and every collapsed nav link 33px tall. The first of those was a
+# self-inflicted one - the 640px rule hides the toggle's label, which left a bare
+# icon with no padding to hold it open.
+TOUCH_MIN_PX = 44
+
+# The selectors that must be reachable on a phone, paired with the declaration
+# that gives them their size. A selector is only checked if the rule that governs
+# it actually appears in a coarse-pointer or 640px block, so a desktop-only
+# `.btn` elsewhere in the sheet does not drag the gate down.
+TOUCH_RULES = [
+    (".theme-toggle", "min-height"),
+    (".theme-toggle", "min-width"),
+    (".site-nav .mobile-toggle", "min-height"),
+    (".site-nav .mobile-toggle", "min-width"),
+    (".nav-brand", "min-height"),
+    (".site-nav .nav-links a", "min-height"),
+    # The small button variant renders 20px tall by default and these are the
+    # primary actions in a list row - "Read full text", "Read the transcript" -
+    # so they are the least forgiving targets on the page.
+    (".btn", "min-height"),
+    (".btn-sm", "min-height"),
+]
+
+# 14px is the floor for text a reader is expected to parse on a phone. The 16px
+# rule is the one that matters for form fields, because iOS Safari zooms the
+# viewport on focus below it; .search-box input is already --text-lg, so this is
+# about the metadata and the question text rather than the fields.
+MOBILE_TEXT_FLOOR_PX = 14
+
+# A table that scrolls on a phone. Matched as a substring of the prelude so a
+# multi-line selector list counts.
+TABLE_SCROLL_TARGETS = ("main table", ".page-content table", ".data-table")
+
+
+def _strip_comments(css: str) -> str:
+    """Remove /* ... */ before any structural parsing.
+
+    A prelude is taken as everything back to the previous brace, so without this
+    the explanatory comment above a rule is parsed as part of its selector. That
+    is not hypothetical: this stylesheet's phone rules are documented at length,
+    and one comment produced a "selector" with nineteen element tokens, which
+    made a specificity comparison meaningless. A comment containing a brace would
+    break the block matching too.
+    """
+    return re.sub(r"/\*.*?\*/", " ", css, flags=re.S)
+
+
+def _mobile_blocks(css: str) -> str:
+    """The text of every @media block that applies at phone widths.
+
+    Returned as one string so a selector counts as guarded if any mobile block
+    sets it. A brace counter rather than a regex: the blocks nest, and
+    `.*?` stops at the first closing brace, which is the wrong one.
+    """
+    css = _strip_comments(css)
+    out: list[str] = []
+    idx = 0
+    while True:
+        at = css.find("@media", idx)
+        if at == -1:
+            break
+        open_brace = css.find("{", at)
+        if open_brace == -1:
+            break
+        header = css[at:open_brace]
+        # max-width: 640px / 480px, or pointer: coarse, both with optional spaces.
+        narrow = ("max-width" in header and "px" in header) or "coarse" in header
+        if not narrow:
+            idx = at + 6
+            continue
+        depth = 0
+        i = open_brace
+        while i < len(css):
+            if css[i] == "{":
+                depth += 1
+            elif css[i] == "}":
+                depth -= 1
+                if depth == 0:
+                    break
+            i += 1
+        out.append("}\n" + css[open_brace + 1:i])
+        idx = i + 1
+    return "\n".join(out)
+
+
+def _rules(css: str):
+    """Yield (selector prelude, body) for every rule in a block of CSS.
+
+    A prelude can span several lines, which is why a regex like
+    `\\.foo\\s*\\{` silently misses `main table,\\n.data-table {`. The prelude is
+    therefore taken as everything back to the previous closing brace, and
+    selector-list commas are collapsed before matching.
+    """
+    pos = 0
+    while True:
+        open_brace = css.find("{", pos)
+        if open_brace == -1:
+            return
+        prev = max(css.rfind("}", 0, open_brace), css.rfind("{", 0, open_brace))
+        prelude = " ".join(css[prev + 1:open_brace].split())
+        depth = 0
+        i = open_brace
+        while i < len(css):
+            if css[i] == "{":
+                depth += 1
+            elif css[i] == "}":
+                depth -= 1
+                if depth == 0:
+                    break
+            i += 1
+        yield prelude, css[open_brace + 1:i]
+        pos = i + 1
+
+
+def check_touch_targets(css: str) -> list[str]:
+    """Phone ergonomics: hit area first, then legible text."""
+    failures: list[str] = []
+    mobile = _mobile_blocks(css)
+
+    for selector, prop in TOUCH_RULES:
+        # Find this selector's rule inside a mobile block and read the value.
+        found = False
+        for prelude, body in _rules(mobile):
+            if selector not in " ".join(prelude.split(",")):
+                continue
+            pm = re.search(rf"\b{prop}\s*:\s*([0-9.]+)px", body)
+            if not pm:
+                continue
+            found = True
+            value = float(pm.group(1))
+            if value < TOUCH_MIN_PX:
+                failures.append(
+                    f"style.css: {selector} sets {prop}: {value}px inside a phone "
+                    f"media block; a thumb needs {TOUCH_MIN_PX}px")
+        if not found:
+            failures.append(
+                f"style.css: {selector} never sets {prop} at phone widths; "
+                f"its tap target was measured below {TOUCH_MIN_PX}px")
+
+    # Nothing that renders text may be under the floor on a phone. This has to
+    # read both forms a size can take: a `font-size` declaration, and a
+    # `--text-*` token. The tokens are the more important half - the phone block
+    # raises `--text-xs` and `--text-sm` to 14px, and a great many rules reference
+    # those tokens instead of writing a size, so a check that only looked at
+    # `font-size` would pass while the actual rendered text was 12px.
+    ROOT_PX = 16.0
+    for prelude, body in _rules(mobile):
+        for prop, value in re.findall(
+                r"(--text-[\w-]+|font-size)\s*:\s*([0-9.]+)rem", body):
+            px = float(value) * ROOT_PX
+            if px < MOBILE_TEXT_FLOOR_PX:
+                failures.append(
+                    f"style.css: `{prop}: {value}rem` ({px:g}px) inside a phone "
+                    f"media block for `{prelude[:60]}`; the floor is "
+                    f"{MOBILE_TEXT_FLOOR_PX}px")
+        for value in re.findall(r"font-size\s*:\s*([0-9.]+)px", body):
+            if float(value) < MOBILE_TEXT_FLOOR_PX:
+                failures.append(
+                    f"style.css: `font-size: {value}px` inside a phone media "
+                    f"block for `{prelude[:60]}`; the floor is "
+                    f"{MOBILE_TEXT_FLOOR_PX}px")
+
+    # A scrollable table with no visible edge cue reads as a broken layout, so
+    # the affordance is part of the contract rather than polish. The scroll and
+    # the cue are declared in different phone blocks - one sets overflow-x, the
+    # other the four scroll-shadow backgrounds - so the two are checked as a pair
+    # across the whole set of table rules rather than inside a single rule.
+    table_rules = [(p, b) for p, b in _rules(mobile)
+                   if any(s in p for s in TABLE_SCROLL_TARGETS)]
+    scrolls = sum(1 for _, b in table_rules if "overflow-x" in b)
+    cued = sum(1 for _, b in table_rules if "background-attachment" in b)
+    if scrolls and not cued:
+        failures.append(
+            f"style.css: {scrolls} phone table block(s) scroll horizontally with "
+            f"no scroll-shadow; a silent scroll is indistinguishable from a "
+            f"layout bug")
+
+    rule_count = sum(1 for _ in _rules(mobile))
+    print(f"phone ergonomics     : {rule_count} rules in phone blocks, "
+          f"{scrolls} scrolling table block(s), {cued} with a cue, "
+          f"{TOUCH_MIN_PX}px tap floor, {MOBILE_TEXT_FLOOR_PX}px text floor")
+    failures += check_phone_layout(css)
+    return failures
+
+
+# Three separate defects on a phone all came from the same shape of mistake, and
+# all three were invisible to measurement until something was measured properly.
+# They are checkable by reading the stylesheet, so they are checked by reading the
+# stylesheet.
+#
+# 1. The collapse was undone. `.site-nav .nav-links { display: none }` sat in a
+#    max-width block near the top of the sheet; the reading-first layer later set
+#    `display: flex` on the same selector with no media query. Equal specificity,
+#    so the later rule won at every width and the menu was permanently open.
+# 2. The dropdown was invisible. It is `position: absolute` below the bar, so it
+#    falls outside the surface the bar paints; with no background of its own the
+#    page showed through it and the links were unreadable.
+# 3. The close button was unreachable. The reading-first layer re-declares
+#    `.nav-inner` with `flex-wrap: wrap`, which is right for ten links on a narrow
+#    desktop but also applies to the brand, theme toggle and menu button. At
+#    360px they need ~320px in 297px, so the menu button wrapped to a second line
+#    - directly under the dropdown, which is positioned at `top: var(--nav-height)`.
+#
+# Plus a fourth, found while fixing the first: a phone override that only looks
+# strong enough. `.page-content table td` is (0,1,2) and loses to
+# `.page-content table.data-table td` at (0,2,2), so `white-space: normal` never
+# applied and a four-column table stayed 1171px wide inside a 345px box.
+PHONE_LAYOUT_RULES = [
+    # (label, exact selector, property, required value)
+    ("the collapsed nav never gets a display override",
+     ".site-nav .nav-links", "display", "none"),
+    ("the open dropdown has no background of its own",
+     ".site-nav .nav-links", "background", "*"),
+    ("the nav row is allowed to wrap, which buries the close button",
+      ".site-nav .nav-inner", "flex-wrap", "nowrap"),
+]
+
+
+# A note on what is deliberately NOT here, because it was tried and removed.
+#
+# `_specificity()` existed to compare the phone cell override against the rule
+# that out-ranks it. It does not work on this stylesheet: computing a prelude as
+# the text back to the previous brace mis-reads rules nested inside @media
+# blocks, so it compared a real selector against a fragment of a comment and
+# reported a pass that the rendered page contradicted. Verifying a cascade by
+# parsing the cascade is the wrong approach; the browser already does it
+# correctly, and the mobile audit measures the result. Kept as a note so the
+# attempt is not repeated.
+
+
+def _phone_value_for(mobile: str, selector: str, prop: str) -> str | None:
+    """The value that actually wins for `selector` inside the phone blocks.
+
+    The LAST matching declaration, not the first. Cascade order is the whole
+    point: the original collapse at the top of the sheet sets `display: none` and
+    a later layer sets `display: flex` on the same selector, and a check that
+    stops at the first match is satisfied by the dead rule.
+    """
+    target = " ".join(selector.split())
+    value = None
+    for prelude, body in _rules(mobile):
+        for part in [" ".join(part.split()) for part in prelude.split(",")]:
+            if " ".join(part.split()) != target:
+                continue
+            m = re.search(rf"\b{prop}\s*:\s*([^;]+)", body)
+            if m:
+                value = m.group(1).strip()
+    return value
+
+
+def check_phone_layout(css: str) -> list[str]:
+    """Phone-specific layout rules that must survive a later layer."""
+    failures: list[str] = []
+    mobile = _mobile_blocks(css)
+    base = _rules(_without_media(css))
+
+    for label, selector, prop, want in PHONE_LAYOUT_RULES:
+        got = _phone_value_for(mobile, selector, prop)
+        if got is None:
+            failures.append(
+                f"style.css: no phone media block sets {prop} on `{selector}` "
+                f"- {label}")
+            continue
+        if want == "*":
+            if got in ("none", "transparent", "initial", "unset"):
+                failures.append(
+                    f"style.css: `{selector}` sets {prop}: {got} in a phone "
+                    f"media block, which paints nothing - {label}")
+        elif got != want:
+            failures.append(
+                f"style.css: `{selector}` resolves to {prop}: {got} in a phone "
+                f"media block, expected {want} - {label}")
+
+    # The cell-wrapping tripwire.
+    #
+    # A four-column table on /topics/atheism-doubt/ rendered 1171px wide inside a
+    # 345px box - a 3.4x horizontal scroll. Two rules combine to do it:
+    # `.page-content table` sets `white-space: nowrap`, which cells inherit, and a
+    # `@media (max-width: 700px)` block sets `.page-content table.data-table td`
+    # to nowrap at (0,2,2) - which out-ranks the (0,1,2)
+    # `.page-content table td { white-space: normal }` that already existed in a
+    # narrower block. Adding the same `normal` at (0,2,2), later in the sheet,
+    # took the table to 410px.
+    #
+    # That is a cascade outcome, and this gate deliberately does not try to verify
+    # it. Two attempts failed: a specificity comparison read preludes out of
+    # nested media blocks incorrectly and reported a false pass, and a
+    # first-match check was satisfied by a dead rule that a later one overrode.
+    # A stylesheet parser is the wrong tool. The load-bearing check is the
+    # rendered measurement in the mobile audit, which fails if any table exceeds
+    # twice the viewport width - 1171px failed it, 410px passes it.
+    #
+    # What is left here is the cheap part: some phone block must set white-space
+    # on cells at all, which catches a wholesale removal.
+    phone_ok = False
+    phone_where = ""
+    for prelude, body in _rules(mobile):
+        if "white-space" not in body:
+            continue
+        if "normal" not in body and "pre-wrap" not in body:
+            continue
+        for part in [" ".join(x.split()) for x in prelude.split(",")]:
+            if not re.search(r"\btd\b", part):
+                continue
+            phone_ok = True
+            if not phone_where:
+                phone_where = part
+
+    if not phone_ok:
+        failures.append(
+            "style.css: no phone media block sets white-space on a table cell; "
+            "cells inherit nowrap from `.page-content table` and wide tables "
+            "will need a multi-screen horizontal scroll")
+
+    print(f"phone layout traps   : {len(PHONE_LAYOUT_RULES) + 1} checked "
+          f"(collapse, dropdown surface, nav row, cell wrap "
+          f"{'via ' + phone_where if phone_ok else 'MISSING'}; cascade itself "
+          f"verified by rendered measurement, not here)")
+    return failures
+
+
+# The /sources/ page once told readers that an unlinked record "is a record about
+# the author, not about one work." That is a claim about the world, asserted from
+# the absence of a link - and it was false, on the site that carried dozens of
+# the author's works. Fifty of seventy records carried it.
+#
+# These are the shapes such a sentence takes: an assertion about what a record
+# *is*, attached to the fact that no referent was established. Matching prose is
+# crude, but the alternative is a category of error that reads as authoritative
+# and is invented, which is the one failure this archive cannot have.
+UNVERIFIED_INFERENCE_PHRASES = [
+    "it is a record about",
+    "not about one work",
+    "no single archive item established",
+]
+
+
+def check_sources_claims() -> list[str]:
+    """No generated page may assert what an unlinked record is about."""
+    failures: list[str] = []
+    page = ROOT / "sources.md"
+    if not page.exists():
+        failures.append("sources.md: missing; the sources page is not built")
+        return failures
+    text = page.read_text(encoding="utf-8", errors="ignore")
+    for phrase in UNVERIFIED_INFERENCE_PHRASES:
+        n = text.lower().count(phrase.lower())
+        if n:
+            failures.append(
+                f"sources.md: {n} record(s) assert '{phrase}' - an unlinked "
+                f"record's subject is unknown, not the other way round")
+    unresolved = text.count('class="rel rel-none"')
+    print(f"source claims        : {unresolved} unlinked record(s), "
+          f"{len(UNVERIFIED_INFERENCE_PHRASES)} inference phrases banned")
+    return failures
+
+
+def _without_media(css: str) -> str:
+    """The sheet with every @media block removed, brace-matched."""
+    css = _strip_comments(css)
+    out: list[str] = []
+    i = 0
+    while i < len(css):
+        at = css.find("@media", i)
+        if at == -1:
+            out.append(css[i:])
+            break
+        out.append(css[i:at])
+        ob = css.find("{", at)
+        if ob == -1:
+            break
+        depth = 0
+        j = ob
+        while j < len(css):
+            if css[j] == "{":
+                depth += 1
+            elif css[j] == "}":
+                depth -= 1
+                if depth == 0:
+                    break
+            j += 1
+        i = j + 1
+    return "".join(out)
 
 
 # 680px at an 18px serif lands near 66 characters, the midpoint of the three

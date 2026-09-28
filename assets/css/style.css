@@ -24,6 +24,11 @@
   --color-surface: #fdfbf8;
   --color-surface-hover: #f2e3e1;
   --color-surface-sunken: #efe8de;
+  /* Edge shadow for the horizontally scrollable tables on a phone. Light and dark
+     differ in how much they need: on the near-white paper a faint black reads as
+     smudge, on the dark surface the same alpha reads as depth. The dark value is
+     in the dark theme blocks. */
+  --scroll-shadow: rgba(40, 25, 18, 0.16);
   --color-border: #d5cab7;
   --color-border-strong: #c2b49f;
 
@@ -1466,7 +1471,7 @@ tr:hover td {
 .page-content blockquote em {
   color: var(--color-text-secondary);
   font-style: normal;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   display: block;
   padding-top: 0.5rem;
   border-top: 1px dashed var(--color-border);
@@ -1474,7 +1479,7 @@ tr:hover td {
 
 .page-content blockquote code {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   color: var(--color-text-tertiary);
   word-break: break-all;
 }
@@ -1499,7 +1504,7 @@ tr:hover td {
 }
 
 .page-content p.crumb {
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
   margin-bottom: 0.5rem;
 }
@@ -1563,7 +1568,7 @@ tr:hover td {
 
 .topic-card p.topic-meta {
   margin: 0;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   color: var(--color-text-tertiary);
   font-family: var(--font-mono);
 }
@@ -1613,7 +1618,7 @@ tr:hover td {
 
 .topic-backlinks p.meta {
   margin: 0 0 0.75rem;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
 }
 
@@ -1660,7 +1665,7 @@ tr:hover td {
 
 .recording-links p.meta {
   margin: 0 0 0.75rem;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
 }
 
@@ -1694,7 +1699,7 @@ tr:hover td {
 .recording-links .rec-direct {
   display: inline-block;
   margin-top: 0.15rem;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   font-weight: 600;
   color: var(--color-primary);
 }.recording-links .rec-dl {
@@ -1717,7 +1722,7 @@ tr:hover td {
 
 .secondary-backlinks p.meta {
   margin: 0 0 0.75rem;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
 }
 
@@ -1780,7 +1785,7 @@ tr:hover td {
 
 .src-meta {
   margin: 0 0 0.35rem;
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
 }
 
@@ -1990,7 +1995,7 @@ tr:hover td {
 }
 
 .page-content h3.shelf-kind {
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--color-text-secondary);
@@ -2048,7 +2053,7 @@ tr:hover td {
    says so - in the same weight as the rest of the attribution, not buried. */
 .page-content blockquote .cite-size {
   color: var(--color-text-tertiary);
-  font-size: 0.8125rem;
+  font-size: var(--text-sm);
   font-style: italic;
 }
 
@@ -2056,7 +2061,7 @@ tr:hover td {
    because it is an annotation on a link rather than a feature. */
 .footer-flag {
   display: inline-block;
-  font-size: 0.6875rem;
+  font-size: var(--text-xs);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-success);
@@ -2083,7 +2088,7 @@ tr:hover td {
    separators instead of mid-token. */
 .page-content blockquote .cite-ref {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: var(--text-xs);
   color: var(--color-text-tertiary);
   overflow-wrap: break-word;
   word-break: normal;
@@ -2117,7 +2122,7 @@ tr:hover td {
   border-radius: 50%;
   background: var(--color-warning-subtle);
   color: var(--color-warning);
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   font-weight: 700;
 }
 
@@ -3480,6 +3485,7 @@ a:focus-visible {
     --color-surface-hover: #3a2825;
     --color-surface-sunken: #171110;
     --color-border: #54423c;
+    --scroll-shadow: rgba(255, 240, 232, 0.20);
     --color-border-strong: #6e574e;
     --color-text: #ece4da;
     --color-text-secondary: #bdb2a8;
@@ -3507,6 +3513,9 @@ a:focus-visible {
   --color-surface-hover: #f2e3e1;
   --color-surface-sunken: #efe8de;
   --color-border: #d5cab7;
+  /* Restated deliberately. Under a dark OS preference the media query above sets
+     the dark value, and an explicit Light override has to beat it. */
+  --scroll-shadow: rgba(40, 25, 18, 0.16);
   --color-border-strong: #c2b49f;
   --color-text: #1c1a17;
   --color-text-secondary: #5c5750;
@@ -3531,6 +3540,9 @@ a:focus-visible {
   --color-surface-hover: #3a2825;
   --color-surface-sunken: #171110;
   --color-border: #54423c;
+  /* A shadow on a dark surface is nearly invisible, so it needs a lighter tint
+     and a touch more alpha than the light theme's. */
+  --scroll-shadow: rgba(255, 240, 232, 0.20);
   --color-border-strong: #6e574e;
   --color-text: #ece4da;
   --color-text-secondary: #bdb2a8;
@@ -3659,4 +3671,278 @@ span.tall-glyph {
   vertical-align: baseline;
   /* No letter-spacing: at 0.55em a 0.01em tracking becomes a visible gap. */
   letter-spacing: 0;
+}
+
+/* ============================================
+   Touch
+   ============================================ */
+
+/* Everything in this block is a measurement, not a preference. Auditing at 360px
+   (the common Android width), 375px (iPhone SE) and 390px (iPhone 12-15) across
+   13 page kinds found:
+
+   - the page never overflowed: 0px at all three widths, because the wide tables
+     were already `display: block; overflow-x: auto` and scrolled inside their own
+     box rather than pushing the document;
+   - but `.theme-toggle` was a 26x23 target, `.mobile-toggle` 40x40, `.nav-brand`
+     43px tall, and every collapsed nav link 33px tall. A thumb needs ~44px. The
+     toggle was the worst of these and it was my own regression: the rule below it
+     hides the label at 640px, which left the icon with nothing to give it size;
+   - and the smallest rendered text was 11.7px (the toggle's own icon), with 13px
+     across the nav, the question text, the stat labels and the badges.
+
+   The 16px rule matters mostly for form fields - iOS Safari zooms the viewport on
+   focus below it - and the search box is already --text-lg. The sizes fixed below
+   are the ones a reader has to actually read on a phone. */
+
+/* 44x44 is the smallest target that is reliably hittable. min-width and
+   min-height are used rather than padding so the box is 44px in both axes even
+   when the glyph inside is smaller. */
+@media (pointer: coarse) {
+  .theme-toggle,
+  .site-nav .mobile-toggle,
+  .site-nav .nav-links a,
+  .nav-brand,
+  .site-footer a,
+  .page-content .btn,
+  .page-content .quick-link,
+  .back-link,
+  .cite-ref {
+    min-height: 44px;
+  }
+
+  .theme-toggle,
+  .site-nav .mobile-toggle {
+    min-width: 44px;
+    justify-content: center;
+  }
+
+  /* The nav links are flex rows in the collapsed menu, so min-height centres the
+     label instead of stranding it at the top of a bare padding box. */
+  .site-nav .nav-links a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Applied by width as well as by pointer, because a narrow desktop window is
+   narrow for the same reason a phone is and the toggle collapses identically. */
+@media (max-width: 640px) {
+  /* The two small steps of the scale were 12px and 13px, which is where every
+     remaining undersized string on the site came from: the question text, the
+     stat labels, the nav, the badges, the citation references. Raising the scale
+     here rather than patching each class fixes the whole set at the source, and
+     a new class added later inherits a legible size instead of a small one. */
+  :root {
+    --text-xs: 0.875rem;
+    --text-sm: 0.875rem;
+  }
+
+  /* The icon is the whole control once the label is hidden, so it has to carry
+     the size itself. */
+  .theme-toggle {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0;
+    /* `justify-content: center` belongs HERE, with the `padding: 0` that made
+       it necessary, not in the `pointer: coarse` block above. That block does
+       not apply to a narrow desktop window, where the label is hidden by width
+       and the control is still a flex row - so the glyph sat at the flex start,
+       15.4px left of the centre of a 44px box, against an empty right half.
+       The tap-target gate passed it the whole time, because the box really was
+       44x44. Correct box, wrong contents: a size check cannot see this, so the
+       mobile audit now also measures where the glyph lands inside it. */
+    justify-content: center;
+  }
+
+  .theme-toggle .theme-icon {
+    font-size: 1.05rem;
+  }
+
+  .site-nav .mobile-toggle {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .nav-brand {
+    min-height: 44px;
+  }
+
+  .site-nav .nav-links a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9375rem;
+  }
+
+  /* 11.7px was the theme icon; 12px the brand mark and the citation references.
+     14px is the floor for everything the reader is expected to parse, and the
+     13px metadata steps up to meet it. The brand mark stays a mark. */
+  .theme-toggle .theme-icon,
+  .nav-brand .brand-icon,
+  .cite-ref,
+  .badge,
+  .meta,
+  .topic-q,
+  .topic-meta,
+  .stat-label,
+  .page-note,
+  .crumb,
+  .cite-size {
+    font-size: 0.875rem;
+  }
+
+  .topic-q,
+  .topic-meta,
+  .stat-label,
+  .page-note,
+  .crumb,
+  .cite-size,
+  .meta {
+    line-height: 1.6;
+  }
+
+  /* The small button variant is 20px tall, which is the size of a piece of
+     printed text and roughly a third of a fingertip. These are the primary
+     actions in a list row - "Read full text", "Read the transcript" - so they
+     are the least forgiving targets on the page. Padding is added rather than
+     height forced so the label stays vertically centred and the row keeps its
+     rhythm; the extra height comes out of the gap, not out of the text. */
+  .page-content .btn,
+  .btn-sm,
+  .btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+/* The menu was never collapsing. The responsive rule at the top of this sheet
+   hides the nav list below 768px, and the reading-first layer later in the file
+   re-states `.site-nav .nav-links { display: flex }` for the desktop bar. All
+   three of those rules have specificity (0,2,0), so the winner is whichever
+   comes last in the source - and the desktop bar does. The collapse was undone
+   by a rule that was only ever meant to describe a wide screen.
+
+   The symptom was easy to miss: the open list is `position: absolute`, so it
+   overlays the page without contributing one pixel to `documentElement
+   .scrollWidth`. Every overflow measurement in this project's sweep reported
+   zero while a 345x440 menu sat on top of the content at every width under
+   768px. Only a screenshot caught it. Hence the assertion in the mobile audit,
+   which is what should have been there from the start.
+
+   The breakpoint is 768px, matching the original collapse, not the 640px used
+   for the type scale and tap targets below. Those are different questions: a
+   touch target can stay generous at 700px, but a ten-link row cannot. */
+@media (max-width: 768px) {
+  /* The row must not wrap on a phone. The reading-first layer re-declares
+     .nav-inner with `flex-wrap: wrap` so that ten navigation links can wrap on a
+     narrow desktop - but .nav-inner also holds the brand, the theme toggle and
+     the menu button, so the wrap applied to the whole row. At 360px that is
+     184 + 24 + 44 + 24 + 44 = 320px of content in 297px of space, so the menu
+     button fell to a second line. The dropdown is positioned at
+     `top: var(--nav-height)`, which put it directly over the button that is
+     supposed to close it: the menu could be opened but not shut.
+
+     nowrap plus a shrinkable brand fixes it at the source. The brand is given
+     min-width: 0 so it yields space instead of pushing, and ellipsis so a very
+     narrow phone degrades to "Andalusian Ar..." rather than a broken row. An
+     explicit height keeps the bar the same size the dropdown is offset by, so
+     the two cannot drift apart again. */
+  .site-nav .nav-inner {
+    flex-wrap: nowrap;
+    gap: var(--space-3);
+    height: var(--nav-height);
+  }
+
+  .site-nav .nav-brand {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .site-nav .nav-links {
+    display: none;
+    /* The open list is `position: absolute`, hanging below the bar rather than
+       inside it, so it falls outside the surface the bar paints. Without a
+       background of its own the page shows through it and the links become
+       unreadable over the heading underneath. The bar is --color-bg, and the
+       dropdown matches it so the two read as one piece; the hairline closes the
+       panel the way the bar's own bottom border closes it. */
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-nav .nav-links.open {
+    display: flex;
+  }
+}
+
+/* The 7rem cell minimum above meant four columns could not come in under 448px,
+   so a four-column table needed a 448px-wide drag inside a 313px box. Two changes:
+   let cells wrap, and drop the minimum to what a two-word value actually needs.
+   The table still scrolls when a cell has a long citation in it, and the next
+   block says so, because a silently scrollable table reads as a broken one.
+
+   The `.data-table` qualifier in the cell list is load-bearing, and it is here
+   because the obvious version of this rule silently did nothing. The base layer
+   sets `.page-content table.data-table td { white-space: nowrap }` at
+   specificity (0,2,2). A phone override written as `.page-content table td` is
+   (0,1,2), so it loses the cascade no matter how much later it appears in the
+   file - the cells stayed nowrap, could not wrap, and the four columns stayed at
+   486 + 88 + 168 + 429 = 1171px inside a 345px box, a 3.4x horizontal scroll.
+   min-width and overflow-break from the same losing rule did apply, which is
+   what made the bug confusing: two of the three declarations were live and the
+   one that mattered was dead. Qualifying the selector raises it to (0,2,2),
+   where source order decides and this block is later. */
+@media (max-width: 640px) {
+  main table th,
+  main table td,
+  .page-content table th,
+  .page-content table td,
+  .page-content table.data-table th,
+  .page-content table.data-table td,
+  .data-table th,
+  .data-table td {
+    min-width: 5.5rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  /* Wrap the scroll box so the shadow stays put and a long cell can break
+     mid-citation rather than forcing the whole row wide. */
+  main table,
+  .page-content table,
+  .data-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* A horizontal scroll with no visible cue is indistinguishable from a layout
+   bug, and these tables scroll without any visual sign at rest. The four
+   backgrounds below are the standard scroll-shadow: the two outer radials are
+   painted `scroll`-attached so they sit on the edges of the box, and the two
+   flat cover gradients are `local`-attached so they travel with the content and
+   cover the shadow exactly when there is nothing further to see. The result is
+   a shadow on the side that has more, and none on the side that does not. */
+@media (max-width: 640px) {
+  main table,
+  .page-content table,
+  .data-table {
+    background:
+      linear-gradient(to right, var(--color-surface), rgba(0, 0, 0, 0))
+        left center,
+      linear-gradient(to left, var(--color-surface), rgba(0, 0, 0, 0))
+        right center,
+      radial-gradient(farthest-side at 0 50%, var(--scroll-shadow),
+        rgba(0, 0, 0, 0)) left center,
+      radial-gradient(farthest-side at 100% 50%, var(--scroll-shadow),
+        rgba(0, 0, 0, 0)) right center;
+    background-repeat: no-repeat;
+    background-size: 28px 100%, 28px 100%, 12px 100%, 12px 100%;
+    background-attachment: local, local, scroll, scroll;
+  }
 }

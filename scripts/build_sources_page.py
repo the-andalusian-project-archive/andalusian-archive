@@ -81,9 +81,19 @@ def main() -> int:
                        + "; ".join(bits)
                        + f' &mdash; <em>{esc(links[0].get("how",""))}</em></p>')
             else:
-                rel = ('<p class="rel rel-none">No single archive item established '
-                       'as its subject &mdash; it is a record about the author, '
-                       'not about one work.</p>')
+                # Say what is known, not what the record appears to be.
+                #
+                # This used to read "No single archive item established as its
+                # subject - it is a record about the author, not about one work."
+                # The first clause is a fact about the archive. The second is an
+                # inference drawn from that absence, and it is false: the record
+                # was asadullahali.wordpress.com, the site that carried dozens of
+                # his works. Failing to establish a referent says nothing about
+                # what a record concerns; it says we have not established it.
+                # Fifty of seventy records carried the invented clause.
+                rel = ('<p class="rel rel-none">No archive item linked to this '
+                       'record yet &mdash; it is catalogued, and its subject has '
+                       'not been established.</p>')
             items.append(
                 f"""    <li class="src">
       <h3><a href="{esc(r.get('url',''))}" target="_blank" rel="noopener noreferrer">{esc(title)}</a></h3>

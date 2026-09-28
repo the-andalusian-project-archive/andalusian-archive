@@ -63,30 +63,36 @@
         <span class="brand-icon">TAP</span>
         Andalusian Archive
       </a>
+      {%- comment -%}
+        Three states, not two: "follow the system" is a real choice and is
+        the default, so a reader who has said nothing gets what their OS
+        asks for and the toggle can hand that state back.
+
+        The button carries the NEXT state in its accessible name, which is
+        what a screen reader announces before the reader commits to
+        pressing it, and the live region carries the state it is in now.
+        No icon font and no third-party SVG: the glyphs are text, so they
+        are readable by a screen reader and cannot fail to load.
+
+        2026-09-28: this used to be the first <li> inside .nav-links, which
+        made it a navigation item - and it was not a navigation item. It
+        also meant that on a phone it only existed while the collapsed menu
+        was open, because .nav-links is display:none below 768px. The theme
+        is a standing preference, not somewhere to navigate to, so it now
+        sits in the bar beside the menu button and is reachable at every
+        width without opening anything.
+      {%- endcomment -%}
+      <button type="button" class="theme-toggle" id="themeToggle"
+              aria-live="polite">
+        <span class="theme-icon" aria-hidden="true" data-theme-icon>&#9681;</span>
+        <span class="theme-label" data-theme-label>System</span>
+        <span class="visually-hidden"> theme. Switch to</span>
+        <span class="visually-hidden" data-theme-next>dark</span>
+      </button>
       <button class="mobile-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation" onclick="var l=document.getElementById('navLinks');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li>
-          {%- comment -%}
-            Three states, not two: "follow the system" is a real choice and is
-            the default, so a reader who has said nothing gets what their OS
-            asks for and the toggle can hand that state back.
-
-            The button carries the NEXT state in its accessible name, which is
-            what a screen reader announces before the reader commits to
-            pressing it, and the live region carries the state it is in now.
-            No icon font and no third-party SVG: the glyphs are text, so they
-            are readable by a screen reader and cannot fail to load.
-          {%- endcomment -%}
-          <button type="button" class="theme-toggle" id="themeToggle"
-                  aria-live="polite">
-            <span class="theme-icon" aria-hidden="true" data-theme-icon>&#9681;</span>
-            <span class="theme-label" data-theme-label>System</span>
-            <span class="visually-hidden"> theme. Switch to</span>
-            <span class="visually-hidden" data-theme-next>dark</span>
-          </button>
-        </li>
         <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a></li>
         {%- comment -%}
           2026-09-28: "Questions" is second, not last, and Channel/Timeline moved
