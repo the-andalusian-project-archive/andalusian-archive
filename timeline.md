@@ -197,7 +197,7 @@ description: How The Andalusian Project archive was recovered, in dated order fr
 {%- endcomment -%}
 <p class="page-note"><strong>2026-09-28 &mdash; the searchability pass.</strong> Two pages
 were added to the site because the queries people actually type about this corpus had no
-honest answer anywhere on the web. <a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">Who
+honest answer anywhere on the web. <a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">Who
 this is</a> is the archive&rsquo;s single answer to the subject&rsquo;s name and his work:
 every attested form of it, the distinction from the different man also called Abdullah
 al-Andalusi, his four recorded roles and a linked index into the collections.

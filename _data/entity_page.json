@@ -1,7 +1,7 @@
 {
   "built": "2026-09-28",
   "built_by": "Hand-maintained registry, in the same style as _data/channel_facts.json and _data/taxonomy.json: it holds prose and URLs, never a count. Every count on the entity page is counted from the collection data files by Liquid at build time, so this file cannot make the page publish a figure the data does not support.",
-  "purpose": "The registry behind /asadullah-ali-al-andalususi/ and /asadullahali-com-what-happened/. It exists because those two pages have to state facts that are not in any collection file - which name forms are attested, where, and by whom - and a page that states such facts without recording where each one came from would be exactly the kind of claim this archive refuses to make.",
+  "purpose": "The registry behind /asadullah-ali-al-andalusi/ and /asadullahali-com-what-happened/. It exists because those two pages have to state facts that are not in any collection file - which name forms are attested, where, and by whom - and a page that states such facts without recording where each one came from would be exactly the kind of claim this archive refuses to make.",
 
   "external_check": {
     "date": "2026-09-28",

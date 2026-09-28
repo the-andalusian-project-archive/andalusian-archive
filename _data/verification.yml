@@ -1,4 +1,4 @@
-﻿# Search-engine verification tokens
+# Search-engine verification tokens
 #
 # Read by `_includes/seo_head.html`, which emits the corresponding <meta> tag on
 # every page ONLY when the value below is non-empty. Leaving a value as an empty

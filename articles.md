@@ -59,7 +59,7 @@ description: "Every work this archive holds or has located, by status: full text
   timestamped capture of what he actually wrote, and those are the links to follow &mdash;
   see <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to
   the Andalusian Project&rsquo;s web presence</a> for the full account, and
-  <a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a> for
+  <a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">the entity page</a> for
   who wrote all of this and every form of his name.</p>
 </div>
 <div class="card-grid">

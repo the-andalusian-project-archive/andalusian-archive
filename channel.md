@@ -226,4 +226,4 @@ Guide to Science and Scientism</em> and the other recorded series straight to it
 For what became of the site this channel belonged to, see
 <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to the
 Andalusian Project&rsquo;s web presence</a>; for who the author is, see
-<a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a>.</p>
+<a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">the entity page</a>.</p>

@@ -2,7 +2,10 @@
 layout: default
 title: "Asadullah Ali Al-Andalusi: who he is, what he wrote, and what happened to his sites"
 description: "Every attested form of Asadullah Ali Al-Andalusi's name, his four recorded roles, an index into every collection, and the other Al-Andalusi he is confused with."
-permalink: /asadullah-ali-al-andalususi/
+permalink: /asadullah-ali-al-andalusi/
+redirect_from:
+  - /asadullah-ali-al-andalususi/
+  - /asadullah-ali-al-andalusi.html
 schema: person
 last_modified_at: 2026-09-28
 ---

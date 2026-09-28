@@ -97,7 +97,7 @@ transcript &mdash; all of them are on
 </div>
 
 <p class="page-note">For who the author is and every form of his name, see
-<a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a>. For what
+<a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">the entity page</a>. For what
 happened to the channel these recordings came from, see
 <a href="{{ '/channel/' | relative_url }}">the channel record</a> and
 <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to the

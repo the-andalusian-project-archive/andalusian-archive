@@ -445,7 +445,7 @@ a standing truth.</p>
   <p class="page-note">This page records where the bibliographic record of this work is
   incomplete. It does not change the record itself. For what this archive holds and what
   it deliberately does not, see
-  <a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">who this is</a> and
+  <a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">who this is</a> and
   <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to the
   website</a>; for the recordings this corpus is better known for, see
   <a href="{{ '/channel/' | relative_url }}">the channel record</a>, whose files are preserved

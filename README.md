@@ -7,7 +7,7 @@ a member of the [Muslim Debate Initiative](https://muslimdebate.org), and a lect
 contemporary atheism, philosophy of science, Islamic political thought and information
 literacy. Every attested form of his name, where each is attested, and the distinction from the
 different and also-active speaker named Abdullah al-Andalusi are on
-[`/asadullah-ali-al-andalususi/`](asadullah-ali-al-andalususi.md).
+[`/asadullah-ali-al-andalusi/`](asadullah-ali-al-andalusi.md).
 
 **The original web presence is gone.** `asadullahali.com` is no longer his: the domain resolves
 and answers HTTP 200, serving an unrelated slot-gambling operation. Do not use it, and do not
@@ -354,7 +354,7 @@ index.md articles.md papers.md videos.md transcripts.md
 channel.md timeline.md search.md   site pages
 series/           the 7 transcript series pages (one file per series, each a
                   thin wrapper around _includes/series_page.html)
-asadullah-ali-al-andalususi.md     the entity page: who the subject is
+asadullah-ali-al-andalusi.md     the entity page: who the subject is
 asadullahali-com-what-happened.md  the lost-and-found page: what happened to the
                                   site, the mirror, the channel and the domain
 scholarly-records.md              the bibliography-reconciliation page: what the
@@ -371,7 +371,7 @@ reads its facts and counts out of `_data/` at build time.
 
 | Page | Route | What it answers |
 |---|---|---|
-| Who this is | `/asadullah-ali-al-andalususi/` | Every attested form of his name and where each is attested; the distinction from the different, active speaker also called Abdullah al-Andalusi, with the byline gate that keeps their work apart; his four recorded roles with the corpus's own tense preserved; a linked index into the collections; the loss record; and what this archive is and is not. Emits `Person` + `BreadcrumbList` JSON-LD. |
+| Who this is | `/asadullah-ali-al-andalusi/` | Every attested form of his name and where each is attested; the distinction from the different, active speaker also called Abdullah al-Andalusi, with the byline gate that keeps their work apart; his four recorded roles with the corpus's own tense preserved; a linked index into the collections; the loss record; and what this archive is and is not. Emits `Person` + `BreadcrumbList` JSON-LD. |
 | What happened to the website | `/asadullahali-com-what-happened/` | `asadullahali.com`, the WordPress mirror, the YouTube channel and the dead publisher domain. Carries the safety warning that the domain is now an unrelated gambling site — printed as plain text, never as a link — and answers the seven queries the archive is the only page answering. Emits `Article` + `FAQPage` + `BreadcrumbList` JSON-LD. |
 | Transcripts by series | `/transcripts/by-series/` and 7 series pages | The 68 transcripts were one flat list, so a reader wanting session three of a series had nothing to land on. Grouped into the series the channel itself numbered, with each part's transcript linked directly. |
 

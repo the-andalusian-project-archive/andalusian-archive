@@ -186,7 +186,7 @@ dead.</p>
     </tr>
     <tr>
       <td>Who he is, and every form of his name</td>
-      <td><a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">The entity page</a>, including the distinction from the different man also called Abdullah al-Andalusi.</td>
+      <td><a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">The entity page</a>, including the distinction from the different man also called Abdullah al-Andalusi.</td>
     </tr>
   </tbody>
 </table>

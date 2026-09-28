@@ -191,7 +191,7 @@ description: "A digital preservation record of the writing and recordings of Asa
       the two different men named Al-Andalusi, the other is the only warning that
       the domain is now a gambling site.
     {%- endcomment -%}
-    <a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}" class="quick-link">
+    <a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}" class="quick-link">
       <div class="ql-icon" style="background: var(--color-primary-subtle); color: var(--color-primary);">
         <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="10" cy="10" r="7"/><path d="M10 9v5M10 6.5v.5"/></svg>
       </div>

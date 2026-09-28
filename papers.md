@@ -64,7 +64,7 @@ description: The archive's academic papers by venue and date, with the full text
 bibliography that goes out of date: {{ total }} rows, and for two of them the publisher or
 the DOI no longer resolves. If you are here because a citation you were given does not work,
 the corrected citation is printed on the paper&rsquo;s own page. For who wrote them, see
-<a href="{{ '/asadullah-ali-al-andalususi/' | relative_url }}">the entity page</a>; for
+<a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">the entity page</a>; for
 what became of the sites these papers were announced on, see
 <a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">what happened to the
 Andalusian Project&rsquo;s web presence</a>.</p>
