@@ -15,10 +15,6 @@ layout: post
 
 # The Fire of God’s Mercy
 
-Posted on August 1, 2018ByAsadullah Ali
-
-14 Comments
-
 ![A low-angle photograph of the Lady Justice statue, her sword lowered and her scales raised against a blue and clouded sky.]({{ "/assets/images/301_justice.jpg" | relative_url }})
 
 Atheists often advance the argument that God’s Mercy is canceled out by virtue of eternal Hellfire. However, I’ve always found this objection wanting and more an evidence of the vacuity of those proposing it. How so? Because such an argument seems to redefine the concept of mercy entirely; twisting it into a juvenile trait uncharacteristic of any moral standard.
@@ -44,8 +40,6 @@ And the answer is simple: because both these options would be a contradiction to
 But really, is this so hard to grasp? Or are atheists just projecting their own failure to comprehend what a Divine Being should be like? As far as I’m concerned, I don’t want to believe in atheists’ juvenile version of an “ideal god”.
 
 I’d much rather prefer to believe in an All-Merciful God where the word ‘mercy’ actually means something.
-
-Category:Articles,Atheism,Philosophy,Refutation,TheodicyTags:Hell,Mercy,Punishment
 
 ### 14 Comments on “The Fire of God’s Mercy”
 

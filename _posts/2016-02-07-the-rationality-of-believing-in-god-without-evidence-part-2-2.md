@@ -21,8 +21,6 @@ source_url: "https://asadullahali.wordpress.com/2016/02/07/the-rationality-of-be
 
 In Part 1 we examined the basic arguments for God’s existence, the concept of the fitrah – otherwise known as ‘intuition’ – and how it works.[1] In this part we will elucidate the justification behind the intuition’s existence, how evidence is not always necessary, and how belief in God is intuitively justifiable.
 
-<!--more-->
-
 ## Does the Fitrah Actually Exist?
 
 The philosophical support behind the intuition is based on the recognition that: (1) there are such things as ‘reality’ and ‘knowledge’, and (2) that human beings can grasp both at a normative level of cognition. In regards to the first, without acknowledging these concepts, then there would be no point to intellectual discourse at all. The author of this treatise would be wasting his time and his words would ultimately have no real meaning. Likewise, the reader would have no real reason to disagree or agree with the points herein and would suffer from a terrible conflict of apprehending something that he or she doesn’t even believe is possible to apprehend. As such, I suspect that no one would dare attempt to refute the first of these points, lest they wish to succumb to absurdities.

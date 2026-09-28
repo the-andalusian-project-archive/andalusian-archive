@@ -16,8 +16,6 @@ needs_review: true
 
 # Understanding Aisha’s Age: An Interdisciplinary Approach
 
-Posted on October 2, 2018ByAsadullah Ali
-
 Comment
 
 ![A model of an earthen courtyard house with date palms and clay water jars, its flat-roofed walls pierced by small square openings.]({{ "/assets/images/299_aisha_s-age_1-heroimage-1500x500.jpg" | relative_url }})
@@ -26,18 +24,3 @@ Abstract:In recent years, few criticisms of Islam have taken the spotlight as mu
 
 For the full article, please gohere
 
-                    sectionId: '370373',
-                    format: 'inread'
-                });
-            });
-
-
-						collapseEmpty: 'before',
-						sectionId: '26942',
-						location: 120,
-						width: 300,
-						height: 250
-					});
-				});
-
-Category:Articles,Current Issues,IslamophobiaTags:aisha

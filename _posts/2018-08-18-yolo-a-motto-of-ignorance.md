@@ -15,10 +15,6 @@ layout: post
 
 # #YOLO: A Motto of Ignorance
 
-Posted on August 18, 2018ByAsadullah Ali
-
-3 Comments
-
 ![A stock 3D illustration of a seesaw with a crowned, smiling gold ball at one end and a frowning gold ball at the other.]({{ "/assets/images/300_shutterstock_434295161.jpg" | relative_url }})
 
 “Why should I allow a religion to restrict my way of life? If we only live once, it makes our lives more meaningful. So live life to the fullest!”

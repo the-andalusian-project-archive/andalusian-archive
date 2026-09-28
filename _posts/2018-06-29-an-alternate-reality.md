@@ -15,10 +15,6 @@ layout: post
 
 # An Alternate Reality
 
-Posted on June 29, 2018ByAsadullah Ali
-
-2 Comments
-
 ![A portrait of a seated man in Ottoman dress — a large yellow turban and an orange robe under a fur-trimmed cloak — against a plain brown backdrop.]({{ "/assets/images/302_m102311.jpg" | relative_url }})
 
 Imagine the Ottoman Empire was never dismantled and went on to win World War 1 and World War 2. As a result, it ends up conquering most of Europe and dividing it on ethnic-nationalistic lines.
@@ -50,8 +46,6 @@ Dissatisfied with this response, the Ottoman Empire declares war and invades the
 However, the mission was not accomplished. More and more mosques are bombed. People become increasingly scared over time. The radical secularists still terrorize the population while the ‘moderates’ declare they have nothing to do with their principles. “‘For Liberty’ is meant for peace, not war”, they say. Discussions about Ottoman values become a central theme. Combating radicalization and extremism become the next items on the list — then stricter immigration laws. The wars continue and no one is to blame, but the terrorists themselves. And the story goes on with no end in sight…
 
 The world as we know it.
-
-Category:Articles,Current Issues,Islamophobia,Politics,story,terrorismTags:alternate reality,Asadullah Ali,Asadullah Ali Al-Andalusi
 
 ### 2 Comments on “An Alternate Reality”
 

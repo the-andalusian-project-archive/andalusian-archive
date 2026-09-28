@@ -15,10 +15,6 @@ layout: post
 
 # My Views On the Punishment For Apostasy
 
-Posted on August 11, 2020ByAsadullah Ali
-
-2 Comments
-
 ![A man seen from behind in a white shirt and dark trousers, standing with his arms slightly outstretched on bare sand dunes under a clear sky.]({{ "/assets/images/002_4ad90-desert-man.jpg" | relative_url }})
 
 This article is a brief overview of my position on the punishment for apostasy within Islam. Over the years, I have discussed it very few times, whether in video or on social media platforms. The reason being is because I never felt it necessary to discuss unless asked or challenged on a particular point. Most of my dawah work focused on refuting ex-Muslims and Islamophobes, yet there were few times it was relevant to bring up in debate.
@@ -68,8 +64,6 @@ For a concise, but scholarly view on the subject (that may or may not support my
 ---
 
 - “of, relating to, or characteristic of the Middle Ages,”https://www.merriam-webster.com/dictionary/medieval
-
-Category:Articles,Current Issues,PersonalTags:Apostasy,Islam
 
 ### 2 Comments on “My Views On the Punishment For Apostasy”
 

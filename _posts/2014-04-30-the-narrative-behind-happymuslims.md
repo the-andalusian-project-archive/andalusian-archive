@@ -27,8 +27,6 @@ I must admit that there have been many times in my life as a Muslim that I have 
 
 Adam and I at ISTAC, Kuala Lumpur
 
-<!--more-->
-
 THE ISSUE
 
 April 16 marked the day when the video “#HappyMuslims” was released on to YouTube and spread viral throughout the inter webs. The video featured a small group of British Muslims dancing and lip singing to the hit song “Happy” by R&B artist, Pharrell Williams. Reaching now over a million views and inspiring various spin-offs, the video has basically become a marketing success. Aside from FaceBook and YouTube, it has been featured on many various media outlets, including the Huffington Post, The Guardian, Independent, and The Washington Post, all lauding the surprising fact that some Muslims listen to music and dance, and want to counter the popular stereotypes that they are terrorists or extremists. This is precisely what the creators of the video, The Honesty Policy, were hoping for when they announced on their blog the intentions behind the project:

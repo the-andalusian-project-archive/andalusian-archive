@@ -9,10 +9,6 @@ layout: post
 
 # Thoughts on Beauty
 
-Posted on December 31, 2011ByAsadullah Ali
-
-1 Comment
-
 ![A snow-covered fishing village on a still fjord at dusk, its lit windows and red-and-white houses reflected in the water beneath snow-capped mountains.]({{ "/assets/images/337_beautiful_lake_side_village_in_iceland.jpg" | relative_url }})
 
 I have come to some conclusions about my own aesthetic approach to beauty and art. It has been extremely eye opening over the course of the year. Through my own experiences of what we conventionally conceive of as “beautiful” and through the readings of other philosophers before me I have drawn some insights into the nature of these two concepts. In doing so, it has opened up my understanding of knowledge in general and my belief in God in particular. Note that my thoughts are primarily derived from the views of the late Andalusian scholar, Ibn Hazm and the late German Existentialists, Martin Heidegger. Below will be a cursory analysis of what I have come to believe.
@@ -28,7 +24,5 @@ In this way we understand beauty as an experience more than an attribute of some
 In the same way, war is a way by which we understand and appreciate beauty. There is no intrinsic aesthetic quality in theart of waritself, because war is chaotic and destructive, but we lust for blood and the extermination of our enemies because they appear to pose a threat to our very existence; our very desire for this communion. For if we do not destroy them, they will destroy us. And it is through overpowering our enemy that we reaffirm our existence and our communion, and through this we feel the same ecstasy of the beautiful through the protection of our existence. We do not crave war in a void, but in the context of preservation and it is through asserting ourselves as the better, as the victors of preservation, that we vindicate ourselves and our eternal quest towards the eternal. For men do not become patriotic in times of peace nor do they truly understand the importance of home, wealth and family until the thought of those things disappear from their minds. Thisnothingnessis merely the threat of a precious work of art being burned before our very eyes; a precious work of art that represents who we are and fulfills who we are. It is the destruction of this communion that we seek to fight against, and to be victor gives value to its presentation even more.
 
 Category:Articles,Philosophy
-
-### One Comment on “Thoughts on Beauty”
 
 - Islamotroll10 Mar 2012Salaam Alaykum Ali,This is SKhan. Nice post. I never thought beauty and war that way.Reply

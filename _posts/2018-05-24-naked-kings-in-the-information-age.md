@@ -15,10 +15,6 @@ layout: post
 
 # Naked Kings in the Information Age
 
-Posted on May 24, 2018ByAsadullah Ali
-
-11 Comments
-
 ![A political cartoon of Donald Trump as a naked emperor, his crown and sceptre removed and the figure censored, standing before a line of Republican elephants in suits.]({{ "/assets/images/304_trumpnaked1.png" | relative_url }})
 
 In the past few years, many Muslims have been doubting their faith and some have left the religion all together. There are numerous factors as to why, ranging from intellectual confusion, emotional issues, and pressures from dominant societies. However, one aspect has rarely been discussed: the fact we also live in what is called the ‘Information Age’ and its negative influence on the way we perceive and understand Islam and Muslims.
@@ -97,11 +93,8 @@ ________________________________________________________________________________
 
 [7]The whole idea that ‘Islamophobia’ is just a term used to stifle free speech and criticism of Islam is yet another myth that backs this. Neither of these individuals have ever bothered to provide evidence of this conspiracy theory, yet it’s swallowed up so easily by their gullible followers.
 
-Category:Articles,Atheism,Current Issues,Islamophobes,IslamophobiaTags:Asadullah Ali,Asadullah Ali Al-Andalusi,ExMuslims
-
 ### 11 Comments on “Naked Kings in the Information Age”
 
-- Pingback:The Best of the Web 24/05/2018 – Hoovered Up
 - Amanda24 May 2018Islam oppressing girls and women is probably a pretty solid reason for leaving the religion.ReplyShahzeb25 May 2018Oh no Asadullah, we got another one.ReplyAdam7AE27 May 2018If I had any doubts as to the truthfulness of this article’s claims, you’ve certainly quelled them.Thank you.ReplyAmanda27 May 2018No need to thank me for your own ignorance.Shahzeb28 May 2018No, seriously Amanda. Thank you so much for enlightening the world with your insight. I can’t talk for everybody, but you’ve certainly opened my eyes. I hope you continue your study of Islam through “popular” YouTubers and Internet sensationalists, who are, in the modern world, appropriate replacements for academics and scholars.
 - Shahzeb25 May 2018Everything said in this article is true. It’s not long now until this online fad of anti-Islam dies like it’s predecessors, it’s like the arguments are getting worse by the day. Keep writing that fire Asadullah. May Allah bless you.Reply
 - Naved9 Jun 2018You are really touching on an important phenomenon and applying it well! This talk between Sh Hamza Yusuf and Dr. Robert George also talks about this, calling today the “Age of Feeling”:https://www.youtube.com/watch?v=Lu8ZkauTlrwReplySh9 Jun 2018Great video.Reply

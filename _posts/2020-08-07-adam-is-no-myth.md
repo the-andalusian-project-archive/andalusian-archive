@@ -16,8 +16,6 @@ layout: post
 
 # Adam Is No “Myth”
 
-Posted on August 7, 2020ByAsadullah Ali
-
 Comment
 
 ![Dr David Jalajel, author of “Adam is No Myth”, speaking at a conference while wearing a UNFCCC lanyard.]({{ "/assets/images/262_5e90c-davidpic.jpg" | relative_url }})
@@ -89,4 +87,3 @@ Does this conclusion, however, conflict with the prevailing scientific account o
 
 I pray that this puts an end to the confusion and allows people to consider my article’s thesis on the value of its merits.
 
-Category:Articles,Daniel Haqiqatjou,Evolution,Refutation,ScienceTags:Daniel Haqiqatjou,David Jalajel,Evolution,Response,Review,Yaqeen Institute

@@ -15,10 +15,6 @@ layout: post
 
 # Lost in Time-Translation
 
-Posted on March 24, 2020ByAsadullah Ali
-
-4 Comments
-
 ![A science-fiction illustration of a man seen from behind, chained to a heavy ball, facing a glowing blue portal in a ruined industrial interior.]({{ "/assets/images/290_time-travel_resize_md.jpg" | relative_url }})
 
 Let’s say that you had the ability to travel back in time and wanted to visit somewhere in the 7th century. Your purpose? You desire to better the future by explaining the true nature of the world (as understood by your superior 22nd century brain) to people in the past.
@@ -74,8 +70,6 @@ You click the video, listening to the young vlogger describe the myths of these 
 You close the video, scoffing at the young man’s ignorance regarding how communication and language work.
 
 Fin
-
-Category:Articles,Qur'an,Science,storyTags:language,Qur'an,science
 
 ### 4 Comments on “Lost in Time-Translation”
 

@@ -21,13 +21,9 @@ div.wpmrec2x{max-width:610px;}
 			div.wpmrec2x div.u > div{float:left;margin-right:10px;}
 			div.wpmrec2x div.u > div:nth-child(3n){margin-right:0px;}
 
-
-
             var p = o.parentNode;
             p.style.setProperty('display', 'inline-block', 'important');
             o.style.setProperty('display', 'block', 'important');
-        });
         } else {
             o.style.setProperty('display', 'none', 'important');
             o.style.setProperty('visibility', 'hidden', 'important');
-        }

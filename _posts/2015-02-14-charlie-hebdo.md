@@ -9,10 +9,6 @@ layout: post
 
 # Charlie Hebdo: Coexistence and Crocodile Tears
 
-Posted on February 14, 2015ByAsadullah Ali
-
-1 Comment
-
 ![The Charlie Hebdo cover cartoon “Nothing is forgiven”, showing caricatured men holding placards reading Syria, China, Gaza, Egypt, Afghanistan and Iraq.]({{ "/assets/images/326_cafcaf-hebdo.jpg" | relative_url }})
 
 Recent events have proven to be an obstacle towards dialogue centered on coexistence; only helping to marginalize the marginalized even further. The beginning of this year (2015), January 7th, once again not only showcased the position of dialogue and its power within civilization, but also how different the Western world approaches the concept compared to the majority of Muslims. Most importantly, the tragedy that occurred, which claimed the lives of 17 people by a small group of deranged young men shouting “Allahu Akbar” – as though to justify their delusions through religious mandate and their supposed offense of the Prophet Muhammad (salAllahu alayhi wasallam) having been depicted – was the worse tragedy of all. This event shocked and humiliated not only French society, but the world. All that could possibly follow from this was intense anger and sadness of which has not been seen in the West for some time. Protests sprung up across the globe, both on streets and social media, brandishing placards proclaiming, “Je Suis Charlie” (I Am Charlie) in solidarity with those massacred at the satirical newspaperCharlie Hebdo. Despite the murderers having been brought to justice in a long gun fight that resulted in them being killed, the severity of the backlash was not softened in the least. Shortly thereafter, millions came to the newspaper’s aid in the form of hundreds of thousands of dollars in funds and world leaders making emergency visits to Paris to march alongside already enraged protesters. Not only this, but the newspaper ended up printing nearly up to three million copies of its newest issue – commemorating those who had died from these attacks – all the while drawing yet another Prophet Muhammad (sallAllahu alayhi wasallam) cartoon, smack in the middle of the cover, holding a placard declaring “Je Suis Charlie”, while saying “All is forgiven.”
@@ -84,9 +80,5 @@ ______________________________________
 [3]http://www.worldbulletin.net/turkey/153128/turkish-magazine-gives-the-answer-charlie-hebdo-deserves
 
 [4]http://www.alternet.org/media/noam-chomsky-slams-wests-charlie-hebdo-outrage-many-journalists-were-killed-israel-gaza-too
-
-Category:Articles,Current Issues,Philosophy,PoliticsTags:#HappyMuslims,CharlieHebdo,France,Islam
-
-### One Comment on “Charlie Hebdo: Coexistence and Crocodile Tears”
 
 - isa sulaiman19 Feb 2015Salaam! Well written… A positive read on a very current subject. Keep it coming…Reply

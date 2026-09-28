@@ -15,10 +15,6 @@ layout: post
 
 # Of Context and Confusion
 
-Posted on March 10, 2018ByAsadullah Ali
-
-3 Comments
-
 ![An illustration of a schoolgirl holding books and a pen, standing before a red disc bearing a swastika — here the Nazi emblem, not the Hindu symbol.]({{ "/assets/images/307_annefrankjapan-1024x640.jpg" | relative_url }})
 
 One day you find a book on the floor and decide to open it. The first line you read is:
@@ -48,8 +44,6 @@ You then respond, “What do you mean by ‘innocent’? Huh? What does that wor
 Your friend stares at you incredulously and shrugs his shoulders. He then proceeds to walk away, contemplating if he should remain friends with such a dense person.
 
 FIN
-
-Category:Articles,Refutation,storyTags:Asadullah Ali,Asadullah Ali Al-Andalusi,context
 
 ### 3 Comments on “Of Context and Confusion”
 

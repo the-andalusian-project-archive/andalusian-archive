@@ -32,6 +32,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 TOPIC_DIR = ROOT / "_data" / "topics"
 QUOTES = TOPIC_DIR / "*.json"
 
@@ -942,6 +943,54 @@ def check_palette() -> list[str]:
     failures += check_touch_targets(css)
     failures += check_sources_claims()
     failures += check_theme_default(ROOT / "_layouts" / "default.html")
+    failures += check_fetch_damage()
+    return failures
+
+
+# Fetch damage is the text a FETCHER left behind, as distinct from the author's
+# own prose. `scripts/fetch_damage.py` holds the rules; this gate fails on the
+# two classes where the answer is never in doubt and reports the rest.
+#
+# The split is the whole point. `residue` (an injected ad payload, an orphaned
+# `});`, a WordPress `<!--more-->`) and `chrome` (a byline, "1 Comment",
+# "Category:…Tags:…") are things the author never wrote, so their presence is a
+# defect. `join`, `space` and `encoding` are judgement: the same pattern that
+# finds a destroyed space also matches camelCase, verse references and a
+# transcription of the word "document". Those are counted and printed so they
+# can be triaged per hit, and they never fail the build - rewriting them
+# mechanically is how a preservation archive starts editing its author.
+def check_fetch_damage() -> list[str]:
+    import fetch_damage as fd
+
+    failures: list[str] = []
+    by_class: dict[str, int] = {}
+    by_rule: dict[str, int] = {}
+    for path, hits in fd.scan_collections():
+        for h in hits:
+            by_class[h.cls] = by_class.get(h.cls, 0) + 1
+            by_rule[h.rule] = by_rule.get(h.rule, 0) + 1
+            if h.automatic:
+                rel = path.relative_to(ROOT).as_posix()
+                failures.append(
+                    f"{rel}:{h.line}: {h.rule} - {h.text[:70]!r}")
+
+    # Collapse to one line per rule so a damaged file does not bury the report.
+    if failures:
+        counts: dict[str, int] = {}
+        for f in failures:
+            counts[f.split(": ", 1)[1].rsplit(" - ", 1)[0]] = \
+                counts.get(f.split(": ", 1)[1].rsplit(" - ", 1)[0], 0) + 1
+        failures = [
+            f"fetch damage: {rule} in {n} place(s) - the fetcher's residue and "
+            f"the theme's furniture are still in the body"
+            for rule, n in sorted(counts.items(), key=lambda kv: -kv[1])
+        ]
+
+    auto = sum(n for c, n in by_class.items() if c in fd.AUTOMATIC)
+    print(f"fetch damage         : {auto} unambiguous (gate), "
+          + ", ".join(f"{c}={n}" for c, n in sorted(by_class.items())
+                      if c not in fd.AUTOMATIC)
+          + " (triage only, not gated)")
     return failures
 
 

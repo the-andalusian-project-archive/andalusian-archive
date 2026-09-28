@@ -16,38 +16,7 @@ needs_review: true
 
 # The Atheistic Worldview vs. The Qur’anic Worldview
 
-Posted on December 22, 2017ByAsadullah Ali
-
-1 Comment
-
 ![An illuminated opening page of a Qur'an, the Arabic text of al-Fatiha set inside a floral and geometric border.]({{ "/assets/images/309_quran-2478729__480.jpg" | relative_url }})
 
 A discussion I had on Reviving Faith Radio (August 27, 2017).
 
-                    sectionId: '370373',
-                    format: 'inread'
-                });
-            });
-
-
-						collapseEmpty: 'before',
-						sectionId: '26942',
-						location: 120,
-						width: 300,
-						height: 250
-					});
-				});
-
-						collapseEmpty: 'before',
-						sectionId: '114160',
-						location: 130,
-						width: 300,
-						height: 250
-					});
-				});
-
-Category:Atheism,Current Issues,existence of god,fitrah,Interviews,PhilosophyTags:Atheism,Qur'an
-
-### One Comment on “The Atheistic Worldview vs. The Qur’anic Worldview”
-
-- Pingback:Possible arguments and proofs about the existence of God #2 – Unmasking anti Jehovah sites and people
