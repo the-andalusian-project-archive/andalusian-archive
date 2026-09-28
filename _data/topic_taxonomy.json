@@ -13,6 +13,7 @@
       "url": "/topics/apostasy-hell/",
       "material_count": 15,
       "quote_count": 80,
+      "shown_quote": 31,
       "query_count": 110,
       "shelf_count": 5,
       "shelf": [
@@ -58,6 +59,7 @@
       "url": "/topics/aqeedah-basics/",
       "material_count": 9,
       "quote_count": 22,
+      "shown_quote": 11,
       "query_count": 59,
       "shelf_count": 2,
       "shelf": [
@@ -88,6 +90,7 @@
       "url": "/topics/atheism-doubt/",
       "material_count": 20,
       "quote_count": 56,
+      "shown_quote": 31,
       "query_count": 69,
       "shelf_count": 27,
       "shelf": [
@@ -243,6 +246,7 @@
       "url": "/topics/gender-feminism/",
       "material_count": 14,
       "quote_count": 70,
+      "shown_quote": 34,
       "query_count": 72,
       "shelf_count": 2,
       "shelf": [
@@ -273,6 +277,7 @@
       "url": "/topics/liberalism-orientalism/",
       "material_count": 15,
       "quote_count": 58,
+      "shown_quote": 45,
       "query_count": 82,
       "shelf_count": 9,
       "shelf": [
@@ -338,6 +343,7 @@
       "url": "/topics/quran-hermeneutics/",
       "material_count": 7,
       "quote_count": 47,
+      "shown_quote": 36,
       "query_count": 93,
       "shelf_count": 16,
       "shelf": [
@@ -438,6 +444,7 @@
       "url": "/topics/science-scientism/",
       "material_count": 13,
       "quote_count": 100,
+      "shown_quote": 39,
       "query_count": 96,
       "shelf_count": 22,
       "shelf": [
@@ -568,6 +575,7 @@
       "url": "/topics/terrorism-extremism/",
       "material_count": 23,
       "quote_count": 68,
+      "shown_quote": 27,
       "query_count": 151,
       "shelf_count": 22,
       "shelf": [

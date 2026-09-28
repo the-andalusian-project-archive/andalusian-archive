@@ -554,6 +554,13 @@ def main() -> int:
                 "url": f"/topics/{cid}/",
                 "material_count": len(spec.get("material") or []),
                 "quote_count": n_claims,
+                "shown_quote": sum(
+                    1
+                    for it in spec.get("material") or []
+                    for c in it.get("key_claims") or []
+                    if is_subject_authored(it.get("path", ""))[0]
+                    and is_answer_quote(c.get("quote", ""))
+                ),
                 "query_count": n_queries,
                 "shelf_count": len(shelf_out),
                 "shelf": shelf_out,
@@ -583,13 +590,14 @@ def main() -> int:
 
     # ---- /topics/ index ---------------------------------------------------
     rows = "\n".join(
-        f"""    <li class="topic-card">
+            f"""    <li class="topic-card">
       <h3><a href="{{{{ site.baseurl }}}}/topics/{c['id']}/">{esc(c['label'])}</a></h3>
       <p class="topic-q">{esc(c['reader_question'])}</p>
-      <p class="topic-meta">{c['material_count']} items, {c['quote_count']} quoted passages, {c['query_count']} questions</p>
+      <p class="topic-meta">{c['material_count']} items &middot; {c['shown_quote']} passages shown
+        &middot; {c['shelf_count']} more on the subject &middot; {c['query_count']} questions</p>
     </li>"""
-        for c in merged["clusters"]
-    )
+            for c in merged["clusters"]
+        )
     total_q = sum(c["query_count"] for c in merged["clusters"])
     total_m = sum(c["material_count"] for c in merged["clusters"])
 
