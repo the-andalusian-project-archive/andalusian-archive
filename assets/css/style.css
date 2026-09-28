@@ -1768,6 +1768,110 @@ tr:hover td {
   font-size: 0.875rem;
 }
 
+/* --- third-party back-references, and the /sources/ index ----------------- */
+
+.secondary-backlinks {
+  margin: 2rem 0;
+  padding: 1rem 1.2rem;
+  background: var(--color-accent-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.secondary-backlinks h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.secondary-backlinks p.meta {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.secondary-backlinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+}
+
+.secondary-backlinks li {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.secondary-backlinks li:last-child {
+  margin-bottom: 0;
+}
+
+.secondary-backlinks li a {
+  font-weight: 600;
+}
+
+/* The relationship basis. A reprint and a critique are not the same kind of
+   evidence, and a reader who sees only "related" cannot tell them apart, so the
+   basis sits on the line rather than behind a tooltip or a hidden attribute. */
+.secondary-backlinks .src-type,
+.secondary-backlinks .rel-how {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.src-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.src-list .src {
+  margin: 0 0 1.25rem;
+  padding: 0 0 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.src-list .src:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.src-list h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.src-list h3 a {
+  word-break: break-word;
+}
+
+.src-meta {
+  margin: 0 0 0.35rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.src-list .rel {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}
+
+/* A record with no established referent says so rather than being left blank.
+   Silence would read as "no relationship found" when the truth is "not
+   established", and those are different claims about the record. */
+.src-list .rel-none {
+  font-style: italic;
+}
+
+.page-content h2[id] {
+  margin-top: 2.25rem;
+}
+
 /* --- narrow screens ------------------------------------------------------ */
 
 @media (max-width: 640px) {
@@ -2129,7 +2233,8 @@ tr:hover td {
   .page-content > p.note,
   .page-content > .prose-note,
   .page-content blockquote,
-  .page-content .topic-backlinks {
+  .page-content .topic-backlinks,
+  .page-content .secondary-backlinks {
     --inset: 1.1rem;
     padding-left: var(--inset);
     padding-right: var(--inset);

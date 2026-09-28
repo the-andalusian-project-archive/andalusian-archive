@@ -11,7 +11,16 @@
     "notes": "Muslim Debate Initiative host page for his own talk/article; MDI is not him, the byline is",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "mdi",
+        "ref": "refuting-the-masked-arab-2",
+        "label": "[Video] Refuting The Masked Arab (2)",
+        "how": "third-party page carrying this work",
+        "permalink": "/articles/mdi/refuting-the-masked-arab-2/"
+      }
+    ]
   },
   {
     "title": "Naked Kings in the Information Age",
@@ -25,7 +34,16 @@
     "notes": "Muslim Debate Initiative host page for his own talk/article; MDI is not him, the byline is",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "work",
+        "ref": "naked-kings-in-the-information-age",
+        "label": "Naked Kings in the Information Age",
+        "how": "title match",
+        "permalink": "/articles/naked-kings-in-the-information-age/"
+      }
+    ]
   },
   {
     "title": "When Facts Become Fiction \\| iJihad Ep. 1",
@@ -53,7 +71,16 @@
     "notes": "Muslim Debate Initiative host page for his own talk/article; MDI is not him, the byline is",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "mdi",
+        "ref": "islam-terrorism",
+        "label": "Lecture: 'Islam & Terrorism' [Asadullah Ali al Andalusi]",
+        "how": "third-party page carrying this work",
+        "permalink": "/articles/mdi/islam-terrorism/"
+      }
+    ]
   },
   {
     "title": "An Antidote For Extremism",
@@ -81,7 +108,16 @@
     "notes": "Yaqeen Institute publication of his own work; link-out only (Global Constraint 4: Yaqeen PDFs are never downloaded)",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "3",
+        "label": "Understanding Aisha's Age: An Interdisciplinary Approach",
+        "how": "title match",
+        "permalink": "/papers/understanding-aisha-s-age-an-interdisciplinary-approach/"
+      }
+    ]
   },
   {
     "title": "Understanding Aisha’s Age: An Interdisciplinary Approach",
@@ -95,7 +131,16 @@
     "notes": "Yaqeen Institute publication of his own work; link-out only (Global Constraint 4: Yaqeen PDFs are never downloaded)",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "3",
+        "label": "Understanding Aisha's Age: An Interdisciplinary Approach",
+        "how": "title match",
+        "permalink": "/papers/understanding-aisha-s-age-an-interdisciplinary-approach/"
+      }
+    ]
   },
   {
     "title": "بناء الإنتاج العلمي في الحضارة الإسلامية: أسطورة المستشرقين",
@@ -179,7 +224,16 @@
     "notes": "Yaqeen Institute publication of his own work; link-out only (Global Constraint 4: Yaqeen PDFs are never downloaded)",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "2",
+        "label": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables",
+        "how": "title match",
+        "permalink": "/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/"
+      }
+    ]
   },
   {
     "title": "From Science to Scientism",
@@ -193,7 +247,16 @@
     "notes": "Yaqeen Institute publication of his own work; link-out only (Global Constraint 4: Yaqeen PDFs are never downloaded)",
     "http_status": 200,
     "origin": "derived",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "5",
+        "label": "From Science to Scientism",
+        "how": "title match",
+        "permalink": "/papers/from-science-to-scientism/"
+      }
+    ]
   },
   {
     "title": "The Muslim Youth Development Programme",
@@ -949,7 +1012,107 @@
     "notes": "Source of the 6-paper / 7-talk listing with work IDs; live academia.edu returns HTTP 403 behind a managed Cloudflare JS challenge, which this lane did not attempt to bypass",
     "http_status": 200,
     "origin": "lane_extension",
-    "counted_as_content": false
+    "counted_as_content": false,
+    "relates_to": [
+      {
+        "kind": "paper",
+        "ref": "3",
+        "label": "Understanding Aisha's Age: An Interdisciplinary Approach",
+        "how": "named on the captured listing",
+        "permalink": "/papers/understanding-aisha-s-age-an-interdisciplinary-approach/"
+      },
+      {
+        "kind": "paper",
+        "ref": "2",
+        "label": "The Structure of Scientific Productivity in Islamic Civilization: Orientalists' Fables",
+        "how": "named on the captured listing",
+        "permalink": "/papers/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/"
+      },
+      {
+        "kind": "paper",
+        "ref": "8",
+        "label": "Architects of Civilisation: Sallahuddin Ayubi",
+        "how": "named on the captured listing",
+        "permalink": "/papers/architects-of-civilisation-sallahuddin-ayubi/"
+      },
+      {
+        "kind": "paper",
+        "ref": "7",
+        "label": "Gender Equality, Islam, and Law",
+        "how": "named on the captured listing",
+        "permalink": "/papers/gender-equality-islam-and-law/"
+      },
+      {
+        "kind": "paper",
+        "ref": "1",
+        "label": "The Rise and Decline of Scientific Productivity in the Muslim World: A Preliminary Analysis",
+        "how": "named on the captured listing",
+        "permalink": "/papers/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis/"
+      },
+      {
+        "kind": "paper",
+        "ref": "6",
+        "label": "The Archetype of Beauty in Islam",
+        "how": "named on the captured listing",
+        "permalink": "/papers/the-archetype-of-beauty-in-islam/"
+      },
+      {
+        "kind": "work",
+        "ref": "the-quran-science-a-forced-marriage",
+        "label": "The Quran, Science: A Forced Marriage",
+        "how": "named on the captured listing",
+        "permalink": "/articles/the-quran-science-a-forced-marriage/"
+      },
+      {
+        "kind": "paper",
+        "ref": "13",
+        "label": "Doubting your Doubts: Atheism Among Muslim Youth",
+        "how": "named on the captured listing",
+        "permalink": "/papers/doubting-your-doubts-atheism-among-muslim-youth/"
+      },
+      {
+        "kind": "work",
+        "ref": "extremism-in-muslim-thought",
+        "label": "Extremism in Muslim Thought",
+        "how": "named on the captured listing",
+        "permalink": "/articles/extremism-in-muslim-thought/"
+      },
+      {
+        "kind": "work",
+        "ref": "islam-terrorism",
+        "label": "Islam Terrorism",
+        "how": "named on the captured listing",
+        "permalink": "/articles/islam-terrorism/"
+      },
+      {
+        "kind": "work",
+        "ref": "understanding-atheism-lecture-series",
+        "label": "Understanding Atheism (Lecture Series)",
+        "how": "named on the captured listing",
+        "permalink": "/articles/understanding-atheism-lecture-series/"
+      },
+      {
+        "kind": "paper",
+        "ref": "17",
+        "label": "Sustaining the Malaysian Environment through Litter Reduction: A Maqasidi Approach",
+        "how": "named on the captured listing",
+        "permalink": "/papers/sustaining-the-malaysian-environment-through-litter-reduction-a-maqasidi-approach/"
+      },
+      {
+        "kind": "work",
+        "ref": "still-colonized-liberalism-in-muslim-thought",
+        "label": "Still Colonized: Liberalism in Muslim Thought",
+        "how": "named on the captured listing",
+        "permalink": "/articles/still-colonized-liberalism-in-muslim-thought/"
+      },
+      {
+        "kind": "work",
+        "ref": "atheism-doubting-your-doubts",
+        "label": "Atheism: Doubting Your Doubts",
+        "how": "same argument, listed under the paper's title",
+        "permalink": "/articles/atheism-doubting-your-doubts/"
+      }
+    ]
   },
   {
     "title": "Apostasy: Beyond the Rhetoric (Islamic Discourse Initiative)",

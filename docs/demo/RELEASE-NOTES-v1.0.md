@@ -14,17 +14,18 @@ tagged, uploaded or published.
 
 ## Read this before you tag
 
-**The site tour in this repository is stale and must be re-recorded before
-v1.0 ships.** `docs/demo/site-tour.mp4` and `docs/demo/site-tour.gif` were
-recorded on 2026-09-27, the day *before* the recount was approved and applied.
-Their burned-in captions and their screenshots show the pre-recount state, so
-attaching them to v1.0 publishes a video that contradicts the site it is a tour
-of. The procedure is in [`README.md`](README.md) § *Re-recording*; the two
-replacement files are the two assets below and nothing else changes.
+Nothing is blocking v1.0. The site tour that used to be a blocker has been
+re-recorded: `docs/demo/site-tour.mp4` and `docs/demo/site-tour.gif` were
+re-cut on 2026-09-28, after the recount was approved and applied, in the dark
+theme the site now defaults to. Their captions carry the current figures
+(207 recovered items, 72 works with 47 in full, 20 papers, 68 transcripts of
+540,995 words) and their screenshots show the `/topics/` layer, which the
+previous cut did not include at all. The assets below can be attached as they
+stand.
 
-| Also blocking | Why |
-|---|---|
-| re-record the tour | captions show superseded counts (72 / 47 / 24 / 1, the computed 207, and the held-PDF figure) |
+The tour is still a picture of one moment rather than a live feed. If a later
+approved recount changes a figure after v1.0 is tagged, re-cut it then; see
+[`README.md`](README.md) § *Re-recording*.
 
 ---
 
@@ -181,24 +182,19 @@ those, you are arriving from an outdated reference.
 
 ## Assets to attach
 
-Two files, both already in the repository, both cut from the same 19 captured
+Two files, both already in the repository, both cut from the same 13 captured
 frames of the deployed site. **These are the two to attach** — verified present,
 of the right type, and referenced by `README.md` (the GIF is the inline embed)
 and by `docs/demo/README.md`.
 
 | File | What it is | Size | sha256 |
 |---|---|---:|---|
-| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 55.7 s. | 12,544,496 B (11.96 MiB) | `03f7674c1a696addc02b641975c47d6c6b8e173a3156775e7e54adb86ab2d17c` |
-| `docs/demo/site-tour.gif` | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 12.63 s. | 7,117,088 B (6.79 MiB) | `4137930874220ce51abb68b31e7e1a9e20e492b99e4e4cf228a60422ced7c549` |
+| `docs/demo/site-tour.mp4` | The full tour. 1440x900, 30 fps, 35.07 s. | 4,095,844 B (3.91 MiB) | `0a9464046cf03395324ae847968172da1b35d6d710d7424d2034efb817fa7820` |
+| `docs/demo/site-tour.gif` | A size-capped preview for inline display, one frame per section. 800x500, 8 fps, 36.26 s. | 1,268,106 B (1.21 MiB) | `bc276e21e729ec079312eace34dd016aaf96e2207a7ad709993c219efdb33ab4` |
 
 Verified on 2026-09-28: the MP4 begins with a valid ISO-BMFF `ftyp` box and the
 GIF with a `GIF89a` header, so both are intact and neither is a Git LFS pointer
 or a truncated upload.
-
-**Both are STALE — see *Read this before you tag* above.** If the release is cut
-before the re-recording, attach them anyway and say so in the release body, or
-attach neither; what must not happen is attaching them silently next to a
-changelog that reports the new counts.
 
 No other binary is a release asset. The five PDFs in `_papers/pdfs/` are already
 served from the site at `/papers/<file>.pdf` and do not need attaching.

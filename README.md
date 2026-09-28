@@ -126,9 +126,10 @@ clearer. You do not need to ask permission to be enthusiastic.
 
 ![A screen tour of the live Andalusian Project Archive](docs/demo/site-tour.gif)
 
-The four collections, one work with its provenance, a transcript, the channel
-history, the timeline and search — captured from the live site on 2026-09-27, so
-it will go stale as the site changes. This is the short preview; the
+The archive, organised by the questions it answers, one work with its
+provenance, a paper, a transcript, the channel history and search — captured in
+the site's dark theme from the live site on 2026-09-28, so it will go stale as
+the site changes. This is the short preview; the
 [full-length version](docs/demo/site-tour.mp4) and the site itself are at
 <https://the-andalusian-project-archive.github.io/andalusian-archive/>.
 

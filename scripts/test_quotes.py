@@ -26,6 +26,7 @@ Exit 0 on success, 1 on any failure.
 from __future__ import annotations
 
 import json
+from html import unescape
 import pathlib
 import re
 import sys
@@ -375,6 +376,19 @@ def check() -> int:
     # whole time, which is exactly what made it hard to see.
     failures.extend(check_pages(total_queries))
 
+    # ---- third-party source relationships -----------------------------------
+    #
+    # The 70 records in _data/secondary_sources.json were, until this layer
+    # existed, written to disk and never rendered: a private index of other
+    # people's writing, invisible to readers. Now that /sources/ exists, three
+    # things have to hold at once. Every record must be published. Every
+    # relates_to target must name an item that actually exists - a relation to a
+    # non-existent page is a link to a 404, which is worse than no link. And the
+    # reverse index must agree with the forward one, because _includes/
+    # secondary_links.html reads only the reverse index, so a disagreement shows
+    # up as a silently missing back-reference rather than as an error.
+    failures.extend(check_secondary_sources())
+
     if failures:
         print()
         print(f"TEST_FAIL: {len(failures)} problem(s)", file=sys.stderr)
@@ -386,6 +400,92 @@ def check() -> int:
 
     print("TEST_PASS: every quote resolves verbatim at its cited line")
     return 0
+
+
+def check_secondary_sources() -> list[str]:
+    """Third-party records: all published, all targets real, index in agreement."""
+    failures: list[str] = []
+
+    rows = json.loads((ROOT / "_data" / "secondary_sources.json").read_text(encoding="utf-8"))
+    rows = rows if isinstance(rows, list) else list(rows.values())[0]
+    index = json.loads((ROOT / "_data" / "secondary_links.json").read_text(encoding="utf-8"))
+
+    # 1. Every record with a URL is published on /sources/. A record with no URL
+    #    is a metadata row and is allowed, but there should not be many of them.
+    #    Compare on the unescaped form: the page writes `&amp;` into hrefs, which
+    #    is correct HTML, so a raw comparison fails for every tracking-parameter
+    #    URL and would read as "27 records were dropped from the page".
+    page = (ROOT / "sources.md").read_text(encoding="utf-8")
+    published = {unescape(u) for u in
+                 re.findall(r'<a href="(https?://[^"]+)"', page)}
+    for r in rows:
+        url = r.get("url")
+        if not url:
+            failures.append(f"secondary_sources: {r.get('title', '?')!r} has no url")
+            continue
+        if url not in published:
+            failures.append(
+                f"secondary_sources: {r.get('title', '?')[:60]!r} is not published "
+                f"on /sources/ (url {url[:70]})"
+            )
+
+    # 2. Every relates_to target must resolve to a real page. Permalinks are
+    #    checked against the actual generated output rather than reconstructed,
+    #    so a slug that disagrees with papers.json fails here instead of
+    #    shipping as a 404.
+    built = ROOT / "_site"
+    for r in rows:
+        seen: set[tuple[str, str]] = set()
+        for rel in r.get("relates_to") or []:
+            sig = (rel.get("kind", ""), rel.get("ref", ""))
+            if sig in seen:
+                failures.append(
+                    f"secondary_sources: {r.get('title', '?')[:50]!r} relates to "
+                    f"{sig} twice"
+                )
+                continue
+            seen.add(sig)
+            pl = rel.get("permalink") or ""
+            if not pl:
+                failures.append(
+                    f"secondary_sources: {r.get('title', '?')[:50]!r} relates to "
+                    f"{sig} with no permalink"
+                )
+                continue
+            if not (built / pl.strip("/") / "index.html").is_file():
+                failures.append(
+                    f"secondary_sources: {r.get('title', '?')[:50]!r} relates to "
+                    f"{sig} -> {pl} which is not a built page"
+                )
+
+    # 3. The reverse index must be a faithful mirror of the forward relations.
+    #    The include reads only by_url, so a stale index hides back-references
+    #    rather than raising.
+    forward: dict[str, set[str]] = {}
+    for r in rows:
+        for rel in r.get("relates_to") or []:
+            pl = rel.get("permalink") or ""
+            if pl:
+                forward.setdefault(pl, set()).add(r.get("url", ""))
+    for pl, urls in forward.items():
+        got = {n.get("url", "") for n in index.get("by_url", {}).get(pl, [])}
+        if urls - got:
+            failures.append(
+                f"secondary_links.json: {pl} is missing "
+                f"{sorted(urls - got)[:2]} from its by_url entry"
+            )
+    for pl in index.get("by_url", {}):
+        if pl not in forward:
+            failures.append(
+                f"secondary_links.json: by_url has {pl} but no record relates "
+                f"to it - the index is stale"
+            )
+
+    print(f"third-party records: {len(rows)} "
+          f"({sum(1 for r in rows if r.get('relates_to'))} with a referent, "
+          f"{sum(1 for r in rows if not r.get('relates_to'))} without)")
+    print(f"reverse index      : {len(index.get('by_url', {}))} items")
+    return failures
 
 
 if __name__ == "__main__":

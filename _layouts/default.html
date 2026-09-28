@@ -133,6 +133,14 @@
           <li><a href="{{ '/channel/' | relative_url }}">What happened to the YouTube channel</a></li>
           <li><a href="{{ '/timeline/' | relative_url }}">How this was recovered</a></li>
           <li><a href="{{ '/scholarly-records/' | relative_url }}">Scholarly records</a></li>
+          {%- comment -%}
+            2026-09-28: /sources/ belongs here rather than in the collections
+            column. It is not a collection of his writing - it is other people's
+            writing about him and his work, which is a different claim. Putting
+            it beside "Scholarly records" tells the reader that without implying
+            the archive holds these as its own content.
+          {%- endcomment -%}
+          <li><a href="{{ '/sources/' | relative_url }}">Third-party sources</a></li>
         </ul>
       </div>
       <div>

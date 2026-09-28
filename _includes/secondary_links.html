@@ -1,0 +1,51 @@
+{%- comment -%}
+  Third-party back-references, 2026-09-28.
+
+  `/sources/` gives a reader the list of other people's writing about this
+  author. This is the other direction: when the record clearly concerns one item
+  the archive holds, the item itself says so, and says what the relationship is.
+
+  That "what" matters more than the link. A reprint, a critique and a biography
+  are not the same kind of evidence, and a reader who sees only "related" cannot
+  tell whether they are looking at a copy of the text, an argument against it, or
+  somebody's description of the author. So each entry carries its own `how`
+  string, which is written by scripts/relate_secondary_sources.py and states the
+  basis of the match: a title match, a listing that names it, or a third-party
+  page that carries the item.
+
+  Lookup is by `page.url` against `_data/secondary_links.json`'s `by_url` index,
+  with a percent-decoded fallback for the same reason as topic_links.html: some
+  permalinks carry `%20` from their original WordPress slugs.
+
+  This block is deliberately not shown on the archive's own about, method and
+  index pages. Those are not items anyone writes a third-party record about, and
+  an empty heading on every one of them would be noise.
+{%- endcomment -%}
+{%- assign sl = site.data.secondary_links -%}
+{%- assign hits = nil -%}
+{%- if sl and sl.by_url and sl.by_url[page.url] -%}
+  {%- assign hits = sl.by_url[page.url] -%}
+{%- endif -%}
+{%- unless hits -%}
+  {%- for pair in sl.by_url -%}
+    {%- if pair[0] == page.url -%}
+      {%- assign hits = pair[1] -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}
+{%- if hits and hits.size > 0 -%}
+<nav class="secondary-backlinks" aria-label="Third-party records about this item">
+  <h2>Third-party records about this item</h2>
+  <p class="meta">Other people&rsquo;s writing that concerns this item &mdash; reprints, critiques, biographies and mentions. Catalogued, not counted as content, and kept because an archive that only holds the friendly versions is not an archive.</p>
+  <ul>
+    {%- for r in hits -%}
+    <li>
+      <a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">{{ r.title }}</a>
+      <span class="src-type">{{ r.type }}</span>
+      <span class="rel-how">&mdash; {{ r.how }}{% if r.source %} &middot; {{ r.source }}{% endif %}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+  <p class="meta"><a href="{{ '/sources/' | relative_url }}">All {{ site.data.secondary_sources.size }} third-party records &rarr;</a></p>
+</nav>
+{%- endif -%}
