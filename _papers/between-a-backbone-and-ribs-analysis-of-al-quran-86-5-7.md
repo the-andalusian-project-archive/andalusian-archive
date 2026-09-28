@@ -18,7 +18,7 @@ file_source: "https://archive.org/download/between-a-backbone-and-ribs-asadullah
 file_pages: 63
 file_status: "held"
 file_url: "/papers/between-a-backbone-and-ribs.pdf"
-file_licence: "Internet Archive item between-a-backbone-and-ribs-asadullah — the author's own CC-licensed deposit, item page https://archive.org/details/between-a-backbone-and-ribs-asadullah. CC-licensed; this is the one paper the archive is permitted to mirror."
+file_licence: "Licensed CC BY-NC-ND 4.0 as declared on the Internet Archive item (https://creativecommons.org/licenses/by-nc-nd/4.0/), item page https://archive.org/details/between-a-backbone-and-ribs-asadullah. The item was uploaded by a third party (altaykruveun01@gmail.com), not by the author and not by this archive. NC = non-commercial use only. ND = no derivatives: this text may not be edited, abridged, translated or adapted, and must be reproduced as-is. Quotation with attribution is permitted. This is the only paper in the corpus the archive holds a licence permitting it to mirror; the author's other works carry no open licence and are not relicensed here."
 ---
 
 # Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7
@@ -81,4 +81,4 @@ archive most wants a reader to find.
 - [between-a-backbone-and-ribs.pdf]({{ "/papers/between-a-backbone-and-ribs.pdf" | relative_url }}) - 63 pp.
 
   - Obtained from: <https://archive.org/download/between-a-backbone-and-ribs-asadullah/Between%20a%20Backbone%20and%20Ribs%20-%20Asadullah.pdf>
-  - Licence / provenance: Internet Archive item between-a-backbone-and-ribs-asadullah — the author's own CC-licensed deposit, item page https://archive.org/details/between-a-backbone-and-ribs-asadullah. CC-licensed; this is the one paper the archive is permitted to mirror.
+  - Licence / provenance: **CC BY-NC-ND 4.0** (<https://creativecommons.org/licenses/by-nc-nd/4.0/>), as declared on the Internet Archive item. **Non-commercial only, and no derivatives** — this text may be reproduced as-is but not edited, abridged or translated; quotation with attribution is fine. The item was uploaded by a **third party**, not by the author and not by this archive, so the licence is recorded here as declared by the source rather than as a permission the author is known to have given through it. This is the **only** paper in the corpus the archive holds a licence permitting it to mirror.

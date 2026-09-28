@@ -329,11 +329,13 @@ explicitly labelled steps — the transcripts carry `P1`, `P2`, `P3` and a concl
 through the argument — and all six session transcripts are published here.
 
 **The Qur'an and 86:5–7.** *Between a Backbone and Ribs: An Analysis of Al-Quran 86:5-7* (63 pp.,
-the author's own CC-licensed deposit on the Internet Archive) is the archive's most closely-read
-scholarly text, and the longest work it holds at 20,037 recovered words under its companion
-blog record. It is a tafsir-critical study of one contested verse rather than a polemic on it.
-The paper is served as a PDF from this site; the blog record is the same argument with the
-surrounding discussion.
+carried on the Internet Archive under **CC BY-NC-ND 4.0** by a third-party uploader) is the
+archive's most closely-read scholarly text, and the longest work it holds at 20,037 recovered
+words under its companion blog record. It is a tafsir-critical study of one contested verse
+rather than a polemic on it. It is also the only paper in the corpus the archive holds a
+licence permitting it to mirror — and because that licence is **ND**, the text may be
+reproduced as-is but not edited, abridged or translated. The paper page is the catalogue
+record; the full text is served here as readable prose, and the PDF is mirrored unchanged.
 
 **Islamic intuitionism and evidentialism.** *Islamic Intuitionism: The Case Against Atheistic
 Evidentialism* — his 2014 IIUM master's thesis, filed under a name the site owner has asked not
