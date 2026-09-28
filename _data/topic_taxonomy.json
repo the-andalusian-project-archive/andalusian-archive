@@ -1,0 +1,145 @@
+{
+  "title": "What this archive answers",
+  "built": "2026-09-28",
+  "built_by": "scripts/build_topic_pages.py from _data/topics/*.json",
+  "rule": "A cluster is a body of questions the recovered material already answers. Clusters are not the archive's categories: the four A/B/C/D categories in taxonomy.json are about authorship, and this file is about subject matter. A work may appear in several clusters.",
+  "queries_counted": "Query counts are computed from the buckets below at build time. No page may type a number.",
+  "clusters": [
+    {
+      "id": "apostasy-hell",
+      "label": "Apostasy, Hell and Divine Justice",
+      "reader_question": "I have heard that Islam says you have to be killed for leaving the faith, and that God sends almost everyone to hell forever - is that actually what he says, and what do I do with that?",
+      "one_line": "His conditional, self-declared minority reading that the apostasy punishment is part of the Shariah but not operative today, together with his Qur'an-based answer to why hell is for the arrogant and why mercy is not the unconditional forgiveness people assume it is.",
+      "url": "/topics/apostasy-hell/",
+      "material_count": 15,
+      "quote_count": 80,
+      "query_count": 110,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 17,
+        "long_tail": 62,
+        "question_forms": 14,
+        "ai_phrased": 14
+      }
+    },
+    {
+      "id": "aqeedah-basics",
+      "label": "Foundational Questions of Belief",
+      "reader_question": "Okay, but how would I even know God is real — and isn't it a bit much to say faith is just built into me?",
+      "one_line": "The foundational layer only: what kind of thing God is claimed to be (not a 'thing' at all), how a finite being could come to know the Absolute, and the four classical routes by which God's existence is held to be provable.",
+      "url": "/topics/aqeedah-basics/",
+      "material_count": 9,
+      "quote_count": 22,
+      "query_count": 59,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 13,
+        "long_tail": 27,
+        "question_forms": 8,
+        "ai_phrased": 8
+      }
+    },
+    {
+      "id": "atheism-doubt",
+      "label": "Atheism, Doubt and Evidence",
+      "reader_question": "I believe in God but I can't prove it with science - how is that still rational, and what do I actually say when an atheist demands evidence?",
+      "one_line": "How Al-Andalusi answers the atheist demand for evidence: belief without proof, weak versus strong atheism, the fitrah as a non-evidential route to knowledge, and the argument that requiring evidence for everything is itself unevidenced.",
+      "url": "/topics/atheism-doubt/",
+      "material_count": 20,
+      "quote_count": 56,
+      "query_count": 69,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 13,
+        "long_tail": 33,
+        "question_forms": 10,
+        "ai_phrased": 10
+      }
+    },
+    {
+      "id": "gender-feminism",
+      "label": "Feminism, Gender Justice and Aisha",
+      "reader_question": "Do Muslim women need feminism, and how do you answer the claim that the Prophet married a child?",
+      "one_line": "His 2016 case that Islam already gave women their rights and that feminism is an imported Western ideology, and his three-part historical refutation of the accusation that marrying Aisha at nine was sexual violence - resting on mortality-driven childhood, moral progressionism, and the classical separation of marriage contract from consummation.",
+      "url": "/topics/gender-feminism/",
+      "material_count": 14,
+      "quote_count": 70,
+      "query_count": 72,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 10,
+        "long_tail": 35,
+        "question_forms": 12,
+        "ai_phrased": 12
+      }
+    },
+    {
+      "id": "liberalism-orientalism",
+      "label": "Liberalism, Orientalism and Human Rights",
+      "reader_question": "Why do Muslim thinkers argue that liberalism and human rights are a Western import that Muslim societies never actually left behind, and how do I answer someone who disagrees?",
+      "one_line": "How the author argues that liberalism, secular human rights and colonial 'value occupation' are one continuing formation inside Muslim societies, and what he says to the liberal and ex-Muslim polemicists he thinks are its agents.",
+      "url": "/topics/liberalism-orientalism/",
+      "material_count": 15,
+      "quote_count": 58,
+      "query_count": 82,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 12,
+        "long_tail": 45,
+        "question_forms": 11,
+        "ai_phrased": 11
+      }
+    },
+    {
+      "id": "quran-hermeneutics",
+      "label": "Qur'an Interpretation and Textual Questions",
+      "reader_question": "What does the Qur'an actually say, and how do I know who is reading it correctly?",
+      "one_line": "How scripture is read: the philological and exegetical case study of Q. 86:5-7, plus short works on the limits of a literal reading, translation and euphemism.",
+      "url": "/topics/quran-hermeneutics/",
+      "material_count": 7,
+      "quote_count": 47,
+      "query_count": 93,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 16,
+        "long_tail": 49,
+        "question_forms": 13,
+        "ai_phrased": 12
+      }
+    },
+    {
+      "id": "science-scientism",
+      "label": "Science, Faith and Scientism",
+      "reader_question": "Is it really true that science proves my religion, and if not, what actually happened to Muslim science?",
+      "one_line": "The archive's case that scientism is a modern European error distinct from science, that the 'decline' of Muslim science is really a drift into positivism and dependency rather than a war between religion and reason, and that the Qur'an was never meant to be validated by science.",
+      "url": "/topics/science-scientism/",
+      "material_count": 13,
+      "quote_count": 100,
+      "query_count": 96,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 12,
+        "long_tail": 56,
+        "question_forms": 13,
+        "ai_phrased": 12
+      }
+    },
+    {
+      "id": "terrorism-extremism",
+      "label": "Terrorism, Extremism and Violence",
+      "reader_question": "Where does this violence actually come from - is it really Islam, and who is allowed to say so without getting shouted down?",
+      "one_line": "His account of why modern jihadist violence emerged - traced to post-colonial Western warfare, secular liberalism and imported methodology rather than to Islamic doctrine - together with the scriptural limits he sets on it and the debates he uses to defend that account.",
+      "url": "/topics/terrorism-extremism/",
+      "material_count": 23,
+      "quote_count": 68,
+      "query_count": 151,
+      "bucket_counts": {
+        "head": 3,
+        "mid": 16,
+        "long_tail": 103,
+        "question_forms": 14,
+        "ai_phrased": 15
+      }
+    }
+  ]
+}

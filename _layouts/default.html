@@ -48,14 +48,29 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a></li>
+        {%- comment -%}
+          2026-09-28: "Questions" is second, not last, and Channel/Timeline moved
+          out to the footer. Two reasons.
+
+          A reader who arrives from a search engine almost never arrives with a
+          name to type. They arrive with a question. /topics/ is the only page on
+          the site that is built out of those questions, so it belongs where the
+          eye lands first, not in a list of collection names it resembles.
+
+          The nav had grown to ten entries and a phone scrolls it. Channel and
+          Timeline are provenance - what the site WAS - not collections, and
+          they were the two entries a first-time reader has least reason to
+          open. Both remain one click away in the footer, which every page
+          already reaches. Net: nine in the nav, and the new entry is the third
+          most prominent thing on the site after Home and Search.
+        {%- endcomment -%}
+        <li><a href="{{ '/topics/' | relative_url }}" {% if page.url contains '/topics/' %}class="active" aria-current="page"{% endif %}>Questions</a></li>
+        <li><a href="{{ '/articles/' | relative_url }}" {% if page.url contains '/articles/' %}class="active" aria-current="page"{% endif %}>Articles</a></li>
         <li><a href="{{ '/papers/' | relative_url }}" {% if page.url contains '/papers/' %}class="active" aria-current="page"{% endif %}>Papers</a></li>
         <li><a href="{{ '/videos/' | relative_url }}" {% if page.url contains '/videos/' %}class="active" aria-current="page"{% endif %}>Videos</a></li>
         <li><a href="{{ '/transcripts/' | relative_url }}" {% if page.url contains '/transcripts/' %}class="active" aria-current="page"{% endif %}>Transcripts</a></li>
-        <li><a href="{{ '/articles/' | relative_url }}" {% if page.url contains '/articles/' %}class="active" aria-current="page"{% endif %}>Articles</a></li>
-        <li><a href="{{ '/channel/' | relative_url }}" {% if page.url contains '/channel/' %}class="active" aria-current="page"{% endif %}>Channel</a></li>
-        <li><a href="{{ '/timeline/' | relative_url }}" {% if page.url contains '/timeline/' %}class="active" aria-current="page"{% endif %}>Timeline</a></li>
         {%- comment -%}
-          2026-09-28: the two named entry points. Their labels say what the pages
+          2026-09-27: the two named entry points. Their labels say what the pages
           are, in the plainest words the site uses anywhere - "Who this is" and
           "What happened" - because a nav label is read, not searched, and a
           label that read "Entity page" or "Provenance" would describe the
@@ -83,30 +98,41 @@
       <div>
         <h4>Collections</h4>
         <ul>
+          <li><a href="{{ '/articles/' | relative_url }}">Blog Posts</a></li>
           <li><a href="{{ '/papers/' | relative_url }}">Academic Papers</a></li>
           <li><a href="{{ '/videos/' | relative_url }}">Video Archive</a></li>
           <li><a href="{{ '/transcripts/' | relative_url }}">Transcripts</a></li>
-          <li><a href="{{ '/articles/' | relative_url }}">Blog Posts</a></li>
-          <li><a href="{{ '/channel/' | relative_url }}">Channel History</a></li>
-          <li><a href="{{ '/timeline/' | relative_url }}">Timeline</a></li>
+          <li><a href="{{ '/transcripts/by-series/' | relative_url }}">Transcripts by series</a></li>
         </ul>
       </div>
       {%- comment -%}
-        2026-09-28: a third column for the bibliography-reconciliation page,
-        under "About the archive" rather than in the primary nav. The nav already
-        carries ten entries and a reader scrolls it on a phone, so a fourth
-        non-collection destination belongs in the footer, which is crawled and is
-        already one click from every page. The label is the same plain phrase the
-        page's own <h1> uses, so the link and the destination cannot drift into
-        calling one thing two names.
+        2026-09-28: a fourth column for the /topics/ layer. It is a collection in
+        the only sense that matters to a reader - a set of pages that answers
+        something - so putting it only in the nav would hide it from the crawl
+        paths that start at the footer, and put it nowhere a reader looking for
+        "how do I find the thing I want" would look.
+      {%- endcomment -%}
+      <div>
+        <h4>Find by question</h4>
+        <ul>
+          <li><a href="{{ '/topics/' | relative_url }}">All questions</a></li>
+        </ul>
+      </div>
+      {%- comment -%}
+        2026-09-27: the bibliography-reconciliation page lives under "About the
+        archive" rather than in the primary nav, which already carries many
+        entries. Channel and Timeline joined it here on 2026-09-28 for the same
+        reason: they are provenance, not collections, and a reader opening the
+        site for the first time has least reason to reach for them.
       {%- endcomment -%}
       <div>
         <h4>About the archive</h4>
         <ul>
           <li><a href="{{ '/asadullah-ali-al-andalusi/' | relative_url }}">Who this is</a></li>
           <li><a href="{{ '/asadullahali-com-what-happened/' | relative_url }}">What happened to the website</a></li>
+          <li><a href="{{ '/channel/' | relative_url }}">What happened to the YouTube channel</a></li>
+          <li><a href="{{ '/timeline/' | relative_url }}">How this was recovered</a></li>
           <li><a href="{{ '/scholarly-records/' | relative_url }}">Scholarly records</a></li>
-          <li><a href="{{ '/transcripts/by-series/' | relative_url }}">Transcripts by series</a></li>
         </ul>
       </div>
       <div>
@@ -120,7 +146,17 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>The author has asked not to be contacted, and the maintainers cannot forward requests. <a href="{{ '/NOTICE.md' | relative_url }}#do-not-contact-the-author">Read the notice</a>.</p>
+      {%- comment -%}
+        2026-09-28: the contribution address. The no-contact line is kept ABOVE it
+        and states in the same block that the two are different people, because a
+        reader who sees a mailto directly under "do not contact the author" will
+        otherwise read the contradiction as the archive inviting contact with him.
+        It is not. The address reaches the maintainer of this repository, who can
+        act on a broken link, a wrong count or a missing capture, and who cannot
+        forward anything to the author because there is no route to him.
+      {%- endcomment -%}
+      <p><strong>About the author:</strong> he has asked not to be contacted, and the maintainers cannot forward requests. <a href="{{ '/NOTICE.md' | relative_url }}#do-not-contact-the-author">Read the notice</a>. The address below reaches the <em>archive maintainers</em> only.</p>
+      <p><strong>Found something wrong, or something missing?</strong> That is a real contribution and we want it. Email the maintainers at <a href="mailto:TAP_archive@protonmail.com">TAP_archive@protonmail.com</a> &mdash; a broken link, a wrong count, a missing capture, or a capture we filed as lost. Please include the page URL. Read <a href="{{ '/CONTRIBUTING.md' | relative_url }}">how to contribute</a> first if you plan to send a code change.</p>
       <p>The Andalusian Project Archive &mdash; Digital Preservation Initiative</p>
     </div>
   </footer>

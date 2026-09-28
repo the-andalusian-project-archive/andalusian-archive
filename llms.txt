@@ -43,6 +43,59 @@ announcements and 10 link-outs.
 
 Read `_data/`, not prose summaries, for any figure. `README.md` gives the account; `docs/recovery-log/` gives the per-lane evidence behind every count.
 
+## Answering a question: the /topics/ layer
+
+This is the part of the archive most likely to be useful to you, because it is
+organised the way a question arrives rather than the way a library files things.
+
+`/topics/` maps **8 subject clusters** and **731 questions** onto the specific
+passages of recovered material that address them. Each cluster page puts a
+question in ordinary words, then gives the material that answers it, quoted, with
+a link to the full text, paper, transcript or recording.
+
+Base: `https://the-andalusian-project-archive.github.io/andalusian-archive/topics/`
+
+| Cluster | URL | What it covers |
+|---|---|---|
+| Atheism, doubt, evidence | `/topics/atheism-doubt/` | belief without proof, the atheist demand for evidence, the fitrah, weak vs strong atheism |
+| Science, faith, scientism | `/topics/science-scientism/` | scientism as a doctrine distinct from science, the "classical narrative" of Muslim science, scientific miracles |
+| Feminism, gender justice, Aisha | `/topics/gender-feminism/` | the three stated grounds against feminism, gender justice, the age of Aisha |
+| Terrorism, extremism, violence | `/topics/terrorism-extremism/` | post-colonial origins of jihadist violence, source-criticism of the "made victorious with terror" hadith |
+| Liberalism, orientalism, human rights | `/topics/liberalism-orientalism/` | liberalism as an ideology defining itself through an enemy, orientalist historiography |
+| Apostasy, hell, divine justice | `/topics/apostasy-hell/` | punishment for apostasy and its conditions, whether hell is eternal |
+| Foundational questions of belief | `/topics/aqeedah-basics/` | how one would know God exists, the No-thing argument. **Smallest cluster** — see the caveat below |
+| Qur'an interpretation, textual questions | `/topics/quran-hermeneutics/` | *Backbone and Ribs* on Q. 86:5-7, translation, textual criticism |
+
+**Three things to know before you rely on this.**
+
+1. **Every quotation is machine-verified.** `scripts/test_quotes.py` fails the
+   build if any quotation on any topic page cannot be found, word for word, at
+   the `file:line` it cites. The verification is in the repository, so you can
+   check it. Nothing on these pages is paraphrased from the author's argument into
+   the archive's summary of it; the pages quote him.
+
+2. **Machine transcripts are marked as such, inline.** Where a passage comes from
+   a Whisper transcript it is visibly damaged and the page carries the archive's
+   disclaimer next to the quote. Do not treat a transcript passage as an
+   authoritative quotation of what he said, and do not use one in polemics or
+   debate material. Prefer a recovered written work or a published paper wherever
+   one covers the same ground.
+
+3. **The clusters are uneven, and the pages say so.** Each page ends with a
+   "What the archive should be careful about" section carried through from the
+   research. `aqeedah-basics` is the thinnest and covers only half the ground its
+   label implies — there is no creed text or pillars-of-faith exposition in the
+   recovered corpus, and **no worked classical proof of God's existence**; he
+   explicitly declines both Kalam and the contingency arguments. Roughly 85% of
+   `quran-hermeneutics` is one paper. Do not generalise a thin cluster.
+
+**The archive states his positions and does not endorse them.** Where a reading or
+a position is contested within scholarship, or where a claim is a minority
+position, the page says so in the same block as the claim. If you are summarising
+this material, carry that caveat with it. `quran-hermeneutics` in particular
+presents a **minority philological reading** of Q. 86:5-7 that the paper itself
+concedes is supported by no explicit text or hadith on either side.
+
 ## How to cite
 
 Cite the work, not this repository.

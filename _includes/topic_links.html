@@ -1,0 +1,50 @@
+{%- comment -%}
+  Topic back-links, 2026-09-28.
+
+  A reader who arrives at one work from a search engine, or from a link in a
+  transcript, has no route to the question that work answers. That is the whole
+  reason the /topics/ layer exists: the site is now organised by question, but
+  only its index is. Without this block the new pages would be reachable exactly
+  one way, from the nav, and the 320-odd pages that carry the material would
+  still be a flat list.
+
+  `_data/material_topics.json` is a reverse index written by
+  scripts/build_topic_pages.py: material URL -> list of topic ids. It is looked
+  up by `page.url`.
+
+  The lookup falls back to a percent-decoded comparison. Some permalinks in the
+  corpus carry `%20` from the original WordPress slugs, and Liquid has no
+  `uri_decode`-to-comparison filter, so matching on the decoded form keeps a
+  page from silently losing its back-links to a spelling difference.
+{%- endcomment -%}
+{%- assign mt = site.data.material_topics -%}
+{%- assign hits = nil -%}
+{%- if mt and mt[page.url] -%}
+  {%- assign hits = mt[page.url] -%}
+{%- endif -%}
+{%- unless hits -%}
+  {%- for pair in mt -%}
+    {%- if pair[0] == page.url -%}
+      {%- assign hits = pair[1] -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}
+{%- if hits and hits.size > 0 -%}
+{%- assign tmeta = site.data.topic_taxonomy.clusters -%}
+<nav class="topic-backlinks" aria-label="Questions this answers">
+  <h2>Questions this answers</h2>
+  <p class="meta">This item is cited on the pages that group it by the question a reader arrives with, rather than by date or format.</p>
+  <ul>
+    {%- for tid in hits -%}
+      {%- for c in tmeta -%}
+        {%- if c.id == tid -%}
+    <li>
+      <a href="{{ c.url | relative_url }}">{{ c.label }}</a>
+      <span class="topic-q">&mdash; &ldquo;{{ c.reader_question }}&rdquo;</span>
+    </li>
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  </ul>
+</nav>
+{%- endif -%}

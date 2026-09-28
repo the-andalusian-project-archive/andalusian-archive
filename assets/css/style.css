@@ -1501,3 +1501,287 @@ tr:hover td {
 .transcript-block code {
   word-break: break-all;
 }
+
+/* ============================================================================
+   2026-09-28: the /topics/ layer.
+
+   Eight topic pages are built out of long questions, and each one is a list of
+   blockquotes. Left unstyled that reads as a wall: a wall of grey boxes, each
+   introduced by a heading in a different voice from the site around it. The
+   rules below make one thing legible - a reader asking a question, and the
+   passage that answers it - and then get out of the way.
+
+   Two deliberate choices:
+     * blockquote is styled, not left to the UA default, because a default
+       blockquote has no left rule and reads as indented body text, which is
+       exactly the wrong signal for material that must be read as quoted.
+     * `.question` is a heading that is a question. It gets a question mark
+       affordance and a rule above it, so a reader scanning 100 of them can see
+       where one stops and the next begins.
+   ============================================================================ */
+
+/* --- the question, and the passage that answers it ---------------------- */
+
+.page-content h3.question {
+  font-size: 1.0625rem;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 2.25rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.page-content h3.question:first-of-type {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 1.5rem;
+}
+
+.page-content h3.question::after {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 2px;
+  margin-top: 0.5rem;
+  background: var(--color-primary);
+  opacity: 0.5;
+}
+
+.page-content blockquote {
+  margin: 0 0 0.5rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 6px;
+  color: var(--color-text);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.page-content blockquote p {
+  margin: 0 0 0.6rem;
+}
+
+.page-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.page-content blockquote em {
+  color: var(--color-text-secondary);
+  font-style: normal;
+  font-size: 0.8125rem;
+  display: block;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--color-border);
+}
+
+.page-content blockquote code {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  word-break: break-all;
+}
+
+/* A quote lifted from a machine transcript is a weaker kind of evidence and
+   has to look like it, so the archive's own disclaimer under it is styled to be
+   read rather than skimmed past. */
+.page-content blockquote em:has(+ *) {
+  color: var(--color-warning);
+}
+
+/* --- lead paragraph, crumbs, notes -------------------------------------- */
+
+.page-content p.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  font-weight: 500;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--color-accent);
+  margin-bottom: 1.25rem;
+}
+
+.page-content p.crumb {
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.page-content p.crumb a {
+  color: var(--color-text-secondary);
+}
+
+.page-content p.note,
+.page-content .prose-note {
+  background: var(--color-primary-subtle);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 1.25rem 0;
+}
+
+.page-content .prose-note p {
+  margin: 0 0 0.75rem;
+}
+
+.page-content .prose-note p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- the /topics/ index cards ------------------------------------------- */
+
+.topic-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.topic-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.1rem 1.2rem;
+  margin: 0;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.topic-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.topic-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.0625rem;
+  line-height: 1.35;
+}
+
+.topic-card h3 a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.topic-card h3 a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.topic-card p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+.topic-card p.topic-meta {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-mono);
+}
+
+/* --- the further-questions list ------------------------------------------ */
+
+.page-content ul.query-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.4rem 1.25rem;
+}
+
+.page-content ul.query-list li {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  padding-left: 1rem;
+  position: relative;
+  margin: 0;
+}
+
+.page-content ul.query-list li::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+  opacity: 0.55;
+}
+
+/* --- back-links from a work to the questions it answers ----------------- */
+
+.topic-backlinks {
+  margin: 2rem 0;
+  padding: 1rem 1.2rem;
+  background: var(--color-accent-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.topic-backlinks h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.topic-backlinks p.meta {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+}
+
+.topic-backlinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topic-backlinks li {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.topic-backlinks li:last-child {
+  margin-bottom: 0;
+}
+
+.topic-backlinks li a {
+  font-weight: 600;
+}
+
+.topic-backlinks .topic-q {
+  display: block;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+/* --- narrow screens ------------------------------------------------------ */
+
+@media (max-width: 640px) {
+  .topic-list,
+  .page-content ul.query-list {
+    grid-template-columns: 1fr;
+  }
+
+  .page-content h3.question {
+    font-size: 1rem;
+  }
+
+  .page-content blockquote {
+    padding: 0.75rem 0.85rem;
+    font-size: 0.9rem;
+  }
+}

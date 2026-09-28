@@ -1,5 +1,32 @@
 # The Andalusian Project — Asadullah Ali Al-Andalusi: Recovered Works, Papers and Transcripts
 
+## Start here
+
+**In one paragraph.** A writer and lecturer named Asadullah Ali Al-Andalusi ran a
+website and a YouTube channel called *The Andalusian Project*. Both are gone. The
+domain name now belongs to someone else and sells gambling; the channel is
+unavailable. This repository is what remains: his writing, his papers, his videos
+and their transcripts, rescued from web archives and kept with a record of where
+each one came from.
+
+**If you want to read something,** go to the live site and pick a subject:
+
+<https://the-andalusian-project-archive.github.io/andalusian-archive/>
+
+- **"I have a question, not a name"** → [`/topics/`](topics.md) is organised by the
+  questions the work answers, not by date or format. Everything on those pages is
+  quoted and linked to the full text.
+- **"Who was he?"** → [`/asadullah-ali-al-andalusi/`](asadullah-ali-al-andalusi.md)
+- **"What happened to his site?"** → [`/asadullahali-com-what-happened/`](asadullahali-com-what-happened.md)
+- **"Where is a specific paper?"** → [`/papers/`](papers.md)
+
+**If you want to help,** see [Contributing](#contributing) below. Broken links,
+wrong counts and missing captures are all genuinely useful reports.
+
+---
+
+## About the author
+
 A preservation archive of the published work of **Asadullah Ali Al-Andalusi**, founder of
 **The Andalusian Project** — an independent Islamic-studies research platform. He has been a
 research fellow at the [Yaqeen Institute for Islamic Research](https://yaqeeninstitute.org),
@@ -40,6 +67,59 @@ it, build something good with it. Nothing more is wanted.
 Requests to contact him, requests for his personal details, and invitations to
 events will not be answered and should not be sent. The maintainers cannot
 forward them and cannot put them through.
+
+---
+
+## Contributing
+
+**This is a different person from the author, and the difference matters.** The
+address below reaches the people who maintain this repository. It is *not* a way
+to reach him, and we could not forward you to him if it were.
+
+### Email us — the easiest and most useful contribution
+
+**<TAP_archive@protonmail.com>**
+
+The most valuable things you can send are short:
+
+- **A broken link.** Say which page you were on and what it pointed to.
+- **A wrong count or a wrong attribution.** If a page credits a work to the
+  wrong person, or a number looks off, we want to know. Attribution mistakes
+  are the worst kind of error for an archive like this one and we cannot find
+  them from inside.
+- **A missing capture.** Something you can see is not here — a talk, an article,
+  a PDF, a recording.
+- **Something we filed as lost or Wayback-only** that you can still reach.
+- **A correction of a machine transcript.** These are Whisper output, they are
+  visibly damaged, and a human reading the recording will always beat us.
+
+Please include the page URL. We will not add your name anywhere without asking.
+
+### Before you send a code change
+
+- Read [`CONTRIBUTING.md`](CONTRIBUTING.md) for the rules, the test suite and
+  what this project will not accept.
+- **Do not add the author's real name, birth name, or any third party's private
+  detail** to any file. Some of that material is deliberately withheld; a name
+  written into a tracked file is published, and a redaction that names the thing
+  it redacts defeats itself.
+- **Run the tests** before you open a pull request:
+  ```bash
+  python scripts/test_no_junk.py
+  python scripts/test_canonical_57.py
+  python scripts/test_search_sync.py
+  python scripts/test_transcripts.py
+  python scripts/test_quotes.py
+  ```
+  All five must pass. `test_quotes.py` fails the build if any quotation in the
+  topic layer cannot be found, word for word, at the line it cites — so if your
+  change adds a quote, it has to be real.
+
+### What gets accepted
+
+Recovered text with a source. A correction. A capture the archive is missing. A
+test that catches a class of error. Documentation that makes a confusing part
+clearer. You do not need to ask permission to be enthusiastic.
 
 ---
 
@@ -233,6 +313,13 @@ through. See the notice at the top of this file and [`NOTICE.md`](NOTICE.md) §1
 
 A map of the substantive ground this corpus covers, for a reader looking for a subject rather
 than a title.
+
+> **Looking for a question rather than a subject?** [`/topics/`](topics.md) is the same corpus
+> reorganised around the questions it answers — eight pages, one per subject, each quoting the
+> material that answers a specific question and linking to the full text. Every quotation on
+> those pages is verified word-for-word against the file it cites by
+> `scripts/test_quotes.py`, which fails the build otherwise. This section is the long-form
+> version; `/topics/` is the one built for arriving with a problem.
 
 **Islam and contemporary atheism.** The largest single body of work: the six-session
 *Understanding Atheism* lecture series, *Deconstructing Contemporary Atheist Thought* (AMJA,

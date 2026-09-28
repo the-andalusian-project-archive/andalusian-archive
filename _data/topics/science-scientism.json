@@ -1,0 +1,721 @@
+{
+  "id": "science-scientism",
+  "label": "Science, Faith and Scientism",
+  "reader_question": "Is it really true that science proves my religion, and if not, what actually happened to Muslim science?",
+  "one_line": "The archive's case that scientism is a modern European error distinct from science, that the 'decline' of Muslim science is really a drift into positivism and dependency rather than a war between religion and reason, and that the Qur'an was never meant to be validated by science.",
+  "material": [
+    {
+      "slug": "islam-science-and-history",
+      "kind": "work",
+      "path": "_articles/islam-science-and-history.md",
+      "url": "/articles/islam-science-and-history/",
+      "key_claims": [
+        {
+          "quote": "[11:20] However, the conception of science that I did try to give off is one that I consider to be the most accurate and the most coherent in the contemporary period is that science is really about constructing theories in the best way possible to interpret the information around us or what we experience.",
+          "ref": "_articles/islam-science-and-history.md:155",
+          "supports": "what does he think science actually is"
+        },
+        {
+          "quote": "[14:41] Rather we form our theories to understand the observations.",
+          "ref": "_articles/islam-science-and-history.md:209",
+          "supports": "is science a search for truth"
+        },
+        {
+          "quote": "[09:00] One of the main reasons that Muslims progressed so quickly in the sciences is because they modified and even rejected many of Aristotle's doctrines, especially in natural philosophy.",
+          "ref": "_articles/islam-science-and-history.md:131",
+          "supports": "why did early muslims reject parts of aristotle"
+        },
+        {
+          "quote": "[09:11] It wasn't until later that the Muslims stopped doing this that we started to actually decline.",
+          "ref": "_articles/islam-science-and-history.md:135",
+          "supports": "what is the classical narrative in the history of islamic science"
+        },
+        {
+          "quote": "[22:11] So actually a lot of these scientific works were translated primarily just so they could run the government and so they become independent from their neighbors.",
+          "ref": "_articles/islam-science-and-history.md:333",
+          "supports": "did the greeks do all the real work and muslims just translate"
+        },
+        {
+          "quote": "[22:20] And that was when the age of productivity began, it was sort of instrumentalist, very pragmatic approach towards science as a tool just to survive and to function as a society.",
+          "ref": "_articles/islam-science-and-history.md:335",
+          "supports": "what is the age of dependency in islamic science"
+        },
+        {
+          "quote": "[23:14] And that's when the age of productivity began and flourished well into the 16th and 17th century.",
+          "ref": "_articles/islam-science-and-history.md:343",
+          "supports": "why did the muslim world stop producing science in the 16th century"
+        },
+        {
+          "quote": "[25:40] And the classical narrative is really is really a projection of the Western history with their own history with religion and the church specifically, which by the way is also kind of exaggerated as well, but that's for a different discussion.",
+          "ref": "_articles/islam-science-and-history.md:369",
+          "supports": "what is the classical narrative in the history of islamic science"
+        },
+        {
+          "quote": "[25:57] But yeah, basically the whole mythos is that well, because the church was opposed to science, like, you know, when they when they persecuted Galileo, that must mean the same thing existed in Islamic civilization.",
+          "ref": "_articles/islam-science-and-history.md:371",
+          "supports": "is it true that christianity invented the idea of faith and science conflict"
+        },
+        {
+          "quote": "[28:15] It was a very meager period. You know, so what the Orientalists try to do is that they, they basically forget all of Islamic history prior to that period.",
+          "ref": "_articles/islam-science-and-history.md:391",
+          "supports": "why does the classical narrative skip most of islamic history"
+        },
+        {
+          "quote": "[28:31] And then after they, you know, fell out and after they were defeated by the orthodox scholars, then everything just went downhill from there. And of course they blame Al-Ghazali for that. But that doesn't make any sense either because Al-Ghazali came, you know, much longer after, after they were disposed of. So yeah, it's sort of like the grasping for straws.",
+          "ref": "_articles/islam-science-and-history.md:395",
+          "supports": "why did al-ghazali get blamed for the end of islamic science"
+        },
+        {
+          "quote": "[29:50] He was considered to be the premier rationalist, but yes, according to figures like Al-Ghazali, he was not a Muslim. He was a heretic.",
+          "ref": "_articles/islam-science-and-history.md:403",
+          "supports": "what did ibn sina contribute to science and was he even a muslim"
+        },
+        {
+          "quote": "[31:36] Personally, I think that's why Muslims began to decline again or decline in our history.",
+          "ref": "_articles/islam-science-and-history.md:415",
+          "supports": "why did the muslim world stop producing science in the 16th century"
+        },
+        {
+          "quote": "[33:15] I remember, as I said before, the Orientalist sort of peddled this idea that religious conservatism was the reason behind the decline, but in fact, it's quite the opposite, because what we find around the 16th and 17th century are many scholars and biographers complaining about the rise of philosophy in the Muslim world.",
+          "ref": "_articles/islam-science-and-history.md:441",
+          "supports": "was the golden age of islam real"
+        },
+        {
+          "quote": "[33:55] We find that astrology is becoming more popular again within the Muslim world by the 17th century, which is very strange.",
+          "ref": "_articles/islam-science-and-history.md:449",
+          "supports": "why did the closing of the house of wisdom not stop the golden age"
+        },
+        {
+          "quote": "[35:44] And it starts to implement scientific discoveries into the text, not as not as a supplementary, but more so as being almost equal to revelation itself.",
+          "ref": "_articles/islam-science-and-history.md:475",
+          "supports": "when did quranic exegesis start using scientific discoveries"
+        },
+        {
+          "quote": "[36:41] And then when you say that, and then you actually have legitimate works from scholars that are saying, well, this scientific discovery, like the tolemic system, is exactly as the world is.\n\n[36:54] You're absolutizing science. Remember that, that's a problem because when you do that, then you can't change it, right?\n\n[36:59] And if you say that science is in the Quran, this science that we're here that we know about is in the Quran, is equivalent to this ayah, then what you're saying is it can't change because the Quran can't change, right?\n\n[37:11] So what I found was that it seems to me that there was a form of like positivism almost going on. And that's a, that's a contemporary belief that science is somewhat like the measure of all things, you know.",
+          "ref": "_articles/islam-science-and-history.md:487",
+          "supports": "why does the author think positivism was adopted in the Muslim world"
+        },
+        {
+          "quote": "[37:55] Okay, well, I'd like to say that's probably the biggest, the general to sort of summarize everything is that the reason that we lost our productivity is because we're no longer adhering to our own values.\n\n[38:07] Every civilization has a value structure, has a particular belief system about the world, about how the universe has to work.\n\n[38:15] And the more that we conform to the Western perception of the reality, the secular perception of reality, the humanistic perception of reality,\n\n[38:23] the more that we will no longer be able to understand things from the Islamic perspective obviously.\n\n[38:29] And if we want Islamic science, for instance, the Islamic perception of science, the productivity of science within an Islamic framework to revive, you know, we have to stop borrowing from the dominant civilization.",
+          "ref": "_articles/islam-science-and-history.md:505",
+          "supports": "what has to change for muslim science to come back"
+        }
+      ]
+    },
+    {
+      "slug": "the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article",
+      "kind": "work",
+      "path": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md",
+      "url": "/articles/the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article/",
+      "key_claims": [
+        {
+          "quote": "Abstract: Scientific productivity has been in decline in the Muslim world since as early as the 15th century and is only now reviving.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:20",
+          "supports": "how far back does muslim scientific decline go"
+        },
+        {
+          "quote": "The popular understanding of scientific decline in the Muslim world, known as the ‘classical narrative’ promulgated by orientalists, suggests that only external influences – mainly the synthesis of Persian and Greek elements of civilisation into the Arab imperialist project – were the reasons for the sharp rise of the sciences within Islamic civilisation.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:20",
+          "supports": "what is the classical narrative in the history of islamic science"
+        },
+        {
+          "quote": "This paper shows that the classical narrative is invalid, that there were more legitimate factors at play in both the rise and decline of science in the Muslim world, and that the contemporary stagnation in scientific productivity is a result of this misunderstanding.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:20",
+          "supports": "what do people who reject the classical narrative say caused the decline of muslim science"
+        },
+        {
+          "quote": "However, the model of the European experience with the Church was transferred fluidly onto Islamic history without concern for the differences in culture or ideology",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:26",
+          "supports": "is it true that christianity invented the idea of faith and science conflict"
+        },
+        {
+          "quote": "As such, it remains a convincing myth that only seems to cultivate a complex of superiority in the internal influences of a particular culture; that is the West.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:26",
+          "supports": "is it true that christianity invented the idea of faith and science conflict"
+        },
+        {
+          "quote": "Al-Ghazālī is often blamed in this respect because of his refutation of the Aristotelian philosophers within Muslim society during the 12th century CE, through his now famously known work, The Incoherence of the Philosophers (Tahāfut al-Falāsifa).",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:27",
+          "supports": "is al-ghazali anti science"
+        },
+        {
+          "quote": "Despite this being a clear non-sequitur,[i] especially in light of contemporary science, it is an objection that holds no merit because scientific productivity continued to thrive long well after the publication of al-Ghazālī’s treatise, up until the 16th century.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:28",
+          "supports": "why did al-ghazali get blamed for the end of islamic science"
+        },
+        {
+          "quote": "For instance, Saliba notes the discoveries of scholars such as Ibn al-Nafīs, the 13th century medical practitioner who discovered the circulation of blood",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:29",
+          "supports": "what did muslim scientists actually discover after al-ghazali"
+        },
+        {
+          "quote": "Al-Farisī was the first person to understand how the colours of a rainbow were produce by creating his own instruments to observe the phenomenon.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:29",
+          "supports": "was the golden age of islam real"
+        },
+        {
+          "quote": "In other words, the ‘post-Ghazālī’ centuries were ripe with scientific discoveries and treatises that would eventually influence the European understanding of these fields.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:29",
+          "supports": "why did the muslim world stop producing science in the 16th century"
+        },
+        {
+          "quote": "Their connection is due to the prior decree of God, who creates them side by side, not to its being necessary in itself, incapable of separation.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:31",
+          "supports": "is al-ghazali anti science"
+        },
+        {
+          "quote": "knowledge has always been sought for ulterior motives, usually practical",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:33",
+          "supports": "was anyone doing science just for the love of it in islam"
+        },
+        {
+          "quote": "may be better called the ‘Age of Dependency’, rather than decline, since science was still valued and sought after, but this time externally to one’s own civilisational context.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:34",
+          "supports": "what is the age of dependency in islamic science"
+        },
+        {
+          "quote": "Rather than looking inward for answers, Muslims took to expediency and quick results to advance their power so as to keep up with European progress.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:35",
+          "supports": "why are muslims so good at borrowing western science and bad at making it"
+        },
+        {
+          "quote": "with Muslims adopting a perspective of science as the ultimate universal standard of truth and knowledge – known as positivism –motivated by their utmost degradation at the hands of Western forces for nearly two centuries.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:36",
+          "supports": "why does the author think positivism was adopted in the Muslim world"
+        },
+        {
+          "quote": "Positivism was formally introduced into the Muslim world by Jamāl al-Dīn al-Afghāni, the so-called ‘Islamic reformist’ of the 20th century, who agreed with many of the positivistic critiques of the Muslim world by French Orientalist Ernest Renan.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:47",
+          "supports": "why did jamaat al dinn afghani import french positivism"
+        },
+        {
+          "quote": "Al-Afghāni’s perspective would later be adopted by the majority of Muslim society, spurring popular ideas about how there are ‘scientific miracles’ in the Qur’an.",
+          "ref": "_posts/2015-06-15-the-rise-and-decline-of-scientific-productivity-in-the-muslim-world-a-preliminary-analysis-academic-article.md:47",
+          "supports": "are scientific miracles in the quran real"
+        }
+      ]
+    },
+    {
+      "slug": "a-muslims-guide-to-science-scientism",
+      "kind": "work",
+      "path": "_articles/a-muslims-guide-to-science-scientism.md",
+      "url": "/articles/a-muslims-guide-to-science-scientism/",
+      "key_claims": [
+        {
+          "quote": "[02:12] You guys need to know this. The intellectual and practical activity,\n\n[02:15] encompassing the systematic study of the structure and behavior\n\n[02:18] of the physical and natural world, through observation and experiment.",
+          "ref": "_articles/a-muslims-guide-to-science-scientism.md:101",
+          "supports": "how do you define science"
+        },
+        {
+          "quote": "[02:44] The belief that the methods of natural science,\n\n[02:47] or the categories and things recognize in natural science,\n\n[02:50] form the only proper elements in any philosophical\n\n[02:53] or other inquiry. In other words, for work in size format,\n\n[02:58] science is the only or best way to know anything.",
+          "ref": "_articles/a-muslims-guide-to-science-scientism.md:121",
+          "supports": "what is the difference between science and scientism"
+        },
+        {
+          "quote": "So if you believe in scientism, then you do not understand science.",
+          "ref": "_articles/a-muslims-guide-to-science-scientism.md:519",
+          "supports": "what is the difference between science and scientism"
+        },
+        {
+          "quote": "[04:37] And he said, the new atheist firmly insists that the personal Abrahamic or Islamic God\n\n[04:41] is a scientific hypothesis that can be tested\n\n## by the standard methods of science.…",
+          "ref": "_articles/a-muslims-guide-to-science-scientism.md:185",
+          "supports": "how do atheists treat god as a scientific hypothesis"
+        },
+        {
+          "quote": "[05:16] Power. The attraction to science has a lot to do with power.",
+          "ref": "_articles/a-muslims-guide-to-science-scientism.md:209",
+          "supports": "why is science trusted more than religion by default"
+        },
+        {
+          "quote": "[16:08] So the three aspects of scientism are one, realism,\n\n[16:12] two, positivism, and three, progressionism.",
+          "ref": "_articles/a-muslims-guide-to-science-scientism.md:567",
+          "supports": "what are the three parts of scientism"
+        },
+        {
+          "quote": "[17:43] Science corresponds with rationality itself\n\n[17:47] and is the only means to verify the truths and meanings\n\n[17:50] of every possible statement and explanation.",
+          "ref": "_articles/a-muslims-guide-to-science-scientism.md:619",
+          "supports": "what are the three parts of scientism"
+        }
+      ]
+    },
+    {
+      "slug": "a-muslims-guide-to-science-and-scientism-part-2",
+      "kind": "transcript",
+      "path": "_transcripts/transcript-vh-6sisOncs.md",
+      "url": "/transcripts/vh-6sisOncs/",
+      "key_claims": [
+        {
+          "quote": "Okay, so no, scientificism is believed to have been understood and practiced in some forms since the 17th century by the French and that\\'s something you should note is that the French were actually the first ones to come up with with positivism as well.",
+          "ref": "_transcripts/transcript-vh-6sisOncs.md:41",
+          "supports": "did the french invent scientism"
+        },
+        {
+          "quote": "Get to that later. The concept and the term used to describe it was said to have been crystallized by the sociologist, Friedrich Hayek, and I quote him, from the counter revolution of science studies of the abuse of reason, he states, it needs scarcely be emphasized that nothing we shall have to say is aimed against the methods of science in a proper sphere or an intended to throw the slightest doubt on their value.\nBut to preclude any misunderstanding on this point, we shall, wherever we are concerned, not with the general spirit of the centuries of inquiry, but with slavish imitation, the method language of science, speak of scientism or the scientistic prejudice. I\\'ll explain all this later, don\\'t worry.\nIt should be noted that in the sense in which we shall use these terms, they describe, or of course, an attitude which is decidedly unscientific in the true sense of the word, since it involves a mechanical and uncritical application of habits of thoughts to feel different from the word.",
+          "ref": "_transcripts/transcript-vh-6sisOncs.md:42",
+          "supports": "is scientism against science itself or a misreading of it"
+        },
+        {
+          "quote": "A lot of colonialism was being justified through the use of evolutionary concepts.",
+          "ref": "_transcripts/transcript-vh-6sisOncs.md:49",
+          "supports": "is scientific racism a product of scientism"
+        },
+        {
+          "quote": "But if by scientists, and we should mean the view that the methods of the social sciences are, to a very considerable extent, the same as those of the natural sciences, then I should be obliged to plead guilty to being adherent of scientists.",
+          "ref": "_transcripts/transcript-vh-6sisOncs.md:62",
+          "supports": "is logical positivism still used in science"
+        },
+        {
+          "quote": "Because the very statement itself, the very thing in which they needed to verify things, the statement itself that no statement has meaning, unless it can be empirically verified, could not itself be empirically verified.",
+          "ref": "_transcripts/transcript-vh-6sisOncs.md:173",
+          "supports": "is logical positivism still used in science"
+        },
+        {
+          "quote": "Because statements aren\\'t just understood by what they correspond to. There is more to understanding a statement or understanding something in general than just pointing at an object.",
+          "ref": "_transcripts/transcript-vh-6sisOncs.md:203",
+          "supports": "what did quine say about reducing knowledge"
+        },
+        {
+          "quote": "He said, we don\\'t live in statements. We don\\'t live in facts that are, you know, just there, there. We live in this whole web of knowledge that contextualizes everything that we say and do.",
+          "ref": "_transcripts/transcript-vh-6sisOncs.md:221",
+          "supports": "can all knowledge be reduced to science"
+        }
+      ]
+    },
+    {
+      "slug": "a-muslims-guide-to-science-and-scientism-part-3",
+      "kind": "transcript",
+      "path": "_transcripts/transcript-WED5mPmO_yU.md",
+      "url": "/transcripts/WED5mPmO_yU/",
+      "key_claims": [
+        {
+          "quote": "him He\\'s the reason Okay The first is that science operates based on paradigms or holistic culturally inherited theories that help us to make sense of experiences\nSo a paradigm is basically a world view like the Islamic world view is a paradigm",
+          "ref": "_transcripts/transcript-WED5mPmO_yU.md:53",
+          "supports": "how does kuhn's paradigm theory work in plain english"
+        },
+        {
+          "quote": "And third there are paradigm shifts or revolutions which result from normal sciences and ability to solve the anomalies based by the established paradigm",
+          "ref": "_transcripts/transcript-WED5mPmO_yU.md:66",
+          "supports": "how does kuhn's paradigm theory work in plain english"
+        },
+        {
+          "quote": "Like al-Qushti who was the first one to advance the idea that the earth was not stationary\nIn actuality rotated\nSo Copernicus got a lot of his ideas from Muslim philosophers and Muslim scientists",
+          "ref": "_transcripts/transcript-WED5mPmO_yU.md:115",
+          "supports": "how did muslim astronomers help copernicus"
+        },
+        {
+          "quote": "So this was essentially the end of positivism at that point",
+          "ref": "_transcripts/transcript-WED5mPmO_yU.md:163",
+          "supports": "did kuhn kill positivism"
+        }
+      ]
+    },
+    {
+      "slug": "a-muslims-guide-to-science-and-scientism-part-4",
+      "kind": "transcript",
+      "path": "_transcripts/transcript-tIFhyQtxQXg.md",
+      "url": "/transcripts/tIFhyQtxQXg/",
+      "key_claims": [
+        {
+          "quote": "So, now we\\'re going to differentiate between scientism and science.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:35",
+          "supports": "what is the difference between science and scientism"
+        },
+        {
+          "quote": "Scientific theories are models which represent the data in the most coherent way possible, but are not considered true in the absolute sense and are subject to human biases.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:37",
+          "supports": "are scientific theories true or just useful"
+        },
+        {
+          "quote": "Okay, so pragmatism. Science is a tool and theories are validated based on their usefulness and coherence.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:65",
+          "supports": "is science a tool rather than a truth"
+        },
+        {
+          "quote": "That\\'s it. It\\'s not because it\\'s true. It doesn\\'t make it true. It just makes it the best theory.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:67",
+          "supports": "is a scientific theory the same thing as a true statement"
+        },
+        {
+          "quote": "So instead of being progressive, it\\'s paradigmatic.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:90",
+          "supports": "is science really progressive or is that a myth"
+        },
+        {
+          "quote": "Right now, you have a paradigm. That shift will occur. It\\'s going to occur. It always occurs. It\\'s just a matter of time.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:129",
+          "supports": "is science really progressive or is that a myth"
+        },
+        {
+          "quote": "So, science isn\\'t really a search for truth.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:133",
+          "supports": "is a scientific theory the same thing as a true statement"
+        },
+        {
+          "quote": "Well, people are really lucky positives to you. They\\'re mostly scientists. They follow the scientists. And the first thing you have to do is you challenge it in the same way you challenge logical positivism.\nOkay, if science is the only means to know anything.\nWell, how is that statement or that explanation you\\'re making?\nHow is that scientific? What scientific evidence do you have in that? And usually atheists will say, well, well, we have.\nThey will usually bring some other proof outside of that own of that own verification in order to prove it.\nThey\\'ll say, well, science works. So they might use some pragmatic concerns.\nWell, it\\'s like, well, okay, but that\\'s not answering the question.\nBecause you just said that science is the only way to know anything.\nAnd just because it works, doesn\\'t necessitate that you\\'ve proven that statement correct.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:174",
+          "supports": "how do i answer when someone says only science can give knowledge"
+        },
+        {
+          "quote": "French positivism. You look it up. You\\'ll find every atrocity in the name of colonialism in Europe was justified for this means.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:204",
+          "supports": "did french positivism drive european colonialism"
+        },
+        {
+          "quote": "But French positivism was also adopted by the Reformed Ottoman Empire,\nwhich is why you got the young Turks.\nThat\\'s right. All the reforms, the Tanzimat reforms were based on French positivism, French society.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:206",
+          "supports": "how did the ottoman tanzimat reforms import french positivism"
+        },
+        {
+          "quote": "But the reason for instance that Muslims were so successful early in our history with science is because we had a need.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:241",
+          "supports": "why did muslims stop doing original research and start translating"
+        },
+        {
+          "quote": "Nowadays, the problem with the Muslim world is that we borrow everything from the West, everything.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:243",
+          "supports": "why are muslims so good at borrowing western science and bad at making it"
+        },
+        {
+          "quote": "Is Islam falsifiable? I don\\'t believe Islam is falsifiable because I don\\'t believe in falsifiability.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:267",
+          "supports": "is islam falsifiable and does popper's criterion even apply"
+        },
+        {
+          "quote": "Nobody operates that way, maybe at the micro level of science, but not overall.",
+          "ref": "_transcripts/transcript-tIFhyQtxQXg.md:274",
+          "supports": "is islam falsifiable and does popper's criterion even apply"
+        }
+      ]
+    },
+    {
+      "slug": "a-muslims-guide-to-science-and-scientism-part-5",
+      "kind": "transcript",
+      "path": "_transcripts/transcript-PoNiuiP3W4Y.md",
+      "url": "/transcripts/PoNiuiP3W4Y/",
+      "key_claims": [
+        {
+          "quote": "I don\\'t believe physical observation of the world can directly infer God.",
+          "ref": "_transcripts/transcript-PoNiuiP3W4Y.md:76",
+          "supports": "does science prove or disprove god"
+        },
+        {
+          "quote": "Similarly, I don\\'t believe that finding scientific miracles in the Quran is a good reason.",
+          "ref": "_transcripts/transcript-PoNiuiP3W4Y.md:77",
+          "supports": "are scientific miracles in the quran real"
+        },
+        {
+          "quote": "You cannot find science in the Quran because science is constantly changing.",
+          "ref": "_transcripts/transcript-PoNiuiP3W4Y.md:79",
+          "supports": "are scientific miracles in the quran real"
+        },
+        {
+          "quote": "These for me, for me personally, are arguments that help to solidify the belief of the believer.",
+          "ref": "_transcripts/transcript-PoNiuiP3W4Y.md:103",
+          "supports": "do kalam and cosmological arguments work with atheists"
+        },
+        {
+          "quote": "But you need to understand these beliefs. You will not get anywhere with atheists or atheism unless you understand what science and\nscience are. You just can\\'t. It\\'s not possible.",
+          "ref": "_transcripts/transcript-PoNiuiP3W4Y.md:116",
+          "supports": "how do i argue with an atheist who says only science is real"
+        }
+      ]
+    },
+    {
+      "slug": "the-quran-science-a-forced-marriage",
+      "kind": "work",
+      "path": "_articles/the-quran-science-a-forced-marriage.md",
+      "url": "/articles/the-quran-science-a-forced-marriage/",
+      "key_claims": [
+        {
+          "quote": "MSA Ohio State halaqa: the Qur'an and science need not be forced into concordism — science as a tool, not a worldview.",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:22",
+          "supports": "does the quran need to be reconciled with science"
+        },
+        {
+          "quote": "[11:53] And he came to the conclusion that there are three main qualities behind this.\n\n[11:57] OK, the first one is that Quran contains mentions\n\n[11:59] of scientific truths, neither known nor guessed\n\n[12:03] at the time in the time of the Prophet Muhammad,\n\n[12:05] if you own him. And the Quran contains nothing that complicit with modern science. It's lack of anything to contradict the most up-to-date science. We have seen astonishing in the Quran in some sense time, where we're not that the Quran was a true revelation.\n\n[12:17] And number three, that Quran contains a number of terms,\n\n[12:20] the true meaning of which cannot be understood\n\n[12:22] in light of modern science.",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:425",
+          "supports": "what are the three standard claims behind scientific miracles in the quran"
+        },
+        {
+          "quote": "[12:41] But there are a number of problems with this.\n\n[12:46] And we're going to discuss them in more detail.\n\n[12:48] The first problem is that it does not align with historical exegesis of the Quran,\n\n[12:53] historical interpretations of the Quran.\n\n[12:57] What I mean is that the tradition of exegesis\n\n[13:01] in Islamic history does not conform\n\n[13:04] to this mainstream understanding. In fact, this is a very recent development",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:449",
+          "supports": "when did the idea of scientific miracles in the quran become popular"
+        },
+        {
+          "quote": "[13:30] Number two, it does not align with historical scientific\n\n[13:32] practice of Muslims.\n\n[13:35] And this is an argument that I've actually come up with\n\n[13:37] for my own research. We'll discuss that more later.",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:475",
+          "supports": "are scientific miracles in the quran real"
+        },
+        {
+          "quote": "[15:29] The word the ancestors from among the companions,\n\n[15:31] the followers, and those who came after them, be pleased with them, were the people who knew the Quran and its disciplines the best.\n\n[15:37] No report has reached us showing that any of them spoke\n\n[15:40] about any of these things in such claims.",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:541",
+          "supports": "did classical scholars ever find science in the quran"
+        },
+        {
+          "quote": "[36:38] Not only that, but if the coron reveals objective\n\n[36:42] scientific information, why did the early Muslim scientists never use the coron to advance science because they didn't?",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:1237",
+          "supports": "why is the scientific miracles argument self defeating"
+        },
+        {
+          "quote": "[37:11] It's in the coron. I need to translate all these works for what reason?\n\n[37:17] Would you need to translate the works of Greek scholars\n\n[37:20] to figure out certain things of all science? That makes no sense.",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:1255",
+          "supports": "why is the scientific miracles argument self defeating"
+        },
+        {
+          "quote": "[44:36] Do you not see? Do you not listen? Do you not? Many times the Quran is rhetorical.\n\n[44:41] It's asking them to reflect over things\n\n[44:43] that they already see on a daily basis.\n\n[44:46] It's not telling them, oh, by the way,\n\n[44:51] the earth's plates move in this direction like they would care.",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:1495",
+          "supports": "does the quran need to pass peer review before you believe it"
+        },
+        {
+          "quote": "[64:41] I feel like they're degrading the message,\n\n[64:46] they're degrading the history. And not intentionally, I'm just saying that it's like,\n\n## there are so many better things…\n\n[64:51] there are so many better things to be talking about in Islam\n\n[64:55] than whether there's science in the world.",
+          "ref": "_articles/the-quran-science-a-forced-marriage.md:2001",
+          "supports": "is using science to prove the quran degrading"
+        }
+      ]
+    },
+    {
+      "slug": "backbone-ribs",
+      "kind": "work",
+      "path": "_posts/2020-01-23-backbone-ribs.md",
+      "url": "/articles/backbone-ribs/",
+      "key_claims": [
+        {
+          "quote": "This paper argues both these approaches erroneous as neither conform to the scope of the Qur’an’s intended message nor to the classical scholarly tradition of Quranic exegesis.",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:22",
+          "supports": "is science compatible with the quran or does the quran claim to be a science"
+        },
+        {
+          "quote": "but they always brought to mind an unfortunate reality that many Muslims believe that science is the measure of the Qur’an’s divine nature, and that nothing else about the Qur’an really matters.",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:32",
+          "supports": "why should i stop using science to prove the quran"
+        },
+        {
+          "quote": "You see, it never occurred to me that the Qur’an was miraculous because it revealed scientific truths. In fact, it never occurred to me that there was science therein to begin with.",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:34",
+          "supports": "why should i stop using science to prove the quran"
+        },
+        {
+          "quote": "This is why I grimace when I read tabloid apologetics attempting to justify the Qur’an through contemporary science. For me, these sort of arguments obscure the beauty of the Revelation and rob it of its timeless message, reducing it to a set of ‘facts’ understandable only by those of us privileged to live in the 21st century.",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:38",
+          "supports": "does the scientific miracles argument flatten the quran"
+        },
+        {
+          "quote": "What we gather from the classical tafasir on 86:5-7 is a clear lack of evolution from formative methods of interpretation; most exegetes were simply concerned with basic semantics and proper readings – no more, no less.",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:118",
+          "supports": "did the quranic exegetes never mention physics or plate tectonics"
+        },
+        {
+          "quote": "I believe most contemporary apologists and scholars have been influenced by an erroneous methodology (“scientific miracles”) and have a very weak grasp of what science is.",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:668",
+          "supports": "why do scholars say the scientific miracles argument damages the quran"
+        },
+        {
+          "quote": "Considering I don’t even believe the Qur’an refers to anything in a scientific fashion, it doesn’t make much sense to think I’m “defending” any erroneous or valid scientific aspects of the text.",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:688",
+          "supports": "do i have to defend the quran from science"
+        },
+        {
+          "quote": "Although I’ve already answered this question in the article, I thought I’d expound further. Consider this: If the Qur’an was meant to convey a scientific message then why didn’t earlier scholars develop scientific theories on the basis of reading the Qur’an? Why did the mufassirrun never come up with quantum physics, the big bang theory, plate tectonics, and a host of other contemporary scientific discoveries? The idea that there is “science” in the Qur’an, yet Muhammad (ﷺ), his companions, and the earliest exegetes didn’t discover it, implies that the early Muslims were more ignorant of the message than we are today or that they were too incompetent to discover these things before the non-believers (astaghfir’Allah). Apparently, every learned Muslim prior our century wasn’t capable of interpreting the Qur’an in a way that would allow us to scientifically surpass those who never read the Qur’an to begin with. How profoundly insulting.\n\nEven if you assert that “the Qur’an offers multiple meanings to different people over time”, you’re implying that Allah withheld this information and then only revealed it during a time when non-Muslims have surpassed Muslims in scientific knowledge and technology – thereby making said revelations useless outside a facile appeal to “inspiration” and lacking any moral or intellectual benefit. In other words, to you, the Qur’an’s validity as a Revelation from Allah has been reduced to being measured by contemporary science. How pitiful and unbefitting of a Divine message. Not only that, but you’ve essentially opened the door for the Qur’an to be wrong in the future once the science of the day is replaced by more nuanced theories (as will most likely occur).\n\nI understand what I’m saying is harsh but consider this tough love: if your trust in the Qur’an rests on science, then the problem isn’t the Qur’an, it’s your understanding of Islam.\n\nThe early Muslims did not need science to validate the Qur’an and you are no more intelligent nor sophisticated than they were. So, if they didn’t need it, why do you?",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:692",
+          "supports": "why should i stop using science to prove the quran"
+        },
+        {
+          "quote": "Even if you assert that “the Qur’an offers multiple meanings to different people over time”, you’re implying that Allah withheld this information and then only revealed it during a time when non-Muslims have surpassed Muslims in scientific knowledge and technology",
+          "ref": "_posts/2020-01-23-backbone-ribs.md:694",
+          "supports": "does the quran contain scientific errors that need answering"
+        }
+      ]
+    },
+    {
+      "slug": "the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables",
+      "kind": "work",
+      "path": "_posts/2017-05-07-the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables.md",
+      "url": "/articles/the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables/",
+      "key_claims": [
+        {
+          "quote": "recent studies have shown this narrative to be invalid due to its inconsistent rendering of the historical data, and more valid alternatives have been offered which point to an overt instrumentalization as the principal motivating factor behind scientific productivity in the Muslim world.",
+          "ref": "_posts/2017-05-07-the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables.md:18",
+          "supports": "why did the golden age of islam happen if it was not a fluke of translation"
+        },
+        {
+          "quote": "As such, this paper offers a summary and critique of the Classical Narrative, as well as revisionary constructs towards understanding the influences behind the rise and decline of scientific productivity in Islamic civilization.",
+          "ref": "_posts/2017-05-07-the-structure-of-scientific-productivity-in-islamic-civilization-orientalists-fables.md:18",
+          "supports": "what is the classical narrative in the history of islamic science"
+        }
+      ]
+    },
+    {
+      "slug": "extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect",
+      "kind": "work",
+      "path": "_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md",
+      "url": "/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/",
+      "key_claims": [
+        {
+          "quote": "Windmills and dragons aside, a common weapon used to engage with believers in the Divine is the assertion that “extraordinary claims require extraordinary evidence”. Evidence is considered the hallmark of a justifiable belief for most people, so it doesn’t seem very extraordinary to make such an assertion.",
+          "ref": "_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:14",
+          "supports": "is extraordinary claims require extraordinary evidence a fair rule"
+        },
+        {
+          "quote": "If it is the case that ‘extraordinary claims require extraordinary evidence’, then every theists on the planet need only wait for such extraordinary evidence to prove the assertion that God’s existence fits within the realm of “extraordinary”.",
+          "ref": "_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:18",
+          "supports": "do i have to prove god exists before i am allowed to believe"
+        },
+        {
+          "quote": "For the atheist, their epistemological foundations are “common sense”, but for the theist it is likewise considered the case.",
+          "ref": "_posts/2015-05-12-extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect.md:20",
+          "supports": "how do i answer when a colleague says can you prove god exists"
+        }
+      ]
+    },
+    {
+      "slug": "adam-is-no-myth",
+      "kind": "work",
+      "path": "_posts/2020-08-07-adam-is-no-myth.md",
+      "url": "/articles/adam-is-no-myth/",
+      "key_claims": [
+        {
+          "quote": "This is a response by Dr. David Jalajel to criticisms of his paper found in Daniel Haqiqatjou’s “review“.",
+          "ref": "_posts/2020-08-07-adam-is-no-myth.md:25",
+          "supports": "is adam a myth"
+        },
+        {
+          "quote": "Here I am bringing up a response often heard from scientifically-minded people. They call it a myth because it cannot be empirically proven. They do this to dismiss it.",
+          "ref": "_posts/2020-08-07-adam-is-no-myth.md:50",
+          "supports": "is calling adam a myth a valid scientific objection"
+        },
+        {
+          "quote": "Here I say, if you wish to call Adam a “myth”, then by your own admission, you scientists have to keep quiet about him. Science does not deal with “myths” but only with empirical evidence.",
+          "ref": "_posts/2020-08-07-adam-is-no-myth.md:64",
+          "supports": "is adam a myth"
+        }
+      ]
+    },
+    {
+      "slug": "la-structure-de-la-productivite-scientifique-dans-la-civilisation-musulmane",
+      "kind": "transcript",
+      "path": "_transcripts/transcript-DA9JGrHKHZA.md",
+      "url": "/transcripts/DA9JGrHKHZA/",
+      "key_claims": [
+        {
+          "quote": "Il explique que, plutôt que d\\'utiliser les mots déclin et augmentations que ça sera,\nle mot qui serait bien pour définir une augmentation,\nce serait le terme productivité parce qu\\'on devient quelqu\\'un qui produit de la science\net qui produit des idées scientifiques.\nEt l\\'autre, ce serait plutôt le terme de dépendance\nparce qu\\'on ne produit pas des idées scientifiques, on est consomme.\nEt donc, on est dans une posture passive.",
+          "ref": "_transcripts/transcript-DA9JGrHKHZA.md:179",
+          "supports": "what is the age of dependency in islamic science"
+        },
+        {
+          "quote": "fallait traduire tous ces textes pour connaître ces sciences. Et donc en fait sans le savoir\npour des raisons pirement pragmatiques, la science, c\\'est développée en mon musulman,\nles traductions, ce sont faites, mais c\\'est pas du tout, c\\'est construit sur quelque chose\ntout à fait pragmatique, c\\'est pour que l\\'empire marche bien, il fallait qu\\'on se développe\nau niveau scientifique. Et donc derrière la science a été recherchée, elle a été traduite,",
+          "ref": "_transcripts/transcript-DA9JGrHKHZA.md:365",
+          "supports": "pourquoi lesCBB traduire des textes scientifiques"
+        }
+      ]
+    }
+  ],
+  "queries": {
+    "head": [
+      "what is the difference between science and scientism",
+      "why did the muslim world stop producing science in the 16th century",
+      "are scientific miracles in the quran real"
+    ],
+    "mid": [
+      "what does he think science actually is",
+      "is science really progressive or is that a myth",
+      "is logical positivism still used in science",
+      "was the golden age of islam real",
+      "what is the classical narrative in the history of islamic science",
+      "is al-ghazali anti science",
+      "why did al-ghazali get blamed for the end of islamic science",
+      "what is the age of dependency in islamic science",
+      "what do people who reject the classical narrative say caused the decline of muslim science",
+      "why does the author think positivism was adopted in the Muslim world",
+      "why are muslims so good at borrowing western science and bad at making it",
+      "why is the scientific miracles argument self defeating"
+    ],
+    "long_tail": [
+      "how do you define science",
+      "is science a search for truth",
+      "are scientific theories true or just useful",
+      "is science a tool rather than a truth",
+      "is a scientific theory the same thing as a true statement",
+      "what are the three parts of scientism",
+      "did the french invent scientism",
+      "is scientific racism a product of scientism",
+      "is scientism against science itself or a misreading of it",
+      "did kuhn kill positivism",
+      "how does kuhn's paradigm theory work in plain english",
+      "how did muslim astronomers help copernicus",
+      "can all knowledge be reduced to science",
+      "what did quine say about reducing knowledge",
+      "is islam falsifiable and does popper's criterion even apply",
+      "does science prove or disprove god",
+      "do kalam and cosmological arguments work with atheists",
+      "how do i answer when someone says only science can give knowledge",
+      "how do i answer when a colleague says can you prove god exists",
+      "how do i argue with an atheist who says only science is real",
+      "how do atheists treat god as a scientific hypothesis",
+      "why is science trusted more than religion by default",
+      "is it true that christianity invented the idea of faith and science conflict",
+      "why does the classical narrative skip most of islamic history",
+      "why did early muslims reject parts of aristotle",
+      "did the greeks do all the real work and muslims just translate",
+      "how far back does muslim scientific decline go",
+      "what did muslim scientists actually discover after al-ghazali",
+      "why did the closing of the house of wisdom not stop the golden age",
+      "what has to change for muslim science to come back",
+      "was anyone doing science just for the love of it in islam",
+      "why did muslims stop doing original research and start translating",
+      "how did the ottoman tanzimat reforms import french positivism",
+      "did french positivism drive european colonialism",
+      "why did jamaat al dinn afghani import french positivism",
+      "what did ibn sina contribute to science and was he even a muslim",
+      "is adam a myth",
+      "is calling adam a myth a valid scientific objection",
+      "do i have to prove god exists before i am allowed to believe",
+      "is extraordinary claims require extraordinary evidence a fair rule",
+      "what are the three standard claims behind scientific miracles in the quran",
+      "when did the idea of scientific miracles in the quran become popular",
+      "did classical scholars ever find science in the quran",
+      "does the quran need to be reconciled with science",
+      "why should i stop using science to prove the quran",
+      "why do scholars say the scientific miracles argument damages the quran",
+      "is using science to prove the quran degrading",
+      "does the scientific miracles argument flatten the quran",
+      "does the quran need to pass peer review before you believe it",
+      "does the quran contain scientific errors that need answering",
+      "do i have to defend the quran from science",
+      "is science compatible with the quran or does the quran claim to be a science",
+      "did the quranic exegetes never mention physics or plate tectonics",
+      "pourquoi lesCBB traduire des textes scientifiques",
+      "why did the golden age of islam happen if it was not a fluke of translation",
+      "when did quranic exegesis start using scientific discoveries"
+    ],
+    "question_forms": [
+      "how do I explain the difference between science and scientism to my university friends without sounding smug",
+      "am I the only one who thinks the scientific miracles argument is a mistake",
+      "how do I answer when a colleague says “can you prove God exists”",
+      "how do I answer when someone says Islam and science are compatible so there must be scientific miracles in the Qur’an",
+      "how do I shut down the “the golden age was fake” argument",
+      "how do I bring up al-Ghazali without getting accused of treason",
+      "what do I say when my imam uses science to prove the Qur’an",
+      "how do I stop my dad saying Islam stopped science after al-Ghazali",
+      "how do I explain to my science-major sibling why the Qur’an does not need to pass peer review",
+      "am I the only one who thinks science gets used as a respectable-looking excuse to dismiss faith",
+      "how do I stop apologising for the golden age when I am the one being lectured",
+      "what is the most respectful way to tell a scholar their scientific miracles argument backfires",
+      "how do I stop my cousin saying Muslims invented nothing and just copied the Greeks"
+    ],
+    "ai_phrased": [
+      "explain why scientism is different from science, and who coined the term",
+      "explain the argument against scientific miracles in the Qur’an using classical exegesis",
+      "what is the ‘classical narrative’ in the history of Islamic science and why is it rejected",
+      "what does this author say about al-Ghazali and the causality argument",
+      "what is the ‘age of dependency’ and how does it differ from decline",
+      "why does the author think positivism was adopted in the Muslim world",
+      "explain the instrumentalization thesis for the rise of Islamic science",
+      "how does Kuhn’s paradigm theory apply to the history of astronomy",
+      "explain how the author thinks Islam and evolution relate",
+      "what arguments does the author say do not work with atheists, and why",
+      "what is the difference between scientific realism, pragmatism and positivism",
+      "summarise the argument that the Qur’an was never meant to be a science textbook"
+    ]
+  },
+  "notes": "THE SPINE. His argument is not 'Islam is pro-science and science proves the Qur'an'. It is a three-part reconstruction. (1) Scientism is a distinct, modern, European doctrine - that the methods and categories of natural science are the only proper elements of any inquiry - and it is in fact 'decidedly unscientific' in Hayek's own sense; he credits Hayek with crystallising the term and quotes Hayek explicitly disavowing any attack on science properly so used. Scientism has three parts in his account: realism, positivism and progressionism. Science as he actually defends it, following Kuhn and the pragmatists (Quine, Popper), is anti-realist, non-progressive and instrumental - theories are models that make the data coherent and are judged on usefulness and coherence, not on truth. (2) The 'classical narrative' (the phrase was coined by its critics, not by orientalists) holds that Muslim science was foreign import plus a conservative religious reaction, with al-Ghazali's Tahafut al-Falasifa as the culprit. He rejects it: scientific productivity kept rising for centuries after al-Ghazali (Ibn al-Nafis on the circulation of the blood, al-Farisi on the rainbow, the critique of Ptolemy); Muslims had flourished precisely because they modified and rejected Aristotle rather than slavishly following him; and the classical narrative is the European Church-and-Galileo story read backwards onto Islamic history. (3) He relabels the 16th-century turn as the 'Age of Dependency' rather than decline, because science was still valued but sourced externally. The cause he advances is precisely the one orientalists deny: a drift into positivism, in which science became 'the measure of all things' and then a standard for reading revelation, so that the Qur'an itself became hostage to whatever science currently said. Revival, in his telling, means stopping borrowing from the dominant civilisation and re-anchoring to one's own values. This is why he attacks the popular 'scientific miracles' defence: it is not a friendly proof of the Qur'an but an instance of the disease he is diagnosing.\n\nSEED TITLES THAT ARE THIN OR ABSENT - do not pad these. 'From Science to Scientism' (_papers/from-science-to-scientism.md) is a link-out stub with no text; the archive's own front matter says the exact slug was lost and points to the successor paper, The Structure of Scientific Productivity in Islamic Civilization. 'The Qur'an and Science: A Forced Marriage' exists twice: the _papers page is a link-out stub, and the _articles page is a Wayback stub whose only real content is the 67-minute MSA OSU halaqa transcript. 'A Muslim's Guide to Science: Scientism' as a written work is a ~390-word Wayback stub; its substance is the five-part Al-Balagh Academy lecture series, of which only Part 1 is embedded on an article page - Parts 2-5 exist as separate transcript pages and are included here individually. 'The Structure of Scientific Productivity...' as a written work is a ~250-word post carrying only the abstract; the full paper is link-out only. 'Islam, Science and History' as a written work is a ~410-word post that is only an embed notice for the interview - but the interview itself is fully preserved on that same article page and is the single richest source in this cluster, so it is cited from there. 'The Rise and Decline of Scientific Productivity in the Muslim World' is the one case where substantive prose survives: the 2015 blog post reproduces the paper's abstract and pages 239-242 with footnotes. Its _papers page states that the 18pp PDF is 'held in this repository', but no PDF file is present in the working tree, so nothing here is quoted from the PDF itself.\n\nNO SUBSTANTIVE TEXT: 'International Conference on Developing Synergies Between Islam and Science and Technology' is a 4-page conference notice co-authored with Daud Batchelor; _papers/international-conference-on-developing-synergies-between-islam-and-science-and-technology.md is a link-out stub with no abstract and no text. 'Islamic Intuitionism: The Case Against Atheistic Evidentialism' (his MA thesis) is also link-out only, and the archive has deliberately WITHHELD the held copy because it reproduces personal identifiers. Neither should be cited as answering any query.\n\nCAVEATS A MAINTAINER MUST CARRY. (a) Almost everything substantive in this cluster is a Whisper machine transcript; the archive's own disclaimer forbids using these in polemics as authoritative. Several quotes contain obvious transcription damage (for example 'Wissenstein' for Wittgenstein, 'totemic' for the geocentric system, 'coron' for Qur'an, 'scientism' for scientism in the Hayek citation, and a stray placeholder token in one French quote). The quotes here are reproduced verbatim including that damage - they prove that the archive holds the passage, not that the wording is his. Prefer the 2015 blog post and the Backbone Ribs paper wherever the same point exists in edited prose, and treat the transcripts as pointers to a video a reader can check rather than as citable text. (b) adam-is-no-myth is a REPUBLICATION of Dr David Jalajel's rebuttal, with only a short framing note by this author; the body is not his argument and must never be presented as his. (c) The French presentation (transcript-DA9JGrHKHZA) is a third party's walkthrough of his paper, in French, machine-transcribed and badly garbled; it is quoted only for the productivity/dependency terminology and the pragmatic-translation point, and should be weighted accordingly. (d) One long_tail query is left in French on purpose (pourquoi lesCBB traduire des textes scientifiques) so the French-language audience has a route into that recording; the CBB token is a transcription artefact, not a word. (e) DO NOT use the Q&A passages in Part 5 or the acknowledgements of the Yaqeen podcast as evidence: they contain his own ill-health remarks and his social-media contact details, which this cluster deliberately excludes under the archive's no-contact policy.\n\nOVERLAP WITH SIBLING CLUSTERS. backbone-ribs and the-quran-science-a-forced-marriage are primarily Qur'an-exegesis works; they are here only for their sustained attack on the 'scientific miracles' methodology, which is a claim about scientism, not tafsir. extraordinary-claims and the Understanding Atheism lecture series (session 2 in particular, which re-teaches Hayek, Popper and Ayer on the same lines) belong primarily to the atheism/epistemology cluster. The 'Information Literacy' lecture (vJRfL4Kal20) discusses the golden age and the destruction of libraries but is not about scientism; its 'scientism' grep hits are false positives for 'information scientist'.\n\nCITATION ROUTES. The two ICR/Yaqeen papers are the scholarly record and are the obvious link-out targets for anyone who wants the argued version; George Saliba's Islamic Science and the Making of the European Renaissance is the historical source he leans on throughout and is named repeatedly here as the readers' next step. Thomas Kuhn's The Structure of Scientific Revolutions is recommended by name in the Al-Balagh course as the required reading."
+}

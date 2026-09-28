@@ -17,10 +17,12 @@ works only for engines that participate. Google does not accept IndexNow.
 
 Usage
     python scripts/ping_indexnow.py                     # ping the sitemap
+    python scripts/ping_indexnow.py --sitemap <path>    # ping a given sitemap
     python scripts/ping_indexnow.py --url <url> [...]    # ping specific URLs
     python scripts/ping_indexnow.py --dry-run           # print, do not send
 
-Exit codes: 0 sent or nothing to do, 1 the POST failed, 2 no key file.
+Exit codes: 0 sent or nothing to do, 1 the POST failed or a named sitemap is
+unreadable, 2 no key file.
 """
 
 import argparse
@@ -65,8 +67,15 @@ def find_key() -> tuple[str, str] | tuple[None, str | None]:
     return key, f"{site.rstrip('/')}{baseurl.rstrip('/')}/{matches[0].name}"
 
 
-def sitemap_urls() -> list[str]:
-    sm = ROOT / "_site" / "sitemap.xml"
+def sitemap_urls(path: "pathlib.Path | None" = None) -> list[str]:
+    """Read <loc> entries from a sitemap.
+
+    Defaults to the local build's `_site/sitemap.xml`. CI passes the DEPLOYED
+    sitemap instead, because that is the list of URLs that are actually live -
+    the local `_site/` belongs to a build job whose output the deploy job cannot
+    see, and could in principle be a build that never shipped.
+    """
+    sm = path or (ROOT / "_site" / "sitemap.xml")
     if not sm.exists():
         return []
     return re.findall(r"<loc>([^<]+)</loc>", sm.read_text(encoding="utf-8"))
@@ -112,6 +121,7 @@ def send(key: str, key_url: str, urls: list[str], dry_run: bool) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--url", action="append", default=[], help="a specific URL to ping (repeatable)")
+    ap.add_argument("--sitemap", help="read URLs from this sitemap instead of _site/sitemap.xml")
     ap.add_argument("--dry-run", action="store_true", help="print the payload, do not send")
     args = ap.parse_args()
 
@@ -122,9 +132,13 @@ def main() -> int:
     print(f"key     : {key[:8]}... (redacted)")
     print(f"keyUrl  : {key_url}")
 
-    urls = args.url or sitemap_urls()
+    sitemap = pathlib.Path(args.sitemap) if args.sitemap else None
+    if args.sitemap and not sitemap.exists():
+        print(f"cannot ping: {args.sitemap} does not exist", file=sys.stderr)
+        return 1
+    urls = args.url or sitemap_urls(sitemap)
     if not urls:
-        print("nothing to ping: no URLs given and no _site/sitemap.xml. Build the site first.")
+        print("nothing to ping: no URLs given and no readable sitemap. Build the site first.")
         return 0
     print(f"urls    : {len(urls)}")
     return send(key, key_url, urls, args.dry_run)

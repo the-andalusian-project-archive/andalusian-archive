@@ -37,6 +37,16 @@ jobs:
       - name: Assert search-data sync
         run: python3 scripts/test_search_sync.py
 
+      # The topic layer is eight pages of quotation drawn from the recovered
+      # material, and every quotation is attributed to a file and a line. If one
+      # of those attributions is wrong, the published page puts words in a living
+      # person's mouth, which is the one failure this archive cannot afford - and
+      # nothing else in the pipeline would notice. test_quotes.py re-reads each
+      # cited file and fails the build if a quote is not there, word for word, at
+      # the line it claims.
+      - name: Assert every topic quotation is real
+        run: python3 scripts/test_quotes.py
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
@@ -90,7 +100,7 @@ jobs:
       # subpath, where Search Console and Bing Webmaster Tools are the only other
       # routes and both require an account the site owner does not have.
       #
-      # Two things this step needs, and the first version of it had neither:
+      # Three things this step needs, and the first version of it had neither:
       #   * a checkout. The `deploy` job gets only the Pages artifact, so the
       #     script was not in the workspace and python3 exited 127. The earlier
       #     `git checkout main -- scripts/...` that papered over this was itself
@@ -99,6 +109,17 @@ jobs:
       #     `build` job's `_site/` is gone by now, so the list is downloaded from
       #     the deployed sitemap instead - which is also the more correct source,
       #     being the URLs that are actually live.
+      #   * a visible failure. `continue-on-error: true` on its own made every
+      #     failure mode indistinguishable from success: two commits (ff287c8,
+      #     bde1333) were spent discovering the step "looked like it ran when it
+      #     never did". The wrapper below emits ::warning:: on any non-zero exit
+      #     so that can never be silent again.
+      #
+      # This step now calls scripts/ping_indexnow.py rather than carrying its own
+      # inline copy of the protocol. That removes the second implementation that
+      # had drifted, and it removes three hardcoded occurrences of the host and
+      # base path: the script derives both from `url:` and `baseurl:` in
+      # _config.yml, so they cannot disagree with what the build used.
       #
       # Deliberately NOT fatal: a failed ping must never fail or roll back a
       # successful deployment.
@@ -106,28 +127,25 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Ping IndexNow
+        id: indexnow
         continue-on-error: true
+        env:
+          # The URL GitHub Pages actually deployed to. Deriving the sitemap from
+          # this rather than a literal means a repo rename, an org page move or a
+          # changed base path can never leave the ping POSTing to a host that no
+          # longer serves these URLs.
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
         run: |
-          set -euo pipefail
-          curl -fsSL -o sitemap.xml "https://the-andalusian-project-archive.github.io/andalusian-archive/sitemap.xml"
-          key_file=$(ls indexnow-*.txt)
-          python3 - "$key_file" <<'PY'
-          import json, os, re, sys, urllib.request
-          key = open(sys.argv[1], encoding='utf-8').read().strip()
-          base = 'https://the-andalusian-project-archive.github.io/andalusian-archive'
-          urls = re.findall(r'<loc>([^<]+)</loc>', open('sitemap.xml', encoding='utf-8').read())
-          print(f'urls: {len(urls)}')
-          if not urls:
-              raise SystemExit('no URLs in the deployed sitemap; nothing to ping')
-          body = json.dumps({
-              'host': 'the-andalusian-project-archive.github.io',
-              'key': key,
-              'keyLocation': f'{base}/{os.path.basename(sys.argv[1])}',
-              'urlList': urls,
-          }).encode('utf-8')
-          req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body, method='POST',
-                                       headers={'Content-Type': 'application/json; charset=utf-8',
-                                                'User-Agent': 'andalusian-archive/1.0 (IndexNow protocol)'})
-          with urllib.request.urlopen(req, timeout=60) as r:
-              print(f'sent {len(urls)} URL(s): HTTP {r.status}')
-          PY
+          set -uo pipefail
+          sitemap_url="${PAGE_URL%/}/sitemap.xml"
+          echo "sitemap: $sitemap_url"
+          if ! curl -fsSL -o sitemap.xml "$sitemap_url"; then
+            echo "::warning::could not download the deployed sitemap from $sitemap_url; nothing was submitted to IndexNow"
+            exit 0
+          fi
+          rc=0
+          python3 scripts/ping_indexnow.py --sitemap sitemap.xml || rc=$?
+          if [ "$rc" -ne 0 ]; then
+            echo "::warning::IndexNow submission failed (exit $rc). The deployment itself succeeded; participating engines will fall back to their own crawl schedule."
+          fi
+          exit 0
