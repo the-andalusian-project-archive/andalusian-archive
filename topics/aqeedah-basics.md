@@ -3,8 +3,177 @@ layout: default
 title: "Foundational Questions of Belief: the questions this material answers"
 description: "Okay, but how would I even know God is real — and isn't it a bit much to say faith is just built into me? The recovered work of Asadullah Ali Al-Andalusi that addresses it, quoted and linked."
 permalink: /topics/aqeedah-basics/
-last_modified_at: 2026-09-29
+last_modified_at: 2026-09-30
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/aqeedah-basics/#faq",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/aqeedah-basics/",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "how do we know god exists",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We must acknowledge first that our very nature points in the direction of the infinite by being able to perceive the effects of things greater than ourselves and that this being the only nature we possess, there is no other choice, but to accept these intuitive conceptions. When we perceive purpose and design in the whole of reality we are understanding the nature of the product and that something is behind it. The philosophical support behind the intuition is based on the recognition that: (1) there are such things as ‘reality’ and ‘knowledge’, and (2) that human beings can grasp both at a normative level of cognition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "foundations of belief",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Upon establishing the appropriate understanding of the fitrah and its existence as a normative aspect of humanity, we can move on to elucidating how it functions. This is perhaps the most important part of this article in that it sets the stage for establishing the foundational arguments for God’s existence from the Islamic perspective."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what are the four ways god existence is proven in islam",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Here, Allah states that the signs which point to Truth can be found “in the horizons” (external) “and within us” (internal). As such, the principle arguments for God’s existence may also be divided under these two categories. This dichotomy results in various methods by which such arguments may be validated. For instance, Shaykh Abu ‘Abd Allah Muhammad ibn Saalih ibn Muhammad ibn al-Uthaymeen at-Tamimi categorizes these methods into four in his Commentary on the Three Fundamental Principles of Islam:\nHis existence, Exalted is He, may be proven by the Fiṭrah (one’s natural inclination), the intellect [Aql], the legislation [Shari’ah], and the senses [Hawass].[4]"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is belief in god an extraordinary claim",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "could give him this but it wasn\\'t like extraordinary for him in the least how is that extraordinary this guy is talking to god like you know of course he probably went up\nto heaven it\\'s not a big deal you know what i mean that\\'s nothing"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "do classical proofs like kalam convince atheists",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Like I said, guys, I love the arguments that you\\'re mentioning, Kalam and such like this.\nThese for me, for me personally, are arguments that help to solidify the belief of the believer.\nThey don\\'t help with atheists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is god an innate belief or an inference",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The concept of God is not some innate belief, but is inferred from the mind’s own inner workings, which are not bound by the constraints of natural laws – that is why we are able to ‘see’ beyond direct observations and conceive of abstract notions (theories) which make them coherent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is the fitrah a belief or a disposition",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "is non-reducible, self-evident ideas, like foundational beliefs, whereas the Fittra is not\na foundational belief. The Fittra is an inclination, it\\'s a state of being, it\\'s a state of perceiving.\nIt\\'s not a belief in and of itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what do we mean when we say god exists",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We understand then that there is an absolute existence beyond our finite existence and from there we reason, even though limited, that this Absolute is beyond “intelligence” “reason” “power” etc. and that it is the greatest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is there really such a thing as an atheist",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In regards to God\\'s existence, the only reason I came up with this argument\nwas to go against people who I consider to be stubborn because in my personal view,\nthere is no such thing as an atheist. In my personal opinion, everyone has a fitrah.\nAnd if they deny the fitrah, they\\'re denying themselves, they\\'re just sort of what they\\'re doing is"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what if someone genuinely does not believe",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We often have negative opinions of atheists, but you have to understand that the fitra is still there for a lot of people. Even if they deny it, there are a lot of people out there who practice an ethical standard because they\\'re fitra.\nIt\\'s still there. It\\'s still very much in them. It\\'s trying to manifest itself."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/aqeedah-basics/#collection",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/aqeedah-basics/",
+  "name": "Foundational Questions of Belief",
+  "description": "The foundational layer only: what kind of thing God is claimed to be (not a 'thing' at all), how a finite being could come to know the Absolute, and the four classical routes by which God's existence is held to be provable.",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Material behind this page (22 quotations)",
+    "numberOfItems": 9,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "How to know “No-thing”",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/how-to-know-no-thing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Nothing",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/nothing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The Rationality of Believing in God Without Evidence — Part 1",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "The Rationality of Believing in God Without Evidence — Part 2",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "“Extraordinary Claims Require Extraordinary Evidence”, Says Ordinary Intellect",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "20 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 5",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/PoNiuiP3W4Y/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "02 - Understanding Atheism ｜ Session 2",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/CEzMdCn0Ims/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "17 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 2",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/vh-6sisOncs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/1U6VfHosrqw/"
+      }
+    ]
+  }
+}
+</script>
+
 
 <p class="crumb"><a href="{{ site.baseurl }}/topics/">What this archive answers</a> &rsaquo; Foundational Questions of Belief</p>
 

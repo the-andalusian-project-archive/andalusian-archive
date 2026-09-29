@@ -276,15 +276,35 @@
   so it is a measured value, not an estimate.
 
   `uploadDate` is NOT emitted. `_data/videos.json` records no upload date for
-  any of the 68 recordings, and the archive's own channel record is explicit
-  that the captures establish what a channel showed on a date and nothing more.
-  An invented uploadDate would be the single most damaging field Google could
+  any of the recordings, and the archive's own channel record is explicit that
+  the captures establish what a channel showed on a date and nothing more. An
+  invented uploadDate would be the single most damaging field Google could
   catch on this corpus.
 
   `publisher` is stated only for category A entries, where the archive's own
   taxonomy rule ("who made the recording") settles it, and is omitted for
-  category C entries, which are his appearances on other people's channels.
-  `thumbnailUrl` is omitted: the archive holds no thumbnail for a recording. {%- endcomment -%}
+  category C entries, which are his appearances on other people's channe
+
+  `thumbnailUrl` is omitted, and was re-examined on 2026-09-29 with the
+  specific question of what it would cost to add it. Google requires
+  name + description + thumbnailUrl + uploadDate for a video rich result, so
+  omitting the last two costs the rich result either way - which makes a
+  cosmetic thumbnail worthless rather than useful. Two sources were tested
+  against archive.org and both are unusable:
+
+    * `https://archive.org/services/img/andalusian-project` returns 200 and a
+      real 10,218-byte JPEG - but it is the ITEM thumbnail, byte-identical for
+      all 56 preserved recordings. One image standing in for 56 different
+      videos is not a representative image, and emitting it would be a schema
+      tick bought with a false claim.
+    * The per-file form, `.../services/img/andalusian-project?file=<name>`
+      and `.../download/<item>/<name>/__ia_thumb.jpg`, returns the same item
+      image and a 404 respectively. archive.org derived no per-file thumbnails.
+
+  So the field stays out, and the honest version of this note is that the
+  binding constraint is `uploadDate`, not the thumbnail. The real fix is to
+  recover publication dates from the channel captures, which is a recovery
+  question, not a markup one. {%- endcomment -%}
 {%- assign dur_iso = nil -%}
 {%- if page.duration and page.duration != "" -%}
   {%- assign _d = page.duration | plus: 0 | round: 0 -%}

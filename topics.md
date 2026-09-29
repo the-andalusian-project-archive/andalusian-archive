@@ -3,7 +3,7 @@ layout: default
 title: Questions this archive answers
 description: "The questions the recovered work of Asadullah Ali Al-Andalusi addresses, grouped by subject, with the passages that bear on each one and links to the full text."
 permalink: /topics/
-last_modified_at: 2026-09-29
+last_modified_at: 2026-09-30
 ---
 
 <h1>What this archive answers</h1>

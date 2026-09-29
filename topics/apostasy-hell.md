@@ -3,8 +3,341 @@ layout: default
 title: "Apostasy, Hell and Divine Justice: the questions this material answers"
 description: "I have heard that Islam says you have to be killed for leaving the faith, and that God sends almost everyone to hell forever - is that actually what he says, and what do I do with that? The recovered work of Asadullah Ali Al-Andalusi that addresses it, quoted and linked."
 permalink: /topics/apostasy-hell/
-last_modified_at: 2026-09-29
+last_modified_at: 2026-09-30
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/apostasy-hell/#faq",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/apostasy-hell/",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "does islam allow killing apostates",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "So yes, I do not support the punishment for apostasy today, because the conditions have not been met that would warrant its implementation. Not because I disagree with the Law or believe it’s not part of Islam. Well, firstly, I\\'d like to say just right off the bat that\nI commend you for supporting individuals who are being persecuted,\nfor speaking out for them, supporting their cause.\nI commend you for even trying to normalize dissent in the Muslim world.\nI happen to believe that ex-Muslims should not be punished\nfor their disagreement with Islam.\nI\\'m among many Muslims who believe this, and I have my own theological reasons for this as well."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is this settled or is it one scholar's opinion",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If my detractors see this as a deviant position, then I merely ask this: “Why doyourefuse to kill an apostate?” The answers will vary, no doubt. Some will claim that they “lack authority”. Others will say that “the law isn’t in place”. Others will say because they “live in a non-Muslim society”. All of these are legitimate and agreeable. i will read those um counter arguments\nand evidences later regarding my views\non apostasy punishment but i just wanted to get that sort of thing out earlier because i don\\'t want\npeople to assume that i\\'m just rejecting it because i\\'m some sort of like reformist liberal or something which is ridiculous all of you know i\\'ve been fighting against secular liberalism for like over a decade okay it\\'s nonsense that somebody would"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is the death penalty for apostasy still enforceable",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That issue revolves around the fact that there doesn’t appear to be an actual Islamic authority or polity worthy enough of issuing said punishment (i.e. no caliphate or proper Islamically ruled polity is present)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is calling for the death of apostates islamic",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "the name of assam ala hakeem who was answering one of his followers questions about the punishment for\napostasy in islamic state\nstates that an apostate should be killed\nhe wasn\\'t banned for stating his opinion about this\nbut apostate prophet was banned for\nstating the facts so there must be a double standard of course there is a significant difference between\nwhat assam al-hakim was saying and what the apostate prophet was saying and you\\'re probably wondering what could"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "does malaysia punish apostasy with death",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All right then. So that statement basically states that two states in Malaysia, Glantan and Tanangano,\npassed enactments wanting to punish apostasy with death, but the federal constitution knocked it down.\nSo the federal government knocked it down. And no one can be punished with death for apostasy in Malaysia.\nAnd no one has been punished with death for apostasy in Malaysia because it\\'s not legal to punish anyone for apostasy with death in Malaysia."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "has anyone ever been convicted of apostasy",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Despite their longstanding nature, however, no one has been convicted under these Sharia laws\nand according to a 1993 statement by the Attorney General, the rulings could not be enforced without a constitutional amendment.\nAmending the penal code is the exclusive prerogative of the federal government."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what do i say when someone calls for killing apostates",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Instead, we call to the punishment in social media posts, scaring those who are confused and in search of real answers. We indirectly threaten their lives when they don’t even know why they’re Muslim to begin with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "are there well known muslim scholars who believe apostates should be killed",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "islamic knowledge and traditional uh traditional traditional knowledge but they still believe apostates should be killed and all the rest of it all the other things that you maybe you don\\'t even agree with they do"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "why do i have to fill out a form to leave religion in malaysia",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "other reports showcased that what he meant by that was that to hunt them down was to basically\ntake them in for counseling sessions. And that\\'s actually what happens in Malaysia for the most part\nis that apostates, they\\'re sort of forced to go to these counseling sessions where they talk to\nan Imam or religious scholar who tries to convince them over the months. And in some states,\nlike Nikiti Simbilan, they actually grant people the right to apostate. So you have to fill out"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "why is hell eternal if my sins are finite",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "people don’t go to Hell for eternity because of one single finite criminal act, nor does God force them to remain in Hell arbitrarily. Rather, the punishment is eternal because the offense is eternally committed. and uh so the whole like thing about well you know they\\'re going there because they did one thing it\\'s like no well they\\'re going there because they continuously refuse\nthey\\'re in there because they don\\'t stop that\\'s the problem so it\\'s not like it\\'s because of one thing they\\'ve done and then eternally they\\'re punished it\\'s because\nthey can keep doing it"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "why does the quran say hellfire is for the arrogant",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "allah calls him a certain name or he says something about them every single time he says one thing about them he says they\\'re arrogant he also says hell fire is for the arrogance so what does this mean he\\'s talking specifically to individuals"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is the difference between mercy and forgiveness in islam",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "um the story always kind of affected me quite a bit um and it shows that you know allah\\'s mercy is for everyone but when we\\'re talking about mercy people don\\'t really understand what mercy is they\nthink mercy is just forgiving people regardless of the fact that they\\'ve done wrong that\\'s the gist of it but there\\'s\nmore to mercy than that mercy requires repentance even the prophet muhammad peace be upon him you know you would say a parent\\'s love for their child is one of the highest forms of mercy but he said even if fatima my daughter had stolen something i would have her"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "are non muslims going to hell just for being born non muslim",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "So, first, I want to note that sort of get to the bottom of the issue here that in Islam,\nnon-Muslims don\\'t simply go to hell because they\\'re born non-Muslims or because, you know,\nthey just happen to be non-Muslims. They have to have, the only reason they go to hell is if they don\\'t have a valid excuse.\nFor example, if they\\'re not ignorant or, you know, if they have no access to the truth,\nthen of course, Alasabana will show mercy to them, right?\nSo it\\'s not simply based on your identity that a person goes to hellfire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "who is the worst person in hellfire",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "there\\'s a lovely story that my sheikh told me i don\\'t know if it\\'s canonical or anything like this but uh i think it\\'s derived from hadith but it\\'s not it\\'s not exactly what it is it may have been just something that was"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is god a dictator because he threatens hell",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "And I think that is a big problem. So yes, I do believe, yes, that a somebody who knows the truth deserves to be punished\nfor it. They deserve to be punished because that is the very foundation of everything that they are\nas a human being."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "will good deeds without the right intention save me",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "So when you say, well, this person does good deeds, but if they do not do good deeds based\non the right intention, if they do good deeds based on falsehood, is it really a good\ndeed? Because Islam is not simply about action, it\\'s also about your intention, it\\'s about where\nyou\\'re coming from, your motivation. Alasabana, don\\'t tell me, gave you your talents, he gave you your intellect, he gave you\nyour morality and you\\'re going, and if somebody\\'s going to go in the afterlife and say, no,\nI did it myself, that is a profound form of arrogance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "how is god just when innocent people suffer",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "mean anything. All of this will be rectified. Everyone will be giving justice. So imagine all the\nhorrible things in the world, women being raped, children starving, men being killed without\nany good reason being murdered. For Allah subhanahu wa ta\\'ala at the end of time, all of these things\nwill be rectified. Even if they\\'re not rectified now, they will eventually be rectified, and justice\nwill be given to all of these individuals, and they\\'ll be rewarded for all the pain and suffering"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "if there is no god what happens to the people who suffered",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "alternative? Now, let\\'s imagine that there is no God. Let\\'s imagine that there\\'s no\nultimate purpose. There\\'s no great mercy or rectification at the end of all things. Let\\'s imagine\nthat. What happens to the women who are raped? What happens to the children who are starved? What\nhappens to all the innocent men who are slaughtered? Well, for eternity, those women stay raped.\nFor eternity, those children stay starved to death, and for eternity, those men who were slaughtered\nmindlessly without any compassion, mercy, they remain that way. The tragedy remains a tragedy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "does evil in the world prove god does not exist",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I know. He said, I know what you do not. I know what you do not. So our perception, the very easy way out of this argument is this.\nOur perception of good and evil is relative to us.\nWhat Allah subhanahu wa ta\\'ala sees is much greater.\nSo by His knowledge what He could be allowing is actually quite good. And if an atheist were to argue well, there\\'s so much evil in the world.\nI would respond and say, are you sure?\nBecause if there was more evil than good,\nwill we still be here? Is it possible that we could live in a universe where there\\'s more evil than good?"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "i left islam will god forgive me",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "And so you\\'re probably asking, well, what is forgiving yourself have anything to do with this passage?\nWell, very simply, if you cannot forgive yourself, if you believe you do not deserve mercy, then how can you accept mercy from Allah?\nHow can you believe that Allah will be merciful with you?"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "why are so many young muslims leaving islam",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "have doubts who are watching this and are going to leave islam because of it that\\'s what i\\'m concerned with okay that\\'s what i\\'m concerned with because those those are the people we should be worried about not the people"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "does the punishment for a crime have to be applied even if nobody is harmed",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "perpetrator of what we would usually consider a bad act we should not punish them because the\nconditions in which they did that thing you know it makes a difference so also do we punish somebody\nwho is insane why they committed they stole something we should cut their hands off why because they\ndon\\'t so there\\'s a condition that\\'s been applied there see they\\'re insane they don\\'t have proper\njudgment so it\\'s not their fault so we can\\'t just like punish them because that would be a lack of\nmercy okay we have to excuse them for being what they are all right so in this way morality"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "can the conditions of a law change without the law itself changing",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "nothing wrong with that because a law system or a system of a divine law that\\'s supposed to be for\nall time should be able to do this correct because the law doesn\\'t change but people do societies do\nour conditions change all the time so we need a legal system that is able to apply itself during every\nperiod right so and some atheists will say this they say well if the law can do that then it\\'s not\ndivine because it changes etc but once again let me reiterate what changes is not the laws the\nconditions and how we apply the law changes but the law itself doesn\\'t change we still say murder is\nwrong every day that doesn\\'t change but the conditions do right I still say stealing is wrong but\nsometimes we don\\'t apply the punishment because the conditions change so any other questions about"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "how do i get over the guilt of having left islam",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because the past no longer exists, your past mistakes no longer exist. As long as you forgive yourself, you will allow yourself to receive mercy and you accept the mercy of Allah, your past has been erased completely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is the mainstream scholarly position on the punishment for apostasy",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a concise, but scholarly view on the subject (that may or may not support my view, but is educational nonetheless), please refer to Sh. Hatem al-Haj’s article, “The Punishment for Apostasy – Can It Be Suspended“."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "summarise the argument that apostasy was treason against the caliphate",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "islamically what\\'s the position on that oh it depends on whether or not you\\'re\nan imperial society i brought this up in a former\nconversation with army naval and others in ali you know the whole thing the whole purpose behind the apostasy law in the past was that your\nreligion was tied to your citizenship and there was a constant state of war around you so if you abandoned that religion it was like as though you were committing\ntreason by joining the other side"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/apostasy-hell/#collection",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/apostasy-hell/",
+  "name": "Apostasy, Hell and Divine Justice",
+  "description": "His conditional, self-declared minority reading that the apostasy punishment is part of the Shariah but not operative today, together with his Qur'an-based answer to why hell is for the arrogant and why mercy is not the unconditional forgiveness people assume it is.",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Material behind this page (80 quotations)",
+    "numberOfItems": 15,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "My Views On the Punishment For Apostasy",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/my-views-on-the-punishment-for-apostasy/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "The Fire of God’s Mercy",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/gods-mercy-without-eternal-punishment/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Hard Questions: Answering Doubts About Islam",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/hard-questions-answering-doubts-about-islam/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/1U6VfHosrqw/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "28 - Muslim vs. Ex-Muslim： A Respectful Dialogue (Asadullah Ali and Veedu Vidz) - REUPLOAD",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/A3dbBCBSFKk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "40 - 4 Lies Muslims Tell About Ex-Muslims？",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/nkuZ70p-inE/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "46 - ＂Is Allah a Dictator？＂",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/wUapqpCqBUk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "43 - Two Andalusians, One Conference ｜ ＂Fortifying the Muslim Mind＂",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/IhE3ka7SQQs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "03 - Understanding Atheism ｜ Session 3",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/lZkv38vd7bw/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "04 - Understanding Atheism ｜ Session 4",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/wVehdVlLdBI/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "45 - (Reupload - Read Description) ＂The Cancer in Contemporary Dawah＂ by Andalusian Project",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/hKdNF95UqVM/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "name": "34 - Twitter Assists Islamists! - Asadullah Andalusi",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/tUHEAejm404/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "name": "31 - iKhalifa 2： Forgive Yourself",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/-BwP55UIg3c/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "name": "Apostasy: Beyond the Rhetoric",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/apostasy-beyond-the-rhetoric/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "name": "Between A Backbone And Ribs - Analysis of Al-Quran 86:5-7",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/papers/between-a-backbone-and-ribs-analysis-of-al-quran-86-5-7/"
+      }
+    ]
+  }
+}
+</script>
+
 
 <p class="crumb"><a href="{{ site.baseurl }}/topics/">What this archive answers</a> &rsaquo; Apostasy, Hell and Divine Justice</p>
 

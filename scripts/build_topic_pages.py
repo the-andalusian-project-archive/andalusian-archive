@@ -712,6 +712,153 @@ def reanchor_spec_refs(specs: list[dict], dry_run: bool = False) -> tuple[list[s
     return moved, unresolved
 
 
+def _site_abs() -> str:
+    """site.url + baseurl from _config.yml, so schema @id values are absolute.
+
+    Read from the same file Jekyll reads. Hardcoding it here would put a second
+    copy of the deployment URL in the tree, and a repo or org rename would leave
+    every structured-data identifier pointing at a host that no longer serves
+    these pages.
+    """
+    site = baseurl = ""
+    for line in (ROOT / "_config.yml").read_text(encoding="utf-8").splitlines():
+        m = re.match(r'^\s*url:\s*"?([^"\s]*)"?\s*$', line)
+        if m:
+            site = m.group(1)
+        m = re.match(r'^\s*baseurl:\s*"?([^"\s]*)"?\s*$', line)
+        if m:
+            baseurl = m.group(1)
+    return site.rstrip("/") + baseurl.rstrip("/")
+
+
+def _misc_schema(site_url: str, leftovers) -> str:
+    """CollectionPage for the leftover-items page.
+
+    It is a subject page like the other nine - a list of recovered works with
+    their URLs - so it carries the same ItemList. It has no FAQPage because it
+    answers no question; the eight subject pages do that, and this one exists
+    precisely so the others do not have to pretend to be complete.
+    """
+    base = site_url.rstrip("/") + "/topics/miscellany/"
+    items = [
+        {"@type": "ListItem", "position": n, "name": title_for(it),
+         "url": site_url.rstrip("/") + str(it.get("url") or "")}
+        for n, it in enumerate(leftovers or [], 1)
+        if str(it.get("url") or "")
+    ]
+    block = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": base + "#collection",
+        "url": base,
+        "name": "Other materials",
+        "description": "Recovered works that do not fit one of the eight "
+                       "subject pages.",
+        "isPartOf": {"@id": site_url.rstrip("/") + "/topics/"},
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Materials not yet filed under a subject",
+            "numberOfItems": len(items),
+            "itemListElement": items,
+        },
+    }
+    return ('<script type="application/ld+json">\n'
+            + json.dumps(block, ensure_ascii=False, indent=2)
+            + "\n</script>\n")
+
+def topic_schema(cid, spec, faq, material, site_url, n_claims) -> str:
+    """JSON-LD for a subject page: FAQPage + CollectionPage + ItemList.
+
+    WHY THIS EXISTS
+    ===============
+    The eight subject pages carried no structured data at all - 27 hub pages
+    across the site had none - and these are the pages most worth marking up.
+    They are already in question-and-answer shape: 369 distinct questions
+    across the eight, each with passages quoted from the recovered material and
+    cited to a file and a line.
+
+    A `FAQPage` is only legitimate if the question and the answer are VISIBLE on
+    the page, which is why this is built from `faq` - the questions actually
+    rendered, with the passages actually printed under them - rather than from
+    the 369 in the spec. The remainder are listed on the page as "questions with
+    nothing to quote here", and a question with no passage is not a question
+    with an answer, so it is left out of the markup and stays visible as a gap.
+
+    The `ItemList` is the shelf: the works and recordings the page draws on,
+    each with its position, so a consumer can see what is behind the answers
+    rather than only the answers.
+
+    No rich result is promised. Google retired FAQ rich results for most sites
+    in August 2023; the value here is machine legibility, not a SERP feature.
+    """
+    base = f"{site_url.rstrip('/')}/topics/{cid}/"
+    label = str(spec.get("label") or cid)
+
+    # Built as dicts, NOT as pre-serialised JSON strings. Building the strings
+    # and assigning them to `mainEntity` double-encodes them: the emitted
+    # document parses, and every question comes out as a quoted string rather
+    # than a Question object. `numberOfItems` still matched the list length, so
+    # a count-only check passes on a document no consumer can read.
+    mains = []
+    for q, answers in faq:
+        text = " ".join(a.strip() for a in answers if a and a.strip())
+        if not q.strip() or not text:
+            continue
+        mains.append({
+            "@type": "Question",
+            "name": q.strip(),
+            "acceptedAnswer": {"@type": "Answer", "text": text},
+        })
+
+    items = []
+    for n, it in enumerate(material or [], 1):
+        url = str(it.get("url") or "")
+        if not url:
+            continue
+        items.append({
+            "@type": "ListItem",
+            "position": n,
+            "name": title_for(it),
+            "url": site_url.rstrip("/") + url,
+        })
+
+    blocks = [{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": base + "#faq",
+        "url": base,
+        "isPartOf": {"@id": site_url.rstrip("/") + "/topics/"},
+        "mainEntity": mains,
+    }]
+    if items:
+        blocks.append({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "@id": base + "#collection",
+            "url": base,
+            "name": label,
+            "description": str(spec.get("one_line") or ""),
+            "isPartOf": {"@id": site_url.rstrip("/") + "/topics/"},
+            "mainEntity": {
+                "@type": "ItemList",
+                "name": f"Material behind this page ({n_claims} quotations)",
+                "numberOfItems": len(items),
+                "itemListElement": items,
+            },
+        })
+
+    # One <script> per block. Joining them with a comma inside a single tag
+    # produces a document that is neither valid JSON nor a valid second script,
+    # and the parser reports "Extra data" rather than pointing at the cause.
+    tags = "\n".join(
+        '<script type="application/ld+json">\n'
+        + json.dumps(b, ensure_ascii=False, indent=2)
+        + "\n</script>"
+        for b in blocks
+    )
+    return tags + "\n"
+
+
 def main() -> int:
     specs = load_specs()
     if not specs:
@@ -939,6 +1086,12 @@ nothing recovered here is unreachable.</p>
 
         # The question section: each query that has a passage, with that passage.
         blocks: list[str] = []
+        # (question, [quoted passage, ...]) for every question that is actually
+        # rendered below. Collected here rather than re-parsed from the HTML so
+        # the structured data and the visible text cannot disagree - a FAQPage
+        # whose answers are not on the page is the markup Google penalises, and
+        # a question with no passage is not a question with an answer.
+        faq: list[tuple[str, list[str]]] = []
         rendered = 0
         for q in query_order:
             pairs = by_query.get(q)
@@ -980,6 +1133,7 @@ nothing recovered here is unreachable.</p>
 
 {''.join(r + chr(10) + chr(10) for r in rows_md)}"""
             )
+            faq.append((q, [str(c["quote"]) for _i, c in pairs[:3]]))
 
         unrendered = [q for q in query_order if q not in by_query]
 
@@ -1065,6 +1219,8 @@ description: "{esc(spec.get('reader_question', ''))} The recovered work of Asadu
 permalink: /topics/{cid}/
 last_modified_at: {TODAY}
 ---
+
+{topic_schema(cid, spec, faq, material, _site_abs(), n_claims)}
 
 <p class="crumb"><a href="{{{{ site.baseurl }}}}/topics/">What this archive answers</a> &rsaquo; {esc(spec.get('label', cid))}</p>
 
@@ -1155,6 +1311,8 @@ description: "Recovered works in this archive that do not fit the eight subject 
 permalink: /topics/miscellany/
 last_modified_at: {TODAY}
 ---
+
+{_misc_schema(_site_abs(), leftovers)}
 
 <p class="crumb"><a href="{{{{ site.baseurl }}}}/topics/">What this archive answers</a> &rsaquo; Other materials</p>
 

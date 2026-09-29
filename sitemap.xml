@@ -1,0 +1,77 @@
+---
+# The empty front matter is load-bearing. Without it Jekyll treats this file as
+# a static asset and copies it to _site/ verbatim - Liquid never runs, and the
+# site gets a sitemap containing the template's own source text. That is what
+# the first attempt did.
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  Custom sitemap template, added 2026-09-29.
+
+  WHY THIS FILE EXISTS
+  ===================
+  jekyll-sitemap 1.4.0's bundled template ends every URL with `| xml_escape`.
+  That is correct XML and the wrong URL. Two full-text pages have a legacy
+  WordPress permalink containing an apostrophe - `/articles/qur'an/...` - and
+  `xml_escape` rendered the apostrophe as the entity `&apos;`. The sitemap
+  therefore advertised
+
+      .../articles/qur&apos;an/science/backbone-ribs/
+
+  which is a 404. The real page is served at `.../articles/qur%27an/...`, and it
+  was in no sitemap at all. Two of 355 URLs, but a sitemap is a promise about
+  what exists, and a promise that is wrong in two places is worth two fewer
+  promises.
+
+  THE FIX
+  =======
+  Percent-encode the apostrophe BEFORE the escape, so `xml_escape` never sees a
+  character it would entity-encode. `%27` needs no escaping, so it passes
+  through intact. The apostrophe is deliberately NOT removed or normalised
+  anywhere else: the permalink itself must keep the raw character, because
+  Jekyll writes that filename to disk and the server decodes `%27` back to `'`
+  to match it. Encoding the permalink would produce `qur%2527an` on disk and
+  break the page instead of fixing the sitemap.
+
+  The `replace` arguments must be string LITERALS. Liquid's `replace` filter
+  does not accept variables, and passing them silently breaks the chain - the
+  first version of this file assigned the two strings to variables and emitted
+  3 URLs instead of 355.
+
+  The rest of the template is jekyll-sitemap 1.4.0's own, unchanged, apart from
+  the `replace` and the removal of the unused `page.xsl` stylesheet block (this
+  repository ships no `sitemap.xsl`).
+{%- endcomment -%}
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}
+    {% for collection in collections %}
+      {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
+      {% for doc in docs %}
+        <url>
+          <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | replace: "'", "%27" | xml_escape }}</loc>
+          {% if doc.last_modified_at or doc.date %}
+            <lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>
+          {% endif %}
+        </url>
+      {% endfor %}
+    {% endfor %}
+
+    {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' %}
+    {% for page in pages %}
+      <url>
+        <loc>{{ page.url | replace:'/index.html','/' | absolute_url | replace: "'", "%27" | xml_escape }}</loc>
+        {% if page.last_modified_at %}
+          <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+        {% endif %}
+      </url>
+    {% endfor %}
+
+    {% assign static_files = page.static_files | where_exp:'p','p.sitemap != false' | where_exp:'p','p.name != "404.html"' %}
+    {% for file in static_files %}
+      <url>
+        <loc>{{ file.path | replace:'/index.html','/' | absolute_url | replace: "'", "%27" | xml_escape }}</loc>
+        <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
+      </url>
+    {% endfor %}
+</urlset>

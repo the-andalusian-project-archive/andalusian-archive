@@ -3,8 +3,365 @@ layout: default
 title: "Terrorism, Extremism and Violence: the questions this material answers"
 description: "Where does this violence actually come from - is it really Islam, and who is allowed to say so without getting shouted down? The recovered work of Asadullah Ali Al-Andalusi that addresses it, quoted and linked."
 permalink: /topics/terrorism-extremism/
-last_modified_at: 2026-09-29
+last_modified_at: 2026-09-30
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/terrorism-extremism/#faq",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/terrorism-extremism/",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "jihad meaning in islam",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "And my intention is to essentially teach about Jihad,\nan objective understanding of Jihad through the Islamic perspective.\nMeaning what does the Islamic perspective say about Jihad?\nWhat is the orthodox Islamic perspective on Jihad?\nWhat is the scholarly interpretation of Jihad, the consensus surrounding it?\nAnd what did the sources actually say?"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "does religious belief lead to violence",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In this web series called ‘iJihad’ (i.e. Intellectual Jihad), Br. Asadullah Ali Al-Andalusi analyzes and deconstructs popular arguments against Islam and the Muslim world made by critics and Islamophobes alike."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "islamophobia double standard",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For the Muslim world, we are constantly barraged about how “uncivilized” and “barbaric” we are because of a couple of lunatics; yet not a word about our own suffering, which is one hundred times more than any Westerner has to ever experience in their lifetime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is state terrorism",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "However, can the same be said for Muslims attempting to defend Islam from accusations of immorality? Perhaps, depending on how the arguments are made in its favor. If a Muslim were, for instance, to downplay terrorism because people are starving in Africa, then I would think this to be a very fallacious and rather insensitive thing to say. However, when a Muslim attempts to point out the exaggerated, overplayed, and abused issue of terrorism and the subsequent ignoring of greater issueswhich cause it(state terrorism), this is in no way a case of ‘whataboutery’, but a case of reversing the fallacy of lacking proportion."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "boko haram why",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This fact also exposes another truth that islamophobes and liberalist fascists might find shockingly embarrassing: for the most part, secular principles rule this world. Calls to “police” or otherwise control our own fellow Muslims are calls to vigilantism; the very thing these “vanguards of freedom”"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "does sharia rule any country",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fact is, that while there are certainly many acts being perpetuated in the name of Islam, Islam has little to nothing to do with much of anything in this day and age: whether positive or negative. The truth is out there for all to see. The Islamophobes and the critics will continuously point to the “Islamic countries” and their problems, claiming that “Sharia”"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "why did the word terrorism get invented in the 18th century",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "terrorism and why? Well, because the word terror and the word terrorism didn\\'t become synonymous\nuntil the late 18th century because the word terrorism wasn\\'t coined until the late 18th century\nby the political party, the French political party, the Jacobins. And why is this important? Well,"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is the fallacy of relative privation",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You see, the informal fallacy of relative privation, also known as ‘The Appeal to Greater Problems’ or ‘Not as Bad as This….Argument’ is a tactic used by many people to shut down discourse by suggesting that there are worse problems in the world than what is being discussed, therefore such matters should not be brought up to begin with."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "how do i explain the causes of terrorism without being called islamophobic",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is especially seen in discussions and debates where people attempt to explainwhyterrorism is committed by individuals subscribing to Islam, contrary to the official narrative that the religion and its practitioners are “inherently barbaric”."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "how do i bring up western foreign policy without being called a whataboutist",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "However, the most important point in all this is that CaptainDisguise and many like him, while wailing against Islam and Muslims for their ideas — no matter how harmless — are much worse than the people and ideas they constantly attack. They are apologists for liberal fascism. What I mean by this is that they every problem in the world with a breach of contract being punished, but they have absolutely no problem with people being killed by secular societies for simply having different views or wanting to live a different way of life other than secular-materialist-consumerist culture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is the book The History of Jihad from Muhammad to ISIS reliable",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "And what do I mean by that? Essentially, what I found is that Robert Spencer practices something that we call the fallacy of suppressed evidence.\nAnd what is that? That is basically when somebody intentionally and conveniently dismisses\nor ignores relevant information that undermines their conclusions or the representation of the data. Robert Spencer is committing a number of fallacies here. First of them being the fallacy of\nequivocation, which is essentially using a term in two different ways, volatiously, and he\\'s also\ncommitting the define his fallacy, which is essentially defining something unfairly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "why do muslims get blamed for every attack",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That’s about as much I knew or cared to know when I heard the news of some school girls being kidnapped. Not that I’m unsympathetic, but I didn’t much think it had anything to do with me or what I believed — naturally then, my interests would go no further than thinking this a horribly immoral act and hoping justice would be delivered by the proper authorities in the region. And this is why I refuse to speak out; I should not be held responsible in any way for the actions and beliefs of others simply because we share the same label. By proxy, I refuse to give in to a narrative perpetuated by a culture of coercive disapproval, which threatens to place me in the same camp as extremists simply because they do not happen to hear my voice of opposition every time the media decides to highlight another act of violence in the middle east or elsewhere. Every time I stand up and say “that’s not me”, I am implicitly giving in to the idea that I am never free to define myself; I am never free of guilt. Always having to defend myself is not indicative of a free identity, but of a person on trial, whose jury doesn’t operate on the principle of “innocent until proven otherwise.”"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "who funds counter extremism programmes",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The organization ‘Beyond the Horizon’ is another malaysian organisation sponsored by the United States Department of States (DOS). The event has been billed to ‘spread awareness of the roots of terrorism and extremism’, all the while offering solutions. Asadullah will aim to debate these claims, and provide a challenging counter-narrative based upon facts and evidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is cartooning the prophet justified or does it justify murder",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As someone who cherishes the Prophet Muhammad (sallAllahu alayhi wasallam) and wishes to honor him, I can say with certainty two things: 1) That his depiction does not justify these horrendous attacks, and that 2) These attacks do not justify his depiction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is it hypocritical to oppose terrorism and fantasise about it",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "But what can you expect from people who fantasize about their intellectual opponents blowing themselves up in a suicide attack? I mean, look at the smiley face. They hate terrorism and wish its end, but then glorify it when it comes to people they dislike."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is the prophet muhammad a pedophile",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A common accusation brought against Prophet Muhammad (saws) in our contemporary age is that he had committed an immoral act of sexual and emotional violence against children and has sanctioned the same sort of violence for all those that attempt to follow his teachings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "do muslims marry off underage girls today",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A question that is often given to me and other Muslims is if we would marry our young, immature daughters off in the contemporary age: The answer isno, because we are following the example of our Prophet (saws) as well as the dictates of Islamic Law and their ability to incorporate various changing conditions throughout time. Firstly, it should be noted that this research does not intend to justify contemporary marriages defined as ‘underaged’ and we condemn those practices outright given that current conditions do not allow for justice to be optimally reached for those sort of relationships."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is moral progressionism",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Though we touched up on their invalid biases, this portion of the presentation will focus more on the philosophical underpinnings that influenced such misinformed judgments. While this philosophical model does not apply to all critics of the accusations against the Prophet (saws), it does appear to apply to most."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is normative circumstantial morality",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The alternative perspective that I believe can both be applied universally while considering the various differences in ideals and social practices — and that I believe is the most correct — is what I like to call ‘Normative Circumstantial Morality’."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "does apostasy carry the death penalty today",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "My position is clear: The punishment forridda(apostasy) is part of the Shariah and should be applied when all the conditions are met. However, such conditions do not exist today because the political element (i.e. religious identity being tied to the state) is no longer present. So yes, I do not support the punishment for apostasy today, because the conditions have not been met that would warrant its implementation. Not because I disagree with the Law or believe it’s not part of Islam."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what does the word terror mean in the hadith",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "these words, the word terror particularly cannot be defined in the contemporary sense. They must be\ndefined by how they were used back then. And the word terror is simply to is just extreme fear. That\\'s\nall it is. That\\'s it. Okay. And that in and of itself is not terrorism."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "how do we counter violence and extremism",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "How can we hope to counter violence and extremism if we continue to cultivate an environment where it can easily breed? Under oppression and hypocrisy, extremists are bound to rise up out of frustration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "are the murderers the only ones responsible",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This is not to justify what happened in Paris, but it is a necessary point that needs to be made to understand the problems and the required solutions. While this may seem controversial, we cannot just blame the murderers for murdering; we have to understand their rationale and see if their grievances were legitimate. It is one thing to kill unjustly for irrational reasons, like greed or lust, but it’s another thing to unjustly kill for rational reasons, such as fighting against tyranny. While both cases of murder are unjust by definition, the motivations are never always the case – and an unjust killing for a just cause always indicates something very often missed: that the responsibility of injustice is not simply shared by the murderers, but the societies in which they live."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/terrorism-extremism/#collection",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/terrorism-extremism/",
+  "name": "Terrorism, Extremism and Violence",
+  "description": "His account of why modern jihadist violence emerged - traced to post-colonial Western warfare, secular liberalism and imported methodology rather than to Islamic doctrine - together with the scriptural limits he sets on it and the debates he uses to defend that account.",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Material behind this page (68 quotations)",
+    "numberOfItems": 23,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Who Justifies Terrorism? [Part 1]",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/who-justifies-terrorism-part-1-2/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Islam Terrorism",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/islam-terrorism/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "35 - Understanding Jihad w⧸ Robert Spencer (Preface)",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/8vxbN2jZL6M/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "36 - Understanding Jihad w⧸ Robert Spencer #1",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/lCqZB8gP4sk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "37 - Understanding Jihad w⧸ Robert Spencer #2",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/aTJMDFJdgdg/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "08 - Islam and Terrorism",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/4VcPzhkP9bE/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "51 - (Reupload - Read Dsc) Cleaning House - AbuTopi, TheSultanate, and Muslim Twitter by Andalusian Project",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/unmn_tY5r_c/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Islam and Terrorism",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/islam-and-terrorism/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Islam and Terrorism",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/papers/islam-and-terrorism/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Extremism in Muslim Thought",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/extremism-in-muslim-thought/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "Extremism in Muslim Thought (repost)",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/extremism-in-muslim-thought-2017-12-22/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "name": "Extremism in Muslim Thought",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/papers/extremism-in-muslim-thought/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "name": "“Boko Haram” and the Culture of Coercive Disapproval",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/boko-haram-and-the-culture-of-coercive-disapproval/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "name": "Charlie Hebdo: Coexistence and Crocodile Tears",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/current issues/philosophy/politics/charlie-hebdo/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "name": "Prophets vs. Pedophiles [Part 1]",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/prophets-vs-pedophiles-part-1/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "name": "Prophets vs. Pedophiles [Part 2]",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/prophets-vs-pedophiles-part-2/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "name": "Prophets vs. Pedophiles [Part 3]",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/prophets-vs-pedophiles-part-3/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 18,
+        "name": "iJihad (Pilot and First 2 Episodes)",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/ijihad-pilot-and-first-2-episodes/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 19,
+        "name": "When Facts Become Fiction | iJihad Ep. 1",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/mdi/when-facts-become-fiction-ijihad-ep-1/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 20,
+        "name": "An Antidote For Extremism",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/mdi/an-antidote-for-extremism/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 21,
+        "name": "‘Whataboutery': The Fail-Safe of Islamophobes",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/whataboutery/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 22,
+        "name": "A Quick Response",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/a-quick-response/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 23,
+        "name": "My Views On the Punishment For Apostasy",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/my-views-on-the-punishment-for-apostasy/"
+      }
+    ]
+  }
+}
+</script>
+
 
 <p class="crumb"><a href="{{ site.baseurl }}/topics/">What this archive answers</a> &rsaquo; Terrorism, Extremism and Violence</p>
 

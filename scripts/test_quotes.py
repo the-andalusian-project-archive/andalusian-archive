@@ -948,6 +948,7 @@ def check_palette() -> list[str]:
     failures += check_refs_agree_with_gate()
     failures += check_display_separated_from_record()
     failures += check_generated_pages_in_sync()
+    failures += check_topic_schema()
     return failures
 
 
@@ -1176,6 +1177,90 @@ def check_display_separated_from_record() -> list[str]:
                     f"carries an identifier: {disp.group(1)[:60]!r}")
     print(f"record vs rendering  : {checked} title(s) checked, "
           f"{len(fails)} that would leak an identifier into a heading")
+    return fails
+
+
+# Structured data on the subject pages
+# ====================================
+# The eight subject pages carried no JSON-LD at all, and they are the pages most
+# worth marking up: 221 rendered questions across the eight, each with passages
+# quoted from the recovered material and cited to a file and a line. They now
+# emit FAQPage and CollectionPage.
+#
+# A structured-data block that parses is not the same as one that is readable.
+# The first version of the generator built `mainEntity` as pre-serialised JSON
+# strings; the result parsed cleanly, `numberOfItems` matched the list length,
+# and every question was a quoted string instead of a Question object. A
+# count-only check passes on a document no consumer can use. This asserts the
+# SHAPE, and that every question marked up is actually visible on its page,
+# because a FAQPage whose answers are not in the body is the markup Google
+# penalises.
+def check_topic_schema() -> list[str]:
+    import json as _json
+
+    fails: list[str] = []
+    marked = listed = pages = 0
+    for page in sorted((ROOT / "topics").glob("*.md")):
+        if page.name == "index.md":
+            continue
+        text = page.read_text(encoding="utf-8", errors="replace")
+        blocks = re.findall(
+            r'<script type="application/ld\+json">(.*?)</script>', text, re.S)
+        if not blocks:
+            fails.append(f"{page.name}: no JSON-LD on a subject page")
+            continue
+        pages += 1
+        heads = {norm(re.sub(r"<[^>]+>", "", h)).strip()
+                 for h in re.findall(
+                     r'<h3 class="question">(.*?)</h3>', text, re.S)}
+        for raw in blocks:
+            try:
+                d = _json.loads(raw)
+            except Exception as exc:
+                fails.append(f"{page.name}: JSON-LD does not parse: {exc}")
+                continue
+            kind = d.get("@type")
+            if kind == "FAQPage":
+                me = d.get("mainEntity")
+                if not isinstance(me, list) or not me:
+                    fails.append(f"{page.name}: FAQPage mainEntity is "
+                                 f"{type(me).__name__}, not a non-empty list")
+                    continue
+                for q in me:
+                    if not isinstance(q, dict):
+                        fails.append(
+                            f"{page.name}: a FAQPage question is a "
+                            f"{type(q).__name__}, not an object - the block "
+                            f"parses but no consumer can read it")
+                        break
+                    ans = q.get("acceptedAnswer") or {}
+                    if ans.get("@type") != "Answer" or not ans.get("text"):
+                        fails.append(
+                            f"{page.name}: question "
+                            f"{q.get('name', '?')!r} has no usable answer")
+                        break
+                    if norm(q.get("name", "")).strip() not in heads:
+                        fails.append(
+                            f"{page.name}: question marked up but not visible "
+                            f"on the page: {q.get('name', '?')!r}")
+                        break
+                marked += len(me)
+            if kind == "CollectionPage":
+                lst = d.get("mainEntity") or {}
+                el = lst.get("itemListElement")
+                if not isinstance(el, list) or not el:
+                    fails.append(f"{page.name}: CollectionPage has no "
+                                 f"itemListElement list")
+                elif any(not isinstance(x, dict) for x in el):
+                    fails.append(f"{page.name}: an itemListElement is a "
+                                 f"string, not an object")
+                elif lst.get("numberOfItems") != len(el):
+                    fails.append(
+                        f"{page.name}: numberOfItems "
+                        f"{lst.get('numberOfItems')!r} != {len(el)} items")
+                listed += len(el) if isinstance(el, list) else 0
+    print(f"topic schema         : {pages} page(s), {marked} FAQ question(s), "
+          f"{listed} listed item(s), {len(fails)} problem(s)")
     return fails
 
 

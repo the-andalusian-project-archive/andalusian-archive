@@ -3,8 +3,355 @@ layout: default
 title: "Atheism, Doubt and Evidence: the questions this material answers"
 description: "I believe in God but I can't prove it with science - how is that still rational, and what do I actually say when an atheist demands evidence? The recovered work of Asadullah Ali Al-Andalusi that addresses it, quoted and linked."
 permalink: /topics/atheism-doubt/
-last_modified_at: 2026-09-29
+last_modified_at: 2026-09-30
 ---
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/atheism-doubt/#faq",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/atheism-doubt/",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "how do you prove god exists without evidence",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Muslims should be more focused on challenging this narrow method of validation by attempting to undermine atheistic epistemology, or theory of knowledge, rather than meet them head to head in their unrealistic and irrational demands."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is the fitrah",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "goal. We see ourselves in the same manner. And this, this Pitra doesn\\'t prove God\\'s existence.\nBelieve it or not, it doesn\\'t prove the existence of God, but what it does is it sets up a rational\nstandard within the mind of the human being to infer that there is one. It is a default as it were,"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "problem of evil argument against atheism",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research Fellow Asadullah Ali gives a pragmatic look at atheism, particularly focusing on 3 areas of doubt in today’s world: the problem of evil, the problem of representation, and the problem of belief. don\\'t consider it to be sufficient. And I always thought that was really weird. Why? Why do people still feel that atheism\nis a far more rational position to take than to accept that God is there overseeing everything, despite\nall the horrible things that we see on a daily basis? Because to me, if you adopt atheism, the problem of\nevil does not go away. It doesn\\'t suddenly vanish from the face of the earth. You still have evil."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "difference between doubt and skepticism",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We only doubt what we have reason to. When we experience an anomaly, better, better set. When we\nexperience anomalies, then we start to feel, okay, now there\\'s something to question. Now there\\'s\nsomething wrong here. But normally, we do not act like that. And if we did, we wouldn\\'t survive."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "do i need evidence to believe in god",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We should instead focus more on an oft neglected approach which actually serves to legitimize all the aforementioned; what might be called the ‘internal’ arguments for God’s existence, otherwise known as the fitrah."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is it irrational to believe in god without proof",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1) Impressions are rational if and only if they cohere to the intuitive experience.\n\n2) Evidence is only necessary to validate impressions if anomalies appear to disrupt their coherency.\n\n3) Anomalies do not appear to disrupt the coherency of the impression ‘God’.\n\nC) Therefore, the impression ‘God’ is rational and evidence is not necessary for its validation. Expose? Primary things are arguments number two. The argument for the irrationality of theism and religion, theism being the belief in God.\nP1, any claim that lacks evidence is unjustified.\nAnybody agree with this? I\\'m going to try to change your mind by the end of this course.\nOkay. P2, unjustified claims are irrational.\nNow, have we agree with that one?\nIt depends, subjective. It\\'s subjective. Okay, we\\'ll get into that. Theism and religion lack evidence.\nOkay, therefore theism and religion are irrational.\nIt implies that evidence is necessary for every claim. Sorry, primary 80 is arguments number two, the argument for rationality of theism religion, any\nclaim that lacks evidence is unjustified, unjustified claims are irrational, theism in religion lack evidence,\ntherefore theism in religion are irrational. This is where we get a little clever, this is a very\nsimple argument to refute, does anybody want to try? There\\'s something wrong with one of the premises,\nand it has to do with being self-refuting. Which one? Thank you. Any claim that lacks evidence is unjustified.\nWhat about this claim? That\\'s it, it\\'s done. The argument itself lacks evidence, so therefore it\\'s unjustified.\nThere\\'s no evidence for the position. The claim itself, that any claim that lacks evidence is unjustified,\nwhich is why I disagree with the fact that we always need evidence for self, that\\'s why I believe that"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "difference between weak atheism and strong atheism",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One more please. So there are two types of atheism in the theoretical level.\nThere\\'s strong or positive atheism which is the belief that God does not exist.\nThe belief that God does not exist. So they have a firm belief that God does not exist.\nOkay. Then there\\'s weak or negative atheism.\nThat\\'s the one that lacks the belief in God.\nThey say, I don\\'t know.\nOkay. They say, I don\\'t have enough evidence. I don\\'t have enough reason to believe that there\\'s a God.\nI simply lack the belief. That\\'s it. So don\\'t blame me for everything. It\\'s almost like a defense mechanism."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "what is evidentialism",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Next one. This one is evidentialism.\nThis is a philosophical term.\nEvidentialism, I\\'ll explain it to you more. The belief that any or all positions require evidence\nto be accepted. In other words, a person is justified in believing, not believing, or withholding belief based on whether or not they have sufficient evidence at the given time of proposition as made. Once this is used in opposition to the concept,\noften this is used in opposition to the concept of faith\nor belief without evidence. So the new atheist, such as this man, Richard Dawkins, giving a speech in 1992, he said faith is the great cop out, the great excuse to evade the need to think and evaluate evidence.\nFaith is belief in spite of even perhaps because of the lack of evidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "why do i feel god exists but cant prove it",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "But there\\'s nothing like explicitly telling me that there\\'s God there. Right. Okay, God is beyond\nour world. So I like to ask this question, why are we thinking about it? If we can\\'t see anything else,\nbut what we perceive in here, and in our own minds, then why is that he comes into our heads?\nWhy is that conception even exist in a world that apparently doesn\\'t have him as part of his\nexcuses? To me, that doesn\\'t make any sense. Much the same as it doesn\\'t make any sense to me that\na fish would think that he\\'s anywhere else but a fish tank, and that the fish tank is all that exists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "can you prove god is not real either",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "3) The impression ‘God’ is an anomaly which appears to disrupt the coherency of the impression ‘No God’.\n\n4) No evidence has been provided to validate the impression ‘No God’.\n\nC) Therefore, the impression ‘No God’ is irrational."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "george smith naturalism is the only context for explanation",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I\\'ll give you a concise format here\nBasically he says that because this is the only context in which we live\nThat we can\\'t presume that there\\'s a God, right\nI actually accept his argument and I say this I say okay\nWell, if that\\'s true if it\\'s true that this is the only point of reference that we have then in fact\nYou\\'re wrong because then we shouldn\\'t even think about God\nThere should be no mention of God that a whole concept of God shouldn\\'t even come into our minds\nIf this is all we can perceive and understand\nIf this is the only context in which we can explain anything and the concept of a transcendent being who is beyond the physical characteristics of the natural world\nShouldn\\'t even pop into our minds\nThat\\'s my explanation or my argument. It\\'s sort of like a reverse ontological argument. I think it\\'s very good"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "logical positivism verification principle meaning",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every claim, every statement you utter has no meaning\nfor any sort of content or substance unless it can be tied\nto some sort of empirical observation\njustified through scientific inquiry.\nNow you might be like, well, that\\'s crazy.\nMaybe, maybe not.\nBut that is one of the central beliefs.\nAnd atheists will talk like this a lot too.\nThat\\'s why they always ask, can you prove this?\nCan you provide evidence for this? Everything needs evidence, right? Scientific evidence. They always asking for this sort of evidence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "burden of proof when someone demands evidence of god",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don\\'t you need a table? Yeah, let\\'s turn the tables. They don\\'t like that. Because they say that it\\'s called switching the burden of proof, which is usually a fallacy.\nIt\\'s usually a bad thing to do. You should never switch the burden of proof on somebody.\nIf somebody makes a claim, they have to prove it. Okay? Except, except under certain conditions.\nIn fact, this fallacy only exists in reference to things which are where evidence is necessary.\nSo when an atheist, though, when they say it, they always mean that everything requires evidence, right?\nEvidentialism, correct? So that means that their own claims also require evidence.\nExcept they don\\'t realize that. They think that they\\'re immune. They think that they can ask for evidence, but when they ask for evidence, they don\\'t think that we can\\'t ask why.\nWhy is it that you think I\\'m irrational?\nYou say that I\\'m irrational. You say theism is irrational. That\\'s a claim. Where\\'s your evidence? You say that I need evidence to prove God\\'s existence.\nThat\\'s a claim. And you say that all claims require evidence.\nSo where\\'s your evidence? And they hate it when you do this, actually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "does the demand for scientific evidence refute itself",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most atheists who believe that everything requires evidence are blissfully unaware that their own criteria cannot be validated – there is no evidence for the claim that “everything requires evidence”, much less that scientific evidence is superior to all others. because it\\'s already something that we assume before we even get started. Okay, before knowledge can\neven take place, before evidence can even be asked for, we have to believe that those things exist. that through scientific evidence. It\\'s interesting. Not to mention the fact that the very standard itself\nthat science is required to believe or to justify a particular belief or evidence, scientific\nevidence is required to justify a particular belief, isn\\'t in and of itself a belief that is not\njustified through scientific evidence. A little philosophical conundrum for all of you out there who\nwant to think about that. I think it\\'s very fascinating. But seeing all these double standards made"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is naturalism self defeating",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "1) Given Naturalism, explanations can only have meaning within the context of Naturalism.\n\n2) As such, no amount of experience of the natural world should allow for the possibility of conceiving meaningful explanations beyond the context of Naturalism.\n\n3) However, our experiences do allow for the conception of meaningful explanations beyond the context of Naturalism (i.e. God).\n\nC) Therefore, Naturalism is false."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "signs and pointers cannot prove what they point to",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "And although this may be a tempting argument to accept, it suffers from one glaring flaw: signs are no indication that something exists, rather their existence is predicated on the very thing they’re pointing to."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "atheist cherry picks quran verses",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "address when I first came to Islam was some of these objections and eventually I came\nto realize what the main objections were and they\\'re usually ethical objections.\nSo the first one that you probably hear all the time and that probably bothers you the\nmost and bothers me the most is regarding the Prophet Muhammad ﷺ and his marriage to Ayesha.\nAnd this is probably the most common thing that\\'s brought up by Islam of folks, people\nwho hate Islam and they will always accuse the Prophet ﷺ of having in a moral relationship called the fallacy of suppressed evidence we\\'re going to get into fallacies later on today\nit\\'s when you disregard once again I mentioned that earlier it\\'s when you disregard certain things\nto make your point so for instance if you have information that contradicts your conclusions you leave\nit over here and then act like it doesn\\'t exist and then you present your argument okay and a lot\nof atheists like to commit this fallacy especially when they talk about Islam we also call this cherry\npicking okay this is the more common term for it is when you look in the Quran you find what you want\nand then you erase everything else and then you show it and say this is what the Quran says see\nit\\'s also called quoting out of context okay and what it means by quoting out of context is that\nyou do not take in reference other passages and the historical reasons behind etc etc so if we can go unknowingly sometimes, so can we go back please? Okay, stop, can we go to Sir Cherry picking the\nevidence please, this is also called the fallacy of suppressed evidence, I\\'ve discussed this on several\ntimes, where is Cherry picking? Oh, why did go there? Can we go? Oh, okay, can we click on that one?\nThank you, okay, all right, so suppressed evidence, intentionally failing to use information\nsuspected of being relevant and significant is committing the fallacy of suppressed evidence,"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is appealing to the majority a fallacy",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "slide joke, okay, so this is actually a fallacy of reasoning, just because the majority of people believe\nsomething doesn\\'t mean it\\'s true, now you could say to me in response, well what about my ideas about\nthe fithrough? Uh-oh, am I making an appeal to popularity because most people have the fithrough\nhave this conception of God in their mind? Am I saying it\\'s rational because of it? No, I\\'m not saying that,\nI\\'m not, I\\'m sorry, I\\'m not saying that it\\'s true, I never claimed in this whole entire talk that the\nbelief in God is true because of the number of people, I have claimed that it\\'s more rational as a\nresult of being, you know, something that normatively everyone shares, it\\'s more rational, it\\'s a rational\nstarting point, so it\\'s rational to have that belief, okay, and I even have an argument, of course,\nI backed it up, I proven the other side wrong, right, but I never claimed that the belief in God is\ntrue because of that, so it\\'s not a fallacy actually, but I\\'ve been accused of making it before, so"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is the quran the word of god begging the question",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "begging the question is when you include in your conclusion a premise, the premise and the\nconclusion at the same time, when you\\'re trying to argue for something, you include the conclusion\nwithin your argument already, before you come to the conclusion, so let\\'s read the sentence,\nwomen have rights, said the bullfighters association president, but women shouldn\\'t fight\nbulls because the bullfighter is and should be a man, okay, why shouldn\\'t women fight bulls?\nWhat was the argument? Because the bullfighter is a man, right, but he\\'s putting the conclusion\nin the argument, so he\\'s already, there\\'s no justification, he\\'s just saying it, so it\\'s just an\nassertion, right, this is what we call begging the question, so that\\'s why he\\'s called begging the question\nbecause it begs the question as to why you think this. Another example, let me give you, here we go,\nokay, hold on, the argument is contained in the premise, the conclusion is contained in the argument,\nit\\'s a woman shouldn\\'t fight bulls, okay, for instance the Bible, I don\\'t know if you\\'ve heard\nthis argument before, the Bible is the word of God, why? Because God inspired the Bible, that\\'s begging\nthe question, do you see the problem? Or even saying the Quran, the Quran is the word of Allah, why?\nBecause Allah said, who said that the Quran was the word of Allah, that\\'s begging the question,\nit\\'s when you put the conclusion in the argument itself, and many people actually make this argument"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is science the only way we can know anything",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Or lack thereof, excuse me. Number three, scientism. We will get into this term more actually in the near future.\nThis is actually a word. Many atheists will deny this term. However, it\\'s been around since the 1800s. Maybe even earlier than that.\nThe belief of the methods of natural science\nor the categories and things recognize natural science\nfrom the only proper elements at any philosophical or other inquiry.\nIn other words, science is the only way to know anything."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "do i have to give up reason to believe",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "believe it based on coherency so for example we do most of things we believe are not directly empirically\nobservable so in the case of abu bakr that\\'s actually what he was affirming there is that sort of understanding of\nepistemology or theory of knowledge"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "how do i explain faith to someone who needs data",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "um anyway so i think abu bakr gave the the best response to this when he was asked about\nthis um somebody approached him and they asked him when the prophet peace be upon him had mentioned\nthat this occurred his companions\nbelieved him immediately and somebody was kind of skeptical they came up and said john the bucket and said why did you do you really believe that this happened same question as you\\'re giving me right now and everyone can get a very beautiful\nresponse he said i believe something\neven more extraordinary than this i believe that he is a prophet from\nallah and what\\'s fascinating about that response is that it actually tells us a lot about how we\\'re supposed to\nunderstand reality not just religion but reality in general"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "is it only extraordinary to people who already deny god",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "not an extraordinary belief it\\'s only extraordinary to people who already deny those foundations so like when you\\'re talking to an atheist for example they\\'re gonna laugh about this be like oh you believe in this that he went up\nto the heavens and stuff it\\'s like yeah i do and they laugh at you but the reason they\\'re laughing is not because what you think is actually ridiculous the reason they\\'re laughing is because they already think the foundational beliefs that make that rational are ridiculous so when you want to convince an atheist by the way you should never start with this stuff you first need to convince them that god\nexists and that the prophet is the prophet then this stuff doesn\\'t enter their minds it\\'s not it\\'s not nonsensical our background beliefs are what make\nsomething look rational or not rational okay"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "should i answer an atheist's demand for evidence",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Let me give you an example Flat earthers people who believe in a flat earth they lack belief in that the earth is round\nThere you go, but nobody calls them rational. I wonder why\num\nSo But they\\'re at least but there are reasons why they lack a belief right because they don\\'t understand science\nMaybe they don\\'t understand what they\\'re asking for in terms of evidence in the same way\nI treat atheists like this. I treat atheists like they\\'re flat earthers\nI consider them the the metaphysical flat earthers. Okay, like they always ask, well, there\\'s no reason to believe in God\nMy my my I don\\'t I don\\'t try to provide reasons to them then I don\\'t try to provide evidence\nIf you know what I first do I question their reasons. I question why"
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/atheism-doubt/#collection",
+  "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/atheism-doubt/",
+  "name": "Atheism, Doubt and Evidence",
+  "description": "How Al-Andalusi answers the atheist demand for evidence: belief without proof, weak versus strong atheism, the fitrah as a non-evidential route to knowledge, and the argument that requiring evidence for everything is itself unevidenced.",
+  "isPartOf": {
+    "@id": "https://the-andalusian-project-archive.github.io/andalusian-archive/topics/"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Material behind this page (56 quotations)",
+    "numberOfItems": 20,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "The Rationality of Believing in God Without Evidence — Part 1",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/mdi/the-rationality-of-believing-in-god-without-evidence-part-1/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "The Rationality of Believing in God Without Evidence — Part 2",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/the-rationality-of-believing-in-god-without-evidence-part-2-2/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "“Extraordinary Claims Require Extraordinary Evidence”, Says Ordinary Intellect",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/extraordinary-claims-require-extraordinary-evidence-says-ordinary-intellect/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Contra Contemporary Atheism [Lecture]",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/contra-contemporary-atheism-lecture/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Against Atheist Aesthetics",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/against-atheist-aesthetics/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "How to know “No-thing”",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/how-to-know-no-thing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Nothing",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/nothing/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 8,
+        "name": "Understanding Atheism",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/understanding-atheism/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 9,
+        "name": "Atheism: Doubting Your Doubts",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/atheism-doubting-your-doubts/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 10,
+        "name": "Hard Questions: Answering Doubts About Islam",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/hard-questions-answering-doubts-about-islam/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 11,
+        "name": "The Atheistic Worldview vs. The Qur’anic Worldview",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/articles/the-atheistic-worldview-vs-the-quranic-worldview/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 12,
+        "name": "01 - Understanding Atheism ｜ Session 1",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/NyAVl7RsEOs/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 13,
+        "name": "03 - Understanding Atheism ｜ Session 3",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/lZkv38vd7bw/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 14,
+        "name": "04 - Understanding Atheism ｜ Session 4",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/wVehdVlLdBI/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 15,
+        "name": "05 - Understanding Atheism ｜ Session 5",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/BRDaCqipcwM/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 16,
+        "name": "06 - Understanding Atheism ｜ Session 6",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/lS7h9SKKtVc/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 17,
+        "name": "25 - Atheism： Doubting Your Doubts",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/ZbcsxAoIVY0/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 18,
+        "name": "33 - (Reupload - Read Desc) Hard Questions - Answering Doubts About Islam",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/1U6VfHosrqw/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 19,
+        "name": "18 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 3",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/WED5mPmO_yU/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 20,
+        "name": "16 - A Muslims Guide to Science and Scientism ｜ Al-Balagh Academy ｜ Part 1",
+        "url": "https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/X36xEj0OSV4/"
+      }
+    ]
+  }
+}
+</script>
+
 
 <p class="crumb"><a href="{{ site.baseurl }}/topics/">What this archive answers</a> &rsaquo; Atheism, Doubt and Evidence</p>
 
