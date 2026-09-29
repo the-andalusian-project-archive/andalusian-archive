@@ -69,13 +69,20 @@
   indexes it finds a page whose entire content is one empty shell. That is the
   textbook index trap, and the archive declines it.
 
-  So the SearchAction stays. It is a true statement about the site, the target
-  resolves, and consumers other than Google read it.
+  So the SearchAction stays, and it now means what it says. It did not, at
+  first: /search/ read its query from the search input and ignored the
+  parameter, so following this template the way a consumer is supposed to -
+  substitute the term, follow the link - arrived at a live page with an empty
+  box and no results. No error, just silence, which is the worst shape for a
+  structured-data claim to fail in, because it is indistinguishable from a site
+  with nothing to find. `applyQueryParam()` in search.md reads the parameter and
+  runs the search, and check_search_action.py fails if the two halves of this
+  claim ever drift apart.
 
-  What is NOT expected from it is a rich result. Google retired the Sitelinks
-  Searchbox in November 2024, so this earns nothing in the SERP. It is kept for
-  correctness of the description, not as a ranking play, and the comment says
-  so rather than leaving the next reader to assume otherwise. {%- endcomment -%}
+  What this still does not earn is a rich result. Google retired the Sitelinks
+  Searchbox in November 2024, so it is kept for correctness of the description
+  rather than as a ranking play, and this comment says so rather than leaving
+  the next reader to assume otherwise. {%- endcomment -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

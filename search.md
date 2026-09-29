@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     allData.captures = results[3];
     loaded = true;
     updateResultCount();
+    applyQueryParam();
   }).catch(function(err) {
     console.error('Failed to load search data:', err);
     resultsContainer.innerHTML = '<div class="search-error">Failed to load search data. Please refresh the page.</div>';
@@ -80,6 +81,37 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!loaded) return;
     var total = allData.papers.length + allData.videos.length + allData.blog_posts.length;
     resultsContainer.innerHTML = '<p class="search-info">' + total + ' items ready for search.</p>';
+  }
+
+  // Honour the SearchAction query template.
+  //
+  // `_includes/jsonld.html` declares the archive as a WebSite whose
+  // `potentialAction` is a SearchAction with the urlTemplate
+  // `/search/?q={search_term_string}`. A consumer that does the one thing that
+  // template describes - substitute the term, follow the link - has to arrive at
+  // a page that has already run that search.
+  //
+  // It did not. The parameter was declared and never read: `performSearch()`
+  // took its query from `searchInput.value`, so the link resolved to a live page
+  // with an empty box, the placeholder prompt, and no results. No error, just
+  // silence, which is the worst shape a structured-data claim can fail in - it
+  // is indistinguishable from a site with nothing to find.
+  //
+  // That also made it the one field in jsonld.html that no gate covered, and it
+  // broke the rule the file states for itself at the top: emit a field only when
+  // the data behind it is real. Here the data was not there.
+  //
+  // Ordering is not incidental. `performSearch()` opens with
+  // `if (!loaded) return;`, so this runs only after the `Promise.all` above has
+  // resolved and set `loaded = true`. Calling it from anywhere earlier - on
+  // DOMContentLoaded, or from a listener attached before the fetch - returns
+  // immediately and searches nothing, which is the failure this is fixing.
+  function applyQueryParam() {
+    if (!searchInput) return;
+    var q = new URLSearchParams(window.location.search).get('q');
+    if (!q) return;
+    searchInput.value = q;
+    performSearch();
   }
 
   function getSearchableText(item) {

@@ -66,6 +66,15 @@ jobs:
       - name: Assert every topic quotation is real and correctly attributed
         run: python3 scripts/test_quotes.py
 
+      # The SearchAction in jsonld.html is a claim about /search/, held in a
+      # different file from the code that has to honour it. Nothing else in the
+      # repository referenced either half, so for the life of the node a
+      # consumer following the query template landed on a live search page that
+      # ignored the parameter - no error, no results, and nothing to tell it
+      # apart from a site with nothing to find.
+      - name: Assert the SearchAction query template is one the search honours
+        run: python3 scripts/check_search_action.py
+
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
