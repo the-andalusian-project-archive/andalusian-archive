@@ -10,7 +10,8 @@ layout: default
       for the 13 records that predate it. Rendering page.title directly put a
       bare video ID in the h1 of 120 pages.
     {%- endcomment -%}
-    <h1>{% include title.html title=page.display_title runs=page.title_runs %}</h1>
+    {%- assign page_heading = page.display_title | default: page.title -%}
+<h1>{% include title.html title=page_heading runs=page.title_runs %}</h1>
       {%- comment -%}
         Category badge, matched on title: build_collections.py writes the
         paper row's title verbatim into this page's front matter, so an exact

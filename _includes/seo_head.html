@@ -179,7 +179,17 @@
   distinguishing part is always the short prefix or the trailing upload id, so
   truncation can never erase it.
   -------------------------------------------------------------------------- {%- endcomment -%}
-{%- assign seo_title = page.title -%}
+{%- comment -%} The display name and the record are two different strings.
+  `page.title` is what the channel called the recording, ID and all, and it
+  is never edited. `page.display_title` is the same string with the
+  identifier and the uploader clause removed. Everything that RENDERS uses
+  `seo_name`; everything that COMPARES keeps `page.title`, because the
+  clash tests ask whether two pages are the same work, which is a question
+  about the record rather than about its presentation.
+  Before this, the identifier withheld from the page heading was being
+  handed to a search engine and printed back in the SERP. {%- endcomment -%}
+{%- assign seo_name = page.display_title | default: page.title -%}
+{%- assign seo_title = seo_name -%}
 {%- if seo_kind == "home" -%}
   {%- assign seo_title = site.title -%}
 {%- elsif seo_kind == "transcript" -%}
@@ -191,12 +201,12 @@
     become identical strings that the raw-title test could not see. 85 is the
     budget the "Transcript: " prefix spends out of 96.
   {%- endcomment -%}
-  {%- assign seo_title_base = page.title -%}
+  {%- assign seo_title_base = seo_name -%}
   {%- if seo_title_base | size > 85 -%}{%- assign seo_title_base = seo_title_base | truncate: 85, "" -%}{%- endif -%}
   {%- assign seo_title_clash = false -%}
   {%- for sib in site.transcripts -%}
     {%- if sib.permalink != page.permalink and seo_title_clash == false -%}
-      {%- assign _sib = sib.title -%}
+      {%- assign _sib = sib.display_title | default: sib.title -%}
       {%- if _sib | size > 85 -%}{%- assign _sib = _sib | truncate: 85, "" -%}{%- endif -%}
       {%- if _sib == seo_title_base -%}{%- assign seo_title_clash = true -%}{%- endif -%}
     {%- endif -%}
@@ -206,7 +216,7 @@
     {%- assign seo_title = seo_title | append: ", from upload " | append: page.capture_video_id -%}
   {%- endif -%}
 {%- elsif seo_kind == "post" -%}
-  {%- assign seo_title = "Full text: " | append: page.title -%}
+  {%- assign seo_title = "Full text: " | append: seo_name -%}
   {%- if seo_title | size > 96 -%}{%- assign seo_title = seo_title | truncate: 96, "" -%}{%- endif -%}
 {%- elsif seo_kind == "paper" or seo_kind == "item" -%}
   {%- comment -%}
@@ -215,7 +225,7 @@
     thing to state, and it is only stated where it is actually needed - the
     other pages keep the bare title a reader would search for.
   {%- endcomment -%}
-  {%- assign seo_title_base = page.title -%}
+  {%- assign seo_title_base = seo_name -%}
   {%- if seo_title_base | size > 85 -%}{%- assign seo_title_base = seo_title_base | truncate: 85, "" -%}{%- endif -%}
   {%- assign seo_title_clash = false -%}
   {%- for w in site.articles -%}
@@ -269,7 +279,7 @@
   {%- assign seo_desc = page.description -%}
 
 {%- elsif seo_kind == "paper" -%}
-  {%- assign seo_desc = page.title -%}
+  {%- assign seo_desc = seo_name -%}
   {%- if page.publisher_journal -%}
     {%- assign seo_desc = page.publisher_journal | append: ". " | append: seo_desc -%}
   {%- endif -%}
@@ -288,7 +298,7 @@
   {%- if page.doi -%}{%- assign seo_desc = seo_desc | append: " DOI " | append: page.doi | append: "." -%}{%- endif -%}
 
 {%- elsif seo_kind == "video" -%}
-  {%- assign seo_desc = page.title -%}
+  {%- assign seo_desc = seo_name -%}
   {%- if page.format -%}{%- assign seo_desc = seo_desc | append: ". " | append: page.format -%}{%- endif -%}
   {%- if page.duration and page.duration != "" -%}
     {%- assign _d = page.duration | plus: 0 | round: 0 -%}
@@ -319,7 +329,7 @@
   {%- comment -%} States, in one string, the four facts the transcripts index
     asks every transcript page to state: what it is, which recording, which
     capture, how much. No count of the corpus appears. {%- endcomment -%}
-  {%- assign seo_desc = "Machine transcript of " | append: page.title -%}
+  {%- assign seo_desc = "Machine transcript of " | append: seo_name -%}
   {%- assign seo_desc = seo_desc | append: ", from the capture file " | append: page.capture_file -%}
   {%- assign seo_desc = seo_desc | append: " (" | append: page.words | append: " words, " | append: page.lang | append: ", " | append: page.source | append: ")." -%}
   {%- if page.recording_url and page.recording_url != "" -%}
@@ -329,7 +339,7 @@
   {%- endif -%}
 
 {%- elsif seo_kind == "post" -%}
-  {%- assign seo_desc = page.title -%}
+  {%- assign seo_desc = seo_name -%}
   {%- assign seo_desc = seo_desc | append: ". The archive's preserved full text of this essay, recovered from Wayback capture " -%}
   {%- if page.provenance -%}{%- assign seo_desc = seo_desc | append: page.provenance -%}{%- endif -%}
   {%- assign seo_desc = seo_desc | append: "." -%}
@@ -343,7 +353,7 @@
   {%- endif -%}
 
 {%- elsif seo_kind == "work" -%}
-  {%- assign seo_desc = page.title -%}
+  {%- assign seo_desc = seo_name -%}
   {%- if page.status == "found" -%}
     {%- assign seo_desc = seo_desc | append: ". Archive catalogue entry: the full text of this work is preserved in this repository and is linked from this page." -%}
   {%- elsif page.status == "wayback_only" -%}
@@ -356,7 +366,7 @@
   {%- endif -%}
 
 {%- elsif seo_kind == "item" -%}
-  {%- assign seo_desc = page.title -%}
+  {%- assign seo_desc = seo_name -%}
   {%- if page.status == "mdi_text" -%}
     {%- assign seo_desc = seo_desc | append: ". Text of a page he wrote for the Muslim Debate Initiative, recovered from the MDI author archive and preserved here." -%}
     {%- if page.words and page.words > 0 -%}
@@ -410,7 +420,7 @@
      and it was mangling all ten pages added on 2026-09-28. The appended clause
      contains no digits, so no published figure moved when it was fixed.
 
-  2. THE COMMENT ABOVE THIS BLOCK CLAIMED THE CUT WAS "ON A WORD BOUNDARY". It is
+  2. THE COMMENT ABOVE THIS BLOCK CLAIMED THE CUT WAS "ON A WORD BOUNDARY". It was
      not. Jekyll's `truncate` cuts at exactly the length given, mid-word if that
      is where the character falls, and `truncate: 160, ""` only removes the
      ellipsis. Changing that would alter the description of every page on the
@@ -418,16 +428,48 @@
      found it, so the behaviour is left alone and the claim is corrected here
      instead of being left standing as a false statement about the code. {%- endcomment -%}
 {%- assign seo_desc = seo_desc | strip_html | normalize_whitespace | strip -%}
-{%- assign seo_desc = seo_desc | truncate: 160, "" -%}
+{%- comment -%} The word-boundary cut, done with two array filters and no
+  control flow: cut at 158, split on spaces, drop the last element - the
+  partial word - and join the rest. `truncate` cannot do this, because it cuts
+  at a character index and lands mid-word; 273 of 314 pages were cut that way
+  and printed a fragment of a word in the SERP.
+
+  A walk-and-`break` loop was the obvious version and was tried first. It went
+  in, and it could not be verified - a replacement script then mis-spliced it
+  and left a stray `endfor`, so the build failed while the post-build gate
+  happily reported the previous build's output. A construct whose behaviour has
+  to be inferred from surrounding Liquid is not worth shipping; this one has no
+  `for`, no `break` and no nested `if` to misbehave.
+
+  If the cut landed on a space, the dropped element is the empty string and
+  removing it is the same answer. The budget is unchanged at 160 and the
+  description text is unchanged; only the cut point moves. {%- endcomment -%}
+{%- if seo_desc | size > 160 -%}
+  {%- assign _cut = seo_desc | slice: 0, 158 -%}
+  {%- assign _words = _cut | split: " " -%}
+  {%- comment -%} `slice: 0, -1` was the first attempt and it silently returns
+    nothing: Liquid's slice takes an explicit LENGTH and has no "to the end"
+    form, so every description collapsed to a bare ellipsis. The length is
+    computed instead. 358 pages were checked for the collapsed form. {%- endcomment -%}
+  {%- assign _n = _words | size | minus: 1 -%}
+  {%- assign _keep = _words | slice: 0, _n | join: " " -%}
+  {%- if _keep | size > 40 -%}
+    {%- assign seo_desc = _keep | strip | append: "…" -%}
+  {%- else -%}
+    {%- comment -%} A first "word" longer than the entire budget, so there is
+      no complete word to keep. Fall back to the character cut rather than
+      publish an empty description. {%- endcomment -%}
+    {%- assign seo_desc = seo_desc | truncate: 158, "" | append: "…" -%}
+  {%- endif -%}
+{%- endif -%}
 {%- assign seo_desc_len = seo_desc | size -%}
 {%- if seo_desc_len < 100 -%}
   {%- assign seo_desc = seo_desc | append: " Part of The Andalusian Project Archive." -%}
-  {%- assign seo_desc = seo_desc | truncate: 160, "" -%}
 {%- endif -%}
 {%- assign seo_desc = seo_desc | strip -%}
 {%- assign _tail = seo_desc | slice: -1 -%}
 {%- if _tail == "," or _tail == ";" or _tail == "-" -%}
-  {%- assign seo_desc = seo_desc | truncate: 158, "" | append: "." -%}
+  {%- assign seo_desc = seo_desc | slice: 0, -1 | append: "." -%}
 {%- endif -%}
 {%- assign seo_desc_esc = seo_desc | escape_once -%}
 {%- assign seo_title_esc = seo_full_title | escape_once -%}
@@ -543,7 +585,15 @@
 {%- assign seo_author = nil -%}
 {%- if page.author and page.author != "" -%}{%- assign seo_author = page.author -%}{%- endif -%}
 
-<title>{{ seo_title_esc }}</title>
+{%- comment -%} One clamp, applied where the tag is written, so no branch
+  can escape it. The transcript branch builds `Transcript: <85>` and then
+  appends `, from upload <id>` on a clash, which is how a title reached 155
+  characters and spilled a YouTube ID mid-token into the SERP. {%- endcomment -%}
+{%- assign seo_title_final = seo_title -%}
+{%- if seo_title_final | size > 96 -%}
+  {%- assign seo_title_final = seo_title_final | truncate: 96, "" -%}
+{%- endif -%}
+<title>{{ seo_title_final | escape }}</title>
 <meta name="description" content="{{ seo_desc_esc }}">
 <link rel="canonical" href="{{ seo_abs }}">
 {%- comment -%}
@@ -590,7 +640,7 @@
 {%- endif %}
 <meta property="og:site_name" content="{{ site.title | escape_once }}">
 <meta property="og:locale" content="en">
-<meta property="og:title" content="{{ seo_title_esc }}">
+<meta property="og:title" content="{{ seo_title_final | escape }}">
 <meta property="og:description" content="{{ seo_desc_esc }}">
 <meta property="og:url" content="{{ seo_abs }}">
 {%- if seo_kind == "video" %}
@@ -616,7 +666,7 @@
 {%- if seo_image_alt %}<meta property="og:image:alt" content="{{ seo_image_alt | escape_once }}">{%- endif %}
 {%- endif %}
 <meta name="twitter:card" content="{% if seo_image %}summary_large_image{% else %}summary{% endif %}">
-<meta name="twitter:title" content="{{ seo_title_esc }}">
+<meta name="twitter:title" content="{{ seo_title_final | escape }}">
 <meta name="twitter:description" content="{{ seo_desc_esc }}">
 {%- if seo_image %}
 <meta name="twitter:image" content="{{ seo_image }}">

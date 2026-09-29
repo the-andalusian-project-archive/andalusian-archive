@@ -66,30 +66,54 @@ jobs:
       - name: Assert every topic quotation is real and correctly attributed
         run: python3 scripts/test_quotes.py
 
-        - name: Build with Jekyll
-          run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-          env:
-            JEKYLL_ENV: production
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
 
-        # The sitemap is a promise: these URLs exist, come and read them. Until
-        # 2026-09-29 two of the 355 were 404s, because jekyll-sitemap pipes every
-        # URL through `| xml_escape` and the entity `&apos;` is correct XML and
-        # the wrong URL - a legacy permalink contains a raw apostrophe, and the
-        # real page is at `%27` and was in no sitemap at all. Nothing above can
-        # see this: every other gate runs BEFORE the build and reads the source
-        # tree, and the sitemap only exists afterwards.
-        - name: Assert the sitemap advertises only URLs that were built
-          run: python3 scripts/check_sitemap.py
+      # The sitemap is a promise: these URLs exist, come and read them. Until
+      # 2026-09-29 two of the 355 were 404s, because jekyll-sitemap pipes every
+      # URL through `| xml_escape` and the entity `&apos;` is correct XML and
+      # the wrong URL - a legacy permalink contains a raw apostrophe, and the
+      # real page is at `%27` and was in no sitemap at all. Nothing above can
+      # see this: every other gate runs BEFORE the build and reads the source
+      # tree, and the sitemap only exists afterwards.
+      - name: Assert the sitemap advertises only URLs that were built
+        run: python3 scripts/check_sitemap.py
+
+      # Assert the RENDERED page, and refuse to report on a stale _site.
+      #
+      # Two defects only visible after a build, both found in the same pass:
+      #
+      # 1. Five layouts rendered `page.display_title` with no fallback. That
+      #    key is written to the four GENERATED collections and to nothing
+      #    else, so all 54 _posts pages rendered an EMPTY <h1>. The pages
+      #    still looked finished, because the recovered WordPress export
+      #    carries its own <h1> in the body - the title was visible one
+      #    heading level down and the document outline began with nothing.
+      #
+      # 2. 273 of 314 meta descriptions were cut mid-word, because
+      #    `truncate: 160, ""` cuts at a character index.
+      #
+      # The staleness guard in the script is the point of putting it here. A
+      # `jekyll build` that fails on a Liquid error exits 1 and leaves the
+      # previous _site untouched, so a post-build gate reading _site will
+      # happily report the PREVIOUS build's numbers - as clean - over a site
+      # that was never built. That happened during this work: three runs
+      # printed "0 problem(s)" while every build was failing on a stray
+      # `endfor`. The gate now fails rather than answer.
+      - name: Assert the rendered pages, and that they are not stale
+        run: python3 scripts/check_built_pages.py
 
 
-      # Regression guard for the 2026-09-27 P0. `exclude: - data/` in
-      # _config.yml deleted all four client-side search indexes from _site/
-      # while every gate stayed green - test_search_sync.py above proves the
-      # _data -> data half and never looks at what Jekyll kept - and /search/
-      # then rendered "Failed to load search data" for every visitor. The
-      # existing steps cannot see that failure; this one can. It asserts the
-      # built output, so any future Jekyll-side regression in the data/ pipeline
-      # fails here rather than in production.
+    # Regression guard for the 2026-09-27 P0. `exclude: - data/` in
+    # _config.yml deleted all four client-side search indexes from _site/
+    # while every gate stayed green - test_search_sync.py above proves the
+    # _data -> data half and never looks at what Jekyll kept - and /search/
+    # then rendered "Failed to load search data" for every visitor. The
+    # existing steps cannot see that failure; this one can. It asserts the
+    # built output, so any future Jekyll-side regression in the data/ pipeline
+    # fails here rather than in production.
       - name: Assert search data reached the build
         run: |
           missing=0
