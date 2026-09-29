@@ -55,7 +55,27 @@
   pointing at the site's own client-side search, and a CollectionPage whose
   mainEntity is an ItemList of the six collection index pages. The list is a
   list of URLs the site already publishes, so it states the archive's shape
-  to a crawler without asserting a single unapproved figure. {%- endcomment -%}
+  to a crawler without asserting a single unapproved figure.
+
+  THE SEARCHACTION AND THE noindex ON /search/ LOOK LIKE A CONTRADICTION AND
+  ARE NOT ONE. The 2026-09-29 audit read them as self-contradictory. They are
+  two different statements:
+
+    SearchAction   this site has a search, and here is the query template
+    noindex        do not put /search/ itself in your index
+
+  Both are true, and the second is right on its own terms: /search/ renders
+  its results in the browser from a client-side index, so a crawler that
+  indexes it finds a page whose entire content is one empty shell. That is the
+  textbook index trap, and the archive declines it.
+
+  So the SearchAction stays. It is a true statement about the site, the target
+  resolves, and consumers other than Google read it.
+
+  What is NOT expected from it is a rich result. Google retired the Sitelinks
+  Searchbox in November 2024, so this earns nothing in the SERP. It is kept for
+  correctness of the description, not as a ranking play, and the comment says
+  so rather than leaving the next reader to assume otherwise. {%- endcomment -%}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
