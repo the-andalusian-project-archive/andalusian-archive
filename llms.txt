@@ -21,7 +21,7 @@ and cannot put them through. The same wording is in `README.md`,
 
 ## What this is
 
-A recovery, not a publication. The author's original site, his WordPress mirror and his YouTube channel were taken down, emptied or taken over. The strongest surviving copies were scattered across Wayback replay URLs, an Internet Archive directory listing, live third-party sites and an emptied WordPress shell. This repository is the single citable place they now live, and every item records where it came from.
+A recovery, not a publication. The author's own site and his YouTube channel are gone — the domain has been taken over by an unrelated commercial operation and the channel returns "This channel is not available." His WordPress mirror is a third case and is still partly alive: re-checked 2026-09-28, it serves 38 posts and 185 subscribers, and the 2020-era posts carry their full bodies on the author's own hosting, while the 2011-2012 posts 404 because they lived on the .com. The strongest surviving copies were scattered across Wayback replay URLs, an Internet Archive directory listing, that live mirror and live third-party sites. This repository is the single citable place they now live, and every item records where it came from.
 
 This is a dated polemical archive. It preserves arguments that were published against particular interlocutors at particular times. The claims are the author's. The archive endorses none of them.
 

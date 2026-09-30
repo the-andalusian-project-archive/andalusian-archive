@@ -65,10 +65,12 @@ types a number that is not counted from there, and
 
 ### The recovery method
 
-The original sites are gone. `asadullahali.com` resolves and serves an
-unrelated gambling operation; the WordPress mirror at
-`asadullahali.wordpress.com` is still up with its post bodies removed; the
-YouTube channel returns "This channel is not available." The corpus was
+The author's own site and channel are gone. `asadullahali.com` resolves and
+serves an unrelated gambling operation, and the YouTube channel returns "This
+channel is not available." The WordPress mirror at `asadullahali.wordpress.com`
+is a third case: re-checked 2026-09-28 it is live with 38 posts and 185
+subscribers, the 2020-era posts carrying full bodies on the author's own
+hosting, while the 2011-2012 posts 404. The corpus was
 recovered on **2026-09-27** by **six parallel lanes** — the WordPress mirror,
 deleted mirror posts and stub-fills, the Muslim Debate Initiative, a
 best-capture re-fetch of `asadullahali.com`, secondary sources and academic
@@ -213,8 +215,10 @@ Tag: `v1.0.0` · Title: `The Andalusian Project Archive v1.0.0`
 > third-party source records; 220 counted items, counted from `_data/` at build
 > time rather than typed into any page.
 >
-> The original sites are gone — one domain has been taken over by an unrelated
-> commercial operation and must not be visited or linked. The corpus was
+> The author's own site and channel are gone — one domain has been taken over by
+> an unrelated commercial operation and must not be visited or linked. His
+> WordPress mirror is still partly live and is cited as a source; it is not a
+> channel for reaching him, who has asked not to be contacted. The corpus was
 > recovered on 2026-09-27 by six parallel lanes, integrated, and then reviewed in
 > three independent rounds whose findings and fix waves are committed under
 > `docs/recovery-log/`.

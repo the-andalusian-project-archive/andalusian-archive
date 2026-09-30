@@ -3,11 +3,13 @@
 ## Start here
 
 **In one paragraph.** A writer and lecturer named Asadullah Ali Al-Andalusi ran a
-website and a YouTube channel called *The Andalusian Project*. Both are gone. The
-domain name now belongs to someone else and sells gambling; the channel is
-unavailable. This repository is what remains: his writing, his papers, his videos
-and their transcripts, rescued from web archives and kept with a record of where
-each one came from.
+website and a YouTube channel called *The Andalusian Project*. Neither of those
+survived: the domain name now belongs to someone else and sells gambling, and the
+channel is unavailable. His WordPress mirror is a third thing and is **still
+live and still carrying his post text** — see below before assuming the work is
+gone. This repository is what remains of the recoverable record: his writing,
+his papers, his videos and their transcripts, rescued from web archives and kept
+with a record of where each one came from.
 
 **If you want to read something,** go to the live site and pick a subject:
 

@@ -500,6 +500,8 @@ source: "The Andalusian Project Archive"
 
 """
         with open(md_path, "w", encoding="utf-8") as f:
+            _assert_fetch_is_clean(content, work.get("slug", slug_to_title(url)),
+                                   md_path)
             f.write(front_matter + content)
 
         rel_path = f"_posts/{md_filename}"
@@ -818,6 +820,68 @@ def resolve_existing_post(work):
     return None
 
 
+def _assert_fetch_is_clean(content_md, slug, path):
+    """Refuse to write a fetch the damage detector would flag.
+
+    THE ROOT CAUSE, NOT THE SYMPTOM. `clean_content_element` and
+    `scrub_ad_junk_lines` above were hardened in Task R (2026-09-11) and they
+    stop most injected markup at the source. But they are a FIXED list, written
+    once, while `fetch_damage.py` has kept learning: the 2026-09-27 triage pass
+    added rules for config runs, JS block openers, comment threads and taxonomy
+    blocks, and the repair pass then removed damage those rules found. The
+    fetcher never learned them.
+
+    So the two files disagree by construction, and the gap is silent in the
+    dangerous direction: a fresh fetch can write residue the repair pass would
+    have caught, and nothing fails until a human notices it in a published page.
+    That is the whole failure this repository cannot afford — publishing
+    machine junk as the author's words — and it is why the 287-hit triage, the
+    repair, and two rounds of review existed at all.
+
+    The fix is not to copy the rules here. Any list duplicated into the fetcher
+    goes stale the moment `fetch_damage.py` learns something new, which is
+    exactly how the current gap opened. Instead the fetcher asks the detector
+    directly, so a new rule is enforced in the fetch path the day it is written
+    and there is no second copy to forget.
+
+    `judgement=False` deliberately. Judgement rules fire on things the author
+    may have written on purpose - curly quotes, em dashes, a category spelled
+    with a capital - and blocking a fetch on those would reject correct text.
+    Residue and chrome are different in kind: no sentence is shaped like
+    `writeAd({ adUnit: ... })`, so an automatic hit is machine damage by
+    construction and a write is never legitimate.
+
+    Raising, rather than repairing, is the point. Auto-repairing here would
+    quietly make the fetcher the second, unenforced copy of the rules, and it
+    would repair text on the way IN rather than leave a record. A raised
+    exception stops the fetch, writes nothing, and leaves the diagnosis in the
+    traceback.
+    """
+    if not content_md or not content_md.strip():
+        return
+    here = pathlib.Path(__file__).resolve().parent
+    if str(here) not in sys.path:
+        sys.path.insert(0, str(here))
+    from fetch_damage import scan_text
+
+    hits = [h for h in scan_text(content_md, judgement=False) if h.automatic]
+    if not hits:
+        return
+
+    shown = "\n".join(
+        "    line %d  [%s]  %s" % (h.line, h.rule, h.text.strip()[:88])
+        for h in hits[:8])
+    more = "" if len(hits) <= 8 else "\n    ... and %d more" % (len(hits) - 8)
+    raise ValueError(
+        "refusing to write %r (%s): the fetched body still contains %d "
+        "automatic damage hit(s).\n%s%s\n"
+        "This is a fetcher gap, not bad luck: `clean_content_element` does not "
+        "know every rule `fetch_damage.py` has learned. Fix the stripper above, "
+        "or teach `fetch_damage.py` the new shape - but do NOT copy the rule "
+        "list here, because a second copy is what created the gap."
+        % (slug, path, len(hits), shown, more))
+
+
 def _write_canonical_file(path, title, work, wayback_url, cats, tags,
                            words, content_md):
     """Write a canonical-schema _posts file (schema keys unchanged)."""
@@ -843,6 +907,7 @@ def _write_canonical_file(path, title, work, wayback_url, cats, tags,
         + "---\n\n"
     )
     with open(path, "w", encoding="utf-8") as f:
+        _assert_fetch_is_clean(content_md, work.get("slug", "?"), path)
         f.write(fm + (content_md or "").strip() + "\n")
 
 
@@ -900,6 +965,13 @@ def refetch_existing_post(work, existing_path):
         n_dropped = len(old_body_text.split("\n")) - len(scrubbed.split("\n"))
         if scrubbed != old_body_text:
             with open(existing_path, "w", encoding="utf-8") as f:
+                # Scrubbing drops KNOWN ad/JS lines, but `scrub_ad_junk_lines`
+                # is the same fixed list that `_assert_fetch_is_clean` exists
+                # to hold to account: anything in the kept file that the damage
+                # rules classify automatically and the scrubber did not know
+                # about would otherwise be written straight back out.
+                _assert_fetch_is_clean(scrubbed, work.get("slug", "?"),
+                                       existing_path)
                 f.write(fm_block + scrubbed)
             log_row.update(scrubbed_residual_junk_lines=n_dropped,
                            words=len(scrubbed.split()))
@@ -916,6 +988,7 @@ def refetch_existing_post(work, existing_path):
     else:
         fm_block, _old = split_front_matter(raw)
         with open(existing_path, "w", encoding="utf-8") as f:
+            _assert_fetch_is_clean(content_md, work.get("slug", "?"), existing_path)
             f.write(fm_block + "\n\n" + (content_md or "").strip() + "\n")
     log_row.update(words=new_words, old_words=old_words, guardrail="pass",
                    verdict=("full" if new_words >= FULL_MIN_WORDS

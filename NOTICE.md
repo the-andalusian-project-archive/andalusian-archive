@@ -11,8 +11,10 @@ mislead you.
 
 It also states, in section 10, that the author has left online dawah and has
 asked not to be contacted. That section names the recording in which he says so,
-and discloses that the video is a third-party re-upload whose transcript this
-archive does not hold.
+and discloses that the video is a third-party re-upload. It also says plainly
+what this archive holds and does not hold: a machine transcript of that recording
+is published here, while no copy of the video file is, because no media is ever
+downloaded.
 That section is linked from the footer of every page on the site.
 
 
@@ -503,10 +505,24 @@ the last video published under The Andalusian Project:
 
 Two things a reader should know about that citation. The video is not on the
 author's own channel; his channel is gone, and the copy linked above is a
-re-upload on someone else's, so it could disappear. And the archive does not yet
-hold a transcript of it, so the claim above rests on a public video rather than on
-a document preserved here. Recovering it into `_transcripts/` and a copy of the
-file into the archive's own media collection would close both gaps.
+re-upload on someone else's, so it could disappear.
+
+**The archive now holds a transcript of it.** It did not when this section was
+first written, and an earlier version of this paragraph said so — that claim
+became false on 2026-09-28, when the recording was recovered and its automatic
+captions were published as a machine transcript at
+<https://the-andalusian-project-archive.github.io/andalusian-archive/transcripts/kRCzZW3rg4U/>:
+2,220 words across 436 cues, from the catalogued recording itself, and carrying
+the section 5 disclaimer like every other transcript here. The quoted words in
+the claim above are therefore checkable against a document this archive
+preserves, not only against a video on someone else's channel.
+
+What is still missing is a copy of the **video file**. No media is ever
+downloaded here — see section 6 — so if that re-upload is taken down, the
+recording goes with it and the transcript is what remains. That gap is a
+property of the source, not an oversight: a copy of the file was never within
+this archive's reach, and obtaining one now would mean taking it from the
+third-party channel, which is not something this archive does.
 
 This archive exists so his work can be **used** — read it, cite it, teach from
 it, build something good with it. Nothing more is wanted.
