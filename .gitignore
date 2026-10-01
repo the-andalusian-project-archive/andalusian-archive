@@ -117,4 +117,13 @@ _papers/pdfs/architects-of-civilisation-sallahuddin-ayubi.pdf
 .firecrawl/transcripts/cap-kRCzZW3rg4U.en-orig.vtt
 .firecrawl/transcripts/cap-M3nB154Mkuk.en-orig.vtt
 
-
+# llms-full.txt is a DERIVED artifact of scripts/build_llms_full.py, and the
+# file stamps the date it was generated. Committing it would dirty the
+# repository every single day on a 6.8 MB file that changes only in that date
+# line. CI runs the generator as a build step and 
+pm run build runs it from
+# prebuild, so nothing needs it tracked.
+#
+# llms.txt IS tracked, deliberately: it is hand-written, reviewed, and part of
+# what a reader is being told. Only the generated concatenation is not.
+llms-full.txt
