@@ -21,12 +21,65 @@ is a comment.
 
 from __future__ import annotations
 
+import importlib.util
 import pathlib
 import sys
+import types
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FETCHER = ROOT / "scripts" / "fetch_blog_content.py"
 sys.path.insert(0, str(ROOT / "scripts"))
+
+
+def _stub_http_dependencies() -> list[str]:
+    """Stub `bs4` and `requests` so the fetcher imports without them.
+
+    The first version of this gate imported `fetch_blog_content` directly and
+    worked locally, then failed in CI with
+
+        ModuleNotFoundError: No module named 'bs4'
+
+    - because the fetcher imports BeautifulSoup and requests at module level for
+    the network fetching it does, and CI installs neither. The guard being tested
+    touches no HTTP at all: it scans a string. So the dependencies are the wrong
+    thing for this gate to require, and installing BeautifulSoup in CI to assert
+    a string pattern would be a poor trade.
+
+    The stubs are installed only if the real modules are absent, so a developer
+    with the full environment exercises the real imports. If a stub is ever
+    needed for something the guard actually uses, the failure will be an obvious
+    AttributeError rather than a silent behaviour difference.
+    """
+    stubbed: list[str] = []
+
+    if importlib.util.find_spec("bs4") is None:
+        bs4 = types.ModuleType("bs4")
+
+        class _Unused:
+            def __init__(self, *a, **k):  # pragma: no cover - never called
+                raise RuntimeError(
+                    "BeautifulSoup is stubbed; this gate must not parse HTML")
+
+        bs4.BeautifulSoup = _Unused
+        bs4.XMLParsedAsHTMLWarning = type("XMLParsedAsHTMLWarning", (Warning,), {})
+        sys.modules["bs4"] = bs4
+        stubbed.append("bs4")
+
+    if importlib.util.find_spec("requests") is None:
+        requests = types.ModuleType("requests")
+
+        class _UnusedSession:
+            def __init__(self, *a, **k):  # pragma: no cover - never called
+                raise RuntimeError(
+                    "requests is stubbed; this gate must not make HTTP calls")
+
+        requests.Session = _UnusedSession
+        requests.exceptions = types.ModuleType("requests.exceptions")
+        sys.modules["requests"] = requests
+        sys.modules["requests.exceptions"] = requests.exceptions
+        stubbed.append("requests")
+
+    return stubbed
 
 # Bodies that MUST be refused. Each was verified against `fetch_damage.py`
 # before being used here - an earlier draft of this file guessed at the shapes
@@ -78,7 +131,10 @@ CLEAN = {
 
 
 def main() -> int:
+    stubbed = _stub_http_dependencies()
     import fetch_blog_content as F
+    if stubbed:
+        print(f"  stubbed for this run            : {', '.join(stubbed)}")
 
     fails: list[str] = []
 
