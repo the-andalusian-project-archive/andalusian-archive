@@ -34,6 +34,20 @@ jobs:
       - name: Sync search data (_data -> data)
         run: python3 scripts/sync_search_data.py
 
+      # Build llms-full.txt before Jekyll, because `_includes/seo_head.html`
+      # emits a `rel="alternate"` link to it ONLY when the file is present - a
+      # link to a 404 would be a broken promise of exactly the kind this repo
+      # already shipped once, in the sitemap.
+      - name: Build llms-full.txt for machine readers
+        run: python3 scripts/build_llms_full.py
+
+      # The fetcher's write paths are the place where a silent regression would
+      # DAMAGE the corpus rather than merely look wrong: a fetch that writes
+      # machine residue into a post publishes junk as the author's words. This
+      # asserts every write path asks `fetch_damage.py` first.
+      - name: Assert the fetcher cannot write damaged content
+        run: python3 scripts/check_fetcher_guard.py
+
       - name: Assert search-data sync
         run: python3 scripts/test_search_sync.py
 
@@ -113,6 +127,17 @@ jobs:
       # `endfor`. The gate now fails rather than answer.
       - name: Assert the rendered pages, and that they are not stale
         run: python3 scripts/check_built_pages.py
+
+      # `sameAs` must name WORKS and must not list one identifier twice. The
+      # registry survey holds four Semantic Scholar records whose URL is the
+      # AUTHOR page, shared across four different papers - wiring that file in
+      # without a filter would emit, on a paper, a claim that it is the same
+      # entity as a person. And a DOI is case-insensitive, so
+      # `10.65061/hdxb1161` and `10.65061/HDXB1161` are one record; the
+      # case-sensitive dedup shipped both. Runs after the build because the
+      # duplicate only exists after the join with _data/.
+      - name: Assert paper identifiers name works, and are not duplicated
+        run: python3 scripts/check_paper_identifiers.py
 
 
     # Regression guard for the 2026-09-27 P0. `exclude: - data/` in

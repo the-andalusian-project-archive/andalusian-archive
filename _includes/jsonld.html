@@ -189,10 +189,22 @@
   string that Liquid's `compact` does not remove (it drops nil, not "").
 {%- endcomment -%}
 {%- assign same_d = "|" -%}
+{%- comment -%} `same_l` is the same list, lowercased, used ONLY for the
+  membership test. A DOI is case-insensitive, and the same DOI reaches this
+  template from two places - the paper's `doi:` front matter and the registry
+  survey - in different cases. A case-sensitive `contains` therefore kept
+  both and Understanding Aisha's Age emitted `10.65061/hdxb1161` and
+  `10.65061/HDXB1161` as if they were two records.
+
+  The OUTPUT keeps its original casing. The front-matter `doi:` is a record of
+  what the publisher printed, and normalising it to make a dedup tidier would
+  be editing the archive's evidence. Only the comparison is case-folded.
+{%- endcomment -%}
+{%- assign same_l = "|" -%}
 {%- if page.sameAs and page.sameAs.size > 0 -%}
   {%- for _s in page.sameAs -%}
-    {%- assign _tok = "|" | append: _s | append: "|" -%}
-    {%- unless same_d contains _tok -%}{%- assign same_d = same_d | append: _s | append: "|" -%}{%- endunless -%}
+    {%- assign _tok = "|" | append: _s | downcase | append: "|" -%}
+    {%- unless same_l contains _tok -%}{%- assign same_d = same_d | append: _s | append: "|" -%}{%- assign same_l = same_l | append: _s | downcase | append: "|" -%}{%- endunless -%}
   {%- endfor -%}
 {%- else -%}
   {%- for _p in site.data.papers -%}
@@ -201,16 +213,16 @@
         {%- for _rec2 in _r2.records -%}
           {%- if _rec2.archive_paper_id == _p.id -%}
             {%- for _s2 in _rec2.same_as -%}
-              {%- assign _tok2 = "|" | append: _s2 | append: "|" -%}
-              {%- unless same_d contains _tok2 -%}{%- assign same_d = same_d | append: _s2 | append: "|" -%}{%- endunless -%}
+              {%- assign _tok2 = "|" | append: _s2 | downcase | append: "|" -%}
+              {%- unless same_l contains _tok2 -%}{%- assign same_d = same_d | append: _s2 | append: "|" -%}{%- assign same_l = same_l | append: _s2 | downcase | append: "|" -%}{%- endunless -%}
             {%- endfor -%}
           {%- endif -%}
         {%- endfor -%}
         {%- for _rec2 in _r2.additional_records -%}
           {%- if _rec2.archive_paper_id == _p.id -%}
             {%- for _s2 in _rec2.same_as -%}
-              {%- assign _tok3 = "|" | append: _s2 | append: "|" -%}
-              {%- unless same_d contains _tok3 -%}{%- assign same_d = same_d | append: _s2 | append: "|" -%}{%- endunless -%}
+              {%- assign _tok3 = "|" | append: _s2 | downcase | append: "|" -%}
+              {%- unless same_l contains _tok3 -%}{%- assign same_d = same_d | append: _s2 | append: "|" -%}{%- assign same_l = same_l | append: _s2 | downcase | append: "|" -%}{%- endunless -%}
             {%- endfor -%}
           {%- endif -%}
         {%- endfor -%}
@@ -223,8 +235,8 @@
 {%- endcomment -%}
 {%- if page.doi -%}
   {%- assign doi_url = page.doi | prepend: "https://doi.org/" -%}
-  {%- assign doi_tok = "|" | append: doi_url | append: "|" -%}
-  {%- unless same_d contains doi_tok -%}{%- assign same_d = same_d | append: doi_url | append: "|" -%}{%- endunless -%}
+  {%- assign doi_tok = "|" | append: doi_url | downcase | append: "|" -%}
+  {%- unless same_l contains doi_tok -%}{%- assign same_d = same_d | append: doi_url | append: "|" -%}{%- assign same_l = same_l | append: doi_url | downcase | append: "|" -%}{%- endunless -%}
 {%- endif -%}
 {%- assign same_list = same_d | remove_first: "|" | split: "|" -%}
 <script type="application/ld+json">

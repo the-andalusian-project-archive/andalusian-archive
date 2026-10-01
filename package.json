@@ -4,12 +4,13 @@
   "description": "Archive of The Andalusian Project content",
   "scripts": {
     "sync-data": "python scripts/sync_search_data.py",
-    "prebuild": "python scripts/sync_search_data.py",
+    "prebuild": "python scripts/sync_search_data.py && python scripts/build_llms_full.py",
     "test:search-sync": "python scripts/test_search_sync.py",
     "build": "bundle exec jekyll build",
     "serve": "bundle exec jekyll serve",
     "fetch-wayback": "python scripts/fetch_wayback.py",
-    "fetch-youtube": "python scripts/fetch_youtube.py"
+    "fetch-youtube": "python scripts/fetch_youtube.py",
+    "build-llms-full": "python scripts/build_llms_full.py"
   },
   "devDependencies": {
     "firecrawl-cli": "^1.0.0",

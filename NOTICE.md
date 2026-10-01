@@ -115,6 +115,41 @@ The archive is the record, not the author. If you reuse the archive's own data,
 scripts or site, credit the archive and link to the licence.
 
 
+### 4.1 Automated readers are welcome, and that is not a licence
+
+**No crawler is blocked.** This archive excludes no automated reader, and the
+site is deliberately built to be machine-legible: `llms.txt`, `llms-full.txt`, a
+sitemap, JSON-LD on every page, and per-item provenance in the catalogue. Search
+engines, AI training and retrieval systems, and archival crawlers are all
+welcome. This is a preservation record, and a record that cannot be read by
+machines is not much of a record.
+
+That permission is about **access**, and it is deliberately kept separate from
+**rights**. Being able to read a page is not permission to reproduce it.
+
+- **Read anything; attribute anything you reuse.** Section 4 above applies to an
+  automated system exactly as it applies to a person. The author's prose was
+  openly readable when published, which is availability and not permission, and
+  no open licence was ever applied to it. If you quote or redistribute his
+  words, cite the work and the capture. "The Andalusian Project Archive" alone
+  is not attribution.
+- **The machine transcripts are machine output.** Automatic speech recognition
+  fails in known ways - homophones, proper nouns, and the author's own
+  terminology. The section 5 disclaimer must travel with any use of one, and no
+  transcript may be treated as authoritative.
+- **The withheld items stay withheld, and this is not a crawling rule.**
+  Section 6 lists them. They are withheld from distribution; no URL that resolves
+  here will hand a reader one of them, and an automated reader receives exactly
+  what a person receives.
+- **Do not contact the author, by any means.** An automated system must not
+  submit a form, open an issue, or send anything intended to reach him. See
+  section 10.
+
+One further point, because it is easy to lose in a summary: this archive takes
+no position on the claims it preserves. Quotation here is quotation, not
+endorsement, and the archive does not speak for the author.
+
+
 ## 5. The machine transcripts carry this disclaimer
 
 Every transcript in `_transcripts/`, and every transcript block on an article or

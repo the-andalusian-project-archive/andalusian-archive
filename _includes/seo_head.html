@@ -597,6 +597,35 @@
 <meta name="description" content="{{ seo_desc_esc }}">
 <link rel="canonical" href="{{ seo_abs }}">
 {%- comment -%}
+  Machine-readable entry points (2026-09-30).
+
+  `llms.txt` was already published at the site root, but nothing on the site
+  LINKED to it. A file that no page points at is a file a crawler has to already
+  know about to find, which makes it nearly equivalent to not publishing it -
+  and this archive's whole position is that machine readers are welcome and the
+  site should be legible to them. These three lines are the difference between
+  `llms.txt` existing and `llms.txt` being discoverable.
+
+  `<link rel="alternate">` with an explicit `type` is the declared form, and it
+  is emitted for every page rather than only the home page because a crawler
+  arriving deep on a transcript page should be able to find the map without
+  walking back to the root.
+
+  `feed.xml` is advertised for the same reason and because jekyll-feed generates
+  it but nothing referenced it.
+
+  The `llms-full.txt` entry is emitted only when the file is actually present,
+  for the same reason the verification block above checks for a non-empty
+  string: a `rel="alternate"` pointing at a 404 is a broken promise, and this
+  archive has already shipped one of those in a sitemap.
+{%- endcomment -%}
+<link rel="alternate" type="text/plain" href="{{ '/llms.txt' | absolute_url }}" title="The Andalusian Project Archive - map for machine readers">
+{%- assign _llms_full = site.static_files | where: "path", "/llms-full.txt" | first -%}
+{%- if _llms_full -%}
+<link rel="alternate" type="text/plain" href="{{ '/llms-full.txt' | absolute_url }}" title="The Andalusian Project Archive - full text">
+{%- endif -%}
+<link rel="alternate" type="application/atom+xml" href="{{ '/feed.xml' | absolute_url }}" title="The Andalusian Project Archive - feed">
+{%- comment -%}
   Search-engine verification slots (2026-09-28).
 
   Read from `_data/verification.yml`; a tag is emitted ONLY when the value is a
