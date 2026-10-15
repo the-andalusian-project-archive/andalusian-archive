@@ -281,8 +281,10 @@ marked-up that a reader cannot read here.</p>
   polemical archive. The claims are the author&rsquo;s, on the dates shown, and the archive
   adopts none of them. <a href="{{ '/NOTICE.md' | relative_url }}#8-what-this-corpus-is-and-what-it-is-not">NOTICE.md
   section 8</a>.</li>
-  <li><strong>Not a route to the author.</strong> He has left online dawah, has asked not to be contacted, and the
-  maintainers cannot forward requests and cannot put them through.
+  <li><strong>Not a route to the author.</strong> He has left online dawah, has asked not to be
+  contacted, and would not want to be found by readers of this archive &mdash; so do
+  not contact him. The maintainers cannot forward requests and cannot put them
+  through.
   <a href="{{ '/NOTICE.md' | relative_url }}#do-not-contact-the-author">NOTICE.md section
   10</a>.</li>
 </ul>

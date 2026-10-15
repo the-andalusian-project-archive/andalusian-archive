@@ -48,6 +48,16 @@ jobs:
       - name: Assert the fetcher cannot write damaged content
         run: python3 scripts/check_fetcher_guard.py
 
+      # The no-contact policy is stated in ten reader-facing places and nothing
+      # enforced that they agree. A policy which says one thing in the footer and
+      # another in NOTICE.md is worse than no policy, so this asserts both
+      # grounds on every surface - the explicit request, AND the inference from
+      # his leaving online dawah, which is what binds readers who reject the
+      # request as a request. NOTICE.md section 10 is scoped specifically, since
+      # that file mentions the policy in passing in section 4.1 as well.
+      - name: Assert the no-contact policy is stated consistently
+        run: python3 scripts/check_no_contact_policy.py
+
       - name: Assert search-data sync
         run: python3 scripts/test_search_sync.py
 

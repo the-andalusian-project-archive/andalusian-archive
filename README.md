@@ -59,10 +59,20 @@ the other as a recorded alternate, and never adds them together.
 
 ## Do not contact the author
 
-The author has left online dawah and has asked not to be contacted, and he keeps
-a private life. He announced it himself, in his own words, in *Yes, I'm leaving* —
-the last video published under The Andalusian Project:
-<https://youtu.be/kRCzZW3rg4U>. This is stated here so that nobody has to guess.
+**Do not contact him.** He has asked not to be contacted. But that is not the only
+reason, and it is not the reason the rule rests on.
+
+Even if you read his announcement as nothing more than a statement of intent:
+someone who has left online dawah and wants a private life would not want to be
+found by readers of an archive about him, and approaching him on that basis would
+be wrong even if he had never said a word about it. There is no reading of this
+that makes contacting him appropriate.
+
+He announced the leaving himself, in his own words, in *Yes, I'm leaving* — the
+last video published under The Andalusian Project:
+<https://youtu.be/kRCzZW3rg4U>. He keeps a private life. This is stated here so
+that nobody has to guess, and so that nobody has to decide for themselves whether
+it applies to them.
 
 This archive exists so his work can be **used** — read it, cite it, teach from
 it, build something good with it. Nothing more is wanted.
