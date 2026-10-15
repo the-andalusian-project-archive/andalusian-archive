@@ -5,20 +5,33 @@ are corrections to the record, not changes to the recovered material.
 
 ## Do not contact the author
 
-**Do not contact him.** He has asked not to be contacted. But that is not the only
-reason, and it is not the reason the rule rests on.
+**Do not contact him.**
 
-Even if you read his announcement as nothing more than a statement of intent:
-someone who has left online dawah and wants a private life would not want to be
-found by readers of an archive about him, and approaching him on that basis would
-be wrong even if he had never said a word about it. There is no reading of this
-that makes contacting him appropriate.
+He has left the online environment entirely. He took down his own channel, and in
+*Yes, I'm leaving* — the last video published under The Andalusian Project — he
+said he is removing himself from social media altogether:
 
-He announced the leaving himself, in his own words, in *Yes, I'm leaving* — the
-last video published under The Andalusian Project:
-<https://youtu.be/kRCzZW3rg4U>. He keeps a private life. This is stated here so
-that nobody has to guess, and so that nobody has to decide for themselves whether
-it applies to them.
+> yes i did take down my own channel um
+
+> yes i am removing myself from social media entirely
+
+> this medium completely not just youtube but also facebook twitter everything
+
+> um and i'm going to leave social media entirely so that's that's all gone
+
+Those are his words, from the machine transcript this archive holds and publishes
+at `/transcripts/kRCzZW3rg4U/`, and section 5's disclaimer applies to them.
+
+So do not contact him. Someone who has closed every channel he has, taken his
+profile down, and left the platforms altogether has made it as clear as anyone can
+without saying it outright that he does not want to be found. There is nothing
+further to ask permission for. Do not contact him, do not try to locate him, do
+not ask anyone who might know where he is, and do not route anything to him
+through anybody else. He keeps a private life, and the archive's maintainers
+cannot forward requests because there is no route to him to forward them through.
+
+This is stated here so that nobody has to guess, and so that nobody has to decide
+for themselves whether it applies to them.
 
 Requests to contact him, requests for his personal details, and invitations to
 events will not be answered and should not be sent. The maintainers cannot

@@ -13,11 +13,12 @@ This checks three things a reader cannot:
   1. EVERY reader-facing surface carries the rule. A page that drops it is a page
      where someone reads about the archive and never learns they must not contact
      the author.
-  2. EVERY surface states BOTH grounds. The explicit request AND the inference
-     from his leaving online dawah. The second is the load-bearing one: it closes
-     the reading in which someone rejects the request and concludes contact is
-     therefore permitted.
-  3. NO surface tells anyone to contact him. Including the things that look
+  2. EVERY surface states the rule AND the real basis for it: he took down his own
+     channel and said he is removing himself from social media entirely.
+  3. NO surface claims he asked not to be contacted. He did not. The archive said
+     so for years, citing a video containing no occurrence of the word contact,
+     and this now fails the build.
+  4. NO surface tells anyone to contact him. Including the things that look
      helpful - the maintainer address is below the rule on every page, and a
      reader who reads "do not contact" followed by a mailto can reasonably take
      the whole block as an invitation.
@@ -79,27 +80,41 @@ def normalise(text: str) -> str:
     return t
 
 
-#: Ground one: the explicit request. Stronger evidence than the inference, and
-#: dropping it loses a true claim about what he actually said.
-GROUND_EXPLICIT = re.compile(r"asked not to be contacted")
+#: Ground one: WHAT HE ACTUALLY SAID. He took down his own channel and said he
+#: is removing himself from social media entirely. This is verbatim in the
+#: transcript the archive holds - "yes i did take down my own channel um",
+#: "yes i am removing himself from social media entirely", "this medium
+#: completely not just youtube but also facebook twitter everything", "um and i'm
+#: going to leave social media entirely so that's that's all gone".
+#:
+#: Until 2026-10-02 this slot required the phrase "asked not to be contacted",
+#: which the archive asserted for years. It does not survive contact with the
+#: transcript: that video contains zero occurrences of "contact", "email", or any
+#: form of "reach out". He never asked. Requiring the phrase meant the gate was
+#: enforcing an overstatement, and would have blocked the correction.
+MENTIONS_LEAVING = re.compile(
+    r"left (?:online dawah|the online environment)"
+    r"|leaving (?:online dawah|social media)"
+    r"|removing himself from social media"
+    r"|took down (?:his|their) (?:own )?channel")
 
-#: Ground two: the inference from his leaving. Checked as TWO conditions rather
-#: than one alternation, and the earlier version got this wrong.
+#: The platform-by-platform list, which is what makes the withdrawal concrete
+#: rather than a vague "he left".
+NAMES_THE_PLATFORMS = re.compile(
+    r"youtube|facebook|twitter|social media", re.I)
+
+#: The rule itself, in the imperative. Kept as a separate check from the grounds:
+#: stating the reason is not the same as stating the prohibition.
+STATES_THE_RULE = re.compile(r"do not contact|not to be contacted|is not to be contacted")
+
+#: THE OVERSTATEMENT, now asserted to be ABSENT.
 #:
-#: The first version matched `would not want to be found|left online dawah`, so
-#: merely MENTIONING that he left satisfied it. Deleting the inference from
-#: NOTICE.md section 10, from README.md, and from scholarly-records.md all left
-#: the gate green - three of six mutations missed, and each was a real erosion of
-#: the rule.
-#:
-#: The point of this ground is the reasoning, not the fact. He has left: that is
-#: stated on all ten surfaces already and it grounds nothing by itself. What
-#: grounds the rule is the step from leaving to "would not want to be found".
-MENTIONS_LEAVING = re.compile(r"left online dawah|leaving online dawah")
-STATES_INFERENCE = re.compile(
-    r"would not want to be (?:found|contacted|approached|troubled|pursued)"
-    r"|would not want anyone to (?:find|contact|reach)"
-    r"|would not want to be tracked down")
+#: He never asked not to be contacted. Saying that he did attributes an
+#: instruction to him that the archive's own transcript does not contain, and
+#: cites a video as evidence for a claim the video does not make. This check
+#: exists so that a well-meaning edit reintroducing it fails the build rather
+#: than quietly making the archive say something untrue about a living person.
+OVERSTATES = re.compile(r"(?:has|had) asked not to be contacted")
 
 #: An INVITATION, narrowly. Imperative, sentence-initial, no negation.
 #:
@@ -202,28 +217,38 @@ def main() -> int:
         body = normalise(raw)
         checked += 1
 
-        if "do not contact" not in scope_text and "not be contacted" not in scope_text:
-            problems.append(
-                f"{rel} ({label}): {scope_name} carries no no-contact rule at all")
 
-        if not GROUND_EXPLICIT.search(scope_text):
+
+        if not STATES_THE_RULE.search(scope_text):
             problems.append(
-                f"{rel} ({label}): {scope_name} does not state that he asked not "
-                "to be contacted. That is the stronger of the two grounds and "
-                "dropping it loses a true claim.")
+                f"{rel} ({label}): {scope_name} gives a reason but never states "
+                "the prohibition. Saying why he should not be contacted is not "
+                "the same as saying he must not be, and only the second one binds "
+                "a reader.")
 
         if not MENTIONS_LEAVING.search(scope_text):
             problems.append(
-                f"{rel} ({label}): {scope_name} does not record that he left "
-                "online dawah, which is the fact the second ground rests on.")
+                f"{rel} ({label}): {scope_name} does not record that he took "
+                "down his channel and is removing himself from social media. "
+                "That is the whole basis of the rule.")
 
-        if not STATES_INFERENCE.search(scope_text):
+        if not NAMES_THE_PLATFORMS.search(scope_text):
             problems.append(
-                f"{rel} ({label}): {scope_name} records that he left online "
-                "dawah but never draws the conclusion from it. Mentioning the "
-                "leaving grounds nothing; the rule needs the step to 'would not "
-                "want to be found', so it binds readers who reject the explicit "
-                "request as a request.")
+                f"{rel} ({label}): {scope_name} does not name the platforms. "
+                "'He left the internet' is vague; 'not just youtube but also "
+                "facebook twitter everything' is what he actually said, and the "
+                "specificity is what makes the rule obvious rather than arguable.")
+
+        # Asserted ABSENT: he never asked not to be contacted.
+        if OVERSTATES.search(scope_text):
+            problems.append(
+                f"{rel} ({label}): claims he ASKED not to be contacted. He did "
+                "not. The transcript this archive holds of 'Yes, I'm leaving' "
+                "contains no occurrence of 'contact', 'email', or any form of "
+                "reaching out - he says he is removing himself from social media "
+                "entirely. Attributing an instruction to him that he never gave "
+                "is the archive making a claim about a living person that its own "
+                "evidence contradicts.")
 
         # The contradiction scan stays file-wide: an invitation to contact him is
         # a problem wherever it appears, even outside the authoritative block.
@@ -247,7 +272,9 @@ def main() -> int:
         print(f"check_no_contact_policy: {len(problems)} problem(s)")
         return 1
 
-    print("  both grounds on all surfaces: yes (authoritative blocks scoped)")
+    print("  the rule stated on all surfaces: yes (authoritative blocks scoped)")
+    print("  his actual words recorded on all : yes")
+    print("  no claim he asked, because he did not: confirmed")
     print("  invitations to contact him : 0")
     print("check_no_contact_policy: 0 problem(s)")
     return 0

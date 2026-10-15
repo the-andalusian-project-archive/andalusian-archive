@@ -408,9 +408,9 @@ break, the third about a count that will come out wrong.</p>
   <h3>It will not contact anyone to fix any of this</h3>
   <p>Correcting a registry record, claiming a co-authorship, reporting a dead DOI or
   registering an ORCID iD would each require contacting the author, a co-author or a
-  publisher. The author has left online dawah, has asked not to be contacted, and would not want to be
-  found by readers of this archive &mdash; so do not contact him. The archive&rsquo;s
-  maintainers cannot forward requests or put them through. The full notice is
+  publisher. The author took down his own channel and has said he is removing himself from social
+  media entirely, so he is not to be contacted. The archive&rsquo;s maintainers
+  cannot forward requests or put them through. The full notice is
   <a href="{{ '/NOTICE.md' | relative_url }}#do-not-contact-the-author">NOTICE.md section
   10</a>, and it applies to this page as it does to every other: the errors recorded here are
   left standing and visible rather than quietly reported upward.</p>

@@ -43,11 +43,10 @@ last_modified_at: 2026-09-28
   unavailable. This is what survives &mdash; his writing, his papers, his
   recordings and their transcripts &mdash; rescued from web archives, with a record
   of where every item came from and whether any text is actually held.</p>
-  <p><strong>Do not contact him.</strong> He has left online dawah and has asked not to be
-  contacted; even reading that as nothing more than a statement of intent, someone
-  who has left online dawah would not want to be found by readers of an archive
-  about him. The point of preserving this is so the work can be read, cited and
-  taught from.</p>
+  <p><strong>Do not contact him.</strong> He took down his own channel and has said he
+  is removing himself from social media entirely, so he is not to be contacted,
+  located, or routed to through anyone else. The point of preserving this is so the
+  work can be read, cited and taught from.</p>
 </div>
 
 {%- comment -%}
