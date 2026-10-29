@@ -162,8 +162,8 @@ FOLD = {
     "\uff1a": ":",   # ： FULLWIDTH COLON, the channel's title/subtitle separator
     "\uff0f": "/",   # ／ FULLWIDTH SOLIDUS
     "\u29f8": "/",   # ⧸ BIG SOLIDUS, used in "w/ Robert Spencer"
-    "\u3014": "]",
-    "\u3015": "[",
+    "\u3014": "[",
+    "\u3015": "]",
     "\u2013": "-",
     "\u2014": "-",
     "\u2010": "-",

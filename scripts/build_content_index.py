@@ -80,7 +80,10 @@ def main():
     secondary = load_len("secondary_sources.json")
 
     canon_path = DATA_DIR / "canonical_works.json"
-    works = None
+    # If the canonical index is absent, the captures are the only work count
+    # available. Using 0 in `total_content` while the breakdown said
+    # `captures` made the published terms disagree with the published total.
+    works = captures
     status_counts = {}
     if canon_path.is_file():
         canon = json.loads(canon_path.read_text(encoding="utf-8"))

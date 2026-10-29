@@ -1,3 +1,9 @@
+---
+layout: default
+title: Notice
+permalink: /notice/
+description: Rights, redactions, withheld items and the no-contact policy for The Andalusian Project Archive.
+---
 # NOTICE
 
 **The Andalusian Project Archive** — a preservation record of the written and
@@ -9,9 +15,9 @@ It is not boilerplate: it states what this archive is, what it does **not**
 have the right to license, what has been deliberately withheld, and what will
 mislead you.
 
-It also states, in section 10, that the author has left online dawah and has
-asked not to be contacted. That section names the recording in which he says so,
-and discloses that the video is a third-party re-upload. It also says plainly
+It also states, in section 10, that the author has left online dawah and is not
+to be contacted. That section explains the basis for the rule and names the
+recording it rests on, and discloses that the video is a third-party re-upload. It also says plainly
 what this archive holds and does not hold: a machine transcript of that recording
 is published here, while no copy of the video file is, because no media is ever
 downloaded.
@@ -599,7 +605,7 @@ because this notice is the site's statement and not his words.
 
 ---
 
-# The correct sitemap lives under the repository subpath, not the account root
+## The correct sitemap lives under the repository subpath, not the account root
 
 Search Console reported "Sitemap could not be read / Discovered pages 0" for
 `https://the-andalusian-project-archive.github.io/sitemap.xml`. That URL is
@@ -618,7 +624,10 @@ Verified 2026-09-28: HTTP 200, `Content-Type: application/xml`, 56,495 bytes,
 320 `<url>` entries, every `<loc>` absolute under this host and every one
 resolving to a built page.
 
-`robots.txt` already points at that exact URL, so crawlers arriving the ordinary
-way find it without Search Console. The earlier 404 was a wrong URL typed into
-the Search Console form, not a broken sitemap.
+The generated `robots.txt` at `/andalusian-archive/robots.txt` advertises that
+sitemap, but crawlers only read `robots.txt` at the host root, and
+`https://the-andalusian-project-archive.github.io/robots.txt` returns 404 on
+this host. Sitemap discovery therefore depends on Search Console submission and
+on internal links. The earlier 404 was a wrong URL typed into the Search Console
+form, not a broken sitemap.
 

@@ -90,7 +90,7 @@ layout: default
       <div class="detail-section">
         <h3>Content</h3>
         <div class="post-content">
-          {{ content }}
+          {{ content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' }}
         </div>
       </div>
       
@@ -152,4 +152,5 @@ layout: default
       {%- else -%}
         {% include related.html kind="works" self=page.slug target="articles" %}
       {%- endif -%}
+      {% include semantic_related.html %}
 </article>

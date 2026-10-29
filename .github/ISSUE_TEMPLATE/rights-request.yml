@@ -1,9 +1,6 @@
 name: Rights, licensing or takedown request
 description: Ask about copyright, licensing, or ask for an item to be removed, corrected or unpublished.
 title: "[rights] "
-labels:
-  - rights
-  - needs-triage
 body:
   - type: markdown
     attributes:
@@ -59,10 +56,10 @@ body:
   - type: input
     id: contact
     attributes:
-      label: A working email address
-      description: Required, so a rights holder can be verified and replied to.
+      label: How should a maintainer reach you? (optional)
+      description: Do not post a private email address in this public issue. A GitHub handle is preferred; if email is necessary, say so and a maintainer will open a private channel.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: request

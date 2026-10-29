@@ -499,9 +499,11 @@ source: "The Andalusian Project Archive"
 ---
 
 """
+        # Validate before opening in "w" mode: a refused body must not
+        # truncate the file that is already there.
+        _assert_fetch_is_clean(content, post.get("slug") or slug_to_title(url),
+                               md_path)
         with open(md_path, "w", encoding="utf-8") as f:
-            _assert_fetch_is_clean(content, work.get("slug", slug_to_title(url)),
-                                   md_path)
             f.write(front_matter + content)
 
         rel_path = f"_posts/{md_filename}"
@@ -906,8 +908,10 @@ def _write_canonical_file(path, title, work, wayback_url, cats, tags,
         + review_line
         + "---\n\n"
     )
+    # Validate before opening in "w" mode: a refused body must not truncate
+    # the file that is already there.
+    _assert_fetch_is_clean(content_md, work.get("slug", "?"), path)
     with open(path, "w", encoding="utf-8") as f:
-        _assert_fetch_is_clean(content_md, work.get("slug", "?"), path)
         f.write(fm + (content_md or "").strip() + "\n")
 
 
@@ -964,14 +968,15 @@ def refetch_existing_post(work, existing_path):
         scrubbed = scrub_ad_junk_lines(old_body_text)
         n_dropped = len(old_body_text.split("\n")) - len(scrubbed.split("\n"))
         if scrubbed != old_body_text:
+            # Scrubbing drops KNOWN ad/JS lines, but `scrub_ad_junk_lines`
+            # is the same fixed list that `_assert_fetch_is_clean` exists
+            # to hold to account: anything in the kept file that the damage
+            # rules classify automatically and the scrubber did not know
+            # about would otherwise be written straight back out.
+            # Validate before opening: a refusal must leave the file intact.
+            _assert_fetch_is_clean(scrubbed, work.get("slug", "?"),
+                                   existing_path)
             with open(existing_path, "w", encoding="utf-8") as f:
-                # Scrubbing drops KNOWN ad/JS lines, but `scrub_ad_junk_lines`
-                # is the same fixed list that `_assert_fetch_is_clean` exists
-                # to hold to account: anything in the kept file that the damage
-                # rules classify automatically and the scrubber did not know
-                # about would otherwise be written straight back out.
-                _assert_fetch_is_clean(scrubbed, work.get("slug", "?"),
-                                       existing_path)
                 f.write(fm_block + scrubbed)
             log_row.update(scrubbed_residual_junk_lines=n_dropped,
                            words=len(scrubbed.split()))
@@ -987,8 +992,9 @@ def refetch_existing_post(work, existing_path):
                               cats, tags, new_words, content_md)
     else:
         fm_block, _old = split_front_matter(raw)
+        # Validate before opening: a refusal must leave the file intact.
+        _assert_fetch_is_clean(content_md, work.get("slug", "?"), existing_path)
         with open(existing_path, "w", encoding="utf-8") as f:
-            _assert_fetch_is_clean(content_md, work.get("slug", "?"), existing_path)
             f.write(fm_block + "\n\n" + (content_md or "").strip() + "\n")
     log_row.update(words=new_words, old_words=old_words, guardrail="pass",
                    verdict=("full" if new_words >= FULL_MIN_WORDS

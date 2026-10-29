@@ -90,7 +90,7 @@ def main() -> int:
     # page losing its `sameAs` outright: 4 pages carried identifiers, one of
     # them stopped, the total went 11 -> 8, and nothing fired. A per-page
     # expectation is the check that actually catches it.
-    expected: dict[int, str] = {}
+    expected: dict[int, tuple[str, set[str]]] = {}
     rp = ROOT / "_data" / "registries.json"
     pp = ROOT / "_data" / "papers.json"
     if rp.exists() and pp.exists():
@@ -104,7 +104,12 @@ def main() -> int:
                         continue
                     title = next((q.get("title", "") for q in papers_data
                                   if q.get("id") == pid), "")
-                    expected[pid] = title
+                    urls = {u.casefold() for u in (rec.get("same_as") or [])}
+                    if pid in expected:
+                        old_title, old_urls = expected[pid]
+                        expected[pid] = (old_title or title, old_urls | urls)
+                    else:
+                        expected[pid] = (title, urls)
         except Exception as exc:  # noqa: BLE001
             print(f"  note: could not read the registry join ({exc}); the "
                   "per-paper expectation is disabled for this run")
@@ -131,14 +136,22 @@ def main() -> int:
                 total_urls += len(same)
 
                 headline = node.get("headline") or ""
-                for pid, want in expected.items():
-                    if want and want[:40].lower() in headline.lower():
+                for pid, (want_title, want_urls) in expected.items():
+                    if want_title and want_title[:40].lower() in headline.lower():
                         seen_ids.add(pid)
-                        if not same:
+                        actual = {u.casefold() for u in same}
+                        missing = want_urls - actual
+                        extra = actual - want_urls
+                        if missing:
                             fails.append(
-                                f"{rel}: the registry survey records verified "
-                                f"identifiers for this work (paper id {pid}) but "
-                                f"the page emits no sameAs at all")
+                                f"{rel}: the registry survey records identifiers "
+                                f"this page omits (paper id {pid}): "
+                                f"{sorted(missing)}")
+                        if extra:
+                            fails.append(
+                                f"{rel}: the page emits identifiers the registry "
+                                f"survey does not record (paper id {pid}): "
+                                f"{sorted(extra)}")
                         break
 
                 lowered: dict[str, str] = {}

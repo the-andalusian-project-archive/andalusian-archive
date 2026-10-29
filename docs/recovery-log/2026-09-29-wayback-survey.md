@@ -416,7 +416,7 @@ until an owner decision is made.** The reasons:
    `bibliography.json` redact his legal/real name "at the site owner's request" and replace
    it with `[real name withheld]` throughout. Resolving a pseudonym to a redacted identity
    from a third-party site is precisely the kind of move that policy exists to prevent, and
-   he has asked not to be contacted and has left online dawah.
+   he has left online dawah and is not to be contacted.
 4. The one IDI post the archive *does* hold as his —
    `/apologetics/apostasy-beyond-the-rhetoric/` — carries the byline **"Guest"**, and
    appears in **neither** of these two author archives. So the archive's existing
@@ -638,8 +638,8 @@ judgement for whoever takes this forward, not something this survey can settle.
 
 **7. No live host was contacted, and none was needed.** Every status in this report is a
 Wayback status. `asadullahali.com` is now an unrelated gambling site; I did not visit it
-and the README already records that warning. The author has asked not to be contacted and
-has left online dawah, so no contact was attempted and no scope was expanded on the basis
+and the README already records that warning. The author has left online dawah and is not
+to be contacted, so no contact was attempted and no scope was expanded on the basis
 of that openness. The IDI pseudonym question in §3.3 is left as a question **precisely
 because** resolving it would require an identity judgement I am not entitled to make.
 

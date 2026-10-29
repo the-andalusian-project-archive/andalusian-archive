@@ -187,16 +187,25 @@ def load_redaction_list():
         data = json.loads(REDACTION_LOCAL.read_text(encoding="utf-8"))
     except (OSError, ValueError) as exc:
         _warn_redaction("the file exists but could not be read as JSON: %s" % exc)
-        return _REDACTION["patterns"], _REDACTION["marker"]
+        raise SystemExit(
+            "refusing to build: a redaction list exists but cannot be read, so "
+            "the build cannot know whether it is publishing a withheld name"
+        )
 
     names = [str(n).strip() for n in (data.get("names") or []) if str(n).strip()]
     marker = str(data.get("marker") or "").strip()
     if not names:
         _warn_redaction('the file parsed but its "names" list is empty.')
-        return _REDACTION["patterns"], _REDACTION["marker"]
+        raise SystemExit(
+            "refusing to build: a redaction list exists but names nothing, so "
+            "the build cannot know whether it is publishing a withheld name"
+        )
     if not marker:
         _warn_redaction('the file parsed but carries no "marker" string.')
-        return _REDACTION["patterns"], _REDACTION["marker"]
+        raise SystemExit(
+            "refusing to build: a redaction list exists but has no replacement "
+            "marker, so a withheld name could not be redacted safely"
+        )
 
     # Word-bounded and case-insensitive: the captures are lower-cased ASR
     # output, but a coincidental capitalised or plural use must be caught too.
@@ -2038,8 +2047,14 @@ def transcript_section(slug, videos, coverage):
     segments = [(start, text) for start, _end, text in parse_capture(capture)]
     if not segments:
         return "", False
-    body = vtt_to_article_md(title, "", slug, watch or archive_url,
-                             duration, segments, provenance)
+    # This path renders the same capture as build_transcripts(), but it used
+    # to call vtt_to_article_md() directly. That meant a capture added to
+    # TRANSCRIPT_MAP leaked its raw text into the video page and llms-full.txt
+    # even when the redaction list was present. Redact before the text reaches
+    # either the summary or the generated article body.
+    summary = redact(summary)
+    body = redact(vtt_to_article_md(title, "", slug, watch or archive_url,
+                                    duration, segments, provenance))
     lines = [
         "## About this recording",
         "",

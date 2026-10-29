@@ -266,9 +266,11 @@
   {%- if page.publisher_journal %}
   "publisher": { "@type": "Organization", "name": {{ page.publisher_journal | jsonify }} },
   {%- endif %}
-  {%- if page.volume_issue %}
-  "volumeIssue": {{ page.volume_issue | jsonify }},
-  {%- endif %}
+  {%- comment -%}
+    `volumeIssue` is not a Schema.org property. The value is retained in the
+    page's visible publication details; emitting an invented key made the
+    JSON-LD invalid, so it is omitted here rather than guessed at.
+  {%- endcomment -%}
   {%- if page.doi %}
   "identifier": {{ page.doi | jsonify }},
   {%- endif %}
@@ -366,7 +368,6 @@
   "@type": "VideoObject",
   "@id": {{ seo_abs | append: "#videoobject" | jsonify }},
   "name": {{ seo_title | jsonify }},
-  "description": {{ seo_desc | jsonify }},
   "url": {{ seo_abs | jsonify }},
   "mainEntityOfPage": { "@type": "WebPage", "@id": {{ seo_abs | jsonify }} },
   "inLanguage": "en",
@@ -377,8 +378,10 @@
   {%- if page.archive_url and page.archive_url != "" and page.source != "youtube_not_archived" %}
   "contentUrl": {{ page.archive_url | uri_escape | replace: '#', '%23' | jsonify }},
   {%- endif %}
-  {%- if page.format %}
-  "encodingFormat": {{ page.format | jsonify }},
+  {%- if page.archive_url and page.archive_url != "" and page.source != "youtube_not_archived" %}
+  "encodingFormat": "video/mp4",
+  {%- else %}
+  "encodingFormat": "text/html",
   {%- endif %}
   {%- if page.catalogue_source %}
   "publisher": { "@type": "Organization", "name": {{ page.catalogue_source | jsonify }} },
@@ -678,7 +681,7 @@
         { "@type": "Dataset", "name": {{ r.name | jsonify }}, "url": {{ r.record_url | jsonify }} }{% unless forloop.last %},{% endunless %}
         {%- endfor -%}
       ],
-      "license": {{ "/NOTICE.md/" | absolute_url | jsonify }}
+      "license": {{ "/notice/" | absolute_url | jsonify }}
     },
     {
       "@type": "CollectionPage",

@@ -76,9 +76,6 @@ jobs:
       - name: Assert counts and collection integrity
         run: python3 scripts/test_canonical_57.py
 
-      - name: Assert nothing broken or leaking in the rendered pages
-        run: python3 scripts/test_no_junk.py
-
       # The topic layer is eight pages of quotation drawn from the recovered
       # material, and every quotation is attributed to a file and a line. If one
       # of those attributions is wrong, the published page puts words in a living
@@ -103,6 +100,12 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
+      - name: Assert rendered SEO invariants
+        run: python3 scripts/check_rendered_seo.py
+
+      - name: Assert the semantic index is current
+        run: python3 scripts/build_semantic_index.py --check
 
       # The sitemap is a promise: these URLs exist, come and read them. Until
       # 2026-09-29 two of the 355 were 404s, because jekyll-sitemap pipes every
@@ -177,6 +180,12 @@ jobs:
             exit 1
           fi
 
+      - name: Assert llms-full URLs resolve against the build
+        run: python3 scripts/check_llms_full.py
+
+      - name: Assert nothing broken or leaking in the rendered pages
+        run: python3 scripts/test_no_junk.py
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
@@ -223,6 +232,7 @@ jobs:
       # successful deployment.
       - name: Check out the repository
         uses: actions/checkout@v4
+        continue-on-error: true
 
       - name: Ping IndexNow
         id: indexnow

@@ -806,6 +806,7 @@ img {
   margin-bottom: var(--space-8);
 }
 
+.results-section h2,
 .results-section h3 {
   font-size: var(--text-lg);
   font-weight: 600;
@@ -824,23 +825,30 @@ img {
   transform: translateY(-1px);
 }
 
+.result-item h3,
 .result-item h4 {
   margin-bottom: var(--space-2);
 }
 
+.result-item h3 a,
 .result-item h4 a {
   color: var(--color-text);
   font-weight: 600;
 }
 
+.result-item h3 a:hover,
 .result-item h4 a:hover {
   color: var(--color-primary);
 }
 
-.result-meta {
+.result-meta,
+.result-excerpt,
+.result-snippet {
   color: var(--color-text-secondary);
   font-size: var(--text-sm);
   margin-bottom: var(--space-2);
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .result-themes {
@@ -2111,7 +2119,7 @@ tr:hover td {
 }
 
 .caution-list li::before {
-  content: !;
+  content: "!";
   position: absolute;
   left: 0;
   top: 0;
@@ -2352,14 +2360,15 @@ h4,
 
 .page-content a:not(.btn):not(.quick-link) {
   color: var(--color-primary);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
   text-underline-offset: 3px;
 }
 
 .page-content a:not(.btn):not(.quick-link):hover,
 .page-content a:not(.btn):not(.quick-link):focus-visible {
   color: var(--color-primary-hover);
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .page-content ul,
@@ -3834,6 +3843,34 @@ span.tall-glyph {
    The breakpoint is 768px, matching the original collapse, not the 640px used
    for the type scale and tap targets below. Those are different questions: a
    touch target can stay generous at 700px, but a ten-link row cannot. */
+/* The ten-link row fits at 1000px but wraps between 769 and 990, where the
+   links escaped the 60.8px sticky bar and painted over the page. Collapse at
+   1000px, not 768px; the narrow-screen refinements below still apply. */
+@media (max-width: 1000px) {
+  .site-nav .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .site-nav .nav-links.open {
+    display: flex;
+  }
+
+  .site-nav .nav-links a {
+    width: 100%;
+  }
+
+  .site-nav .mobile-toggle {
+    display: flex;
+  }
+}
+
 @media (max-width: 768px) {
   /* The row must not wrap on a phone. The reading-first layer re-declares
      .nav-inner with `flex-wrap: wrap` so that ten navigation links can wrap on a
@@ -3933,9 +3970,9 @@ span.tall-glyph {
   .page-content table,
   .data-table {
     background:
-      linear-gradient(to right, var(--color-surface), rgba(0, 0, 0, 0))
+      linear-gradient(to right, var(--color-bg), rgba(0, 0, 0, 0))
         left center,
-      linear-gradient(to left, var(--color-surface), rgba(0, 0, 0, 0))
+      linear-gradient(to left, var(--color-bg), rgba(0, 0, 0, 0))
         right center,
       radial-gradient(farthest-side at 0 50%, var(--scroll-shadow),
         rgba(0, 0, 0, 0)) left center,
@@ -3945,4 +3982,15 @@ span.tall-glyph {
     background-size: 28px 100%, 28px 100%, 12px 100%, 12px 100%;
     background-attachment: local, local, scroll, scroll;
   }
+}
+
+/* Semantic neighbours: label the relation type without shouting. */
+.semantic-related .semantic-kind {
+  display: inline-block;
+  margin-left: 0.35rem;
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
 }

@@ -1,0 +1,48 @@
+{%- comment -%}
+  Semantic neighbours from `_data/semantic_links.json`, built by
+  `scripts/build_semantic_index.py`.
+
+  The hand-written `related.html` block only links inside one collection and
+  only on explicit join keys (tag, category, co-author, venue, theme). It cannot
+  connect an essay to a lecture that makes the same argument, or a paper to the
+  video where the author summarises it. This include reads the TF-IDF index and
+  shows those cross-collection neighbours. It is additive: if the index is
+  missing, nothing renders.
+{%- endcomment -%}
+
+{%- assign _sem_key = "" -%}
+{%- if page.collection == "papers" -%}
+  {%- assign _paper_slug = page.title | slugify -%}
+  {%- assign _sem_key = "paper:" | append: _paper_slug -%}
+{%- elsif page.collection == "videos" -%}
+  {%- assign _sem_key = "video:" | append: page.video_id -%}
+{%- elsif page.collection == "posts" -%}
+  {%- assign _post_work = include.work_slug | default: page.slug -%}
+  {%- assign _sem_key = "work:" | append: _post_work -%}
+{%- elsif page.collection == "transcripts" -%}
+  {%- assign _sem_key = "transcript:" | append: page.slug -%}
+{%- elsif page.collection == "articles" -%}
+  {%- assign _sem_key = "work:" | append: page.slug -%}
+  {%- unless site.data.semantic_links.links[_sem_key] -%}
+    {%- assign _sem_key = "article:" | append: page.slug -%}
+  {%- endunless -%}
+{%- endif -%}
+
+{%- assign _sem_links = site.data.semantic_links.links[_sem_key] -%}
+{%- if _sem_links and _sem_links.size > 0 -%}
+  <div class="detail-section related-block semantic-related">
+    <h3>Related in the archive</h3>
+    <ul class="source-list">
+      {%- for item in _sem_links limit: 5 -%}
+        <li>
+          {%- if item.url contains "http" -%}
+            <a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>
+          {%- else -%}
+            <a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a>
+          {%- endif -%}
+          <span class="semantic-kind">{{ item.kind | escape }}</span>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endif -%}

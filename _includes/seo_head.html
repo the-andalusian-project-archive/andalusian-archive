@@ -144,7 +144,17 @@
     {%- if _srcbits.size > 1 -%}
       {%- assign _src = _srcbits[1] | split: '"' | first -%}
       {%- if _src contains '/assets/images/' -%}
-        {%- assign seo_image = _src | absolute_url -%}
+        {%- comment -%}
+          Body image paths are usually already `relative_url` output, so they
+          begin with `site.baseurl`. `absolute_url` prepends `site.baseurl`
+          again and produced `.../andalusian-archive/andalusian-archive/...`
+          (live 404). Strip one copy before making the URL absolute.
+        {%- endcomment -%}
+        {%- assign _src_path = _src -%}
+        {%- if site.baseurl != "" and _src_path contains site.baseurl -%}
+          {%- assign _src_path = _src_path | remove_first: site.baseurl -%}
+        {%- endif -%}
+        {%- assign seo_image = _src_path | absolute_url -%}
         {%- assign _altbits = _first | split: 'alt="' -%}
         {%- if _altbits.size > 1 -%}
           {%- assign _alt = _altbits[1] | split: '"' | first | strip -%}
@@ -201,19 +211,26 @@
     become identical strings that the raw-title test could not see. 85 is the
     budget the "Transcript: " prefix spends out of 96.
   {%- endcomment -%}
+  {%- assign _tp = "Transcript: " -%}
+  {%- assign _site_suffix = " | " | append: site.title -%}
+  {%- assign _global_max = 96 | minus: _site_suffix.size -%}
+  {%- assign _base_max = _global_max | minus: _tp.size -%}
   {%- assign seo_title_base = seo_name -%}
-  {%- if seo_title_base | size > 85 -%}{%- assign seo_title_base = seo_title_base | truncate: 85, "" -%}{%- endif -%}
+  {%- if seo_title_base | size > _base_max -%}{%- assign seo_title_base = seo_title_base | truncate: _base_max, "" | strip -%}{%- endif -%}
   {%- assign seo_title_clash = false -%}
   {%- for sib in site.transcripts -%}
     {%- if sib.permalink != page.permalink and seo_title_clash == false -%}
       {%- assign _sib = sib.display_title | default: sib.title -%}
-      {%- if _sib | size > 85 -%}{%- assign _sib = _sib | truncate: 85, "" -%}{%- endif -%}
+      {%- if _sib | size > _base_max -%}{%- assign _sib = _sib | truncate: _base_max, "" | strip -%}{%- endif -%}
       {%- if _sib == seo_title_base -%}{%- assign seo_title_clash = true -%}{%- endif -%}
     {%- endif -%}
   {%- endfor -%}
-  {%- assign seo_title = "Transcript: " | append: seo_title_base -%}
+  {%- assign seo_title = _tp | append: seo_title_base -%}
   {%- if seo_title_clash -%}
-    {%- assign seo_title = seo_title | append: ", from upload " | append: page.capture_video_id -%}
+    {%- assign _us = ", from upload " | append: page.capture_video_id -%}
+    {%- assign _base_max2 = _base_max | minus: _us.size -%}
+    {%- if seo_title_base | size > _base_max2 -%}{%- assign seo_title_base = seo_title_base | truncate: _base_max2, "" | strip -%}{%- endif -%}
+    {%- assign seo_title = _tp | append: seo_title_base | append: _us -%}
   {%- endif -%}
 {%- elsif seo_kind == "post" -%}
   {%- assign seo_title = "Full text: " | append: seo_name -%}
@@ -525,9 +542,9 @@
   {%- if _pd and _pd != "" -%}
     {%- assign _pn = _pd | plus: 0 -%}
     {%- if _pd | size == 4 and _pn > 1000 and _pn < 10000 -%}
-      {%- assign seo_date = _pd | append: "-01-01" -%}
+      {%- assign seo_date = _pd -%}
     {%- elsif _pd | size == 7 and _pd contains "-" -%}
-      {%- assign seo_date = _pd | append: "-01" -%}
+      {%- assign seo_date = _pd -%}
     {%- elsif _pd | size >= 10 and _pd contains "-" -%}
       {%- assign seo_date = _pd -%}
     {%- endif -%}
@@ -542,6 +559,16 @@
   {%- assign _d3s = _d3 | append: "" -%}
   {%- assign _d3len = _d3s | size -%}
   {%- if _d3len >= 10 -%}{%- assign seo_date = _d3 -%}{%- endif -%}
+{%- endif -%}
+{%- comment -%}
+  Open Graph requires a full datetime. A year or year-month is valid precision
+  for JSON-LD, but `article:published_time="2020"` is not a datetime, so the OG
+  tag is emitted only when the value is at least YYYY-MM-DD.
+{%- endcomment -%}
+{%- assign seo_og_date = nil -%}
+{%- if seo_date -%}
+  {%- assign _seo_date_str = seo_date | append: "" -%}
+  {%- if _seo_date_str | size >= 10 -%}{%- assign seo_og_date = seo_date -%}{%- endif -%}
 {%- endif -%}
 {%- comment -%}
   The WHITELIST IS THE GUARD. Two value-based backstops were tried here and both
@@ -589,9 +616,16 @@
   can escape it. The transcript branch builds `Transcript: <85>` and then
   appends `, from upload <id>` on a clash, which is how a title reached 155
   characters and spilled a YouTube ID mid-token into the SERP. {%- endcomment -%}
-{%- assign seo_title_final = seo_title -%}
-{%- if seo_title_final | size > 96 -%}
-  {%- assign seo_title_final = seo_title_final | truncate: 96, "" -%}
+{%- assign _title_suffix = " | " | append: site.title -%}
+{%- if seo_kind == "home" -%}
+  {%- assign seo_title_final = seo_full_title -%}
+{%- else -%}
+  {%- assign _title_base = seo_full_title | remove: _title_suffix -%}
+  {%- assign _title_max = 96 | minus: _title_suffix.size -%}
+  {%- if _title_base | size > _title_max -%}
+    {%- assign _title_base = _title_base | truncate: _title_max, "" | strip -%}
+  {%- endif -%}
+  {%- assign seo_title_final = _title_base | append: _title_suffix -%}
 {%- endif -%}
 <title>{{ seo_title_final | escape }}</title>
 <meta name="description" content="{{ seo_desc_esc }}">
@@ -676,7 +710,7 @@
 <meta property="og:type" content="video.other">
 {%- if page.archive_url and page.archive_url != "" %}
 <meta property="og:video" content="{{ page.archive_url | uri_escape | replace: '#', '%23' | escape_once }}">
-<meta property="og:video:type" content="text/html">
+<meta property="og:video:type" content="video/mp4">
 {%- endif %}
 {%- if page.youtube_url and page.youtube_url != "" %}
 <meta property="og:video" content="{{ page.youtube_url | escape_once }}">
@@ -687,8 +721,8 @@
 {%- else %}
 <meta property="og:type" content="article">
 {%- endif %}
-{%- if seo_date %}
-<meta property="article:published_time" content="{{ seo_date }}">
+{%- if seo_og_date %}
+<meta property="article:published_time" content="{{ seo_og_date }}">
 {%- endif %}
 {%- if seo_image %}
 <meta property="og:image" content="{{ seo_image }}">

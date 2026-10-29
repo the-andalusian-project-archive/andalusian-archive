@@ -101,7 +101,7 @@
         <span class="visually-hidden"> theme. Switch to</span>
         <span class="visually-hidden" data-theme-next>system</span>
       </button>
-      <button class="mobile-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation" onclick="var l=document.getElementById('navLinks');var o=l.classList.toggle('open');this.setAttribute('aria-expanded',o)">
+      <button type="button" class="mobile-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation">
         <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
       </button>
       <ul class="nav-links" id="navLinks">
@@ -222,8 +222,8 @@
         act on a broken link, a wrong count or a missing capture, and who cannot
         forward anything to the author because there is no route to him.
       {%- endcomment -%}
-      <p><strong>About the author:</strong> he took down his own channel and is leaving social media entirely, so he is not to be contacted. The maintainers cannot forward requests. The maintainers cannot forward requests. <a href="{{ '/NOTICE.md' | relative_url }}#do-not-contact-the-author">Read the notice</a>. The address below reaches the <em>archive maintainers</em> only.</p>
-      <p><strong>Found something wrong, or something missing?</strong> That is a real contribution and we want it. Email the maintainers at <a href="mailto:TAP_archive@protonmail.com">TAP_archive@protonmail.com</a> &mdash; a broken link, a wrong count, a missing capture, or a capture we filed as lost. Please include the page URL. Read <a href="{{ '/CONTRIBUTING.md' | relative_url }}">how to contribute</a> first if you plan to send a code change.</p>
+      <p><strong>About the author:</strong> he took down his own channel and is leaving social media entirely, so he is not to be contacted. The maintainers cannot forward requests. <a href="{{ '/notice/' | relative_url }}#10-do-not-contact-the-author">Read the notice</a>. The address below reaches the <em>archive maintainers</em> only.</p>
+      <p><strong>Found something wrong, or something missing?</strong> That is a real contribution and we want it. Email the maintainers at <a href="mailto:TAP_archive@protonmail.com">TAP_archive@protonmail.com</a> &mdash; a broken link, a wrong count, a missing capture, or a capture we filed as lost. Please include the page URL. Read <a href="{{ '/contributing/' | relative_url }}">how to contribute</a> first if you plan to send a code change.</p>
       <p>The Andalusian Project Archive &mdash; Digital Preservation Initiative</p>
       {%- comment -%}
         The one reader-facing credit for the design. Two sentences, in the
@@ -278,12 +278,18 @@
     var GLYPH = { system: '◐', dark: '☾', light: '☀' };
     var NAME = { system: 'System', dark: 'Dark', light: 'Light' };
     var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+    // When localStorage is unavailable the choice still has to survive the
+    // next click. `paint(to)` alone used to leave `stored()` reading the old
+    // value, so every click restarted from 'light' and Dark was unreachable.
+    var mem = null;
 
     function stored() {
-      try {
-        var v = localStorage.getItem(KEY);
-        return (v === 'light' || v === 'dark' || v === 'system') ? v : 'light';
-      } catch (e) { return 'light'; }
+      if (mem) return mem;
+      var v = null;
+      try { v = localStorage.getItem(KEY); } catch (e) { v = null; }
+      v = (v === 'light' || v === 'dark' || v === 'system') ? v : 'light';
+      mem = v;
+      return v;
     }
 
     function effective(state) {
@@ -291,8 +297,8 @@
       return mq && mq.matches ? 'dark' : 'light';
     }
 
-    function paint() {
-      var state = stored();
+    function paint(stateOverride) {
+      var state = stateOverride || stored();
       var eff = effective(state);
       if (state === 'system') {
         document.documentElement.removeAttribute('data-theme');
@@ -321,10 +327,11 @@
       // to reach and the button looks dead. Every state is stored explicitly now;
       // what decides whether the ATTRIBUTE is written is still paint(), which
       // writes nothing for 'system' and leaves the media query in charge.
+      mem = to;
       try {
         localStorage.setItem(KEY, to);
-      } catch (e) { /* the click still repaints, it just is not remembered */ }
-      paint();
+      } catch (e) { /* the click still repaints from `to`, it just is not remembered */ }
+      paint(to);
     });
 
     if (mq) {
@@ -334,6 +341,39 @@
     }
 
     paint();
+  })();
+
+  // Mobile navigation: Escape and outside clicks close the panel, and
+  // aria-expanded always follows the visible state. The old inline handler
+  // toggled the class but could not be closed by anything except the button.
+  (function () {
+    var toggle = document.querySelector('.mobile-toggle');
+    var nav = document.getElementById('navLinks');
+    if (!toggle || !nav) return;
+
+    function setOpen(open) {
+      nav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    toggle.addEventListener('click', function (event) {
+      event.stopPropagation();
+      setOpen(!nav.classList.contains('open'));
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && nav.classList.contains('open')) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!nav.classList.contains('open')) return;
+      if (!nav.contains(event.target) && !toggle.contains(event.target)) {
+        setOpen(false);
+      }
+    });
   })();
   </script>
 

@@ -1,0 +1,18 @@
+# Keep future deep reviews on code, not on the 123k-line content diff that
+# made the all-files run die with "WebSocket closed". CodeRabbit still sees the
+# templates, scripts, workflows and data schemas; it does not re-read the
+# recovered corpus, the PDFs, the images or the demo videos.
+language: "en-US"
+reviews:
+  path_filters:
+    - "!**/*.mp4"
+    - "!**/*.gif"
+    - "!**/*.webm"
+    - "!assets/images/**"
+    - "!docs/demo/**"
+    - "!_papers/pdfs/**"
+    - "!.firecrawl/**"
+    - "!_site/**"
+    - "!data/**"
+    - "!llms-full.txt"
+    - "!*.pdf"

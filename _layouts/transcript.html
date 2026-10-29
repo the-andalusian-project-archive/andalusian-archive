@@ -104,7 +104,7 @@ layout: default
   {%- endif %}
 
   <div class="content transcript-text">
-    {{ content }}
+    {{ content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' }}
   </div>
 
   {%- comment -%}
@@ -116,6 +116,7 @@ layout: default
     reader who has finished the words can go on to the argument.
   {%- endcomment -%}
   {% include related.html kind="transcripts" self=page.recording self_url=page.permalink %}
+  {% include semantic_related.html %}
 
   {% include topic_links.html %}
   {% include secondary_links.html %}

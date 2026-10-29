@@ -1,9 +1,6 @@
 name: Provenance correction or dead capture
 description: Report a wrong attribution, a misattributed source, an inaccurate provenance field, or a capture link that no longer resolves.
 title: "[provenance] "
-labels:
-  - provenance
-  - needs-triage
 body:
   - type: markdown
     attributes:
@@ -65,7 +62,7 @@ body:
     id: contact
     attributes:
       label: How can you be reached if a follow-up question is needed?
-      description: Optional. An email address or a GitHub handle.
+      description: Optional. A GitHub handle is preferred; do not post a private email address in this public issue.
     validations:
       required: false
 

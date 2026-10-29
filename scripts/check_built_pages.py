@@ -23,7 +23,10 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / "_site"
 
-COLLECTIONS = ("articles", "papers", "transcripts", "videos", "topics")
+#: Every rendered page, not a hand-listed set of collections. The original
+#: list omitted `_posts`, which Jekyll writes under category directories - the
+#: exact pages whose empty H1 prompted this gate.
+SKIP_REDIRECTS = ('http-equiv="refresh"', "Redirecting", "window.location.replace")
 
 H1 = re.compile(r"<h1[^>]*>(.*?)</h1>", re.S)
 TITLE = re.compile(r"<title>(.*?)</title>", re.S)
@@ -90,9 +93,10 @@ def main() -> int:
         print("       check is what turns that from a false green into a failure)")
         return 1
 
-    pages = [p for d in COLLECTIONS for p in (SITE / d).rglob("*.html")]
-    pages += [p for p in (SITE / "topics").glob("*.html")]
-    pages = sorted(set(pages))
+    pages = sorted(SITE.rglob("index.html"))
+    four_oh_four = SITE / "404.html"
+    if four_oh_four.is_file():
+        pages.append(four_oh_four)
     if not pages:
         print("FAIL: found no rendered collection pages to check")
         return 1
@@ -107,14 +111,18 @@ def main() -> int:
     for p in pages:
         rel = p.relative_to(SITE).as_posix()
         html = p.read_text(encoding="utf-8", errors="replace")
+        if any(marker in html[:4000] for marker in SKIP_REDIRECTS):
+            continue
 
         h1s = H1.findall(html)
-        if h1s and not text_of(h1s[0]):
+        if not h1s or not text_of(h1s[0]):
             empty_h1 += 1
-            fails.append(f"{rel}: empty <h1> - a layout asked for a front-matter "
-                         f"key this page does not have")
+            fails.append(f"{rel}: missing or empty <h1> - a layout asked for a "
+                         f"front-matter key this page does not have")
         if len(h1s) > 1:
             multi_h1 += 1
+            fails.append(f"{rel}: {len(h1s)} <h1> elements - a page must have "
+                         f"one top-level heading")
 
         t = TITLE.search(html)
         if not t or not text_of(t.group(1)):
@@ -134,12 +142,14 @@ def main() -> int:
             raw = d.group(1)
             if raw and len(raw) >= 158 and not raw.endswith((".", "…", "?")):
                 cut_descs += 1
+                fails.append(f"{rel}: meta description looks cut mid-word "
+                             f"({len(raw)} chars, no terminal punctuation)")
 
-    print(f"built pages         : {len(pages)} checked under {', '.join(COLLECTIONS)}/")
+    print(f"built pages         : {len(pages)} checked under _site/")
     print(f"  empty <h1>        : {empty_h1}")
     print(f"  missing canonical : {no_canon}")
     print(f"  title > 60 chars  : {len(long_titles)}  (SERP truncation, reported)")
-    print(f"  description cut mid-word at ~160: {cut_descs}  (reported)")
+    print(f"  description cut mid-word at ~160: {cut_descs}")
     print(f"  pages with >1 <h1> : {multi_h1}  (imported WordPress headings)")
 
     if long_titles:

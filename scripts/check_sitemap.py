@@ -29,6 +29,7 @@ import pathlib
 import re
 import sys
 import urllib.parse
+import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / "_site"
@@ -45,6 +46,20 @@ def fail(msg: str) -> None:
     print(f"FAIL: {msg}")
 
 
+def config_value(key: str) -> str:
+    """Read one scalar from `_config.yml` without a YAML dependency.
+
+    The values this script needs are single-line strings (`url`, `baseurl`);
+    a regex is enough and keeps the gate runnable before Bundler is set up.
+    """
+    cfg = ROOT / "_config.yml"
+    for line in cfg.read_text(encoding="utf-8").splitlines():
+        m = re.match(rf'^\s*{re.escape(key)}:\s*"?([^"\s]*)"?\s*$', line)
+        if m:
+            return m.group(1).rstrip("/")
+    return ""
+
+
 def baseurl_prefix() -> str:
     """The `baseurl:` from _config.yml, e.g. "/andalusian-archive".
 
@@ -53,12 +68,7 @@ def baseurl_prefix() -> str:
     in the sitemap is `_site/topics/index.html` on disk. Skipping this made all
     355 URLs look unbuilt, which is the failure this script exists to report.
     """
-    cfg = ROOT / "_config.yml"
-    for line in cfg.read_text(encoding="utf-8").splitlines():
-        m = re.match(r'^\s*baseurl:\s*"?([^"\s]*)"?\s*$', line)
-        if m:
-            return m.group(1).rstrip("/")
-    return ""
+    return config_value("baseurl")
 
 
 def main() -> int:
@@ -68,27 +78,65 @@ def main() -> int:
         return 1
 
     text = SITEMAP.read_text(encoding="utf-8")
-    locs = re.findall(r"<loc>([^<]*)</loc>", text)
+    try:
+        root = ET.fromstring(text)
+    except ET.ParseError as exc:
+        fail(f"sitemap is not well-formed XML: {exc} - a regex cannot be "
+             f"trusted to read a document it cannot parse")
+        return 1
+    root_tag = root.tag.rsplit("}", 1)[-1]
+    if root_tag != "urlset":
+        fail(f"sitemap root is <{root_tag}>, not <urlset>")
+        return 1
+
+    locs: list[str] = []
+    for url_node in root:
+        if url_node.tag.rsplit("}", 1)[-1] != "url":
+            continue
+        for child in url_node:
+            if child.tag.rsplit("}", 1)[-1] == "loc" and (child.text or "").strip():
+                locs.append((child.text or "").strip())
+
     problems = 0
     prefix = baseurl_prefix()
+    origin = config_value("url")
 
     if not locs:
         fail("sitemap contains no <loc> entries")
         return 1
+    if not origin.startswith("https://"):
+        fail(f"_config.yml `url:` must be an absolute https origin, got {origin!r}")
+        return 1
+    origin_parts = urllib.parse.urlsplit(origin)
 
     # 1. No path character was entity-encoded instead of percent-encoded.
-    for url in locs:
-        m = PATH_ENTITIES.search(url)
+    #    This must read the RAW text: the XML parser has already turned
+    #    `&apos;` into `'`, which is exactly the URL the sitemap must not carry.
+    raw_locs = re.findall(r"<loc>(.*?)</loc>", text, re.S)
+    for raw_url in raw_locs:
+        m = PATH_ENTITIES.search(raw_url)
         if m:
             fail(f"path character entity-encoded instead of percent-encoded: "
-                 f"{url}  (found {m.group(0)}; the correct form is %27)")
+                 f"{raw_url}  (found {m.group(0)}; the correct form is %27)")
             problems += 1
 
     # 2. Every URL resolves to a file that was actually built. This is the check
     #    that would have caught the two dead entries on their own.
     checked = 0
     for url in locs:
-        path = urllib.parse.urlsplit(url).path
+        parts = urllib.parse.urlsplit(url)
+        if parts.scheme != "https" or parts.netloc != origin_parts.netloc:
+            fail(f"sitemap URL is outside the configured origin "
+                 f"({origin}): {url}")
+            problems += 1
+            continue
+        if prefix and not (parts.path == prefix
+                           or parts.path.startswith(prefix + "/")):
+            fail(f"sitemap URL is outside the configured baseurl "
+                 f"({prefix}): {url}")
+            problems += 1
+            continue
+        path = parts.path
         if prefix and path.startswith(prefix):
             path = path[len(prefix):]
         # Percent-decode before touching the filesystem. Jekyll writes the

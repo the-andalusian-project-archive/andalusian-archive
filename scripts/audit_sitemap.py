@@ -243,14 +243,20 @@ def main() -> int:
             problems.append(f"the sitemap advertises a REDIRECT STUB: {s}. "
                             "Advertise the canonical target instead.")
         for e in extra[:5]:
-            notes.append(f"built but not in the sitemap: {e}")
+            problems.append(f"built but not in the sitemap: {e}. A page that "
+                            "exists but is never advertised is invisible to a "
+                            "crawler that trusts the sitemap.")
 
     # 8. robots.txt consistency
     print()
     for label, u in (("site  ", f"{BASE}/robots.txt"), ("host root", f"{SITE}/robots.txt")):
         st, b, e = get(u)
         if st not in (200, 206):
-            notes.append(f"robots.txt ({label}) did not return 200: {st or e}")
+            notes.append(
+                f"robots.txt ({label}) did not return 200: {st or e}. On a "
+                "GitHub project site the host root is not ours to publish, so "
+                "crawlers will not read a subpath robots.txt; sitemap discovery "
+                "depends on Search Console submission and internal links.")
             continue
         declared = re.findall(r"(?im)^\s*Sitemap:\s*(\S+)", b)
         print(f"  [8] robots.txt ({label})    : 200, {len(declared)} Sitemap line(s)")

@@ -302,7 +302,20 @@
         {%- if w.slug != include.self and rel | size < 1800 -%}
           {%- assign _wy = w.date | slice: 0, 4 -%}
           {%- if _wy == my_year -%}
-            {%- assign rec = "||/articles/" | append: w.slug | append: "/~" | append: w.title | append: "~" -%}
+            {%- comment -%}
+              A post page must link to the post, not to its catalogue entry.
+              Resolve the same slug in site.posts and use that URL; fall back
+              to the catalogue only when no post exists.
+            {%- endcomment -%}
+            {%- assign _rel_url = "" -%}
+            {%- if include.target == "posts" -%}
+              {%- assign _rel_post = site.posts | where: "slug", w.slug | first -%}
+              {%- if _rel_post -%}{%- assign _rel_url = _rel_post.url -%}{%- endif -%}
+            {%- endif -%}
+            {%- if _rel_url == "" -%}
+              {%- assign _rel_url = "/articles/" | append: w.slug | append: "/" -%}
+            {%- endif -%}
+            {%- assign rec = "||" | append: _rel_url | append: "~" | append: w.title | append: "~" -%}
             {%- if rel contains rec -%}{%- assign rec = "" -%}{%- endif -%}
             {%- if rec != "" -%}
               {%- assign rel = rel | append: rec -%}

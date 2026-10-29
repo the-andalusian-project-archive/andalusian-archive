@@ -43,8 +43,9 @@ Requests to contact him, requests for his personal details, and invitations to
 events will not be answered and should not be sent. Do not open an issue, pull
 request or message asking to reach him, asking for his personal details, or
 inviting him to speak. The archive's maintainers cannot forward such requests
-and cannot put them through. The same wording is in `README.md`,
-`CONTRIBUTING.md` and `NOTICE.md`.
+and cannot put them through. The same wording is in `README.md`, the
+contributing guide (https://the-andalusian-project-archive.github.io/andalusian-archive/contributing/)
+and the notice (https://the-andalusian-project-archive.github.io/andalusian-archive/notice/).
 
 ## Automated readers, crawlers and AI systems
 
@@ -172,7 +173,7 @@ https://the-andalusian-project-archive.github.io/andalusian-archive/<path>/;
 original capture: <wayback_url>.
 ```
 
-The capture timestamp is what makes the citation resolve to what he actually wrote. Crediting "The Andalusian Project Archive" alone does not satisfy attribution. For a paper, cite the publication first and treat the archive as the surviving copy. Every transcript must be cited with its disclaimer, reproduced in `NOTICE.md` section 5.
+The capture timestamp is what makes the citation resolve to what he actually wrote. Crediting "The Andalusian Project Archive" alone does not satisfy attribution. For a paper, cite the publication first and treat the archive as the surviving copy. Every transcript must be cited with its disclaimer, reproduced in the notice, section 5 (https://the-andalusian-project-archive.github.io/andalusian-archive/notice/).
 
 ## The licence split
 
@@ -182,10 +183,10 @@ The capture timestamp is what makes the citation resolve to what he actually wro
 
 ## What is withheld, on purpose
 
-Disclosed here because a silent gap is how an archive becomes unreliable. Full detail in `NOTICE.md` section 6.
+Disclosed here because a silent gap is how an archive becomes unreliable. Full detail in the notice, section 6 (https://the-andalusian-project-archive.github.io/andalusian-archive/notice/).
 
-- **Two personal names** - his legal name and his birth name - are withheld at the site owner's request, and both are disclosed in `NOTICE.md` section 6.1 rather than left as a silent gap. The `‖ birth name withheld ‖` marker is substituted at build time; the citations themselves are left intact so they still resolve at the publishing institutions. Where the legal name was printed in the **page text** of one open-repository PDF excerpt, the file is withheld in full rather than served, and the account is in `NOTICE.md` section 6.1a.
-- **Embedded PDF metadata** was cleared of personal identifiers field by field, leaving every held PDF's page content byte-identical and its page count unchanged. `NOTICE.md` section 6.4 records which fields, on which file.
+- **Two personal names** - his legal name and his birth name - are withheld at the site owner's request, and both are disclosed in the notice, section 6.1, rather than left as a silent gap. The `‖ birth name withheld ‖` marker is substituted at build time; the citations themselves are left intact so they still resolve at the publishing institutions. Where the legal name was printed in the **page text** of one open-repository PDF excerpt, the file is withheld in full rather than served, and the account is in the notice, section 6.1a.
+- **Embedded PDF metadata** was cleared of personal identifiers field by field, leaving every held PDF's page content byte-identical and its page count unchanged. The notice, section 6.4, records which fields, on which file.
 - **Three raw caption captures** that contain the birth name are untracked, withheld unedited rather than altered.
 - **Two PDFs are withheld in full.** One is an IAIS Malaysia book chapter, withheld because no public source URL could be established for that exact file. The other is the 24-page open-repository excerpt of his IIUM MA thesis, withheld because the text of its pages reproduces personal identifiers of the author and of third parties; the full text remains available from the IIUM Student Repository. Both keep their full citation, and neither text is distributed here.
 - **Nothing was obtained by bypassing a paywall, a robots rule or an access control.** Where a source was inaccessible, that is recorded as inaccessible. The Academia.edu Cloudflare challenge was not fought.
@@ -208,10 +209,10 @@ Disclosed here because a silent gap is how an archive becomes unreliable. Full d
 - Per-item provenance and catalogue: `_data/canonical_works.json`, `_data/papers.json`, `_data/videos.json`
 - The registry behind the two pages above, and the series grouping rule: `_data/entity_page.json`, `_data/series.json` (generated and re-checkable via `scripts/build_series_index.py --check`)
 - The bibliographic-registry survey behind `/scholarly-records/`: `_data/registries.json`. Read it before citing any DOI in this corpus. Three of the papers are co-authored, one article carries two DOIs, one conference is registered twice, and the three `10.12816` DOIs resolve to `kezana.ai` rather than to a publisher. The archive has no write access to any of those registries and will not seek an ORCID record, a Wikipedia article or a Wikidata item for him.
-- Licence, redactions and withheld items: `NOTICE.md`, `LICENSE`
+- Licence, redactions and withheld items: the notice (https://the-andalusian-project-archive.github.io/andalusian-archive/notice/), `LICENSE`
 - Every figure, with its evidence: `docs/recovery-log/`
 - Machine-readable citation metadata: `CITATION.cff`
 
 ## Reporting a defect
 
-Provenance errors, dead capture links, and rights or takedown requests have issue templates in `.github/ISSUE_TEMPLATE/`. Read `CONTRIBUTING.md` first.
+Provenance errors, dead capture links, and rights or takedown requests have issue templates in `.github/ISSUE_TEMPLATE/`. Read the contributing guide first: https://the-andalusian-project-archive.github.io/andalusian-archive/contributing/

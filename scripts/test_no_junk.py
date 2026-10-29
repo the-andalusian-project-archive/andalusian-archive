@@ -65,6 +65,17 @@ LEAKS = [
 ]
 LEAK_RE = [(label, re.compile(pat, re.M)) for label, pat in LEAKS]
 
+# NOTICE and CONTRIBUTING deliberately name the provenance files that hold a
+# withheld identifier. Those path strings are the evidence, not a leak, and
+# they are the only pages allowed to name them. Anything else still fails.
+POLICY_PAGE_ALLOW = {
+    # Counts, not labels: a second `_staging/` reference on the same page is a
+    # new leak even though the label is already on the allow-list.
+    "notice/index.html": {"_staging/": 1, ".superpowers/": 1,
+                          ".firecrawl/": 3, "docs/": 5},
+    "contributing/index.html": {"_staging/": 1, "docs/": 2},
+}
+
 
 def scan_posts(failures):
     for path in sorted((BASE / "_posts").glob("*.md")):
@@ -88,9 +99,14 @@ def scan_site(failures):
     pages = sorted(site.rglob("*.html"))
     for path in pages:
         text = path.read_text(encoding="utf-8", errors="replace")
-        hits = sorted({label for label, rx in LEAK_RE if rx.search(text)})
+        rel = path.relative_to(site).as_posix()
+        allowed = POLICY_PAGE_ALLOW.get(rel, {})
+        hits = []
+        for label, rx in LEAK_RE:
+            n = len(rx.findall(text))
+            if n > allowed.get(label, 0):
+                hits.append("%s x%d" % (label, n))
         if hits:
-            rel = path.relative_to(site).as_posix()
             failures.append("_site/%s: %s" % (rel, hits))
             print("FAIL: _site/%s: %s" % (rel, hits))
     if not any(f.startswith("_site/") for f in failures):

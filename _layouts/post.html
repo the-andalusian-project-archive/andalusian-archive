@@ -107,7 +107,7 @@ layout: default
       <div class="detail-section">
         <h3>Content</h3>
         <div class="post-content">
-          {{ content }}
+          {{ content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' }}
         </div>
       </div>
       
@@ -135,4 +135,5 @@ layout: default
         on-screen for each work is named in the block's own section above.
       {%- endcomment -%}
       {% include related.html kind="works" self=page.slug my_tags=page.tags my_cats=page.categories my_date=page.date target="posts" %}
+      {% include semantic_related.html work_slug=work_slug %}
 </article>

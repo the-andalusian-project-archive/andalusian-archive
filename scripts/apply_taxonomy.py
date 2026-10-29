@@ -251,12 +251,14 @@ def main(argv):
                 continue
             if row.get("category") != want_cat:
                 dirty = True
-                failures.append("%s: category=%r, rule says %r"
-                                % (where, row.get("category"), want_cat))
+                if check:
+                    failures.append("%s: category=%r, rule says %r"
+                                    % (where, row.get("category"), want_cat))
             if row.get("counted") is not want_counted:
                 dirty = True
-                failures.append("%s: counted=%r, rule says %r"
-                                % (where, row.get("counted"), want_counted))
+                if check:
+                    failures.append("%s: counted=%r, rule says %r"
+                                    % (where, row.get("counted"), want_counted))
         rewritten = dirty and not check
         if rewritten:
             path.write_bytes(serialise(rows, newline_of(raw)))

@@ -29,9 +29,11 @@ because a disclaimer that has been scrolled past is not a disclaimer.
 from __future__ import annotations
 
 import datetime as _dt
+import json
 import pathlib
 import re
 import sys
+from urllib.parse import quote
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / "llms-full.txt"
@@ -72,9 +74,42 @@ def parse_fm(fm: str) -> dict[str, str]:
         m = re.match(r'^([a-z_0-9]+):\s*(.*)$', line)
         if not m:
             continue
-        k, v = m.group(1), m.group(2).strip().strip('"')
+        k, v = m.group(1), m.group(2).strip()
+        if v.startswith('"') and v.endswith('"'):
+            try:
+                v = json.loads(v)
+            except json.JSONDecodeError:
+                v = v.strip('"')
+        else:
+            v = v.strip('"')
         out[k] = v
     return out
+
+
+def slugify(value: str) -> str:
+    value = value.strip().strip("[]")
+    value = re.sub(r"[^a-z0-9]+", "-", value.lower())
+    return value.strip("-")
+
+
+def post_permalink(meta: dict[str, str], stem: str) -> str:
+    """Reproduce Jekyll's `/:categories/:title/` for a post.
+
+    The previous implementation used `_posts/<stem>/`, which Jekyll never
+    emits; every post URL in llms-full.txt was a 404. The post front matter
+    carries `slug` and `categories`, so the real URL can be built without a
+    built site.
+    """
+    slug = meta.get("slug") or re.sub(r"^\d{4}-\d{2}-\d{2}-", "", stem)
+    raw_categories = meta.get("categories") or meta.get("category") or ""
+    # Jekyll's `:categories` does not slugify: it lowercases the category and
+    # keeps spaces (so `[Articles, Current Issues]` becomes
+    # `/articles/current issues/...`, served as `current%20issues`). Slugifying
+    # here produced `/articles/current-issues/...`, another 404.
+    parts = [part.strip().strip('"').lower()
+             for part in raw_categories.strip("[]").split(",")]
+    parts = [part for part in parts if part]
+    return quote("/" + "/".join(parts + [slug]) + "/", safe="/")
 
 
 def main() -> int:
@@ -94,16 +129,23 @@ def main() -> int:
         "the capture. See `NOTICE.md` section 4.\n",
         "- This archive takes no position on the claims it preserves. Quotation "
         "is not endorsement, and nothing here speaks for the author.\n",
-        "- The author has asked not to be contacted. See `NOTICE.md` section 10.\n",
+        "- The author has left online dawah and is not reachable here. See "
+        "`NOTICE.md` section 10 for the no-contact policy.\n",
         "\n---\n",
     ]
+
+    missing = [directory for directory, _, _ in SECTIONS
+               if not (ROOT / directory).is_dir()
+               or not any(p for p in (ROOT / directory).glob("*.md")
+                          if not p.name.startswith(("_index", "index")))]
+    if missing:
+        print("FAIL: required collection(s) missing or empty: " + ", ".join(missing))
+        return 1
 
     total_docs = 0
     total_words = 0
     for directory, label, prefix in SECTIONS:
         d = ROOT / directory
-        if not d.is_dir():
-            continue
         files = sorted(p for p in d.glob("*.md")
                        if not p.name.startswith(("_index", "index")))
         if not files:
@@ -133,7 +175,12 @@ def main() -> int:
                     head.append(f"- {labelname}: {meta[key]}")
             if head and head[-1].startswith("- "):
                 head.append("")
-            permalink = meta.get("permalink") or prefix + p.stem + "/"
+            if meta.get("permalink"):
+                permalink = meta["permalink"]
+            elif directory == "_posts":
+                permalink = post_permalink(meta, p.stem)
+            else:
+                permalink = prefix + p.stem + "/"
             head.append(f"- in this archive: {SITE}{permalink}")
             head.append("")
 
@@ -144,13 +191,14 @@ def main() -> int:
                       f"\n# {'-' * 70}\n")
         chunks.extend(docs)
 
+    if total_docs == 0:
+        print("FAIL: no documents were collected - the file would be empty")
+        return 1
+
     OUT.write_text("".join(chunks), encoding="utf-8")
     size = OUT.stat().st_size
     print(f"  llms-full.txt  {total_docs} documents, {total_words:,} words, "
           f"{size:,} bytes")
-    if total_docs == 0:
-        print("FAIL: no documents were collected - the file would be empty")
-        return 1
     return 0
 
 

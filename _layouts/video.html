@@ -80,7 +80,7 @@ layout: default
       {%- endcomment %}
       
       <div class="content">
-        {{ content }}
+        {{ content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' }}
       </div>
 
       {%- comment -%}
@@ -179,6 +179,7 @@ layout: default
         any other, rather than a random cross-link.
       {%- endcomment -%}
       {% include related.html kind="videos" self=page.video_id my_themes=page.themes my_topics=page.topics %}
+      {% include semantic_related.html %}
 
       {% include topic_links.html %}
       {% include secondary_links.html %}

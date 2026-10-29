@@ -1,3 +1,9 @@
+---
+layout: default
+title: Contributing
+permalink: /contributing/
+description: How to report a broken link, a wrong count or a missing capture in The Andalusian Project Archive.
+---
 # Contributing
 
 This is a preservation archive, not a writing project. The useful contributions

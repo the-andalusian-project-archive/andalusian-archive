@@ -19,14 +19,15 @@ description: Client-side search across the archive's papers, video records and b
 
 <div class="search-container">
   <h1>Search the Archive</h1>
-  <p class="search-subtitle">Search across all {{ search_total }} preserved items: {{ search_works }} works, {{ search_videos }} videos and {{ search_papers }} papers. Transcript text is published under <a href="{{ '/transcripts/' | relative_url }}">Transcripts</a> and is not indexed here.</p>
+  <p class="search-subtitle">Search across all {{ search_total }} searchable catalogue items: {{ search_works }} works, {{ search_videos }} videos and {{ search_papers }} papers. Transcript text is published under <a href="{{ '/transcripts/' | relative_url }}">Transcripts</a> and is not indexed here.</p>
 
-  <div class="search-box">
-    <span class="search-icon">
+  <form class="search-box" role="search" action="{{ '/search/' | relative_url }}" method="get">
+    <label class="visually-hidden" for="search-input">Search the archive</label>
+    <span class="search-icon" aria-hidden="true">
       <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="9" r="6"/><path d="M14 14l4 4"/></svg>
     </span>
-    <input type="text" id="search-input" placeholder="Search papers, videos, blog posts..." autocomplete="off">
-  </div>
+    <input type="search" id="search-input" name="q" placeholder="Search papers, videos, blog posts..." autocomplete="off">
+  </form>
 
   <div class="search-filters">
     <label><input type="checkbox" id="filter-papers" checked> Papers</label>
@@ -34,7 +35,7 @@ description: Client-side search across the archive's papers, video records and b
     <label><input type="checkbox" id="filter-blog" checked> Blog Posts</label>
   </div>
 
-  <div id="search-results" class="search-results">
+  <div id="search-results" class="search-results" role="status" aria-live="polite">
     <p class="search-info">Type to search across all content types.</p>
   </div>
 </div>
@@ -56,22 +57,25 @@ document.addEventListener('DOMContentLoaded', function() {
   // generated page is missing for a data row, so a detail link cannot 404
   // without the suite going red. Transcript text is NOT searchable here; it
   // is published under /transcripts/ and listed from the video pages.
-  let allData = { papers: [], videos: [], blog_posts: [], captures: [] };
+  let allData = { papers: [], videos: [], blog_posts: [] };
   let loaded = false;
+  let userTyped = false;
 
   Promise.all([
     fetch('{{ "/data/papers.json" | relative_url }}').then(function(r) { return r.json(); }),
     fetch('{{ "/data/videos.json" | relative_url }}').then(function(r) { return r.json(); }),
-    fetch('{{ "/data/canonical_works.json" | relative_url }}').then(function(r) { return r.json(); }),
-    fetch('{{ "/data/blog_posts.json" | relative_url }}').then(function(r) { return r.json(); }).catch(function() { return []; })
+    fetch('{{ "/data/canonical_works.json" | relative_url }}').then(function(r) { return r.json(); })
   ]).then(function(results) {
     allData.papers = results[0];
     allData.videos = results[1];
     allData.blog_posts = results[2];
-    allData.captures = results[3];
     loaded = true;
+    if (userTyped) {
+      performSearch();
+    } else {
+      applyQueryParam();
+    }
     updateResultCount();
-    applyQueryParam();
   }).catch(function(err) {
     console.error('Failed to load search data:', err);
     resultsContainer.innerHTML = '<div class="search-error">Failed to load search data. Please refresh the page.</div>';
@@ -80,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateResultCount() {
     if (!loaded) return;
     var total = allData.papers.length + allData.videos.length + allData.blog_posts.length;
+    var q = searchInput.value.trim();
+    if (q.length >= 2) return;
     resultsContainer.innerHTML = '<p class="search-info">' + total + ' items ready for search.</p>';
   }
 
@@ -160,13 +166,17 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function renderResults(papers, videos, blogPosts) {
+    var total = papers.length + videos.length + blogPosts.length;
     var html = '';
+    if (total > 0) {
+      html += '<p class="search-info">' + total + ' result' + (total !== 1 ? 's' : '') + ' found.</p>';
+    }
 
     if (papers.length > 0) {
-      html += '<div class="results-section"><h3>Papers (' + papers.length + ')</h3>';
+      html += '<div class="results-section"><h2>Papers (' + papers.length + ')</h2>';
       papers.forEach(function(paper) {
         html += '<div class="result-item">';
-        html += '<h4><a href="{{ "/papers/" | relative_url }}' + encodeURIComponent(paper.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')) + '/">' + escapeHtml(paper.title) + '</a></h4>';
+        html += '<h3><a href="{{ "/papers/" | relative_url }}' + encodeURIComponent(paper.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')) + '/">' + escapeHtml(paper.title) + '</a></h3>';
         html += '<div class="result-meta">' + escapeHtml(paper.publisher_journal || '') + '</div>';
         if (paper.co_authors && paper.co_authors.length > 0) {
           html += '<div class="result-meta">Co-authors: ' + escapeHtml(paper.co_authors.join(', ')) + '</div>';
@@ -182,10 +192,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (videos.length > 0) {
-      html += '<div class="results-section"><h3>Videos (' + videos.length + ')</h3>';
+      html += '<div class="results-section"><h2>Videos (' + videos.length + ')</h2>';
       videos.forEach(function(video) {
         html += '<div class="result-item">';
-        html += '<h4><a href="{{ "/videos/" | relative_url }}' + encodeURIComponent(video.id) + '/">' + escapeHtml(video.title) + '</a></h4>';
+        html += '<h3><a href="{{ "/videos/" | relative_url }}' + encodeURIComponent(video.id) + '/">' + escapeHtml(video.title) + '</a></h3>';
         html += '<div class="result-meta">' + escapeHtml(video.format || '') + '</div>';
         if (video.themes && video.themes.length > 0) {
           html += '<div class="result-themes">';
@@ -203,13 +213,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (blogPosts.length > 0) {
-      html += '<div class="results-section"><h3>Blog Posts (' + blogPosts.length + ')</h3>';
+      html += '<div class="results-section"><h2>Blog Posts (' + blogPosts.length + ')</h2>';
       blogPosts.forEach(function(post) {
         var title = getBlogTitle(post);
         if (!title) return;
         var rawSlug = post.slug || cleanUrl(post.url).split('/').filter(Boolean).pop() || '';
         html += '<div class="result-item">';
-        html += '<h4><a href="{{ "/articles/" | relative_url }}' + encodeURIComponent(rawSlug) + '/">' + escapeHtml(title) + '</a></h4>';
+        html += '<h3><a href="{{ "/articles/" | relative_url }}' + encodeURIComponent(rawSlug) + '/">' + escapeHtml(title) + '</a></h3>';
         html += '<div class="result-meta">' + escapeHtml(post.url || post.wayback_url || '') + '</div>';
         if (post.excerpt) html += '<div class="result-excerpt">' + escapeHtml(post.excerpt) + '</div>';
         html += '<div class="result-links">';
@@ -238,6 +248,17 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!loaded) return;
 
     var query = searchInput.value.trim().toLowerCase();
+
+    // Keep the URL in step even when the query is too short to search, so
+    // clearing the box removes `?q=` instead of leaving the old search behind.
+    var url = new URL(window.location.href);
+    if (query.length >= 2) {
+      url.searchParams.set('q', searchInput.value.trim());
+    } else {
+      url.searchParams.delete('q');
+    }
+    history.replaceState(null, '', url);
+
     if (query.length < 2) {
       updateResultCount();
       return;
@@ -256,16 +277,24 @@ document.addEventListener('DOMContentLoaded', function() {
       return getSearchableText(post).indexOf(query) !== -1;
     }) : [];
 
-    var total = matchedPapers.length + matchedVideos.length + matchedBlog.length;
-    resultsContainer.innerHTML = '<p class="search-info">' + total + ' result' + (total !== 1 ? 's' : '') + ' found.</p>';
     renderResults(matchedPapers, matchedVideos, matchedBlog);
   }
 
   var debounceTimer;
   searchInput.addEventListener('input', function() {
+    userTyped = true;
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(performSearch, 300);
   });
+
+  document.querySelector('.search-box').addEventListener('submit', function(event) {
+    event.preventDefault();
+    userTyped = true;
+    clearTimeout(debounceTimer);
+    performSearch();
+  });
+
+  window.addEventListener('popstate', applyQueryParam);
 
   filterPapers.addEventListener('change', performSearch);
   filterVideos.addEventListener('change', performSearch);
