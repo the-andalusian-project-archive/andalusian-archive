@@ -4,7 +4,7 @@ title: "Scholarly records: where this work is registered outside the archive"
 description: "OpenAlex, Semantic Scholar, Crossref, DOAJ, ORCID and the Internet Archive: where Al-Andalusi's work is externally recorded, and what those records get wrong."
 permalink: /scholarly-records/
 schema: dataset
-last_modified_at: 2026-09-28
+last_modified_at: 2026-10-31
 ---
 {%- comment -%}
   THE BIBLIOGRAPHY-RECONCILIATION PAGE (2026-09-28).
