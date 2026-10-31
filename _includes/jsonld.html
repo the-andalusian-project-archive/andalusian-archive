@@ -649,6 +649,13 @@
   a URL this archive has actually read, so the list states the survey's scope
   without asserting a single unapproved figure.
 
+  The registries are listed ONCE, in that ItemList. An earlier version also
+  repeated them as `isBasedOn` entries typed Dataset, and Google validated each
+  of the six as its own dataset: on 2026-10-31 the Search Console enhancement
+  report showed all six missing `description` (error), `creator` and `license`
+  (warnings). The duplicate bought nothing the ItemList does not already state,
+  so it was cut rather than padded with a licence no registry had supplied.
+
   NOT emitted: `distribution`, `creator` as a Person, and any count of works.
   The registries hold their own counts of their own records; reproducing a
   number here that is not computed from _data/ on the rendered page would be
@@ -676,11 +683,6 @@
       "temporalCoverage": {{ reg.survey.verified_on | jsonify }},
       "dateModified": {{ reg.survey.reverified_on | jsonify }},
       "creator": { "@type": "Organization", "name": "The Andalusian Project Archive", "url": {{ site_abs | jsonify }} },
-      "isBasedOn": [
-        {%- for r in reg.registries -%}
-        { "@type": "Dataset", "name": {{ r.name | jsonify }}, "url": {{ r.record_url | jsonify }} }{% unless forloop.last %},{% endunless %}
-        {%- endfor -%}
-      ],
       "license": {{ "/notice/" | absolute_url | jsonify }}
     },
     {
